@@ -1,0 +1,1187 @@
+{
+  "schema_version": "1.1",
+  "dataset_version": "1.2.0",
+  "unit": "one test method",
+  "cases": [
+    {
+      "module": "Rectangle",
+      "id": "R01",
+      "name": "testConstructor",
+      "types": [
+        "初始化与辅助调用"
+      ],
+      "origin": "改编原有测试",
+      "setup": "坐标(1,2,3,4)",
+      "action": "创建矩形并读取四个坐标",
+      "expected": "依次为1、2、3、4；构造应保留输入",
+      "limit": "不验证所有整数坐标",
+      "java_test": "java/src/test/java/study/translation/RectangleTest.java#testConstructor",
+      "cangjie_test": "cangjie/src/rectangle_test.cj#testConstructor",
+      "context": [
+        "Rectangle.java",
+        "rectangle.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Rectangle构造方法；getLeft/getTop/getRight/getBottom",
+      "cangjie_business_methods": "Rectangle.init；left/top/right/bottom只读属性",
+      "java_test_line": 8,
+      "cangjie_test_line": 9,
+      "required_files": [
+        "java/src/main/java/study/translation/Rectangle.java",
+        "cangjie/src/rectangle.cj",
+        "java/src/test/java/study/translation/RectangleTest.java",
+        "cangjie/src/rectangle_test.cj"
+      ],
+      "steps": [
+        "以1、2、3、4创建矩形。",
+        "依次读取左、上、右、下坐标并检查四个值。"
+      ],
+      "java_assertions": [
+        "assertEquals(1, r.getLeft())",
+        "assertEquals(2, r.getTop())",
+        "assertEquals(3, r.getRight())",
+        "assertEquals(4, r.getBottom())"
+      ],
+      "java_test_code": "    @Test void testConstructor() {\n        var r = new Rectangle(1, 2, 3, 4);\n        assertEquals(1, r.getLeft());\n        assertEquals(2, r.getTop());\n        assertEquals(3, r.getRight());\n        assertEquals(4, r.getBottom());\n    }",
+      "cangjie_reference_test_code": "    func testConstructor(): Unit {\n        let r = Rectangle(1, 2, 3, 4)\n        @Expect(r.left, 1)\n        @Expect(r.top, 2)\n        @Expect(r.right, 3)\n        @Expect(r.bottom, 4)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Rectangle",
+      "id": "R02",
+      "name": "testToString",
+      "types": [
+        "字符串与集合"
+      ],
+      "origin": "改编原有测试",
+      "setup": "矩形(1,2,3,4)",
+      "action": "调用toString",
+      "expected": "精确等于[1,2,3,4]；格式约定不含空格",
+      "limit": "不覆盖全部负数和极值格式",
+      "java_test": "java/src/test/java/study/translation/RectangleTest.java#testToString",
+      "cangjie_test": "cangjie/src/rectangle_test.cj#testToString",
+      "context": [
+        "Rectangle.java",
+        "rectangle.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Rectangle.toString",
+      "cangjie_business_methods": "Rectangle.toString",
+      "java_test_line": 16,
+      "cangjie_test_line": 18,
+      "required_files": [
+        "java/src/main/java/study/translation/Rectangle.java",
+        "cangjie/src/rectangle.cj",
+        "java/src/test/java/study/translation/RectangleTest.java",
+        "cangjie/src/rectangle_test.cj"
+      ],
+      "steps": [
+        "以1、2、3、4创建矩形。",
+        "调用toString，检查字符、逗号、括号和顺序。"
+      ],
+      "java_assertions": [
+        "assertEquals(\"[1,2,3,4]\", new Rectangle(1, 2, 3, 4).toString())"
+      ],
+      "java_test_code": "    @Test void testToString() {\n        assertEquals(\"[1,2,3,4]\", new Rectangle(1, 2, 3, 4).toString());\n    }",
+      "cangjie_reference_test_code": "    func testToString(): Unit {\n        @Expect(Rectangle(1, 2, 3, 4).toString(), \"[1,2,3,4]\")\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Rectangle",
+      "id": "R03",
+      "name": "testIntersection",
+      "types": [
+        "正常与分支"
+      ],
+      "origin": "改编原有测试",
+      "setup": "基准(0,0,1,1)；相同、包含、右下分离、左上分离矩形",
+      "action": "分别调用intersectsWith",
+      "expected": "true、true、false、false；闭矩形区间交集规则",
+      "limit": "只取代表性方位，不构成穷举",
+      "java_test": "java/src/test/java/study/translation/RectangleTest.java#testIntersection",
+      "cangjie_test": "cangjie/src/rectangle_test.cj#testIntersection",
+      "context": [
+        "Rectangle.java",
+        "rectangle.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Rectangle.intersectsWith",
+      "cangjie_business_methods": "Rectangle.intersectsWith",
+      "java_test_line": 20,
+      "cangjie_test_line": 23,
+      "required_files": [
+        "java/src/main/java/study/translation/Rectangle.java",
+        "cangjie/src/rectangle.cj",
+        "java/src/test/java/study/translation/RectangleTest.java",
+        "cangjie/src/rectangle_test.cj"
+      ],
+      "steps": [
+        "创建基准(0,0,1,1)。",
+        "依次比较(0,0,1,1)、(-1,-5,7,8)、(2,2,3,3)、(-2,-2,-1,-1)。",
+        "要求结果依次为true、true、false、false。"
+      ],
+      "java_assertions": [
+        "assertTrue(r.intersectsWith(new Rectangle(0, 0, 1, 1)))",
+        "assertTrue(r.intersectsWith(new Rectangle(-1, -5, 7, 8)))",
+        "assertFalse(r.intersectsWith(new Rectangle(2, 2, 3, 3)))",
+        "assertFalse(r.intersectsWith(new Rectangle(-2, -2, -1, -1)))"
+      ],
+      "java_test_code": "    @Test void testIntersection() {\n        var r = new Rectangle(0, 0, 1, 1);\n        assertTrue(r.intersectsWith(new Rectangle(0, 0, 1, 1)));\n        assertTrue(r.intersectsWith(new Rectangle(-1, -5, 7, 8)));\n        assertFalse(r.intersectsWith(new Rectangle(2, 2, 3, 3)));\n        assertFalse(r.intersectsWith(new Rectangle(-2, -2, -1, -1)));\n    }",
+      "cangjie_reference_test_code": "    func testIntersection(): Unit {\n        let r = Rectangle(0, 0, 1, 1)\n        @Expect(r.intersectsWith(Rectangle(0, 0, 1, 1)), true)\n        @Expect(r.intersectsWith(Rectangle(-1, -5, 7, 8)), true)\n        @Expect(r.intersectsWith(Rectangle(2, 2, 3, 3)), false)\n        @Expect(r.intersectsWith(Rectangle(-2, -2, -1, -1)), false)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Rectangle",
+      "id": "R04",
+      "name": "testTouchingEdge",
+      "types": [
+        "边界与特殊输入"
+      ],
+      "origin": "新增测试",
+      "setup": "(0,0,1,1)与(1,0,2,1)",
+      "action": "检查相交",
+      "expected": "true；闭区间中共享边也算相交",
+      "limit": "未穷举全部边和角",
+      "java_test": "java/src/test/java/study/translation/RectangleTest.java#testTouchingEdge",
+      "cangjie_test": "cangjie/src/rectangle_test.cj#testTouchingEdge",
+      "context": [
+        "Rectangle.java",
+        "rectangle.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Rectangle.intersectsWith",
+      "cangjie_business_methods": "Rectangle.intersectsWith",
+      "java_test_line": 28,
+      "cangjie_test_line": 32,
+      "required_files": [
+        "java/src/main/java/study/translation/Rectangle.java",
+        "cangjie/src/rectangle.cj",
+        "java/src/test/java/study/translation/RectangleTest.java",
+        "cangjie/src/rectangle_test.cj"
+      ],
+      "steps": [
+        "创建(0,0,1,1)和(1,0,2,1)。",
+        "检查共享边时intersectsWith返回true。"
+      ],
+      "java_assertions": [
+        "assertTrue(new Rectangle(0, 0, 1, 1).intersectsWith(new Rectangle(1, 0, 2, 1)))"
+      ],
+      "java_test_code": "    @Test void testTouchingEdge() {\n        assertTrue(new Rectangle(0, 0, 1, 1).intersectsWith(new Rectangle(1, 0, 2, 1)));\n    }",
+      "cangjie_reference_test_code": "    func testTouchingEdge(): Unit {\n        @Expect(Rectangle(0, 0, 1, 1).intersectsWith(Rectangle(1, 0, 2, 1)), true)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Rectangle",
+      "id": "R05",
+      "name": "testPointRectangle",
+      "types": [
+        "边界与特殊输入"
+      ],
+      "origin": "新增测试",
+      "setup": "点矩形(1,1,1,1)与(0,0,2,2)",
+      "action": "检查相交",
+      "expected": "true；宽高为0允许，点位于闭矩形内",
+      "limit": "不覆盖所有退化线段",
+      "java_test": "java/src/test/java/study/translation/RectangleTest.java#testPointRectangle",
+      "cangjie_test": "cangjie/src/rectangle_test.cj#testPointRectangle",
+      "context": [
+        "Rectangle.java",
+        "rectangle.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Rectangle.intersectsWith",
+      "cangjie_business_methods": "Rectangle.intersectsWith",
+      "java_test_line": 32,
+      "cangjie_test_line": 37,
+      "required_files": [
+        "java/src/main/java/study/translation/Rectangle.java",
+        "cangjie/src/rectangle.cj",
+        "java/src/test/java/study/translation/RectangleTest.java",
+        "cangjie/src/rectangle_test.cj"
+      ],
+      "steps": [
+        "创建点矩形(1,1,1,1)和普通矩形(0,0,2,2)。",
+        "检查位于内部的点仍被判定相交。"
+      ],
+      "java_assertions": [
+        "assertTrue(new Rectangle(1, 1, 1, 1).intersectsWith(new Rectangle(0, 0, 2, 2)))"
+      ],
+      "java_test_code": "    @Test void testPointRectangle() {\n        assertTrue(new Rectangle(1, 1, 1, 1).intersectsWith(new Rectangle(0, 0, 2, 2)));\n    }",
+      "cangjie_reference_test_code": "    func testPointRectangle(): Unit {\n        @Expect(Rectangle(1, 1, 1, 1).intersectsWith(Rectangle(0, 0, 2, 2)), true)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Rectangle",
+      "id": "R06",
+      "name": "testInvalidCoordinates",
+      "types": [
+        "异常与失败后状态"
+      ],
+      "origin": "新增测试",
+      "setup": "left>right或top>bottom",
+      "action": "尝试构造两种非法矩形",
+      "expected": "均抛IllegalArgumentException；对象未成功构造",
+      "limit": "不检查异常消息；不检查null矩形",
+      "java_test": "java/src/test/java/study/translation/RectangleTest.java#testInvalidCoordinates",
+      "cangjie_test": "cangjie/src/rectangle_test.cj#testInvalidCoordinates",
+      "context": [
+        "Rectangle.java",
+        "rectangle.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Rectangle构造方法",
+      "cangjie_business_methods": "Rectangle.init",
+      "java_test_line": 36,
+      "cangjie_test_line": 42,
+      "required_files": [
+        "java/src/main/java/study/translation/Rectangle.java",
+        "cangjie/src/rectangle.cj",
+        "java/src/test/java/study/translation/RectangleTest.java",
+        "cangjie/src/rectangle_test.cj"
+      ],
+      "steps": [
+        "分别尝试创建(3,0,1,2)和(0,3,1,2)。",
+        "每一次构造都必须抛出参数异常。"
+      ],
+      "java_assertions": [
+        "assertThrows(IllegalArgumentException.class, () -> new Rectangle(3, 0, 1, 2))",
+        "assertThrows(IllegalArgumentException.class, () -> new Rectangle(0, 3, 1, 2))"
+      ],
+      "java_test_code": "    @Test void testInvalidCoordinates() {\n        assertThrows(IllegalArgumentException.class, () -> new Rectangle(3, 0, 1, 2));\n        assertThrows(IllegalArgumentException.class, () -> new Rectangle(0, 3, 1, 2));\n    }",
+      "cangjie_reference_test_code": "    func testInvalidCoordinates(): Unit {\n        var first = false\n        try { Rectangle(3, 0, 1, 2) } catch (_: IllegalArgumentException) { first = true }\n        @Expect(first, true)\n        var second = false\n        try { Rectangle(0, 3, 1, 2) } catch (_: IllegalArgumentException) { second = true }\n        @Expect(second, true)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P01",
+      "name": "testEmpty",
+      "types": [
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "空字符串",
+      "action": "调用parse并检查完整输出数组",
+      "expected": "[]；由ZERO=0、INC=1、DEC=-1及十进制规则推导",
+      "limit": "只约定ASCII空格分隔；不支持脚本执行",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testEmpty",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testEmpty",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 8,
+      "cangjie_test_line": 14,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：空字符串。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertArrayEquals(new int[]{}, InstructionParser.parse(\"\"))"
+      ],
+      "java_test_code": "    @Test void testEmpty() {\n        assertArrayEquals(new int[]{}, InstructionParser.parse(\"\"));\n    }",
+      "cangjie_reference_test_code": "    func testEmpty(): Unit {\n        let actual = InstructionParser.parse(\"\")\n        expectArray(actual, [])\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P02",
+      "name": "testSpaces",
+      "types": [
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "仅3个ASCII空格",
+      "action": "调用parse并检查完整输出数组",
+      "expected": "[]；由ZERO=0、INC=1、DEC=-1及十进制规则推导",
+      "limit": "只约定ASCII空格分隔；不支持脚本执行",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testSpaces",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testSpaces",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 12,
+      "cangjie_test_line": 20,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：仅3个ASCII空格。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertArrayEquals(new int[]{}, InstructionParser.parse(\"   \"))"
+      ],
+      "java_test_code": "    @Test void testSpaces() {\n        assertArrayEquals(new int[]{}, InstructionParser.parse(\"   \"));\n    }",
+      "cangjie_reference_test_code": "    func testSpaces(): Unit {\n        let actual = InstructionParser.parse(\"   \")\n        expectArray(actual, [])\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P03",
+      "name": "testNamedInstructions",
+      "types": [
+        "正常与分支",
+        "字符串与集合"
+      ],
+      "origin": "新编样例",
+      "setup": "ZERO INC DEC",
+      "action": "调用parse并检查完整输出数组",
+      "expected": "[0, 1, -1]；由ZERO=0、INC=1、DEC=-1及十进制规则推导",
+      "limit": "只约定ASCII空格分隔；不支持脚本执行",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testNamedInstructions",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testNamedInstructions",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 16,
+      "cangjie_test_line": 26,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：ZERO INC DEC。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertArrayEquals(new int[]{0, 1, -1}, InstructionParser.parse(\"ZERO INC DEC\"))"
+      ],
+      "java_test_code": "    @Test void testNamedInstructions() {\n        assertArrayEquals(new int[]{0, 1, -1}, InstructionParser.parse(\"ZERO INC DEC\"));\n    }",
+      "cangjie_reference_test_code": "    func testNamedInstructions(): Unit {\n        let actual = InstructionParser.parse(\"ZERO INC DEC\")\n        expectArray(actual, [0, 1, -1])\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P04",
+      "name": "testSignedNumbers",
+      "types": [
+        "正常与分支",
+        "字符串与集合"
+      ],
+      "origin": "新编样例",
+      "setup": "-7 +8 0 007",
+      "action": "调用parse并检查完整输出数组",
+      "expected": "[-7, 8, 0, 7]；由ZERO=0、INC=1、DEC=-1及十进制规则推导",
+      "limit": "只约定ASCII空格分隔；不支持脚本执行",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testSignedNumbers",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testSignedNumbers",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 20,
+      "cangjie_test_line": 32,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：-7 +8 0 007。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertArrayEquals(new int[]{-7, 8, 0, 7}, InstructionParser.parse(\"-7 +8 0 007\"))"
+      ],
+      "java_test_code": "    @Test void testSignedNumbers() {\n        assertArrayEquals(new int[]{-7, 8, 0, 7}, InstructionParser.parse(\"-7 +8 0 007\"));\n    }",
+      "cangjie_reference_test_code": "    func testSignedNumbers(): Unit {\n        let actual = InstructionParser.parse(\"-7 +8 0 007\")\n        expectArray(actual, [-7, 8, 0, 7])\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P05",
+      "name": "testRepeatedSpaces",
+      "types": [
+        "边界与特殊输入",
+        "字符串与集合"
+      ],
+      "origin": "新编样例",
+      "setup": "前后空格和连续空格；INC、35、DEC",
+      "action": "调用parse并检查完整输出数组",
+      "expected": "[1, 35, -1]；由ZERO=0、INC=1、DEC=-1及十进制规则推导",
+      "limit": "只约定ASCII空格分隔；不支持脚本执行",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testRepeatedSpaces",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testRepeatedSpaces",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 24,
+      "cangjie_test_line": 38,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：前后空格和连续空格；INC、35、DEC。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertArrayEquals(new int[]{1, 35, -1}, InstructionParser.parse(\"  INC  35 DEC \"))"
+      ],
+      "java_test_code": "    @Test void testRepeatedSpaces() {\n        assertArrayEquals(new int[]{1, 35, -1}, InstructionParser.parse(\"  INC  35 DEC \"));\n    }",
+      "cangjie_reference_test_code": "    func testRepeatedSpaces(): Unit {\n        let actual = InstructionParser.parse(\"  INC  35 DEC \")\n        expectArray(actual, [1, 35, -1])\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P06",
+      "name": "testInt32Boundaries",
+      "types": [
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "int32最小值和最大值",
+      "action": "调用parse并检查完整输出数组",
+      "expected": "[-2147483648, 2147483647]；由ZERO=0、INC=1、DEC=-1及十进制规则推导",
+      "limit": "只约定ASCII空格分隔；不支持脚本执行",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testInt32Boundaries",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testInt32Boundaries",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 28,
+      "cangjie_test_line": 44,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：int32最小值和最大值。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertArrayEquals(new int[]{-2147483648, 2147483647}, InstructionParser.parse(\"-2147483648 2147483647\"))"
+      ],
+      "java_test_code": "    @Test void testInt32Boundaries() {\n        assertArrayEquals(new int[]{-2147483648, 2147483647}, InstructionParser.parse(\"-2147483648 2147483647\"));\n    }",
+      "cangjie_reference_test_code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P07",
+      "name": "testInvalidTokens",
+      "types": [
+        "异常与失败后状态",
+        "正常与分支"
+      ],
+      "origin": "新编样例",
+      "setup": "BOGUS、+、1.5、INC\\tDEC",
+      "action": "分别调用parse",
+      "expected": "均抛IllegalArgumentException；未知词、仅符号、非整数、制表符均不合法",
+      "limit": "不检查异常消息；不涉及对象可变状态",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testInvalidTokens",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testInvalidTokens",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 32,
+      "cangjie_test_line": 50,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：BOGUS、+、1.5、INC\\tDEC。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertThrows(IllegalArgumentException.class, () -> InstructionParser.parse(input))"
+      ],
+      "java_test_code": "    @Test void testInvalidTokens() {\n        for (String input : new String[]{\"BOGUS\", \"+\", \"1.5\", \"INC\\tDEC\"}) {\n            assertThrows(IllegalArgumentException.class, () -> InstructionParser.parse(input));\n        }\n    }",
+      "cangjie_reference_test_code": "    func testInvalidTokens(): Unit {\n        for (input in [\"BOGUS\", \"+\", \"1.5\", \"INC\\tDEC\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P08",
+      "name": "testOutOfRange",
+      "types": [
+        "异常与失败后状态",
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "2147483648与-2147483649",
+      "action": "分别调用parse",
+      "expected": "均抛IllegalArgumentException；超出int32范围",
+      "limit": "不穷举任意超长数字",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testOutOfRange",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testOutOfRange",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "cangjie_business_methods": "InstructionParser.parse；数字片段依赖私有parseNumber",
+      "java_test_line": 38,
+      "cangjie_test_line": 59,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：2147483648与-2147483649。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertThrows(IllegalArgumentException.class, () -> InstructionParser.parse(input))"
+      ],
+      "java_test_code": "    @Test void testOutOfRange() {\n        for (String input : new String[]{\"2147483648\", \"-2147483649\"}) {\n            assertThrows(IllegalArgumentException.class, () -> InstructionParser.parse(input));\n        }\n    }",
+      "cangjie_reference_test_code": "    func testOutOfRange(): Unit {\n        for (input in [\"2147483648\", \"-2147483649\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "InstructionParser",
+      "id": "P09",
+      "name": "testNullInput",
+      "types": [
+        "异常与失败后状态",
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "Java null；仓颉Option<String>.None",
+      "action": "调用parseNullable / parse",
+      "expected": "均抛IllegalArgumentException；没有对象不同于空字符串",
+      "limit": "仓颉用显式Option包装；普通parse只接收String",
+      "java_test": "java/src/test/java/study/translation/InstructionParserTest.java#testNullInput",
+      "cangjie_test": "cangjie/src/instructionparser_test.cj#testNullInput",
+      "context": [
+        "InstructionParser.java",
+        "instruction_parser.cj"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "InstructionParser.parse(null)",
+      "cangjie_business_methods": "InstructionParser.parseNullable(None)；Some分支转parse",
+      "java_test_line": 44,
+      "cangjie_test_line": 68,
+      "required_files": [
+        "java/src/main/java/study/translation/InstructionParser.java",
+        "cangjie/src/instruction_parser.cj",
+        "java/src/test/java/study/translation/InstructionParserTest.java",
+        "cangjie/src/instructionparser_test.cj"
+      ],
+      "steps": [
+        "准备输入：Java null；仓颉Option<String>.None。",
+        "调用parse；合法输入检查完整数组，非法输入检查参数异常。"
+      ],
+      "java_assertions": [
+        "assertThrows(IllegalArgumentException.class, () -> InstructionParser.parse(null))"
+      ],
+      "java_test_code": "    @Test void testNullInput() {\n        assertThrows(IllegalArgumentException.class, () -> InstructionParser.parse(null));\n    }",
+      "cangjie_reference_test_code": "    func testNullInput(): Unit {\n        var caught = false\n        try { InstructionParser.parseNullable(None) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A01",
+      "name": "testInitialBalance",
+      "types": [
+        "初始化与辅助调用",
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "新账户余额0、100和1000000",
+      "action": "读取余额",
+      "expected": "分别保留初值；两端允许",
+      "limit": "不覆盖全部合法初值",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testInitialBalance",
+      "cangjie_test": "cangjie/src/account_test.cj#testInitialBalance",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account构造方法；getBalance",
+      "cangjie_business_methods": "Account.init；getBalance",
+      "java_test_line": 16,
+      "cangjie_test_line": 16,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "默认初始化Account(100)，另建Account(0)和Account(1000000)。",
+        "分别读取余额并检查与初值一致。"
+      ],
+      "java_assertions": [
+        "assertEquals(0, new Account(0).getBalance())",
+        "assertEquals(100, account.getBalance())",
+        "assertEquals(1_000_000, new Account(1_000_000).getBalance())"
+      ],
+      "java_test_code": "    @Test void testInitialBalance() {\n        assertEquals(0, new Account(0).getBalance()); assertEquals(100, account.getBalance()); assertEquals(1_000_000, new Account(1_000_000).getBalance());\n    }",
+      "cangjie_reference_test_code": "    func testInitialBalance(): Unit {\n        var account = Account(100)\n        @Expect(Account(0).getBalance(), 0)\n        @Expect(account.getBalance(), 100)\n        @Expect(Account(1000000).getBalance(), 1000000)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A02",
+      "name": "testDeposit",
+      "types": [
+        "正常与分支",
+        "对象状态与连续操作"
+      ],
+      "origin": "新编样例",
+      "setup": "余额100",
+      "action": "存入30",
+      "expected": "余额130；100+30",
+      "limit": "只检查一次存款",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testDeposit",
+      "cangjie_test": "cangjie/src/account_test.cj#testDeposit",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account.deposit；getBalance",
+      "cangjie_business_methods": "Account.deposit；getBalance",
+      "java_test_line": 20,
+      "cangjie_test_line": 24,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "每次测试独立准备余额100的账户。",
+        "存入30，再检查余额130。"
+      ],
+      "java_assertions": [
+        "assertEquals(130, account.getBalance())"
+      ],
+      "java_test_code": "    @Test void testDeposit() {\n        account.deposit(30); assertEquals(130, account.getBalance());\n    }",
+      "cangjie_reference_test_code": "    func testDeposit(): Unit {\n        var account = Account(100)\n        account.deposit(30)\n        @Expect(account.getBalance(), 130)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A03",
+      "name": "testWithdraw",
+      "types": [
+        "正常与分支",
+        "对象状态与连续操作"
+      ],
+      "origin": "新编样例",
+      "setup": "余额100",
+      "action": "取出30",
+      "expected": "余额70；100-30",
+      "limit": "只检查一次取款",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testWithdraw",
+      "cangjie_test": "cangjie/src/account_test.cj#testWithdraw",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "detected",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account.withdraw；getBalance",
+      "cangjie_business_methods": "Account.withdraw；getBalance",
+      "java_test_line": 24,
+      "cangjie_test_line": 31,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "每次测试独立准备余额100的账户。",
+        "取出30，再检查余额70。"
+      ],
+      "java_assertions": [
+        "assertEquals(70, account.getBalance())"
+      ],
+      "java_test_code": "    @Test void testWithdraw() {\n        account.withdraw(30); assertEquals(70, account.getBalance());\n    }",
+      "cangjie_reference_test_code": "    func testWithdraw(): Unit {\n        var account = Account(100)\n        account.withdraw(30)\n        @Expect(account.getBalance(), 70)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "failed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A04",
+      "name": "testWithdrawAll",
+      "types": [
+        "边界与特殊输入",
+        "对象状态与连续操作"
+      ],
+      "origin": "新编样例",
+      "setup": "余额100",
+      "action": "取出100",
+      "expected": "余额0；允许恰好取完",
+      "limit": "不检查后续继续取款",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testWithdrawAll",
+      "cangjie_test": "cangjie/src/account_test.cj#testWithdrawAll",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "detected",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account.withdraw；getBalance",
+      "cangjie_business_methods": "Account.withdraw；getBalance",
+      "java_test_line": 28,
+      "cangjie_test_line": 38,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "每次测试独立准备余额100的账户。",
+        "取出100，再检查余额0。"
+      ],
+      "java_assertions": [
+        "assertEquals(0, account.getBalance())"
+      ],
+      "java_test_code": "    @Test void testWithdrawAll() {\n        account.withdraw(100); assertEquals(0, account.getBalance());\n    }",
+      "cangjie_reference_test_code": "    func testWithdrawAll(): Unit {\n        var account = Account(100)\n        account.withdraw(100)\n        @Expect(account.getBalance(), 0)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "failed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A05",
+      "name": "testSequence",
+      "types": [
+        "对象状态与连续操作",
+        "初始化与辅助调用"
+      ],
+      "origin": "新编样例",
+      "setup": "余额100；辅助方法先存入50再取出20",
+      "action": "再取出10",
+      "expected": "每步150、130、120；调用顺序保留",
+      "limit": "不涉及并发和持久化",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testSequence",
+      "cangjie_test": "cangjie/src/account_test.cj#testSequence",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "detected",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account.deposit/withdraw/getBalance；测试辅助prepareSequence",
+      "cangjie_business_methods": "Account.deposit/withdraw/getBalance；prepareSequence(account)",
+      "java_test_line": 32,
+      "cangjie_test_line": 45,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "独立创建余额100的账户。",
+        "调用prepareSequence：存50检查150，再取20检查130。",
+        "回到测试方法再取10，检查120。"
+      ],
+      "java_assertions": [
+        "assertEquals(120, account.getBalance())",
+        "辅助prepareSequence：assertEquals(150, account.getBalance())",
+        "辅助prepareSequence：assertEquals(130, account.getBalance())"
+      ],
+      "java_test_code": "    @Test void testSequence() {\n        prepareSequence(); account.withdraw(10); assertEquals(120, account.getBalance());\n    }",
+      "cangjie_reference_test_code": "    func testSequence(): Unit {\n        var account = Account(100)\n        prepareSequence(account)\n        account.withdraw(10)\n        @Expect(account.getBalance(), 120)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "failed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A06",
+      "name": "testInsufficientFunds",
+      "types": [
+        "异常与失败后状态",
+        "对象状态与连续操作"
+      ],
+      "origin": "新编样例",
+      "setup": "余额100",
+      "action": "取出101失败，再取出40",
+      "expected": "不足异常；失败后100，后续成功后60",
+      "limit": "不检查异常消息",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testInsufficientFunds",
+      "cangjie_test": "cangjie/src/account_test.cj#testInsufficientFunds",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "detected",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account.withdraw/getBalance；InsufficientFundsException",
+      "cangjie_business_methods": "Account.withdraw/getBalance；InsufficientFundsException",
+      "java_test_line": 36,
+      "cangjie_test_line": 53,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "独立创建余额100的账户。",
+        "尝试取101，要求抛InsufficientFundsException并检查余额仍为100。",
+        "继续合法取40，检查余额60。"
+      ],
+      "java_assertions": [
+        "assertThrows(InsufficientFundsException.class, () -> account.withdraw(101))",
+        "assertEquals(100, account.getBalance())",
+        "assertEquals(60, account.getBalance())"
+      ],
+      "java_test_code": "    @Test void testInsufficientFunds() {\n        assertThrows(InsufficientFundsException.class, () -> account.withdraw(101));\n        assertEquals(100, account.getBalance()); account.withdraw(40); assertEquals(60, account.getBalance());\n    }",
+      "cangjie_reference_test_code": "    func testInsufficientFunds(): Unit {\n        var account = Account(100)\n        var caught = false\n        try { account.withdraw(101) } catch (_: InsufficientFundsException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 100)\n        account.withdraw(40)\n        @Expect(account.getBalance(), 60)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "failed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A07",
+      "name": "testInvalidAmounts",
+      "types": [
+        "异常与失败后状态",
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "余额100；金额0及-1",
+      "action": "分别存入和取出非法金额",
+      "expected": "均抛参数异常；每次失败后余额保持100",
+      "limit": "未穷举其他负数",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testInvalidAmounts",
+      "cangjie_test": "cangjie/src/account_test.cj#testInvalidAmounts",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account.deposit/withdraw/getBalance",
+      "cangjie_business_methods": "Account.deposit/withdraw/getBalance",
+      "java_test_line": 41,
+      "cangjie_test_line": 64,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "独立创建余额100的账户。",
+        "对金额0和-1，分别检查存款、取款抛参数异常。",
+        "每次失败后都读取余额，要求仍为100。"
+      ],
+      "java_assertions": [
+        "assertThrows(IllegalArgumentException.class, () -> account.deposit(amount))",
+        "assertEquals(100, account.getBalance())",
+        "assertThrows(IllegalArgumentException.class, () -> account.withdraw(amount))",
+        "assertEquals(100, account.getBalance())"
+      ],
+      "java_test_code": "    @Test void testInvalidAmounts() {\n        for (int amount : new int[]{0, -1}) {\n        assertThrows(IllegalArgumentException.class, () -> account.deposit(amount)); assertEquals(100, account.getBalance());\n        assertThrows(IllegalArgumentException.class, () -> account.withdraw(amount)); assertEquals(100, account.getBalance());\n        }\n    }",
+      "cangjie_reference_test_code": "    func testInvalidAmounts(): Unit {\n        var account = Account(100)\n        for (amount in [0, -1]) {\n        var depositCaught = false\n        try { account.deposit(amount) } catch (_: IllegalArgumentException) { depositCaught = true }\n        @Expect(depositCaught, true)\n        @Expect(account.getBalance(), 100)\n        var withdrawCaught = false\n        try { account.withdraw(amount) } catch (_: IllegalArgumentException) { withdrawCaught = true }\n        @Expect(withdrawCaught, true)\n        @Expect(account.getBalance(), 100)\n        }\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A08",
+      "name": "testBalanceLimit",
+      "types": [
+        "异常与失败后状态",
+        "边界与特殊输入",
+        "对象状态与连续操作"
+      ],
+      "origin": "新编样例",
+      "setup": "余额999999",
+      "action": "存1达到上限，再存1",
+      "expected": "第一次余额1000000；第二次参数异常，仍为1000000",
+      "limit": "不测试并发溢出",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testBalanceLimit",
+      "cangjie_test": "cangjie/src/account_test.cj#testBalanceLimit",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account构造方法；deposit/getBalance",
+      "cangjie_business_methods": "Account.init；deposit/getBalance",
+      "java_test_line": 48,
+      "cangjie_test_line": 79,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "创建初始余额999999的账户。",
+        "存1后要求余额1000000。",
+        "再次存1，要求参数异常且余额仍为1000000。"
+      ],
+      "java_assertions": [
+        "assertEquals(1_000_000, account.getBalance())",
+        "assertThrows(IllegalArgumentException.class, () -> account.deposit(1))",
+        "assertEquals(1_000_000, account.getBalance())"
+      ],
+      "java_test_code": "    @Test void testBalanceLimit() {\n        account = new Account(999_999); account.deposit(1); assertEquals(1_000_000, account.getBalance());\n        assertThrows(IllegalArgumentException.class, () -> account.deposit(1)); assertEquals(1_000_000, account.getBalance());\n    }",
+      "cangjie_reference_test_code": "    func testBalanceLimit(): Unit {\n        var account = Account(100)\n        account = Account(999999)\n        account.deposit(1)\n        @Expect(account.getBalance(), 1000000)\n        var caught = false\n        try { account.deposit(1) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 1000000)\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    },
+    {
+      "module": "Account",
+      "id": "A09",
+      "name": "testInvalidInitialBalance",
+      "types": [
+        "异常与失败后状态",
+        "边界与特殊输入"
+      ],
+      "origin": "新编样例",
+      "setup": "初值-1和1000001",
+      "action": "尝试构造账户",
+      "expected": "均抛参数异常；初始化超出闭区间[0,1000000]",
+      "limit": "对象未成功构造",
+      "java_test": "java/src/test/java/study/translation/AccountTest.java#testInvalidInitialBalance",
+      "cangjie_test": "cangjie/src/account_test.cj#testInvalidInitialBalance",
+      "context": [
+        "Account.java",
+        "InsufficientFundsException.java",
+        "account.cj",
+        "AccountTest.setUp",
+        "prepareSequence (A05)"
+      ],
+      "java_status": "passed_normal_and_restored",
+      "mutation_status": "not_targeted_by_this_mutation",
+      "cangjie_status": "passed_with_local_experimental_runtime_fix; official_sdk_startup_blocked",
+      "java_business_methods": "Account构造方法",
+      "cangjie_business_methods": "Account.init",
+      "java_test_line": 53,
+      "cangjie_test_line": 91,
+      "required_files": [
+        "java/src/main/java/study/translation/Account.java",
+        "java/src/main/java/study/translation/InsufficientFundsException.java",
+        "cangjie/src/account.cj",
+        "java/src/test/java/study/translation/AccountTest.java",
+        "cangjie/src/account_test.cj"
+      ],
+      "steps": [
+        "分别尝试以-1和1000001创建账户。",
+        "要求均抛出参数异常，不产生有效账户。"
+      ],
+      "java_assertions": [
+        "assertThrows(IllegalArgumentException.class, () -> new Account(-1))",
+        "assertThrows(IllegalArgumentException.class, () -> new Account(1_000_001))"
+      ],
+      "java_test_code": "    @Test void testInvalidInitialBalance() {\n        assertThrows(IllegalArgumentException.class, () -> new Account(-1)); assertThrows(IllegalArgumentException.class, () -> new Account(1_000_001));\n    }",
+      "cangjie_reference_test_code": "    func testInvalidInitialBalance(): Unit {\n        for (initial in [-1, 1000001]) {\n        var caught = false\n        try { Account(initial) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n        }\n    }",
+      "run_record": "validation/v1.2/results.json",
+      "java_normal": "passed",
+      "java_mutant": "passed",
+      "java_restored": "passed",
+      "cangjie_localfix": "passed"
+    }
+  ]
+}

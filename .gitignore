@@ -1,0 +1,10 @@
+java/target/
+cangjie/build/
+*.exe
+
+# Do not commit SDKs or generated binary files.
+*.dll
+*.a
+*.cjo
+*.zip
+work/
