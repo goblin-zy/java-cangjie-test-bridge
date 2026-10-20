@@ -1,0 +1,53 @@
+{
+  "verified_date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "scope": "local machine; proposed dataset reproduction baseline; group machines not verified",
+  "os": {
+    "name": "Windows 11",
+    "release": "25H2",
+    "build": "26200.9711",
+    "architecture": "x64"
+  },
+  "java": {
+    "vendor": "Microsoft",
+    "jdk": "17.0.13",
+    "build": "17.0.13+11-LTS",
+    "compiler_release": "17",
+    "home": "E:\\jdk17"
+  },
+  "maven": {
+    "version": "3.9.4",
+    "home": "D:\\maven\\apache-maven-3.9.4"
+  },
+  "junit": {
+    "artifact": "org.junit.jupiter:junit-jupiter",
+    "version": "5.13.4"
+  },
+  "maven_plugins": {
+    "maven-compiler-plugin": "3.11.0",
+    "maven-surefire-plugin": "3.5.3"
+  },
+  "cangjie": {
+    "sdk": "1.2.0",
+    "cjpm": "1.2.0",
+    "target": "x86_64-w64-mingw32",
+    "backend": "cjnative",
+    "unittest": "SDK bundled std.unittest and std.unittest.testmacro",
+    "runtime_label": "localfix, nonofficial experimental binary correction",
+    "runtime_sha256": "69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f",
+    "original_runtime_sha256": "3cb25d76976fdd57a729e4734ae6ddc500dd9cd9d6ed06f373c01f127e6a91bb",
+    "sdk_home": "C:\\Users\\14728\\Documents\\Codex\\2026-10-19\\xia\\work\\cangjie-localfix\\cangjie",
+    "build_workflow": "direct cjc --test; CJPM not used for dataset build"
+  },
+  "editor": {
+    "vscode": "1.142.0",
+    "official_cangjie_extension": "IDE-Innovation-Lab.cangjie 0.53.18",
+    "optional_installer": "Curtion.cangjie-install 0.0.5",
+    "ide_sdk_compatibility": "not fully verified; successful command-line workflow is independent of extension"
+  },
+  "evidence": [
+    "java/pom.xml",
+    "validation/environment/version-check.txt",
+    "validation/cangjie-localfix/LOCAL-RUNTIME-FIX.json"
+  ]
+}

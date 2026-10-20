@@ -1,0 +1,6 @@
+
+Algorithm : SHA256
+Hash      : 69BB60978F2A0423B11859915FA2C0D84D5A7165CAF90E49958BA301B7AA0F3F
+Path      : C:\Users\14728\Documents\Codex\2026-10-19\xia\work\cangjie-localfix\cangjie\runtime\lib\windows_x86_64_cjnative\libcangjie-runtime.dll
+
+

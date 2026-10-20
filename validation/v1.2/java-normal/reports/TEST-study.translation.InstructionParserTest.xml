@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="study.translation.InstructionParserTest" time="0.048" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="C:\Users\14728\Documents\Codex\2026-10-19\xia\outputs\java-cangjie-starter\java\target\test-classes;C:\Users\14728\Documents\Codex\2026-10-19\xia\outputs\java-cangjie-starter\java\target\classes;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter\5.13.4\junit-jupiter-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter-api\5.13.4\junit-jupiter-api-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\platform\junit-platform-commons\1.13.4\junit-platform-commons-1.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter-params\5.13.4\junit-jupiter-params-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter-engine\5.13.4\junit-jupiter-engine-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\platform\junit-platform-engine\1.13.4\junit-platform-engine-1.13.4.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="E:\jdk17\bin"/>
+    <property name="sun.java.command" value="C:\Users\14728\AppData\Local\Temp\surefire7536249539310678130\surefirebooter-20261020152031639_3.jar C:\Users\14728\AppData\Local\Temp\surefire7536249539310678130 2026-10-20T15-20-31_343-jvmRun1 surefire-20261020152031639_1tmp surefire_0-20261020152031639_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\14728\Documents\Codex\2026-10-19\xia\outputs\java-cangjie-starter\java\target\test-classes;C:\Users\14728\Documents\Codex\2026-10-19\xia\outputs\java-cangjie-starter\java\target\classes;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter\5.13.4\junit-jupiter-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter-api\5.13.4\junit-jupiter-api-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\platform\junit-platform-commons\1.13.4\junit-platform-commons-1.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter-params\5.13.4\junit-jupiter-params-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\jupiter\junit-jupiter-engine\5.13.4\junit-jupiter-engine-5.13.4.jar;D:\maven\apache-maven-3.9.4\mvn_repo\org\junit\platform\junit-platform-engine\1.13.4\junit-platform-engine-1.13.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\14728"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="E:\jdk17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\14728\Documents\Codex\2026-10-19\xia\outputs\java-cangjie-starter\java"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\14728\AppData\Local\Temp\surefire7536249539310678130\surefirebooter-20261020152031639_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.13+11-LTS"/>
+    <property name="user.name" value="14728"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-10376486"/>
+    <property name="localRepository" value="D:\maven\apache-maven-3.9.4\mvn_repo"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\14728\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.13"/>
+    <property name="user.dir" value="C:\Users\14728\Documents\Codex\2026-10-19\xia\outputs\java-cangjie-starter\java"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\jdk17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\jdk17\bin;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\14728\.codex\tmp\arg0-windows\codex-arg0eDoufB;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;E:\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;?E:\java\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\dotnet\;E:\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\cursor\resources\app\bin;D:\maven\apache-maven-3.9.4\bin;D:\MYSQL\mysql-8.0.34-winx64\bin;D:\GO\bin;D:\14728\;D:\Git\cmd;C:\Users\14728\.local\bin;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\14728\AppData\Local\Microsoft\WindowsApps;D:\VScode\bin\MinGW\bin;D:\VSCode\bin\Microsoft VS Code\bin;C:\Users\14728\.dotnet\tools;E:\datagrip\DataGrip 2026.1\bin;C:\Users\14728\go\bin;C:\Users\14728\AppData\Local\Python\bin;E:\Qoder\bin;C:\Users\14728\AppData\Roaming\npm;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;C:\Users\14728\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd;C:\Users\14728\AppData\Local\OpenAI\Codex\bin\ce4759538b7f2f1a;C:\Users\14728\AppData\Local\OpenAI\Codex\bin\896a0166b774037a;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="17.0.13+11-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testOutOfRange" classname="study.translation.InstructionParserTest" time="0.004"/>
+  <testcase name="testSignedNumbers" classname="study.translation.InstructionParserTest" time="0.004"/>
+  <testcase name="testInt32Boundaries" classname="study.translation.InstructionParserTest" time="0.003"/>
+  <testcase name="testEmpty" classname="study.translation.InstructionParserTest" time="0.001"/>
+  <testcase name="testInvalidTokens" classname="study.translation.InstructionParserTest" time="0.001"/>
+  <testcase name="testNamedInstructions" classname="study.translation.InstructionParserTest" time="0.003"/>
+  <testcase name="testNullInput" classname="study.translation.InstructionParserTest" time="0.003"/>
+  <testcase name="testSpaces" classname="study.translation.InstructionParserTest" time="0.006"/>
+  <testcase name="testRepeatedSpaces" classname="study.translation.InstructionParserTest" time="0.002"/>
+</testsuite>

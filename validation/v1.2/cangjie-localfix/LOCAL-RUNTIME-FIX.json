@@ -1,0 +1,24 @@
+{
+  "type": "local experimental binary correction; not an official SDK release",
+  "base_sdk": "1.2.0 Windows x64",
+  "original_sha256": "3cb25d76976fdd57a729e4734ae6ddc500dd9cd9d6ed06f373c01f127e6a91bb",
+  "modified_sha256": "69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f",
+  "file": "runtime\\lib\\windows_x86_64_cjnative\\libcangjie-runtime.dll",
+  "changes": [
+    {
+      "rva": "0x1d908",
+      "old": "8b",
+      "new": "8d",
+      "purpose": "retain loader list sentinel"
+    },
+    {
+      "rva": "0x1d92b",
+      "old": "11",
+      "new": "04",
+      "purpose": "advance and check sentinel before reading module fields"
+    }
+  ],
+  "scope": "Only isolated copy under work/cangjie-localfix. Original SDK and Windows DLLs unchanged.",
+  "source_semantics": "head=&ppeb->Ldr->InMemoryOrderModuleList; for (iterator=head->Flink; iterator!=head; iterator=iterator->Flink) { existing body }",
+  "warning": "Version string remains 1.2.0; modified runtime checksum and localfix label must accompany all experimental results."
+}

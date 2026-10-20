@@ -1,0 +1,20 @@
+Verified at: 2026-10-20T15:04:36.8939513+08:00
+Scope: this machine; not all group members
+openjdk version "17.0.13" 2024-10-15 LTS
+OpenJDK Runtime Environment Microsoft-10376486 (build 17.0.13+11-LTS)
+OpenJDK 64-Bit Server VM Microsoft-10376486 (build 17.0.13+11-LTS, mixed mode, sharing)
+javac 17.0.13
+Apache Maven 3.9.4 (dfbb324ad4a7c8fb0bf182e6d91b0ae20e3d2dd9)
+Maven home: D:\maven\apache-maven-3.9.4
+Java version: 17.0.13, vendor: Microsoft, runtime: E:\jdk17
+Default locale: zh_CN, platform encoding: GBK
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+Cangjie Compiler: 1.2.0 (cjnative)
+Target: x86_64-w64-mingw32
+Cangjie Project Manager: 1.2.0
+
+Algorithm : SHA256
+Hash      : 69BB60978F2A0423B11859915FA2C0D84D5A7165CAF90E49958BA301B7AA0F3F
+Path      : C:\Users\14728\Documents\Codex\2026-10-19\xia\work\cangjie-localfix\cangjie\runtime\lib\windows_x86_64_cjnative\libcangjie-runtime.dll
+
+
