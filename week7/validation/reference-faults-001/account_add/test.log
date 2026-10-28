@@ -1,0 +1,64 @@
+[?25l[0J7[;r8
+
+
+
+[4F7[9999E[3F📦 group starter                      91% [90m[[0m[32m[0m[32m|[0m[31m|[0m[31m|[0m[31m|[0m[31m|[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[90m--[0m[90m][0m [31m✗   [0m (00:00:00)
+🧪 test RectangleTest.testPointRectangle                              (00:00:00)
+   [31mFAIL[0m starter.AccountTest.testInsufficientFunds       
+passed: [32m18[0m, failed: [31m4[0m                91% [90m[[0m[32m[0m[32m|[0m[31m|[0m[31m|[0m[31m|[0m[31m|[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[90m--[0m[90m][0m 22/24 (00:00:00) 8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mstarter[0m, time elapsed: 1551600 ns, RESULT:
+    TCS: [33mAccountTest[0m, time elapsed: 914400 ns, RESULT:
+    [[32m PASSED [0m] CASE: testInitialBalance (199200 ns)
+    [[32m PASSED [0m] CASE: testDeposit (9200 ns)
+    [[32m PASSED [0m] CASE: testInvalidAmounts (69900 ns)
+    [[32m PASSED [0m] CASE: testBalanceLimit (14900 ns)
+    [[32m PASSED [0m] CASE: testInvalidInitialBalance (21100 ns)
+    [[31m FAILED [0m] CASE: testWithdraw (46000 ns)
+    Expect Failed: `([33maccount.getBalance()[0m == [33m70[0m)`
+       left: 130
+      right: 70
+
+    [[31m FAILED [0m] CASE: testWithdrawAll (14500 ns)
+    Expect Failed: `([33maccount.getBalance()[0m == [33m0[0m)`
+       left: 200
+      right: 0
+
+    [[31m FAILED [0m] CASE: testSequence (6800 ns)
+    Expect Failed: `([33maccount.getBalance()[0m == [33m130[0m)`
+       left: 170
+      right: 130
+
+    Expect Failed: `([33maccount.getBalance()[0m == [33m120[0m)`
+       left: 180
+      right: 120
+
+    [[31m FAILED [0m] CASE: testInsufficientFunds (111800 ns)
+    Expect Failed: `([33maccount.getBalance()[0m == [33m60[0m)`
+       left: 140
+      right: 60
+
+    TCS: [33mInstructionParserTest[0m, time elapsed: 430600 ns, RESULT:
+    [[32m PASSED [0m] CASE: testEmpty (38800 ns)
+    [[32m PASSED [0m] CASE: testSpaces (7800 ns)
+    [[32m PASSED [0m] CASE: testNamedInstructions (16400 ns)
+    [[32m PASSED [0m] CASE: testSignedNumbers (14900 ns)
+    [[32m PASSED [0m] CASE: testRepeatedSpaces (8400 ns)
+    [[32m PASSED [0m] CASE: testInt32Boundaries (8000 ns)
+    [[32m PASSED [0m] CASE: testInvalidTokens (64800 ns)
+    [[32m PASSED [0m] CASE: testOutOfRange (28400 ns)
+    [[32m PASSED [0m] CASE: testNullInput (29300 ns)
+    TCS: [33mRectangleTest[0m, time elapsed: 189900 ns, RESULT:
+    [[32m PASSED [0m] CASE: testConstructor (15600 ns)
+    [[32m PASSED [0m] CASE: testToString (9000 ns)
+    [[32m PASSED [0m] CASE: testIntersection (9400 ns)
+    [[32m PASSED [0m] CASE: testTouchingEdge (14800 ns)
+    [[32m PASSED [0m] CASE: testPointRectangle (5800 ns)
+    [[32m PASSED [0m] CASE: testInvalidCoordinates (29000 ns)
+Summary: TOTAL: 24
+    [32mPASSED[0m: 20, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 4, listed below:
+            TCS: [33mAccountTest[0m, CASE: testWithdraw
+            TCS: [33mAccountTest[0m, CASE: testWithdrawAll
+            TCS: [33mAccountTest[0m, CASE: testSequence
+            TCS: [33mAccountTest[0m, CASE: testInsufficientFunds
+--------------------------------------------------------------------------------------------------

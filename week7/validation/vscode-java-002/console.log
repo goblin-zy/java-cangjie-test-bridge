@@ -1,0 +1,60 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< study.week7:week7-skeleton-reference >----------------
+[INFO] Building week7-skeleton-reference 1.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Artifact com.google.code.gson:gson:pom:2.9.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [aliyun (https://maven.aliyun.com/repository/public, default, releases)]
+[INFO] Artifact com.google.code.gson:gson:pom:2.9.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [aliyun (https://maven.aliyun.com/repository/public, default, releases)]
+[INFO] Artifact com.google.code.gson:gson-parent:pom:2.9.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [aliyun (https://maven.aliyun.com/repository/public, default, releases)]
+[INFO] Artifact com.google.code.gson:gson-parent:pom:2.9.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [aliyun (https://maven.aliyun.com/repository/public, default, releases)]
+[INFO] Artifact com.google.code.gson:gson:jar:2.9.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [aliyun (https://maven.aliyun.com/repository/public, default, releases)]
+[INFO] Artifact com.google.code.gson:gson:jar:2.9.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [aliyun (https://maven.aliyun.com/repository/public, default, releases)]
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ week7-skeleton-reference ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ week7-skeleton-reference ---
+[INFO] skip non existing resourceDirectory D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ week7-skeleton-reference ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 5 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ week7-skeleton-reference ---
+[INFO] skip non existing resourceDirectory D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ week7-skeleton-reference ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ week7-skeleton-reference ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running JavaTestSkeletonExtractorTest
+提取结果：D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\generated\vscode-tests\structures-8b215768-575a-429b-8d4a-ae789adf0502
+提取结果：D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\generated\vscode-tests\roundtrip-a2c723fd-f797-4514-abcb-87058f5e05f3
+提取结果：D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\generated\vscode-tests\invalid-2f633dfe-faad-43a3-8c3e-d4bad0b7c1c7
+提取结果：D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\generated\vscode-tests\protected-317b3a92-a972-4bf2-83c7-3f7369e7a192
+提取结果：D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\generated\vscode-tests\directory-55329920-b584-4720-84c7-40f0303150fd
+提取结果：D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\generated\vscode-tests\single-f47b018c-c7c9-467d-b7f9-daf3350f30d4
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.677 s -- in JavaTestSkeletonExtractorTest
+[INFO] Running study.translation.AccountTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s -- in study.translation.AccountTest
+[INFO] Running study.translation.InstructionParserTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in study.translation.InstructionParserTest
+[INFO] Running study.translation.RectangleTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.020 s -- in study.translation.RectangleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.445 s
+[INFO] Finished at: 2026-10-27T09:11:47+08:00
+[INFO] ------------------------------------------------------------------------

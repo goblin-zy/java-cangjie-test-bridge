@@ -1,0 +1,289 @@
+{
+  "material": "week7-skeleton-reference",
+  "version": "1.1.0",
+  "date": "2026-10-27",
+  "skeleton": {
+    "files": 3,
+    "classes": 3,
+    "members": 27,
+    "roles": {
+      "field": 1,
+      "helper": 1,
+      "lifecycle_BeforeEach": 1,
+      "test": 24
+    },
+    "acceptance": "validation/extractor-003/acceptance.json",
+    "structural_fixture_files": 4,
+    "structural_fixture_members": 19,
+    "byte_exact_restore": true,
+    "typed_skeleton_compilation": true
+  },
+  "java_baseline": {
+    "total": 24,
+    "passed": 24,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "reference_cangjie": {
+    "total": 24,
+    "passed": 24,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "runtime_label": "localfix (nonofficial experimental runtime)",
+    "runtime_sha256": "69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f"
+  },
+  "fault_checks": [
+    {
+      "id": "account_add",
+      "file": "account.cj",
+      "meaning": "取款错误地增加余额",
+      "trigger": "余额100时取30或取100；连续操作和失败后合法取款",
+      "predicted_related_tests": [
+        "A03",
+        "A04",
+        "A05",
+        "A06"
+      ],
+      "actual_failed_tests": [
+        "A03",
+        "A04",
+        "A05",
+        "A06"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "passed": 20,
+      "failed": 4,
+      "error": 0,
+      "skipped": 0,
+      "result_file": "validation/reference-faults-001/account_add/results.json"
+    },
+    {
+      "id": "rectangle_touch",
+      "file": "rectangle.cj",
+      "meaning": "共享边被错误判为完全分离",
+      "trigger": "(0,0,1,1)与(1,0,2,1)",
+      "predicted_related_tests": [
+        "R04"
+      ],
+      "actual_failed_tests": [
+        "R04"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "passed": 23,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0,
+      "result_file": "validation/reference-faults-001/rectangle_touch/results.json"
+    },
+    {
+      "id": "parser_inc",
+      "file": "instruction_parser.cj",
+      "meaning": "INC错误映射成2",
+      "trigger": "ZERO INC DEC或INC 35 DEC",
+      "predicted_related_tests": [
+        "P03",
+        "P05"
+      ],
+      "actual_failed_tests": [
+        "P03",
+        "P05"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "passed": 22,
+      "failed": 2,
+      "error": 0,
+      "skipped": 0,
+      "result_file": "validation/reference-faults-001/parser_inc/results.json"
+    },
+    {
+      "id": "account_failed_state",
+      "file": "account.cj",
+      "meaning": "余额不足时仍错误扣除1个单位",
+      "trigger": "余额100时尝试取101，随后合法取40",
+      "predicted_related_tests": [
+        "A06"
+      ],
+      "actual_failed_tests": [
+        "A06"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "passed": 23,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0,
+      "result_file": "validation/reference-faults-001/account_failed_state/results.json"
+    }
+  ],
+  "limitations": "limited syntax and selected scenarios; nonofficial localfix; not model translation output",
+  "unified_java_project": {
+    "version": "1.1.0",
+    "layout": "single Maven Java project; VS Code Run Test enabled",
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "extractor_tests": 6,
+    "business_tests": 24,
+    "gui_click_verification": "not completed: VS Code window minimized; CUA could not restore it",
+    "execution_verification": "same JUnit classes executed successfully via Maven",
+    "cases": [
+      {
+        "class": "JavaTestSkeletonExtractorTest",
+        "method": "preservesOverloadsAndConstructorDelegation",
+        "status": "passed"
+      },
+      {
+        "class": "JavaTestSkeletonExtractorTest",
+        "method": "restoresOriginalSourceExactly",
+        "status": "passed"
+      },
+      {
+        "class": "JavaTestSkeletonExtractorTest",
+        "method": "reportsBrokenJavaSyntax",
+        "status": "passed"
+      },
+      {
+        "class": "JavaTestSkeletonExtractorTest",
+        "method": "protectsExistingOutput",
+        "status": "passed"
+      },
+      {
+        "class": "JavaTestSkeletonExtractorTest",
+        "method": "extractsBusinessTestDirectory",
+        "status": "passed"
+      },
+      {
+        "class": "JavaTestSkeletonExtractorTest",
+        "method": "extractsSingleTestFile",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testBalanceLimit",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testInvalidInitialBalance",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testWithdraw",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testInitialBalance",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testInsufficientFunds",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testWithdrawAll",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testDeposit",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testInvalidAmounts",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.AccountTest",
+        "method": "testSequence",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testOutOfRange",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testSignedNumbers",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testInt32Boundaries",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testEmpty",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testInvalidTokens",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testNamedInstructions",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testNullInput",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testSpaces",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.InstructionParserTest",
+        "method": "testRepeatedSpaces",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.RectangleTest",
+        "method": "testToString",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.RectangleTest",
+        "method": "testInvalidCoordinates",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.RectangleTest",
+        "method": "testTouchingEdge",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.RectangleTest",
+        "method": "testIntersection",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.RectangleTest",
+        "method": "testConstructor",
+        "status": "passed"
+      },
+      {
+        "class": "study.translation.RectangleTest",
+        "method": "testPointRectangle",
+        "status": "passed"
+      }
+    ]
+  }
+}

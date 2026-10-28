@@ -1,0 +1,7 @@
+Time: 2026-10-27T08:40:58.7121937+08:00
+Runner: week7 automated reference validation
+Runtime: localfix (nonofficial experimental runtime)
+Runtime SHA256: 69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f
+Command: cjc D:\文档\ChatGPT\一人一事 2\work\reference-mutants-001\parser_inc\account.cj D:\文档\ChatGPT\一人一事 2\work\reference-mutants-001\parser_inc\instruction_parser.cj D:\文档\ChatGPT\一人一事 2\work\reference-mutants-001\parser_inc\rectangle.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\tests\account_test.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\tests\instructionparser_test.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\tests\rectangle_test.cj --test -o D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\validation\reference-faults-001\parser_inc\reference-tests.exe
+Then: D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\validation\reference-faults-001\parser_inc\reference-tests.exe
+SDK installation path omitted; runtime identity recorded above.

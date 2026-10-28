@@ -1,0 +1,49 @@
+[?25l[0J7[;r8
+
+
+
+[4F7[9999E[3F📦 group starter                      20% [90m[[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[90m----------------[0m[90m][0m [32m    [0m (00:00:00)
+🧪 test AccountTest.testInsufficientFunds                             (00:00:00)
+
+passed: [32m5[0m, failed: 0                 20% [90m[[0m[32m[0m[32m|[0m[32m|[0m[32m|[0m[32m|[0m[90m----------------[0m[90m][0m  5/24 (00:00:00) 8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mstarter[0m, time elapsed: 2546800 ns, RESULT:
+    TCS: [33mAccountTest[0m, time elapsed: 1954700 ns, RESULT:
+    [[32m PASSED [0m] CASE: testInitialBalance (427300 ns)
+    [[32m PASSED [0m] CASE: testDeposit (23700 ns)
+    [[32m PASSED [0m] CASE: testWithdraw (13700 ns)
+    [[32m PASSED [0m] CASE: testWithdrawAll (22600 ns)
+    [[32m PASSED [0m] CASE: testSequence (16200 ns)
+    [[32m PASSED [0m] CASE: testInvalidAmounts (117200 ns)
+    [[32m PASSED [0m] CASE: testBalanceLimit (45100 ns)
+    [[32m PASSED [0m] CASE: testInvalidInitialBalance (49700 ns)
+    [[31m FAILED [0m] CASE: testInsufficientFunds (291300 ns)
+    Expect Failed: `([33maccount.getBalance()[0m == [33m100[0m)`
+       left: 99
+      right: 100
+
+    Expect Failed: `([33maccount.getBalance()[0m == [33m60[0m)`
+       left: 59
+      right: 60
+
+    TCS: [33mInstructionParserTest[0m, time elapsed: 392100 ns, RESULT:
+    [[32m PASSED [0m] CASE: testEmpty (50500 ns)
+    [[32m PASSED [0m] CASE: testSpaces (8800 ns)
+    [[32m PASSED [0m] CASE: testNamedInstructions (23100 ns)
+    [[32m PASSED [0m] CASE: testSignedNumbers (19100 ns)
+    [[32m PASSED [0m] CASE: testRepeatedSpaces (8600 ns)
+    [[32m PASSED [0m] CASE: testInt32Boundaries (8100 ns)
+    [[32m PASSED [0m] CASE: testInvalidTokens (69300 ns)
+    [[32m PASSED [0m] CASE: testOutOfRange (31800 ns)
+    [[32m PASSED [0m] CASE: testNullInput (19800 ns)
+    TCS: [33mRectangleTest[0m, time elapsed: 174200 ns, RESULT:
+    [[32m PASSED [0m] CASE: testConstructor (11300 ns)
+    [[32m PASSED [0m] CASE: testToString (10000 ns)
+    [[32m PASSED [0m] CASE: testIntersection (7300 ns)
+    [[32m PASSED [0m] CASE: testTouchingEdge (14100 ns)
+    [[32m PASSED [0m] CASE: testPointRectangle (6000 ns)
+    [[32m PASSED [0m] CASE: testInvalidCoordinates (23800 ns)
+Summary: TOTAL: 24
+    [32mPASSED[0m: 23, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 1, listed below:
+            TCS: [33mAccountTest[0m, CASE: testInsufficientFunds
+--------------------------------------------------------------------------------------------------

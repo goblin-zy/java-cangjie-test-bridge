@@ -1,0 +1,159 @@
+﻿{
+    "runtime_label":  "localfix (nonofficial experimental runtime)",
+    "runtime_sha256":  "69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f",
+    "compile_exit":  0,
+    "run_exit":  0,
+    "expected":  24,
+    "discovered_in_final_report":  24,
+    "passed":  24,
+    "failed":  0,
+    "error":  0,
+    "skipped":  0,
+    "not_executed":  0,
+    "cases":  [
+                  {
+                      "id":  "R01",
+                      "suite":  "RectangleTest",
+                      "method":  "testConstructor",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "R02",
+                      "suite":  "RectangleTest",
+                      "method":  "testToString",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "R03",
+                      "suite":  "RectangleTest",
+                      "method":  "testIntersection",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "R04",
+                      "suite":  "RectangleTest",
+                      "method":  "testTouchingEdge",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "R05",
+                      "suite":  "RectangleTest",
+                      "method":  "testPointRectangle",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "R06",
+                      "suite":  "RectangleTest",
+                      "method":  "testInvalidCoordinates",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P01",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testEmpty",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P02",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testSpaces",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P03",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testNamedInstructions",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P04",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testSignedNumbers",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P05",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testRepeatedSpaces",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P06",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testInt32Boundaries",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P07",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testInvalidTokens",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P08",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testOutOfRange",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "P09",
+                      "suite":  "InstructionParserTest",
+                      "method":  "testNullInput",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A01",
+                      "suite":  "AccountTest",
+                      "method":  "testInitialBalance",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A02",
+                      "suite":  "AccountTest",
+                      "method":  "testDeposit",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A03",
+                      "suite":  "AccountTest",
+                      "method":  "testWithdraw",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A04",
+                      "suite":  "AccountTest",
+                      "method":  "testWithdrawAll",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A05",
+                      "suite":  "AccountTest",
+                      "method":  "testSequence",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A06",
+                      "suite":  "AccountTest",
+                      "method":  "testInsufficientFunds",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A07",
+                      "suite":  "AccountTest",
+                      "method":  "testInvalidAmounts",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A08",
+                      "suite":  "AccountTest",
+                      "method":  "testBalanceLimit",
+                      "status":  "passed"
+                  },
+                  {
+                      "id":  "A09",
+                      "suite":  "AccountTest",
+                      "method":  "testInvalidInitialBalance",
+                      "status":  "passed"
+                  }
+              ]
+}
