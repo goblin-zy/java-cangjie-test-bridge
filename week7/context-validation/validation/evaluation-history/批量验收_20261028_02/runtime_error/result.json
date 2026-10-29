@@ -1,0 +1,132 @@
+{
+  "schema_version": "cangjie-execution-v1",
+  "combination_id": "runtime_error",
+  "business_role": "diagnostic",
+  "started_at": "2026-10-28T16:13:05.663880+08:00",
+  "status": "TEST_ERROR",
+  "compile_status": "PASSED",
+  "expected_count": 1,
+  "discovered_count": 1,
+  "executed_count": 1,
+  "passed_count": 0,
+  "failed_count": 0,
+  "error_count": 1,
+  "skipped_count": 0,
+  "compile_exit_code": 0,
+  "discovery_exit_code": 0,
+  "run_exit_code": 1,
+  "expected_execution_ratio": 1.0,
+  "pass_rate_executed": 0.0,
+  "expected_pass_ratio": 0.0,
+  "missing_expected": [],
+  "not_executed_expected": [],
+  "unexpected_executed": [],
+  "stages": {
+    "compile": {
+      "started_at": "2026-10-28T16:13:05.670024+08:00",
+      "finished_at": "2026-10-28T16:13:06.387983+08:00",
+      "duration_seconds": 0.719,
+      "argv": [
+        "E:\\cangjie\\bin\\cjc.exe",
+        "--test",
+        "E:\\cj_projects\\cj_exec_gx0nfim8\\src\\0000_calc.cj",
+        "E:\\cj_projects\\cj_exec_gx0nfim8\\src\\0001_error_test.cj",
+        "-o",
+        "E:\\cj_projects\\cj_exec_gx0nfim8\\tests.exe"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_gx0nfim8",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "compile.stdout.log",
+        "stderr": "compile.stderr.log",
+        "readable": "compile.log"
+      }
+    },
+    "discovery": {
+      "started_at": "2026-10-28T16:13:06.390012+08:00",
+      "finished_at": "2026-10-28T16:13:06.918911+08:00",
+      "duration_seconds": 0.531,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_gx0nfim8\\tests.exe",
+        "--dry-run",
+        "--no-color",
+        "--no-progress"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_gx0nfim8",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "discovery.stdout.log",
+        "stderr": "discovery.stderr.log",
+        "readable": "discovery.log"
+      }
+    },
+    "run": {
+      "started_at": "2026-10-28T16:13:06.920905+08:00",
+      "finished_at": "2026-10-28T16:13:07.138335+08:00",
+      "duration_seconds": 0.219,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_gx0nfim8\\tests.exe",
+        "--no-color",
+        "--no-progress",
+        "--report-format=xml",
+        "--report-path=E:\\cj_projects\\cj_exec_gx0nfim8\\xml"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_gx0nfim8",
+      "exit_code": 1,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "run.stdout.log",
+        "stderr": "run.stderr.log",
+        "readable": "run.log"
+      }
+    }
+  },
+  "sources": [
+    {
+      "role": "business",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+      "snapshot": "source/0000_calc.cj",
+      "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+    },
+    {
+      "role": "tests",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\error_test.cj",
+      "snapshot": "source/0001_error_test.cj",
+      "sha256": "c55f42e7aa0c8e1f13d210cba24a7e1fc4e0ef43790f8666072b2344b6aa065a"
+    }
+  ],
+  "source_integrity": true,
+  "limitations": [
+    "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+  ],
+  "expectation_mode": "names",
+  "expected_tests": [
+    "ErrorTests#unexpectedException()"
+  ],
+  "working_directory": "E:\\cj_projects\\cj_exec_gx0nfim8",
+  "run_options": [],
+  "compile_options": [],
+  "discovered_tests": [
+    "runner_probe.ErrorTests#unexpectedException()"
+  ],
+  "unidentified_discovery_skips": 0,
+  "discovery_identity_complete": true,
+  "resolved_expected_tests": [
+    "runner_probe.ErrorTests#unexpectedException()"
+  ],
+  "unresolved_expected_in_discovery": [],
+  "report_source": "xml_with_console_cross_check",
+  "cases": {
+    "runner_probe.ErrorTests#unexpectedException()": "ERROR"
+  },
+  "unidentified_run_skips": 0,
+  "run_identity_complete": true,
+  "unresolved_expected_after_run": [],
+  "message": "测试用例发生未预期运行异常",
+  "finished_at": "2026-10-28T16:13:07.147687+08:00"
+}

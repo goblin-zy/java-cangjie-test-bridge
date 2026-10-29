@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="starter.AccountTest" tests="9" failures="0" errors="0" skipped="0" time="0.000719" timestamp="2026-10-29T21:11:23.2038245+08:00">
+	<testcase name="testInitialBalance" classname="starter.AccountTest" assertions="3" time="0.000199"/>
+	<testcase name="testDeposit" classname="starter.AccountTest" assertions="1" time="0.000005"/>
+	<testcase name="testWithdraw" classname="starter.AccountTest" assertions="1" time="0.000005"/>
+	<testcase name="testWithdrawAll" classname="starter.AccountTest" assertions="1" time="0.000004"/>
+	<testcase name="testSequence" classname="starter.AccountTest" assertions="3" time="0.000006"/>
+	<testcase name="testInsufficientFunds" classname="starter.AccountTest" assertions="3" time="0.000077"/>
+	<testcase name="testInvalidAmounts" classname="starter.AccountTest" assertions="8" time="0.000044"/>
+	<testcase name="testBalanceLimit" classname="starter.AccountTest" assertions="3" time="0.000010"/>
+	<testcase name="testInvalidInitialBalance" classname="starter.AccountTest" assertions="2" time="0.000015"/>
+</testsuite>

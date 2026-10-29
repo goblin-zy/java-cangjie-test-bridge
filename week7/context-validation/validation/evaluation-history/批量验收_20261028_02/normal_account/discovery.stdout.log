@@ -1,0 +1,7 @@
+--------------------------------------------------------------------------------------------------
+TP: context_workflow_case, RESULT:
+    TCS: AccountTest, RESULT:
+    [ NORUN  ] CASE: normalWithdrawal
+    [ NORUN  ] CASE: insufficientFunds
+Summary: TOTAL: 2, SKIPPED: 0
+--------------------------------------------------------------------------------------------------

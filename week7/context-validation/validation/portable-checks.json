@@ -1,0 +1,686 @@
+{
+  "owner": "蒋逸舟",
+  "all_passed": true,
+  "passed": 169,
+  "total": 169,
+  "checks": [
+    {
+      "check": "current_repository_three_contexts",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.AccountTest#testWithdraw()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.AccountTest#testWithdraw()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.AccountTest#testWithdraw()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:source:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:content:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_01.json:markdown:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.AccountTest#testSequence()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.AccountTest#testSequence()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.AccountTest#testSequence()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.AccountTest#prepareSequence()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.AccountTest#prepareSequence()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.AccountTest#prepareSequence()",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:source:study.translation.Account#deposit(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:content:study.translation.Account#deposit(int)",
+      "passed": true
+    },
+    {
+      "check": "context_02.json:markdown:study.translation.Account#deposit(int)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.AccountTest#testInsufficientFunds()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.AccountTest#testInsufficientFunds()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.AccountTest#testInsufficientFunds()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.AccountTest",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.AccountTest#field:account",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.AccountTest#setUp()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.Account#<init>(int)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.Account#field:balance",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.Account#field:MAX_BALANCE",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.Account#withdraw(int)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.Account#getBalance()",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:source:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:content:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "context_03.json:markdown:study.translation.InsufficientFundsException#<init>(String)",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv_count",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:normal_account",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:normal_account",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:assertion_failure",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:assertion_failure",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_account_wrong.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:runtime_error",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:runtime_error",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_calc.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_error_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:compile_failure",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:compile_failure",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_calc.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_bad_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:no_tests",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:no_tests",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_calc.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_empty_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:skipped",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:skipped",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_calc.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_skip_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:partial_filter",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:partial_filter",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:all_filtered",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:all_filtered",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:wrong_expected_name",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:wrong_expected_name",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:missing_source",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:missing_source",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:count_only",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:count_only",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:another_sample",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:another_sample",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_calc.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_sum_test.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:json:timeout",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:csv:timeout",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0000_calc.cj",
+      "passed": true
+    },
+    {
+      "check": "批量验收_20261028_02:snapshot:source/0001_timeout_test.cj",
+      "passed": true
+    },
+    {
+      "check": "单组运行_20261028_01:csv_count",
+      "passed": true
+    },
+    {
+      "check": "单组运行_20261028_01:json:normal_account",
+      "passed": true
+    },
+    {
+      "check": "单组运行_20261028_01:csv:normal_account",
+      "passed": true
+    },
+    {
+      "check": "单组运行_20261028_01:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "单组运行_20261028_01:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "环境失败_20261028_01:csv_count",
+      "passed": true
+    },
+    {
+      "check": "环境失败_20261028_01:json:environment_missing",
+      "passed": true
+    },
+    {
+      "check": "环境失败_20261028_01:csv:environment_missing",
+      "passed": true
+    },
+    {
+      "check": "数量不符_20261028_01:csv_count",
+      "passed": true
+    },
+    {
+      "check": "数量不符_20261028_01:json:count_mismatch",
+      "passed": true
+    },
+    {
+      "check": "数量不符_20261028_01:csv:count_mismatch",
+      "passed": true
+    },
+    {
+      "check": "数量不符_20261028_01:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "数量不符_20261028_01:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "execution:csv_count",
+      "passed": true
+    },
+    {
+      "check": "execution:json:repository_account_reference",
+      "passed": true
+    },
+    {
+      "check": "execution:csv:repository_account_reference",
+      "passed": true
+    },
+    {
+      "check": "execution:snapshot:source/0000_account.cj",
+      "passed": true
+    },
+    {
+      "check": "execution:snapshot:source/0001_account_test.cj",
+      "passed": true
+    },
+    {
+      "check": "history_13_scenario_classifications",
+      "passed": true
+    },
+    {
+      "check": "repository_account_9_of_9",
+      "passed": true
+    },
+    {
+      "check": "localfix_runtime_matches_upstream_disclosure",
+      "passed": true
+    }
+  ],
+  "scope": "portable saved evidence verification; no new test execution and no proof of semantic equivalence",
+  "human_review": "PENDING"
+}

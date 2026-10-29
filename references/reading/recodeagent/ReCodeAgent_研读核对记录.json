@@ -1,0 +1,33 @@
+{
+  "paper": "ReCodeAgent arXiv:2604.07341v4",
+  "code_commit": "3a61479e718e8464e60e5bbb8bde0368279ae42f",
+  "downloaded_files": 28,
+  "python_files_statically_parsed": [
+    "src/run.py",
+    "src/agents/recodeagent/agent.py",
+    "src/agents/recodeagent/prompt_generator.py",
+    "src/agents/recodeagent/analyzer/agent.py",
+    "src/agents/recodeagent/planning/agent.py",
+    "src/agents/recodeagent/translator/agent.py",
+    "src/agents/recodeagent/validator/agent.py",
+    "src/mcp/mcp_project_analyzer/project_analyzer.py",
+    "src/analysis/compare_tests.py",
+    "src/analysis/ablation.py",
+    "src/analysis/cost.py",
+    "src/utils/model_utils.py",
+    "src/utils/cmd_utils.py",
+    "docker-env/generate_agent_config.py"
+  ],
+  "source_hash_checks": "PASS",
+  "local_document_links": "PASS",
+  "week7_structure": [
+    "研究目标与具体例子",
+    "流程图",
+    "模块与代码对应",
+    "实验思路与指标解释",
+    "具体做法到环节及适配条件的借鉴表"
+  ],
+  "upstream_execution": "NOT_RUN",
+  "actual_tool_or_model_calls_for_paper": "未启动作者智能体或MCP服务；仅下载、阅读及静态定位",
+  "notes": "Python语法解析不执行模块；文件哈希与链接核对不等于论文实验复现。"
+}

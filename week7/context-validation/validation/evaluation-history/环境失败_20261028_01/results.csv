@@ -1,0 +1,2 @@
+﻿combination_id,business_role,status,compile_status,expected_count,discovered_count,executed_count,passed_count,failed_count,error_count,skipped_count,compile_exit_code,discovery_exit_code,run_exit_code,expected_execution_ratio,pass_rate_executed,expected_pass_ratio
+environment_missing,diagnostic,ENVIRONMENT_ERROR,NOT_RUN,2,,,,,,,,,,,,

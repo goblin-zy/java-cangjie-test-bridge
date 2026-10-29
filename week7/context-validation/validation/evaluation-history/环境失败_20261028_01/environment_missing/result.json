@@ -1,0 +1,32 @@
+{
+  "expected_count": 2,
+  "discovered_count": null,
+  "executed_count": null,
+  "passed_count": null,
+  "failed_count": null,
+  "error_count": null,
+  "skipped_count": null,
+  "compile_exit_code": null,
+  "discovery_exit_code": null,
+  "run_exit_code": null,
+  "expected_execution_ratio": null,
+  "pass_rate_executed": null,
+  "expected_pass_ratio": null,
+  "schema_version": "cangjie-execution-v1",
+  "combination_id": "environment_missing",
+  "business_role": "diagnostic",
+  "status": "ENVIRONMENT_ERROR",
+  "compile_status": "NOT_RUN",
+  "message": "SDK目录缺少envsetup.bat或bin/cjc.exe",
+  "started_at": "2026-10-28T16:16:55.231000+08:00",
+  "finished_at": "2026-10-28T16:16:55.231000+08:00",
+  "stages": {},
+  "sources": [],
+  "source_integrity": null,
+  "missing_expected": [],
+  "not_executed_expected": [],
+  "unexpected_executed": [],
+  "limitations": [
+    "环境准备失败，未收集或编译输入代码。"
+  ]
+}

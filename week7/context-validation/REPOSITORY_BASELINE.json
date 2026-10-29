@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/goblin-zy/java-cangjie-test-bridge",
+  "commit": "aca23e6643a963abfbe0ce72e40faeb31ef483c0",
+  "reviewed_date": "2026-10-29",
+  "owner": "蒋逸舟",
+  "work_scope": [
+    "翻译方法：上下文查找工具",
+    "初步验证方法：可执行性评价"
+  ],
+  "human_review": "PENDING",
+  "reference_reading_location": "references/reading/recodeagent"
+}

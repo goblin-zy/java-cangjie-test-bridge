@@ -1,0 +1,142 @@
+{
+  "schema_version": "cangjie-execution-v1",
+  "combination_id": "all_filtered",
+  "business_role": "diagnostic",
+  "started_at": "2026-10-28T16:13:12.018901+08:00",
+  "status": "ZERO_TESTS_EXECUTED",
+  "compile_status": "PASSED",
+  "expected_count": 2,
+  "discovered_count": 2,
+  "executed_count": 0,
+  "passed_count": 0,
+  "failed_count": 0,
+  "error_count": 0,
+  "skipped_count": 2,
+  "compile_exit_code": 0,
+  "discovery_exit_code": 0,
+  "run_exit_code": 0,
+  "expected_execution_ratio": 0.0,
+  "pass_rate_executed": null,
+  "expected_pass_ratio": 0.0,
+  "missing_expected": [],
+  "not_executed_expected": [
+    "context_workflow_case.AccountTest#insufficientFunds()",
+    "context_workflow_case.AccountTest#normalWithdrawal()"
+  ],
+  "unexpected_executed": [],
+  "stages": {
+    "compile": {
+      "started_at": "2026-10-28T16:13:12.023444+08:00",
+      "finished_at": "2026-10-28T16:13:12.758657+08:00",
+      "duration_seconds": 0.734,
+      "argv": [
+        "E:\\cangjie\\bin\\cjc.exe",
+        "--test",
+        "E:\\cj_projects\\cj_exec_yguzmcnr\\src\\0000_account.cj",
+        "E:\\cj_projects\\cj_exec_yguzmcnr\\src\\0001_account_test.cj",
+        "-o",
+        "E:\\cj_projects\\cj_exec_yguzmcnr\\tests.exe"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_yguzmcnr",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "compile.stdout.log",
+        "stderr": "compile.stderr.log",
+        "readable": "compile.log"
+      }
+    },
+    "discovery": {
+      "started_at": "2026-10-28T16:13:12.760661+08:00",
+      "finished_at": "2026-10-28T16:13:13.350952+08:00",
+      "duration_seconds": 0.578,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_yguzmcnr\\tests.exe",
+        "--dry-run",
+        "--no-color",
+        "--no-progress"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_yguzmcnr",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "discovery.stdout.log",
+        "stderr": "discovery.stderr.log",
+        "readable": "discovery.log"
+      }
+    },
+    "run": {
+      "started_at": "2026-10-28T16:13:13.353943+08:00",
+      "finished_at": "2026-10-28T16:13:13.617666+08:00",
+      "duration_seconds": 0.25,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_yguzmcnr\\tests.exe",
+        "--no-color",
+        "--no-progress",
+        "--report-format=xml",
+        "--report-path=E:\\cj_projects\\cj_exec_yguzmcnr\\xml",
+        "--filter=NothingExists.*"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_yguzmcnr",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "run.stdout.log",
+        "stderr": "run.stderr.log",
+        "readable": "run.log"
+      }
+    }
+  },
+  "sources": [
+    {
+      "role": "business",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account.cj",
+      "snapshot": "source/0000_account.cj",
+      "sha256": "9e2dbea24f844c97192f2f604999e970f5baf2d32bc0393cea7e66e91bfb1435"
+    },
+    {
+      "role": "tests",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+      "snapshot": "source/0001_account_test.cj",
+      "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+    }
+  ],
+  "source_integrity": true,
+  "limitations": [
+    "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+  ],
+  "expectation_mode": "names",
+  "expected_tests": [
+    "AccountTest#normalWithdrawal()",
+    "AccountTest#insufficientFunds()"
+  ],
+  "working_directory": "E:\\cj_projects\\cj_exec_yguzmcnr",
+  "run_options": [
+    "--filter=NothingExists.*"
+  ],
+  "compile_options": [],
+  "discovered_tests": [
+    "context_workflow_case.AccountTest#insufficientFunds()",
+    "context_workflow_case.AccountTest#normalWithdrawal()"
+  ],
+  "unidentified_discovery_skips": 0,
+  "discovery_identity_complete": true,
+  "resolved_expected_tests": [
+    "context_workflow_case.AccountTest#insufficientFunds()",
+    "context_workflow_case.AccountTest#normalWithdrawal()"
+  ],
+  "unresolved_expected_in_discovery": [],
+  "report_source": "xml_with_console_cross_check",
+  "cases": {
+    "context_workflow_case.AccountTest#normalWithdrawal()": "SKIPPED",
+    "context_workflow_case.AccountTest#insufficientFunds()": "SKIPPED"
+  },
+  "unidentified_run_skips": 0,
+  "run_identity_complete": true,
+  "unresolved_expected_after_run": [],
+  "message": "测试全部跳过或被过滤，不能报告通过",
+  "finished_at": "2026-10-28T16:13:13.627712+08:00"
+}

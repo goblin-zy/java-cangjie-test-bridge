@@ -1,0 +1,136 @@
+{
+  "sdk_root": "E:/cangjie",
+  "work_root": "E:/cj_projects",
+  "compile_timeout": 120,
+  "discovery_timeout": 30,
+  "run_timeout": 20,
+  "combinations": [
+    {
+      "id": "normal_account",
+      "business_role": "normal",
+      "business": "实际输入/account/account.cj",
+      "tests": "实际输入/account/account_test.cj",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ]
+    },
+    {
+      "id": "assertion_failure",
+      "business_role": "diagnostic",
+      "business": "实际输入/account/account_wrong.cj",
+      "tests": "实际输入/account/account_test.cj",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ]
+    },
+    {
+      "id": "runtime_error",
+      "business_role": "diagnostic",
+      "business": "实际输入/probe/calc.cj",
+      "tests": "实际输入/probe/error_test.cj",
+      "expected_tests": [
+        "ErrorTests#unexpectedException()"
+      ]
+    },
+    {
+      "id": "compile_failure",
+      "business_role": "diagnostic",
+      "business": "实际输入/probe/calc.cj",
+      "tests": "实际输入/probe/bad_test.cj",
+      "expected_tests": [
+        "BrokenTests#invalidType()"
+      ]
+    },
+    {
+      "id": "no_tests",
+      "business_role": "diagnostic",
+      "business": "实际输入/probe/calc.cj",
+      "tests": "实际输入/probe/empty_test.cj",
+      "expected_tests": [
+        "EmptyTests#absent()"
+      ]
+    },
+    {
+      "id": "skipped",
+      "business_role": "diagnostic",
+      "business": "实际输入/probe/calc.cj",
+      "tests": "实际输入/probe/skip_test.cj",
+      "expected_tests": [
+        "SkipTests#intentionallySkipped()"
+      ]
+    },
+    {
+      "id": "partial_filter",
+      "business_role": "diagnostic",
+      "business": "实际输入/account/account.cj",
+      "tests": "实际输入/account/account_test.cj",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ],
+      "run_options": [
+        "--filter=AccountTest.normalWithdrawal"
+      ]
+    },
+    {
+      "id": "all_filtered",
+      "business_role": "diagnostic",
+      "business": "实际输入/account/account.cj",
+      "tests": "实际输入/account/account_test.cj",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ],
+      "run_options": [
+        "--filter=NothingExists.*"
+      ]
+    },
+    {
+      "id": "wrong_expected_name",
+      "business_role": "diagnostic",
+      "business": "实际输入/account/account.cj",
+      "tests": "实际输入/account/account_test.cj",
+      "expected_tests": [
+        "AccountTest#absent()"
+      ]
+    },
+    {
+      "id": "missing_source",
+      "business_role": "diagnostic",
+      "business": "实际输入/probe/missing.cj",
+      "tests": "实际输入/account/account_test.cj",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ]
+    },
+    {
+      "id": "count_only",
+      "business_role": "diagnostic",
+      "business": "实际输入/account/account.cj",
+      "tests": "实际输入/account/account_test.cj",
+      "expected_count": 2
+    },
+    {
+      "id": "another_sample",
+      "business_role": "diagnostic",
+      "business": "实际输入/probe/calc.cj",
+      "tests": "实际输入/probe/sum_test.cj",
+      "expected_tests": [
+        "SumTests#twoNumbers()"
+      ]
+    },
+    {
+      "id": "timeout",
+      "business_role": "diagnostic",
+      "business": "实际输入/probe/calc.cj",
+      "tests": "实际输入/probe/timeout_test.cj",
+      "expected_tests": [
+        "TimeoutTests#neverReturns()"
+      ],
+      "run_timeout": 0.6
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": "cangjie-execution-v1",
+  "combination_id": "count_mismatch",
+  "business_role": "diagnostic",
+  "started_at": "2026-10-28T16:16:55.809081+08:00",
+  "status": "TEST_COUNT_MISMATCH",
+  "compile_status": "PASSED",
+  "expected_count": 3,
+  "discovered_count": 2,
+  "executed_count": 2,
+  "passed_count": 2,
+  "failed_count": 0,
+  "error_count": 0,
+  "skipped_count": 0,
+  "compile_exit_code": 0,
+  "discovery_exit_code": 0,
+  "run_exit_code": 0,
+  "expected_execution_ratio": 0.6666666666666666,
+  "pass_rate_executed": 1.0,
+  "expected_pass_ratio": 0.6666666666666666,
+  "missing_expected": [],
+  "not_executed_expected": [],
+  "unexpected_executed": [],
+  "stages": {
+    "compile": {
+      "started_at": "2026-10-28T16:16:55.815392+08:00",
+      "finished_at": "2026-10-28T16:16:56.590294+08:00",
+      "duration_seconds": 0.766,
+      "argv": [
+        "E:\\cangjie\\bin\\cjc.exe",
+        "--test",
+        "E:\\cj_projects\\cj_exec_ygx0p58g\\src\\0000_account.cj",
+        "E:\\cj_projects\\cj_exec_ygx0p58g\\src\\0001_account_test.cj",
+        "-o",
+        "E:\\cj_projects\\cj_exec_ygx0p58g\\tests.exe"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_ygx0p58g",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "compile.stdout.log",
+        "stderr": "compile.stderr.log",
+        "readable": "compile.log"
+      }
+    },
+    "discovery": {
+      "started_at": "2026-10-28T16:16:56.592341+08:00",
+      "finished_at": "2026-10-28T16:16:57.341751+08:00",
+      "duration_seconds": 0.75,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_ygx0p58g\\tests.exe",
+        "--dry-run",
+        "--no-color",
+        "--no-progress"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_ygx0p58g",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "discovery.stdout.log",
+        "stderr": "discovery.stderr.log",
+        "readable": "discovery.log"
+      }
+    },
+    "run": {
+      "started_at": "2026-10-28T16:16:57.343745+08:00",
+      "finished_at": "2026-10-28T16:16:57.689907+08:00",
+      "duration_seconds": 0.343,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_ygx0p58g\\tests.exe",
+        "--no-color",
+        "--no-progress",
+        "--report-format=xml",
+        "--report-path=E:\\cj_projects\\cj_exec_ygx0p58g\\xml"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_ygx0p58g",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "run.stdout.log",
+        "stderr": "run.stderr.log",
+        "readable": "run.log"
+      }
+    }
+  },
+  "sources": [
+    {
+      "role": "business",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account.cj",
+      "snapshot": "source/0000_account.cj",
+      "sha256": "9e2dbea24f844c97192f2f604999e970f5baf2d32bc0393cea7e66e91bfb1435"
+    },
+    {
+      "role": "tests",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+      "snapshot": "source/0001_account_test.cj",
+      "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+    }
+  ],
+  "source_integrity": true,
+  "limitations": [
+    "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+  ],
+  "expectation_mode": "count",
+  "expected_tests": null,
+  "working_directory": "E:\\cj_projects\\cj_exec_ygx0p58g",
+  "run_options": [],
+  "compile_options": [],
+  "discovered_tests": [
+    "context_workflow_case.AccountTest#insufficientFunds()",
+    "context_workflow_case.AccountTest#normalWithdrawal()"
+  ],
+  "unidentified_discovery_skips": 0,
+  "discovery_identity_complete": true,
+  "report_source": "xml_with_console_cross_check",
+  "cases": {
+    "context_workflow_case.AccountTest#normalWithdrawal()": "PASSED",
+    "context_workflow_case.AccountTest#insufficientFunds()": "PASSED"
+  },
+  "unidentified_run_skips": 0,
+  "run_identity_complete": true,
+  "message": "实际执行数与预期数量不一致",
+  "finished_at": "2026-10-28T16:16:57.705856+08:00"
+}

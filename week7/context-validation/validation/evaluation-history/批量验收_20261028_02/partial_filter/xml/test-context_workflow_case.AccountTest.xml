@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="context_workflow_case.AccountTest" tests="2" failures="0" errors="0" skipped="1" time="0.000568" timestamp="2026-10-28T16:13:11.9831857+08:00">
+	<testcase name="normalWithdrawal" classname="context_workflow_case.AccountTest" assertions="1" time="0.000220"/>
+	<testcase name="insufficientFunds" classname="context_workflow_case.AccountTest" assertions="0" time="0.000000">
+		<skipped/>
+	</testcase>
+</testsuite>

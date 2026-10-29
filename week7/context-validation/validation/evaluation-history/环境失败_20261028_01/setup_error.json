@@ -1,0 +1,5 @@
+{
+  "status": "ENVIRONMENT_ERROR",
+  "message": "SDK目录缺少envsetup.bat或bin/cjc.exe",
+  "at": "2026-10-28T16:16:55.229994+08:00"
+}

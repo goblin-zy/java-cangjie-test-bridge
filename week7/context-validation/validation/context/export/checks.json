@@ -1,0 +1,28 @@
+{
+  "owner": "蒋逸舟",
+  "outputs": [
+    {
+      "target": "study.translation.AccountTest#testWithdraw()",
+      "json": "context_01.json",
+      "markdown": "context_01.md",
+      "source_and_content": "PASS",
+      "checked_entries": 10
+    },
+    {
+      "target": "study.translation.AccountTest#testSequence()",
+      "json": "context_02.json",
+      "markdown": "context_02.md",
+      "source_and_content": "PASS",
+      "checked_entries": 12
+    },
+    {
+      "target": "study.translation.AccountTest#testInsufficientFunds()",
+      "json": "context_03.json",
+      "markdown": "context_03.md",
+      "source_and_content": "PASS",
+      "checked_entries": 10
+    }
+  ],
+  "checks_scope": "source hashes, upstream UTF-16 ranges and selected text; not dependency completeness or semantic equivalence",
+  "human_review": "PENDING"
+}

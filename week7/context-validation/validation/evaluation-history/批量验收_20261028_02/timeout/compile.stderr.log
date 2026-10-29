@@ -1,0 +1,9 @@
+warning[0m: unused function:'add'
+ ==> E:\cj_projects\cj_exec_x2bt0__e\src\0000_calc.cj:2:1:
+  | 
+2 | func add(a: Int32, b: Int32): Int32 { return a + b }
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ unused function
+  | 
+  # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+1 warning generated, 1 warning printed.

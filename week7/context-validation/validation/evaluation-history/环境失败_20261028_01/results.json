@@ -1,0 +1,47 @@
+{
+  "schema_version": "cangjie-execution-batch-v1",
+  "created_at": "2026-10-28T16:16:55.232009+08:00",
+  "config_file": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\环境失败验收配置.json",
+  "combinations": [
+    {
+      "expected_count": 2,
+      "discovered_count": null,
+      "executed_count": null,
+      "passed_count": null,
+      "failed_count": null,
+      "error_count": null,
+      "skipped_count": null,
+      "compile_exit_code": null,
+      "discovery_exit_code": null,
+      "run_exit_code": null,
+      "expected_execution_ratio": null,
+      "pass_rate_executed": null,
+      "expected_pass_ratio": null,
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "environment_missing",
+      "business_role": "diagnostic",
+      "status": "ENVIRONMENT_ERROR",
+      "compile_status": "NOT_RUN",
+      "message": "SDK目录缺少envsetup.bat或bin/cjc.exe",
+      "started_at": "2026-10-28T16:16:55.231000+08:00",
+      "finished_at": "2026-10-28T16:16:55.231000+08:00",
+      "stages": {},
+      "sources": [],
+      "source_integrity": null,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "limitations": [
+        "环境准备失败，未收集或编译输入代码。"
+      ]
+    }
+  ],
+  "combination_count": 1,
+  "compile_attempted": 0,
+  "compile_succeeded": 0,
+  "compile_success_rate": null,
+  "normal_combinations": [],
+  "normal_combination_pass_rate": null,
+  "all_combinations_passed": false,
+  "scope": "可执行性评价；错误／诊断样例不作为正常业务通过率分母。"
+}

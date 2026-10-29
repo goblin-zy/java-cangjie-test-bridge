@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-29T21:11:22.880135+08:00",
+  "finished_at": "2026-10-29T21:11:23.220379+08:00",
+  "duration_seconds": 0.328,
+  "argv": [
+    "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\tests.exe",
+    "--no-color",
+    "--no-progress",
+    "--report-format=xml",
+    "--report-path=C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\xml"
+  ],
+  "cwd": "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "run.stdout.log",
+    "stderr": "run.stderr.log",
+    "readable": "run.log"
+  }
+}
