@@ -1,5 +1,0 @@
-Apache Maven 3.9.4 (dfbb324ad4a7c8fb0bf182e6d91b0ae20e3d2dd9)
-Maven home: D:\maven\apache-maven-3.9.4
-Java version: 17.0.13, vendor: Microsoft, runtime: E:\jdk17
-Default locale: zh_CN, platform encoding: GBK
-OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
