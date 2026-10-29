@@ -1,0 +1,8 @@
+--------------------------------------------------------------------------------------------------
+TP: runner_probe, time elapsed: 604500 ns, RESULT:
+    TCS: SumTests, time elapsed: 596100 ns, RESULT:
+    [ PASSED ] CASE: twoNumbers (236100 ns)
+Summary: TOTAL: 1
+    PASSED: 1, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

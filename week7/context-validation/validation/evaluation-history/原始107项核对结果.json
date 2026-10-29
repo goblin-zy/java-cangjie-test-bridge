@@ -1,0 +1,544 @@
+{
+  "checks": [
+    {
+      "check": "status:normal_account",
+      "passed": true,
+      "detail": "PASSED"
+    },
+    {
+      "check": "status:assertion_failure",
+      "passed": true,
+      "detail": "ASSERTION_FAILED"
+    },
+    {
+      "check": "status:runtime_error",
+      "passed": true,
+      "detail": "TEST_ERROR"
+    },
+    {
+      "check": "status:compile_failure",
+      "passed": true,
+      "detail": "COMPILE_FAILED"
+    },
+    {
+      "check": "status:no_tests",
+      "passed": true,
+      "detail": "NO_TESTS_FOUND"
+    },
+    {
+      "check": "status:skipped",
+      "passed": true,
+      "detail": "ZERO_TESTS_EXECUTED"
+    },
+    {
+      "check": "status:partial_filter",
+      "passed": true,
+      "detail": "TEST_SET_MISMATCH"
+    },
+    {
+      "check": "status:all_filtered",
+      "passed": true,
+      "detail": "ZERO_TESTS_EXECUTED"
+    },
+    {
+      "check": "status:wrong_expected_name",
+      "passed": true,
+      "detail": "TEST_SET_MISMATCH"
+    },
+    {
+      "check": "status:missing_source",
+      "passed": true,
+      "detail": "INVALID_INPUT"
+    },
+    {
+      "check": "status:count_only",
+      "passed": true,
+      "detail": "PASSED"
+    },
+    {
+      "check": "status:another_sample",
+      "passed": true,
+      "detail": "PASSED"
+    },
+    {
+      "check": "status:timeout",
+      "passed": true,
+      "detail": "RUN_TIMEOUT"
+    },
+    {
+      "check": "normal:2/2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "assertion-vs-error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "compile:unknown-execution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no-test:not-pass",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "skip:quantity-without-identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "filter:half",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all-filtered:zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "count-mode-explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "timeout:unknown",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "compile-denominator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "normal-denominator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-row-count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:normal_account",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:normal_account",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:normal_account",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_account.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:assertion_failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:assertion_failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:assertion_failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_account_wrong.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:runtime_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:runtime_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:runtime_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_calc.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_error_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:compile_failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:compile_failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:compile_failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_calc.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_bad_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:no_tests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:no_tests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:no_tests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_calc.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_empty_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:skipped",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:skipped",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:skipped",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_calc.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_skip_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:partial_filter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:partial_filter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:partial_filter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_account.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:all_filtered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:all_filtered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:all_filtered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_account.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:wrong_expected_name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:wrong_expected_name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:wrong_expected_name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_account.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:missing_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:missing_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:missing_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:count_only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:count_only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:count_only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_account.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:another_sample",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:another_sample",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:another_sample",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_calc.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_sum_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:json-agreement:timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:csv-agreement:timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:markdown:timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0000_calc.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "批量验收_20261028_02:source:source/0001_timeout_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "单组运行_20261028_01:csv-row-count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "单组运行_20261028_01:json-agreement:normal_account",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "单组运行_20261028_01:csv-agreement:normal_account",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "单组运行_20261028_01:markdown:normal_account",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "单组运行_20261028_01:source:source/0000_account.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "单组运行_20261028_01:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "环境失败_20261028_01:csv-row-count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "环境失败_20261028_01:json-agreement:environment_missing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "环境失败_20261028_01:csv-agreement:environment_missing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "环境失败_20261028_01:markdown:environment_missing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "数量不符_20261028_01:csv-row-count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "数量不符_20261028_01:json-agreement:count_mismatch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "数量不符_20261028_01:csv-agreement:count_mismatch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "数量不符_20261028_01:markdown:count_mismatch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "数量不符_20261028_01:source:source/0000_account.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "数量不符_20261028_01:source:source/0001_account_test.cj",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "single:pass",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment:separate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "count-mismatch",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "all_passed": true,
+  "passed": 107,
+  "total": 107,
+  "runner_sha256": "3d60299b7f7fb4e30f518e5e52bca47bb109bda68b381960e4921559329f9b89",
+  "scope": "保存的真实运行记录、格式一致性和源码未修改核对；不判定测试意图等价。"
+}

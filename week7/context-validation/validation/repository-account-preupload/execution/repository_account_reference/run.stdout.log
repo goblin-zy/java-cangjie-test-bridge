@@ -1,0 +1,16 @@
+--------------------------------------------------------------------------------------------------
+TP: starter, time elapsed: 726900 ns, RESULT:
+    TCS: AccountTest, time elapsed: 718700 ns, RESULT:
+    [ PASSED ] CASE: testInitialBalance (199200 ns)
+    [ PASSED ] CASE: testDeposit (5300 ns)
+    [ PASSED ] CASE: testWithdraw (4600 ns)
+    [ PASSED ] CASE: testWithdrawAll (4200 ns)
+    [ PASSED ] CASE: testSequence (6100 ns)
+    [ PASSED ] CASE: testInsufficientFunds (77200 ns)
+    [ PASSED ] CASE: testInvalidAmounts (43500 ns)
+    [ PASSED ] CASE: testBalanceLimit (10500 ns)
+    [ PASSED ] CASE: testInvalidInitialBalance (15000 ns)
+Summary: TOTAL: 9
+    PASSED: 9, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

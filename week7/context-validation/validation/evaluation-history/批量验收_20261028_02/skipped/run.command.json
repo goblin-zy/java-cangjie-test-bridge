@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-28T16:13:10.184357+08:00",
+  "finished_at": "2026-10-28T16:13:10.461952+08:00",
+  "duration_seconds": 0.266,
+  "argv": [
+    "E:\\cj_projects\\cj_exec_xmdolk89\\tests.exe",
+    "--no-color",
+    "--no-progress",
+    "--report-format=xml",
+    "--report-path=E:\\cj_projects\\cj_exec_xmdolk89\\xml"
+  ],
+  "cwd": "E:\\cj_projects\\cj_exec_xmdolk89",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "run.stdout.log",
+    "stderr": "run.stderr.log",
+    "readable": "run.log"
+  }
+}

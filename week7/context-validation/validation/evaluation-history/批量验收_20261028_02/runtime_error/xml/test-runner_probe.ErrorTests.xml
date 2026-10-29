@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner_probe.ErrorTests" tests="1" failures="0" errors="1" skipped="0" time="0.001763" timestamp="2026-10-28T16:13:07.1213161+08:00">
+	<testcase name="unexpectedException" classname="runner_probe.ErrorTests" assertions="0" time="0.001340">
+		<error>An exception has occurred:Exception: intentional runtime error
+	at runner_probe.ErrorTests.unexpectedException()(E:\cj_projects\cj_exec_gx0nfim8\src\0001_error_test.cj:8)
+	at runner_probe.ErrorTests.asTestSuite.lambda.0.lambda.0()(E:\cj_projects\cj_exec_gx0nfim8\src\0001_error_test.cj:8)
+
+</error>
+	</testcase>
+</testsuite>

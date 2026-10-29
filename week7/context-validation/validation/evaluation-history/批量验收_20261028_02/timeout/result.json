@@ -1,0 +1,125 @@
+{
+  "schema_version": "cangjie-execution-v1",
+  "combination_id": "timeout",
+  "business_role": "diagnostic",
+  "started_at": "2026-10-28T16:13:18.799907+08:00",
+  "status": "RUN_TIMEOUT",
+  "compile_status": "PASSED",
+  "expected_count": 1,
+  "discovered_count": 1,
+  "executed_count": null,
+  "passed_count": null,
+  "failed_count": null,
+  "error_count": null,
+  "skipped_count": null,
+  "compile_exit_code": 0,
+  "discovery_exit_code": 0,
+  "run_exit_code": null,
+  "expected_execution_ratio": null,
+  "pass_rate_executed": null,
+  "expected_pass_ratio": null,
+  "missing_expected": [],
+  "not_executed_expected": [],
+  "unexpected_executed": [],
+  "stages": {
+    "compile": {
+      "started_at": "2026-10-28T16:13:18.804421+08:00",
+      "finished_at": "2026-10-28T16:13:19.585252+08:00",
+      "duration_seconds": 0.781,
+      "argv": [
+        "E:\\cangjie\\bin\\cjc.exe",
+        "--test",
+        "E:\\cj_projects\\cj_exec_x2bt0__e\\src\\0000_calc.cj",
+        "E:\\cj_projects\\cj_exec_x2bt0__e\\src\\0001_timeout_test.cj",
+        "-o",
+        "E:\\cj_projects\\cj_exec_x2bt0__e\\tests.exe"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_x2bt0__e",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "compile.stdout.log",
+        "stderr": "compile.stderr.log",
+        "readable": "compile.log"
+      }
+    },
+    "discovery": {
+      "started_at": "2026-10-28T16:13:19.589278+08:00",
+      "finished_at": "2026-10-28T16:13:20.282787+08:00",
+      "duration_seconds": 0.687,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_x2bt0__e\\tests.exe",
+        "--dry-run",
+        "--no-color",
+        "--no-progress"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_x2bt0__e",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "discovery.stdout.log",
+        "stderr": "discovery.stderr.log",
+        "readable": "discovery.log"
+      }
+    },
+    "run": {
+      "started_at": "2026-10-28T16:13:20.284792+08:00",
+      "finished_at": "2026-10-28T16:13:21.396170+08:00",
+      "duration_seconds": 1.11,
+      "argv": [
+        "E:\\cj_projects\\cj_exec_x2bt0__e\\tests.exe",
+        "--no-color",
+        "--no-progress",
+        "--report-format=xml",
+        "--report-path=E:\\cj_projects\\cj_exec_x2bt0__e\\xml"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_x2bt0__e",
+      "exit_code": null,
+      "timed_out": true,
+      "launch_error": null,
+      "logs": {
+        "stdout": "run.stdout.log",
+        "stderr": "run.stderr.log",
+        "readable": "run.log"
+      }
+    }
+  },
+  "sources": [
+    {
+      "role": "business",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+      "snapshot": "source/0000_calc.cj",
+      "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+    },
+    {
+      "role": "tests",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\timeout_test.cj",
+      "snapshot": "source/0001_timeout_test.cj",
+      "sha256": "79a08c18577479b615d1950245538d1a501f39eeddf9e6fb1780760817b3fa31"
+    }
+  ],
+  "source_integrity": true,
+  "limitations": [
+    "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+  ],
+  "expectation_mode": "names",
+  "expected_tests": [
+    "TimeoutTests#neverReturns()"
+  ],
+  "working_directory": "E:\\cj_projects\\cj_exec_x2bt0__e",
+  "run_options": [],
+  "compile_options": [],
+  "discovered_tests": [
+    "runner_probe.TimeoutTests#neverReturns()"
+  ],
+  "unidentified_discovery_skips": 0,
+  "discovery_identity_complete": true,
+  "resolved_expected_tests": [
+    "runner_probe.TimeoutTests#neverReturns()"
+  ],
+  "unresolved_expected_in_discovery": [],
+  "message": "执行超时，部分结果不用于完整比例统计",
+  "finished_at": "2026-10-28T16:13:21.399406+08:00"
+}

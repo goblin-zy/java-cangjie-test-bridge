@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-10-28T16:13:12.760661+08:00",
+  "finished_at": "2026-10-28T16:13:13.350952+08:00",
+  "duration_seconds": 0.578,
+  "argv": [
+    "E:\\cj_projects\\cj_exec_yguzmcnr\\tests.exe",
+    "--dry-run",
+    "--no-color",
+    "--no-progress"
+  ],
+  "cwd": "E:\\cj_projects\\cj_exec_yguzmcnr",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "discovery.stdout.log",
+    "stderr": "discovery.stderr.log",
+    "readable": "discovery.log"
+  }
+}

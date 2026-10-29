@@ -1,0 +1,30 @@
+{
+  "owner": "蒋逸舟",
+  "reviewed_upstream_commit": "aca23e6643a963abfbe0ce72e40faeb31ef483c0",
+  "local_fresh_source_index": "PASS: identical catalog after relocation",
+  "local_fresh_context_export": "PASS: three identical JSON outputs after relocation",
+  "unit_tests": {
+    "passed": 7,
+    "total": 7
+  },
+  "portable_saved_evidence_checks": {
+    "passed": 169,
+    "total": 169
+  },
+  "repository_reference_account": {
+    "expected": 9,
+    "discovered": 9,
+    "executed": 9,
+    "passed": 9,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "runtime": "disclosed localfix; SHA256 checked"
+  },
+  "local_markdown_file_links": "PASS",
+  "upstream_file_collisions": [],
+  "powershell_import": "PASS: tested in isolated local Git repository; no commit/push",
+  "remote_upload": "NOT_DONE: user-guided branch and PR pending",
+  "post_upload_remote_retest": "NOT_RUN",
+  "human_review": "PENDING"
+}

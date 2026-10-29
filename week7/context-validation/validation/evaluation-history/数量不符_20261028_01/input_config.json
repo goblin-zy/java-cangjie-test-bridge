@@ -1,0 +1,12 @@
+{
+  "sdk_root": "E:/cangjie",
+  "work_root": "E:/cj_projects",
+  "compile_timeout": 120,
+  "discovery_timeout": 30,
+  "run_timeout": 20,
+  "id": "count_mismatch",
+  "business_role": "diagnostic",
+  "business": "实际输入/account/account.cj",
+  "tests": "实际输入/account/account_test.cj",
+  "expected_count": 3
+}

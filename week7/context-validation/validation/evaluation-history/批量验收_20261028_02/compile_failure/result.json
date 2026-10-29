@@ -1,0 +1,75 @@
+{
+  "schema_version": "cangjie-execution-v1",
+  "combination_id": "compile_failure",
+  "business_role": "diagnostic",
+  "started_at": "2026-10-28T16:13:07.148691+08:00",
+  "status": "COMPILE_FAILED",
+  "compile_status": "FAILED",
+  "expected_count": 1,
+  "discovered_count": null,
+  "executed_count": null,
+  "passed_count": null,
+  "failed_count": null,
+  "error_count": null,
+  "skipped_count": null,
+  "compile_exit_code": 1,
+  "discovery_exit_code": null,
+  "run_exit_code": null,
+  "expected_execution_ratio": null,
+  "pass_rate_executed": null,
+  "expected_pass_ratio": null,
+  "missing_expected": [],
+  "not_executed_expected": [],
+  "unexpected_executed": [],
+  "stages": {
+    "compile": {
+      "started_at": "2026-10-28T16:13:07.154502+08:00",
+      "finished_at": "2026-10-28T16:13:07.499977+08:00",
+      "duration_seconds": 0.344,
+      "argv": [
+        "E:\\cangjie\\bin\\cjc.exe",
+        "--test",
+        "E:\\cj_projects\\cj_exec_yws08id9\\src\\0000_calc.cj",
+        "E:\\cj_projects\\cj_exec_yws08id9\\src\\0001_bad_test.cj",
+        "-o",
+        "E:\\cj_projects\\cj_exec_yws08id9\\tests.exe"
+      ],
+      "cwd": "E:\\cj_projects\\cj_exec_yws08id9",
+      "exit_code": 1,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "compile.stdout.log",
+        "stderr": "compile.stderr.log",
+        "readable": "compile.log"
+      }
+    }
+  },
+  "sources": [
+    {
+      "role": "business",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+      "snapshot": "source/0000_calc.cj",
+      "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+    },
+    {
+      "role": "tests",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\bad_test.cj",
+      "snapshot": "source/0001_bad_test.cj",
+      "sha256": "c561a48c6016fdc4180d3a205ad4c76ade07c2ed4bd09979df09ff358a93c80b"
+    }
+  ],
+  "source_integrity": true,
+  "limitations": [
+    "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+  ],
+  "expectation_mode": "names",
+  "expected_tests": [
+    "BrokenTests#invalidType()"
+  ],
+  "working_directory": "E:\\cj_projects\\cj_exec_yws08id9",
+  "run_options": [],
+  "compile_options": [],
+  "message": "编译失败，未执行测试",
+  "finished_at": "2026-10-28T16:13:07.502165+08:00"
+}

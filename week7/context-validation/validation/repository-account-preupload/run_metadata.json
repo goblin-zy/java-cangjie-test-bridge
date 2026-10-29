@@ -1,0 +1,13 @@
+{
+  "owner": "蒋逸舟",
+  "execution_assistance": "Codex/software tools",
+  "material": "existing repository reference tests; not a generated translation",
+  "runtime_label_declared": "本机现有E:/cangjie；运行库身份以本次SHA256和仓库localfix记录对照，不预设为官方原版",
+  "runtime_library_hashes": {
+    "runtime/lib/windows_x86_64_cjnative/libcangjie-runtime.dll": "69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f",
+    "runtime/lib/windows_x86_64_cjnative/libcangjie-std-runtime.dll": "ee77c78f359b4aae602fe9b04ec86d9493d3481efbbc6ce3f13a22f8d0f8dbae"
+  },
+  "compiler_sha256": "0ba4c0ae79b75401e4f9573d3dea7d534224dcaa8577068724c7b477f8207236",
+  "human_review": "PENDING",
+  "expected_test_count": 9
+}

@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-28T16:13:16.949708+08:00",
+  "finished_at": "2026-10-28T16:13:17.163316+08:00",
+  "duration_seconds": 0.203,
+  "argv": [
+    "E:\\cj_projects\\cj_exec_1dy8vj4v\\tests.exe",
+    "--no-color",
+    "--no-progress",
+    "--report-format=xml",
+    "--report-path=E:\\cj_projects\\cj_exec_1dy8vj4v\\xml"
+  ],
+  "cwd": "E:\\cj_projects\\cj_exec_1dy8vj4v",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "run.stdout.log",
+    "stderr": "run.stderr.log",
+    "readable": "run.log"
+  }
+}

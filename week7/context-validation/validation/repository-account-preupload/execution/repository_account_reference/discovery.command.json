@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-10-29T21:11:22.128176+08:00",
+  "finished_at": "2026-10-29T21:11:22.877712+08:00",
+  "duration_seconds": 0.75,
+  "argv": [
+    "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\tests.exe",
+    "--dry-run",
+    "--no-color",
+    "--no-progress"
+  ],
+  "cwd": "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "discovery.stdout.log",
+    "stderr": "discovery.stderr.log",
+    "readable": "discovery.log"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": "context-selection-1.0",
+  "owner": "蒋逸舟",
+  "selection_author": "Codex协助拟定，蒋逸舟待审核",
+  "human_review": "PENDING",
+  "selection_scope": "当前仓库账户示例的三个测试；不是自动依赖闭包",
+  "unresolved": [
+    "JUnit注解和断言仅保留导入与调用，未展开框架实现。",
+    "java.lang.IllegalArgumentException与RuntimeException等JDK定义未展开。",
+    "资源、继承生命周期、动态分派和外部依赖未做完整查找。"
+  ],
+  "units": [
+    {
+      "target": {
+        "group": "test",
+        "symbol": "study.translation.AccountTest#testWithdraw()"
+      },
+      "use": "从独立初始化开始，保留取款30与余额70的检查。",
+      "evidence": [
+        {
+          "group": "test",
+          "symbol": "study.translation.AccountTest#field:account",
+          "reason": "确认测试对象字段及其类型"
+        },
+        {
+          "group": "test",
+          "symbol": "study.translation.AccountTest#setUp()",
+          "reason": "确认@BeforeEach在每条测试前创建独立余额100的账户"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#<init>(int)",
+          "reason": "确认构造与初始余额约束"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#field:balance",
+          "reason": "定位取款影响的状态字段"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#field:MAX_BALANCE",
+          "reason": "构造和存款条件使用余额上限常量"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#withdraw(int)",
+          "reason": "保留非法金额、余额不足和扣款顺序"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#getBalance()",
+          "reason": "确定断言实际观察的是余额查询结果"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.InsufficientFundsException#<init>(String)",
+          "reason": "确认专门余额不足异常与非法金额异常不同"
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "target": {
+        "group": "test",
+        "symbol": "study.translation.AccountTest#testSequence()"
+      },
+      "use": "按helper中的存款、取款、两次中间断言，再执行本测试最后取款与最终断言，不遗漏辅助方法内的检查。",
+      "evidence": [
+        {
+          "group": "test",
+          "symbol": "study.translation.AccountTest#field:account",
+          "reason": "确认测试对象字段及其类型"
+        },
+        {
+          "group": "test",
+          "symbol": "study.translation.AccountTest#setUp()",
+          "reason": "确认@BeforeEach在每条测试前创建独立余额100的账户"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#<init>(int)",
+          "reason": "确认构造与初始余额约束"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#field:balance",
+          "reason": "定位取款影响的状态字段"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#field:MAX_BALANCE",
+          "reason": "构造和存款条件使用余额上限常量"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#withdraw(int)",
+          "reason": "保留非法金额、余额不足和扣款顺序"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#getBalance()",
+          "reason": "确定断言实际观察的是余额查询结果"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.InsufficientFundsException#<init>(String)",
+          "reason": "确认专门余额不足异常与非法金额异常不同"
+        },
+        {
+          "group": "test",
+          "symbol": "study.translation.AccountTest#prepareSequence()",
+          "reason": "此辅助方法既改变状态又包含两次断言"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#deposit(int)",
+          "reason": "辅助准备调用存款，需确认上限检查与加款行为"
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "target": {
+        "group": "test",
+        "symbol": "study.translation.AccountTest#testInsufficientFunds()"
+      },
+      "use": "保留InsufficientFundsException类型、异常后余额不变，以及后续合法取款和最终余额断言。",
+      "evidence": [
+        {
+          "group": "test",
+          "symbol": "study.translation.AccountTest#field:account",
+          "reason": "确认测试对象字段及其类型"
+        },
+        {
+          "group": "test",
+          "symbol": "study.translation.AccountTest#setUp()",
+          "reason": "确认@BeforeEach在每条测试前创建独立余额100的账户"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#<init>(int)",
+          "reason": "确认构造与初始余额约束"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#field:balance",
+          "reason": "定位取款影响的状态字段"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#field:MAX_BALANCE",
+          "reason": "构造和存款条件使用余额上限常量"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#withdraw(int)",
+          "reason": "保留非法金额、余额不足和扣款顺序"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.Account#getBalance()",
+          "reason": "确定断言实际观察的是余额查询结果"
+        },
+        {
+          "group": "main",
+          "symbol": "study.translation.InsufficientFundsException#<init>(String)",
+          "reason": "确认专门余额不足异常与非法金额异常不同"
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

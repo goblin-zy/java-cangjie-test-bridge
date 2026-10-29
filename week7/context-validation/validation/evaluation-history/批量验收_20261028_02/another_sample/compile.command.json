@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-10-28T16:13:17.177665+08:00",
+  "finished_at": "2026-10-28T16:13:17.942642+08:00",
+  "duration_seconds": 0.765,
+  "argv": [
+    "E:\\cangjie\\bin\\cjc.exe",
+    "--test",
+    "E:\\cj_projects\\cj_exec_hm8o_i_1\\src\\0000_calc.cj",
+    "E:\\cj_projects\\cj_exec_hm8o_i_1\\src\\0001_sum_test.cj",
+    "-o",
+    "E:\\cj_projects\\cj_exec_hm8o_i_1\\tests.exe"
+  ],
+  "cwd": "E:\\cj_projects\\cj_exec_hm8o_i_1",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "compile.stdout.log",
+    "stderr": "compile.stderr.log",
+    "readable": "compile.log"
+  }
+}

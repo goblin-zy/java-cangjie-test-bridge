@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------------------------
+TP: starter, RESULT:
+    TCS: AccountTest, RESULT:
+    [ NORUN  ] CASE: testInitialBalance
+    [ NORUN  ] CASE: testDeposit
+    [ NORUN  ] CASE: testWithdraw
+    [ NORUN  ] CASE: testWithdrawAll
+    [ NORUN  ] CASE: testSequence
+    [ NORUN  ] CASE: testInsufficientFunds
+    [ NORUN  ] CASE: testInvalidAmounts
+    [ NORUN  ] CASE: testBalanceLimit
+    [ NORUN  ] CASE: testInvalidInitialBalance
+Summary: TOTAL: 9, SKIPPED: 0
+--------------------------------------------------------------------------------------------------

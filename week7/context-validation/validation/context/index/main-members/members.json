@@ -1,0 +1,1237 @@
+{
+  "schema_version": "1.0",
+  "tool": "week7-java-test-skeleton-extractor",
+  "java_language_level": 17,
+  "parser": "JDK javac Tree API; parse only, no symbol attribution",
+  "offset_unit": "UTF-16 code units; end offsets exclusive; line/column 1-based",
+  "input_root": "week7/src/main/java/study/translation",
+  "summary": {
+    "files": 4,
+    "classes": 4,
+    "members": 21,
+    "roles": {
+      "constructor": 4,
+      "field": 6,
+      "helper": 11
+    },
+    "errors": 0
+  },
+  "files": [
+    {
+      "source_file": "Account.java",
+      "original_file": "original/Account.java",
+      "source_sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662",
+      "skeleton_file": "skeleton/Account.java",
+      "skeleton_sha256": "1373eca2b8422266efc87559ca7fa9df72ee3a6d85d6c368a664e176f08c1446",
+      "status": "extracted",
+      "package": "study.translation",
+      "imports": [],
+      "members": 6,
+      "replaced_bodies": 4
+    },
+    {
+      "source_file": "InstructionParser.java",
+      "original_file": "original/InstructionParser.java",
+      "source_sha256": "812a04c2b6b4a670e8110414c355143863a432fe0723ed43e88b5c4ca78b11ae",
+      "skeleton_file": "skeleton/InstructionParser.java",
+      "skeleton_sha256": "35c63f73ee879f6b135d3a3494dea71c944c48d152d3fc9696cc2d87b95ac6b4",
+      "status": "extracted",
+      "package": "study.translation",
+      "imports": [
+        "java.util.ArrayList"
+      ],
+      "members": 3,
+      "replaced_bodies": 3
+    },
+    {
+      "source_file": "InsufficientFundsException.java",
+      "original_file": "original/InsufficientFundsException.java",
+      "source_sha256": "f7e6a26eff82705cba3615cc647bbea341dd3c8437c012307e7716c60668631d",
+      "skeleton_file": "skeleton/InsufficientFundsException.java",
+      "skeleton_sha256": "afb8301fc591473b916a40c285df6f2acf13f006856d040395076e079bb870b6",
+      "status": "extracted",
+      "package": "study.translation",
+      "imports": [],
+      "members": 1,
+      "replaced_bodies": 1
+    },
+    {
+      "source_file": "Rectangle.java",
+      "original_file": "original/Rectangle.java",
+      "source_sha256": "ea68e279b5c2e626595dfdf56ed4984ba7d51e87ed5447535bad8afbde1adbff",
+      "skeleton_file": "skeleton/Rectangle.java",
+      "skeleton_sha256": "2ef0f8aaeb7727d82ab647308e7a972906bdbfa33faba808af9e24fe61cfe97d",
+      "status": "extracted",
+      "package": "study.translation",
+      "imports": [],
+      "members": 11,
+      "replaced_bodies": 7
+    }
+  ],
+  "classes": [
+    {
+      "id": "Account.java::study.translation.Account",
+      "name": "Account",
+      "qualified_name": "study.translation.Account",
+      "kind": "CLASS",
+      "annotations": [],
+      "source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 123,
+        "end_offset_utf16_exclusive": 1145,
+        "start_line": 3,
+        "start_column": 1,
+        "end_line": 27,
+        "end_column": 1
+      },
+      "skeleton_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 123,
+        "end_offset_utf16_exclusive": 858,
+        "start_line": 3,
+        "start_column": 1,
+        "end_line": 22,
+        "end_column": 1
+      }
+    },
+    {
+      "id": "InstructionParser.java::study.translation.InstructionParser",
+      "name": "InstructionParser",
+      "qualified_name": "study.translation.InstructionParser",
+      "kind": "CLASS",
+      "annotations": [],
+      "source_location": {
+        "file": "original/InstructionParser.java",
+        "start_offset_utf16": 149,
+        "end_offset_utf16_exclusive": 1664,
+        "start_line": 4,
+        "start_column": 1,
+        "end_line": 35,
+        "end_column": 1
+      },
+      "skeleton_location": {
+        "file": "skeleton/InstructionParser.java",
+        "start_offset_utf16": 149,
+        "end_offset_utf16_exclusive": 728,
+        "start_line": 4,
+        "start_column": 1,
+        "end_line": 17,
+        "end_column": 1
+      }
+    },
+    {
+      "id": "InsufficientFundsException.java::study.translation.InsufficientFundsException",
+      "name": "InsufficientFundsException",
+      "qualified_name": "study.translation.InsufficientFundsException",
+      "kind": "CLASS",
+      "annotations": [],
+      "source_location": {
+        "file": "original/InsufficientFundsException.java",
+        "start_offset_utf16": 28,
+        "end_offset_utf16_exclusive": 217,
+        "start_line": 2,
+        "start_column": 1,
+        "end_line": 5,
+        "end_column": 1
+      },
+      "skeleton_location": {
+        "file": "skeleton/InsufficientFundsException.java",
+        "start_offset_utf16": 28,
+        "end_offset_utf16_exclusive": 302,
+        "start_line": 2,
+        "start_column": 1,
+        "end_line": 8,
+        "end_column": 1
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle",
+      "name": "Rectangle",
+      "qualified_name": "study.translation.Rectangle",
+      "kind": "CLASS",
+      "annotations": [],
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 248,
+        "end_offset_utf16_exclusive": 1297,
+        "start_line": 5,
+        "start_column": 1,
+        "end_line": 32,
+        "end_column": 1
+      },
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 248,
+        "end_offset_utf16_exclusive": 1379,
+        "start_line": 5,
+        "start_column": 1,
+        "end_line": 35,
+        "end_column": 1
+      }
+    }
+  ],
+  "members": [
+    {
+      "id": "Account.java::study.translation.Account#field:MAX_BALANCE",
+      "kind": "field",
+      "role": "field",
+      "owner": "study.translation.Account",
+      "name": "MAX_BALANCE",
+      "type": "int",
+      "declaration": "public static final int MAX_BALANCE = 1_000_000;",
+      "initializer": "1_000_000",
+      "source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 157,
+        "end_offset_utf16_exclusive": 205,
+        "start_line": 4,
+        "start_column": 5,
+        "end_line": 4,
+        "end_column": 52
+      },
+      "has_body": false,
+      "skeleton_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 157,
+        "end_offset_utf16_exclusive": 205,
+        "start_line": 4,
+        "start_column": 5,
+        "end_line": 4,
+        "end_column": 52
+      }
+    },
+    {
+      "id": "Account.java::study.translation.Account#field:balance",
+      "kind": "field",
+      "role": "field",
+      "owner": "study.translation.Account",
+      "name": "balance",
+      "type": "int",
+      "declaration": "private int balance;",
+      "initializer": null,
+      "source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 211,
+        "end_offset_utf16_exclusive": 231,
+        "start_line": 5,
+        "start_column": 5,
+        "end_line": 5,
+        "end_column": 24
+      },
+      "has_body": false,
+      "skeleton_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 211,
+        "end_offset_utf16_exclusive": 231,
+        "start_line": 5,
+        "start_column": 5,
+        "end_line": 5,
+        "end_column": 24
+      }
+    },
+    {
+      "id": "Account.java::study.translation.Account#<init>(int)",
+      "kind": "constructor",
+      "role": "constructor",
+      "owner": "study.translation.Account",
+      "name": "<init>",
+      "parameter_types": [
+        "int"
+      ],
+      "parameters": [
+        "int initialBalance"
+      ],
+      "return_type": null,
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public Account(int initialBalance) ",
+      "has_body": true,
+      "original_body": "{\r\n        if (initialBalance < 0 || initialBalance > MAX_BALANCE)\r\n            throw new IllegalArgumentException(\"invalid balance\");\r\n        balance = initialBalance;\r\n    }",
+      "source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 288,
+        "end_offset_utf16_exclusive": 499,
+        "start_line": 7,
+        "start_column": 5,
+        "end_line": 11,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 323,
+        "end_offset_utf16_exclusive": 499,
+        "start_line": 7,
+        "start_column": 40,
+        "end_line": 11,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 288,
+        "end_offset_utf16_exclusive": 403,
+        "start_line": 7,
+        "start_column": 5,
+        "end_line": 9,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 323,
+        "end_offset_utf16_exclusive": 403,
+        "start_line": 7,
+        "start_column": 40,
+        "end_line": 9,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Account.java::study.translation.Account#getBalance()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Account",
+      "name": "getBalance",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "int",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public int getBalance() ",
+      "has_body": true,
+      "original_body": "{ return balance; }",
+      "source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 529,
+        "end_offset_utf16_exclusive": 572,
+        "start_line": 13,
+        "start_column": 5,
+        "end_line": 13,
+        "end_column": 47
+      },
+      "body_source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 553,
+        "end_offset_utf16_exclusive": 572,
+        "start_line": 13,
+        "start_column": 29,
+        "end_line": 13,
+        "end_column": 47
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 433,
+        "end_offset_utf16_exclusive": 537,
+        "start_line": 11,
+        "start_column": 5,
+        "end_line": 13,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 457,
+        "end_offset_utf16_exclusive": 537,
+        "start_line": 11,
+        "start_column": 29,
+        "end_line": 13,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Account.java::study.translation.Account#deposit(int)",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Account",
+      "name": "deposit",
+      "parameter_types": [
+        "int"
+      ],
+      "parameters": [
+        "int amount"
+      ],
+      "return_type": "void",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public void deposit(int amount) ",
+      "has_body": true,
+      "original_body": "{\r\n        // 先做减法形式的上限比较，避免先相加造成整数溢出。\r\n        if (amount <= 0 || amount > MAX_BALANCE - balance)\r\n            throw new IllegalArgumentException(\"invalid deposit\");\r\n        balance += amount;\r\n    }",
+      "source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 621,
+        "end_offset_utf16_exclusive": 854,
+        "start_line": 15,
+        "start_column": 5,
+        "end_line": 20,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 653,
+        "end_offset_utf16_exclusive": 854,
+        "start_line": 15,
+        "start_column": 37,
+        "end_line": 20,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 586,
+        "end_offset_utf16_exclusive": 698,
+        "start_line": 15,
+        "start_column": 5,
+        "end_line": 17,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 618,
+        "end_offset_utf16_exclusive": 698,
+        "start_line": 15,
+        "start_column": 37,
+        "end_line": 17,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Account.java::study.translation.Account#withdraw(int)",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Account",
+      "name": "withdraw",
+      "parameter_types": [
+        "int"
+      ],
+      "parameters": [
+        "int amount"
+      ],
+      "return_type": "void",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public void withdraw(int amount) ",
+      "has_body": true,
+      "original_body": "{\r\n        if (amount <= 0) throw new IllegalArgumentException(\"invalid withdrawal\");\r\n        if (amount > balance) throw new InsufficientFundsException(\"insufficient funds\");\r\n        balance -= amount;\r\n    }",
+      "source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 898,
+        "end_offset_utf16_exclusive": 1142,
+        "start_line": 22,
+        "start_column": 5,
+        "end_line": 26,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/Account.java",
+        "start_offset_utf16": 931,
+        "end_offset_utf16_exclusive": 1142,
+        "start_line": 22,
+        "start_column": 38,
+        "end_line": 26,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 742,
+        "end_offset_utf16_exclusive": 855,
+        "start_line": 19,
+        "start_column": 5,
+        "end_line": 21,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Account.java",
+        "start_offset_utf16": 775,
+        "end_offset_utf16_exclusive": 855,
+        "start_line": 19,
+        "start_column": 38,
+        "end_line": 21,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "InstructionParser.java::study.translation.InstructionParser#<init>()",
+      "kind": "constructor",
+      "role": "constructor",
+      "owner": "study.translation.InstructionParser",
+      "name": "<init>",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": null,
+      "annotations": [],
+      "modifiers": [
+        "private"
+      ],
+      "throws": [],
+      "signature_source": "private InstructionParser() ",
+      "has_body": true,
+      "original_body": "{ }",
+      "source_location": {
+        "file": "original/InstructionParser.java",
+        "start_offset_utf16": 245,
+        "end_offset_utf16_exclusive": 276,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 35
+      },
+      "body_source_location": {
+        "file": "original/InstructionParser.java",
+        "start_offset_utf16": 273,
+        "end_offset_utf16_exclusive": 276,
+        "start_line": 6,
+        "start_column": 33,
+        "end_line": 6,
+        "end_column": 35
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/InstructionParser.java",
+        "start_offset_utf16": 245,
+        "end_offset_utf16_exclusive": 353,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 8,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/InstructionParser.java",
+        "start_offset_utf16": 273,
+        "end_offset_utf16_exclusive": 353,
+        "start_line": 6,
+        "start_column": 33,
+        "end_line": 8,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "InstructionParser.java::study.translation.InstructionParser#parse(String)",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.InstructionParser",
+      "name": "parse",
+      "parameter_types": [
+        "String"
+      ],
+      "parameters": [
+        "String input"
+      ],
+      "return_type": "int[]",
+      "annotations": [],
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "throws": [],
+      "signature_source": "public static int[] parse(String input) ",
+      "has_body": true,
+      "original_body": "{\r\n        if (input == null) throw new IllegalArgumentException(\"null input\");\r\n        var values = new ArrayList<Integer>();\r\n        // 只把普通空格作为分隔符；保留的空片段在循环内跳过。\r\n        for (String token : input.split(\" \", -1)) {\r\n            if (token.isEmpty()) continue;\r\n            switch (token) {\r\n                case \"ZERO\" -> values.add(0);\r\n                case \"INC\" -> values.add(1);\r\n                case \"DEC\" -> values.add(-1);\r\n                default -> values.add(parseNumber(token));\r\n            }\r\n        }\r\n        // 将Integer列表拆箱成int数组；断言检查数组内容，不检查对象身份。\r\n        return values.stream().mapToInt(Integer::intValue).toArray();\r\n    }",
+      "source_location": {
+        "file": "original/InstructionParser.java",
+        "start_offset_utf16": 342,
+        "end_offset_utf16_exclusive": 1027,
+        "start_line": 8,
+        "start_column": 5,
+        "end_line": 23,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/InstructionParser.java",
+        "start_offset_utf16": 382,
+        "end_offset_utf16_exclusive": 1027,
+        "start_line": 8,
+        "start_column": 45,
+        "end_line": 23,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/InstructionParser.java",
+        "start_offset_utf16": 419,
+        "end_offset_utf16_exclusive": 539,
+        "start_line": 10,
+        "start_column": 5,
+        "end_line": 12,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/InstructionParser.java",
+        "start_offset_utf16": 459,
+        "end_offset_utf16_exclusive": 539,
+        "start_line": 10,
+        "start_column": 45,
+        "end_line": 12,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "InstructionParser.java::study.translation.InstructionParser#parseNumber(String)",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.InstructionParser",
+      "name": "parseNumber",
+      "parameter_types": [
+        "String"
+      ],
+      "parameters": [
+        "String token"
+      ],
+      "return_type": "int",
+      "annotations": [],
+      "modifiers": [
+        "private",
+        "static"
+      ],
+      "throws": [],
+      "signature_source": "private static int parseNumber(String token) ",
+      "has_body": true,
+      "original_body": "{\r\n        int start = (token.charAt(0) == '+' || token.charAt(0) == '-') ? 1 : 0;\r\n        if (start == token.length()) throw new IllegalArgumentException(\"invalid token\");\r\n        for (int i = start; i < token.length(); i++) {\r\n            char c = token.charAt(i);\r\n            if (c < '0' || c > '9') throw new IllegalArgumentException(\"invalid token\");\r\n        }\r\n        try { return Integer.parseInt(token); }\r\n        catch (NumberFormatException e) { throw new IllegalArgumentException(\"out of int32 range\"); }\r\n    }",
+      "source_location": {
+        "file": "original/InstructionParser.java",
+        "start_offset_utf16": 1088,
+        "end_offset_utf16_exclusive": 1661,
+        "start_line": 25,
+        "start_column": 5,
+        "end_line": 34,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/InstructionParser.java",
+        "start_offset_utf16": 1133,
+        "end_offset_utf16_exclusive": 1661,
+        "start_line": 25,
+        "start_column": 50,
+        "end_line": 34,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/InstructionParser.java",
+        "start_offset_utf16": 600,
+        "end_offset_utf16_exclusive": 725,
+        "start_line": 14,
+        "start_column": 5,
+        "end_line": 16,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/InstructionParser.java",
+        "start_offset_utf16": 645,
+        "end_offset_utf16_exclusive": 725,
+        "start_line": 14,
+        "start_column": 50,
+        "end_line": 16,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "InsufficientFundsException.java::study.translation.InsufficientFundsException#<init>(String)",
+      "kind": "constructor",
+      "role": "constructor",
+      "owner": "study.translation.InsufficientFundsException",
+      "name": "<init>",
+      "parameter_types": [
+        "String"
+      ],
+      "parameters": [
+        "String message"
+      ],
+      "return_type": null,
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public InsufficientFundsException(String message) ",
+      "has_body": true,
+      "original_body": "{ super(message); }",
+      "source_location": {
+        "file": "original/InsufficientFundsException.java",
+        "start_offset_utf16": 145,
+        "end_offset_utf16_exclusive": 214,
+        "start_line": 4,
+        "start_column": 5,
+        "end_line": 4,
+        "end_column": 73
+      },
+      "body_source_location": {
+        "file": "original/InsufficientFundsException.java",
+        "start_offset_utf16": 195,
+        "end_offset_utf16_exclusive": 214,
+        "start_line": 4,
+        "start_column": 55,
+        "end_line": 4,
+        "end_column": 73
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": "super(message);",
+      "skeleton_location": {
+        "file": "skeleton/InsufficientFundsException.java",
+        "start_offset_utf16": 145,
+        "end_offset_utf16_exclusive": 299,
+        "start_line": 4,
+        "start_column": 5,
+        "end_line": 7,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/InsufficientFundsException.java",
+        "start_offset_utf16": 195,
+        "end_offset_utf16_exclusive": 299,
+        "start_line": 4,
+        "start_column": 55,
+        "end_line": 7,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#field:left",
+      "kind": "field",
+      "role": "field",
+      "owner": "study.translation.Rectangle",
+      "name": "left",
+      "type": "int",
+      "declaration": "private final int left,",
+      "initializer": null,
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 307,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 27
+      },
+      "has_body": false,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 307,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 27
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#field:top",
+      "kind": "field",
+      "role": "field",
+      "owner": "study.translation.Rectangle",
+      "name": "top",
+      "type": "int",
+      "declaration": "private final int left, top,",
+      "initializer": null,
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 312,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 32
+      },
+      "has_body": false,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 312,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 32
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#field:right",
+      "kind": "field",
+      "role": "field",
+      "owner": "study.translation.Rectangle",
+      "name": "right",
+      "type": "int",
+      "declaration": "private final int left, top, right,",
+      "initializer": null,
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 319,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 39
+      },
+      "has_body": false,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 319,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 39
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#field:bottom",
+      "kind": "field",
+      "role": "field",
+      "owner": "study.translation.Rectangle",
+      "name": "bottom",
+      "type": "int",
+      "declaration": "private final int left, top, right, bottom;",
+      "initializer": null,
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 327,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 47
+      },
+      "has_body": false,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 284,
+        "end_offset_utf16_exclusive": 327,
+        "start_line": 6,
+        "start_column": 5,
+        "end_line": 6,
+        "end_column": 47
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#<init>(int,int,int,int)",
+      "kind": "constructor",
+      "role": "constructor",
+      "owner": "study.translation.Rectangle",
+      "name": "<init>",
+      "parameter_types": [
+        "int",
+        "int",
+        "int",
+        "int"
+      ],
+      "parameters": [
+        "int left",
+        "int top",
+        "int right",
+        "int bottom"
+      ],
+      "return_type": null,
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public Rectangle(int left, int top, int right, int bottom) ",
+      "has_body": true,
+      "original_body": "{\r\n        if (left > right || top > bottom)\r\n            throw new IllegalArgumentException(\"invalid rectangle\");\r\n        this.left = left;\r\n        this.top = top;\r\n        this.right = right;\r\n        this.bottom = bottom;\r\n    }",
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 373,
+        "end_offset_utf16_exclusive": 665,
+        "start_line": 8,
+        "start_column": 5,
+        "end_line": 15,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 432,
+        "end_offset_utf16_exclusive": 665,
+        "start_line": 8,
+        "start_column": 64,
+        "end_line": 15,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 373,
+        "end_offset_utf16_exclusive": 512,
+        "start_line": 8,
+        "start_column": 5,
+        "end_line": 10,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 432,
+        "end_offset_utf16_exclusive": 512,
+        "start_line": 8,
+        "start_column": 64,
+        "end_line": 10,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#getLeft()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Rectangle",
+      "name": "getLeft",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "int",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public int getLeft() ",
+      "has_body": true,
+      "original_body": "{ return left; }",
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 695,
+        "end_offset_utf16_exclusive": 732,
+        "start_line": 17,
+        "start_column": 5,
+        "end_line": 17,
+        "end_column": 41
+      },
+      "body_source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 716,
+        "end_offset_utf16_exclusive": 732,
+        "start_line": 17,
+        "start_column": 26,
+        "end_line": 17,
+        "end_column": 41
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 542,
+        "end_offset_utf16_exclusive": 643,
+        "start_line": 12,
+        "start_column": 5,
+        "end_line": 14,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 563,
+        "end_offset_utf16_exclusive": 643,
+        "start_line": 12,
+        "start_column": 26,
+        "end_line": 14,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#getTop()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Rectangle",
+      "name": "getTop",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "int",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public int getTop() ",
+      "has_body": true,
+      "original_body": "{ return top; }",
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 766,
+        "end_offset_utf16_exclusive": 801,
+        "start_line": 19,
+        "start_column": 5,
+        "end_line": 19,
+        "end_column": 39
+      },
+      "body_source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 786,
+        "end_offset_utf16_exclusive": 801,
+        "start_line": 19,
+        "start_column": 25,
+        "end_line": 19,
+        "end_column": 39
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 677,
+        "end_offset_utf16_exclusive": 777,
+        "start_line": 16,
+        "start_column": 5,
+        "end_line": 18,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 697,
+        "end_offset_utf16_exclusive": 777,
+        "start_line": 16,
+        "start_column": 25,
+        "end_line": 18,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#getRight()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Rectangle",
+      "name": "getRight",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "int",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public int getRight() ",
+      "has_body": true,
+      "original_body": "{ return right; }",
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 831,
+        "end_offset_utf16_exclusive": 870,
+        "start_line": 21,
+        "start_column": 5,
+        "end_line": 21,
+        "end_column": 43
+      },
+      "body_source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 853,
+        "end_offset_utf16_exclusive": 870,
+        "start_line": 21,
+        "start_column": 27,
+        "end_line": 21,
+        "end_column": 43
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 807,
+        "end_offset_utf16_exclusive": 909,
+        "start_line": 20,
+        "start_column": 5,
+        "end_line": 22,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 829,
+        "end_offset_utf16_exclusive": 909,
+        "start_line": 20,
+        "start_column": 27,
+        "end_line": 22,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#getBottom()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Rectangle",
+      "name": "getBottom",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "int",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public int getBottom() ",
+      "has_body": true,
+      "original_body": "{ return bottom; }",
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 900,
+        "end_offset_utf16_exclusive": 941,
+        "start_line": 23,
+        "start_column": 5,
+        "end_line": 23,
+        "end_column": 45
+      },
+      "body_source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 923,
+        "end_offset_utf16_exclusive": 941,
+        "start_line": 23,
+        "start_column": 28,
+        "end_line": 23,
+        "end_column": 45
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 939,
+        "end_offset_utf16_exclusive": 1042,
+        "start_line": 24,
+        "start_column": 5,
+        "end_line": 26,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 962,
+        "end_offset_utf16_exclusive": 1042,
+        "start_line": 24,
+        "start_column": 28,
+        "end_line": 26,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#intersectsWith(Rectangle)",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Rectangle",
+      "name": "intersectsWith",
+      "parameter_types": [
+        "Rectangle"
+      ],
+      "parameters": [
+        "Rectangle r"
+      ],
+      "return_type": "boolean",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public boolean intersectsWith(Rectangle r) ",
+      "has_body": true,
+      "original_body": "{\r\n        return !(r.left > right || r.right < left || r.top > bottom || r.bottom < top);\r\n    }",
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 991,
+        "end_offset_utf16_exclusive": 1131,
+        "start_line": 25,
+        "start_column": 5,
+        "end_line": 27,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 1034,
+        "end_offset_utf16_exclusive": 1131,
+        "start_line": 25,
+        "start_column": 48,
+        "end_line": 27,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 1092,
+        "end_offset_utf16_exclusive": 1215,
+        "start_line": 28,
+        "start_column": 5,
+        "end_line": 30,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 1135,
+        "end_offset_utf16_exclusive": 1215,
+        "start_line": 28,
+        "start_column": 48,
+        "end_line": 30,
+        "end_column": 5
+      }
+    },
+    {
+      "id": "Rectangle.java::study.translation.Rectangle#toString()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "study.translation.Rectangle",
+      "name": "toString",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "String",
+      "annotations": [
+        {
+          "source": "@Override",
+          "name": "Override",
+          "resolved_candidate": null,
+          "resolution": "syntactic import lookup, not full type attribution"
+        }
+      ],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "@Override public String toString() ",
+      "has_body": true,
+      "original_body": "{\r\n        return String.format(\"[%d,%d,%d,%d]\", left, top, right, bottom);\r\n    }",
+      "source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 1177,
+        "end_offset_utf16_exclusive": 1294,
+        "start_line": 29,
+        "start_column": 5,
+        "end_line": 31,
+        "end_column": 5
+      },
+      "body_source_location": {
+        "file": "original/Rectangle.java",
+        "start_offset_utf16": 1212,
+        "end_offset_utf16_exclusive": 1294,
+        "start_line": 29,
+        "start_column": 40,
+        "end_line": 31,
+        "end_column": 5
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 1261,
+        "end_offset_utf16_exclusive": 1376,
+        "start_line": 32,
+        "start_column": 5,
+        "end_line": 34,
+        "end_column": 5
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/Rectangle.java",
+        "start_offset_utf16": 1296,
+        "end_offset_utf16_exclusive": 1376,
+        "start_line": 32,
+        "start_column": 40,
+        "end_line": 34,
+        "end_column": 5
+      }
+    }
+  ],
+  "diagnostics": []
+}

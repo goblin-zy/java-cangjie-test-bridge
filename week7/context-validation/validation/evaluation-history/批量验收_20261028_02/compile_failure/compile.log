@@ -1,0 +1,18 @@
+error: mismatched types
+ ==> E:\cj_projects\cj_exec_yws08id9\src\0001_bad_test.cj:8:51:
+  | 
+8 |     func invalidType(): Unit { let value: Int32 = "intentional type error" }
+  |                                                   ^ expected 'Int32', found 'Struct-String'
+  | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+ ==> E:\cj_projects\cj_exec_yws08id9\src\0001_bad_test.cj:5:1:
+  | 
+5 |   @Test
+  |  _^
+6 | | class BrokenTests {
+  | | ...
+9 | | }
+  | |_^
+  | 
+
+1 error generated, 1 error printed.

@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-28T16:13:20.284792+08:00",
+  "finished_at": "2026-10-28T16:13:21.396170+08:00",
+  "duration_seconds": 1.11,
+  "argv": [
+    "E:\\cj_projects\\cj_exec_x2bt0__e\\tests.exe",
+    "--no-color",
+    "--no-progress",
+    "--report-format=xml",
+    "--report-path=E:\\cj_projects\\cj_exec_x2bt0__e\\xml"
+  ],
+  "cwd": "E:\\cj_projects\\cj_exec_x2bt0__e",
+  "exit_code": null,
+  "timed_out": true,
+  "launch_error": null,
+  "logs": {
+    "stdout": "run.stdout.log",
+    "stderr": "run.stderr.log",
+    "readable": "run.log"
+  }
+}

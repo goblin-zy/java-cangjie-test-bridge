@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner_probe.SkipTests" tests="1" failures="0" errors="0" skipped="1" time="0.000034" timestamp="2026-10-28T16:13:10.4439553+08:00">
+	<testcase name="intentionallySkipped" classname="runner_probe.SkipTests" assertions="0" time="0.000000">
+		<skipped/>
+	</testcase>
+</testsuite>

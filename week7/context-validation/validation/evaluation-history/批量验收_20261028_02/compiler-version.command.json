@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-10-28T16:13:02.022223+08:00",
+  "finished_at": "2026-10-28T16:13:02.152457+08:00",
+  "duration_seconds": 0.14,
+  "argv": [
+    "E:\\cangjie\\bin\\cjc.exe",
+    "--version"
+  ],
+  "cwd": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输出\\批量验收_20261028_02",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "compiler-version.stdout.log",
+    "stderr": "compiler-version.stderr.log",
+    "readable": "compiler-version.log"
+  }
+}

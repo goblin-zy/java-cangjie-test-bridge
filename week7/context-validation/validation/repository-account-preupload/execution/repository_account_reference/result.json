@@ -1,0 +1,164 @@
+{
+  "schema_version": "cangjie-execution-v1",
+  "combination_id": "repository_account_reference",
+  "business_role": "normal",
+  "started_at": "2026-10-29T21:11:19.503216+08:00",
+  "status": "PASSED",
+  "compile_status": "PASSED",
+  "expected_count": 9,
+  "discovered_count": 9,
+  "executed_count": 9,
+  "passed_count": 9,
+  "failed_count": 0,
+  "error_count": 0,
+  "skipped_count": 0,
+  "compile_exit_code": 0,
+  "discovery_exit_code": 0,
+  "run_exit_code": 0,
+  "expected_execution_ratio": 1.0,
+  "pass_rate_executed": 1.0,
+  "expected_pass_ratio": 1.0,
+  "missing_expected": [],
+  "not_executed_expected": [],
+  "unexpected_executed": [],
+  "stages": {
+    "compile": {
+      "started_at": "2026-10-29T21:11:19.509755+08:00",
+      "finished_at": "2026-10-29T21:11:22.125814+08:00",
+      "duration_seconds": 2.609,
+      "argv": [
+        "E:\\cangjie\\bin\\cjc.exe",
+        "--test",
+        "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\src\\0000_account.cj",
+        "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\src\\0001_account_test.cj",
+        "-o",
+        "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\tests.exe"
+      ],
+      "cwd": "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "compile.stdout.log",
+        "stderr": "compile.stderr.log",
+        "readable": "compile.log"
+      }
+    },
+    "discovery": {
+      "started_at": "2026-10-29T21:11:22.128176+08:00",
+      "finished_at": "2026-10-29T21:11:22.877712+08:00",
+      "duration_seconds": 0.75,
+      "argv": [
+        "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\tests.exe",
+        "--dry-run",
+        "--no-color",
+        "--no-progress"
+      ],
+      "cwd": "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "discovery.stdout.log",
+        "stderr": "discovery.stderr.log",
+        "readable": "discovery.log"
+      }
+    },
+    "run": {
+      "started_at": "2026-10-29T21:11:22.880135+08:00",
+      "finished_at": "2026-10-29T21:11:23.220379+08:00",
+      "duration_seconds": 0.328,
+      "argv": [
+        "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\tests.exe",
+        "--no-color",
+        "--no-progress",
+        "--report-format=xml",
+        "--report-path=C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5\\xml"
+      ],
+      "cwd": "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5",
+      "exit_code": 0,
+      "timed_out": false,
+      "launch_error": null,
+      "logs": {
+        "stdout": "run.stdout.log",
+        "stderr": "run.stderr.log",
+        "readable": "run.log"
+      }
+    }
+  },
+  "sources": [
+    {
+      "role": "business",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\.cache\\github-week7-snapshot\\goblin-zy-java-cangjie-test-bridge-aca23e6\\week7\\reference\\cangjie\\implementation\\account.cj",
+      "snapshot": "source/0000_account.cj",
+      "sha256": "31071893fb68ad2b9665921cf21a22b1a0a39d4c111c24e653baa903faa08833"
+    },
+    {
+      "role": "tests",
+      "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\.cache\\github-week7-snapshot\\goblin-zy-java-cangjie-test-bridge-aca23e6\\week7\\reference\\cangjie\\tests\\account_test.cj",
+      "snapshot": "source/0001_account_test.cj",
+      "sha256": "f9469df59ff80c3665c394a3316ab968a588bdf458a628f74f44595e2980b73f"
+    }
+  ],
+  "source_integrity": true,
+  "limitations": [
+    "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+  ],
+  "expectation_mode": "names",
+  "expected_tests": [
+    "starter.AccountTest#testInitialBalance()",
+    "starter.AccountTest#testDeposit()",
+    "starter.AccountTest#testWithdraw()",
+    "starter.AccountTest#testWithdrawAll()",
+    "starter.AccountTest#testSequence()",
+    "starter.AccountTest#testInsufficientFunds()",
+    "starter.AccountTest#testInvalidAmounts()",
+    "starter.AccountTest#testBalanceLimit()",
+    "starter.AccountTest#testInvalidInitialBalance()"
+  ],
+  "working_directory": "C:\\Users\\JIANGY~1\\AppData\\Local\\Temp\\cj_exec_t0qys7t5",
+  "run_options": [],
+  "compile_options": [],
+  "discovered_tests": [
+    "starter.AccountTest#testBalanceLimit()",
+    "starter.AccountTest#testDeposit()",
+    "starter.AccountTest#testInitialBalance()",
+    "starter.AccountTest#testInsufficientFunds()",
+    "starter.AccountTest#testInvalidAmounts()",
+    "starter.AccountTest#testInvalidInitialBalance()",
+    "starter.AccountTest#testSequence()",
+    "starter.AccountTest#testWithdraw()",
+    "starter.AccountTest#testWithdrawAll()"
+  ],
+  "unidentified_discovery_skips": 0,
+  "discovery_identity_complete": true,
+  "resolved_expected_tests": [
+    "starter.AccountTest#testBalanceLimit()",
+    "starter.AccountTest#testDeposit()",
+    "starter.AccountTest#testInitialBalance()",
+    "starter.AccountTest#testInsufficientFunds()",
+    "starter.AccountTest#testInvalidAmounts()",
+    "starter.AccountTest#testInvalidInitialBalance()",
+    "starter.AccountTest#testSequence()",
+    "starter.AccountTest#testWithdraw()",
+    "starter.AccountTest#testWithdrawAll()"
+  ],
+  "unresolved_expected_in_discovery": [],
+  "report_source": "xml_with_console_cross_check",
+  "cases": {
+    "starter.AccountTest#testInitialBalance()": "PASSED",
+    "starter.AccountTest#testDeposit()": "PASSED",
+    "starter.AccountTest#testWithdraw()": "PASSED",
+    "starter.AccountTest#testWithdrawAll()": "PASSED",
+    "starter.AccountTest#testSequence()": "PASSED",
+    "starter.AccountTest#testInsufficientFunds()": "PASSED",
+    "starter.AccountTest#testInvalidAmounts()": "PASSED",
+    "starter.AccountTest#testBalanceLimit()": "PASSED",
+    "starter.AccountTest#testInvalidInitialBalance()": "PASSED"
+  },
+  "unidentified_run_skips": 0,
+  "run_identity_complete": true,
+  "unresolved_expected_after_run": [],
+  "message": "编译、发现、执行及预期清单检查通过",
+  "finished_at": "2026-10-29T21:11:23.233584+08:00"
+}

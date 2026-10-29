@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner_probe.SumTests" tests="1" failures="0" errors="0" skipped="0" time="0.000596" timestamp="2026-10-28T16:13:18.7586859+08:00">
+	<testcase name="twoNumbers" classname="runner_probe.SumTests" assertions="1" time="0.000236"/>
+</testsuite>

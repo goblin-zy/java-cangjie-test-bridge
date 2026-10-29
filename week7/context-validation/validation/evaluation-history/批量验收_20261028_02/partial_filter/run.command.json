@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-10-28T16:13:11.790791+08:00",
+  "finished_at": "2026-10-28T16:13:12.007815+08:00",
+  "duration_seconds": 0.219,
+  "argv": [
+    "E:\\cj_projects\\cj_exec_xhu9dm5k\\tests.exe",
+    "--no-color",
+    "--no-progress",
+    "--report-format=xml",
+    "--report-path=E:\\cj_projects\\cj_exec_xhu9dm5k\\xml",
+    "--filter=AccountTest.normalWithdrawal"
+  ],
+  "cwd": "E:\\cj_projects\\cj_exec_xhu9dm5k",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "run.stdout.log",
+    "stderr": "run.stderr.log",
+    "readable": "run.log"
+  }
+}

@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------------------------
+TP: context_workflow_case, time elapsed: 655900 ns, RESULT:
+    TCS: AccountTest, time elapsed: 649100 ns, RESULT:
+    [ PASSED ] CASE: insufficientFunds (44200 ns)
+    [ FAILED ] CASE: normalWithdrawal (157800 ns)
+    Assert Failed: `(account.getBalance() == 70i32 == true)`
+       left: false
+      right: true
+
+Summary: TOTAL: 2
+    PASSED: 1, SKIPPED: 0, ERROR: 0
+    FAILED: 1, listed below:
+            TCS: AccountTest, CASE: normalWithdrawal
+--------------------------------------------------------------------------------------------------

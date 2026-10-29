@@ -1,0 +1,18 @@
+{
+  "sdk_root": "E:\\cangjie",
+  "id": "repository_account_reference",
+  "business_role": "normal",
+  "business": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\.cache\\github-week7-snapshot\\goblin-zy-java-cangjie-test-bridge-aca23e6\\week7\\reference\\cangjie\\implementation\\account.cj",
+  "tests": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\.cache\\github-week7-snapshot\\goblin-zy-java-cangjie-test-bridge-aca23e6\\week7\\reference\\cangjie\\tests\\account_test.cj",
+  "expected_tests": [
+    "starter.AccountTest#testInitialBalance()",
+    "starter.AccountTest#testDeposit()",
+    "starter.AccountTest#testWithdraw()",
+    "starter.AccountTest#testWithdrawAll()",
+    "starter.AccountTest#testSequence()",
+    "starter.AccountTest#testInsufficientFunds()",
+    "starter.AccountTest#testInvalidAmounts()",
+    "starter.AccountTest#testBalanceLimit()",
+    "starter.AccountTest#testInvalidInitialBalance()"
+  ]
+}

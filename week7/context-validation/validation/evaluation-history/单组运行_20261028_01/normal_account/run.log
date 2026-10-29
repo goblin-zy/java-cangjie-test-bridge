@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------------------------
+TP: context_workflow_case, time elapsed: 499400 ns, RESULT:
+    TCS: AccountTest, time elapsed: 491100 ns, RESULT:
+    [ PASSED ] CASE: normalWithdrawal (170100 ns)
+    [ PASSED ] CASE: insufficientFunds (102400 ns)
+Summary: TOTAL: 2
+    PASSED: 2, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

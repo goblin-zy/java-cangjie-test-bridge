@@ -1,0 +1,1571 @@
+{
+  "schema_version": "cangjie-execution-batch-v1",
+  "created_at": "2026-10-28T16:13:21.400461+08:00",
+  "config_file": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\验收配置.json",
+  "combinations": [
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "normal_account",
+      "business_role": "normal",
+      "started_at": "2026-10-28T16:13:02.155447+08:00",
+      "status": "PASSED",
+      "compile_status": "PASSED",
+      "expected_count": 2,
+      "discovered_count": 2,
+      "executed_count": 2,
+      "passed_count": 2,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 0,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 0,
+      "expected_execution_ratio": 1.0,
+      "pass_rate_executed": 1.0,
+      "expected_pass_ratio": 1.0,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:02.161427+08:00",
+          "finished_at": "2026-10-28T16:13:03.015161+08:00",
+          "duration_seconds": 0.86,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_699xpr2c\\src\\0000_account.cj",
+            "E:\\cj_projects\\cj_exec_699xpr2c\\src\\0001_account_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_699xpr2c\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_699xpr2c",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:03.017155+08:00",
+          "finished_at": "2026-10-28T16:13:03.799129+08:00",
+          "duration_seconds": 0.781,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_699xpr2c\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_699xpr2c",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:03.804112+08:00",
+          "finished_at": "2026-10-28T16:13:04.097530+08:00",
+          "duration_seconds": 0.297,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_699xpr2c\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_699xpr2c\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_699xpr2c",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account.cj",
+          "snapshot": "source/0000_account.cj",
+          "sha256": "9e2dbea24f844c97192f2f604999e970f5baf2d32bc0393cea7e66e91bfb1435"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+          "snapshot": "source/0001_account_test.cj",
+          "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_699xpr2c",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unresolved_expected_in_discovery": [],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "context_workflow_case.AccountTest#normalWithdrawal()": "PASSED",
+        "context_workflow_case.AccountTest#insufficientFunds()": "PASSED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "编译、发现、执行及预期清单检查通过",
+      "finished_at": "2026-10-28T16:13:04.108493+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "assertion_failure",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:04.110992+08:00",
+      "status": "ASSERTION_FAILED",
+      "compile_status": "PASSED",
+      "expected_count": 2,
+      "discovered_count": 2,
+      "executed_count": 2,
+      "passed_count": 1,
+      "failed_count": 1,
+      "error_count": 0,
+      "skipped_count": 0,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 1,
+      "expected_execution_ratio": 1.0,
+      "pass_rate_executed": 0.5,
+      "expected_pass_ratio": 0.5,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:04.116972+08:00",
+          "finished_at": "2026-10-28T16:13:04.866279+08:00",
+          "duration_seconds": 0.75,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_i1cpnnp0\\src\\0000_account_wrong.cj",
+            "E:\\cj_projects\\cj_exec_i1cpnnp0\\src\\0001_account_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_i1cpnnp0\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_i1cpnnp0",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:04.868666+08:00",
+          "finished_at": "2026-10-28T16:13:05.435729+08:00",
+          "duration_seconds": 0.578,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_i1cpnnp0\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_i1cpnnp0",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:05.438141+08:00",
+          "finished_at": "2026-10-28T16:13:05.652886+08:00",
+          "duration_seconds": 0.219,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_i1cpnnp0\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_i1cpnnp0\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_i1cpnnp0",
+          "exit_code": 1,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_wrong.cj",
+          "snapshot": "source/0000_account_wrong.cj",
+          "sha256": "154abc9994a6e2e48985aaf470eac0aeba38e4699a2fa97def6b4d5c8c490a7a"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+          "snapshot": "source/0001_account_test.cj",
+          "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_i1cpnnp0",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unresolved_expected_in_discovery": [],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "context_workflow_case.AccountTest#insufficientFunds()": "PASSED",
+        "context_workflow_case.AccountTest#normalWithdrawal()": "FAILED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "存在断言失败",
+      "finished_at": "2026-10-28T16:13:05.662622+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "runtime_error",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:05.663880+08:00",
+      "status": "TEST_ERROR",
+      "compile_status": "PASSED",
+      "expected_count": 1,
+      "discovered_count": 1,
+      "executed_count": 1,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 1,
+      "skipped_count": 0,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 1,
+      "expected_execution_ratio": 1.0,
+      "pass_rate_executed": 0.0,
+      "expected_pass_ratio": 0.0,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:05.670024+08:00",
+          "finished_at": "2026-10-28T16:13:06.387983+08:00",
+          "duration_seconds": 0.719,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_gx0nfim8\\src\\0000_calc.cj",
+            "E:\\cj_projects\\cj_exec_gx0nfim8\\src\\0001_error_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_gx0nfim8\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_gx0nfim8",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:06.390012+08:00",
+          "finished_at": "2026-10-28T16:13:06.918911+08:00",
+          "duration_seconds": 0.531,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_gx0nfim8\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_gx0nfim8",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:06.920905+08:00",
+          "finished_at": "2026-10-28T16:13:07.138335+08:00",
+          "duration_seconds": 0.219,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_gx0nfim8\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_gx0nfim8\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_gx0nfim8",
+          "exit_code": 1,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+          "snapshot": "source/0000_calc.cj",
+          "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\error_test.cj",
+          "snapshot": "source/0001_error_test.cj",
+          "sha256": "c55f42e7aa0c8e1f13d210cba24a7e1fc4e0ef43790f8666072b2344b6aa065a"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "ErrorTests#unexpectedException()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_gx0nfim8",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [
+        "runner_probe.ErrorTests#unexpectedException()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [
+        "runner_probe.ErrorTests#unexpectedException()"
+      ],
+      "unresolved_expected_in_discovery": [],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "runner_probe.ErrorTests#unexpectedException()": "ERROR"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "测试用例发生未预期运行异常",
+      "finished_at": "2026-10-28T16:13:07.147687+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "compile_failure",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:07.148691+08:00",
+      "status": "COMPILE_FAILED",
+      "compile_status": "FAILED",
+      "expected_count": 1,
+      "discovered_count": null,
+      "executed_count": null,
+      "passed_count": null,
+      "failed_count": null,
+      "error_count": null,
+      "skipped_count": null,
+      "compile_exit_code": 1,
+      "discovery_exit_code": null,
+      "run_exit_code": null,
+      "expected_execution_ratio": null,
+      "pass_rate_executed": null,
+      "expected_pass_ratio": null,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:07.154502+08:00",
+          "finished_at": "2026-10-28T16:13:07.499977+08:00",
+          "duration_seconds": 0.344,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_yws08id9\\src\\0000_calc.cj",
+            "E:\\cj_projects\\cj_exec_yws08id9\\src\\0001_bad_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_yws08id9\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_yws08id9",
+          "exit_code": 1,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+          "snapshot": "source/0000_calc.cj",
+          "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\bad_test.cj",
+          "snapshot": "source/0001_bad_test.cj",
+          "sha256": "c561a48c6016fdc4180d3a205ad4c76ade07c2ed4bd09979df09ff358a93c80b"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "BrokenTests#invalidType()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_yws08id9",
+      "run_options": [],
+      "compile_options": [],
+      "message": "编译失败，未执行测试",
+      "finished_at": "2026-10-28T16:13:07.502165+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "no_tests",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:07.504161+08:00",
+      "status": "NO_TESTS_FOUND",
+      "compile_status": "PASSED",
+      "expected_count": 1,
+      "discovered_count": 0,
+      "executed_count": 0,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 0,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": null,
+      "expected_execution_ratio": 0.0,
+      "pass_rate_executed": null,
+      "expected_pass_ratio": 0.0,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:07.510484+08:00",
+          "finished_at": "2026-10-28T16:13:08.233313+08:00",
+          "duration_seconds": 0.718,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_dsk7f6dx\\src\\0000_calc.cj",
+            "E:\\cj_projects\\cj_exec_dsk7f6dx\\src\\0001_empty_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_dsk7f6dx\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_dsk7f6dx",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:08.235788+08:00",
+          "finished_at": "2026-10-28T16:13:08.937121+08:00",
+          "duration_seconds": 0.703,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_dsk7f6dx\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_dsk7f6dx",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+          "snapshot": "source/0000_calc.cj",
+          "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\empty_test.cj",
+          "snapshot": "source/0001_empty_test.cj",
+          "sha256": "ab711382bc40b23a08051051845dca457cb05cebc17506b3fe35751ac58ebfbb"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "EmptyTests#absent()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_dsk7f6dx",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "message": "编译成功但未发现测试，不能报告通过",
+      "finished_at": "2026-10-28T16:13:08.938442+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "skipped",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:08.939844+08:00",
+      "status": "ZERO_TESTS_EXECUTED",
+      "compile_status": "PASSED",
+      "expected_count": 1,
+      "discovered_count": 1,
+      "executed_count": 0,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 1,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 0,
+      "expected_execution_ratio": 0.0,
+      "pass_rate_executed": null,
+      "expected_pass_ratio": 0.0,
+      "missing_expected": [],
+      "not_executed_expected": [
+        "runner_probe.SkipTests#intentionallySkipped()"
+      ],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:08.945157+08:00",
+          "finished_at": "2026-10-28T16:13:09.658613+08:00",
+          "duration_seconds": 0.719,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_xmdolk89\\src\\0000_calc.cj",
+            "E:\\cj_projects\\cj_exec_xmdolk89\\src\\0001_skip_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_xmdolk89\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_xmdolk89",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:09.659615+08:00",
+          "finished_at": "2026-10-28T16:13:10.182363+08:00",
+          "duration_seconds": 0.531,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_xmdolk89\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_xmdolk89",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:10.184357+08:00",
+          "finished_at": "2026-10-28T16:13:10.461952+08:00",
+          "duration_seconds": 0.266,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_xmdolk89\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_xmdolk89\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_xmdolk89",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+          "snapshot": "source/0000_calc.cj",
+          "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\skip_test.cj",
+          "snapshot": "source/0001_skip_test.cj",
+          "sha256": "7e1517ac3e4dcae5a43933f86ddfcc1687790e50966067b6d206d8e6e2ab95f6"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "SkipTests#intentionallySkipped()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_xmdolk89",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [],
+      "unidentified_discovery_skips": 1,
+      "discovery_identity_complete": false,
+      "resolved_expected_tests": [
+        "runner_probe.SkipTests#intentionallySkipped()"
+      ],
+      "unresolved_expected_in_discovery": [
+        "SkipTests#intentionallySkipped()"
+      ],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "runner_probe.SkipTests#intentionallySkipped()": "SKIPPED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "测试全部跳过或被过滤，不能报告通过",
+      "finished_at": "2026-10-28T16:13:10.470999+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "partial_filter",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:10.473441+08:00",
+      "status": "TEST_SET_MISMATCH",
+      "compile_status": "PASSED",
+      "expected_count": 2,
+      "discovered_count": 2,
+      "executed_count": 1,
+      "passed_count": 1,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 1,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 0,
+      "expected_execution_ratio": 0.5,
+      "pass_rate_executed": 1.0,
+      "expected_pass_ratio": 0.5,
+      "missing_expected": [],
+      "not_executed_expected": [
+        "context_workflow_case.AccountTest#insufficientFunds()"
+      ],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:10.477829+08:00",
+          "finished_at": "2026-10-28T16:13:11.209239+08:00",
+          "duration_seconds": 0.734,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_xhu9dm5k\\src\\0000_account.cj",
+            "E:\\cj_projects\\cj_exec_xhu9dm5k\\src\\0001_account_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_xhu9dm5k\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_xhu9dm5k",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:11.211498+08:00",
+          "finished_at": "2026-10-28T16:13:11.788275+08:00",
+          "duration_seconds": 0.578,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_xhu9dm5k\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_xhu9dm5k",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:11.790791+08:00",
+          "finished_at": "2026-10-28T16:13:12.007815+08:00",
+          "duration_seconds": 0.219,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_xhu9dm5k\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_xhu9dm5k\\xml",
+            "--filter=AccountTest.normalWithdrawal"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_xhu9dm5k",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account.cj",
+          "snapshot": "source/0000_account.cj",
+          "sha256": "9e2dbea24f844c97192f2f604999e970f5baf2d32bc0393cea7e66e91bfb1435"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+          "snapshot": "source/0001_account_test.cj",
+          "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_xhu9dm5k",
+      "run_options": [
+        "--filter=AccountTest.normalWithdrawal"
+      ],
+      "compile_options": [],
+      "discovered_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unresolved_expected_in_discovery": [],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "context_workflow_case.AccountTest#normalWithdrawal()": "PASSED",
+        "context_workflow_case.AccountTest#insufficientFunds()": "SKIPPED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "预期测试未完整执行，或执行了清单外测试",
+      "finished_at": "2026-10-28T16:13:12.016898+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "all_filtered",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:12.018901+08:00",
+      "status": "ZERO_TESTS_EXECUTED",
+      "compile_status": "PASSED",
+      "expected_count": 2,
+      "discovered_count": 2,
+      "executed_count": 0,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 2,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 0,
+      "expected_execution_ratio": 0.0,
+      "pass_rate_executed": null,
+      "expected_pass_ratio": 0.0,
+      "missing_expected": [],
+      "not_executed_expected": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:12.023444+08:00",
+          "finished_at": "2026-10-28T16:13:12.758657+08:00",
+          "duration_seconds": 0.734,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_yguzmcnr\\src\\0000_account.cj",
+            "E:\\cj_projects\\cj_exec_yguzmcnr\\src\\0001_account_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_yguzmcnr\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_yguzmcnr",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:12.760661+08:00",
+          "finished_at": "2026-10-28T16:13:13.350952+08:00",
+          "duration_seconds": 0.578,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_yguzmcnr\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_yguzmcnr",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:13.353943+08:00",
+          "finished_at": "2026-10-28T16:13:13.617666+08:00",
+          "duration_seconds": 0.25,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_yguzmcnr\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_yguzmcnr\\xml",
+            "--filter=NothingExists.*"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_yguzmcnr",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account.cj",
+          "snapshot": "source/0000_account.cj",
+          "sha256": "9e2dbea24f844c97192f2f604999e970f5baf2d32bc0393cea7e66e91bfb1435"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+          "snapshot": "source/0001_account_test.cj",
+          "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_yguzmcnr",
+      "run_options": [
+        "--filter=NothingExists.*"
+      ],
+      "compile_options": [],
+      "discovered_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unresolved_expected_in_discovery": [],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "context_workflow_case.AccountTest#normalWithdrawal()": "SKIPPED",
+        "context_workflow_case.AccountTest#insufficientFunds()": "SKIPPED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "测试全部跳过或被过滤，不能报告通过",
+      "finished_at": "2026-10-28T16:13:13.627712+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "wrong_expected_name",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:13.630336+08:00",
+      "status": "TEST_SET_MISMATCH",
+      "compile_status": "PASSED",
+      "expected_count": 1,
+      "discovered_count": 2,
+      "executed_count": 2,
+      "passed_count": 2,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 0,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 0,
+      "expected_execution_ratio": 0.0,
+      "pass_rate_executed": 1.0,
+      "expected_pass_ratio": 0.0,
+      "missing_expected": [
+        "AccountTest#absent()"
+      ],
+      "not_executed_expected": [
+        "AccountTest#absent()"
+      ],
+      "unexpected_executed": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:13.634544+08:00",
+          "finished_at": "2026-10-28T16:13:14.404221+08:00",
+          "duration_seconds": 0.781,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_84h18l45\\src\\0000_account.cj",
+            "E:\\cj_projects\\cj_exec_84h18l45\\src\\0001_account_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_84h18l45\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_84h18l45",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:14.406223+08:00",
+          "finished_at": "2026-10-28T16:13:15.218051+08:00",
+          "duration_seconds": 0.813,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_84h18l45\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_84h18l45",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:15.222256+08:00",
+          "finished_at": "2026-10-28T16:13:15.528030+08:00",
+          "duration_seconds": 0.312,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_84h18l45\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_84h18l45\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_84h18l45",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account.cj",
+          "snapshot": "source/0000_account.cj",
+          "sha256": "9e2dbea24f844c97192f2f604999e970f5baf2d32bc0393cea7e66e91bfb1435"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+          "snapshot": "source/0001_account_test.cj",
+          "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "AccountTest#absent()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_84h18l45",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [],
+      "unresolved_expected_in_discovery": [],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "context_workflow_case.AccountTest#normalWithdrawal()": "PASSED",
+        "context_workflow_case.AccountTest#insufficientFunds()": "PASSED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "预期测试未完整执行，或执行了清单外测试",
+      "finished_at": "2026-10-28T16:13:15.541306+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "missing_source",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:15.543312+08:00",
+      "status": "INVALID_INPUT",
+      "compile_status": "NOT_RUN",
+      "expected_count": 2,
+      "discovered_count": null,
+      "executed_count": null,
+      "passed_count": null,
+      "failed_count": null,
+      "error_count": null,
+      "skipped_count": null,
+      "compile_exit_code": null,
+      "discovery_exit_code": null,
+      "run_exit_code": null,
+      "expected_execution_ratio": null,
+      "pass_rate_executed": null,
+      "expected_pass_ratio": null,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {},
+      "sources": [],
+      "source_integrity": null,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "AccountTest#normalWithdrawal()",
+        "AccountTest#insufficientFunds()"
+      ],
+      "message": "输入路径不存在：C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\missing.cj",
+      "finished_at": "2026-10-28T16:13:15.543312+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "count_only",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:15.545318+08:00",
+      "status": "PASSED",
+      "compile_status": "PASSED",
+      "expected_count": 2,
+      "discovered_count": 2,
+      "executed_count": 2,
+      "passed_count": 2,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 0,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 0,
+      "expected_execution_ratio": 1.0,
+      "pass_rate_executed": 1.0,
+      "expected_pass_ratio": 1.0,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:15.552341+08:00",
+          "finished_at": "2026-10-28T16:13:16.346753+08:00",
+          "duration_seconds": 0.797,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_1dy8vj4v\\src\\0000_account.cj",
+            "E:\\cj_projects\\cj_exec_1dy8vj4v\\src\\0001_account_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_1dy8vj4v\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_1dy8vj4v",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:16.348758+08:00",
+          "finished_at": "2026-10-28T16:13:16.947652+08:00",
+          "duration_seconds": 0.609,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_1dy8vj4v\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_1dy8vj4v",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:16.949708+08:00",
+          "finished_at": "2026-10-28T16:13:17.163316+08:00",
+          "duration_seconds": 0.203,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_1dy8vj4v\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_1dy8vj4v\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_1dy8vj4v",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account.cj",
+          "snapshot": "source/0000_account.cj",
+          "sha256": "9e2dbea24f844c97192f2f604999e970f5baf2d32bc0393cea7e66e91bfb1435"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\account\\account_test.cj",
+          "snapshot": "source/0001_account_test.cj",
+          "sha256": "328cf47857337fe3d64fd2d9ee0484de8b396847f86214bb1ca742389fb447d1"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "count",
+      "expected_tests": null,
+      "working_directory": "E:\\cj_projects\\cj_exec_1dy8vj4v",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [
+        "context_workflow_case.AccountTest#insufficientFunds()",
+        "context_workflow_case.AccountTest#normalWithdrawal()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "context_workflow_case.AccountTest#normalWithdrawal()": "PASSED",
+        "context_workflow_case.AccountTest#insufficientFunds()": "PASSED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "message": "编译、发现、执行及预期清单检查通过",
+      "finished_at": "2026-10-28T16:13:17.171561+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "another_sample",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:17.173602+08:00",
+      "status": "PASSED",
+      "compile_status": "PASSED",
+      "expected_count": 1,
+      "discovered_count": 1,
+      "executed_count": 1,
+      "passed_count": 1,
+      "failed_count": 0,
+      "error_count": 0,
+      "skipped_count": 0,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": 0,
+      "expected_execution_ratio": 1.0,
+      "pass_rate_executed": 1.0,
+      "expected_pass_ratio": 1.0,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:17.177665+08:00",
+          "finished_at": "2026-10-28T16:13:17.942642+08:00",
+          "duration_seconds": 0.765,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_hm8o_i_1\\src\\0000_calc.cj",
+            "E:\\cj_projects\\cj_exec_hm8o_i_1\\src\\0001_sum_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_hm8o_i_1\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_hm8o_i_1",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:17.945093+08:00",
+          "finished_at": "2026-10-28T16:13:18.472423+08:00",
+          "duration_seconds": 0.532,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_hm8o_i_1\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_hm8o_i_1",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:18.473630+08:00",
+          "finished_at": "2026-10-28T16:13:18.784582+08:00",
+          "duration_seconds": 0.312,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_hm8o_i_1\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_hm8o_i_1\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_hm8o_i_1",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+          "snapshot": "source/0000_calc.cj",
+          "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\sum_test.cj",
+          "snapshot": "source/0001_sum_test.cj",
+          "sha256": "ffb5757e53e315817d171ef562e88feddb421e194a14fd3d19196d4432f31547"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "SumTests#twoNumbers()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_hm8o_i_1",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [
+        "runner_probe.SumTests#twoNumbers()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [
+        "runner_probe.SumTests#twoNumbers()"
+      ],
+      "unresolved_expected_in_discovery": [],
+      "report_source": "xml_with_console_cross_check",
+      "cases": {
+        "runner_probe.SumTests#twoNumbers()": "PASSED"
+      },
+      "unidentified_run_skips": 0,
+      "run_identity_complete": true,
+      "unresolved_expected_after_run": [],
+      "message": "编译、发现、执行及预期清单检查通过",
+      "finished_at": "2026-10-28T16:13:18.797896+08:00"
+    },
+    {
+      "schema_version": "cangjie-execution-v1",
+      "combination_id": "timeout",
+      "business_role": "diagnostic",
+      "started_at": "2026-10-28T16:13:18.799907+08:00",
+      "status": "RUN_TIMEOUT",
+      "compile_status": "PASSED",
+      "expected_count": 1,
+      "discovered_count": 1,
+      "executed_count": null,
+      "passed_count": null,
+      "failed_count": null,
+      "error_count": null,
+      "skipped_count": null,
+      "compile_exit_code": 0,
+      "discovery_exit_code": 0,
+      "run_exit_code": null,
+      "expected_execution_ratio": null,
+      "pass_rate_executed": null,
+      "expected_pass_ratio": null,
+      "missing_expected": [],
+      "not_executed_expected": [],
+      "unexpected_executed": [],
+      "stages": {
+        "compile": {
+          "started_at": "2026-10-28T16:13:18.804421+08:00",
+          "finished_at": "2026-10-28T16:13:19.585252+08:00",
+          "duration_seconds": 0.781,
+          "argv": [
+            "E:\\cangjie\\bin\\cjc.exe",
+            "--test",
+            "E:\\cj_projects\\cj_exec_x2bt0__e\\src\\0000_calc.cj",
+            "E:\\cj_projects\\cj_exec_x2bt0__e\\src\\0001_timeout_test.cj",
+            "-o",
+            "E:\\cj_projects\\cj_exec_x2bt0__e\\tests.exe"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_x2bt0__e",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "compile.stdout.log",
+            "stderr": "compile.stderr.log",
+            "readable": "compile.log"
+          }
+        },
+        "discovery": {
+          "started_at": "2026-10-28T16:13:19.589278+08:00",
+          "finished_at": "2026-10-28T16:13:20.282787+08:00",
+          "duration_seconds": 0.687,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_x2bt0__e\\tests.exe",
+            "--dry-run",
+            "--no-color",
+            "--no-progress"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_x2bt0__e",
+          "exit_code": 0,
+          "timed_out": false,
+          "launch_error": null,
+          "logs": {
+            "stdout": "discovery.stdout.log",
+            "stderr": "discovery.stderr.log",
+            "readable": "discovery.log"
+          }
+        },
+        "run": {
+          "started_at": "2026-10-28T16:13:20.284792+08:00",
+          "finished_at": "2026-10-28T16:13:21.396170+08:00",
+          "duration_seconds": 1.11,
+          "argv": [
+            "E:\\cj_projects\\cj_exec_x2bt0__e\\tests.exe",
+            "--no-color",
+            "--no-progress",
+            "--report-format=xml",
+            "--report-path=E:\\cj_projects\\cj_exec_x2bt0__e\\xml"
+          ],
+          "cwd": "E:\\cj_projects\\cj_exec_x2bt0__e",
+          "exit_code": null,
+          "timed_out": true,
+          "launch_error": null,
+          "logs": {
+            "stdout": "run.stdout.log",
+            "stderr": "run.stderr.log",
+            "readable": "run.log"
+          }
+        }
+      },
+      "sources": [
+        {
+          "role": "business",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\calc.cj",
+          "snapshot": "source/0000_calc.cj",
+          "sha256": "1d09dcc0802f955b0b7b8f4165401985bf53e277555d0c5908abb59dd6e202dc"
+        },
+        {
+          "role": "tests",
+          "original_path": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\第七周_可执行性评价\\实际输入\\probe\\timeout_test.cj",
+          "snapshot": "source/0001_timeout_test.cj",
+          "sha256": "79a08c18577479b615d1950245538d1a501f39eeddf9e6fb1780760817b3fa31"
+        }
+      ],
+      "source_integrity": true,
+      "limitations": [
+        "单包、简单非参数化类测试；未判定测试意图或完整语义等价。"
+      ],
+      "expectation_mode": "names",
+      "expected_tests": [
+        "TimeoutTests#neverReturns()"
+      ],
+      "working_directory": "E:\\cj_projects\\cj_exec_x2bt0__e",
+      "run_options": [],
+      "compile_options": [],
+      "discovered_tests": [
+        "runner_probe.TimeoutTests#neverReturns()"
+      ],
+      "unidentified_discovery_skips": 0,
+      "discovery_identity_complete": true,
+      "resolved_expected_tests": [
+        "runner_probe.TimeoutTests#neverReturns()"
+      ],
+      "unresolved_expected_in_discovery": [],
+      "message": "执行超时，部分结果不用于完整比例统计",
+      "finished_at": "2026-10-28T16:13:21.399406+08:00"
+    }
+  ],
+  "combination_count": 13,
+  "compile_attempted": 12,
+  "compile_succeeded": 11,
+  "compile_success_rate": 0.9166666666666666,
+  "normal_combinations": [
+    "normal_account"
+  ],
+  "normal_combination_pass_rate": 1.0,
+  "all_combinations_passed": false,
+  "scope": "可执行性评价；错误／诊断样例不作为正常业务通过率分母。"
+}

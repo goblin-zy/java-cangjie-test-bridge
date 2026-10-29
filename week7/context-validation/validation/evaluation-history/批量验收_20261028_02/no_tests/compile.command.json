@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-10-28T16:13:07.510484+08:00",
+  "finished_at": "2026-10-28T16:13:08.233313+08:00",
+  "duration_seconds": 0.718,
+  "argv": [
+    "E:\\cangjie\\bin\\cjc.exe",
+    "--test",
+    "E:\\cj_projects\\cj_exec_dsk7f6dx\\src\\0000_calc.cj",
+    "E:\\cj_projects\\cj_exec_dsk7f6dx\\src\\0001_empty_test.cj",
+    "-o",
+    "E:\\cj_projects\\cj_exec_dsk7f6dx\\tests.exe"
+  ],
+  "cwd": "E:\\cj_projects\\cj_exec_dsk7f6dx",
+  "exit_code": 0,
+  "timed_out": false,
+  "launch_error": null,
+  "logs": {
+    "stdout": "compile.stdout.log",
+    "stderr": "compile.stderr.log",
+    "readable": "compile.log"
+  }
+}

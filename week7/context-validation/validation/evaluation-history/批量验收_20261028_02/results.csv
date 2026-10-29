@@ -1,0 +1,14 @@
+﻿combination_id,business_role,status,compile_status,expected_count,discovered_count,executed_count,passed_count,failed_count,error_count,skipped_count,compile_exit_code,discovery_exit_code,run_exit_code,expected_execution_ratio,pass_rate_executed,expected_pass_ratio
+normal_account,normal,PASSED,PASSED,2,2,2,2,0,0,0,0,0,0,1.0,1.0,1.0
+assertion_failure,diagnostic,ASSERTION_FAILED,PASSED,2,2,2,1,1,0,0,0,0,1,1.0,0.5,0.5
+runtime_error,diagnostic,TEST_ERROR,PASSED,1,1,1,0,0,1,0,0,0,1,1.0,0.0,0.0
+compile_failure,diagnostic,COMPILE_FAILED,FAILED,1,,,,,,,1,,,,,
+no_tests,diagnostic,NO_TESTS_FOUND,PASSED,1,0,0,0,0,0,0,0,0,,0.0,,0.0
+skipped,diagnostic,ZERO_TESTS_EXECUTED,PASSED,1,1,0,0,0,0,1,0,0,0,0.0,,0.0
+partial_filter,diagnostic,TEST_SET_MISMATCH,PASSED,2,2,1,1,0,0,1,0,0,0,0.5,1.0,0.5
+all_filtered,diagnostic,ZERO_TESTS_EXECUTED,PASSED,2,2,0,0,0,0,2,0,0,0,0.0,,0.0
+wrong_expected_name,diagnostic,TEST_SET_MISMATCH,PASSED,1,2,2,2,0,0,0,0,0,0,0.0,1.0,0.0
+missing_source,diagnostic,INVALID_INPUT,NOT_RUN,2,,,,,,,,,,,,
+count_only,diagnostic,PASSED,PASSED,2,2,2,2,0,0,0,0,0,0,1.0,1.0,1.0
+another_sample,diagnostic,PASSED,PASSED,1,1,1,1,0,0,0,0,0,0,1.0,1.0,1.0
+timeout,diagnostic,RUN_TIMEOUT,PASSED,1,1,,,,,,0,0,,,,
