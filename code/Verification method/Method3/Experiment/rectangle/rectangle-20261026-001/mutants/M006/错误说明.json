@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "id": "M006",
+  "category": "异常条件与类型",
+  "summary": "坐标合法性条件由或改为且，漏拒单轴非法输入",
+  "changes": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.init",
+      "original_start_line": 9,
+      "original_end_line": 9,
+      "before": "left > right || top > bottom",
+      "after": "left > right && top > bottom"
+    }
+  ],
+  "expected_behavior": "两种输入均抛出IllegalArgumentException",
+  "basis": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.init",
+      "start_line": 8,
+      "end_line": 11,
+      "code": "    public init(left: Int64, top: Int64, right: Int64, bottom: Int64) {\n        if (left > right || top > bottom) { throw IllegalArgumentException(\"invalid rectangle\") }\n        this.left = left; this.top = top; this.right = right; this.bottom = bottom\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testInvalidCoordinates",
+      "start_line": 42,
+      "end_line": 49,
+      "code": "    func testInvalidCoordinates(): Unit {\n        var first = false\n        try { Rectangle(3, 0, 1, 2) } catch (_: IllegalArgumentException) { first = true }\n        @Expect(first, true)\n        var second = false\n        try { Rectangle(0, 3, 1, 2) } catch (_: IllegalArgumentException) { second = true }\n        @Expect(second, true)\n    }",
+      "reason": "first与second异常标志预计均保持false"
+    }
+  ],
+  "trigger": {
+    "initial_state": "尚未创建矩形",
+    "input": "(3,0,1,2)或(0,3,1,2)",
+    "operations": [
+      "分别构造单轴非法矩形"
+    ],
+    "normal_behavior": "两种输入均抛出IllegalArgumentException",
+    "mutant_behavior": "两个输入均被接受"
+  },
+  "related_tests": [
+    {
+      "id": "R06",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testInvalidCoordinates",
+      "prediction": "预测检出",
+      "reason": "first与second异常标志预计均保持false"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M006/cangjie/src/rectangle.cj"
+  ],
+  "patch_file": "mutants/M006/change.patch",
+  "unresolved": []
+}

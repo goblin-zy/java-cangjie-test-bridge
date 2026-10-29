@@ -1,0 +1,11 @@
+--- a/cangjie/src/instruction_parser.cj
++++ b/cangjie/src/instruction_parser.cj
+@@ -5,7 +5,7 @@
+     public static func parseNullable(input: Option<String>): Array<Int64> {
+         match (input) {
+             case Some(value) => return parse(value)
+-            case None => throw IllegalArgumentException("null input")
++            case None => return parse("")
+         }
+     }
+     // 只按ASCII空格拆分，将ZERO/INC/DEC或整数片段转换成数组；保留元素顺序。

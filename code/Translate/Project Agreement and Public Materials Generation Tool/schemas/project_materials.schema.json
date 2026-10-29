@@ -1,0 +1,279 @@
+{
+  "$defs": {
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "start_line": {
+          "minimum": 1,
+          "title": "Start Line",
+          "type": "integer"
+        },
+        "end_line": {
+          "minimum": 1,
+          "title": "End Line",
+          "type": "integer"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        },
+        "member_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Member Id"
+        }
+      },
+      "required": [
+        "file_id",
+        "start_line",
+        "end_line",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "missing",
+            "conflict",
+            "parse_failure",
+            "unresolved_reference",
+            "pending",
+            "unsupported",
+            "read_failure",
+            "excluded",
+            "coverage"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "subject": {
+          "title": "Subject",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "related_items": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Related Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "subject",
+        "description"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "MaterialItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "category": {
+          "pattern": "^C(0[1-9]|1[01])$",
+          "title": "Category",
+          "type": "string"
+        },
+        "subject": {
+          "minLength": 1,
+          "title": "Subject",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "content": {
+          "title": "Content",
+          "type": "object"
+        },
+        "basis": {
+          "enum": [
+            "source_fact",
+            "document_statement",
+            "heuristic_candidate",
+            "ai_analysis",
+            "human_confirmation"
+          ],
+          "title": "Basis",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "pending",
+            "confirmed",
+            "conflict",
+            "missing"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "confirmation_note": {
+          "default": "",
+          "title": "Confirmation Note",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "related_members": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Related Members",
+          "type": "array"
+        },
+        "scope": {
+          "minLength": 1,
+          "title": "Scope",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "subject",
+        "title",
+        "content",
+        "basis",
+        "status",
+        "scope"
+      ],
+      "title": "MaterialItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "project_name": {
+      "title": "Project Name",
+      "type": "string"
+    },
+    "snapshot_id": {
+      "title": "Snapshot Id",
+      "type": "string"
+    },
+    "phase": {
+      "default": "program_draft",
+      "enum": [
+        "program_draft",
+        "codex_partial",
+        "codex_reviewed"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "reviewed_file_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reviewed File Ids",
+      "type": "array"
+    },
+    "reviewed_categories": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reviewed Categories",
+      "type": "array"
+    },
+    "read_scope": {
+      "title": "Read Scope",
+      "type": "object"
+    },
+    "categories": {
+      "items": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "type": "object"
+      },
+      "title": "Categories",
+      "type": "array"
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/MaterialItem"
+      },
+      "title": "Items",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "analysis_notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Analysis Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "project_name",
+    "snapshot_id",
+    "read_scope"
+  ],
+  "title": "Materials",
+  "type": "object"
+}

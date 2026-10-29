@@ -1,0 +1,44 @@
+{
+  "id": "M005",
+  "category": "边界判断",
+  "meaning": "取款额等于余额时错误拒绝",
+  "before": "if (amount > balance)",
+  "after": "if (amount >= balance)",
+  "related": [
+    "A04"
+  ],
+  "trigger": "Account(100)后withdraw(100)",
+  "normal": "成功取完，余额0",
+  "mutant": "抛出InsufficientFundsException",
+  "evidence": "testWithdrawAll",
+  "file": "cangjie/src/account.cj",
+  "original_start_line": 27,
+  "original_end_line": 27,
+  "basis": {
+    "file": "cangjie/src/account_test.cj",
+    "method": "AccountTest.testWithdrawAll",
+    "start_line": 38,
+    "end_line": 42,
+    "code": "    func testWithdrawAll(): Unit {\n        var account = Account(100)\n        account.withdraw(100)\n        @Expect(account.getBalance(), 0)\n    }"
+  },
+  "related_tests": [
+    {
+      "case_id": "A04",
+      "method": "AccountTest.testWithdrawAll"
+    }
+  ],
+  "test_evidence": [
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testWithdrawAll",
+      "start_line": 38,
+      "end_line": 42,
+      "code": "    func testWithdrawAll(): Unit {\n        var account = Account(100)\n        account.withdraw(100)\n        @Expect(account.getBalance(), 0)\n    }"
+    }
+  ],
+  "prediction_status": "预测；未执行编译或测试",
+  "prediction": "预测关联测试中存在断言偏差或非预期异常；不等同于实际执行结论",
+  "build_status": "未执行构建；仅静态检查",
+  "sha256": "8c3d11e26e6e8b2dd30ade2c64a73f2f7f3431b82f82612915604c6ff358d47a",
+  "patch": "mutants/M005/change.patch"
+}

@@ -1,0 +1,11 @@
+--- a/cangjie/src/instruction_parser.cj
++++ b/cangjie/src/instruction_parser.cj
+@@ -37,7 +37,7 @@
+         while (index < bytes.size) {
+             let digit = bytes[index]
+             if (digit < 48 || digit > 57) { throw IllegalArgumentException("invalid token") }
+-            value = value * 10 + Int64(digit - 48)
++            value = value + Int64(digit - 48)
+             if (value > limit) { throw IllegalArgumentException("out of int32 range") }
+             index++
+         }

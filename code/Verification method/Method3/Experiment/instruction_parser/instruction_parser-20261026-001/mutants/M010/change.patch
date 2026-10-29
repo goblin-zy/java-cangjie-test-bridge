@@ -1,0 +1,11 @@
+--- a/cangjie/src/instruction_parser.cj
++++ b/cangjie/src/instruction_parser.cj
+@@ -36,7 +36,7 @@
+         let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }
+         while (index < bytes.size) {
+             let digit = bytes[index]
+-            if (digit < 48 || digit > 57) { throw IllegalArgumentException("invalid token") }
++            if (digit < 48 || digit > 58) { throw IllegalArgumentException("invalid token") }
+             value = value * 10 + Int64(digit - 48)
+             if (value > limit) { throw IllegalArgumentException("out of int32 range") }
+             index++

@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/goblin-zy/java-cangjie-test-bridge",
+  "commit": "9b5b13e1dd02a026650f46185ab6a3ee093268d8",
+  "material_version": "1.2.0",
+  "date": "2026-10-26",
+  "source": {
+    "content": "package starter\r\npublic class InsufficientFundsException <: Exception {\r\n    // 创建余额不足异常并将说明交给父类保存。\r\n    public init(message: String) { super(message) }\r\n}\r\npublic class Account {\r\n    private var balance: Int64\r\n    // 创建账户；初始余额限定在[0,1000000]，与Java侧约定一致。\r\n    public init(initialBalance: Int64) {\r\n        if (initialBalance < 0 || initialBalance > 1000000) {\r\n            throw IllegalArgumentException(\"invalid balance\")\r\n        }\r\n        balance = initialBalance\r\n    }\r\n    // 返回当前余额，不改变状态。\r\n    public func getBalance(): Int64 { return balance }\r\n    // 先检查金额为正且存入后不超上限，再增加余额；失败不修改余额。\r\n    public func deposit(amount: Int64): Unit {\r\n        if (amount <= 0 || amount > 1000000 - balance) {\r\n            throw IllegalArgumentException(\"invalid deposit\")\r\n        }\r\n        balance += amount\r\n    }\r\n    // 先检查金额和余额，再扣款；余额不足与非法金额使用不同异常。\r\n    public func withdraw(amount: Int64): Unit {\r\n        if (amount <= 0) { throw IllegalArgumentException(\"invalid withdrawal\") }\r\n        if (amount > balance) { throw InsufficientFundsException(\"insufficient funds\") }\r\n        balance -= amount\r\n    }\r\n}\r\n",
+    "encoding": "utf-8",
+    "sha": "916f945e3db1b90bab98c5e7fa3c4d9004e84d71",
+    "display_url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account.cj",
+    "display_title": "account.cj"
+  },
+  "test": {
+    "content": "package starter\r\nimport std.unittest.*\r\nimport std.unittest.testmacro.*\r\n\r\n@Test\r\nclass AccountTest {\r\n    // A05的辅助准备：保留与Java侧相同的操作顺序和中间断言。\r\n    private func prepareSequence(account: Account): Unit {\r\n        account.deposit(50)\r\n        @Expect(account.getBalance(), 150)\r\n        account.withdraw(20)\r\n        @Expect(account.getBalance(), 130)\r\n    }\r\n    // A01：检查普通初始余额及合法上下限。（新编样例）\r\n    @TestCase\r\n    func testInitialBalance(): Unit {\r\n        var account = Account(100)\r\n        @Expect(Account(0).getBalance(), 0)\r\n        @Expect(account.getBalance(), 100)\r\n        @Expect(Account(1000000).getBalance(), 1000000)\r\n    }\r\n    // A02：存入30后余额应从100增加至130。（新编样例）\r\n    @TestCase\r\n    func testDeposit(): Unit {\r\n        var account = Account(100)\r\n        account.deposit(30)\r\n        @Expect(account.getBalance(), 130)\r\n    }\r\n    // A03：取出30后余额应从100减少至70。（新编样例）\r\n    @TestCase\r\n    func testWithdraw(): Unit {\r\n        var account = Account(100)\r\n        account.withdraw(30)\r\n        @Expect(account.getBalance(), 70)\r\n    }\r\n    // A04：允许恰好取完余额并得到0。（新编样例）\r\n    @TestCase\r\n    func testWithdrawAll(): Unit {\r\n        var account = Account(100)\r\n        account.withdraw(100)\r\n        @Expect(account.getBalance(), 0)\r\n    }\r\n    // A05：借助辅助方法检查连续操作的顺序和每步余额。（新编样例）\r\n    @TestCase\r\n    func testSequence(): Unit {\r\n        var account = Account(100)\r\n        prepareSequence(account)\r\n        account.withdraw(10)\r\n        @Expect(account.getBalance(), 120)\r\n    }\r\n    // A06：余额不足应抛专门异常，保留余额且允许后续合法取款。（新编样例）\r\n    @TestCase\r\n    func testInsufficientFunds(): Unit {\r\n        var account = Account(100)\r\n        var caught = false\r\n        try { account.withdraw(101) } catch (_: InsufficientFundsException) { caught = true }\r\n        @Expect(caught, true)\r\n        @Expect(account.getBalance(), 100)\r\n        account.withdraw(40)\r\n        @Expect(account.getBalance(), 60)\r\n    }\r\n    // A07：金额为0或负数时存取款均失败，余额不变。（新编样例）\r\n    @TestCase\r\n    func testInvalidAmounts(): Unit {\r\n        var account = Account(100)\r\n        for (amount in [0, -1]) {\r\n        var depositCaught = false\r\n        try { account.deposit(amount) } catch (_: IllegalArgumentException) { depositCaught = true }\r\n        @Expect(depositCaught, true)\r\n        @Expect(account.getBalance(), 100)\r\n        var withdrawCaught = false\r\n        try { account.withdraw(amount) } catch (_: IllegalArgumentException) { withdrawCaught = true }\r\n        @Expect(withdrawCaught, true)\r\n        @Expect(account.getBalance(), 100)\r\n        }\r\n    }\r\n    // A08：检查恰好达到余额上限与再次存款失败后的状态。（新编样例）\r\n    @TestCase\r\n    func testBalanceLimit(): Unit {\r\n        var account = Account(100)\r\n        account = Account(999999)\r\n        account.deposit(1)\r\n        @Expect(account.getBalance(), 1000000)\r\n        var caught = false\r\n        try { account.deposit(1) } catch (_: IllegalArgumentException) { caught = true }\r\n        @Expect(caught, true)\r\n        @Expect(account.getBalance(), 1000000)\r\n    }\r\n    // A09：检查非法初始余额不能创建账户。（新编样例）\r\n    @TestCase\r\n    func testInvalidInitialBalance(): Unit {\r\n        for (initial in [-1, 1000001]) {\r\n        var caught = false\r\n        try { Account(initial) } catch (_: IllegalArgumentException) { caught = true }\r\n        @Expect(caught, true)\r\n        }\r\n    }\r\n}\r\n",
+    "encoding": "utf-8",
+    "sha": "ed588748a41104d3eb909547ef412f5baadd0ce5",
+    "display_url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj",
+    "display_title": "account_test.cj"
+  },
+  "specs": [
+    {
+      "id": "M001",
+      "category": "边界判断",
+      "meaning": "错误拒绝合法初始余额上限",
+      "before": "initialBalance > 1000000",
+      "after": "initialBalance >= 1000000",
+      "related": [
+        "A01"
+      ],
+      "trigger": "Account(1000000)",
+      "normal": "应成功创建，余额为1000000",
+      "mutant": "抛出IllegalArgumentException",
+      "evidence": "testInitialBalance"
+    },
+    {
+      "id": "M002",
+      "category": "边界判断",
+      "meaning": "遗漏初始余额的负数检查",
+      "before": "initialBalance < 0 || initialBalance > 1000000",
+      "after": "initialBalance > 1000000",
+      "related": [
+        "A09"
+      ],
+      "trigger": "Account(-1)",
+      "normal": "应抛出IllegalArgumentException",
+      "mutant": "创建成功，caught仍为false",
+      "evidence": "testInvalidInitialBalance"
+    },
+    {
+      "id": "M003",
+      "category": "状态更新",
+      "meaning": "存款成功但没有增加余额",
+      "before": "balance += amount",
+      "after": "balance += 0",
+      "related": [
+        "A02",
+        "A05",
+        "A08"
+      ],
+      "trigger": "Account(100)后deposit(30)",
+      "normal": "余额130",
+      "mutant": "余额仍为100",
+      "evidence": "testDeposit"
+    },
+    {
+      "id": "M004",
+      "category": "计算与状态更新",
+      "meaning": "取款误将余额增加",
+      "before": "balance -= amount",
+      "after": "balance += amount",
+      "related": [
+        "A03",
+        "A04",
+        "A05",
+        "A06"
+      ],
+      "trigger": "Account(100)后withdraw(30)",
+      "normal": "余额70",
+      "mutant": "余额130",
+      "evidence": "testWithdraw"
+    },
+    {
+      "id": "M005",
+      "category": "边界判断",
+      "meaning": "取款额等于余额时错误拒绝",
+      "before": "if (amount > balance)",
+      "after": "if (amount >= balance)",
+      "related": [
+        "A04"
+      ],
+      "trigger": "Account(100)后withdraw(100)",
+      "normal": "成功取完，余额0",
+      "mutant": "抛出InsufficientFundsException",
+      "evidence": "testWithdrawAll"
+    },
+    {
+      "id": "M006",
+      "category": "异常类型",
+      "meaning": "余额不足时抛出错误异常类型",
+      "before": "if (amount > balance) { throw InsufficientFundsException(\"insufficient funds\") }",
+      "after": "if (amount > balance) { throw IllegalArgumentException(\"insufficient funds\") }",
+      "related": [
+        "A06"
+      ],
+      "trigger": "Account(100)后withdraw(101)",
+      "normal": "抛出InsufficientFundsException，余额不变",
+      "mutant": "抛出IllegalArgumentException，余额不变",
+      "evidence": "testInsufficientFunds"
+    },
+    {
+      "id": "M007",
+      "category": "异常条件与边界",
+      "meaning": "错误接受零金额存款",
+      "before": "if (amount <= 0 || amount > 1000000 - balance)",
+      "after": "if (amount < 0 || amount > 1000000 - balance)",
+      "related": [
+        "A07"
+      ],
+      "trigger": "Account(100)后deposit(0)",
+      "normal": "抛出IllegalArgumentException",
+      "mutant": "不抛异常，余额仍100",
+      "evidence": "testInvalidAmounts"
+    },
+    {
+      "id": "M008",
+      "category": "异常条件与边界",
+      "meaning": "错误接受零金额取款",
+      "before": "if (amount <= 0) { throw IllegalArgumentException(\"invalid withdrawal\") }",
+      "after": "if (amount < 0) { throw IllegalArgumentException(\"invalid withdrawal\") }",
+      "related": [
+        "A07"
+      ],
+      "trigger": "Account(100)后withdraw(0)",
+      "normal": "抛出IllegalArgumentException",
+      "mutant": "不抛异常，余额仍100",
+      "evidence": "testInvalidAmounts"
+    },
+    {
+      "id": "M009",
+      "category": "边界判断",
+      "meaning": "错误拒绝恰好达到余额上限的存款",
+      "before": "amount > 1000000 - balance",
+      "after": "amount >= 1000000 - balance",
+      "related": [
+        "A08"
+      ],
+      "trigger": "Account(999999)后deposit(1)",
+      "normal": "成功存款，余额1000000",
+      "mutant": "抛出IllegalArgumentException",
+      "evidence": "testBalanceLimit"
+    },
+    {
+      "id": "M010",
+      "category": "操作顺序",
+      "meaning": "存款在校验前更新余额，失败操作污染状态",
+      "before": "        if (amount <= 0 || amount > 1000000 - balance) {\r\n            throw IllegalArgumentException(\"invalid deposit\")\r\n        }\r\n        balance += amount",
+      "after": "        balance += amount\r\n        if (amount <= 0 || amount > 1000000 - balance) {\r\n            throw IllegalArgumentException(\"invalid deposit\")\r\n        }",
+      "related": [
+        "A07",
+        "A08"
+      ],
+      "trigger": "Account(100)后deposit(-1)",
+      "normal": "抛出IllegalArgumentException，余额100",
+      "mutant": "抛出同类型异常，但余额99",
+      "evidence": "testInvalidAmounts"
+    },
+    {
+      "id": "M011",
+      "category": "操作顺序",
+      "meaning": "取款在校验前扣减余额，失败操作污染状态",
+      "before": "        if (amount <= 0) { throw IllegalArgumentException(\"invalid withdrawal\") }\r\n        if (amount > balance) { throw InsufficientFundsException(\"insufficient funds\") }\r\n        balance -= amount",
+      "after": "        balance -= amount\r\n        if (amount <= 0) { throw IllegalArgumentException(\"invalid withdrawal\") }\r\n        if (amount > balance) { throw InsufficientFundsException(\"insufficient funds\") }",
+      "related": [
+        "A04",
+        "A06",
+        "A07"
+      ],
+      "trigger": "Account(100)后withdraw(101)",
+      "normal": "抛出InsufficientFundsException，余额100",
+      "mutant": "抛出同类型异常，但余额-1",
+      "evidence": "testInsufficientFunds"
+    },
+    {
+      "id": "M012",
+      "category": "返回值",
+      "meaning": "余额查询错误地返回固定零",
+      "before": "public func getBalance(): Int64 { return balance }",
+      "after": "public func getBalance(): Int64 { return 0 }",
+      "related": [
+        "A01",
+        "A02",
+        "A03",
+        "A05",
+        "A06",
+        "A07",
+        "A08"
+      ],
+      "trigger": "Account(100)后getBalance()",
+      "normal": "返回100",
+      "mutant": "返回0；真实余额未被修改；A04的余额0断言预计仍通过",
+      "evidence": "testInitialBalance"
+    }
+  ],
+  "test_map": {
+    "A01": "testInitialBalance",
+    "A02": "testDeposit",
+    "A03": "testWithdraw",
+    "A04": "testWithdrawAll",
+    "A05": "testSequence",
+    "A06": "testInsufficientFunds",
+    "A07": "testInvalidAmounts",
+    "A08": "testBalanceLimit",
+    "A09": "testInvalidInitialBalance"
+  }
+}

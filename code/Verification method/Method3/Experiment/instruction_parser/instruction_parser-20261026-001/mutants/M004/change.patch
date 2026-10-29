@@ -1,0 +1,11 @@
+--- a/cangjie/src/instruction_parser.cj
++++ b/cangjie/src/instruction_parser.cj
+@@ -28,7 +28,7 @@
+         var index: Int64 = 0
+         var negative = false
+         if (bytes[0] == 43 || bytes[0] == 45) {
+-            negative = bytes[0] == 45
++            negative = bytes[0] == 43
+             index = 1
+         }
+         if (index == bytes.size) { throw IllegalArgumentException("invalid token") }

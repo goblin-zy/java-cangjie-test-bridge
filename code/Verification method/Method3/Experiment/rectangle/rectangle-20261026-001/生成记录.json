@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "generation_id": "rectangle-20261026-001",
+  "created_at": "2026-10-26T15:18:24.195064+08:00",
+  "source": {
+    "repository_url": "https://github.com/goblin-zy/java-cangjie-test-bridge",
+    "ref": "main",
+    "commit": "9b5b13e1dd02a026650f46185ab6a3ee093268d8"
+  },
+  "input_files": [
+    {
+      "path": "cangjie/src/rectangle.cj",
+      "role": "business",
+      "snapshot_file": "original/cangjie/src/rectangle.cj",
+      "sha256": "3eafcc842d656902ce0162cef099e5d89e4efb37f2a28d7d872faac9848c1fa8"
+    },
+    {
+      "path": "cangjie/src/rectangle_test.cj",
+      "role": "test",
+      "snapshot_file": "original/cangjie/src/rectangle_test.cj",
+      "sha256": "c286c6a0f94a1e0b95b7a395586b22921347f1e8b1aac997f836eb1a7b0d2c5e"
+    }
+  ],
+  "requested_options": {
+    "output_directory": "D:\\program_study\\sc\\yrys\\一人一事\\Verification method\\Method3\\Experiment\\rectangle"
+  },
+  "selection": {
+    "default_max_mutants": 12,
+    "actual_count": 8,
+    "reason": "依据6个测试识别字段保存、字符串格式、重合/包含/分离、共享边、点矩形、非法坐标等检查点，选择8种独立机制；加入一个有源码依据但现有测试预计未检出的垂直分离遗漏，不凑到12个。",
+    "not_exhaustive": true
+  },
+  "unresolved": []
+}

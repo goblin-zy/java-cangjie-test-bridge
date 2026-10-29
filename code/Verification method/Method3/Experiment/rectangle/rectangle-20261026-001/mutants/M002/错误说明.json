@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "id": "M002",
+  "category": "计算与返回值",
+  "summary": "坐标字符串交换left与top的位置",
+  "changes": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.toString",
+      "original_start_line": 17,
+      "original_end_line": 17,
+      "before": "return \"[${left},${top},${right},${bottom}]\"",
+      "after": "return \"[${top},${left},${right},${bottom}]\""
+    }
+  ],
+  "expected_behavior": "返回[1,2,3,4]",
+  "basis": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.toString",
+      "start_line": 17,
+      "end_line": 17,
+      "code": "    public func toString(): String { return \"[${left},${top},${right},${bottom}]\" }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testToString",
+      "start_line": 18,
+      "end_line": 20,
+      "code": "    func testToString(): Unit {\n        @Expect(Rectangle(1, 2, 3, 4).toString(), \"[1,2,3,4]\")\n    }",
+      "reason": "字符串精确比较发现前两个坐标顺序错误"
+    }
+  ],
+  "trigger": {
+    "initial_state": "已创建Rectangle(1,2,3,4)",
+    "input": "无",
+    "operations": [
+      "调用toString"
+    ],
+    "normal_behavior": "返回[1,2,3,4]",
+    "mutant_behavior": "返回[2,1,3,4]"
+  },
+  "related_tests": [
+    {
+      "id": "R02",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testToString",
+      "prediction": "预测检出",
+      "reason": "字符串精确比较发现前两个坐标顺序错误"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M002/cangjie/src/rectangle.cj"
+  ],
+  "patch_file": "mutants/M002/change.patch",
+  "unresolved": []
+}

@@ -1,0 +1,94 @@
+{
+  "source_blob_hashes_match": true,
+  "mutant_count": 12,
+  "all_patches_apply_check": true,
+  "original_test_sha256": "f9469df59ff80c3665c394a3316ab968a588bdf458a628f74f44595e2980b73f",
+  "checks": [
+    {
+      "id": "M001",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M002",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M003",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M004",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M005",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M006",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M007",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M008",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M009",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M010",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M011",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    },
+    {
+      "id": "M012",
+      "independent_replacement": true,
+      "public_interface_unchanged": true,
+      "patch_apply_check": true,
+      "test_file_generated_or_changed": false
+    }
+  ],
+  "cangjie_build_executed": false,
+  "test_execution_performed": false
+}

@@ -1,0 +1,75 @@
+{
+  "id": "M003",
+  "category": "状态更新",
+  "meaning": "存款成功但没有增加余额",
+  "before": "balance += amount",
+  "after": "balance += 0",
+  "related": [
+    "A02",
+    "A05",
+    "A08"
+  ],
+  "trigger": "Account(100)后deposit(30)",
+  "normal": "余额130",
+  "mutant": "余额仍为100",
+  "evidence": "testDeposit",
+  "file": "cangjie/src/account.cj",
+  "original_start_line": 22,
+  "original_end_line": 22,
+  "basis": {
+    "file": "cangjie/src/account_test.cj",
+    "method": "AccountTest.testDeposit",
+    "start_line": 24,
+    "end_line": 28,
+    "code": "    func testDeposit(): Unit {\n        var account = Account(100)\n        account.deposit(30)\n        @Expect(account.getBalance(), 130)\n    }"
+  },
+  "related_tests": [
+    {
+      "case_id": "A02",
+      "method": "AccountTest.testDeposit"
+    },
+    {
+      "case_id": "A05",
+      "method": "AccountTest.testSequence"
+    },
+    {
+      "case_id": "A08",
+      "method": "AccountTest.testBalanceLimit"
+    }
+  ],
+  "test_evidence": [
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testDeposit",
+      "start_line": 24,
+      "end_line": 28,
+      "code": "    func testDeposit(): Unit {\n        var account = Account(100)\n        account.deposit(30)\n        @Expect(account.getBalance(), 130)\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testSequence",
+      "start_line": 45,
+      "end_line": 50,
+      "code": "    func testSequence(): Unit {\n        var account = Account(100)\n        prepareSequence(account)\n        account.withdraw(10)\n        @Expect(account.getBalance(), 120)\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testBalanceLimit",
+      "start_line": 79,
+      "end_line": 88,
+      "code": "    func testBalanceLimit(): Unit {\n        var account = Account(100)\n        account = Account(999999)\n        account.deposit(1)\n        @Expect(account.getBalance(), 1000000)\n        var caught = false\n        try { account.deposit(1) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 1000000)\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.prepareSequence",
+      "start_line": 8,
+      "end_line": 13,
+      "code": "    private func prepareSequence(account: Account): Unit {\n        account.deposit(50)\n        @Expect(account.getBalance(), 150)\n        account.withdraw(20)\n        @Expect(account.getBalance(), 130)\n    }"
+    }
+  ],
+  "prediction_status": "预测；未执行编译或测试",
+  "prediction": "预测关联测试中存在断言偏差或非预期异常；不等同于实际执行结论",
+  "build_status": "未执行构建；仅静态检查",
+  "sha256": "3db7e618f6faa1c9c9b12e487107bfbbac440ecb136768e7700d322512d2b491",
+  "patch": "mutants/M003/change.patch"
+}

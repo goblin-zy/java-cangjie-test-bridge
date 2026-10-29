@@ -1,0 +1,11 @@
+--- a/cangjie/src/account.cj
++++ b/cangjie/src/account.cj
+@@ -16,7 +16,7 @@
+     public func getBalance(): Int64 { return balance }
+     // 先检查金额为正且存入后不超上限，再增加余额；失败不修改余额。
+     public func deposit(amount: Int64): Unit {
+-        if (amount <= 0 || amount > 1000000 - balance) {
++        if (amount < 0 || amount > 1000000 - balance) {
+             throw IllegalArgumentException("invalid deposit")
+         }
+         balance += amount

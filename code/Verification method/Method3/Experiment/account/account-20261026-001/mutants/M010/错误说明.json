@@ -1,0 +1,56 @@
+{
+  "id": "M010",
+  "category": "操作顺序",
+  "meaning": "存款在校验前更新余额，失败操作污染状态",
+  "before": "        if (amount <= 0 || amount > 1000000 - balance) {\r\n            throw IllegalArgumentException(\"invalid deposit\")\r\n        }\r\n        balance += amount",
+  "after": "        balance += amount\r\n        if (amount <= 0 || amount > 1000000 - balance) {\r\n            throw IllegalArgumentException(\"invalid deposit\")\r\n        }",
+  "related": [
+    "A07",
+    "A08"
+  ],
+  "trigger": "Account(100)后deposit(-1)",
+  "normal": "抛出IllegalArgumentException，余额100",
+  "mutant": "抛出同类型异常，但余额99",
+  "evidence": "testInvalidAmounts",
+  "file": "cangjie/src/account.cj",
+  "original_start_line": 19,
+  "original_end_line": 22,
+  "basis": {
+    "file": "cangjie/src/account_test.cj",
+    "method": "AccountTest.testInvalidAmounts",
+    "start_line": 64,
+    "end_line": 76,
+    "code": "    func testInvalidAmounts(): Unit {\n        var account = Account(100)\n        for (amount in [0, -1]) {\n        var depositCaught = false\n        try { account.deposit(amount) } catch (_: IllegalArgumentException) { depositCaught = true }\n        @Expect(depositCaught, true)\n        @Expect(account.getBalance(), 100)\n        var withdrawCaught = false\n        try { account.withdraw(amount) } catch (_: IllegalArgumentException) { withdrawCaught = true }\n        @Expect(withdrawCaught, true)\n        @Expect(account.getBalance(), 100)\n        }\n    }"
+  },
+  "related_tests": [
+    {
+      "case_id": "A07",
+      "method": "AccountTest.testInvalidAmounts"
+    },
+    {
+      "case_id": "A08",
+      "method": "AccountTest.testBalanceLimit"
+    }
+  ],
+  "test_evidence": [
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testInvalidAmounts",
+      "start_line": 64,
+      "end_line": 76,
+      "code": "    func testInvalidAmounts(): Unit {\n        var account = Account(100)\n        for (amount in [0, -1]) {\n        var depositCaught = false\n        try { account.deposit(amount) } catch (_: IllegalArgumentException) { depositCaught = true }\n        @Expect(depositCaught, true)\n        @Expect(account.getBalance(), 100)\n        var withdrawCaught = false\n        try { account.withdraw(amount) } catch (_: IllegalArgumentException) { withdrawCaught = true }\n        @Expect(withdrawCaught, true)\n        @Expect(account.getBalance(), 100)\n        }\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testBalanceLimit",
+      "start_line": 79,
+      "end_line": 88,
+      "code": "    func testBalanceLimit(): Unit {\n        var account = Account(100)\n        account = Account(999999)\n        account.deposit(1)\n        @Expect(account.getBalance(), 1000000)\n        var caught = false\n        try { account.deposit(1) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 1000000)\n    }"
+    }
+  ],
+  "prediction_status": "预测；未执行编译或测试",
+  "prediction": "预测关联测试中存在断言偏差或非预期异常；不等同于实际执行结论",
+  "build_status": "未执行构建；仅静态检查",
+  "sha256": "38e3b1ac55c90b1913f4a945c0a83efef090915cb9dca17cb338a9d5493782c7",
+  "patch": "mutants/M010/change.patch"
+}

@@ -1,0 +1,821 @@
+{
+  "schema_version": "1.0",
+  "generation_id": "instruction_parser-20261026-001",
+  "mutant_count": 11,
+  "mutants": [
+    {
+      "schema_version": "1.0",
+      "id": "M001",
+      "category": "异常条件与类型",
+      "summary": "缺失输入被当成空输入接受",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNullable",
+          "original_start_line": 8,
+          "original_end_line": 8,
+          "before": "case None => throw IllegalArgumentException(\"null input\")",
+          "after": "case None => return parse(\"\")"
+        }
+      ],
+      "expected_behavior": "抛出IllegalArgumentException",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNullable",
+          "start_line": 5,
+          "end_line": 10,
+          "code": "    public static func parseNullable(input: Option<String>): Array<Int64> {\n        match (input) {\n            case Some(value) => return parse(value)\n            case None => throw IllegalArgumentException(\"null input\")\n        }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNullInput",
+          "start_line": 68,
+          "end_line": 72,
+          "code": "    func testNullInput(): Unit {\n        var caught = false\n        try { InstructionParser.parseNullable(None) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n    }",
+          "reason": "caught预计为false，缺失输入与空字符串被混同"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "None",
+        "operations": [
+          "调用parseNullable(None)"
+        ],
+        "normal_behavior": "抛出IllegalArgumentException",
+        "mutant_behavior": "返回空数组，不抛异常"
+      },
+      "related_tests": [
+        {
+          "id": "P09",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNullInput",
+          "prediction": "预测检出",
+          "reason": "caught预计为false，缺失输入与空字符串被混同"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M001/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M001/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M002",
+      "category": "计算与返回值",
+      "summary": "INC映射为负一",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parse",
+          "original_start_line": 18,
+          "original_end_line": 18,
+          "before": "case \"INC\" => result.add(1)",
+          "after": "case \"INC\" => result.add(-1)"
+        }
+      ],
+      "expected_behavior": "得到[0,1,-1]",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parse",
+          "start_line": 12,
+          "end_line": 24,
+          "code": "    public static func parse(input: String): Array<Int64> {\n        let result = ArrayList<Int64>()\n        for (token in input.split(\" \")) {\n            if (token.isEmpty()) { continue }\n            match (token) {\n                case \"ZERO\" => result.add(0)\n                case \"INC\" => result.add(1)\n                case \"DEC\" => result.add(-1)\n                case _ => result.add(parseNumber(token))\n            }\n        }\n        return result.toArray()\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNamedInstructions",
+          "start_line": 26,
+          "end_line": 29,
+          "code": "    func testNamedInstructions(): Unit {\n        let actual = InstructionParser.parse(\"ZERO INC DEC\")\n        expectArray(actual, [0, 1, -1])\n    }",
+          "reason": "expectArray逐元素比较发现INC位置错误"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testRepeatedSpaces",
+          "start_line": 38,
+          "end_line": 41,
+          "code": "    func testRepeatedSpaces(): Unit {\n        let actual = InstructionParser.parse(\"  INC  35 DEC \")\n        expectArray(actual, [1, 35, -1])\n    }",
+          "reason": "混合输入中的INC应为1却为-1"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.expectArray",
+          "start_line": 8,
+          "end_line": 11,
+          "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+          "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+        }
+      ],
+      "trigger": {
+        "initial_state": "空结果列表",
+        "input": "ZERO INC DEC",
+        "operations": [
+          "调用parse"
+        ],
+        "normal_behavior": "得到[0,1,-1]",
+        "mutant_behavior": "得到[0,-1,-1]"
+      },
+      "related_tests": [
+        {
+          "id": "P03",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNamedInstructions",
+          "prediction": "预测检出",
+          "reason": "expectArray逐元素比较发现INC位置错误"
+        },
+        {
+          "id": "P05",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testRepeatedSpaces",
+          "prediction": "预测检出",
+          "reason": "混合输入中的INC应为1却为-1"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M002/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M002/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M003",
+      "category": "计算与返回值",
+      "summary": "错误使用两个空格作为分隔符",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parse",
+          "original_start_line": 14,
+          "original_end_line": 14,
+          "before": "input.split(\" \")",
+          "after": "input.split(\"  \")"
+        }
+      ],
+      "expected_behavior": "得到[0,1,-1]",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parse",
+          "start_line": 12,
+          "end_line": 24,
+          "code": "    public static func parse(input: String): Array<Int64> {\n        let result = ArrayList<Int64>()\n        for (token in input.split(\" \")) {\n            if (token.isEmpty()) { continue }\n            match (token) {\n                case \"ZERO\" => result.add(0)\n                case \"INC\" => result.add(1)\n                case \"DEC\" => result.add(-1)\n                case _ => result.add(parseNumber(token))\n            }\n        }\n        return result.toArray()\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNamedInstructions",
+          "start_line": 26,
+          "end_line": 29,
+          "code": "    func testNamedInstructions(): Unit {\n        let actual = InstructionParser.parse(\"ZERO INC DEC\")\n        expectArray(actual, [0, 1, -1])\n    }",
+          "reason": "单空格分隔的指令串导致非预期异常"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testSignedNumbers",
+          "start_line": 32,
+          "end_line": 35,
+          "code": "    func testSignedNumbers(): Unit {\n        let actual = InstructionParser.parse(\"-7 +8 0 007\")\n        expectArray(actual, [-7, 8, 0, 7])\n    }",
+          "reason": "单空格分隔的数字串无法正常解析"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "start_line": 44,
+          "end_line": 47,
+          "code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+          "reason": "两个边界值之间的单空格无法正常拆分"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.expectArray",
+          "start_line": 8,
+          "end_line": 11,
+          "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+          "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "ZERO INC DEC",
+        "operations": [
+          "按错误分隔符拆分",
+          "解析片段"
+        ],
+        "normal_behavior": "得到[0,1,-1]",
+        "mutant_behavior": "整串未按单空格拆开，进入数字解析后抛出IllegalArgumentException"
+      },
+      "related_tests": [
+        {
+          "id": "P03",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNamedInstructions",
+          "prediction": "预测检出",
+          "reason": "单空格分隔的指令串导致非预期异常"
+        },
+        {
+          "id": "P04",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testSignedNumbers",
+          "prediction": "预测检出",
+          "reason": "单空格分隔的数字串无法正常解析"
+        },
+        {
+          "id": "P06",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "prediction": "预测检出",
+          "reason": "两个边界值之间的单空格无法正常拆分"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M003/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M003/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M004",
+      "category": "计算与返回值",
+      "summary": "正负号标记反转",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "original_start_line": 31,
+          "original_end_line": 31,
+          "before": "negative = bytes[0] == 45",
+          "after": "negative = bytes[0] == 43"
+        }
+      ],
+      "expected_behavior": "得到[-7,8,0,7]",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "start_line": 26,
+          "end_line": 45,
+          "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testSignedNumbers",
+          "start_line": 32,
+          "end_line": 35,
+          "code": "    func testSignedNumbers(): Unit {\n        let actual = InstructionParser.parse(\"-7 +8 0 007\")\n        expectArray(actual, [-7, 8, 0, 7])\n    }",
+          "reason": "正负值的逐元素断言失败"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "start_line": 44,
+          "end_line": 47,
+          "code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+          "reason": "负边界按正数限值校验，预计抛出非预期异常"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.expectArray",
+          "start_line": 8,
+          "end_line": 11,
+          "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+          "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "-7 +8 0 007",
+        "operations": [
+          "解析带符号数字"
+        ],
+        "normal_behavior": "得到[-7,8,0,7]",
+        "mutant_behavior": "得到[7,-8,0,7]"
+      },
+      "related_tests": [
+        {
+          "id": "P04",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testSignedNumbers",
+          "prediction": "预测检出",
+          "reason": "正负值的逐元素断言失败"
+        },
+        {
+          "id": "P06",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "prediction": "预测检出",
+          "reason": "负边界按正数限值校验，预计抛出非预期异常"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M004/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M004/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M005",
+      "category": "计算与返回值",
+      "summary": "逐位累积遗漏十进制位权",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "original_start_line": 40,
+          "original_end_line": 40,
+          "before": "value = value * 10 + Int64(digit - 48)",
+          "after": "value = value + Int64(digit - 48)"
+        }
+      ],
+      "expected_behavior": "35",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "start_line": 26,
+          "end_line": 45,
+          "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testRepeatedSpaces",
+          "start_line": 38,
+          "end_line": 41,
+          "code": "    func testRepeatedSpaces(): Unit {\n        let actual = InstructionParser.parse(\"  INC  35 DEC \")\n        expectArray(actual, [1, 35, -1])\n    }",
+          "reason": "混合输入中的35解析为8"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "start_line": 44,
+          "end_line": 47,
+          "code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+          "reason": "多位整数上下边界被解析为各位数字和"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testOutOfRange",
+          "start_line": 59,
+          "end_line": 65,
+          "code": "    func testOutOfRange(): Unit {\n        for (input in [\"2147483648\", \"-2147483649\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+          "reason": "越界文本的数字和很小，预计不再抛出越界异常"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.expectArray",
+          "start_line": 8,
+          "end_line": 11,
+          "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+          "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "35",
+        "operations": [
+          "逐位解析数字"
+        ],
+        "normal_behavior": "35",
+        "mutant_behavior": "8"
+      },
+      "related_tests": [
+        {
+          "id": "P05",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testRepeatedSpaces",
+          "prediction": "预测检出",
+          "reason": "混合输入中的35解析为8"
+        },
+        {
+          "id": "P06",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "prediction": "预测检出",
+          "reason": "多位整数上下边界被解析为各位数字和"
+        },
+        {
+          "id": "P08",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testOutOfRange",
+          "prediction": "预测检出",
+          "reason": "越界文本的数字和很小，预计不再抛出越界异常"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M005/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M005/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M006",
+      "category": "边界判断",
+      "summary": "把合法int32极值视为越界",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "original_start_line": 41,
+          "original_end_line": 41,
+          "before": "if (value > limit)",
+          "after": "if (value >= limit)"
+        }
+      ],
+      "expected_behavior": "成功返回对应边界整数",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "start_line": 26,
+          "end_line": 45,
+          "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "start_line": 44,
+          "end_line": 47,
+          "code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+          "reason": "合法上下边界引发非预期异常"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.expectArray",
+          "start_line": 8,
+          "end_line": 11,
+          "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+          "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "-2147483648或2147483647",
+        "operations": [
+          "解析合法边界值"
+        ],
+        "normal_behavior": "成功返回对应边界整数",
+        "mutant_behavior": "抛出IllegalArgumentException"
+      },
+      "related_tests": [
+        {
+          "id": "P06",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInt32Boundaries",
+          "prediction": "预测检出",
+          "reason": "合法上下边界引发非预期异常"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M006/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M006/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M007",
+      "category": "异常条件与类型",
+      "summary": "移除int32范围检查",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "original_start_line": 41,
+          "original_end_line": 41,
+          "before": "            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\r\n",
+          "after": ""
+        }
+      ],
+      "expected_behavior": "抛出IllegalArgumentException",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "start_line": 26,
+          "end_line": 45,
+          "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testOutOfRange",
+          "start_line": 59,
+          "end_line": 65,
+          "code": "    func testOutOfRange(): Unit {\n        for (input in [\"2147483648\", \"-2147483649\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+          "reason": "两个越界输入的caught预计均为false"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "2147483648或-2147483649",
+        "operations": [
+          "解析超出int32但未超出Int64的整数"
+        ],
+        "normal_behavior": "抛出IllegalArgumentException",
+        "mutant_behavior": "返回2147483648或-2147483649"
+      },
+      "related_tests": [
+        {
+          "id": "P08",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testOutOfRange",
+          "prediction": "预测检出",
+          "reason": "两个越界输入的caught预计均为false"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M007/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M007/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M008",
+      "category": "异常条件与类型",
+      "summary": "单独的正负号被当成零",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "original_start_line": 34,
+          "original_end_line": 34,
+          "before": "if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }",
+          "after": "if (index == bytes.size) { return 0 }"
+        }
+      ],
+      "expected_behavior": "抛出IllegalArgumentException",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "start_line": 26,
+          "end_line": 45,
+          "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInvalidTokens",
+          "start_line": 50,
+          "end_line": 56,
+          "code": "    func testInvalidTokens(): Unit {\n        for (input in [\"BOGUS\", \"+\", \"1.5\", \"INC\\tDEC\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+          "reason": "单独加号输入不再抛异常，caught预计为false"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "+",
+        "operations": [
+          "调用parse(\"+\")"
+        ],
+        "normal_behavior": "抛出IllegalArgumentException",
+        "mutant_behavior": "返回[0]"
+      },
+      "related_tests": [
+        {
+          "id": "P07",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInvalidTokens",
+          "prediction": "预测检出",
+          "reason": "单独加号输入不再抛异常，caught预计为false"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M008/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M008/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M009",
+      "category": "异常条件与类型",
+      "summary": "非法数字字符被静默转换为零",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "original_start_line": 39,
+          "original_end_line": 39,
+          "before": "if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }",
+          "after": "if (digit < 48 || digit > 57) { return 0 }"
+        }
+      ],
+      "expected_behavior": "抛出IllegalArgumentException",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "start_line": 26,
+          "end_line": 45,
+          "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInvalidTokens",
+          "start_line": 50,
+          "end_line": 56,
+          "code": "    func testInvalidTokens(): Unit {\n        for (input in [\"BOGUS\", \"+\", \"1.5\", \"INC\\tDEC\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+          "reason": "多个非法片段不再抛异常，异常标志断言预计失败"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": "BOGUS",
+        "operations": [
+          "调用parse"
+        ],
+        "normal_behavior": "抛出IllegalArgumentException",
+        "mutant_behavior": "返回[0]；1.5及包含制表符的输入也可能被静默接受"
+      },
+      "related_tests": [
+        {
+          "id": "P07",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInvalidTokens",
+          "prediction": "预测检出",
+          "reason": "多个非法片段不再抛异常，异常标志断言预计失败"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M009/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M009/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M010",
+      "category": "边界判断",
+      "summary": "ASCII数字上界放宽，错误接受冒号",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "original_start_line": 39,
+          "original_end_line": 39,
+          "before": "digit < 48 || digit > 57",
+          "after": "digit < 48 || digit > 58"
+        }
+      ],
+      "expected_behavior": "冒号不是ASCII数字，应抛出IllegalArgumentException",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parseNumber",
+          "start_line": 26,
+          "end_line": 45,
+          "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInvalidTokens",
+          "start_line": 50,
+          "end_line": 56,
+          "code": "    func testInvalidTokens(): Unit {\n        for (input in [\"BOGUS\", \"+\", \"1.5\", \"INC\\tDEC\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+          "reason": "现有BOGUS、+、1.5和制表符均不含冒号；其他字符拒绝机制仍在，预计不能暴露这个边界错误"
+        }
+      ],
+      "trigger": {
+        "initial_state": "无前置状态",
+        "input": ":",
+        "operations": [
+          "调用parse(\":\")"
+        ],
+        "normal_behavior": "冒号不是ASCII数字，应抛出IllegalArgumentException",
+        "mutant_behavior": "冒号被当作数字10，返回[10]"
+      },
+      "related_tests": [
+        {
+          "id": "P07",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testInvalidTokens",
+          "prediction": "预测未检出",
+          "reason": "现有BOGUS、+、1.5和制表符均不含冒号；其他字符拒绝机制仍在，预计不能暴露这个边界错误"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M010/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M010/change.patch",
+      "unresolved": []
+    },
+    {
+      "schema_version": "1.0",
+      "id": "M011",
+      "category": "状态更新",
+      "summary": "处理一个INC时向结果列表重复追加",
+      "changes": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parse",
+          "original_start_line": 18,
+          "original_end_line": 18,
+          "before": "case \"INC\" => result.add(1)",
+          "after": "case \"INC\" => { result.add(1); result.add(1) }"
+        }
+      ],
+      "expected_behavior": "得到[0,1,-1]，长度3",
+      "basis": [
+        {
+          "file": "cangjie/src/instruction_parser.cj",
+          "member": "InstructionParser.parse",
+          "start_line": 12,
+          "end_line": 24,
+          "code": "    public static func parse(input: String): Array<Int64> {\n        let result = ArrayList<Int64>()\n        for (token in input.split(\" \")) {\n            if (token.isEmpty()) { continue }\n            match (token) {\n                case \"ZERO\" => result.add(0)\n                case \"INC\" => result.add(1)\n                case \"DEC\" => result.add(-1)\n                case _ => result.add(parseNumber(token))\n            }\n        }\n        return result.toArray()\n    }",
+          "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNamedInstructions",
+          "start_line": 26,
+          "end_line": 29,
+          "code": "    func testNamedInstructions(): Unit {\n        let actual = InstructionParser.parse(\"ZERO INC DEC\")\n        expectArray(actual, [0, 1, -1])\n    }",
+          "reason": "expectArray先做长度@Assert，预计在元素比较前发现长度不一致"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testRepeatedSpaces",
+          "start_line": 38,
+          "end_line": 41,
+          "code": "    func testRepeatedSpaces(): Unit {\n        let actual = InstructionParser.parse(\"  INC  35 DEC \")\n        expectArray(actual, [1, 35, -1])\n    }",
+          "reason": "混合输入重复追加INC，长度由3变为4"
+        },
+        {
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.expectArray",
+          "start_line": 8,
+          "end_line": 11,
+          "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+          "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+        }
+      ],
+      "trigger": {
+        "initial_state": "空结果列表",
+        "input": "ZERO INC DEC",
+        "operations": [
+          "按顺序解析指令并追加元素"
+        ],
+        "normal_behavior": "得到[0,1,-1]，长度3",
+        "mutant_behavior": "得到[0,1,1,-1]，长度4"
+      },
+      "related_tests": [
+        {
+          "id": "P03",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testNamedInstructions",
+          "prediction": "预测检出",
+          "reason": "expectArray先做长度@Assert，预计在元素比较前发现长度不一致"
+        },
+        {
+          "id": "P05",
+          "file": "cangjie/src/instructionparser_test.cj",
+          "member": "InstructionParserTest.testRepeatedSpaces",
+          "prediction": "预测检出",
+          "reason": "混合输入重复追加INC，长度由3变为4"
+        }
+      ],
+      "build_status": "未执行",
+      "test_status": "未执行",
+      "artifact_files": [
+        "mutants/M011/cangjie/src/instruction_parser.cj"
+      ],
+      "patch_file": "mutants/M011/change.patch",
+      "unresolved": []
+    }
+  ]
+}

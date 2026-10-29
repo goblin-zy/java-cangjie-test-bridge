@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "M006",
+  "category": "边界判断",
+  "summary": "把合法int32极值视为越界",
+  "changes": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parseNumber",
+      "original_start_line": 41,
+      "original_end_line": 41,
+      "before": "if (value > limit)",
+      "after": "if (value >= limit)"
+    }
+  ],
+  "expected_behavior": "成功返回对应边界整数",
+  "basis": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parseNumber",
+      "start_line": 26,
+      "end_line": 45,
+      "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInt32Boundaries",
+      "start_line": 44,
+      "end_line": 47,
+      "code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+      "reason": "合法上下边界引发非预期异常"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.expectArray",
+      "start_line": 8,
+      "end_line": 11,
+      "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+      "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+    }
+  ],
+  "trigger": {
+    "initial_state": "无前置状态",
+    "input": "-2147483648或2147483647",
+    "operations": [
+      "解析合法边界值"
+    ],
+    "normal_behavior": "成功返回对应边界整数",
+    "mutant_behavior": "抛出IllegalArgumentException"
+  },
+  "related_tests": [
+    {
+      "id": "P06",
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInt32Boundaries",
+      "prediction": "预测检出",
+      "reason": "合法上下边界引发非预期异常"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M006/cangjie/src/instruction_parser.cj"
+  ],
+  "patch_file": "mutants/M006/change.patch",
+  "unresolved": []
+}

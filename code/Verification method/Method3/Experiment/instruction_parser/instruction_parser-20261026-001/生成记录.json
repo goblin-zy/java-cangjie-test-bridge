@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "generation_id": "instruction_parser-20261026-001",
+  "created_at": "2026-10-26T15:18:25.884756+08:00",
+  "source": {
+    "repository_url": "https://github.com/goblin-zy/java-cangjie-test-bridge",
+    "ref": "main",
+    "commit": "9b5b13e1dd02a026650f46185ab6a3ee093268d8"
+  },
+  "input_files": [
+    {
+      "path": "cangjie/src/instruction_parser.cj",
+      "role": "business",
+      "snapshot_file": "original/cangjie/src/instruction_parser.cj",
+      "sha256": "3a641bcadf913e0d50395c17cdeeba1d0ea8c0e9253eff264a8d85709d9374ce"
+    },
+    {
+      "path": "cangjie/src/instructionparser_test.cj",
+      "role": "test",
+      "snapshot_file": "original/cangjie/src/instructionparser_test.cj",
+      "sha256": "9e1ca84656213840acfd0a77e989bc72624231427adcab9f40a2abaf1e57fa28"
+    }
+  ],
+  "requested_options": {
+    "output_directory": "D:\\program_study\\sc\\yrys\\一人一事\\Verification method\\Method3\\Experiment\\instruction_parser"
+  },
+  "selection": {
+    "default_max_mutants": 12,
+    "actual_count": 11,
+    "reason": "依据9个测试及expectArray辅助断言识别缺失输入、分词、指令映射、符号、位权、范围、非法字符和数组长度等检查点，选择11种独立机制；包含一个现有非法片段未覆盖的ASCII冒号边界，不为数量上限追加同类常量错误。",
+    "not_exhaustive": true
+  },
+  "unresolved": []
+}

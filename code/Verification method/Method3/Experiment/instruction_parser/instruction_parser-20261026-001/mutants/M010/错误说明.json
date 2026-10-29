@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "id": "M010",
+  "category": "边界判断",
+  "summary": "ASCII数字上界放宽，错误接受冒号",
+  "changes": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parseNumber",
+      "original_start_line": 39,
+      "original_end_line": 39,
+      "before": "digit < 48 || digit > 57",
+      "after": "digit < 48 || digit > 58"
+    }
+  ],
+  "expected_behavior": "冒号不是ASCII数字，应抛出IllegalArgumentException",
+  "basis": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parseNumber",
+      "start_line": 26,
+      "end_line": 45,
+      "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInvalidTokens",
+      "start_line": 50,
+      "end_line": 56,
+      "code": "    func testInvalidTokens(): Unit {\n        for (input in [\"BOGUS\", \"+\", \"1.5\", \"INC\\tDEC\"]) {\n            var caught = false\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\n            @Expect(caught, true)\n        }\n    }",
+      "reason": "现有BOGUS、+、1.5和制表符均不含冒号；其他字符拒绝机制仍在，预计不能暴露这个边界错误"
+    }
+  ],
+  "trigger": {
+    "initial_state": "无前置状态",
+    "input": ":",
+    "operations": [
+      "调用parse(\":\")"
+    ],
+    "normal_behavior": "冒号不是ASCII数字，应抛出IllegalArgumentException",
+    "mutant_behavior": "冒号被当作数字10，返回[10]"
+  },
+  "related_tests": [
+    {
+      "id": "P07",
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInvalidTokens",
+      "prediction": "预测未检出",
+      "reason": "现有BOGUS、+、1.5和制表符均不含冒号；其他字符拒绝机制仍在，预计不能暴露这个边界错误"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M010/cangjie/src/instruction_parser.cj"
+  ],
+  "patch_file": "mutants/M010/change.patch",
+  "unresolved": []
+}

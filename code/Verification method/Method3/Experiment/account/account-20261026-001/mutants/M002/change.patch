@@ -1,0 +1,11 @@
+--- a/cangjie/src/account.cj
++++ b/cangjie/src/account.cj
+@@ -7,7 +7,7 @@
+     private var balance: Int64
+     // 创建账户；初始余额限定在[0,1000000]，与Java侧约定一致。
+     public init(initialBalance: Int64) {
+-        if (initialBalance < 0 || initialBalance > 1000000) {
++        if (initialBalance > 1000000) {
+             throw IllegalArgumentException("invalid balance")
+         }
+         balance = initialBalance

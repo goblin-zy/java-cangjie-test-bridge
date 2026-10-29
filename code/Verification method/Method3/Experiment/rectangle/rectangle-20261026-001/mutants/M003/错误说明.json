@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "id": "M003",
+  "category": "计算与返回值",
+  "summary": "相交判断遗漏否定，颠倒真假结果",
+  "changes": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.intersectsWith",
+      "original_start_line": 14,
+      "original_end_line": 14,
+      "before": "return !(r.left > right || r.right < left || r.top > bottom || r.bottom < top)",
+      "after": "return (r.left > right || r.right < left || r.top > bottom || r.bottom < top)"
+    }
+  ],
+  "expected_behavior": "true",
+  "basis": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.intersectsWith",
+      "start_line": 13,
+      "end_line": 15,
+      "code": "    public func intersectsWith(r: Rectangle): Bool {\n        return !(r.left > right || r.right < left || r.top > bottom || r.bottom < top)\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testIntersection",
+      "start_line": 23,
+      "end_line": 29,
+      "code": "    func testIntersection(): Unit {\n        let r = Rectangle(0, 0, 1, 1)\n        @Expect(r.intersectsWith(Rectangle(0, 0, 1, 1)), true)\n        @Expect(r.intersectsWith(Rectangle(-1, -5, 7, 8)), true)\n        @Expect(r.intersectsWith(Rectangle(2, 2, 3, 3)), false)\n        @Expect(r.intersectsWith(Rectangle(-2, -2, -1, -1)), false)\n    }",
+      "reason": "重合、包含及分离的真假结果反转"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testTouchingEdge",
+      "start_line": 32,
+      "end_line": 34,
+      "code": "    func testTouchingEdge(): Unit {\n        @Expect(Rectangle(0, 0, 1, 1).intersectsWith(Rectangle(1, 0, 2, 1)), true)\n    }",
+      "reason": "共享边从true变为false"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testPointRectangle",
+      "start_line": 37,
+      "end_line": 39,
+      "code": "    func testPointRectangle(): Unit {\n        @Expect(Rectangle(1, 1, 1, 1).intersectsWith(Rectangle(0, 0, 2, 2)), true)\n    }",
+      "reason": "点位于矩形内从true变为false"
+    }
+  ],
+  "trigger": {
+    "initial_state": "接收者Rectangle(0,0,1,1)",
+    "input": "Rectangle(0,0,1,1)",
+    "operations": [
+      "判断两个相同矩形是否相交"
+    ],
+    "normal_behavior": "true",
+    "mutant_behavior": "false"
+  },
+  "related_tests": [
+    {
+      "id": "R03",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testIntersection",
+      "prediction": "预测检出",
+      "reason": "重合、包含及分离的真假结果反转"
+    },
+    {
+      "id": "R04",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testTouchingEdge",
+      "prediction": "预测检出",
+      "reason": "共享边从true变为false"
+    },
+    {
+      "id": "R05",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testPointRectangle",
+      "prediction": "预测检出",
+      "reason": "点位于矩形内从true变为false"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M003/cangjie/src/rectangle.cj"
+  ],
+  "patch_file": "mutants/M003/change.patch",
+  "unresolved": []
+}

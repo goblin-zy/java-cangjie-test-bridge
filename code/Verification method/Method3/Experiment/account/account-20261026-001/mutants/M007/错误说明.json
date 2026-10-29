@@ -1,0 +1,44 @@
+{
+  "id": "M007",
+  "category": "异常条件与边界",
+  "meaning": "错误接受零金额存款",
+  "before": "if (amount <= 0 || amount > 1000000 - balance)",
+  "after": "if (amount < 0 || amount > 1000000 - balance)",
+  "related": [
+    "A07"
+  ],
+  "trigger": "Account(100)后deposit(0)",
+  "normal": "抛出IllegalArgumentException",
+  "mutant": "不抛异常，余额仍100",
+  "evidence": "testInvalidAmounts",
+  "file": "cangjie/src/account.cj",
+  "original_start_line": 19,
+  "original_end_line": 19,
+  "basis": {
+    "file": "cangjie/src/account_test.cj",
+    "method": "AccountTest.testInvalidAmounts",
+    "start_line": 64,
+    "end_line": 76,
+    "code": "    func testInvalidAmounts(): Unit {\n        var account = Account(100)\n        for (amount in [0, -1]) {\n        var depositCaught = false\n        try { account.deposit(amount) } catch (_: IllegalArgumentException) { depositCaught = true }\n        @Expect(depositCaught, true)\n        @Expect(account.getBalance(), 100)\n        var withdrawCaught = false\n        try { account.withdraw(amount) } catch (_: IllegalArgumentException) { withdrawCaught = true }\n        @Expect(withdrawCaught, true)\n        @Expect(account.getBalance(), 100)\n        }\n    }"
+  },
+  "related_tests": [
+    {
+      "case_id": "A07",
+      "method": "AccountTest.testInvalidAmounts"
+    }
+  ],
+  "test_evidence": [
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testInvalidAmounts",
+      "start_line": 64,
+      "end_line": 76,
+      "code": "    func testInvalidAmounts(): Unit {\n        var account = Account(100)\n        for (amount in [0, -1]) {\n        var depositCaught = false\n        try { account.deposit(amount) } catch (_: IllegalArgumentException) { depositCaught = true }\n        @Expect(depositCaught, true)\n        @Expect(account.getBalance(), 100)\n        var withdrawCaught = false\n        try { account.withdraw(amount) } catch (_: IllegalArgumentException) { withdrawCaught = true }\n        @Expect(withdrawCaught, true)\n        @Expect(account.getBalance(), 100)\n        }\n    }"
+    }
+  ],
+  "prediction_status": "预测；未执行编译或测试",
+  "prediction": "预测关联测试中存在断言偏差或非预期异常；不等同于实际执行结论",
+  "build_status": "未执行构建；仅静态检查",
+  "sha256": "5a82cb2712d160f27b13f200a489352414ebb82e17430b3d916d888d638081d7",
+  "patch": "mutants/M007/change.patch"
+}

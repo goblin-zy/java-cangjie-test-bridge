@@ -1,0 +1,9 @@
+--- a/cangjie/src/rectangle.cj
++++ b/cangjie/src/rectangle.cj
+@@ -14,5 +14,5 @@
+         return !(r.left > right || r.right < left || r.top > bottom || r.bottom < top)
+     }
+     // 按[左,上,右,下]输出坐标，格式与Java侧一致。
+-    public func toString(): String { return "[${left},${top},${right},${bottom}]" }
++    public func toString(): String { return "[${top},${left},${right},${bottom}]" }
+ }

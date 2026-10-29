@@ -1,0 +1,70 @@
+{
+  "project_name": "Account项目材料示例（路径需替换）",
+  "sources": [
+    {
+      "name": "java_business",
+      "path": "D:/work/java-cangjie-test-bridge/java/src/main/java",
+      "language": "java",
+      "role": "business",
+      "include": [
+        "**/*.java"
+      ]
+    },
+    {
+      "name": "java_tests",
+      "path": "D:/work/java-cangjie-test-bridge/java/src/test/java",
+      "language": "java",
+      "role": "test",
+      "include": [
+        "**/*.java"
+      ]
+    },
+    {
+      "name": "cangjie_business",
+      "path": "D:/work/java-cangjie-test-bridge/cangjie/src",
+      "language": "cangjie",
+      "role": "business",
+      "include": [
+        "**/*.cj"
+      ]
+    },
+    {
+      "name": "java_config",
+      "path": "D:/work/java-cangjie-test-bridge/java/pom.xml",
+      "language": "documents",
+      "role": "documentation",
+      "include": [
+        "pom.xml"
+      ]
+    },
+    {
+      "name": "project_docs",
+      "path": "D:/work/java-cangjie-test-bridge/docs",
+      "language": "documents",
+      "role": "documentation",
+      "include": [
+        "功能约定与接口映射.md",
+        "环境版本记录.md"
+      ]
+    }
+  ],
+  "output_dir": "../outputs/account-001",
+  "allow_target_tests": false,
+  "allow_unparsed_target_evidence": false,
+  "exclude": [],
+  "max_file_bytes": 3000000,
+  "parsers": {
+    "java": "C:/Program Files/Java/jdk-17/bin/java.exe",
+    "javac": "C:/Program Files/Java/jdk-17/bin/javac.exe",
+    "cjc": "cjc",
+    "cangjie_helper": null,
+    "java_source_roots": [
+      "D:/work/java-cangjie-test-bridge/java/src/main/java",
+      "D:/work/java-cangjie-test-bridge/java/src/test/java"
+    ],
+    "java_classpath": [],
+    "java_language_level": "JAVA_17",
+    "timeout_seconds": 120
+  }
+}
+

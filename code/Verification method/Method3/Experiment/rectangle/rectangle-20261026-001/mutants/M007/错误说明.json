@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "id": "M007",
+  "category": "计算与返回值",
+  "summary": "分离条件错误使用逻辑且",
+  "changes": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.intersectsWith",
+      "original_start_line": 14,
+      "original_end_line": 14,
+      "before": "r.left > right || r.right < left || r.top > bottom || r.bottom < top",
+      "after": "r.left > right && r.right < left && r.top > bottom && r.bottom < top"
+    }
+  ],
+  "expected_behavior": "false",
+  "basis": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.intersectsWith",
+      "start_line": 13,
+      "end_line": 15,
+      "code": "    public func intersectsWith(r: Rectangle): Bool {\n        return !(r.left > right || r.right < left || r.top > bottom || r.bottom < top)\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testIntersection",
+      "start_line": 23,
+      "end_line": 29,
+      "code": "    func testIntersection(): Unit {\n        let r = Rectangle(0, 0, 1, 1)\n        @Expect(r.intersectsWith(Rectangle(0, 0, 1, 1)), true)\n        @Expect(r.intersectsWith(Rectangle(-1, -5, 7, 8)), true)\n        @Expect(r.intersectsWith(Rectangle(2, 2, 3, 3)), false)\n        @Expect(r.intersectsWith(Rectangle(-2, -2, -1, -1)), false)\n    }",
+      "reason": "分离情形期望false却得到true；需要相互矛盾的分离条件同时成立才拒绝相交"
+    }
+  ],
+  "trigger": {
+    "initial_state": "接收者Rectangle(0,0,1,1)",
+    "input": "Rectangle(2,2,3,3)",
+    "operations": [
+      "判断分离矩形是否相交"
+    ],
+    "normal_behavior": "false",
+    "mutant_behavior": "true"
+  },
+  "related_tests": [
+    {
+      "id": "R03",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testIntersection",
+      "prediction": "预测检出",
+      "reason": "分离情形期望false却得到true；需要相互矛盾的分离条件同时成立才拒绝相交"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M007/cangjie/src/rectangle.cj"
+  ],
+  "patch_file": "mutants/M007/change.patch",
+  "unresolved": []
+}

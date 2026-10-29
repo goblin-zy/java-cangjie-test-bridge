@@ -1,0 +1,11 @@
+--- a/cangjie/src/instruction_parser.cj
++++ b/cangjie/src/instruction_parser.cj
+@@ -15,7 +15,7 @@
+             if (token.isEmpty()) { continue }
+             match (token) {
+                 case "ZERO" => result.add(0)
+-                case "INC" => result.add(1)
++                case "INC" => { result.add(1); result.add(1) }
+                 case "DEC" => result.add(-1)
+                 case _ => result.add(parseNumber(token))
+             }

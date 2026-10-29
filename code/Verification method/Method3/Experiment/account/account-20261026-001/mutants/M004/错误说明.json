@@ -1,0 +1,87 @@
+{
+  "id": "M004",
+  "category": "计算与状态更新",
+  "meaning": "取款误将余额增加",
+  "before": "balance -= amount",
+  "after": "balance += amount",
+  "related": [
+    "A03",
+    "A04",
+    "A05",
+    "A06"
+  ],
+  "trigger": "Account(100)后withdraw(30)",
+  "normal": "余额70",
+  "mutant": "余额130",
+  "evidence": "testWithdraw",
+  "file": "cangjie/src/account.cj",
+  "original_start_line": 28,
+  "original_end_line": 28,
+  "basis": {
+    "file": "cangjie/src/account_test.cj",
+    "method": "AccountTest.testWithdraw",
+    "start_line": 31,
+    "end_line": 35,
+    "code": "    func testWithdraw(): Unit {\n        var account = Account(100)\n        account.withdraw(30)\n        @Expect(account.getBalance(), 70)\n    }"
+  },
+  "related_tests": [
+    {
+      "case_id": "A03",
+      "method": "AccountTest.testWithdraw"
+    },
+    {
+      "case_id": "A04",
+      "method": "AccountTest.testWithdrawAll"
+    },
+    {
+      "case_id": "A05",
+      "method": "AccountTest.testSequence"
+    },
+    {
+      "case_id": "A06",
+      "method": "AccountTest.testInsufficientFunds"
+    }
+  ],
+  "test_evidence": [
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testWithdraw",
+      "start_line": 31,
+      "end_line": 35,
+      "code": "    func testWithdraw(): Unit {\n        var account = Account(100)\n        account.withdraw(30)\n        @Expect(account.getBalance(), 70)\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testWithdrawAll",
+      "start_line": 38,
+      "end_line": 42,
+      "code": "    func testWithdrawAll(): Unit {\n        var account = Account(100)\n        account.withdraw(100)\n        @Expect(account.getBalance(), 0)\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testSequence",
+      "start_line": 45,
+      "end_line": 50,
+      "code": "    func testSequence(): Unit {\n        var account = Account(100)\n        prepareSequence(account)\n        account.withdraw(10)\n        @Expect(account.getBalance(), 120)\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testInsufficientFunds",
+      "start_line": 53,
+      "end_line": 61,
+      "code": "    func testInsufficientFunds(): Unit {\n        var account = Account(100)\n        var caught = false\n        try { account.withdraw(101) } catch (_: InsufficientFundsException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 100)\n        account.withdraw(40)\n        @Expect(account.getBalance(), 60)\n    }"
+    },
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.prepareSequence",
+      "start_line": 8,
+      "end_line": 13,
+      "code": "    private func prepareSequence(account: Account): Unit {\n        account.deposit(50)\n        @Expect(account.getBalance(), 150)\n        account.withdraw(20)\n        @Expect(account.getBalance(), 130)\n    }"
+    }
+  ],
+  "prediction_status": "预测；未执行编译或测试",
+  "prediction": "预测关联测试中存在断言偏差或非预期异常；不等同于实际执行结论",
+  "build_status": "未执行构建；仅静态检查",
+  "sha256": "f7e9ceddaf6019143ab02aaef64e490e2088292b535d204408bd01d8b66a73c6",
+  "patch": "mutants/M004/change.patch"
+}

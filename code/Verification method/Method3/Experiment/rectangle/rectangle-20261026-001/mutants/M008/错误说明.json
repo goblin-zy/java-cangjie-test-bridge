@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "id": "M008",
+  "category": "计算与返回值",
+  "summary": "相交判断遗漏垂直方向的分离条件",
+  "changes": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.intersectsWith",
+      "original_start_line": 14,
+      "original_end_line": 14,
+      "before": "r.left > right || r.right < left || r.top > bottom || r.bottom < top",
+      "after": "r.left > right || r.right < left"
+    }
+  ],
+  "expected_behavior": "false",
+  "basis": [
+    {
+      "file": "cangjie/src/rectangle.cj",
+      "member": "Rectangle.intersectsWith",
+      "start_line": 13,
+      "end_line": 15,
+      "code": "    public func intersectsWith(r: Rectangle): Bool {\n        return !(r.left > right || r.right < left || r.top > bottom || r.bottom < top)\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testIntersection",
+      "start_line": 23,
+      "end_line": 29,
+      "code": "    func testIntersection(): Unit {\n        let r = Rectangle(0, 0, 1, 1)\n        @Expect(r.intersectsWith(Rectangle(0, 0, 1, 1)), true)\n        @Expect(r.intersectsWith(Rectangle(-1, -5, 7, 8)), true)\n        @Expect(r.intersectsWith(Rectangle(2, 2, 3, 3)), false)\n        @Expect(r.intersectsWith(Rectangle(-2, -2, -1, -1)), false)\n    }",
+      "reason": "现有两个分离输入在水平和垂直方向同时分离，水平检查仍足够拒绝；缺少仅垂直分离的输入"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testTouchingEdge",
+      "start_line": 32,
+      "end_line": 34,
+      "code": "    func testTouchingEdge(): Unit {\n        @Expect(Rectangle(0, 0, 1, 1).intersectsWith(Rectangle(1, 0, 2, 1)), true)\n    }",
+      "reason": "共享边仍返回true，不能暴露遗漏垂直检查"
+    },
+    {
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testPointRectangle",
+      "start_line": 37,
+      "end_line": 39,
+      "code": "    func testPointRectangle(): Unit {\n        @Expect(Rectangle(1, 1, 1, 1).intersectsWith(Rectangle(0, 0, 2, 2)), true)\n    }",
+      "reason": "内部点仍返回true，不能暴露遗漏垂直检查"
+    }
+  ],
+  "trigger": {
+    "initial_state": "接收者Rectangle(0,0,1,1)",
+    "input": "Rectangle(0,2,1,3)",
+    "operations": [
+      "判断水平方向重叠但垂直分离的矩形"
+    ],
+    "normal_behavior": "false",
+    "mutant_behavior": "true"
+  },
+  "related_tests": [
+    {
+      "id": "R03",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testIntersection",
+      "prediction": "预测未检出",
+      "reason": "现有两个分离输入在水平和垂直方向同时分离，水平检查仍足够拒绝；缺少仅垂直分离的输入"
+    },
+    {
+      "id": "R04",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testTouchingEdge",
+      "prediction": "预测未检出",
+      "reason": "共享边仍返回true，不能暴露遗漏垂直检查"
+    },
+    {
+      "id": "R05",
+      "file": "cangjie/src/rectangle_test.cj",
+      "member": "RectangleTest.testPointRectangle",
+      "prediction": "预测未检出",
+      "reason": "内部点仍返回true，不能暴露遗漏垂直检查"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M008/cangjie/src/rectangle.cj"
+  ],
+  "patch_file": "mutants/M008/change.patch",
+  "unresolved": []
+}

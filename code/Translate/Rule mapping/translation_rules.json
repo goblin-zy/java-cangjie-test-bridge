@@ -1,0 +1,1516 @@
+{
+  "schema_version": "1.1",
+  "version": "0.2.0",
+  "updated_at": "2026-10-26",
+  "title": "Java→仓颉测试程序翻译规则（语言与生态层）",
+  "purpose": "服务于测试骨架、测试逻辑及必要测试辅助代码的翻译；按测试用途和适用条件选用，不覆盖被测业务代码的完整实现，也不是自动替换配置。",
+  "applicable_versions": {
+    "source_language": "Java 17",
+    "source_test_framework": "JUnit Jupiter 5.13.4",
+    "target_language_and_standard_library": "仓颉 1.2.0",
+    "target_test_framework": "std.unittest / std.unittest.testmacro（1.2.0）"
+  },
+  "scope": {
+    "layer": "语言与生态层",
+    "excluded_project_facts": [
+      "业务类/方法的具体符号对应及接口签名",
+      "金额单位、业务边界和项目运行路径",
+      "具体测试输入、初始状态、预期值与错误版本"
+    ],
+    "example_policy": "示例仅演示测试准备、接口调用、检查或必要辅助代码的表达；名称和数值不是项目契约；均未编译运行。",
+    "translation_objects": [
+      "测试类、测试方法、生命周期方法、测试字段与初始化表达式",
+      "为保留测试准备、操作、判定或清理而必须迁移的测试辅助方法和辅助类型"
+    ],
+    "business_context_policy": "被测业务代码仅按需提供接口、异常类型和行为上下文；读取实现不等于将实现加入翻译对象。调用目标接口不展开其业务方法体。",
+    "admission_criterion": "规则必须能说明解决哪一种测试翻译需求；仅因被测业务实现使用某机制，不纳入当前规则列表。",
+    "excluded_translation_work": [
+      "被测业务类的算法、解析器内部实现、金额校验及业务计算",
+      "目标项目已有业务类、自定义业务异常与公共设施的重新生成",
+      "没有测试端需求依据的全语言或全标准库覆盖"
+    ]
+  },
+  "verification_policy": {
+    "documentation": "已核对仅指所列说明支持当前受限方案；待确认表示关键细节仍有缺口。",
+    "source_comparison": "固定提交下的实际写法或差异，不以参考代码出现过替代语义核对。",
+    "execution": "本次未运行",
+    "web_access": "文档通过官方站点正文或搜索工具返回的相关正文核对；部分仓颉 1.2.0 页面直连超时，使用其索引正文，不声称逐页离线全文核验。",
+    "historical_evidence": "未将历史 24 项通过折算成规则验证；本文件无新增 Java/仓颉实验结果。",
+    "scope_review": "0.2.0 仅重新筛选测试翻译范围、标注用途并收紧例子和说明；沿用既有版本化文档/源码证据，不新增 Java/仓颉运行实验。"
+  },
+  "comparison_repository": {
+    "url": "https://github.com/goblin-zy/java-cangjie-test-bridge",
+    "commit": "9b5b13e1dd02a026650f46185ab6a3ee093268d8",
+    "material_version": "1.2.0",
+    "role": "源码对照与覆盖检查；参考测试不是规则正确性的标准答案。"
+  },
+  "categories": [
+    {
+      "id": "C01",
+      "name": "基础语法与程序结构",
+      "coverage": "部分覆盖",
+      "scope": "测试变量、条件循环、测试包与导入；switch 暂未覆盖",
+      "rule_ids": [
+        "SYNTAX-01",
+        "SYNTAX-02",
+        "SYNTAX-03"
+      ]
+    },
+    {
+      "id": "C02",
+      "name": "类型系统与类型转换",
+      "coverage": "部分覆盖",
+      "scope": "测试输入/预期值类型、数组和缺失值；接口不擅自更改",
+      "rule_ids": [
+        "TYPE-01",
+        "TYPE-02",
+        "TYPE-03"
+      ]
+    },
+    {
+      "id": "C03",
+      "name": "运算与求值语义",
+      "coverage": "部分覆盖",
+      "scope": "测试端有限计算、短路和调用求值顺序，不含业务算法",
+      "rule_ids": [
+        "OP-01",
+        "OP-02"
+      ]
+    },
+    {
+      "id": "C04",
+      "name": "对象模型与状态语义",
+      "coverage": "部分覆盖",
+      "scope": "测试字段/辅助类型初始化、对象创建及访问已有接口",
+      "rule_ids": [
+        "OBJECT-01",
+        "OBJECT-02",
+        "OBJECT-03"
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "函数与可执行片段",
+      "coverage": "部分覆盖",
+      "scope": "测试辅助方法、被测接口调用及异常检查的延迟操作",
+      "rule_ids": [
+        "FUNC-01",
+        "FUNC-02"
+      ]
+    },
+    {
+      "id": "C06",
+      "name": "相等、身份与比较",
+      "coverage": "部分覆盖",
+      "scope": "测试条件中的基础值/字符串比较；数组断言见 C10",
+      "rule_ids": [
+        "COMPARE-01"
+      ]
+    },
+    {
+      "id": "C07",
+      "name": "异常与资源管理",
+      "coverage": "部分覆盖",
+      "scope": "按需迁移测试端显式异常处理与 finally；业务异常定义不在当前范围",
+      "rule_ids": [
+        "EXCEPTION-01"
+      ]
+    },
+    {
+      "id": "C08",
+      "name": "标准库与常见第三方库",
+      "coverage": "部分覆盖",
+      "scope": "按需处理测试端空文本检查与简单拼接；集合、分词和解析暂不收录",
+      "rule_ids": [
+        "LIB-01"
+      ]
+    },
+    {
+      "id": "C09",
+      "name": "测试结构与执行机制",
+      "coverage": "部分覆盖",
+      "scope": "普通测试类、生命周期和隔离",
+      "rule_ids": [
+        "TEST-01",
+        "TEST-02"
+      ]
+    },
+    {
+      "id": "C10",
+      "name": "断言与测试判定",
+      "coverage": "部分覆盖",
+      "scope": "标量、数组、异常及快速失败",
+      "rule_ids": [
+        "ASSERT-01",
+        "ASSERT-02",
+        "ASSERT-03"
+      ]
+    },
+    {
+      "id": "C11",
+      "name": "测试替代组件与交互验证",
+      "coverage": "暂未覆盖",
+      "scope": "暂未覆盖 Mock/Stub 和调用次数验证",
+      "rule_ids": []
+    },
+    {
+      "id": "C12",
+      "name": "特殊运行机制",
+      "coverage": "暂未覆盖",
+      "scope": "暂未覆盖反射、并发、异步和注解处理",
+      "rule_ids": []
+    }
+  ],
+  "rules": [
+    {
+      "id": "SYNTAX-01",
+      "category": "基础语法与程序结构",
+      "name": "变量、常量与常用字面量",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "声明测试输入、预期值和中间结果，保留测试变量的初值及可变性。"
+      },
+      "source": "局部变量声明、final、var、赋值；整数、布尔、字符串字面量。",
+      "target": "需要再赋值用 var；只绑定一次可用 let；类型写作 name: T。普通 final 不直接改成 const，编译期常量另行判断。",
+      "conditions": [
+        "明确源类型和后续赋值情况；数值先按 TYPE-01 选择目标类型。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留作用域、初值及可变性；let 仅限制引用重新绑定，不冻结被引用对象。"
+      ],
+      "example": {
+        "java": "int count = 3;\ncount = 4;\nfinal boolean enabled = true;",
+        "cangjie": "var count: Int32 = 3\ncount = 4\nlet enabled: Bool = true",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/AccountTest.java#L7",
+            "member": "account 字段与局部 amount"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L54",
+            "member": "account 与 caught 的 var 声明"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.12",
+          "section": "4.12 变量；final、引用与默认初值"
+        },
+        {
+          "title": "仓颉 1.2.0 程序结构",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_programming_concepts/program_structure.html",
+          "section": "变量、const、值类型与引用类型变量"
+        },
+        {
+          "title": "仓颉 1.2.0 整数类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/integer.html",
+          "section": "宽度、字面量、显式类型转换与溢出"
+        }
+      ],
+      "limitations": [
+        "var 在两种语言中含义不同，不做关键词一对一替换。",
+        "字符串字面量只直接处理两侧含义已确认的普通文本；插值标记和转义须重新编码。Java Unicode 转义、文本块和编译期常量折叠不在本版。"
+      ]
+    },
+    {
+      "id": "SYNTAX-02",
+      "category": "基础语法与程序结构",
+      "name": "测试中的条件与循环",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "保留测试中的分支、重复操作、逐项检查及多组异常输入的执行次数。"
+      },
+      "source": "测试及必要辅助方法中的 if/else、while、增强 for 和简单下标 for。",
+      "target": "保留 if/else、while；遍历写 for (item in items)，确定上界且无特殊更新时可用 0..size；保留循环中的操作和断言。",
+      "conditions": [
+        "对应控制流实际出现在待翻译测试或必要辅助代码中；循环上界求值时机一致，不改变迭代容器。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留分支条件、遍历顺序和执行次数；区间 0..n 不含 n。",
+        "一般三段 for 可用 while 重写，但 continue 前仍须执行原更新动作。"
+      ],
+      "example": {
+        "java": "for (int value : values) { if (value < 0) continue; use(value); }",
+        "cangjie": "for (value in values) {\n    if (value < 0) { continue }\n    use(value)\n}",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/InstructionParserTest.java#L32",
+            "member": "testInvalidTokens 的增强 for"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/instructionparser_test.cj#L50",
+            "member": "testInvalidTokens 的 for-in"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/InstructionParser.java#L14",
+            "member": "parse 的 switch"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/instruction_parser.cj#L16",
+            "member": "parse 的 match"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-14.html",
+          "section": "14.9/14.11/14.12/14.14/14.17 条件、分支、循环与返回"
+        },
+        {
+          "title": "仓颉 1.2.0 表达式",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_programming_concepts/expression.html",
+          "section": "if、循环、break/continue、区间遍历"
+        },
+        {
+          "title": "仓颉 1.2.0 match 表达式",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/enum_and_pattern_match/match.html",
+          "section": "分支选择、穷尽性与退出 match"
+        }
+      ],
+      "limitations": [
+        "本版不提供 switch→match 映射；原对照来自业务解析分支，测试端需要时再补充。",
+        "不直接转换标签跳转或特殊更新的 for；动态 size、修改循环变量和 continue 的更新顺序需单独核对。"
+      ]
+    },
+    {
+      "id": "SYNTAX-03",
+      "category": "基础语法与程序结构",
+      "name": "包与导入声明",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "将测试类、断言及实际使用的辅助符号接入目标包和测试依赖。"
+      },
+      "source": "package、import、JUnit 的静态断言导入。",
+      "target": "依目标目录和模块声明 package；使用实际目标符号的 import。测试需导入 std.unittest.* 和 std.unittest.testmacro.*，集合按需导入 std.collection.*。",
+      "conditions": [
+        "包目录、符号及依赖已经由项目材料确认。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留名字绑定；import 仅引入可见声明，不负责安装库。"
+      ],
+      "example": {
+        "java": "import org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;",
+        "cangjie": "import std.unittest.*\nimport std.unittest.testmacro.*",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/RectangleTest.java#L1",
+            "member": "包与导入"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/rectangle_test.cj#L1",
+            "member": "包与测试框架导入"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "仓颉 1.2.0 包的导入",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/package/import.html",
+          "section": "import、隐式导入 core；导入不等于安装依赖"
+        },
+        {
+          "title": "仓颉 1.2.0 包的声明",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/package/package_name.html",
+          "section": "包名与源码相对目录"
+        },
+        {
+          "title": "JUnit 5.13.4 User Guide",
+          "url": "https://docs.junit.org/5.13.4/user-guide/",
+          "section": "2.1 注解；2.3 测试类与方法；2.12 测试实例生命周期"
+        }
+      ],
+      "limitations": [
+        "包名及业务符号不在通用规则中预设；不能把 Java 路径原样视为仓颉模块依赖。"
+      ]
+    },
+    {
+      "id": "TYPE-01",
+      "category": "类型系统与类型转换",
+      "name": "基础类型与显式整数转换",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "表达测试输入、预期结果和目标接口参数的类型，避免边界值在转换时改变。"
+      },
+      "source": "int、long、boolean、String、void 及常见整数转换。",
+      "target": "通常按宽度考虑 int→Int32、long→Int64，boolean→Bool、String→String、void→Unit。项目接口采用其他宽度时显式适配；整数转换写 TargetType(value)。",
+      "conditions": [
+        "先确认目标接口、值域及转换可能的溢出；算术另用 OP-01。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留数值范围和精度；声明能存放相同值不代表所有运算行为相同。"
+      ],
+      "example": {
+        "java": "int value = 12;\nlong wide = value;\nboolean valid = true;",
+        "cangjie": "let value: Int32 = 12\nlet wide: Int64 = Int64(value)\nlet valid: Bool = true",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/Account.java#L7",
+            "member": "int 参数与返回值"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account.cj#L9",
+            "member": "现有接口使用 Int64；属于项目选择"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.2",
+          "section": "4.2 基本类型和整数运算"
+        },
+        {
+          "title": "仓颉 1.2.0 整数类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/integer.html",
+          "section": "宽度、字面量、显式类型转换与溢出"
+        },
+        {
+          "title": "仓颉 1.2.0 std.core",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/core/core_package_overview.html",
+          "section": "Bool、Int32/Int64、String、Unit 等类型"
+        },
+        {
+          "title": "仓颉 1.2.0 Unit 类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/unit.html",
+          "section": "无业务返回值及赋值、自增等表达式的类型"
+        }
+      ],
+      "limitations": [
+        "Java 窄化强转会截断；不能无条件替换成仓颉带溢出策略的转换。",
+        "char 是 UTF-16 码元，不能无条件映射为 Rune；浮点类型、装箱及泛型系统暂未展开。"
+      ]
+    },
+    {
+      "id": "TYPE-02",
+      "category": "类型系统与类型转换",
+      "name": "数组创建、长度与下标",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "构造和读取数组测试数据、预期数组及被测接口返回值。"
+      },
+      "source": "一维数组 T[]、数组字面量、length 和下标；Java new int[n] 的零填充。",
+      "target": "使用 Array<T>、[elements]、size 和 Int64 下标；零填充可用 Array<Int32>(n, repeat: 0)。",
+      "conditions": [
+        "元素类型已选择；长度和下标可无损转为 Int64；数组非 null。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留长度、顺序及每个元素的值；别名仍指向同一数组数据。",
+        "仓颉空数组需要足够类型上下文；赋给 let 后仍可修改其元素。"
+      ],
+      "example": {
+        "java": "int[] values = new int[]{2, 4};\nint first = values[0];",
+        "cangjie": "let values: Array<Int32> = [2, 4]\nlet first: Int32 = values[0]",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/InstructionParserTest.java#L17",
+            "member": "数组输入及期望值"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/instructionparser_test.cj#L8",
+            "member": "Array<Int64> 和 expectArray"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "仓颉 1.2.0 数组类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/array.html",
+          "section": "Array<T>、字面量、size、Int64 下标与共享元素"
+        },
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-10.html",
+          "section": "10.3 创建、10.4 访问、10.6 初始化、10.7 length；默认初值另见 4.12.5"
+        },
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.12",
+          "section": "4.12 变量；final、引用与默认初值"
+        }
+      ],
+      "limitations": [
+        "不覆盖 Java 引用数组的默认 null、协变、多维数组及精确越界异常类型。",
+        "Array 与 VArray 的拷贝语义不同，本版不以 VArray 替换 Java 数组。"
+      ]
+    },
+    {
+      "id": "TYPE-03",
+      "category": "类型系统与类型转换",
+      "name": "缺失值与 Option",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "保留测试传入或检查缺失值的场景，使用项目已确认的可空适配入口。"
+      },
+      "source": "可能为 null 的引用、null 检查及非空时的使用。",
+      "target": "以 Option<T>（或 ?T）显式表达；None 为无值、Some(value) 为有值；通过 match 处理，再使用内部值。",
+      "conditions": [
+        "测试涉及缺失值，且项目已提供或明确批准可空目标签名/适配入口；不能为了翻译测试自行更改被测接口。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "区分没有值和空字符串/空数组；保留源代码无值时的行为。"
+      ],
+      "example": {
+        "java": "String text = null;\nif (text == null) { missing(); } else { use(text); }",
+        "cangjie": "let text: ?String = None\nmatch (text) {\n    case None => missing()\n    case Some(value) => use(value)\n}",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/InstructionParserTest.java#L44",
+            "member": "testNullInput"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/instruction_parser.cj#L5",
+            "member": "parseNullable 的 Some/None 分支；具体入口名属于项目材料"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.12",
+          "section": "4.12 变量；final、引用与默认初值"
+        },
+        {
+          "title": "仓颉 1.2.0 Option 类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/enum_and_pattern_match/option_type.html",
+          "section": "Option<T>/ ?T、Some、None"
+        },
+        {
+          "title": "仓颉 1.2.0 使用 Option",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/error_handle/use_option.html",
+          "section": "模式解构；getOrThrow 在无值时抛出异常"
+        }
+      ],
+      "limitations": [
+        "getOrThrow 在 None 时的异常不等于 Java NullPointerException，不能据名称断言完全等价。",
+        "不涉及 null 时，不强制给所有类型套 Option。"
+      ]
+    },
+    {
+      "id": "OP-01",
+      "category": "运算与求值语义",
+      "name": "有界整数算术与溢出边界",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "保留测试数据、预期值或测试辅助方法中的有限整数计算；不翻译被测业务算法。"
+      },
+      "source": "整数 +、-、*、/、%、复合赋值以及独立自增语句。",
+      "target": "在所有中间结果不溢出且除数非零的范围内保留运算；复合赋值仅用于同宽简单变量。若依赖 Java 回绕或窄化，先标记未支持，不以改成更宽整数代替源语义。",
+      "conditions": [
+        "操作数和所有中间结果在目标与源公共范围内；除法避开最小负数/-1等边界。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留运算顺序和整数除法向零截断；所有中间结果都需在公共范围内，最终结果合法不代表中间计算安全。",
+        "Java int/long 的普通加减乘溢出会回绕；仓颉默认检查溢出。扩大位宽可能改变分支、比较及异常，不能直接当修复。"
+      ],
+      "example": {
+        "java": "int value = 9;\nvalue -= 2;",
+        "cangjie": "var value: Int32 = 9\nvalue -= 2",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/Account.java#L15",
+            "member": "deposit 的先检查再相加"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account.cj#L18",
+            "member": "deposit 的范围检查"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.2",
+          "section": "4.2 基本类型和整数运算"
+        },
+        {
+          "title": "仓颉 1.2.0 基本操作符",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/basic_operators.html",
+          "section": "算术、赋值、短路逻辑、区间"
+        },
+        {
+          "title": "仓颉 1.2.0 注解",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/reflect_and_annotation/anno.html",
+          "section": "整数溢出策略；不能假定与 Java 回绕一致"
+        }
+      ],
+      "limitations": [
+        "不实现 Java 回绕仿真；需要时另立规则并核验。",
+        "不直接处理混合类型提升、byte/short 复合赋值隐式窄化、零除和浮点特殊值。",
+        "不笼统地给整个函数添加回绕注解：其作用域可能改变原本需要检查的其他运算；Java 最小负数/-1、余数等边界应单独核对。"
+      ]
+    },
+    {
+      "id": "OP-02",
+      "category": "运算与求值语义",
+      "name": "逻辑、比较及副作用求值顺序",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "保留测试准备、接口实参和检查条件的求值顺序、短路及调用次数。"
+      },
+      "source": "整数比较、布尔 !/&&/||；包含调用、赋值或自增的表达式。",
+      "target": "保留相同条件和短路关系；需要拆出副作用时，在原执行分支内按 Java 顺序保存临时值。作为值使用的赋值或 ++/-- 必须另行展开。",
+      "conditions": [
+        "比较同类型基础值；自定义操作符不在范围内。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "&& 的右侧仅在左侧为真时执行，|| 的右侧仅在左侧为假时执行；不得把右侧调用提前到条件外。",
+        "调用接收者及实参按源顺序、各求值一次；前一求值抛异常时不得执行后续调用，也不凭操作符结合性任意重排。"
+      ],
+      "example": {
+        "java": "boolean ok = ready && check();",
+        "cangjie": "let ok: Bool = ready && check()",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/Rectangle.java#L25",
+            "member": "intersectsWith 的短路布尔条件"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/rectangle.cj#L13",
+            "member": "intersectsWith"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html#jls-15.7",
+          "section": "15.7 求值顺序；15.23/15.24 短路；15.26 赋值"
+        },
+        {
+          "title": "仓颉 1.2.0 基本操作符",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/basic_operators.html",
+          "section": "算术、赋值、短路逻辑、区间"
+        },
+        {
+          "title": "仓颉 1.2.0 Unit 类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/unit.html",
+          "section": "无业务返回值及赋值、自增等表达式的类型"
+        }
+      ],
+      "limitations": [
+        "Java 赋值、自增表达式可能产生值；仓颉对应表达式为 Unit。",
+        "下标左值、复合赋值和异常时序复杂时需单独分析，不能统一重排。"
+      ]
+    },
+    {
+      "id": "OBJECT-01",
+      "category": "对象模型与状态语义",
+      "name": "测试类字段与必要辅助类型的初始化",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "建立测试类的状态字段，必要时定义测试专用辅助类型，并保留其初态。"
+      },
+      "source": "测试类的实例字段、字段初始值，以及必须迁移的简单测试辅助类及其构造器。",
+      "target": "保留测试类字段，按重新赋值需要选 let/var；必要测试辅助类使用 class 和 init，保留初值及顺序。已有被测类型只按项目接口引用；测试发现和逐测试准备分别用 TEST-01/02。",
+      "conditions": [
+        "仅用于待翻译测试及不可复用的测试专用辅助类型；普通非嵌套类；构造条件、字段和访问范围已知。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留字段初值和对象状态；不能用任意零值占位冒充初始化。"
+      ],
+      "example": {
+        "java": "class TestFixture {\n    private int value;\n    TestFixture(int start) { value = start; }\n}",
+        "cangjie": "class TestFixture {\n    private var value: Int32\n    public init(start: Int32) { value = start }\n}",
+        "context": "仅演示待迁移的测试专用辅助类型；不是要求生成被测业务类。测试类本身仍遵守 TEST-01 的可无参构造前提。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/Rectangle.java#L6",
+            "member": "final 字段与构造赋值"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/rectangle.cj#L3",
+            "member": "let 字段及 init"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。 本版将适用范围收紧到测试字段和必要测试辅助类型；例子名称调整不新增运行证据。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+          "section": "8.3 字段；8.4 方法；8.8 构造器"
+        },
+        {
+          "title": "仓颉 1.2.0 类",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/class_and_interface/class.html",
+          "section": "成员、构造、初始化顺序、静态成员、访问权限"
+        }
+      ],
+      "limitations": [
+        "示例构造器取 public 以便调用，实际权限须按 OBJECT-03 核对。",
+        "Java 字段默认初值不能简单省略；继承链、初始化副作用和 final 约束复杂时单独分析。",
+        "不据此迁移被测业务类、完整继承体系或业务构造逻辑；原业务源码对照只说明初始化写法。"
+      ]
+    },
+    {
+      "id": "OBJECT-02",
+      "category": "对象模型与状态语义",
+      "name": "对象创建与引用共享",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "创建被测对象或测试数据，并保留同一对象的引用共享。"
+      },
+      "source": "new Type(args)、将对象赋给另一变量或作为参数传递。",
+      "target": "通过目标类型名调用构造器 Type(args)；保留对象个数、参数求值和引用共享，不擅自深拷贝或改成 struct。",
+      "conditions": [
+        "目标是已存在的 class，构造签名和类型名对应已经确认。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "创建新实例和复用同一实例具有不同状态语义。"
+      ],
+      "example": {
+        "java": "Meter first = new Meter(7);\nMeter second = first;",
+        "cangjie": "let first = Meter(7)\nlet second = first",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/AccountTest.java#L9",
+            "member": "每次 setUp 创建实例"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L32",
+            "member": "测试开始创建实例"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html#jls-15.9",
+          "section": "15.9 对象创建；15.12 调用；15.27 Lambda"
+        },
+        {
+          "title": "仓颉 1.2.0 类",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/class_and_interface/class.html",
+          "section": "成员、构造、初始化顺序、静态成员、访问权限"
+        }
+      ],
+      "limitations": [
+        "不规定具体业务类名、构造参数或工厂名；这些来自项目/样例层。",
+        "匿名类、反射创建和对象身份断言不在本版。"
+      ]
+    },
+    {
+      "id": "OBJECT-03",
+      "category": "对象模型与状态语义",
+      "name": "测试辅助成员与被测成员的访问",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "声明测试辅助成员并访问项目已提供的被测方法、字段或静态成员，不改造业务类。"
+      },
+      "source": "测试辅助字段/方法的 static 和访问权限，以及测试对已有被测方法、字段或 getter 的访问。",
+      "target": "测试辅助静态成员保留 static；访问被测成员时使用项目已确认的目标接口。getter 默认保留调用，仅有明确符号对应时改为属性；不得修改业务类权限来迁就测试。",
+      "conditions": [
+        "被访问的目标接口已存在，或待定义成员属于必要测试辅助代码；不翻译业务类成员实现。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留每实例状态与全类共享状态的区别；不为通过编译无条件公开所有成员。"
+      ],
+      "example": {
+        "java": "public static int limit() { return 6; }\n// 调用：Policy.limit()",
+        "cangjie": "public static func limit(): Int32 { return 6 }\n// 调用：Policy.limit()",
+        "context": "Policy 视为测试辅助类型；若它是被测业务类型，本规则只指导调用已有接口，不要求迁移其定义。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/InstructionParser.java#L8",
+            "member": "static parse"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/instruction_parser.cj#L12",
+            "member": "static parse"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/rectangle_test.cj#L11",
+            "member": "读取 left；该名字的对应由项目约定决定"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+          "section": "8.3 字段；8.4 方法；8.8 构造器"
+        },
+        {
+          "title": "仓颉 1.2.0 类",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/class_and_interface/class.html",
+          "section": "成员、构造、初始化顺序、静态成员、访问权限"
+        },
+        {
+          "title": "仓颉 1.2.0 顶层声明的可见性",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/package/toplevel_access.html",
+          "section": "internal/protected/public/private 的作用范围"
+        }
+      ],
+      "limitations": [
+        "仓颉 internal 包含子包，与 Java 包可见不完全相同；protected 的范围也不同。",
+        "复杂继承、重写和类可扩展性暂未系统覆盖；本版不承诺访问控制完全等价。"
+      ]
+    },
+    {
+      "id": "FUNC-01",
+      "category": "函数与可执行片段",
+      "name": "测试辅助方法声明与接口调用",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "迁移测试辅助方法和初始化调用链，并按项目签名调用被测接口。"
+      },
+      "source": "测试中的普通辅助方法、初始化调用、参数、return，以及对已有被测接口的调用。",
+      "target": "测试辅助方法写 func name(arg: T): R，void 用 Unit；保留其行为和断言。调用被测接口时保留接收对象、实参、返回值和顺序，不展开业务方法体。",
+      "conditions": [
+        "非泛型、非可变参数的普通方法；接口映射已经确认。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "返回值、参数顺序、接收对象和调用链不变；不能因不是 @Test 而省略辅助逻辑。"
+      ],
+      "example": {
+        "java": "int twice(int value) { return value * 2; }",
+        "cangjie": "func twice(value: Int32): Int32 { return value * 2 }",
+        "context": "twice 仅作为原测试中已存在的辅助计算示例；不根据被测实现重新计算预期值，也不要求生成业务方法。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/AccountTest.java#L11",
+            "member": "prepareSequence 含中间断言"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L8",
+            "member": "prepareSequence(account) 显式传入接收对象"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+          "section": "8.3 字段；8.4 方法；8.8 构造器"
+        },
+        {
+          "title": "仓颉 1.2.0 定义函数",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/function/define_functions.html",
+          "section": "func、参数、返回类型、return 与作用域"
+        },
+        {
+          "title": "仓颉 1.2.0 Unit 类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/unit.html",
+          "section": "无业务返回值及赋值、自增等表达式的类型"
+        }
+      ],
+      "limitations": [
+        "例子假定乘法不溢出；Java throws 声明不能照搬为仓颉语法，异常行为按 EXCEPTION-01 保留。",
+        "重载决议、泛型、动态分派和方法引用未系统覆盖。"
+      ]
+    },
+    {
+      "id": "FUNC-02",
+      "category": "函数与可执行片段",
+      "name": "简单 Lambda 与延迟操作",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "延迟执行异常断言中的被测操作，防止在建立检查前提前调用。"
+      },
+      "source": "不带参数、用于稍后执行的 () -> operation()。",
+      "target": "需要函数值时可写 {=> operation()}，函数类型为 () -> Unit；调用时 action()。异常宏接受表达式/代码块时按 ASSERT-03 处理。",
+      "conditions": [
+        "无参且无返回业务值的同步操作；仅捕获稳定对象引用。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "建立操作时不提前执行；保留捕获对象及实际执行次数。"
+      ],
+      "example": {
+        "java": "Runnable action = () -> worker.run();\naction.run();",
+        "cangjie": "let action: () -> Unit = {=> worker.run()}\naction()",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/AccountTest.java#L37",
+            "member": "assertThrows 中的 Lambda"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L56",
+            "member": "操作在 try 内发生，不在建立检查前执行"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html#jls-15.9",
+          "section": "15.9 对象创建；15.12 调用；15.27 Lambda"
+        },
+        {
+          "title": "仓颉 1.2.0 Lambda 表达式",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/function/lambda.html",
+          "section": "参数列表 => 函数体；函数类型"
+        },
+        {
+          "title": "仓颉 1.2.0 闭包",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/function/closure.html",
+          "section": "捕获、生命周期与可变变量限制"
+        }
+      ],
+      "limitations": [
+        "捕获可变变量、返回值、异步调度、线程和函数接口对象身份未覆盖。",
+        "JUnit Executable 与 Runnable 不是同一接口；示例仅演示延迟机制，不用于自动替换接口类型。"
+      ]
+    },
+    {
+      "id": "COMPARE-01",
+      "category": "相等、身份与比较",
+      "name": "基础值、字符串内容与身份边界",
+      "translation_use": {
+        "kind": "测试代码基础表达",
+        "purpose": "保留测试条件及辅助检查中的基础值和字符串内容比较标准。"
+      },
+      "source": "基础值 ==/!=、非空字符串 equals、对象 ==。",
+      "target": "整数/布尔保留值比较；确认是字符串内容比较时用目标 String 的 ==。对象身份、一般 equals 重写和数组内容比较分别处理。",
+      "conditions": [
+        "同类型基础值或有效且非空的普通文本；比较没有自定义副作用。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "内容相同不代表同一对象；Java 字符串 == 不能当作内容比较翻译。"
+      ],
+      "example": {
+        "java": "boolean sameText = \"ok\".equals(text);",
+        "cangjie": "let sameText: Bool = \"ok\" == text",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/RectangleTest.java#L16",
+            "member": "testToString 的字符串值检查"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/rectangle_test.cj#L18",
+            "member": "testToString"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 String API",
+          "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html",
+          "section": "equals、length、charAt、isEmpty、split、format"
+        },
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html#jls-15.7",
+          "section": "15.7 求值顺序；15.23/15.24 短路；15.26 赋值"
+        },
+        {
+          "title": "仓颉 1.2.0 字符串类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/strings.html",
+          "section": "字面量、插值、字符串相等与拼接"
+        }
+      ],
+      "limitations": [
+        "例子要求 text 非 null；源为 null 时需另接 TYPE-03。",
+        "不提供 assertSame、对象身份、浮点 NaN/正负零、一般对象相等的通用等价方案。"
+      ]
+    },
+    {
+      "id": "EXCEPTION-01",
+      "category": "异常与资源管理",
+      "name": "测试辅助代码的异常处理与清理",
+      "translation_use": {
+        "kind": "按需辅助表达",
+        "purpose": "处理原测试或必要测试辅助代码中显式的异常捕获、抛出及 finally 清理；普通异常断言优先用 ASSERT-03。"
+      },
+      "source": "原测试或必要测试辅助方法直接使用的 throw new E(...)、catch(E e)、finally。",
+      "target": "仅迁移测试端已有的 throw TargetE(...)、指定类型 catch 和 finally；保留未匹配异常传播。预期被测接口抛异常使用 ASSERT-03，不把其内部抛出逻辑搬入测试。",
+      "conditions": [
+        "异常类型对应已明确；仅普通 try/catch/finally。",
+        "对应处理或清理实际出现在待翻译的测试端代码中；不能仅因被测方法内部抛异常就选用本条。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留抛出位置、处理范围及异常后继续执行的位置；清理在原应执行的路径执行。"
+      ],
+      "example": {
+        "java": "try { work(); } catch (IllegalArgumentException e) { recover(); } finally { clean(); }",
+        "cangjie": "try { work() } catch (e: IllegalArgumentException) { recover() } finally { clean() }",
+        "context": "work/recover/clean 是源测试已有的操作或辅助方法；片段不代表需要实现业务异常转换。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/InstructionParser.java#L32",
+            "member": "parseNumber 的异常转换"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L56",
+            "member": "仅捕获 InsufficientFundsException"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。 业务解析器的对照只提供写法背景，不能作为测试端需要异常转换的依据。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-14.html#jls-14.20",
+          "section": "14.18 throw；14.20 try/catch/finally"
+        },
+        {
+          "title": "仓颉 1.2.0 throw 和处理异常",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/error_handle/handle.html",
+          "section": "指定类型 catch、finally 和异常传播"
+        },
+        {
+          "title": "仓颉 1.2.0 模式概述",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/enum_and_pattern_match/pattern_overview.html",
+          "section": "类型模式按运行时子类型匹配"
+        }
+      ],
+      "limitations": [
+        "同名异常不证明继承和语义一致；不能把任意异常都吞掉。",
+        "Java Throwable/Error/受检异常、异常抑制及 try-with-resources 关闭顺序暂未覆盖。"
+      ]
+    },
+    {
+      "id": "LIB-01",
+      "category": "标准库与常见第三方库",
+      "name": "测试端空文本检查与简单文本拼接",
+      "translation_use": {
+        "kind": "按需辅助表达",
+        "purpose": "处理测试或必要测试辅助代码直接使用的空文本检查和简单预期文本拼接；只比较接口输出时无需翻译其格式化实现。"
+      },
+      "source": "测试或必要辅助代码直接使用的 String.isEmpty 和普通文本/十进制整数拼接。",
+      "target": "空文本检查可使用 isEmpty；已知普通字符串和十进制整数可用拼接或插值构造测试输入/预期文本。若测试仅断言被测 toString 的结果，保持原预期文本，不迁移被测格式化实现。",
+      "conditions": [
+        "对应文本操作实际出现在测试或必要辅助代码中；text 非 null，值和文本已经明确，不依赖 locale、宽度、精度及自定义对象格式化。"
+      ],
+      "dependencies": [],
+      "semantics": [
+        "保留测试输入和预期文本中的字符、空格、符号及求值顺序；不擅自 trim、重新格式化或重新推导预期值。"
+      ],
+      "example": {
+        "java": "String expected = \"count=\" + count;\nboolean empty = text.isEmpty();",
+        "cangjie": "let expected: String = \"count=${count}\"\nlet empty: Bool = text.isEmpty()",
+        "context": "count 为上下文中已有的整数，text 为非 null 的普通文本；只有源测试确实这样构造预期值时才转换，不根据目标输出反推预期值。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/main/java/study/translation/Rectangle.java#L29",
+            "member": "简单整数格式构造"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/rectangle.cj#L17",
+            "member": "toString 插值"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "沿用 0.1.1 已核对的空文本及简单整数文本构造依据，本版删去分词与 ASCII 字节处理方案；既有业务源码只作文本构造写法对照，不证明当前测试需要实现格式化。示例未编译运行。"
+      },
+      "sources": [
+        {
+          "title": "Java 17 String API",
+          "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html",
+          "section": "equals、length、charAt、isEmpty、split、format"
+        },
+        {
+          "title": "仓颉 1.2.0 std.core 结构体",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/core/core_package_api/core_package_structs.html",
+          "section": "String：isEmpty、split(String,Bool)、size、toArray；UTF-8"
+        },
+        {
+          "title": "仓颉 1.2.0 字符串类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/strings.html",
+          "section": "字面量、插值、字符串相等与拼接"
+        }
+      ],
+      "limitations": [
+        "本版不提供 split、逐字符/字节解析、通用 String.format、正则或 Unicode 索引转换。",
+        "只有固定预期字符串和字符串断言时，使用 SYNTAX-01、COMPARE-01 和 ASSERT-01 即可，不必选用本条。"
+      ]
+    },
+    {
+      "id": "TEST-01",
+      "category": "测试结构与执行机制",
+      "name": "普通测试类和测试发现",
+      "translation_use": {
+        "kind": "测试框架迁移",
+        "purpose": "将源测试类和测试方法转换为目标框架可发现的测试结构。"
+      },
+      "source": "JUnit 普通测试类中的 @Test void 方法。",
+      "target": "测试类加 @Test，每个目标测试方法加 @TestCase，返回 Unit；导入仓颉测试框架。辅助方法保持普通方法。",
+      "conditions": [
+        "测试方法为普通、无参数的同步方法；目标 @Test 类有无参构造器，且无继承和扩展机制。"
+      ],
+      "dependencies": [
+        "import std.unittest.*",
+        "import std.unittest.testmacro.*"
+      ],
+      "semantics": [
+        "每个原测试均有可定位的目标测试；空骨架、未注册或未执行的方法不算已完成测试。"
+      ],
+      "example": {
+        "java": "class ValueTest {\n    @Test void checksValue() { assertEquals(4, 2 + 2); }\n}",
+        "cangjie": "@Test\nclass ValueTest {\n    @TestCase\n    func checksValue(): Unit { @Assert(4, 2 + 2) }\n}",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/RectangleTest.java#L6",
+            "member": "测试类和 @Test 方法"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/rectangle_test.cj#L5",
+            "member": "@Test 类与 @TestCase"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "JUnit 5.13.4 User Guide",
+          "url": "https://docs.junit.org/5.13.4/user-guide/",
+          "section": "2.1 注解；2.3 测试类与方法；2.12 测试实例生命周期"
+        },
+        {
+          "title": "仓颉 1.2.0 Unittest 基础概念及用法",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest/unittest_samples/unittest_basics.html",
+          "section": "测试及测试用例、断言、预期异常、测试生命周期"
+        },
+        {
+          "title": "仓颉 1.2.0 测试宏 API",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest_testmacro/unittest_testmacro_package_api/unittest_testmacro_package_macros.html",
+          "section": "@Test/@TestCase、@BeforeEach/@AfterEach、@Assert/@Expect、@AssertThrows"
+        }
+      ],
+      "limitations": [
+        "本例只展示结构；参数化、嵌套、动态测试、跳过与扩展引擎暂未覆盖。",
+        "不通过新增 main 代替测试发现；具体构建命令由项目层提供。"
+      ]
+    },
+    {
+      "id": "TEST-02",
+      "category": "测试结构与执行机制",
+      "name": "逐测试初始化、清理与隔离",
+      "translation_use": {
+        "kind": "测试框架迁移",
+        "purpose": "保留每次测试前的准备、结束后的清理和测试之间的状态隔离。"
+      },
+      "source": "@BeforeEach/@AfterEach、测试实例字段及被调用的辅助准备代码。",
+      "target": "保留 @BeforeEach/@AfterEach 并置于 @Test 类中；每条测试前恢复其可观察的全部实例初态，保留清理。不能仅复制源 @BeforeEach 的赋值而遗漏字段初值；内联初始化限已确认等效的简单情形。",
+      "conditions": [
+        "已核对 JUnit 的实际实例模式及配置；普通、串行、独立测试，不依赖全局或跨测试共享状态。"
+      ],
+      "dependencies": [
+        "import std.unittest.*",
+        "import std.unittest.testmacro.*"
+      ],
+      "semantics": [
+        "JUnit 默认 PER_METHOD 会重建实例，但配置或 @TestInstance 可改变它；目标不能依赖前一测试的状态或执行顺序。",
+        "复用准备代码，不复用前一测试修改后的对象；源字段默认值/初始化器也属于准备条件，辅助准备中的断言仍须执行。"
+      ],
+      "example": {
+        "java": "class ValueTest {\n    int value;\n    @BeforeEach void setup() { value = 3; }\n    @AfterEach void cleanup() { value = 0; }\n    @Test void check() { assertEquals(3, value); }\n}",
+        "cangjie": "@Test\nclass ValueTest {\n    var value: Int32 = 0\n    @BeforeEach\n    func setup(): Unit { value = 3 }\n    @AfterEach\n    func cleanup(): Unit { value = 0 }\n    @TestCase\n    func check(): Unit { @Assert(3i32, value) }\n}",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/AccountTest.java#L9",
+            "member": "setUp 和 prepareSequence"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L31",
+            "member": "各方法内联独立创建；辅助方法显式传入对象"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "JUnit 5.13.4 User Guide",
+          "url": "https://docs.junit.org/5.13.4/user-guide/",
+          "section": "2.1 注解；2.3 测试类与方法；2.12 测试实例生命周期"
+        },
+        {
+          "title": "仓颉 1.2.0 测试宏 API",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest_testmacro/unittest_testmacro_package_api/unittest_testmacro_package_macros.html",
+          "section": "@Test/@TestCase、@BeforeEach/@AfterEach、@Assert/@Expect、@AssertThrows"
+        },
+        {
+          "title": "仓颉 1.2.0 Unittest 基础概念及用法",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest/unittest_samples/unittest_basics.html",
+          "section": "测试及测试用例、断言、预期异常、测试生命周期"
+        }
+      ],
+      "limitations": [
+        "源字段初值需有依据；纯字段初始化可在逐测试准备中恢复，不能任意补造；构造副作用不能默认等效为简单赋值。",
+        "不承诺两个框架实例/生命周期完全一致；继承、多生命周期函数的先后次序、初始化失败后的清理，以及资源和全局状态需另行核对。"
+      ]
+    },
+    {
+      "id": "ASSERT-01",
+      "category": "断言与测试判定",
+      "name": "标量断言、参数角色与快速失败",
+      "translation_use": {
+        "kind": "测试框架迁移",
+        "purpose": "保留标量检查的预期值与实际值角色，以及失败后停止的行为。"
+      },
+      "source": "JUnit assertEquals(expected, actual)、assertTrue/False 的普通同步断言。",
+      "target": "基础整数/布尔/普通字符串采用 @Assert(expected, actual)，保留源参数角色；真假断言用 @Assert(condition) 或 @Assert(!condition)。有副作用时先按源顺序求 expected、actual，再比较临时值。",
+      "conditions": [
+        "基础值比较语义已经确认，整数类型一致；不是 assertAll 或自定义软断言。"
+      ],
+      "dependencies": [
+        "import std.unittest.*",
+        "import std.unittest.testmacro.*"
+      ],
+      "semantics": [
+        "保留实际值和预期值的角色、求值次数及失败后停止；不把一般断言统一换成 @Expect。"
+      ],
+      "example": {
+        "java": "assertEquals(nextExpected(), nextActual());",
+        "cangjie": "let expected = nextExpected()\nlet actual = nextActual()\n@Assert(expected, actual)",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/AccountTest.java#L11",
+            "member": "prepareSequence 中两次检查"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L8",
+            "member": "现有 @Expect 会在失败后继续，和本规则不同"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "核对宏展开与 assertEqual 的签名：双参数 @Assert 原序传入 expected、actual；旧版 actual-first 约定已修正。assertEqual 失败抛 AssertException，expectEqual 只记录失败；源码核对不等于本次运行。"
+      },
+      "sources": [
+        {
+          "title": "JUnit 5.13.4 Assertions API",
+          "url": "https://docs.junit.org/5.13.4/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html",
+          "section": "assertEquals、assertTrue/False、assertArrayEquals、assertThrows；失败抛出错误"
+        },
+        {
+          "title": "Java 17 JLS",
+          "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html#jls-15.7",
+          "section": "15.7 求值顺序；15.23/15.24 短路；15.26 赋值"
+        },
+        {
+          "title": "仓颉 1.2.0 Unittest 基础概念及用法",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest/unittest_samples/unittest_basics.html",
+          "section": "测试及测试用例、断言、预期异常、测试生命周期"
+        },
+        {
+          "title": "仓颉 1.2.0 测试宏 API",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest_testmacro/unittest_testmacro_package_api/unittest_testmacro_package_macros.html",
+          "section": "@Test/@TestCase、@BeforeEach/@AfterEach、@Assert/@Expect、@AssertThrows"
+        },
+        {
+          "title": "仓颉标准库源码 v1.2.0（固定提交）",
+          "url": "https://github.com/cangjielanguage/cangjie_runtime/blob/52f9e08f985ba42e23581e725e1b11f956f941d6/stdlib/libs/std/unittest/testmacro/assertion_macro.cj#L39-L64",
+          "section": "双参数宏将输入按原序交给 assertEqual/expectEqual"
+        },
+        {
+          "title": "仓颉标准库源码 v1.2.0（固定提交）",
+          "url": "https://github.com/cangjielanguage/cangjie_runtime/blob/52f9e08f985ba42e23581e725e1b11f956f941d6/stdlib/libs/std/unittest/assert.cj#L24-L67",
+          "section": "expected/actual 参数顺序及失败抛 AssertException；expectEqual 另行记录失败"
+        }
+      ],
+      "limitations": [
+        "不覆盖消息 Supplier、副作用比较器、对象身份、浮点容差或多断言聚合。",
+        "普通文档示例常把被测表达式写在左边；本库按固定实现的 expected/actual 参数保留源角色，不因相等关系对称就交换参数。"
+      ]
+    },
+    {
+      "id": "ASSERT-02",
+      "category": "断言与测试判定",
+      "name": "一维数组内容与顺序断言",
+      "translation_use": {
+        "kind": "测试框架迁移",
+        "purpose": "保留数组检查的长度、元素、顺序和首个差异处的失败行为。"
+      },
+      "source": "JUnit assertArrayEquals(expected, actual) 的非 null 一维整数数组，包括长度为零的数组。",
+      "target": "先按源顺序保存两侧表达式；用 @Assert 比较长度，再按相同下标逐元素 @Assert。",
+      "conditions": [
+        "数组非 null、元素类型相同且值比较语义明确。"
+      ],
+      "dependencies": [
+        "import std.unittest.*",
+        "import std.unittest.testmacro.*"
+      ],
+      "semantics": [
+        "两侧表达式先按 expected、actual 顺序各求值一次；比较长度后再逐下标比较，保留内容与顺序。",
+        "长度不同先快速失败以避免越界；遇首个差异停止；长度都为零时循环为空且比较成功。"
+      ],
+      "example": {
+        "java": "assertArrayEquals(expectedValues(), actualValues());",
+        "cangjie": "let expected = expectedValues()\nlet actual = actualValues()\n@Assert(expected.size, actual.size)\nfor (i in 0..expected.size) {\n    @Assert(expected[i], actual[i])\n}",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/InstructionParserTest.java#L17",
+            "member": "assertArrayEquals"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/instructionparser_test.cj#L8",
+            "member": "expectArray：长度 @Assert，元素 @Expect；本规则统一快速失败"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "仅核对所列文档的相关说明及源码；示例未编译，完整语义等价尚无运行证明。"
+      },
+      "sources": [
+        {
+          "title": "JUnit 5.13.4 Assertions API",
+          "url": "https://docs.junit.org/5.13.4/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html",
+          "section": "assertEquals、assertTrue/False、assertArrayEquals、assertThrows；失败抛出错误"
+        },
+        {
+          "title": "仓颉 1.2.0 数组类型",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/basic_data_type/array.html",
+          "section": "Array<T>、字面量、size、Int64 下标与共享元素"
+        },
+        {
+          "title": "仓颉 1.2.0 Unittest 基础概念及用法",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest/unittest_samples/unittest_basics.html",
+          "section": "测试及测试用例、断言、预期异常、测试生命周期"
+        },
+        {
+          "title": "仓颉标准库源码 v1.2.0（固定提交）",
+          "url": "https://github.com/cangjielanguage/cangjie_runtime/blob/52f9e08f985ba42e23581e725e1b11f956f941d6/stdlib/libs/std/unittest/assert.cj#L24-L67",
+          "section": "长度及元素比较均使用快速失败的 assertEqual"
+        }
+      ],
+      "limitations": [
+        "null 数组、嵌套数组、对象数组和浮点元素容差需另行规则；报错文字不要求完全相同。"
+      ]
+    },
+    {
+      "id": "ASSERT-03",
+      "category": "断言与测试判定",
+      "name": "指定类型异常断言和异常后检查",
+      "translation_use": {
+        "kind": "测试框架迁移",
+        "purpose": "保留指定类型异常预期及成功捕获之后仍须执行的状态检查。"
+      },
+      "source": "assertThrows(Expected.class, action)，随后继续检查状态。",
+      "target": "对已映射的普通 Exception 类型，优先用 @AssertThrows[TargetE](operation())；仅包住原 action，成功捕获后执行原有状态检查。显式 try/catch + @Assert(caught) 仅在接受非预期异常报告差异时作为备选。",
+      "conditions": [
+        "源、目标异常类型及子类对应已确认；限定普通 Exception，不含框架内部断言/超时异常及 Java Error/Throwable 的完整层次；本版不使用返回异常对象。"
+      ],
+      "dependencies": [
+        "import std.unittest.*",
+        "import std.unittest.testmacro.*",
+        "TargetE 的定义/导入由项目层提供"
+      ],
+      "semantics": [
+        "指定类型及其子类满足预期；未抛异常或抛出其他普通 Exception 时由 @AssertThrows 快速失败。",
+        "action 只执行一次；异常后的状态断言和后续成功操作留在宏外，不能把整个测试包进异常检查。",
+        "框架 AssertException、AssertIntermediateException 和超时异常有特殊传播处理，不能用宽泛的 Exception 预期吞掉断言失败。"
+      ],
+      "example": {
+        "java": "assertThrows(IllegalArgumentException.class, () -> operation());\nassertEquals(7, state());",
+        "cangjie": "@AssertThrows[IllegalArgumentException](operation())\n@Assert(7i32, state())",
+        "context": "语句或成员片段；未展示的变量、接口及外层声明由上下文提供。"
+      },
+      "verification": {
+        "documentation": "已核对",
+        "source_comparison": [
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/java/src/test/java/study/translation/AccountTest.java#L36",
+            "member": "testInsufficientFunds：异常后仍检查状态和后续调用"
+          },
+          {
+            "url": "https://github.com/goblin-zy/java-cangjie-test-bridge/blob/9b5b13e1dd02a026650f46185ab6a3ee093268d8/cangjie/src/account_test.cj#L53",
+            "member": "指定类型 catch；现有 @Expect(caught) 改为快速失败方案"
+          }
+        ],
+        "execution": "本次未运行",
+        "notes": "已核对文档、v1.2.0 throws_macro 的指定类型 catch/子类匹配、未抛异常 fail、非预期普通异常转 assertCaughtUnexpectedE；fail.cj 确认快速失败。保留手写 catch 的报告差异；不声称覆盖 Java Throwable 全域。"
+      },
+      "sources": [
+        {
+          "title": "JUnit 5.13.4 Assertions API",
+          "url": "https://docs.junit.org/5.13.4/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html",
+          "section": "assertEquals、assertTrue/False、assertArrayEquals、assertThrows；失败抛出错误"
+        },
+        {
+          "title": "仓颉 1.2.0 throw 和处理异常",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/error_handle/handle.html",
+          "section": "指定类型 catch、finally 和异常传播"
+        },
+        {
+          "title": "仓颉 1.2.0 模式概述",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/enum_and_pattern_match/pattern_overview.html",
+          "section": "类型模式按运行时子类型匹配"
+        },
+        {
+          "title": "仓颉 1.2.0 测试宏 API",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest_testmacro/unittest_testmacro_package_api/unittest_testmacro_package_macros.html",
+          "section": "@Test/@TestCase、@BeforeEach/@AfterEach、@Assert/@Expect、@AssertThrows"
+        },
+        {
+          "title": "仓颉 1.2.0 Unittest 基础概念及用法",
+          "url": "https://cj-docs.gitcode.com/zh/1.2.0/libs/std/unittest/unittest_samples/unittest_basics.html",
+          "section": "测试及测试用例、断言、预期异常、测试生命周期"
+        },
+        {
+          "title": "仓颉标准库源码 v1.2.0（固定提交）",
+          "url": "https://github.com/cangjielanguage/cangjie_runtime/blob/52f9e08f985ba42e23581e725e1b11f956f941d6/stdlib/libs/std/unittest/testmacro/throws_macro.cj#L132-L272",
+          "section": "handleExpectedErrorTypes、expandAssertThrowsMacro：类型捕获与框架异常过滤"
+        },
+        {
+          "title": "仓颉标准库源码 v1.2.0（固定提交）",
+          "url": "https://github.com/cangjielanguage/cangjie_runtime/blob/52f9e08f985ba42e23581e725e1b11f956f941d6/stdlib/libs/std/unittest/fail.cj#L26-L54",
+          "section": "fail 和 assertCaughtUnexpectedE 都以 AssertException 停止执行"
+        }
+      ],
+      "limitations": [
+        "手写指定类型 catch + @Assert(caught) 会让非预期异常向外传播，可能记为运行错误；因此与宏/JUnit 的失败报告不完全一致，且宽泛 catch 可能吞掉框架断言。",
+        "本版不覆盖 assertThrowsExactly、返回异常对象后的消息/cause 检查，以及 Error、框架特殊异常和多异常类型返回值推断；单类型宏虽有返回值，需使用时再扩展规则。"
+      ]
+    }
+  ],
+  "standard_library_source": {
+    "url": "https://github.com/cangjielanguage/cangjie_runtime",
+    "tag": "v1.2.0",
+    "commit": "52f9e08f985ba42e23581e725e1b11f956f941d6",
+    "role": "仓颉标准库上游公开镜像的固定版本源码；核对解析和断言实现，不代表本机 SDK 已运行。"
+  },
+  "translation_use_policy": {
+    "kinds": {
+      "测试框架迁移": "直接保留测试发现、生命周期、断言和失败行为。",
+      "测试代码基础表达": "表达测试准备、对象/接口使用和检查所需的基本语言机制。",
+      "按需辅助表达": "仅在原测试或必须迁移的测试辅助代码实际出现对应操作时选用。"
+    },
+    "selection": "先界定测试翻译单元，再按 translation_use.purpose 选择相关规则；三种用途都不表示无条件向模型提供整组规则。category 表示机制分类，kind 表示测试翻译用途。",
+    "evidence_boundary": "既有 source_comparison 可能来自业务实现，只作写法或差异对照，不单独证明测试翻译需求；测试端是否需要由完整待翻译代码及其必要依赖决定。",
+    "deferred_candidates": "候选只登记编号、原因与重新纳入条件，不是可直接选用的转换规则，也不计入 rules 和分类 rule_ids。"
+  },
+  "deferred_candidates": [
+    {
+      "id": "EXCEPTION-02",
+      "category": "异常与资源管理",
+      "name": "简单自定义异常定义",
+      "reason": "现有对照指向业务异常类的实现；测试引用该异常类型，由项目符号和异常对应提供，不要求重新定义它。",
+      "activation_condition": "待翻译测试确实自行定义测试专用异常，且目标项目没有可复用声明时，再补充受限规则并核验。"
+    },
+    {
+      "id": "LIB-02",
+      "category": "标准库与常见第三方库",
+      "name": "动态列表及导出数组",
+      "reason": "现有需求依据来自被测解析器内部的列表累积与导出；测试检查返回数组不要求迁移该算法。",
+      "activation_condition": "待翻译测试或必须迁移的测试数据构造器实际使用动态列表时，再按实际 API 收录。"
+    },
+    {
+      "id": "LIB-03",
+      "category": "标准库与常见第三方库",
+      "name": "十进制整数解析",
+      "reason": "现有需求依据来自被测解析器的内部实现；测试传入数字文本、检查边界或异常，不意味着测试自身执行 parseInt。",
+      "activation_condition": "待翻译测试或必要辅助代码直接调用整数解析 API 时，再恢复受限方案，重新确认符号、下划线、值域和失败异常。"
+    }
+  ]
+}

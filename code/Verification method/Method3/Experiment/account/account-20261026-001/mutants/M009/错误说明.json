@@ -1,0 +1,44 @@
+{
+  "id": "M009",
+  "category": "边界判断",
+  "meaning": "错误拒绝恰好达到余额上限的存款",
+  "before": "amount > 1000000 - balance",
+  "after": "amount >= 1000000 - balance",
+  "related": [
+    "A08"
+  ],
+  "trigger": "Account(999999)后deposit(1)",
+  "normal": "成功存款，余额1000000",
+  "mutant": "抛出IllegalArgumentException",
+  "evidence": "testBalanceLimit",
+  "file": "cangjie/src/account.cj",
+  "original_start_line": 19,
+  "original_end_line": 19,
+  "basis": {
+    "file": "cangjie/src/account_test.cj",
+    "method": "AccountTest.testBalanceLimit",
+    "start_line": 79,
+    "end_line": 88,
+    "code": "    func testBalanceLimit(): Unit {\n        var account = Account(100)\n        account = Account(999999)\n        account.deposit(1)\n        @Expect(account.getBalance(), 1000000)\n        var caught = false\n        try { account.deposit(1) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 1000000)\n    }"
+  },
+  "related_tests": [
+    {
+      "case_id": "A08",
+      "method": "AccountTest.testBalanceLimit"
+    }
+  ],
+  "test_evidence": [
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testBalanceLimit",
+      "start_line": 79,
+      "end_line": 88,
+      "code": "    func testBalanceLimit(): Unit {\n        var account = Account(100)\n        account = Account(999999)\n        account.deposit(1)\n        @Expect(account.getBalance(), 1000000)\n        var caught = false\n        try { account.deposit(1) } catch (_: IllegalArgumentException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 1000000)\n    }"
+    }
+  ],
+  "prediction_status": "预测；未执行编译或测试",
+  "prediction": "预测关联测试中存在断言偏差或非预期异常；不等同于实际执行结论",
+  "build_status": "未执行构建；仅静态检查",
+  "sha256": "9db38b09b5ec0379f487096ef5fdd4cbba545bce1fcc31bdb0da689f697e6d57",
+  "patch": "mutants/M009/change.patch"
+}

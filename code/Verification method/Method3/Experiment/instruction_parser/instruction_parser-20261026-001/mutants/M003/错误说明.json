@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "id": "M003",
+  "category": "计算与返回值",
+  "summary": "错误使用两个空格作为分隔符",
+  "changes": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parse",
+      "original_start_line": 14,
+      "original_end_line": 14,
+      "before": "input.split(\" \")",
+      "after": "input.split(\"  \")"
+    }
+  ],
+  "expected_behavior": "得到[0,1,-1]",
+  "basis": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parse",
+      "start_line": 12,
+      "end_line": 24,
+      "code": "    public static func parse(input: String): Array<Int64> {\n        let result = ArrayList<Int64>()\n        for (token in input.split(\" \")) {\n            if (token.isEmpty()) { continue }\n            match (token) {\n                case \"ZERO\" => result.add(0)\n                case \"INC\" => result.add(1)\n                case \"DEC\" => result.add(-1)\n                case _ => result.add(parseNumber(token))\n            }\n        }\n        return result.toArray()\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testNamedInstructions",
+      "start_line": 26,
+      "end_line": 29,
+      "code": "    func testNamedInstructions(): Unit {\n        let actual = InstructionParser.parse(\"ZERO INC DEC\")\n        expectArray(actual, [0, 1, -1])\n    }",
+      "reason": "单空格分隔的指令串导致非预期异常"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testSignedNumbers",
+      "start_line": 32,
+      "end_line": 35,
+      "code": "    func testSignedNumbers(): Unit {\n        let actual = InstructionParser.parse(\"-7 +8 0 007\")\n        expectArray(actual, [-7, 8, 0, 7])\n    }",
+      "reason": "单空格分隔的数字串无法正常解析"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInt32Boundaries",
+      "start_line": 44,
+      "end_line": 47,
+      "code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+      "reason": "两个边界值之间的单空格无法正常拆分"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.expectArray",
+      "start_line": 8,
+      "end_line": 11,
+      "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+      "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+    }
+  ],
+  "trigger": {
+    "initial_state": "无前置状态",
+    "input": "ZERO INC DEC",
+    "operations": [
+      "按错误分隔符拆分",
+      "解析片段"
+    ],
+    "normal_behavior": "得到[0,1,-1]",
+    "mutant_behavior": "整串未按单空格拆开，进入数字解析后抛出IllegalArgumentException"
+  },
+  "related_tests": [
+    {
+      "id": "P03",
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testNamedInstructions",
+      "prediction": "预测检出",
+      "reason": "单空格分隔的指令串导致非预期异常"
+    },
+    {
+      "id": "P04",
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testSignedNumbers",
+      "prediction": "预测检出",
+      "reason": "单空格分隔的数字串无法正常解析"
+    },
+    {
+      "id": "P06",
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInt32Boundaries",
+      "prediction": "预测检出",
+      "reason": "两个边界值之间的单空格无法正常拆分"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M003/cangjie/src/instruction_parser.cj"
+  ],
+  "patch_file": "mutants/M003/change.patch",
+  "unresolved": []
+}

@@ -1,0 +1,12 @@
+--- a/cangjie/src/account.cj
++++ b/cangjie/src/account.cj
+@@ -23,8 +23,8 @@
+     }
+     // 先检查金额和余额，再扣款；余额不足与非法金额使用不同异常。
+     public func withdraw(amount: Int64): Unit {
++        balance -= amount
+         if (amount <= 0) { throw IllegalArgumentException("invalid withdrawal") }
+         if (amount > balance) { throw InsufficientFundsException("insufficient funds") }
+-        balance -= amount
+     }
+ }

@@ -1,0 +1,44 @@
+{
+  "id": "M006",
+  "category": "异常类型",
+  "meaning": "余额不足时抛出错误异常类型",
+  "before": "if (amount > balance) { throw InsufficientFundsException(\"insufficient funds\") }",
+  "after": "if (amount > balance) { throw IllegalArgumentException(\"insufficient funds\") }",
+  "related": [
+    "A06"
+  ],
+  "trigger": "Account(100)后withdraw(101)",
+  "normal": "抛出InsufficientFundsException，余额不变",
+  "mutant": "抛出IllegalArgumentException，余额不变",
+  "evidence": "testInsufficientFunds",
+  "file": "cangjie/src/account.cj",
+  "original_start_line": 27,
+  "original_end_line": 27,
+  "basis": {
+    "file": "cangjie/src/account_test.cj",
+    "method": "AccountTest.testInsufficientFunds",
+    "start_line": 53,
+    "end_line": 61,
+    "code": "    func testInsufficientFunds(): Unit {\n        var account = Account(100)\n        var caught = false\n        try { account.withdraw(101) } catch (_: InsufficientFundsException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 100)\n        account.withdraw(40)\n        @Expect(account.getBalance(), 60)\n    }"
+  },
+  "related_tests": [
+    {
+      "case_id": "A06",
+      "method": "AccountTest.testInsufficientFunds"
+    }
+  ],
+  "test_evidence": [
+    {
+      "file": "cangjie/src/account_test.cj",
+      "method": "AccountTest.testInsufficientFunds",
+      "start_line": 53,
+      "end_line": 61,
+      "code": "    func testInsufficientFunds(): Unit {\n        var account = Account(100)\n        var caught = false\n        try { account.withdraw(101) } catch (_: InsufficientFundsException) { caught = true }\n        @Expect(caught, true)\n        @Expect(account.getBalance(), 100)\n        account.withdraw(40)\n        @Expect(account.getBalance(), 60)\n    }"
+    }
+  ],
+  "prediction_status": "预测；未执行编译或测试",
+  "prediction": "预测关联测试中存在断言偏差或非预期异常；不等同于实际执行结论",
+  "build_status": "未执行构建；仅静态检查",
+  "sha256": "1126c86f4cf0195dc2d017a675c2c325bb52c6e4ac188e54f2b7978b1de83ae3",
+  "patch": "mutants/M006/change.patch"
+}

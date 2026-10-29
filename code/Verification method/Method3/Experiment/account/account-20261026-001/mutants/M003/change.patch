@@ -1,0 +1,11 @@
+--- a/cangjie/src/account.cj
++++ b/cangjie/src/account.cj
+@@ -19,7 +19,7 @@
+         if (amount <= 0 || amount > 1000000 - balance) {
+             throw IllegalArgumentException("invalid deposit")
+         }
+-        balance += amount
++        balance += 0
+     }
+     // 先检查金额和余额，再扣款；余额不足与非法金额使用不同异常。
+     public func withdraw(amount: Int64): Unit {

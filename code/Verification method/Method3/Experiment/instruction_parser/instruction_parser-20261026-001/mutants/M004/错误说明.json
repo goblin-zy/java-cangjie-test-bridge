@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "id": "M004",
+  "category": "计算与返回值",
+  "summary": "正负号标记反转",
+  "changes": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parseNumber",
+      "original_start_line": 31,
+      "original_end_line": 31,
+      "before": "negative = bytes[0] == 45",
+      "after": "negative = bytes[0] == 43"
+    }
+  ],
+  "expected_behavior": "得到[-7,8,0,7]",
+  "basis": [
+    {
+      "file": "cangjie/src/instruction_parser.cj",
+      "member": "InstructionParser.parseNumber",
+      "start_line": 26,
+      "end_line": 45,
+      "code": "    private static func parseNumber(token: String): Int64 {\n        let bytes = token.toArray()\n        var index: Int64 = 0\n        var negative = false\n        if (bytes[0] == 43 || bytes[0] == 45) {\n            negative = bytes[0] == 45\n            index = 1\n        }\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\n        var value: Int64 = 0\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\n        while (index < bytes.size) {\n            let digit = bytes[index]\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\n            value = value * 10 + Int64(digit - 48)\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\n            index++\n        }\n        return if (negative) { -value } else { value }\n    }",
+      "reason": "原始实现及注释提供本项预期行为和修改位置依据"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testSignedNumbers",
+      "start_line": 32,
+      "end_line": 35,
+      "code": "    func testSignedNumbers(): Unit {\n        let actual = InstructionParser.parse(\"-7 +8 0 007\")\n        expectArray(actual, [-7, 8, 0, 7])\n    }",
+      "reason": "正负值的逐元素断言失败"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInt32Boundaries",
+      "start_line": 44,
+      "end_line": 47,
+      "code": "    func testInt32Boundaries(): Unit {\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\n        expectArray(actual, [-2147483648, 2147483647])\n    }",
+      "reason": "负边界按正数限值校验，预计抛出非预期异常"
+    },
+    {
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.expectArray",
+      "start_line": 8,
+      "end_line": 11,
+      "code": "    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\n        @Assert(actual.size, expected.size)\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\n    }",
+      "reason": "实际数组核验先@Assert长度，再@Expect逐元素；长度异常与元素值异常不能混为一项执行结果"
+    }
+  ],
+  "trigger": {
+    "initial_state": "无前置状态",
+    "input": "-7 +8 0 007",
+    "operations": [
+      "解析带符号数字"
+    ],
+    "normal_behavior": "得到[-7,8,0,7]",
+    "mutant_behavior": "得到[7,-8,0,7]"
+  },
+  "related_tests": [
+    {
+      "id": "P04",
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testSignedNumbers",
+      "prediction": "预测检出",
+      "reason": "正负值的逐元素断言失败"
+    },
+    {
+      "id": "P06",
+      "file": "cangjie/src/instructionparser_test.cj",
+      "member": "InstructionParserTest.testInt32Boundaries",
+      "prediction": "预测检出",
+      "reason": "负边界按正数限值校验，预计抛出非预期异常"
+    }
+  ],
+  "build_status": "未执行",
+  "test_status": "未执行",
+  "artifact_files": [
+    "mutants/M004/cangjie/src/instruction_parser.cj"
+  ],
+  "patch_file": "mutants/M004/change.patch",
+  "unresolved": []
+}
