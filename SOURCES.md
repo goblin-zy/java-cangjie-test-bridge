@@ -1,39 +1,28 @@
-# 来源、许可与样例边界
+# 来源与实现说明
 
-本包版本：1.2.0。初始整理日期：2026-10-19；更新日期：2026-10-20。代码与文档为week6任务辅助整理，需由提交者阅读、复现并确认；不应写成独立人工编写或自动翻译实验成果。
+## Java骨架提取工具
 
-## Rectangle：开源改编
+本次独立使用JDK javac Tree API编写，不是复制TransRepo提取器。参考实现阅读位置：
+https://github.com/microsoft/TransRepo/blob/a4825ba97cb2227773ec33c4c79a582d786ec639/transrepo/translators/java2csharp/skeleton/skeleton_extractor.py
 
-- 来源仓库：https://github.com/microsoft/TransRepo
-- 固定提交：a4825ba97cb2227773ec33c4c79a582d786ec639
-- Java类：data/java_origin/double-dispatch/src/main/java/com/iluwatar/doubledispatch/Double-Dispatch/Rectangle.java
-- 测试：data/java_origin/double-dispatch/src/test/java/com/iluwatar/doubledispatch/RectangleTest.java
-- 原文件版权：Copyright © 2014-2022 Ilkka Seppälä；MIT。许可见 LICENSE-TransRepo.txt。
-- 改编内容：改包名；展开 Lombok 构造方法和 getter；设为 final；相交判断直接读字段；增加坐标合法性检查；新增共享边、点矩形和非法坐标测试。
-- R01—R03保留原测试主要输入和判断意图，但代码组织经过改编；R04—R06是新增测试。
-- 因加入构造参数验证，本模块不是原项目的逐行为复刻。测试中的有效矩形仍沿用原相交规则。
+任务要求中的方法角色、原方法体、成员标识及双侧位置由本次实现补充。工具只提取Java骨架，不声称完成Java→仓颉结构或逻辑翻译。
 
-## InstructionParser：新编教学样例
+## 现有实验材料
 
-借鉴“文本指令转换成整数数组”这一通用题型，未直接复制 TransRepo 的 InstructionConverterUtil。
-ZERO/INC/DEC 的映射和输入约定是本包自定；P01—P09全部为新编测试，不能标成 TransRepo 原始样例。
+复制自第六周本地材料v1.2，保留具体来源与改编事实：
+- Rectangle及R01—R03：改编自microsoft/TransRepo固定提交a4825ba97cb2227773ec33c4c79a582d786ec639；原路径为data/java_origin/double-dispatch/src/main/java/com/iluwatar/doubledispatch/Double-Dispatch/Rectangle.java及对应RectangleTest.java。版权Copyright © 2014-2022 Ilkka Seppälä，MIT许可随LICENSE-third-party.txt保留。
+- R04—R06为新增边界和非法参数测试。
+- InstructionParser/P01—P09、Account/A01—A09为本项目新编教学样例，不能标为TransRepo原始数据。
+- 仓颉业务及参考测试为已有人工辅助迁移、整理材料；本次重新核对和运行，不是自动模型翻译成果。
 
-## Account：新编教学样例
+结构测试fixtures为本次新编的解析验收输入，与24个业务测试分开统计；invalid/Broken.java是故意不合法的负例，不应加入正常Java业务构建。
 
-为覆盖状态变化、初始化、辅助调用和失败后状态而设计；A01—A09全部为新编测试。
-金额采用整数单位，余额上限1000000，不代表真实银行业务系统。
+本交付使用辅助工具完成实现与验收，不冒充组员手工逐项执行。结果保留实际命令、日志和环境。SDK不分发，原版SDK与Windows系统文件没有在本任务中修改。
 
-## 仓颉侧
 
-三份仓颉业务实现和24个参考测试均为本次人工辅助迁移、整理的参考材料；不来自 TransRepo，也不是LLM翻译方法的评测输出。
-仓颉SDK不随交付压缩包分发，运行需使用官方SDK。实际验证版本和结果见validation/运行记录.md。
+## v1.1统一Java项目
 
-新编部分可按MIT许可使用，Copyright (c) 2026 starter-dataset contributors；不覆盖第三方SDK与上游代码的独立许可。
+原业务实现和24个JUnit测试按原字节复制到标准src/main/java与src/test/java；提取器移至src/main/java。新增JavaTestSkeletonExtractorTest的6项JUnit检查，根pom.xml统一依赖与测试入口，.vscode配置提供测试面板和main运行。合计30项通过，报告在validation/vscode-java-002/。参考仓颉场景仍为24个，不把6个Java工具自测计入翻译数据集。
 
-## v1.1本地环境修复
 
-仓颉SDK副本使用两处字节修正以绕过已定位的DLL链表头遍历错误。不是官方发布版或源码重建版本；原始、修复后哈希及复现脚本已披露。材料zip不包含SDK或修改后的运行库二进制。
-
-## v1.2整理
-
-重新按任务2、任务3补齐逐方法接口、具体断言、上下文、场景核对和三阶段真实记录；给13个业务及测试源码文件增加中文注释，检查有效代码词法序列未变。原有三个模块与24个测试方法保持不变。Maven制品版本1.0.0与材料版本1.2.0分别记录，使用源码哈希对应本次执行。
+界面警告清理：移除JavaTestSkeletonExtractorTest中未使用的JsonArray导入，以及RectangleTest、InstructionParserTest中未使用的BeforeEach导入；测试输入、调用和断言未改变。

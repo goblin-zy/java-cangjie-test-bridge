@@ -1,10 +1,13 @@
-java/target/
-cangjie/build/
+build/
+**/target/
+**/__pycache__/
+*.class
 *.exe
-
-# Do not commit SDKs or generated binary files.
-*.dll
 *.a
 *.cjo
+*.dll
 *.zip
-work/
+
+# Recreated by VS Code/JUnit on every run.
+generated/vscode-tests/
+generated/vscode-run-*/

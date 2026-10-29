@@ -1,0 +1,9 @@
+Time: 2026-10-29T23:08:02.7904358+08:00
+Runner: week7 automated reference validation
+Runtime: localfix (nonofficial experimental runtime)
+Runtime SHA256: 69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f
+Selected filter: *
+Selected expected tests: 24
+Command: cjc [PROJECT_ROOT]\reference\cangjie\implementation\account.cj [PROJECT_ROOT]\reference\cangjie\implementation\instruction_parser.cj [PROJECT_ROOT]\reference\cangjie\implementation\rectangle.cj [PROJECT_ROOT]\reference\cangjie\tests\account_test.cj [PROJECT_ROOT]\reference\cangjie\tests\instructionparser_test.cj [PROJECT_ROOT]\reference\cangjie\tests\rectangle_test.cj --test -o [PROJECT_ROOT]\validation\layout-20261029\cangjie-all\reference-tests.exe
+Then: [PROJECT_ROOT]\validation\layout-20261029\cangjie-all\reference-tests.exe --no-color --no-progress
+SDK installation path omitted; runtime identity recorded above.

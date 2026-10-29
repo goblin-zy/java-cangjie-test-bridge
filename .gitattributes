@@ -1,2 +1,2 @@
-# Preserve exact bytes used by the experiment SHA-256 records.
+# Keep original bytes for recorded SHA-256 values.
 * -text
