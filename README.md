@@ -3,7 +3,7 @@
 个人交付按分支保存：
 
 - [蔡俊杰week6：第六周材料](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week6)
-- [蔡俊杰week7：第七周骨架提取与参考测试](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week7/week7)
+- [蔡俊杰week7：第七周骨架提取与参考测试](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week7)
 
 main保留其他已合入材料：
 
