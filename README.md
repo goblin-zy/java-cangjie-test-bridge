@@ -14,6 +14,8 @@
 |阅读ReCodeAgent论文及源码分析|[论文研读](references/reading/recodeagent/README.md)|方法流程、关键模块、断言检查及项目适配|
 |定位代码、配置和说明文件|[文件职责清单](docs/04-文件职责清单.md)|逐文件用途与路径|
 |核对材料来源与版本|[来源记录](docs/05-来源与分支迁移.md)|原分支迁移、固定版本依赖及执行来源|
+|生成与审查上下文选择方案|[选择提示词](week7/context-validation/prompts/生成selection.md) · [人工复验规范](week7/context-validation/docs/selection人工复验规范.md)|智能体任务、R1—R8审查标准与复验记录|
+|理解工具设计与逻辑衔接|[工具设计](week7/context-validation/docs/工具设计与输入输出.md) · [流程串联](week7/context-validation/docs/流程逻辑与材料衔接.md)|各脚本输入输出、职责边界与完整交接流程|
 
 ## 1. 本周任务
 

@@ -10,3 +10,10 @@
 |[06 验证记录](06-整理验证记录.md)|查看本次复核项目、结果及未执行范围|
 
 [返回本周总览](../README.md)
+
+## 上下文专题
+
+- [选择生成提示词](../week7/context-validation/prompts/生成selection.md)：定义智能体读取范围、处理步骤、输出和限制。
+- [人工复验规范](../week7/context-validation/docs/selection人工复验规范.md)：按源码、项目约定及证据记录逐项审查。
+- [工具设计与输入输出](../week7/context-validation/docs/工具设计与输入输出.md)：定位每个工具的输入、处理与结果。
+- [流程逻辑与材料衔接](../week7/context-validation/docs/流程逻辑与材料衔接.md)：将既有逻辑梳理落实到当前文件与命令。
