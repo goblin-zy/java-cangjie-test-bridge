@@ -38,6 +38,7 @@ def fresh(path):
     return path
 
 
+# Java按UTF-16计偏移；先转为UTF-16字节再切片，避免中文/emoji造成定位错误。
 def source_text(path, location):
     # Upstream offsets are Java UTF-16 units, not Python character offsets.
     text = Path(path).read_bytes().decode("utf-8")
@@ -49,6 +50,7 @@ def source_text(path, location):
     return raw[start:end].decode("utf-16-le")
 
 
+# 复用上游提取器并冻结原始源码；只建索引，不推断完整依赖。
 def index_repository(repo, output, java="java", javac="javac", test_root="week7/src/test/java", main_root="week7/src/main/java/study/translation"):
     repo = Path(repo).resolve()
     output = fresh(output)
@@ -100,6 +102,7 @@ def index_repository(repo, output, java="java", javac="javac", test_root="week7/
     return catalog
 
 
+# 验证选择、源码与快照一致后导出；选择是否完整仍需人工核对。
 def export_context(catalog_path, selection_path, repo, output):
     catalog_path = Path(catalog_path).resolve()
     catalog = read_json(catalog_path)

@@ -10,6 +10,7 @@ import sys
 NAMES = ["testInitialBalance", "testDeposit", "testWithdraw", "testWithdrawAll", "testSequence", "testInsufficientFunds", "testInvalidAmounts", "testBalanceLimit", "testInvalidInitialBalance"]
 
 
+# 冻结九条参考测试的预期清单并记录环境，再委托通用执行器；不生成翻译。
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[3])

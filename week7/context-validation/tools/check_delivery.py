@@ -13,6 +13,7 @@ def load(path):
     return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
+# 交叉核对提交的历史证据；不调用仓颉编译器，也不重新运行测试。
 def check_all(module):
     checks = []
     def check(name, condition):

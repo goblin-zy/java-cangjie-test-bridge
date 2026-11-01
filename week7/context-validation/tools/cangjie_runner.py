@@ -20,6 +20,7 @@ def decode(b):
     except UnicodeDecodeError:return b.decode('gb18030',errors='replace')
 def resolve(base,p):
     v=Path(p);return (base/v).resolve() if not v.is_absolute() else v.resolve()
+# 每个阶段独立保存命令、标准输出与错误输出，超时也应留下诊断。
 def process(args,cwd,env,timeout,folder,stage):
     started=now();tick=time.monotonic();timed=False
     try:
@@ -94,6 +95,7 @@ def console_counts(text):
     total,passed,skipped,errors,failed=map(int,matches[-1])
     if passed+skipped+errors+failed!=total:raise ValueError('运行汇总数量不守恒')
     return {'total':total,'passed':passed,'failed':failed,'errors':errors,'skipped':skipped}
+# 从运行报告读取测试身份与结果，补充控制台不能完整表达的信息。
 def xml_results(folder):
     paths=sorted(folder.rglob('*.xml'));cases={};suite_counts={'total':0,'passed':0,'failed':0,'errors':0,'skipped':0}
     if not paths:return None,[]
@@ -126,6 +128,7 @@ def expected_set(names,inventory):
     if len(set(resolved))!=len(resolved):raise ValueError('预期测试清单存在重复')
     return set(resolved),unresolved
 
+# 单个场景依次编译、发现与执行；结合预期清单判断是否完整。
 def one(config,case,base,output,env,compiler):
     ident=case.get('id','')
     if not re.fullmatch(r'[A-Za-z0-9_-]+',ident):raise ValueError('组合id只能含英文字母、数字、下划线、连字符')
