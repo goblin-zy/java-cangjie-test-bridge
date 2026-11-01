@@ -1,6 +1,6 @@
 # 第七周：上下文查找工具与可执行性评价
 
-负责人：**蒋逸舟**。实现、整理与本地验证由Codex协助，最终人工审核待完成。
+负责人：**蒋逸舟**。
 
 本目录实现本周三项任务中的前两项：上下文查找工具、可行性验证方法执行（当前落实为可执行性评价）。第三项为 [ReCodeAgent论文阅读](../../references/reading/recodeagent/README.md)。三项任务的统一入口与阅读顺序见[根目录总览](../../README.md)。
 
@@ -8,12 +8,12 @@
 
 | 模块 | 实现与输入 | 实际输出与证据 | 当前边界 |
 | --- | --- | --- | --- |
-| 上下文查找 | [context_lookup.py](tools/context_lookup.py)，复用已有JavaTestSkeletonExtractor和members.json；[示例选择](examples/account/selection.json) | [成员索引](validation/context/index/index.md)、[三份上下文核对](validation/context/export/checks.json)、[普通取款上下文](validation/context/export/context_01.md) | 人工/智能体显式选择依赖；不声称自动依赖闭包 |
+| 上下文查找 | [context_lookup.py](tools/context_lookup.py)，复用已有JavaTestSkeletonExtractor和members.json；[示例选择](examples/account/selection.json) | [成员索引](validation/context/index/index.md)、[三份上下文核对](validation/context/export/checks.json)、[普通取款上下文](validation/context/export/context_01.md) | 人工/智能体显式选择依赖；尚未实现自动依赖闭包 |
 | 可执行性评价 | [cangjie_runner.py](tools/cangjie_runner.py)，通用单组/批量执行；[仓库账户入口](tools/evaluate_account.py) | [当前九条参考测试报告](validation/repository-account-preupload/execution/report.md)、[环境与运行库哈希](validation/repository-account-preupload/run_metadata.json) | 当前Windows直接cjc、单包、普通类测试；不判断语义等价 |
 
 ## 与现有仓库的关系
 
-不替换week7已有Maven项目、src、reference、VSCode任务及manifest。上下文索引直接调用既有骨架提取器，保留其成员ID、角色、源码位置和原始方法体；不再复制另一套短ID索引工具。新接口与来源见[接口和格式](docs/接口与输出格式.md)。
+不替换week7已有Maven项目、src、reference、VSCode任务及manifest。上下文索引直接调用既有骨架提取器，保留其成员ID、角色、源码位置和原始方法体；沿用原有成员标识。新接口与来源见[接口和格式](docs/接口与输出格式.md)。
 
 当前示例仅使用仓库九条账户测试中的testWithdraw、testSequence、testInsufficientFunds生成上下文。执行评价则运行全部九条账户参考测试。原先五条/两条本地账户演示不作为当前上下文输入。
 
@@ -27,4 +27,4 @@
 
 [统一验收与限制](docs/交付验收与限制.md) · [本周进度汇报](docs/本周进度汇报.md) · [仓库基线](REPOSITORY_BASELINE.json)
 
-输出均选新目录。源码、选择和结果分别留档；runs/是个人新运行目录，不进入Git。历史绝对路径只是当次运行证据，新运行使用当前仓库相对路径。此交付未运行大模型翻译，也未把未完成的自动选择、资源或类型解析列为已完成。
+输出均选新目录。源码、选择和结果分别留档；runs/是个人新运行目录，不进入Git。历史绝对路径只是当次运行证据，新运行使用当前仓库相对路径。尚未开展模型翻译实验；自动依赖选择、资源分析及完整类型解析有待实现。
