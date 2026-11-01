@@ -15,33 +15,7 @@
 |定位代码、配置和说明文件|[文件职责清单](docs/04-文件职责清单.md)|逐文件用途与路径|
 |核对材料来源与版本|[来源记录](docs/05-来源与分支迁移.md)|原分支迁移、固定版本依赖及执行来源|
 
-## 用途导航
-
-|用途|入口|内容|
-|---|---|---|
-|了解本周任务与实现关系|[实现路线](docs/01-实现路线.md)|三项任务的输入、处理流程、输出及适用范围|
-|查找测试翻译所需上下文|[上下文查找工具](week7/context-validation/README.md)|成员索引、依赖选择、源码定位与上下文导出|
-|复现上下文构建与测试评价|[操作教程](week7/context-validation/docs/使用教程.md)|环境要求、操作命令、输出位置及检查方法|
-|理解可行性验证方法及测试用例|[验证方法与用例](docs/02-验证方法与测试用例.md)|7项工具测试、9条账户参考测试与历史故障场景|
-|查看已有实验结果|[验证材料](week7/context-validation/validation/README.md)|上下文核对、账户测试结果、故障场景与执行日志|
-|阅读ReCodeAgent论文及源码分析|[论文研读](references/reading/recodeagent/README.md)|方法流程、关键模块、断言检查及项目适配|
-|定位代码、配置和说明文件|[文件职责清单](docs/04-文件职责清单.md)|逐文件用途与路径|
-|核对材料来源与版本|[来源记录](docs/05-来源与分支迁移.md)|原分支迁移、固定版本依赖及执行来源|
-
-## 用途导航
-
-|用途|入口|内容|
-|---|---|---|
-|了解本周任务与实现关系|[实现路线](docs/01-实现路线.md)|三项任务的输入、处理流程、输出及适用范围|
-|查找测试翻译所需上下文|[上下文查找工具](week7/context-validation/README.md)|成员索引、依赖选择、源码定位与上下文导出|
-|复现上下文构建与测试评价|[操作教程](week7/context-validation/docs/使用教程.md)|环境要求、操作命令、输出位置及检查方法|
-|理解可行性验证方法及测试用例|[验证方法与用例](docs/02-验证方法与测试用例.md)|7项工具测试、9条账户参考测试与历史故障场景|
-|查看已有实验结果|[验证材料](week7/context-validation/validation/README.md)|上下文核对、账户测试结果、故障场景与执行日志|
-|阅读ReCodeAgent论文及源码分析|[论文研读](references/reading/recodeagent/README.md)|方法流程、关键模块、断言检查及项目适配|
-|定位代码、配置和说明文件|[文件职责清单](docs/04-文件职责清单.md)|逐文件用途与路径|
-|核对材料来源与版本|[来源记录](docs/05-来源与分支迁移.md)|原分支迁移、固定版本依赖及执行来源|
-
-## 1. 本周做什么，交付了什么
+## 1. 本周任务
 
 |任务|要解决的问题|实现与交付|结论边界|
 |---|---|---|---|
@@ -57,21 +31,40 @@
 4. 按[论文阅读路线](docs/03-ReCodeAgent阅读路线.md)阅读正文，区分论文做法与本项目实际实现。
 5. 需要定位某个文件时查[逐文件职责清单](docs/04-文件职责清单.md)，需要复现时查[来源与分支迁移记录](docs/05-来源与分支迁移.md)。
 
-## 3. 目录结构
+## 3. 分支与目录结构
+
+### 仓库分支
+
+|分支|用途|
+|---|---|
+|[main](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/main)|团队公共导航，个人周报和实现材料分别保存在个人分支|
+|[蒋逸舟week7](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/蒋逸舟week7)|本分支：上下文查找工具、可行性验证方法执行及ReCodeAgent论文研读|
+|[hzy-week7](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/hzy-week7)|项目约定与公共材料生成工具；保留的其他成员旧材料属于分支历史快照|
+|[蔡俊杰week7](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/蔡俊杰week7)|第七周Java测试骨架提取、业务样例及仓颉参考测试|
+|[蔡俊杰week6](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/蔡俊杰week6)|第六周实验材料、用例说明与运行记录|
+|[week6](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/week6)|第六周材料的原分支，与“蔡俊杰week6”指向同一版本|
+
+原 `codex/week7-jiangyizhou-context-validation` 分支已删除，其材料已纳入 `蒋逸舟week7`。各分支独立保存文件版本；当前分支的修改不会自动同步至其他分支。
+
+### 本分支目录
 
 ```text
-README.md                         本周三项任务的统一入口
-docs/                             实现路线、用例讲解、文件索引与迁移记录
-week7/context-validation/tools/   上下文工具与仓颉执行评价脚本
-week7/context-validation/tests/   工具边界测试（不是九条账户业务测试）
-week7/context-validation/examples/ 显式选择成员的输入示例
-week7/context-validation/validation/ 已保存的上下文、日志和历史评价证据
-week7/src/                        固定版本 Java 提取器及业务/测试输入
-week7/reference/                  固定版本仓颉业务与参考测试，仅供验证
-references/reading/recodeagent/   第三项任务：论文正文与版本核对材料
+蒋逸舟week7（分支）
+├─ README.md                         本周任务与用途导航
+├─ docs/                             实现路线、测试说明、文件职责及版本记录
+├─ week7/
+│  ├─ context-validation/            上下文查找与可执行性评价
+│  │  ├─ tools/                      成员索引、上下文导出及测试评价脚本
+│  │  ├─ tests/                      工具边界测试
+│  │  ├─ examples/                   显式选择成员的输入示例
+│  │  ├─ docs/                       操作教程、接口与输出格式
+│  │  └─ validation/                 上下文、运行报告及历史故障场景
+│  ├─ src/                           固定版本Java提取器、业务实现及原始测试
+│  └─ reference/                     固定版本仓颉业务及参考测试
+└─ references/reading/recodeagent/    论文研读与源码版本核对材料
 ```
 
-保留原工具路径及相对引用。`week7/src` 和 `week7/reference` 是复用蔡俊杰固定版本的依赖，不计为蒋逸舟新实现。文档按模块职责、输入、操作、输出与适用范围组织。
+`week7/src` 和 `week7/reference` 复用蔡俊杰固定版本的材料，作为本分支工具的输入与验证依赖；来源见[版本记录](docs/05-来源与分支迁移.md)。
 
 ## 4. 最小复核
 
