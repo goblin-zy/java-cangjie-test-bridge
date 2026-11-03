@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:docs/飞书汇报材料/00-上传说明.md",
+    "path": "docs/飞书汇报材料/00-上传说明.md",
+    "status": "snapshotted",
+    "sha256": "e9bd2ce246a1bd733495a094b7a305f1d7f2939f556a9b37f5fc9f9710557cf7",
+    "size": 669,
+    "snapshot": "snapshots/docs/飞书汇报材料/00-上传说明.md",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 263,
+  "text": "# 飞书上传说明\n\n文件夹名称建议：蔡俊杰第七周。\n\n1. 将01-蔡俊杰第七周-汇报正文.md作为主文档，支持导入Markdown时直接导入，也可复制正文。\n2. 将02至06的说明文档作为附件或独立子文档；07为机器可读验证汇总附件。\n3. 在主文档中保留GitHub代码链接，代码和完整日志在仓库根目录查看。\n4. ZIP用于一次性上传或转交全部材料，上传后解压或按需导入。当前仅整理本地材料，尚未写入飞书。\n\n原始说明中的项目相对路径以Git仓库根目录为根；独立上传飞书后若相对链接不能跳转，请按Git仓库路径查看。\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

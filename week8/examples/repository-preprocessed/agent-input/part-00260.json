@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/reference-20261027-102745770/invocation.txt",
+    "path": "validation/reference-20261027-102745770/invocation.txt",
+    "status": "snapshotted",
+    "sha256": "1be599c87da42044ae0fb54266822929a102750100438af14062b9b51cdf336e",
+    "size": 1313,
+    "snapshot": "snapshots/validation/reference-20261027-102745770/invocation.txt",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 1215,
+  "text": "﻿Time: 2026-10-27T10:27:46.0058795+08:00\nRunner: week7 automated reference validation\nRuntime: localfix (nonofficial experimental runtime)\nRuntime SHA256: 69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f\nSelected filter: *\nSelected expected tests: 24\nCommand: cjc D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\reference\\cangjie\\implementation\\account.cj D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\reference\\cangjie\\implementation\\instruction_parser.cj D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\reference\\cangjie\\implementation\\rectangle.cj D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\reference\\cangjie\\tests\\account_test.cj D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\reference\\cangjie\\tests\\instructionparser_test.cj D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\reference\\cangjie\\tests\\rectangle_test.cj --test -o D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\validation\\reference-20261027-102745770\\reference-tests.exe\nThen: D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\validation\\reference-20261027-102745770\\reference-tests.exe --no-color --no-progress\nSDK installation path omitted; runtime identity recorded above.\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

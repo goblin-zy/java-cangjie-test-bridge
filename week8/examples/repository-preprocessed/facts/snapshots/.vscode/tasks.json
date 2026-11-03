@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "运行仓颉参考测试（24项）",
+      "type": "process",
+      "command": "${env:SystemRoot}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile", "-File",
+        "${workspaceFolder}\\scripts\\run-reference-cangjie.ps1",
+        "-SdkHome", "${config:CangjieSdkPath.CJNativeBackend}"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    },
+    {
+      "label": "运行单个仓颉测试",
+      "type": "process",
+      "command": "${env:SystemRoot}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile", "-File",
+        "${workspaceFolder}\\scripts\\run-reference-cangjie.ps1",
+        "-SdkHome", "${config:CangjieSdkPath.CJNativeBackend}",
+        "-TestFilter", "${input:cangjieTestFilter}"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "test",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "cangjieTestFilter",
+      "type": "promptString",
+      "description": "测试类.测试方法，如AccountTest.testWithdraw；RectangleTest.*运行整个矩形测试类",
+      "default": "AccountTest.testWithdraw"
+    }
+  ]
+}

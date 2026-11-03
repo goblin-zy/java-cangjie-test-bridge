@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/reference-faults-001/rectangle_touch-driver.log",
+    "path": "validation/reference-faults-001/rectangle_touch-driver.log",
+    "status": "snapshotted",
+    "sha256": "06d20b692b5d19c7cdc4ae30b00babef90700069c297d1ad0136241c2628f3f8",
+    "size": 2088,
+    "snapshot": "snapshots/validation/reference-faults-001/rectangle_touch-driver.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 2076,
+  "text": "\u001b[0J\u001b7\u001b[;r\u001b8\r\n\u001b[1F\u001b7\u001b[9999E\u001b8\u001b[0J\u001b7\u001b[;r\u001b8--------------------------------------------------------------------------------------------------\r\nTP: starter, time elapsed: 1394200 ns, RESULT:\r\n    TCS: AccountTest, time elapsed: 813500 ns, RESULT:\r\n    [ PASSED ] CASE: testInitialBalance (190800 ns)\r\n    [ PASSED ] CASE: testDeposit (9900 ns)\r\n    [ PASSED ] CASE: testWithdraw (7200 ns)\r\n    [ PASSED ] CASE: testWithdrawAll (14900 ns)\r\n    [ PASSED ] CASE: testSequence (5900 ns)\r\n    [ PASSED ] CASE: testInsufficientFunds (111800 ns)\r\n    [ PASSED ] CASE: testInvalidAmounts (64800 ns)\r\n    [ PASSED ] CASE: testBalanceLimit (15100 ns)\r\n    [ PASSED ] CASE: testInvalidInitialBalance (20200 ns)\r\n    TCS: InstructionParserTest, time elapsed: 338100 ns, RESULT:\r\n    [ PASSED ] CASE: testEmpty (52600 ns)\r\n    [ PASSED ] CASE: testSpaces (8000 ns)\r\n    [ PASSED ] CASE: testNamedInstructions (16800 ns)\r\n    [ PASSED ] CASE: testSignedNumbers (17700 ns)\r\n    [ PASSED ] CASE: testRepeatedSpaces (8700 ns)\r\n    [ PASSED ] CASE: testInt32Boundaries (8200 ns)\r\n    [ PASSED ] CASE: testInvalidTokens (66200 ns)\r\n    [ PASSED ] CASE: testOutOfRange (24400 ns)\r\n    [ PASSED ] CASE: testNullInput (13800 ns)\r\n    TCS: RectangleTest, time elapsed: 225500 ns, RESULT:\r\n    [ PASSED ] CASE: testConstructor (19400 ns)\r\n    [ PASSED ] CASE: testToString (11000 ns)\r\n    [ PASSED ] CASE: testIntersection (6300 ns)\r\n    [ PASSED ] CASE: testPointRectangle (6800 ns)\r\n    [ PASSED ] CASE: testInvalidCoordinates (30100 ns)\r\n    [ FAILED ] CASE: testTouchingEdge (30800 ns)\r\n    Expect Failed: `(Rectangle(0, 0, 1, 1).intersectsWith(Rectangle(1, 0, 2, 1)) == true)`\r\n       left: false\r\n      right: true\r\n\r\nSummary: TOTAL: 24\r\n    PASSED: 23, SKIPPED: 0, ERROR: 0\r\n    FAILED: 1, listed below:\r\n            TCS: RectangleTest, CASE: testTouchingEdge\r\n--------------------------------------------------------------------------------------------------\r\nReference results: D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\validation\\reference-faults-001\\rectangle_touch/results.json\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

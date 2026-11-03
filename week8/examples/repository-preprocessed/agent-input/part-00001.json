@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:.gitattributes",
+    "path": ".gitattributes",
+    "status": "snapshotted",
+    "sha256": "fb1e73d7df3ec9ee7ac61b38d1d06c4902412112587ce8027204f9c32f42731d",
+    "size": 61,
+    "snapshot": "snapshots/.gitattributes",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 61,
+  "text": "# Keep original bytes for recorded SHA-256 values.\r\n* -text\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

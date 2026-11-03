@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:reference/java-baseline-manifest.json",
+    "path": "reference/java-baseline-manifest.json",
+    "status": "snapshotted",
+    "sha256": "80a3577f9c1a61451c6e71968e06a2da8a5ffc8d0ca0fc58e3aab7085999cdbe",
+    "size": 1108,
+    "snapshot": "snapshots/reference/java-baseline-manifest.json",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 1108,
+  "text": "[\n  {\n    \"file\": \"src/main/java/study/translation/Account.java\",\n    \"sha256\": \"631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662\"\n  },\n  {\n    \"file\": \"src/main/java/study/translation/InstructionParser.java\",\n    \"sha256\": \"812a04c2b6b4a670e8110414c355143863a432fe0723ed43e88b5c4ca78b11ae\"\n  },\n  {\n    \"file\": \"src/main/java/study/translation/InsufficientFundsException.java\",\n    \"sha256\": \"f7e6a26eff82705cba3615cc647bbea341dd3c8437c012307e7716c60668631d\"\n  },\n  {\n    \"file\": \"src/main/java/study/translation/Rectangle.java\",\n    \"sha256\": \"ea68e279b5c2e626595dfdf56ed4984ba7d51e87ed5447535bad8afbde1adbff\"\n  },\n  {\n    \"file\": \"src/test/java/study/translation/AccountTest.java\",\n    \"sha256\": \"24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9\"\n  },\n  {\n    \"file\": \"src/test/java/study/translation/InstructionParserTest.java\",\n    \"sha256\": \"a598b60e1a789a6af8f3e8c7fe65c201506a2e693bbe8ef3f249f1fbbe050232\"\n  },\n  {\n    \"file\": \"src/test/java/study/translation/RectangleTest.java\",\n    \"sha256\": \"fcd8ee998b141d8ba842471afffeb5b600208d04bc2c79f3ab1b0f3dbbe3d9ee\"\n  }\n]\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

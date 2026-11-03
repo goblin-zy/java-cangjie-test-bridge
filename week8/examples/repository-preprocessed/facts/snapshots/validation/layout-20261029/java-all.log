@@ -1,0 +1,55 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< study.week7:week7-skeleton-reference >----------------
+[INFO] Building week7-skeleton-reference 1.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ week7-skeleton-reference ---
+[INFO] Deleting [PROJECT_ROOT]\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ week7-skeleton-reference ---
+[INFO] skip non existing resourceDirectory [PROJECT_ROOT]\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ week7-skeleton-reference ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 5 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ week7-skeleton-reference ---
+[INFO] skip non existing resourceDirectory [PROJECT_ROOT]\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ week7-skeleton-reference ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ week7-skeleton-reference ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running JavaTestSkeletonExtractorTest
+提取结果：[PROJECT_ROOT]\generated\vscode-tests\structures-dcb0ac33-d723-4460-9b82-f06d106f0375
+提取结果：[PROJECT_ROOT]\generated\vscode-tests\roundtrip-7c3a02fd-89db-4e0f-b28b-c2ea47689d9b
+提取结果：[PROJECT_ROOT]\generated\vscode-tests\invalid-e9eafce6-fa86-4d50-8872-247b69919cc5
+提取结果：[PROJECT_ROOT]\generated\vscode-tests\protected-49c49277-1e88-4bd6-91fc-e274e7eb5c6c
+提取结果：[PROJECT_ROOT]\generated\vscode-tests\directory-54e07949-eeb6-410c-a18d-ae79524141b7
+提取结果：[PROJECT_ROOT]\generated\vscode-tests\single-ca1b9d0c-1b2b-4f61-8b49-1842009cc8ff
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.224 s -- in JavaTestSkeletonExtractorTest
+[INFO] Running study.translation.AccountTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s -- in study.translation.AccountTest
+[INFO] Running study.translation.InstructionParserTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.040 s -- in study.translation.InstructionParserTest
+[INFO] Running study.translation.RectangleTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in study.translation.RectangleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.551 s
+[INFO] Finished at: 2026-10-29T23:08:01+08:00
+[INFO] ------------------------------------------------------------------------

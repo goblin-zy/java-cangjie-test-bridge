@@ -1,0 +1,5 @@
+Time: 2026-10-29T23:05:20.7752303+08:00
+Runner: week7 automated baseline validation
+Directory: [PROJECT_ROOT]
+Command: mvn -B -ntp -o clean test -Dtest=study.translation.*Test
+MAVEN_OPTS adds -Dfile.encoding=UTF-8

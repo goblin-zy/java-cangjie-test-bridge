@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "提取业务测试骨架",
+      "request": "launch",
+      "mainClass": "JavaTestSkeletonExtractor",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "vmArgs": "--add-modules=jdk.compiler -Dfile.encoding=UTF-8",
+      "args": [
+        "--input", "${workspaceFolder}/src/test/java/study/translation",
+        "--output", "${workspaceFolder}/${input:outputDirectory}"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "outputDirectory",
+      "type": "promptString",
+      "description": "请输入新的输出目录；已有非空目录不会覆盖",
+      "default": "generated/vscode-run-001"
+    }
+  ]
+}

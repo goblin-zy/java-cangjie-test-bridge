@@ -1,0 +1,45 @@
+[0J7[;r8
+[1F7[9999E8[0J7[;r8--------------------------------------------------------------------------------------------------
+TP: starter, time elapsed: 1721500 ns, RESULT:
+    TCS: AccountTest, time elapsed: 993800 ns, RESULT:
+    [ PASSED ] CASE: testInitialBalance (245500 ns)
+    [ PASSED ] CASE: testDeposit (11700 ns)
+    [ PASSED ] CASE: testWithdraw (7800 ns)
+    [ PASSED ] CASE: testWithdrawAll (19600 ns)
+    [ PASSED ] CASE: testSequence (7200 ns)
+    [ PASSED ] CASE: testInsufficientFunds (150500 ns)
+    [ PASSED ] CASE: testInvalidAmounts (70700 ns)
+    [ PASSED ] CASE: testBalanceLimit (16700 ns)
+    [ PASSED ] CASE: testInvalidInitialBalance (24900 ns)
+    TCS: InstructionParserTest, time elapsed: 504400 ns, RESULT:
+    [ PASSED ] CASE: testEmpty (66200 ns)
+    [ PASSED ] CASE: testSpaces (8300 ns)
+    [ PASSED ] CASE: testSignedNumbers (24500 ns)
+    [ PASSED ] CASE: testInt32Boundaries (9400 ns)
+    [ PASSED ] CASE: testInvalidTokens (80700 ns)
+    [ PASSED ] CASE: testOutOfRange (28000 ns)
+    [ PASSED ] CASE: testNullInput (20400 ns)
+    [ FAILED ] CASE: testNamedInstructions (56900 ns)
+    Expect Failed: `(actual[i] == expected[i])`
+       left: 2
+      right: 1
+
+    [ FAILED ] CASE: testRepeatedSpaces (12100 ns)
+    Expect Failed: `(actual[i] == expected[i])`
+       left: 2
+      right: 1
+
+    TCS: RectangleTest, time elapsed: 203000 ns, RESULT:
+    [ PASSED ] CASE: testConstructor (15700 ns)
+    [ PASSED ] CASE: testToString (12100 ns)
+    [ PASSED ] CASE: testIntersection (7600 ns)
+    [ PASSED ] CASE: testTouchingEdge (15700 ns)
+    [ PASSED ] CASE: testPointRectangle (7200 ns)
+    [ PASSED ] CASE: testInvalidCoordinates (33200 ns)
+Summary: TOTAL: 24
+    PASSED: 22, SKIPPED: 0, ERROR: 0
+    FAILED: 2, listed below:
+            TCS: InstructionParserTest, CASE: testNamedInstructions
+            TCS: InstructionParserTest, CASE: testRepeatedSpaces
+--------------------------------------------------------------------------------------------------
+Reference results: D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\validation\reference-faults-001\parser_inc/results.json

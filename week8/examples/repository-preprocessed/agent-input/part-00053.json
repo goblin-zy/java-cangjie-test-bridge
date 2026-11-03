@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:reference/cangjie/tests/instructionparser_test.cj",
+    "path": "reference/cangjie/tests/instructionparser_test.cj",
+    "status": "snapshotted",
+    "sha256": "9e1ca84656213840acfd0a77e989bc72624231427adcab9f40a2abaf1e57fa28",
+    "size": 2952,
+    "snapshot": "snapshots/reference/cangjie/tests/instructionparser_test.cj",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 2478,
+  "text": "package starter\r\nimport std.unittest.*\r\nimport std.unittest.testmacro.*\r\n\r\n@Test\r\nclass InstructionParserTest {\r\n    // 先检查长度，再逐元素比较；长度不同时停止，避免比较时越界。\r\n    private func expectArray(actual: Array<Int64>, expected: Array<Int64>): Unit {\r\n        @Assert(actual.size, expected.size)\r\n        for (i in 0..expected.size) { @Expect(actual[i], expected[i]) }\r\n    }\r\n    // P01：空字符串应得到空数组。（新编样例）\r\n    @TestCase\r\n    func testEmpty(): Unit {\r\n        let actual = InstructionParser.parse(\"\")\r\n        expectArray(actual, [])\r\n    }\r\n    // P02：仅包含空格时也应得到空数组。（新编样例）\r\n    @TestCase\r\n    func testSpaces(): Unit {\r\n        let actual = InstructionParser.parse(\"   \")\r\n        expectArray(actual, [])\r\n    }\r\n    // P03：检查三个约定指令词的映射和顺序。（新编样例）\r\n    @TestCase\r\n    func testNamedInstructions(): Unit {\r\n        let actual = InstructionParser.parse(\"ZERO INC DEC\")\r\n        expectArray(actual, [0, 1, -1])\r\n    }\r\n    // P04：检查正负号、零和前导零的整数转换。（新编样例）\r\n    @TestCase\r\n    func testSignedNumbers(): Unit {\r\n        let actual = InstructionParser.parse(\"-7 +8 0 007\")\r\n        expectArray(actual, [-7, 8, 0, 7])\r\n    }\r\n    // P05：检查连续空格及指令与数字混合输入。（新编样例）\r\n    @TestCase\r\n    func testRepeatedSpaces(): Unit {\r\n        let actual = InstructionParser.parse(\"  INC  35 DEC \")\r\n        expectArray(actual, [1, 35, -1])\r\n    }\r\n    // P06：检查Java int上下边界均可正常解析。（新编样例）\r\n    @TestCase\r\n    func testInt32Boundaries(): Unit {\r\n        let actual = InstructionParser.parse(\"-2147483648 2147483647\")\r\n        expectArray(actual, [-2147483648, 2147483647])\r\n    }\r\n    // P07：未知词、单独符号、小数和制表符均应被拒绝。（新编样例）\r\n    @TestCase\r\n    func testInvalidTokens(): Unit {\r\n        for (input in [\"BOGUS\", \"+\", \"1.5\", \"INC\\tDEC\"]) {\r\n            var caught = false\r\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\r\n            @Expect(caught, true)\r\n        }\r\n    }\r\n    // P08：检查超过int范围的正负数字均抛出参数异常。（新编样例）\r\n    @TestCase\r\n    func testOutOfRange(): Unit {\r\n        for (input in [\"2147483648\", \"-2147483649\"]) {\r\n            var caught = false\r\n            try { InstructionParser.parse(input) } catch (_: IllegalArgumentException) { caught = true }\r\n            @Expect(caught, true)\r\n        }\r\n    }\r\n    // P09：检查缺失输入与空字符串的行为不同。（新编样例）\r\n    @TestCase\r\n    func testNullInput(): Unit {\r\n        var caught = false\r\n        try { InstructionParser.parseNullable(None) } catch (_: IllegalArgumentException) { caught = true }\r\n        @Expect(caught, true)\r\n    }\r\n}\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

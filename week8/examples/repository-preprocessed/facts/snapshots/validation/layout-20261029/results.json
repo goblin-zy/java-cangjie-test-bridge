@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-29",
+  "project_root": "repository root",
+  "java_all": {
+    "tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "java_business_only": {
+    "tests": 24,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "skeleton": {
+    "files": 3,
+    "classes": 3,
+    "members": 27,
+    "roles": {
+      "field": 1,
+      "helper": 1,
+      "lifecycle_BeforeEach": 1,
+      "test": 24
+    },
+    "errors": 0
+  },
+  "extractor_acceptance": "passed including typed skeleton compilation and byte-exact restoration",
+  "cangjie_all": {
+    "passed": 24,
+    "failed": 0
+  },
+  "cangjie_single": {
+    "passed": 1,
+    "excluded": 23
+  },
+  "runtime": "SDK1.2.0 with nonofficial localfix",
+  "publication_note": "Local SDK/project paths normalized in new text evidence; generated binaries excluded."
+}

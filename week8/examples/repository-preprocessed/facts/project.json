@@ -1,0 +1,29 @@
+{
+  "modules": [
+    {
+      "id": "module:.",
+      "path": ".",
+      "descriptors": [
+        "file:pom.xml"
+      ],
+      "dependencies": [
+        {
+          "groupId": "org.junit.jupiter",
+          "artifactId": "junit-jupiter",
+          "version": "5.13.4",
+          "scope": "test"
+        },
+        {
+          "groupId": "com.google.code.gson",
+          "artifactId": "gson",
+          "version": "2.9.1",
+          "scope": "test"
+        }
+      ],
+      "declared_modules": [],
+      "source_roots": []
+    }
+  ],
+  "build_execution": "NOT_RUN",
+  "effective_build_model": "NOT_RESOLVED"
+}

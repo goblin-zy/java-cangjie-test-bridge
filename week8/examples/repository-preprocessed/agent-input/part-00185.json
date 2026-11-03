@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/layout-20261029/cangjie-all/test.log",
+    "path": "validation/layout-20261029/cangjie-all/test.log",
+    "status": "snapshotted",
+    "sha256": "c1a4906fa0f98a02dae330b1b0dbe6475ff9d92a923f91e9e061ea5d8081604b",
+    "size": 1694,
+    "snapshot": "snapshots/validation/layout-20261029/cangjie-all/test.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 1694,
+  "text": "--------------------------------------------------------------------------------------------------\r\nTP: starter, time elapsed: 1673900 ns, RESULT:\r\n    TCS: AccountTest, time elapsed: 981600 ns, RESULT:\r\n    [ PASSED ] CASE: testInitialBalance (308900 ns)\r\n    [ PASSED ] CASE: testDeposit (5200 ns)\r\n    [ PASSED ] CASE: testWithdraw (4600 ns)\r\n    [ PASSED ] CASE: testWithdrawAll (4700 ns)\r\n    [ PASSED ] CASE: testSequence (5000 ns)\r\n    [ PASSED ] CASE: testInsufficientFunds (145900 ns)\r\n    [ PASSED ] CASE: testInvalidAmounts (64000 ns)\r\n    [ PASSED ] CASE: testBalanceLimit (12200 ns)\r\n    [ PASSED ] CASE: testInvalidInitialBalance (21900 ns)\r\n    TCS: InstructionParserTest, time elapsed: 439100 ns, RESULT:\r\n    [ PASSED ] CASE: testEmpty (40000 ns)\r\n    [ PASSED ] CASE: testSpaces (9100 ns)\r\n    [ PASSED ] CASE: testNamedInstructions (52200 ns)\r\n    [ PASSED ] CASE: testSignedNumbers (9500 ns)\r\n    [ PASSED ] CASE: testRepeatedSpaces (9000 ns)\r\n    [ PASSED ] CASE: testInt32Boundaries (8200 ns)\r\n    [ PASSED ] CASE: testInvalidTokens (49000 ns)\r\n    [ PASSED ] CASE: testOutOfRange (17300 ns)\r\n    [ PASSED ] CASE: testNullInput (120600 ns)\r\n    TCS: RectangleTest, time elapsed: 231900 ns, RESULT:\r\n    [ PASSED ] CASE: testConstructor (13900 ns)\r\n    [ PASSED ] CASE: testToString (27600 ns)\r\n    [ PASSED ] CASE: testIntersection (8300 ns)\r\n    [ PASSED ] CASE: testTouchingEdge (8100 ns)\r\n    [ PASSED ] CASE: testPointRectangle (7100 ns)\r\n    [ PASSED ] CASE: testInvalidCoordinates (67100 ns)\r\nSummary: TOTAL: 24\r\n    PASSED: 24, SKIPPED: 0, ERROR: 0\r\n    FAILED: 0\r\n--------------------------------------------------------------------------------------------------\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

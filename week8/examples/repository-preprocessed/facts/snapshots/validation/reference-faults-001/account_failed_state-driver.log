@@ -1,0 +1,50 @@
+[0J7[;r8
+
+
+
+[4F7[9999E[3F📦 group starter                      20% [||||----------------]      (00:00:00)
+🧪 test AccountTest.testInsufficientFunds                             (00:00:00)
+
+passed: 5, failed: 0                 20% [||||----------------]  5/24 (00:00:00) 8[0J7[;r8--------------------------------------------------------------------------------------------------
+TP: starter, time elapsed: 2546800 ns, RESULT:
+    TCS: AccountTest, time elapsed: 1954700 ns, RESULT:
+    [ PASSED ] CASE: testInitialBalance (427300 ns)
+    [ PASSED ] CASE: testDeposit (23700 ns)
+    [ PASSED ] CASE: testWithdraw (13700 ns)
+    [ PASSED ] CASE: testWithdrawAll (22600 ns)
+    [ PASSED ] CASE: testSequence (16200 ns)
+    [ PASSED ] CASE: testInvalidAmounts (117200 ns)
+    [ PASSED ] CASE: testBalanceLimit (45100 ns)
+    [ PASSED ] CASE: testInvalidInitialBalance (49700 ns)
+    [ FAILED ] CASE: testInsufficientFunds (291300 ns)
+    Expect Failed: `(account.getBalance() == 100)`
+       left: 99
+      right: 100
+
+    Expect Failed: `(account.getBalance() == 60)`
+       left: 59
+      right: 60
+
+    TCS: InstructionParserTest, time elapsed: 392100 ns, RESULT:
+    [ PASSED ] CASE: testEmpty (50500 ns)
+    [ PASSED ] CASE: testSpaces (8800 ns)
+    [ PASSED ] CASE: testNamedInstructions (23100 ns)
+    [ PASSED ] CASE: testSignedNumbers (19100 ns)
+    [ PASSED ] CASE: testRepeatedSpaces (8600 ns)
+    [ PASSED ] CASE: testInt32Boundaries (8100 ns)
+    [ PASSED ] CASE: testInvalidTokens (69300 ns)
+    [ PASSED ] CASE: testOutOfRange (31800 ns)
+    [ PASSED ] CASE: testNullInput (19800 ns)
+    TCS: RectangleTest, time elapsed: 174200 ns, RESULT:
+    [ PASSED ] CASE: testConstructor (11300 ns)
+    [ PASSED ] CASE: testToString (10000 ns)
+    [ PASSED ] CASE: testIntersection (7300 ns)
+    [ PASSED ] CASE: testTouchingEdge (14100 ns)
+    [ PASSED ] CASE: testPointRectangle (6000 ns)
+    [ PASSED ] CASE: testInvalidCoordinates (23800 ns)
+Summary: TOTAL: 24
+    PASSED: 23, SKIPPED: 0, ERROR: 0
+    FAILED: 1, listed below:
+            TCS: AccountTest, CASE: testInsufficientFunds
+--------------------------------------------------------------------------------------------------
+Reference results: D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\validation\reference-faults-001\account_failed_state/results.json

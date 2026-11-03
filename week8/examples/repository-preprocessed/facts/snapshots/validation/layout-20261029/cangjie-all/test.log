@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------------------------
+TP: starter, time elapsed: 1673900 ns, RESULT:
+    TCS: AccountTest, time elapsed: 981600 ns, RESULT:
+    [ PASSED ] CASE: testInitialBalance (308900 ns)
+    [ PASSED ] CASE: testDeposit (5200 ns)
+    [ PASSED ] CASE: testWithdraw (4600 ns)
+    [ PASSED ] CASE: testWithdrawAll (4700 ns)
+    [ PASSED ] CASE: testSequence (5000 ns)
+    [ PASSED ] CASE: testInsufficientFunds (145900 ns)
+    [ PASSED ] CASE: testInvalidAmounts (64000 ns)
+    [ PASSED ] CASE: testBalanceLimit (12200 ns)
+    [ PASSED ] CASE: testInvalidInitialBalance (21900 ns)
+    TCS: InstructionParserTest, time elapsed: 439100 ns, RESULT:
+    [ PASSED ] CASE: testEmpty (40000 ns)
+    [ PASSED ] CASE: testSpaces (9100 ns)
+    [ PASSED ] CASE: testNamedInstructions (52200 ns)
+    [ PASSED ] CASE: testSignedNumbers (9500 ns)
+    [ PASSED ] CASE: testRepeatedSpaces (9000 ns)
+    [ PASSED ] CASE: testInt32Boundaries (8200 ns)
+    [ PASSED ] CASE: testInvalidTokens (49000 ns)
+    [ PASSED ] CASE: testOutOfRange (17300 ns)
+    [ PASSED ] CASE: testNullInput (120600 ns)
+    TCS: RectangleTest, time elapsed: 231900 ns, RESULT:
+    [ PASSED ] CASE: testConstructor (13900 ns)
+    [ PASSED ] CASE: testToString (27600 ns)
+    [ PASSED ] CASE: testIntersection (8300 ns)
+    [ PASSED ] CASE: testTouchingEdge (8100 ns)
+    [ PASSED ] CASE: testPointRectangle (7100 ns)
+    [ PASSED ] CASE: testInvalidCoordinates (67100 ns)
+Summary: TOTAL: 24
+    PASSED: 24, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

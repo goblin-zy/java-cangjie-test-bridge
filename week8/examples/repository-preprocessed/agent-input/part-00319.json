@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/reference-normal-001/test.log",
+    "path": "validation/reference-normal-001/test.log",
+    "status": "snapshotted",
+    "sha256": "1b914064981c19d914936c935f01d1cbc8df46fb56f780598e918b30113fefb1",
+    "size": 2038,
+    "snapshot": "snapshots/validation/reference-normal-001/test.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 2038,
+  "text": "\u001b[?25l\u001b[0J\u001b7\u001b[;r\u001b8\r\n\u001b[1F\u001b7\u001b[9999E\u001b8\u001b[0J\u001b7\u001b[;r\u001b8\u001b[?25h--------------------------------------------------------------------------------------------------\r\nTP: \u001b[33mstarter\u001b[0m, time elapsed: 3030900 ns, RESULT:\r\n    TCS: \u001b[33mAccountTest\u001b[0m, time elapsed: 2126300 ns, RESULT:\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testInitialBalance (441000 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testDeposit (16300 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testWithdraw (13800 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testWithdrawAll (30600 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testSequence (12800 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testInsufficientFunds (369200 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testInvalidAmounts (228100 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testBalanceLimit (39100 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testInvalidInitialBalance (36500 ns)\r\n    TCS: \u001b[33mInstructionParserTest\u001b[0m, time elapsed: 577600 ns, RESULT:\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testEmpty (73800 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testSpaces (14600 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testNamedInstructions (34900 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testSignedNumbers (26300 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testRepeatedSpaces (16900 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testInt32Boundaries (15800 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testInvalidTokens (113200 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testOutOfRange (44800 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testNullInput (24900 ns)\r\n    TCS: \u001b[33mRectangleTest\u001b[0m, time elapsed: 297200 ns, RESULT:\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testConstructor (30000 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testToString (22200 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testIntersection (13500 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testTouchingEdge (21000 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testPointRectangle (9500 ns)\r\n    [\u001b[32m PASSED \u001b[0m] CASE: testInvalidCoordinates (53600 ns)\r\nSummary: TOTAL: 24\r\n    \u001b[32mPASSED\u001b[0m: 24, \u001b[32mSKIPPED\u001b[0m: 0, ERROR: 0\r\n    \u001b[31mFAILED\u001b[0m: 0\r\n--------------------------------------------------------------------------------------------------\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

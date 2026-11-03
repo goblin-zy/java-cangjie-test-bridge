@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/layout-20261029/cangjie-single/test.log",
+    "path": "validation/layout-20261029/cangjie-single/test.log",
+    "status": "snapshotted",
+    "sha256": "640aeea452280679c6dcf9360bff65507e7d8e4fd60c7e48da9e8adac366eefc",
+    "size": 425,
+    "snapshot": "snapshots/validation/layout-20261029/cangjie-single/test.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 425,
+  "text": "--------------------------------------------------------------------------------------------------\r\nTP: starter, time elapsed: 1403500 ns, RESULT:\r\n    TCS: AccountTest, time elapsed: 1223500 ns, RESULT:\r\n    [ PASSED ] CASE: testWithdraw (540700 ns)\r\nSummary: TOTAL: 24\r\n    PASSED: 1, SKIPPED: 23, ERROR: 0\r\n    FAILED: 0\r\n--------------------------------------------------------------------------------------------------\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

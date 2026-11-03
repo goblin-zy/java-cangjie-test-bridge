@@ -1,0 +1,8 @@
+--------------------------------------------------------------------------------------------------
+TP: starter, time elapsed: 1403500 ns, RESULT:
+    TCS: AccountTest, time elapsed: 1223500 ns, RESULT:
+    [ PASSED ] CASE: testWithdraw (540700 ns)
+Summary: TOTAL: 24
+    PASSED: 1, SKIPPED: 23, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

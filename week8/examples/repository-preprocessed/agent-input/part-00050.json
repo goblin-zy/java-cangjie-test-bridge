@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:reference/cangjie/implementation/instruction_parser.cj",
+    "path": "reference/cangjie/implementation/instruction_parser.cj",
+    "status": "snapshotted",
+    "sha256": "3a641bcadf913e0d50395c17cdeeba1d0ea8c0e9253eff264a8d85709d9374ce",
+    "size": 2011,
+    "snapshot": "snapshots/reference/cangjie/implementation/instruction_parser.cj",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 1849,
+  "text": "package starter\r\nimport std.collection.*\r\npublic class InstructionParser {\r\n    // 接收可能缺失的输入：Some交给parse，None抛出参数异常，对应Java的null检查。\r\n    public static func parseNullable(input: Option<String>): Array<Int64> {\r\n        match (input) {\r\n            case Some(value) => return parse(value)\r\n            case None => throw IllegalArgumentException(\"null input\")\r\n        }\r\n    }\r\n    // 只按ASCII空格拆分，将ZERO/INC/DEC或整数片段转换成数组；保留元素顺序。\r\n    public static func parse(input: String): Array<Int64> {\r\n        let result = ArrayList<Int64>()\r\n        for (token in input.split(\" \")) {\r\n            if (token.isEmpty()) { continue }\r\n            match (token) {\r\n                case \"ZERO\" => result.add(0)\r\n                case \"INC\" => result.add(1)\r\n                case \"DEC\" => result.add(-1)\r\n                case _ => result.add(parseNumber(token))\r\n            }\r\n        }\r\n        return result.toArray()\r\n    }\r\n    // 检查可选符号与ASCII数字并逐位累积；虽返回Int64，结果仍限制在Java int范围内。\r\n    private static func parseNumber(token: String): Int64 {\r\n        let bytes = token.toArray()\r\n        var index: Int64 = 0\r\n        var negative = false\r\n        if (bytes[0] == 43 || bytes[0] == 45) {\r\n            negative = bytes[0] == 45\r\n            index = 1\r\n        }\r\n        if (index == bytes.size) { throw IllegalArgumentException(\"invalid token\") }\r\n        var value: Int64 = 0\r\n        let limit: Int64 = if (negative) { 2147483648 } else { 2147483647 }\r\n        while (index < bytes.size) {\r\n            let digit = bytes[index]\r\n            if (digit < 48 || digit > 57) { throw IllegalArgumentException(\"invalid token\") }\r\n            value = value * 10 + Int64(digit - 48)\r\n            if (value > limit) { throw IllegalArgumentException(\"out of int32 range\") }\r\n            index++\r\n        }\r\n        return if (negative) { -value } else { value }\r\n    }\r\n}\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

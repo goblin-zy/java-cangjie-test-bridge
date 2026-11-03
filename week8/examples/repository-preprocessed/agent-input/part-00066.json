@@ -1,0 +1,47 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:src/main/java/study/translation/InsufficientFundsException.java",
+    "path": "src/main/java/study/translation/InsufficientFundsException.java",
+    "status": "snapshotted",
+    "sha256": "f7e6a26eff82705cba3615cc647bbea341dd3c8437c012307e7716c60668631d",
+    "size": 279,
+    "snapshot": "snapshots/src/main/java/study/translation/InsufficientFundsException.java",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "main",
+    "parse_status": "parsed"
+  },
+  "symbols": [
+    {
+      "type": "symbol",
+      "kind": "CLASS",
+      "name": "InsufficientFundsException",
+      "owner": "InsufficientFundsException",
+      "annotations": "",
+      "start_utf16": 28,
+      "end_utf16": 217,
+      "line": 2,
+      "id": "file:src/main/java/study/translation/InsufficientFundsException.java::28",
+      "file": "file:src/main/java/study/translation/InsufficientFundsException.java",
+      "module": "module:."
+    },
+    {
+      "type": "symbol",
+      "kind": "METHOD",
+      "name": "<init>(String)",
+      "owner": "InsufficientFundsException",
+      "annotations": "",
+      "start_utf16": 145,
+      "end_utf16": 214,
+      "line": 4,
+      "id": "file:src/main/java/study/translation/InsufficientFundsException.java::145",
+      "file": "file:src/main/java/study/translation/InsufficientFundsException.java",
+      "module": "module:."
+    }
+  ],
+  "text_start_character": 0,
+  "text_end_character": 219,
+  "text": "package study.translation;\r\npublic final class InsufficientFundsException extends RuntimeException {\r\n    // 创建余额不足异常，保存错误说明；它与非法金额的参数异常不同。\r\n    public InsufficientFundsException(String message) { super(message); }\r\n}\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

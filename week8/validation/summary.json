@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-03",
+  "branch": "蒋逸舟-week8",
+  "tests_passed": 12,
+  "input_commit": "6105b07bf4f48f183bae437e1c6dd6b5393985cd",
+  "files_preserved": 312,
+  "java_files": 80,
+  "structure_entries": 897,
+  "diagnostics": 6,
+  "packets": 341,
+  "fresh_full_repository_snapshot_match": true,
+  "snapshot_and_packet_hashes": "PASS",
+  "source_text_reconstruction": "PASS",
+  "new_document_links": "PASS",
+  "gui_widget_construction": "PASS",
+  "gui_mouse_automation": "NOT_RUN",
+  "agent_example_read_files": 3,
+  "agent_example_unread_parts": 338,
+  "input_build_and_tests": "NOT_RUN"
+}

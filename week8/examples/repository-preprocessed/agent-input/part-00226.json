@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/layout-20261029/extractor/invalid.log",
+    "path": "validation/layout-20261029/extractor/invalid.log",
+    "status": "snapshotted",
+    "sha256": "5b2ef058def453bccf02452b57e5f89287f843ff878d3177a72f32fad7571f17",
+    "size": 104,
+    "snapshot": "snapshots/validation/layout-20261029/extractor/invalid.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 104,
+  "text": "Extracted 1 files, 0 members; [PROJECT_ROOT]\\validation\\layout-20261029\\extractor\\invalid\\members.json\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

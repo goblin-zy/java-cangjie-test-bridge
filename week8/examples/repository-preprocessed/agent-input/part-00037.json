@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:generated/single-account/extraction-report.md",
+    "path": "generated/single-account/extraction-report.md",
+    "status": "snapshotted",
+    "sha256": "19fc7b4b9c90038a8a1aaaafec74823207837cdf6d35df82692f8d2295d22aea",
+    "size": 1574,
+    "snapshot": "snapshots/generated/single-account/extraction-report.md",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 1170,
+  "text": "# Java测试骨架提取记录\n\n解析器：JDK javac语法树，Java17；仅解析，未执行符号绑定或测试。\n\n文件：1；成员：12。\n\n|成员标识|角色|原始方法体|\n|---|---|---|\n|AccountTest.java::study.translation.AccountTest#field:account|field|无方法体／非方法|\n|AccountTest.java::study.translation.AccountTest#setUp()|lifecycle_BeforeEach|已保存|\n|AccountTest.java::study.translation.AccountTest#prepareSequence()|helper|已保存|\n|AccountTest.java::study.translation.AccountTest#testInitialBalance()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testDeposit()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testWithdraw()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testWithdrawAll()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testSequence()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testInsufficientFunds()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testInvalidAmounts()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testBalanceLimit()|test|已保存|\n|AccountTest.java::study.translation.AccountTest#testInvalidInitialBalance()|test|已保存|\n\n## 支持边界\n\n方法内局部类和匿名类只保存在完整原方法体中；字段初始化保持原样；类级初始化块原样保留并报告。参数类型按源码记录，未做完整类型解析。扩展JUnit机制只识别角色，不保证其可迁移性。骨架抛出占位异常，不可当成已恢复行为的测试。\n\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/cangjie-filter-single-001/compile.log",
+    "path": "validation/cangjie-filter-single-001/compile.log",
+    "status": "snapshotted",
+    "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295",
+    "size": 5,
+    "snapshot": "snapshots/validation/cangjie-filter-single-001/compile.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 3,
+  "text": "﻿\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

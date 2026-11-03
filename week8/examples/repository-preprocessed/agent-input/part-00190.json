@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/layout-20261029/cangjie-single/invocation.txt",
+    "path": "validation/layout-20261029/cangjie-single/invocation.txt",
+    "status": "snapshotted",
+    "sha256": "ad232acfc1fa294d3c3155eab994bd0d32e31d5884098968349428d5ebac8d19",
+    "size": 962,
+    "snapshot": "snapshots/validation/layout-20261029/cangjie-single/invocation.txt",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 962,
+  "text": "Time: 2026-10-29T23:08:06.5874839+08:00\nRunner: week7 automated reference validation\nRuntime: localfix (nonofficial experimental runtime)\nRuntime SHA256: 69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f\nSelected filter: AccountTest.testWithdraw\nSelected expected tests: 1\nCommand: cjc [PROJECT_ROOT]\\reference\\cangjie\\implementation\\account.cj [PROJECT_ROOT]\\reference\\cangjie\\implementation\\instruction_parser.cj [PROJECT_ROOT]\\reference\\cangjie\\implementation\\rectangle.cj [PROJECT_ROOT]\\reference\\cangjie\\tests\\account_test.cj [PROJECT_ROOT]\\reference\\cangjie\\tests\\instructionparser_test.cj [PROJECT_ROOT]\\reference\\cangjie\\tests\\rectangle_test.cj --test -o [PROJECT_ROOT]\\validation\\layout-20261029\\cangjie-single\\reference-tests.exe\nThen: [PROJECT_ROOT]\\validation\\layout-20261029\\cangjie-single\\reference-tests.exe --no-color --no-progress --filter=AccountTest.testWithdraw\nSDK installation path omitted; runtime identity recorded above.\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

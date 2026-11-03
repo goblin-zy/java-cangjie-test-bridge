@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/layout-20261029/account-example.log",
+    "path": "validation/layout-20261029/account-example.log",
+    "status": "snapshotted",
+    "sha256": "9aceec2d653aeab6e25daa5855e2f7f75f59b2fac216976b2b2776085ff991eb",
+    "size": 85,
+    "snapshot": "snapshots/validation/layout-20261029/account-example.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 85,
+  "text": "Extracted 1 files, 12 members; [PROJECT_ROOT]\\generated\\single-account\\members.json\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

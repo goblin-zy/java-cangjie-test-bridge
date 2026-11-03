@@ -1,0 +1,30 @@
+[
+  {
+    "file": "src/main/java/study/translation/Account.java",
+    "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+  },
+  {
+    "file": "src/main/java/study/translation/InstructionParser.java",
+    "sha256": "812a04c2b6b4a670e8110414c355143863a432fe0723ed43e88b5c4ca78b11ae"
+  },
+  {
+    "file": "src/main/java/study/translation/InsufficientFundsException.java",
+    "sha256": "f7e6a26eff82705cba3615cc647bbea341dd3c8437c012307e7716c60668631d"
+  },
+  {
+    "file": "src/main/java/study/translation/Rectangle.java",
+    "sha256": "ea68e279b5c2e626595dfdf56ed4984ba7d51e87ed5447535bad8afbde1adbff"
+  },
+  {
+    "file": "src/test/java/study/translation/AccountTest.java",
+    "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+  },
+  {
+    "file": "src/test/java/study/translation/InstructionParserTest.java",
+    "sha256": "a598b60e1a789a6af8f3e8c7fe65c201506a2e693bbe8ef3f249f1fbbe050232"
+  },
+  {
+    "file": "src/test/java/study/translation/RectangleTest.java",
+    "sha256": "fcd8ee998b141d8ba842471afffeb5b600208d04bc2c79f3ab1b0f3dbbe3d9ee"
+  }
+]

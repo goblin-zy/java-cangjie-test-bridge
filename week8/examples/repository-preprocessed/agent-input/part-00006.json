@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:.vscode/settings.json",
+    "path": ".vscode/settings.json",
+    "status": "snapshotted",
+    "sha256": "1c41bac882ee2927e79f146e002d1ee3764e62c9a9884b5b16cdb5bdda3ee907",
+    "size": 1253,
+    "snapshot": "snapshots/.vscode/settings.json",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 1253,
+  "text": "{\n  \"files.encoding\": \"utf8\",\n  \"java.configuration.updateBuildConfiguration\": \"automatic\",\n  \"java.import.exclusions\": [\n    \"**/generated/**\",\n    \"**/validation/**\",\n    \"**/tests/**\",\n    \"**/build/**\",\n    \"**/target/**\"\n  ],\n  \"java.test.defaultConfig\": \"week7\",\n  \"java.test.config\": [\n    {\n      \"name\": \"week7\",\n      \"workingDirectory\": \"${workspaceFolder}\",\n      \"encoding\": \"utf8\",\n      \"vmArgs\": [\n        \"--add-modules=jdk.compiler\",\n        \"-Dfile.encoding=UTF-8\"\n      ]\n    }\n  ],\n  \"java.debug.settings.console\": \"internalConsole\",\n  \"files.exclude\": {\n    \"**/target\": true,\n    \"**/build\": true,\n    \"**/__pycache__\": true\n  },\n  \"editor.gotoLocation.alternativeDeclarationCommand\": \"editor.action.revealDefinition\",\n  \"editor.gotoLocation.alternativeDefinitionCommand\": \"editor.action.revealDefinition\",\n  \"editor.gotoLocation.alternativeTypeDefinitionCommand\": \"editor.action.revealDefinition\",\n  \"editor.selectionHighlight\": false,\n  \"files.autoSave\": \"onFocusChange\",\n  \"editor.suggest.snippetsPreventQuickSuggestions\": false,\n  \"editor.quickSuggestions\": {\n    \"other\": \"on\",\n    \"comments\": \"off\",\n    \"strings\": \"on\"\n  },\n  \"CangjieSdkPath.CJNativeBackend\": \"D:\\\\CangjieSDK\\\\cangjie\",\n  \"CangjieSdk.Option\": \"CJNative\"\n}\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

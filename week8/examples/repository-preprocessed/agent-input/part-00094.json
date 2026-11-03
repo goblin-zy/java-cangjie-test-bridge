@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/cangjie-filter-class-001/results.json",
+    "path": "validation/cangjie-filter-class-001/results.json",
+    "status": "snapshotted",
+    "sha256": "982c4c6cea6ab4ad6e0caf57ac77bf865afe08eccf22021b91a3af8e94393b24",
+    "size": 1873,
+    "snapshot": "snapshots/validation/cangjie-filter-class-001/results.json",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 1871,
+  "text": "﻿{\r\n    \"runtime_label\":  \"localfix (nonofficial experimental runtime)\",\r\n    \"runtime_sha256\":  \"69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f\",\r\n    \"compile_exit\":  0,\r\n    \"run_exit\":  0,\r\n    \"filter\":  \"RectangleTest.*\",\r\n    \"total_defined_tests\":  24,\r\n    \"filter_excluded\":  18,\r\n    \"expected\":  6,\r\n    \"discovered_in_final_report\":  6,\r\n    \"passed\":  6,\r\n    \"failed\":  0,\r\n    \"error\":  0,\r\n    \"skipped\":  0,\r\n    \"not_executed\":  0,\r\n    \"cases\":  [\r\n                  {\r\n                      \"id\":  \"R01\",\r\n                      \"suite\":  \"RectangleTest\",\r\n                      \"method\":  \"testConstructor\",\r\n                      \"status\":  \"passed\"\r\n                  },\r\n                  {\r\n                      \"id\":  \"R02\",\r\n                      \"suite\":  \"RectangleTest\",\r\n                      \"method\":  \"testToString\",\r\n                      \"status\":  \"passed\"\r\n                  },\r\n                  {\r\n                      \"id\":  \"R03\",\r\n                      \"suite\":  \"RectangleTest\",\r\n                      \"method\":  \"testIntersection\",\r\n                      \"status\":  \"passed\"\r\n                  },\r\n                  {\r\n                      \"id\":  \"R04\",\r\n                      \"suite\":  \"RectangleTest\",\r\n                      \"method\":  \"testTouchingEdge\",\r\n                      \"status\":  \"passed\"\r\n                  },\r\n                  {\r\n                      \"id\":  \"R05\",\r\n                      \"suite\":  \"RectangleTest\",\r\n                      \"method\":  \"testPointRectangle\",\r\n                      \"status\":  \"passed\"\r\n                  },\r\n                  {\r\n                      \"id\":  \"R06\",\r\n                      \"suite\":  \"RectangleTest\",\r\n                      \"method\":  \"testInvalidCoordinates\",\r\n                      \"status\":  \"passed\"\r\n                  }\r\n              ]\r\n}\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

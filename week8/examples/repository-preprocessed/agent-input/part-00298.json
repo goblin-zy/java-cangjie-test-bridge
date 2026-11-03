@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/reference-faults-001/parser_inc-driver.log",
+    "path": "validation/reference-faults-001/parser_inc-driver.log",
+    "status": "snapshotted",
+    "sha256": "250dd29a54307cf774de9293fddd807c49f051327c15b7cbcba91f5d6e770884",
+    "size": 2197,
+    "snapshot": "snapshots/validation/reference-faults-001/parser_inc-driver.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 2185,
+  "text": "\u001b[0J\u001b7\u001b[;r\u001b8\r\n\u001b[1F\u001b7\u001b[9999E\u001b8\u001b[0J\u001b7\u001b[;r\u001b8--------------------------------------------------------------------------------------------------\r\nTP: starter, time elapsed: 1721500 ns, RESULT:\r\n    TCS: AccountTest, time elapsed: 993800 ns, RESULT:\r\n    [ PASSED ] CASE: testInitialBalance (245500 ns)\r\n    [ PASSED ] CASE: testDeposit (11700 ns)\r\n    [ PASSED ] CASE: testWithdraw (7800 ns)\r\n    [ PASSED ] CASE: testWithdrawAll (19600 ns)\r\n    [ PASSED ] CASE: testSequence (7200 ns)\r\n    [ PASSED ] CASE: testInsufficientFunds (150500 ns)\r\n    [ PASSED ] CASE: testInvalidAmounts (70700 ns)\r\n    [ PASSED ] CASE: testBalanceLimit (16700 ns)\r\n    [ PASSED ] CASE: testInvalidInitialBalance (24900 ns)\r\n    TCS: InstructionParserTest, time elapsed: 504400 ns, RESULT:\r\n    [ PASSED ] CASE: testEmpty (66200 ns)\r\n    [ PASSED ] CASE: testSpaces (8300 ns)\r\n    [ PASSED ] CASE: testSignedNumbers (24500 ns)\r\n    [ PASSED ] CASE: testInt32Boundaries (9400 ns)\r\n    [ PASSED ] CASE: testInvalidTokens (80700 ns)\r\n    [ PASSED ] CASE: testOutOfRange (28000 ns)\r\n    [ PASSED ] CASE: testNullInput (20400 ns)\r\n    [ FAILED ] CASE: testNamedInstructions (56900 ns)\r\n    Expect Failed: `(actual[i] == expected[i])`\r\n       left: 2\r\n      right: 1\r\n\r\n    [ FAILED ] CASE: testRepeatedSpaces (12100 ns)\r\n    Expect Failed: `(actual[i] == expected[i])`\r\n       left: 2\r\n      right: 1\r\n\r\n    TCS: RectangleTest, time elapsed: 203000 ns, RESULT:\r\n    [ PASSED ] CASE: testConstructor (15700 ns)\r\n    [ PASSED ] CASE: testToString (12100 ns)\r\n    [ PASSED ] CASE: testIntersection (7600 ns)\r\n    [ PASSED ] CASE: testTouchingEdge (15700 ns)\r\n    [ PASSED ] CASE: testPointRectangle (7200 ns)\r\n    [ PASSED ] CASE: testInvalidCoordinates (33200 ns)\r\nSummary: TOTAL: 24\r\n    PASSED: 22, SKIPPED: 0, ERROR: 0\r\n    FAILED: 2, listed below:\r\n            TCS: InstructionParserTest, CASE: testNamedInstructions\r\n            TCS: InstructionParserTest, CASE: testRepeatedSpaces\r\n--------------------------------------------------------------------------------------------------\r\nReference results: D:\\文档\\ChatGPT\\一人一事 2\\outputs\\week7-skeleton-reference\\validation\\reference-faults-001\\parser_inc/results.json\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

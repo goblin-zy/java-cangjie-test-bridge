@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-28",
+  "command": "mvn -o test",
+  "jdk": "17",
+  "exit_code": 0,
+  "results": {
+    "tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "note": "Rerun on publication copy; generated build files excluded from Git."
+}

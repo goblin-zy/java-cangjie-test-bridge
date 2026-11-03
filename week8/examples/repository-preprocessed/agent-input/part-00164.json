@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/layout-20261029/business-baseline/console.log",
+    "path": "validation/layout-20261029/business-baseline/console.log",
+    "status": "snapshotted",
+    "sha256": "4742153aa799a4eee26a63c961e838fdf49df2c899653c3fba703b3399e34ffc",
+    "size": 2540,
+    "snapshot": "snapshots/validation/layout-20261029/business-baseline/console.log",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 2540,
+  "text": "[INFO] Scanning for projects...\r\n[INFO] \r\n[INFO] ----------------< study.week7:week7-skeleton-reference >----------------\r\n[INFO] Building week7-skeleton-reference 1.1.0\r\n[INFO]   from pom.xml\r\n[INFO] --------------------------------[ jar ]---------------------------------\r\n[INFO] \r\n[INFO] --- clean:3.2.0:clean (default-clean) @ week7-skeleton-reference ---\r\n[INFO] Deleting [PROJECT_ROOT]\\target\r\n[INFO] \r\n[INFO] --- resources:3.3.1:resources (default-resources) @ week7-skeleton-reference ---\r\n[INFO] skip non existing resourceDirectory [PROJECT_ROOT]\\src\\main\\resources\r\n[INFO] \r\n[INFO] --- compiler:3.11.0:compile (default-compile) @ week7-skeleton-reference ---\r\n[INFO] Changes detected - recompiling the module! :source\r\n[INFO] Compiling 5 source files with javac [debug release 17] to target\\classes\r\n[INFO] \r\n[INFO] --- resources:3.3.1:testResources (default-testResources) @ week7-skeleton-reference ---\r\n[INFO] skip non existing resourceDirectory [PROJECT_ROOT]\\src\\test\\resources\r\n[INFO] \r\n[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ week7-skeleton-reference ---\r\n[INFO] Changes detected - recompiling the module! :dependency\r\n[INFO] Compiling 4 source files with javac [debug release 17] to target\\test-classes\r\n[INFO] \r\n[INFO] --- surefire:3.5.3:test (default-test) @ week7-skeleton-reference ---\r\n[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider\r\n[INFO] \r\n[INFO] -------------------------------------------------------\r\n[INFO]  T E S T S\r\n[INFO] -------------------------------------------------------\r\n[INFO] Running study.translation.AccountTest\r\n[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.080 s -- in study.translation.AccountTest\r\n[INFO] Running study.translation.InstructionParserTest\r\n[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in study.translation.InstructionParserTest\r\n[INFO] Running study.translation.RectangleTest\r\n[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in study.translation.RectangleTest\r\n[INFO] \r\n[INFO] Results:\r\n[INFO] \r\n[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0\r\n[INFO] \r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] BUILD SUCCESS\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Total time:  3.844 s\r\n[INFO] Finished at: 2026-10-29T23:05:26+08:00\r\n[INFO] ------------------------------------------------------------------------\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

@@ -1,10 +1,28 @@
-# Java与仓颉测试项目
+# 蒋逸舟 · 第八周：代码仓库预处理
 
-个人交付按分支保存：
+将完整代码库整理为下一步“材料分类”可直接读取的材料包。程序保存文件与工程事实，Agent可补充仓库说明；本步骤不生成翻译骨架或测试译文。
 
-- [蔡俊杰week6：第六周材料](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week6)
-- [蔡俊杰week7：第七周骨架提取与参考测试](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week7)
-- [蒋逸舟week7：上下文查找工具、可行性验证方法执行、ReCodeAgent论文阅读](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%92%8B%E9%80%B8%E8%88%9Fweek7)
-- [hzy-week7：项目约定与公共材料工具](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/hzy-week7)
+**选择代码库 → 点击预处理 → 可选生成并导入Agent说明 → 整体交给材料分类。**
 
-main保留团队导航；个人分支保存源码、使用说明和验证记录。误合入的个人材料已通过后续提交撤下，既有提交历史保留供追溯。
+|用途|入口|
+|---|---|
+|了解输入、处理和交付内容|[预处理总览](week8/README.md)|
+|使用窗口完成操作|[操作教程](week8/docs/02-操作教程.md)|
+|理解Agent说明及输出格式|[提示词与模板](week8/prompts/仓库预处理说明.md)|
+|查看完整仓库测试过程|[测试样例](week8/docs/06-完整仓库测试样例.md)|
+|查看结果文件的作用|[输出说明](week8/docs/03-输入输出与文件说明.md)|
+|核对验证结果和限制|[验证记录](week8/docs/05-验证记录.md)|
+
+## 目录结构
+
+```text
+week8/打开预处理工具.vbs    双击打开操作窗口
+week8/tools/              文件整理、Java结构提取、Agent说明检查和界面
+week8/prompts/            Agent任务及JSON输出模板说明
+week8/docs/               设计、操作、异常处理与测试说明
+week8/examples/           完整仓库处理结果及Agent说明样例
+week8/tests/              工具自身自动测试
+week8/validation/         发布验证日志和摘要
+```
+
+本分支为“蒋逸舟-week8”，保存第八周工具与配套材料。第七周交付仍由相应个人分支保存。本工具面向完整仓库组织输入；当前样例规模较小，大型工程适配及性能需要另行测试。

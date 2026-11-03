@@ -1,0 +1,1148 @@
+[
+  {
+    "source": "file:generated/business-tests/original/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/original/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/original/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/original/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/original/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/original/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/original/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/skeleton/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/skeleton/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/skeleton/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/skeleton/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/skeleton/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/skeleton/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/business-tests/skeleton/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/single-account/original/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/single-account/original/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/single-account/original/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/single-account/skeleton/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/single-account/skeleton/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:generated/single-account/skeleton/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::0",
+    "kind": "import",
+    "target_text": "com.sun.source.tree.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::31",
+    "kind": "import",
+    "target_text": "com.sun.source.util.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::62",
+    "kind": "import",
+    "target_text": "javax.tools.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::85",
+    "kind": "import",
+    "target_text": "java.io.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::104",
+    "kind": "import",
+    "target_text": "java.nio.charset.StandardCharsets",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::147",
+    "kind": "import",
+    "target_text": "java.nio.file.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::172",
+    "kind": "import",
+    "target_text": "java.security.MessageDigest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::209",
+    "kind": "import",
+    "target_text": "java.util.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/JavaTestSkeletonExtractor.java::230",
+    "kind": "import",
+    "target_text": "java.util.stream.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/main/java/study/translation/InstructionParser.java::28",
+    "kind": "import",
+    "target_text": "java.util.ArrayList",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::0",
+    "kind": "import",
+    "target_text": "com.google.gson.JsonElement",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::36",
+    "kind": "import",
+    "target_text": "com.google.gson.JsonObject",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::71",
+    "kind": "import",
+    "target_text": "com.google.gson.JsonParser",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.DisplayName",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::148",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::184",
+    "kind": "import",
+    "target_text": "java.io.IOException",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::212",
+    "kind": "import",
+    "target_text": "java.net.URISyntaxException",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::248",
+    "kind": "import",
+    "target_text": "java.nio.charset.StandardCharsets",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::290",
+    "kind": "import",
+    "target_text": "java.nio.file.Files",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::318",
+    "kind": "import",
+    "target_text": "java.nio.file.Path",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::345",
+    "kind": "import",
+    "target_text": "java.util.ArrayList",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::373",
+    "kind": "import",
+    "target_text": "java.util.Comparator",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::402",
+    "kind": "import",
+    "target_text": "java.util.HashSet",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::428",
+    "kind": "import",
+    "target_text": "java.util.List",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::451",
+    "kind": "import",
+    "target_text": "java.util.Set",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::473",
+    "kind": "import",
+    "target_text": "java.util.UUID",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::496",
+    "kind": "import",
+    "target_text": "java.util.concurrent.TimeUnit",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/JavaTestSkeletonExtractorTest.java::535",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/study/translation/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/study/translation/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/study/translation/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/study/translation/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/study/translation/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/study/translation/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:src/test/java/study/translation/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:tests/fixtures/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/original/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural/skeleton/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/original/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/structural-reparsed/skeleton/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/InstructionParserTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/original/study/translation/RectangleTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/InstructionParserTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6/skeleton/study/translation/RectangleTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/InstructionParserTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/original/study/translation/RectangleTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/InstructionParserTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/extractor-003/week6-reparsed/skeleton/study/translation/RectangleTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/original/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/original/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/original/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/original/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/original/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/original/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/original/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/skeleton/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/skeleton/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/skeleton/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/skeleton/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/skeleton/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/skeleton/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business/skeleton/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/original/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/original/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/original/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/original/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/original/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/original/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/original/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/skeleton/AccountTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/skeleton/AccountTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/skeleton/AccountTest.java::106",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/skeleton/InstructionParserTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/skeleton/InstructionParserTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/skeleton/RectangleTest.java::28",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/business-reparsed/skeleton/RectangleTest.java::64",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/original/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural/skeleton/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/original/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/ParameterCases.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/ParameterCases.java::50",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.ParameterizedTest",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/ParameterCases.java::101",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.params.provider.ValueSource",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/ShadowedTest.java::18",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.*",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/StructureCases.java::19",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Test",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/StructureCases.java::54",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.BeforeEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/StructureCases.java::95",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.AfterEach",
+    "resolution": "unbound"
+  },
+  {
+    "source": "file:validation/layout-20261029/extractor/structural-reparsed/skeleton/StructureCases.java::135",
+    "kind": "import",
+    "target_text": "org.junit.jupiter.api.Assertions.*",
+    "resolution": "unbound"
+  }
+]

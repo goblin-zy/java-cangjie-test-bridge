@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:docs/飞书汇报材料/01-蔡俊杰第七周-汇报正文.md",
+    "path": "docs/飞书汇报材料/01-蔡俊杰第七周-汇报正文.md",
+    "status": "snapshotted",
+    "sha256": "29f358a6dd274f95aecc79b4834dc1ce2b3ddcdb4b87ef121de04da384011e11",
+    "size": 1595,
+    "snapshot": "snapshots/docs/飞书汇报材料/01-蔡俊杰第七周-汇报正文.md",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 643,
+  "text": "# 蔡俊杰第七周\n\n汇报时间：2026年10月28日晚上  \n负责内容：Java测试骨架提取、参考仓颉测试。\n\n## 一、Java测试骨架提取\n\n1. 使用JDK语法树接口解析Java文件，支持单个文件和目录输入。\n2. 保留包、导入、类、字段及初始化、方法签名和注解，将方法体替换为明确占位。\n3. 输出Java骨架和`members.json`，保存原始方法体、成员角色、签名及源码／骨架位置对应关系。\n4. 使用现有三个业务测试类验收，提取出27个成员：24个测试方法、1个初始化方法、1个辅助方法、1个字段。\n5. 核对重载、嵌套类、构造器委托等结构；原方法体回填后与原文件逐字节一致。\n\n## 二、参考仓颉测试\n\n1. 整理矩形、指令解析、账户三个模块，共24个参考测试，并对照Java测试的输入、操作和预期结果。\n2. 编译运行参考业务实现和测试，24项全部通过。\n3. 在独立业务副本中分别加入四种错误：取款加钱、共享边判断错误、INC映射错误、取款失败后错误扣费；参考测试均发现了相应错误。\n4. 保存编译与测试日志、逐项结果、源码哈希和错误补丁，正式源码与测试保持不变。\n\n## 三、运行与交付\n\n1. 将提取器、Java业务代码和测试合并为标准Java项目，支持VS Code的`Run Test`和测试面板。\n2. Java共30项测试通过：业务测试24项、提取器自测6项。\n3. 配置仓颉测试任务，支持全部、单个测试函数及按测试类运行；补充使用说明和复现文档。\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

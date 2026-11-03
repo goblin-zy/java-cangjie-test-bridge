@@ -1,0 +1,73 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java",
+    "path": "validation/extractor-003/structural/skeleton/ShadowedTest.java",
+    "status": "snapshotted",
+    "sha256": "3b325d3ce1935c2a83d1d68687d16bc6d89a7faf6a8aef3a5cb480653dda3e04",
+    "size": 267,
+    "snapshot": "snapshots/validation/extractor-003/structural/skeleton/ShadowedTest.java",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown",
+    "parse_status": "parsed"
+  },
+  "symbols": [
+    {
+      "type": "symbol",
+      "kind": "IMPORT",
+      "name": "org.junit.jupiter.api.*",
+      "owner": "",
+      "annotations": "",
+      "start_utf16": 18,
+      "end_utf16": 49,
+      "line": 2,
+      "id": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java::18",
+      "file": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java",
+      "module": "module:."
+    },
+    {
+      "type": "symbol",
+      "kind": "ANNOTATION_TYPE",
+      "name": "Test",
+      "owner": "Test",
+      "annotations": "",
+      "start_utf16": 51,
+      "end_utf16": 70,
+      "line": 4,
+      "id": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java::51",
+      "file": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java",
+      "module": "module:."
+    },
+    {
+      "type": "symbol",
+      "kind": "CLASS",
+      "name": "ShadowedTest",
+      "owner": "ShadowedTest",
+      "annotations": "",
+      "start_utf16": 71,
+      "end_utf16": 236,
+      "line": 5,
+      "id": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java::71",
+      "file": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java",
+      "module": "module:."
+    },
+    {
+      "type": "symbol",
+      "kind": "METHOD",
+      "name": "customAnnotation()",
+      "owner": "ShadowedTest",
+      "annotations": "@Test",
+      "start_utf16": 124,
+      "end_utf16": 234,
+      "line": 7,
+      "id": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java::124",
+      "file": "file:validation/extractor-003/structural/skeleton/ShadowedTest.java",
+      "module": "module:."
+    }
+  ],
+  "text_start_character": 0,
+  "text_end_character": 237,
+  "text": "package fixtures;\nimport org.junit.jupiter.api.*;\n\n@interface Test { }\nclass ShadowedTest {\n    // 同名本地注解不能被误认为JUnit测试。\n    @Test void customAnnotation() {\n        throw new UnsupportedOperationException(\"SKELETON_PLACEHOLDER\");\n    }\n}\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}

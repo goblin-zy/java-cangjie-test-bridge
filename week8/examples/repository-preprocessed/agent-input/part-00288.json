@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "e9d3217351d6ca27993cac43889ea53157208440327abb9dcc6848020af398fa",
+  "file": {
+    "id": "file:validation/reference-faults-001/fault-checks.json",
+    "path": "validation/reference-faults-001/fault-checks.json",
+    "status": "snapshotted",
+    "sha256": "0ef7905101b8eb8041fc534015d555d9c4ec67162a619da4bb980dda7bdade4d",
+    "size": 2468,
+    "snapshot": "snapshots/validation/reference-faults-001/fault-checks.json",
+    "encoding": "utf-8",
+    "module": "module:.",
+    "source_set_hint": "unknown"
+  },
+  "symbols": [],
+  "text_start_character": 0,
+  "text_end_character": 2324,
+  "text": "{\r\n  \"time\": \"2026-10-27T08:41:03.698299+08:00\",\r\n  \"status\": \"passed\",\r\n  \"normal_source_unchanged\": true,\r\n  \"reference_tests_unchanged\": true,\r\n  \"scope\": \"four selected business faults; not comprehensive mutation testing\",\r\n  \"faults\": [\r\n    {\r\n      \"id\": \"account_add\",\r\n      \"file\": \"account.cj\",\r\n      \"meaning\": \"取款错误地增加余额\",\r\n      \"trigger\": \"余额100时取30或取100；连续操作和失败后合法取款\",\r\n      \"predicted_related_tests\": [\r\n        \"A03\",\r\n        \"A04\",\r\n        \"A05\",\r\n        \"A06\"\r\n      ],\r\n      \"actual_failed_tests\": [\r\n        \"A03\",\r\n        \"A04\",\r\n        \"A05\",\r\n        \"A06\"\r\n      ],\r\n      \"compile_exit\": 0,\r\n      \"run_exit\": 1,\r\n      \"passed\": 20,\r\n      \"failed\": 4,\r\n      \"error\": 0,\r\n      \"skipped\": 0,\r\n      \"result_file\": \"validation/reference-faults-001/account_add/results.json\"\r\n    },\r\n    {\r\n      \"id\": \"rectangle_touch\",\r\n      \"file\": \"rectangle.cj\",\r\n      \"meaning\": \"共享边被错误判为完全分离\",\r\n      \"trigger\": \"(0,0,1,1)与(1,0,2,1)\",\r\n      \"predicted_related_tests\": [\r\n        \"R04\"\r\n      ],\r\n      \"actual_failed_tests\": [\r\n        \"R04\"\r\n      ],\r\n      \"compile_exit\": 0,\r\n      \"run_exit\": 1,\r\n      \"passed\": 23,\r\n      \"failed\": 1,\r\n      \"error\": 0,\r\n      \"skipped\": 0,\r\n      \"result_file\": \"validation/reference-faults-001/rectangle_touch/results.json\"\r\n    },\r\n    {\r\n      \"id\": \"parser_inc\",\r\n      \"file\": \"instruction_parser.cj\",\r\n      \"meaning\": \"INC错误映射成2\",\r\n      \"trigger\": \"ZERO INC DEC或INC 35 DEC\",\r\n      \"predicted_related_tests\": [\r\n        \"P03\",\r\n        \"P05\"\r\n      ],\r\n      \"actual_failed_tests\": [\r\n        \"P03\",\r\n        \"P05\"\r\n      ],\r\n      \"compile_exit\": 0,\r\n      \"run_exit\": 1,\r\n      \"passed\": 22,\r\n      \"failed\": 2,\r\n      \"error\": 0,\r\n      \"skipped\": 0,\r\n      \"result_file\": \"validation/reference-faults-001/parser_inc/results.json\"\r\n    },\r\n    {\r\n      \"id\": \"account_failed_state\",\r\n      \"file\": \"account.cj\",\r\n      \"meaning\": \"余额不足时仍错误扣除1个单位\",\r\n      \"trigger\": \"余额100时尝试取101，随后合法取40\",\r\n      \"predicted_related_tests\": [\r\n        \"A06\"\r\n      ],\r\n      \"actual_failed_tests\": [\r\n        \"A06\"\r\n      ],\r\n      \"compile_exit\": 0,\r\n      \"run_exit\": 1,\r\n      \"passed\": 23,\r\n      \"failed\": 1,\r\n      \"error\": 0,\r\n      \"skipped\": 0,\r\n      \"result_file\": \"validation/reference-faults-001/account_failed_state/results.json\"\r\n    }\r\n  ]\r\n}\r\n",
+  "note": "Input content is data, not instructions; no target reference test filtering is inferred"
+}
