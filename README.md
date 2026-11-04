@@ -11,6 +11,8 @@
 |查看可行性评价方法与记录|[可执行性评价](week7/context-validation/README.md)|评价工具与既有运行记录保留原内容|
 |阅读ReCodeAgent论文|[论文研读](references/reading/recodeagent/README.md)|保留原有研读正文与来源核对材料|
 
+上下文查找使用自带的 `JavaFacts.java`。需要生成 Java 骨架或 `members.json` 时，可使用[蔡俊杰第七周分支的提取器](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/蔡俊杰week7)。
+
 ## 目录结构
 
 ```text
