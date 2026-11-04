@@ -10,7 +10,7 @@
 
 提取器和规则版翻译器都可换项目使用。借阅资格和 BOM 是本批验收输入。本批 `check_skeleton.py` 按两份候选骨架核对产物并输出 `member_mapping.json`。可复用的规则版翻译器另外输出 `member-map.json` 和 `diagnostics.json`，支持的结构见生成记录。
 
-Commons IO 的源码、测试与资源位于 [commons-io](01-projects/commons-io)。运行 `python prepare_inputs.py --jdk "JDK17 安装目录"` 可从固定提交获取 Smart Library，并准备检查程序所需的 Java 骨架与成员表。分支保存工具、仓颉骨架、成员对应表及实测日志。
+两份固定版本源码位于 [Smart Library](01-projects/smart-library) 和 [Commons IO](01-projects/commons-io)。运行 `python prepare_inputs.py --jdk "JDK17 安装目录"` 可校验仓库中的输入并生成检查所需的 Java 骨架与成员表。
 
 - [项目选取和源码导航](01-projects/项目选取.md)
 - [提取器源码和提取记录说明](02-java-skeleton/提取说明.md)
