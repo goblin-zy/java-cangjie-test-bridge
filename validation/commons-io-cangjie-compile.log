@@ -1,0 +1,55 @@
+warning: unused variable:'TEST_BOM_1'
+ ==> outputs\week8�̿���\03-cangjie-skeleton\model-output\ByteOrderMarkTest.cj:9:24:
+  | 
+9 |     private static let TEST_BOM_1: Option<ByteOrderMark> = None
+  |                        ^ unused variable
+  | 
+  # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+note: the warning originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> outputs\week8�̿���\03-cangjie-skeleton\model-output\ByteOrderMarkTest.cj:6:1:
+   | 
+6  |   @Test
+   |  _^
+7  | | class ByteOrderMarkTest {
+   | | ...
+57 | | }
+   | |_^
+   | 
+
+warning: unused variable:'TEST_BOM_2'
+  ==> outputs\week8�̿���\03-cangjie-skeleton\model-output\ByteOrderMarkTest.cj:10:24:
+   | 
+10 |     private static let TEST_BOM_2: Option<ByteOrderMark> = None
+   |                        ^ unused variable
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+note: the warning originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> outputs\week8�̿���\03-cangjie-skeleton\model-output\ByteOrderMarkTest.cj:6:1:
+   | 
+6  |   @Test
+   |  _^
+7  | | class ByteOrderMarkTest {
+   | | ...
+57 | | }
+   | |_^
+   | 
+
+warning: unused variable:'TEST_BOM_3'
+  ==> outputs\week8�̿���\03-cangjie-skeleton\model-output\ByteOrderMarkTest.cj:11:24:
+   | 
+11 |     private static let TEST_BOM_3: Option<ByteOrderMark> = None
+   |                        ^ unused variable
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+note: the warning originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> outputs\week8�̿���\03-cangjie-skeleton\model-output\ByteOrderMarkTest.cj:6:1:
+   | 
+6  |   @Test
+   |  _^
+7  | | class ByteOrderMarkTest {
+   | | ...
+57 | | }
+   | |_^
+   | 
+
+3 warnings generated, 3 warnings printed.

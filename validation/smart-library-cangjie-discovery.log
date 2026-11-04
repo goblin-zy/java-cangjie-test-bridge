@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------------------------------
+TP: week8_library, RESULT:
+    TCS: DefaultBorrowPolicyUnitTest, RESULT:
+    [ NORUN  ] CASE: canBorrow_returnsFalse_whenMemberIsNull
+    [ NORUN  ] CASE: canBorrow_returnsFalse_whenMemberInactive
+    [ NORUN  ] CASE: canBorrow_returnsFalse_whenActiveBorrowsEqualsMax
+    [ NORUN  ] CASE: canBorrow_returnsTrue_whenActiveBorrowsLessThanMax_andNoOverdue_andMemberActive
+    [ NORUN  ] CASE: canBorrow_returnsFalse_whenHasOverdueTrue
+Summary: TOTAL: 5, SKIPPED: 0
+--------------------------------------------------------------------------------------------------

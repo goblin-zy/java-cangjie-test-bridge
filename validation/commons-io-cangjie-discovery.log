@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------------------------
+TP: week8_io, RESULT:
+    TCS: ByteOrderMarkTest, RESULT:
+    [ NORUN  ] CASE: testConstantCharsetNames
+    [ NORUN  ] CASE: testConstructorExceptions
+    [ NORUN  ] CASE: testEquals
+    [ NORUN  ] CASE: testGetBytes
+    [ NORUN  ] CASE: testGetCharsetName
+    [ NORUN  ] CASE: testGetInt
+    [ NORUN  ] CASE: testHashCode
+    [ NORUN  ] CASE: testLength
+    [ NORUN  ] CASE: testToString
+Summary: TOTAL: 9, SKIPPED: 0
+--------------------------------------------------------------------------------------------------

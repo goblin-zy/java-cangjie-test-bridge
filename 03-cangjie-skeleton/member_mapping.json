@@ -1,0 +1,461 @@
+[
+  {
+    "source_members_file": "02-java-skeleton/smart-library/members.json",
+    "source_member_id": "DefaultBorrowPolicyUnitTest.java::smartlibrary.Part3_Testing.Unit.policy.DefaultBorrowPolicyUnitTest#canBorrow_returnsFalse_whenMemberIsNull()",
+    "source_location": {
+      "file": "original/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 313,
+      "end_offset_utf16_exclusive": 505,
+      "start_line": 12,
+      "start_column": 5,
+      "end_line": 17,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 313,
+      "end_offset_utf16_exclusive": 450,
+      "start_line": 12,
+      "start_column": 5,
+      "end_line": 15,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/DefaultBorrowPolicyUnitTest.cj",
+    "target_line": 8,
+    "target_member": "week8_library.DefaultBorrowPolicyUnitTest.canBorrow_returnsFalse_whenMemberIsNull",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/smart-library/members.json",
+    "source_member_id": "DefaultBorrowPolicyUnitTest.java::smartlibrary.Part3_Testing.Unit.policy.DefaultBorrowPolicyUnitTest#canBorrow_returnsFalse_whenMemberInactive()",
+    "source_location": {
+      "file": "original/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 515,
+      "end_offset_utf16_exclusive": 797,
+      "start_line": 19,
+      "start_column": 5,
+      "end_line": 25,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 460,
+      "end_offset_utf16_exclusive": 599,
+      "start_line": 17,
+      "start_column": 5,
+      "end_line": 20,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/DefaultBorrowPolicyUnitTest.cj",
+    "target_line": 13,
+    "target_member": "week8_library.DefaultBorrowPolicyUnitTest.canBorrow_returnsFalse_whenMemberInactive",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/smart-library/members.json",
+    "source_member_id": "DefaultBorrowPolicyUnitTest.java::smartlibrary.Part3_Testing.Unit.policy.DefaultBorrowPolicyUnitTest#canBorrow_returnsFalse_whenActiveBorrowsEqualsMax()",
+    "source_location": {
+      "file": "original/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 807,
+      "end_offset_utf16_exclusive": 1152,
+      "start_line": 27,
+      "start_column": 5,
+      "end_line": 34,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 609,
+      "end_offset_utf16_exclusive": 756,
+      "start_line": 22,
+      "start_column": 5,
+      "end_line": 25,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/DefaultBorrowPolicyUnitTest.cj",
+    "target_line": 18,
+    "target_member": "week8_library.DefaultBorrowPolicyUnitTest.canBorrow_returnsFalse_whenActiveBorrowsEqualsMax",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/smart-library/members.json",
+    "source_member_id": "DefaultBorrowPolicyUnitTest.java::smartlibrary.Part3_Testing.Unit.policy.DefaultBorrowPolicyUnitTest#canBorrow_returnsTrue_whenActiveBorrowsLessThanMax_andNoOverdue_andMemberActive()",
+    "source_location": {
+      "file": "original/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 1162,
+      "end_offset_utf16_exclusive": 1576,
+      "start_line": 36,
+      "start_column": 5,
+      "end_line": 44,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 766,
+      "end_offset_utf16_exclusive": 943,
+      "start_line": 27,
+      "start_column": 5,
+      "end_line": 30,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/DefaultBorrowPolicyUnitTest.cj",
+    "target_line": 23,
+    "target_member": "week8_library.DefaultBorrowPolicyUnitTest.canBorrow_returnsTrue_whenActiveBorrowsLessThanMax_andNoOverdue_andMemberActive",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/smart-library/members.json",
+    "source_member_id": "DefaultBorrowPolicyUnitTest.java::smartlibrary.Part3_Testing.Unit.policy.DefaultBorrowPolicyUnitTest#canBorrow_returnsFalse_whenHasOverdueTrue()",
+    "source_location": {
+      "file": "original/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 1586,
+      "end_offset_utf16_exclusive": 1850,
+      "start_line": 46,
+      "start_column": 5,
+      "end_line": 52,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DefaultBorrowPolicyUnitTest.java",
+      "start_offset_utf16": 953,
+      "end_offset_utf16_exclusive": 1092,
+      "start_line": 32,
+      "start_column": 5,
+      "end_line": 35,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/DefaultBorrowPolicyUnitTest.cj",
+    "target_line": 28,
+    "target_member": "week8_library.DefaultBorrowPolicyUnitTest.canBorrow_returnsFalse_whenHasOverdueTrue",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#field:TEST_BOM_1",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1301,
+      "end_offset_utf16_exclusive": 1379,
+      "start_line": 34,
+      "start_column": 5,
+      "end_line": 34,
+      "end_column": 82
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1301,
+      "end_offset_utf16_exclusive": 1379,
+      "start_line": 34,
+      "start_column": 5,
+      "end_line": 34,
+      "end_column": 82
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 9,
+    "target_member": "week8_io.ByteOrderMarkTest.TEST_BOM_1",
+    "fill_slot": "initializer",
+    "source_initializer": "new ByteOrderMark(\"test1\", 1)"
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#field:TEST_BOM_2",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1384,
+      "end_offset_utf16_exclusive": 1465,
+      "start_line": 35,
+      "start_column": 5,
+      "end_line": 35,
+      "end_column": 85
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1384,
+      "end_offset_utf16_exclusive": 1465,
+      "start_line": 35,
+      "start_column": 5,
+      "end_line": 35,
+      "end_column": 85
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 10,
+    "target_member": "week8_io.ByteOrderMarkTest.TEST_BOM_2",
+    "fill_slot": "initializer",
+    "source_initializer": "new ByteOrderMark(\"test2\", 1, 2)"
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#field:TEST_BOM_3",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1470,
+      "end_offset_utf16_exclusive": 1554,
+      "start_line": 36,
+      "start_column": 5,
+      "end_line": 36,
+      "end_column": 88
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1470,
+      "end_offset_utf16_exclusive": 1554,
+      "start_line": 36,
+      "start_column": 5,
+      "end_line": 36,
+      "end_column": 88
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 11,
+    "target_member": "week8_io.ByteOrderMarkTest.TEST_BOM_3",
+    "fill_slot": "initializer",
+    "source_initializer": "new ByteOrderMark(\"test3\", 1, 2, 3)"
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testConstantCharsetNames()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1688,
+      "end_offset_utf16_exclusive": 2146,
+      "start_line": 39,
+      "start_column": 5,
+      "end_line": 46,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1688,
+      "end_offset_utf16_exclusive": 1817,
+      "start_line": 39,
+      "start_column": 5,
+      "end_line": 42,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 13,
+    "target_member": "week8_io.ByteOrderMarkTest.testConstantCharsetNames",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testConstructorExceptions()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2180,
+      "end_offset_utf16_exclusive": 2597,
+      "start_line": 49,
+      "start_column": 5,
+      "end_line": 55,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 1851,
+      "end_offset_utf16_exclusive": 1981,
+      "start_line": 45,
+      "start_column": 5,
+      "end_line": 48,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 18,
+    "target_member": "week8_io.ByteOrderMarkTest.testConstructorExceptions",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testEquals()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2657,
+      "end_offset_utf16_exclusive": 3975,
+      "start_line": 58,
+      "start_column": 5,
+      "end_line": 81,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2041,
+      "end_offset_utf16_exclusive": 2198,
+      "start_line": 51,
+      "start_column": 5,
+      "end_line": 55,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 23,
+    "target_member": "week8_io.ByteOrderMarkTest.testEquals",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testGetBytes()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 4031,
+      "end_offset_utf16_exclusive": 4503,
+      "start_line": 84,
+      "start_column": 5,
+      "end_line": 91,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2254,
+      "end_offset_utf16_exclusive": 2371,
+      "start_line": 58,
+      "start_column": 5,
+      "end_line": 61,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 28,
+    "target_member": "week8_io.ByteOrderMarkTest.testGetBytes",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testGetCharsetName()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 4565,
+      "end_offset_utf16_exclusive": 4837,
+      "start_line": 94,
+      "start_column": 5,
+      "end_line": 99,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2433,
+      "end_offset_utf16_exclusive": 2556,
+      "start_line": 64,
+      "start_column": 5,
+      "end_line": 67,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 33,
+    "target_member": "week8_io.ByteOrderMarkTest.testGetCharsetName",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testGetInt()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 4891,
+      "end_offset_utf16_exclusive": 5293,
+      "start_line": 102,
+      "start_column": 5,
+      "end_line": 110,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2610,
+      "end_offset_utf16_exclusive": 2725,
+      "start_line": 70,
+      "start_column": 5,
+      "end_line": 73,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 38,
+    "target_member": "week8_io.ByteOrderMarkTest.testGetInt",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testHashCode()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 5349,
+      "end_offset_utf16_exclusive": 5692,
+      "start_line": 113,
+      "start_column": 5,
+      "end_line": 119,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2781,
+      "end_offset_utf16_exclusive": 2898,
+      "start_line": 76,
+      "start_column": 5,
+      "end_line": 79,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 43,
+    "target_member": "week8_io.ByteOrderMarkTest.testHashCode",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testLength()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 5746,
+      "end_offset_utf16_exclusive": 5974,
+      "start_line": 122,
+      "start_column": 5,
+      "end_line": 127,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 2952,
+      "end_offset_utf16_exclusive": 3067,
+      "start_line": 82,
+      "start_column": 5,
+      "end_line": 85,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 48,
+    "target_member": "week8_io.ByteOrderMarkTest.testLength",
+    "fill_slot": "body",
+    "source_initializer": null
+  },
+  {
+    "source_members_file": "02-java-skeleton/commons-io/members.json",
+    "source_member_id": "ByteOrderMarkTest.java::org.apache.commons.io.ByteOrderMarkTest#testToString()",
+    "source_location": {
+      "file": "original/ByteOrderMarkTest.java",
+      "start_offset_utf16": 6030,
+      "end_offset_utf16_exclusive": 6338,
+      "start_line": 130,
+      "start_column": 5,
+      "end_line": 135,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/ByteOrderMarkTest.java",
+      "start_offset_utf16": 3123,
+      "end_offset_utf16_exclusive": 3240,
+      "start_line": 88,
+      "start_column": 5,
+      "end_line": 91,
+      "end_column": 5
+    },
+    "target_file": "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+    "target_line": 53,
+    "target_member": "week8_io.ByteOrderMarkTest.testToString",
+    "fill_slot": "body",
+    "source_initializer": null
+  }
+]

@@ -1,9 +1,0 @@
-﻿Time: 2026-10-27T10:20:15.3991750+08:00
-Runner: week7 automated reference validation
-Runtime: localfix (nonofficial experimental runtime)
-Runtime SHA256: 69bb60978f2a0423b11859915fa2c0d84d5a7165caf90e49958ba301b7aa0f3f
-Selected filter: *
-Selected expected tests: 24
-Command: cjc D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\implementation\account.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\implementation\instruction_parser.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\implementation\rectangle.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\tests\account_test.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\tests\instructionparser_test.cj D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\reference\cangjie\tests\rectangle_test.cj --test -o D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\validation\cangjie-filter-all-001\reference-tests.exe
-Then: D:\文档\ChatGPT\一人一事 2\outputs\week7-skeleton-reference\validation\cangjie-filter-all-001\reference-tests.exe --no-color --no-progress
-SDK installation path omitted; runtime identity recorded above.

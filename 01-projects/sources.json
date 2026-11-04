@@ -1,0 +1,16 @@
+[
+  {
+    "name": "smart-library",
+    "repository": "violazeneli31/LibraryManagementSystemTesting",
+    "commit": "a3224ae89ad58bd73721f692d80efe20d794711e",
+    "selected_test": "src/test/java/smartlibrary/Part3_Testing/Unit/policy/DefaultBorrowPolicyUnitTest.java",
+    "sha256": "fd4d0eb5589b1dc74db84b380ecddb5e1d99b53c8df3bdbeaef26b22bcb794c8"
+  },
+  {
+    "name": "commons-io",
+    "repository": "apache/commons-io",
+    "commit": "290d72eda9152d1e11b79d48453908ff3f6b9897",
+    "selected_test": "src/test/java/org/apache/commons/io/ByteOrderMarkTest.java",
+    "sha256": "a799ce4ec9479f77e64fcd95a62ab9530302683129f5449fdd581014c3afd1d3"
+  }
+]

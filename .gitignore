@@ -1,13 +1,5 @@
-build/
-**/target/
+/.build/
+/01-projects/smart-library/
+/01-projects/commons-io/
+/02-java-skeleton/smart-library/
 **/__pycache__/
-*.class
-*.exe
-*.a
-*.cjo
-*.dll
-*.zip
-
-# Recreated by VS Code/JUnit on every run.
-generated/vscode-tests/
-generated/vscode-run-*/
