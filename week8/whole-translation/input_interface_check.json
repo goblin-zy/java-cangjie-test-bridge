@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04",
+  "skeleton_branch_commit": "2635d3172aa3b14508e2e47c9eeb9fa95c2573a7",
+  "checked_source_member_maps": 2,
+  "checked_mapping_rows": 17,
+  "test_methods": 14,
+  "field_initializers": 3,
+  "upstream_missing_extractions": [
+    "02-java-skeleton\\smart-library\\members.json"
+  ],
+  "missing_source_metadata_rebuilt_in_cache": true,
+  "upstream_files_modified": false,
+  "source_ids_hashes_and_locations": "PASS",
+  "target_files_and_member_names": "PASS",
+  "config_and_prompt_json": "PASS",
+  "document_links": "PASS",
+  "translation_run": "NOT_RUN",
+  "compile_and_execution": "NOT_RUN",
+  "checks_scope": "Input interface consistency only; no translated behavior claim"
+}

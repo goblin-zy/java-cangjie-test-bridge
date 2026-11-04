@@ -1,0 +1,51 @@
+{
+  "task_id": "replace-with-task-id",
+  "mode": "whole",
+  "project_root": "填写实际Java工程根目录",
+  "preprocessed_source_root": "填写本轮实际源码根；未改写时与原项目对应",
+  "preprocessing_report": null,
+  "targets": [
+    {
+      "source_test": "填写完整测试文件",
+      "source_class": "填写完整类型名",
+      "members_file": "填写实际members.json",
+      "target_skeleton": "填写已有仓颉骨架.cj",
+      "target_output": "tests/填写输出相对文件名.cj"
+    }
+  ],
+  "member_mapping": {
+    "file": "填写member_mapping.json或member-map.json",
+    "base_dir": "填写映射中相对路径实际采用的材料根目录"
+  },
+  "translation_rules": "填写实际translation_rules.json",
+  "project_materials": {
+    "json": "填写project_materials.json或等价已确认材料",
+    "markdown": null
+  },
+  "target_business": {
+    "paths": [],
+    "implementation_status": "填写REAL_IMPLEMENTATION或DECLARATIONS_ONLY或UNAVAILABLE"
+  },
+  "contexts": [],
+  "tools": {
+    "context_tool": null,
+    "public_materials_tool": null,
+    "cangjie_runner": null
+  },
+  "output_dir": "填写不存在的新输出目录",
+  "constraints": {
+    "allowed_output_files": ["tests/填写输出相对文件名.cj"],
+    "excluded_source_members": [],
+    "protected_paths": [],
+    "allowed_target_examples": [],
+    "forbidden_reference_paths": [],
+    "allow_test_helpers": true,
+    "allow_business_changes": false
+  },
+  "verification": {
+    "allow_compile": false,
+    "allow_execution": false,
+    "sdk_root": null,
+    "runtime_label": null
+  }
+}
