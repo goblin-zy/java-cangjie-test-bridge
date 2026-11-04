@@ -16,5 +16,10 @@
   "document_links": "PASS",
   "translation_run": "NOT_RUN",
   "compile_and_execution": "NOT_RUN",
-  "checks_scope": "Input interface consistency only; no translated behavior claim"
+  "checks_scope": "Input interface consistency only; no translated behavior claim",
+  "github_workspace_paths": {
+    "fresh_download": "PASS",
+    "pinned_dependencies": 3,
+    "resolved_config_paths": 11
+  }
 }

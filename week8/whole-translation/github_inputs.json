@@ -1,0 +1,17 @@
+{
+  "skeleton": {
+    "repository": "goblin-zy/java-cangjie-test-bridge",
+    "commit": "2635d3172aa3b14508e2e47c9eeb9fa95c2573a7",
+    "required_files": ["03-cangjie-skeleton/member_mapping.json", "03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj", "02-java-skeleton/commons-io/members.json", "02-java-skeleton/commons-io/original/ByteOrderMarkTest.java", "01-projects/commons-io/pom.xml"]
+  },
+  "context": {
+    "repository": "goblin-zy/java-cangjie-test-bridge",
+    "commit": "eb43c986d8eeeff1c8e29e248892011b03472565",
+    "required_files": ["week7/context-lookup/context_tool.py", "week7/context-validation/tools/cangjie_runner.py"]
+  },
+  "materials": {
+    "repository": "goblin-zy/java-cangjie-test-bridge",
+    "commit": "820962d6d5621ed1e2485f6003c22cdd629fea8b",
+    "required_files": ["code/Translate/Rule mapping/translation_rules.json", "code/Translate/Project Agreement and Public Materials Generation Tool/pmtool.py"]
+  }
+}

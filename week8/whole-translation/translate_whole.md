@@ -24,7 +24,7 @@
 |目标业务与资源|允许读取的真实仓颉接口/实现、必要资源和配置，以及哪些只是声明占位|
 |当前样例上下文|已有`context_<标识>.json/.md`；缺少且确有查找需要时可调用上下文工具补充|
 
-路径规则：配置中的相对路径从配置所在目录解析；映射文件中的路径从显式提供的`member_mapping.base_dir`解析。规则版映射若将`source_members_file`写成相对生成目录的路径，应按其实际生成目录解析，不能统一猜为映射文件父目录。`members.json`中的`original_file`、`source_location.file`相对于该成员表所在提取目录。历史`input_root`绝对路径仅是来源记录，不要求在本机创建相同路径。
+路径以当前 GitHub 工作区的仓库根为基准。先在根目录运行 `python week8/whole-translation/fetch_inputs.py`，按 `github_inputs.json` 从固定 GitHub 提交取出依赖到 `.deps/`。配置、输出记录和文件引用统一使用工作区相对路径。映射条目中的路径按 `member_mapping.base_dir` 解析，成员表里的原文路径按成员表所在提取目录解析。历史元数据中的绝对路径仅作来源说明。
 
 `targets[].target_output`与`constraints.allowed_output_files`相对于本次`output_dir/translated/`，不得包含绝对路径或父目录跳转。允许新增测试辅助代码时，可在`translated/helpers/`保存确有必要的文件，并在结果中逐一说明；未获允许时报告缺失。资源按约定写入`output_dir/resources/`，元数据写在输出根，不改写配置指定的任何输入。
 
@@ -45,14 +45,14 @@
 
 ## 三、复用已有工具
 
-优先使用实际已经提供的工具，调用前检查当前路径及帮助说明；以下路径均为相应分支或材料根中的位置，不能假定不同个人分支的文件都在同一工作目录。
+优先使用实际已经提供的工具，调用前检查当前路径及帮助说明；各工具从配置的 `tools` 字段取工作区相对路径。依赖来源和版本由 `github_inputs.json` 固定。
 
 ### 1. 上下文查找
 
 蒋逸舟week7中的真实入口为：
 
 ```text
-week7/context-lookup/context_tool.py
+.deps/context/week7/context-lookup/context_tool.py
 ```
 
 仅在现有完整源码及上下文不足时，由你调用：
@@ -67,7 +67,7 @@ python <实际context_tool.py路径> --project <同版本Java项目根> --target
 
 ### 2. 公共材料与规则
 
-hzy-week7的公共材料工具位于`code/Translate/Project Agreement and Public Materials Generation Tool/`。已有`project_materials.json/.md`时优先读取，不重新扫描和生成整套公共材料。若确有证据缺口，可在已配置的工具目录用其`query/show`读取现有索引；需要重新生成公共材料且配置未提供时记录缺失，不自行建立新的映射研究任务。
+公共材料工具通过 `tools.public_materials_tool` 定位。示例中指向 `.deps/materials/code/Translate/Project Agreement and Public Materials Generation Tool/pmtool.py`。已有`project_materials.json/.md`时优先读取，不重新扫描和生成整套公共材料。若确有证据缺口，可在已配置的工具目录用其`query/show`读取现有索引；需要重新生成公共材料且配置未提供时记录缺失，不自行建立新的映射研究任务。
 
 规则应按真实ID、适用条件和版本引用；项目特有名称及业务约束以已确认项目材料为准。未知的框架表达不能仅凭类似代码猜造。现有例子若未编译验证，不当作已验证规则。
 

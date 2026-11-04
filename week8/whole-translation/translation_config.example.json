@@ -1,42 +1,46 @@
 {
-  "task_id": "replace-with-task-id",
+  "task_id": "commons-io-bom",
   "mode": "whole",
-  "project_root": "填写实际Java工程根目录",
-  "preprocessed_source_root": "填写本轮实际源码根；未改写时与原项目对应",
+  "project_root": ".deps/skeleton/01-projects/commons-io",
+  "preprocessed_source_root": ".deps/skeleton/01-projects/commons-io",
   "preprocessing_report": null,
   "targets": [
     {
-      "source_test": "填写完整测试文件",
-      "source_class": "填写完整类型名",
-      "members_file": "填写实际members.json",
-      "target_skeleton": "填写已有仓颉骨架.cj",
-      "target_output": "tests/填写输出相对文件名.cj"
+      "source_test": ".deps/skeleton/02-java-skeleton/commons-io/original/ByteOrderMarkTest.java",
+      "source_class": "org.apache.commons.io.ByteOrderMarkTest",
+      "members_file": ".deps/skeleton/02-java-skeleton/commons-io/members.json",
+      "target_skeleton": ".deps/skeleton/03-cangjie-skeleton/model-output/ByteOrderMarkTest.cj",
+      "target_output": "tests/ByteOrderMarkTest.cj"
     }
   ],
   "member_mapping": {
-    "file": "填写member_mapping.json或member-map.json",
-    "base_dir": "填写映射中相对路径实际采用的材料根目录"
+    "file": ".deps/skeleton/03-cangjie-skeleton/member_mapping.json",
+    "base_dir": ".deps/skeleton"
   },
-  "translation_rules": "填写实际translation_rules.json",
+  "translation_rules": ".deps/materials/code/Translate/Rule mapping/translation_rules.json",
   "project_materials": {
-    "json": "填写project_materials.json或等价已确认材料",
+    "json": null,
     "markdown": null
   },
   "target_business": {
     "paths": [],
-    "implementation_status": "填写REAL_IMPLEMENTATION或DECLARATIONS_ONLY或UNAVAILABLE"
+    "implementation_status": "UNAVAILABLE"
   },
   "contexts": [],
   "tools": {
-    "context_tool": null,
-    "public_materials_tool": null,
-    "cangjie_runner": null
+    "context_tool": ".deps/context/week7/context-lookup/context_tool.py",
+    "public_materials_tool": ".deps/materials/code/Translate/Project Agreement and Public Materials Generation Tool/pmtool.py",
+    "cangjie_runner": ".deps/context/week7/context-validation/tools/cangjie_runner.py"
   },
-  "output_dir": "填写不存在的新输出目录",
+  "output_dir": "week8/runs/commons-io-bom",
   "constraints": {
-    "allowed_output_files": ["tests/填写输出相对文件名.cj"],
+    "allowed_output_files": [
+      "tests/ByteOrderMarkTest.cj"
+    ],
     "excluded_source_members": [],
-    "protected_paths": [],
+    "protected_paths": [
+      ".deps"
+    ],
     "allowed_target_examples": [],
     "forbidden_reference_paths": [],
     "allow_test_helpers": true,

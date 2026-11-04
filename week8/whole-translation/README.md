@@ -4,9 +4,10 @@
 
 ## 使用
 
-1. 准备已有骨架、同版本Java原文和成员表、成员映射、规则及项目材料。
-2. 填写或沿用本次translation_config.json。示例仅供格式参考，不能直接作为真实配置运行；已有路径无需重复填写。
-3. 将以下任务交给Agent：
+1. 在 GitHub 工作区根目录执行 `python week8/whole-translation/fetch_inputs.py`。脚本按 [固定提交清单](github_inputs.json) 将依赖下载到 `.deps/`，并核对所需文件。
+2. 示例配置中的骨架、源码、映射、规则及工具均可按工作区相对路径找到。项目材料及真实目标业务由本轮任务提供，缺项会阻断翻译。
+3. 填写或沿用本次translation_config.json。示例仅供格式参考，不能直接作为真实配置运行；已有路径无需重复填写。
+4. 将以下任务交给Agent：
 
 > 请阅读本目录translate_whole.md，使用“实际translation_config.json路径”执行整体测试翻译。直接读取材料并保存产物；输入不足时按规定报告受阻项，不自行生成业务替代实现。
 
