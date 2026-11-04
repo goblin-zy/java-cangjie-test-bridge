@@ -1,41 +1,10 @@
-# 第七周：上下文查找工具与可执行性评价
+# 可执行性评价与历史记录
 
-负责人：**蒋逸舟**。
+本目录保留仓颉执行评价工具及既有运行记录。当前上下文查找已更新至[context-lookup](../context-lookup/README.md)。
 
-本目录实现本周三项任务中的前两项：上下文查找工具、可行性验证方法执行（当前落实为可执行性评价）。第三项为 [ReCodeAgent论文阅读](../../references/reading/recodeagent/README.md)。三项任务的统一入口与阅读顺序见[根目录总览](../../README.md)。
+- [评价验证方法](docs/评价验证方法与交付说明.md)
+- [评价输出格式](docs/评价输出格式说明.md)
+- [九条账户参考测试报告](validation/repository-account-preupload/execution/report.md)
+- [历史证据检查工具](tools/check_delivery.py)
 
-**开始使用：[逐步操作教程](docs/使用教程.md)。**
-
-| 模块 | 实现与输入 | 实际输出与证据 | 当前边界 |
-| --- | --- | --- | --- |
-| 上下文查找 | [context_lookup.py](tools/context_lookup.py)，复用已有JavaTestSkeletonExtractor和members.json；[示例选择](examples/account/selection.json) | [成员索引](validation/context/index/index.md)、[三份上下文核对](validation/context/export/checks.json)、[普通取款上下文](validation/context/export/context_01.md) | 人工/智能体显式选择依赖；尚未实现自动依赖闭包 |
-| 可执行性评价 | [cangjie_runner.py](tools/cangjie_runner.py)，通用单组/批量执行；[仓库账户入口](tools/evaluate_account.py) | [当前九条参考测试报告](validation/repository-account-preupload/execution/report.md)、[环境与运行库哈希](validation/repository-account-preupload/run_metadata.json) | 当前Windows直接cjc、单包、普通类测试；不判断语义等价 |
-
-## 与现有仓库的关系
-
-不替换week7已有Maven项目、src、reference、VSCode任务及manifest。上下文索引直接调用既有骨架提取器，保留其成员ID、角色、源码位置和原始方法体；沿用原有成员标识。新接口与来源见[接口和格式](docs/接口与输出格式.md)。
-
-当前示例仅使用仓库九条账户测试中的testWithdraw、testSequence、testInsufficientFunds生成上下文。执行评价则运行全部九条账户参考测试。原先五条/两条本地账户演示不作为当前上下文输入。
-
-## 验证状态
-
-- 索引当前仓库8个Java文件、64个成员，示例导出3份上下文、共32条源码证据核对。
-- 7项源码/选择边界测试通过；[可迁移证据检查](validation/portable-checks.json)169/169通过。
-- 上传前当前账户参考测试：预期9、发现9、执行9、通过9，0失败/错误/跳过。
-- 运行库SHA256与仓库披露localfix一致，不能表述成原版SDK验证通过。
-- 保留13组历史评价场景和环境失败、数量不符等证据；历史两条账户结果不计为当前九条或模型翻译成功率。
-
-[统一验收与限制](docs/交付验收与限制.md) · [本周进度汇报](docs/本周进度汇报.md) · [仓库基线](REPOSITORY_BASELINE.json)
-
-输出均选新目录。源码、选择和结果分别留档；runs/是个人新运行目录，不进入Git。历史绝对路径只是当次运行证据，新运行使用当前仓库相对路径。尚未开展模型翻译实验；自动依赖选择、资源分析及完整类型解析有待实现。
-
-## 选择生成与复验入口
-
-|用途|入口|
-|---|---|
-|将选择任务交给智能体|[生成selection.json的完整提示词](prompts/生成selection.md)|
-|检查依赖与测试要求是否完整|[人工复验规范R1—R8](docs/selection人工复验规范.md)|
-|理解程序设计和文件交接|[工具设计与输入输出](docs/工具设计与输入输出.md)|
-|串联准备、选择、填充与验证|[流程逻辑与材料衔接](docs/流程逻辑与材料衔接.md)|
-
-推荐顺序：建立索引 → 生成选择及分析说明 → 导出核对 → 人工复验 → 冻结上下文 → 下游填充 → 执行评价。选择方案的生成、来源核对与内容复验分别记录。
+tools/cangjie_runner.py、evaluate_account.py、check_delivery.py及validation记录保持原内容。context_lookup.py仅保留历史证据检查使用的UTF-16片段读取函数，不提供旧选择文件导出接口。

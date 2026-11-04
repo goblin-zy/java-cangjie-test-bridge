@@ -1,0 +1,24 @@
+test_bad_target_and_overwrite_are_rejected (test_context_tool.ContextTests.test_bad_target_and_overwrite_are_rejected) ... ok
+test_complete_class_related_members_are_explicit (test_context_tool.ContextTests.test_complete_class_related_members_are_explicit) ... ok
+test_constant_resource_path_is_resolved (test_context_tool.ContextTests.test_constant_resource_path_is_resolved) ... ok
+test_depth_and_member_budget_report_stops (test_context_tool.ContextTests.test_depth_and_member_budget_report_stops) ... ok
+test_dynamic_overload_and_interface_are_reported (test_context_tool.ContextTests.test_dynamic_overload_and_interface_are_reported) ... ok
+test_external_helper_and_helper_assertion_not_lost (test_context_tool.ContextTests.test_external_helper_and_helper_assertion_not_lost) ... ok
+test_flat_junit4_unicode_crlf_and_binary_resource (test_context_tool.ContextTests.test_flat_junit4_unicode_crlf_and_binary_resource) ... ok
+test_history_copy_is_not_silently_indexed (test_context_tool.ContextTests.test_history_copy_is_not_silently_indexed) ... ok
+test_inherited_setup_cleanup_and_field_initialization (test_context_tool.ContextTests.test_inherited_setup_cleanup_and_field_initialization) ... ok
+test_inherited_test_and_unrelated_business_body (test_context_tool.ContextTests.test_inherited_test_and_unrelated_business_body) ... ok
+test_method_reference_is_not_guessed_as_zero_argument_call (test_context_tool.ContextTests.test_method_reference_is_not_guessed_as_zero_argument_call) ... ok
+test_real_source_ranges_and_json_markdown_same_content (test_context_tool.ContextTests.test_real_source_ranges_and_json_markdown_same_content) ... ok
+test_recursive_helper_stops_without_duplicate_records (test_context_tool.ContextTests.test_recursive_helper_stops_without_duplicate_records) ... ok
+test_relative_resource_uses_class_literal_package (test_context_tool.ContextTests.test_relative_resource_uses_class_literal_package) ... ok
+test_resource_has_actual_unicode_content (test_context_tool.ContextTests.test_resource_has_actual_unicode_content) ... ok
+test_source_and_resource_size_limits_are_explicit (test_context_tool.ContextTests.test_source_and_resource_size_limits_are_explicit) ... ok
+test_static_constant_definition (test_context_tool.ContextTests.test_static_constant_definition) ... ok
+test_switching_test_does_not_pull_unrelated_helpers (test_context_tool.ContextTests.test_switching_test_does_not_pull_unrelated_helpers) ... ok
+test_target_file_and_method_identifiers (test_context_tool.ContextTests.test_target_file_and_method_identifiers) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 17.840s
+
+OK

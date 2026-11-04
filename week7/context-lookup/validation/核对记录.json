@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-04",
+  "implementation_scope": "具体测试上下文查找",
+  "selection_input_required": false,
+  "project_branch_changes": false,
+  "unittest_passed": 19,
+  "test_cases": [
+    "test_target_file_and_method_identifiers",
+    "test_inherited_setup_cleanup_and_field_initialization",
+    "test_external_helper_and_helper_assertion_not_lost",
+    "test_static_constant_definition",
+    "test_resource_has_actual_unicode_content",
+    "test_constant_resource_path_is_resolved",
+    "test_dynamic_overload_and_interface_are_reported",
+    "test_recursive_helper_stops_without_duplicate_records",
+    "test_switching_test_does_not_pull_unrelated_helpers",
+    "test_complete_class_related_members_are_explicit",
+    "test_real_source_ranges_and_json_markdown_same_content",
+    "test_history_copy_is_not_silently_indexed",
+    "test_depth_and_member_budget_report_stops",
+    "test_bad_target_and_overwrite_are_rejected",
+    "test_source_and_resource_size_limits_are_explicit",
+    "test_method_reference_is_not_guessed_as_zero_argument_call",
+    "test_inherited_test_and_unrelated_business_body",
+    "test_relative_resource_uses_class_literal_package",
+    "test_flat_junit4_unicode_crlf_and_binary_resource"
+  ],
+  "actual_outputs": [
+    {
+      "name": "account-method",
+      "target": "src/test/java/study/translation/AccountTest.java#testSequence()",
+      "records": 17,
+      "unresolved": 7,
+      "source_ranges_and_content": "PASS",
+      "markdown_same_materials": "PASS"
+    },
+    {
+      "name": "account-class",
+      "target": "study.translation.AccountTest",
+      "records": 25,
+      "unresolved": 25,
+      "source_ranges_and_content": "PASS",
+      "markdown_same_materials": "PASS"
+    },
+    {
+      "name": "multi-module-method",
+      "target": "spec.CartTest#total()",
+      "records": 33,
+      "unresolved": 4,
+      "source_ranges_and_content": "PASS",
+      "markdown_same_materials": "PASS"
+    },
+    {
+      "name": "unresolved",
+      "target": "spec.CartTest#uncertain()",
+      "records": 25,
+      "unresolved": 6,
+      "source_ranges_and_content": "PASS",
+      "markdown_same_materials": "PASS"
+    }
+  ],
+  "project_build_or_test_execution": "NOT_RUN",
+  "large_repository_performance": "NOT_EVALUATED",
+  "dependency_completeness": "NOT_ESTABLISHED"
+}

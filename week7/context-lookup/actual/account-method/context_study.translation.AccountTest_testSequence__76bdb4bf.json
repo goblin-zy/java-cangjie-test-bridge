@@ -1,0 +1,603 @@
+{
+  "schema_version": "concrete-test-context-1.0",
+  "target": {
+    "project": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\蒋逸舟week7\\week7",
+    "type": "study.translation.AccountTest",
+    "methods": [
+      "study.translation.AccountTest#testSequence()"
+    ],
+    "file": "src/test/java/study/translation/AccountTest.java"
+  },
+  "scope": {
+    "source_roots": [
+      "src/main/java",
+      "src/test/java"
+    ],
+    "resource_roots": [],
+    "fallback_project_scan": false,
+    "java_files_indexed": 9,
+    "max_depth": 6,
+    "max_members": 300,
+    "max_resource_bytes": 262144,
+    "stop_conditions": [
+      "外部定义或无法唯一匹配的引用",
+      "依赖循环去重",
+      "达到深度、成员或资源大小上限"
+    ],
+    "analysis": "JDK17 syntax plus conservative project-local lookup; no compiler symbol attribution"
+  },
+  "original_tests": [
+    {
+      "id": "study.translation.AccountTest#testSequence()",
+      "content": "@Test void testSequence() {\r\n        prepareSequence(); account.withdraw(10); assertEquals(120, account.getBalance());\r\n    }",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 32,
+        "end_line": 34,
+        "start_offset_utf16": 1257,
+        "end_offset_utf16_exclusive": 1382,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      }
+    }
+  ],
+  "related_members": {
+    "src/test/java/study/translation/AccountTest.java": [
+      "study.translation.AccountTest#field:account",
+      "study.translation.AccountTest#setUp()",
+      "study.translation.AccountTest#testSequence()",
+      "study.translation.AccountTest#prepareSequence()"
+    ],
+    "src/main/java/study/translation/Account.java": [
+      "study.translation.Account#field:MAX_BALANCE",
+      "study.translation.Account#field:balance",
+      "study.translation.Account#<init>(int)",
+      "study.translation.Account#withdraw(int)",
+      "study.translation.Account#getBalance()",
+      "study.translation.Account#deposit(int)"
+    ],
+    "src/main/java/study/translation/InsufficientFundsException.java": [
+      "study.translation.InsufficientFundsException#<init>(String)"
+    ]
+  },
+  "records": [
+    {
+      "id": "study.translation.AccountTest",
+      "category": "original_test_class",
+      "content": "class AccountTest {\r\n    private Account account;\r\n    // 每个测试前创建独立账户，避免前一测试的余额影响下一测试。\r\n    @BeforeEach void setUp() { account = new Account(100); }\r\n    // A05的辅助准备：存50、取20，并分别检查中间状态。\r\n    private void prepareSequence() {\r\n        account.deposit(50); assertEquals(150, account.getBalance());\r\n        account.withdraw(20); assertEquals(130, account.getBalance());\r\n    }\r\n    // A01：检查普通初始余额及合法上下限。（新编样例）\r\n    @Test void testInitialBalance() {\r\n        assertEquals(0, new Account(0).getBalance()); assertEquals(100, account.getBalance()); assertEquals(1_000_000, new Account(1_000_000).getBalance());\r\n    }\r\n    // A02：存入30后余额应从100增加至130。（新编样例）\r\n    @Test void testDeposit() {\r\n        account.deposit(30); assertEquals(130, account.getBalance());\r\n    }\r\n    // A03：取出30后余额应从100减少至70。（新编样例）\r\n    @Test void testWithdraw() {\r\n        account.withdraw(30); assertEquals(70, account.getBalance());\r\n    }\r\n    // A04：允许恰好取完余额并得到0。（新编样例）\r\n    @Test void testWithdrawAll() {\r\n        account.withdraw(100); assertEquals(0, account.getBalance());\r\n    }\r\n    // A05：借助辅助方法检查连续操作的顺序和每步余额。（新编样例）\r\n    @Test void testSequence() {\r\n        prepareSequence(); account.withdraw(10); assertEquals(120, account.getBalance());\r\n    }\r\n    // A06：余额不足应抛专门异常，保留余额且允许后续合法取款。（新编样例）\r\n    @Test void testInsufficientFunds() {\r\n        assertThrows(InsufficientFundsException.class, () -> account.withdraw(101));\r\n        assertEquals(100, account.getBalance()); account.withdraw(40); assertEquals(60, account.getBalance());\r\n    }\r\n    // A07：金额为0或负数时存取款均失败，余额不变。（新编样例）\r\n    @Test void testInvalidAmounts() {\r\n        for (int amount : new int[]{0, -1}) {\r\n        assertThrows(IllegalArgumentException.class, () -> account.deposit(amount)); assertEquals(100, account.getBalance());\r\n        assertThrows(IllegalArgumentException.class, () -> account.withdraw(amount)); assertEquals(100, account.getBalance());\r\n        }\r\n    }\r\n    // A08：检查恰好达到余额上限与再次存款失败后的状态。（新编样例）\r\n    @Test void testBalanceLimit() {\r\n        account = new Account(999_999); account.deposit(1); assertEquals(1_000_000, account.getBalance());\r\n        assertThrows(IllegalArgumentException.class, () -> account.deposit(1)); assertEquals(1_000_000, account.getBalance());\r\n    }\r\n    // A09：检查非法初始余额不能创建账户。（新编样例）\r\n    @Test void testInvalidInitialBalance() {\r\n        assertThrows(IllegalArgumentException.class, () -> new Account(-1)); assertThrows(IllegalArgumentException.class, () -> new Account(1_000_001));\r\n    }\r\n}",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 6,
+        "end_line": 56,
+        "start_offset_utf16": 159,
+        "end_offset_utf16_exclusive": 2636,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "study.translation.AccountTest"
+        },
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "study.translation.AccountTest#testSequence()"
+        },
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "study.translation.AccountTest#prepareSequence()"
+        },
+        {
+          "reason": "完整原始测试类；相关成员另行标记",
+          "via": null
+        }
+      ],
+      "categories": [
+        "related_definition",
+        "original_test_class"
+      ]
+    },
+    {
+      "id": "src/test/java/study/translation/AccountTest.java#import:0",
+      "category": "imports",
+      "content": "import org.junit.jupiter.api.Test;",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 2,
+        "end_line": 2,
+        "start_offset_utf16": 28,
+        "end_offset_utf16_exclusive": 62,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "src/test/java/study/translation/AccountTest.java#import:1",
+      "category": "imports",
+      "content": "import org.junit.jupiter.api.BeforeEach;",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 3,
+        "end_line": 3,
+        "start_offset_utf16": 64,
+        "end_offset_utf16_exclusive": 104,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "src/test/java/study/translation/AccountTest.java#import:2",
+      "category": "imports",
+      "content": "import static org.junit.jupiter.api.Assertions.*;",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 106,
+        "end_offset_utf16_exclusive": 155,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "study.translation.AccountTest#field:account",
+      "category": "field_initialization",
+      "content": "private Account account;",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 7,
+        "end_line": 7,
+        "start_offset_utf16": 184,
+        "end_offset_utf16_exclusive": 208,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "study.translation.AccountTest"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "study.translation.AccountTest#setUp()",
+      "category": "lifecycle",
+      "content": "@BeforeEach void setUp() { account = new Account(100); }",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 9,
+        "end_line": 9,
+        "start_offset_utf16": 251,
+        "end_offset_utf16_exclusive": 307,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "适用的JUnit生命周期声明: BeforeEach",
+          "via": "study.translation.AccountTest"
+        }
+      ],
+      "categories": [
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "study.translation.AccountTest#testSequence()",
+      "category": "target_test",
+      "content": "@Test void testSequence() {\r\n        prepareSequence(); account.withdraw(10); assertEquals(120, account.getBalance());\r\n    }",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 32,
+        "end_line": 34,
+        "start_offset_utf16": 1257,
+        "end_offset_utf16_exclusive": 1382,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "本次查找的目标测试",
+          "via": "study.translation.AccountTest"
+        }
+      ],
+      "categories": [
+        "target_test"
+      ]
+    },
+    {
+      "id": "study.translation.Account",
+      "category": "related_definition",
+      "content": "public final class Account {\r\n    ",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 3,
+        "end_line": 4,
+        "start_offset_utf16": 123,
+        "end_offset_utf16_exclusive": 157,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reasons": [
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "study.translation.AccountTest#setUp()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "study.translation.AccountTest#testSequence()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "study.translation.AccountTest#prepareSequence()"
+        }
+      ],
+      "categories": [
+        "related_definition"
+      ]
+    },
+    {
+      "id": "study.translation.Account#field:MAX_BALANCE",
+      "category": "field_initialization",
+      "content": "public static final int MAX_BALANCE = 1_000_000;",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 157,
+        "end_offset_utf16_exclusive": 205,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "study.translation.AccountTest#setUp()"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "study.translation.Account#field:balance",
+      "category": "field_initialization",
+      "content": "private int balance;",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 5,
+        "end_line": 5,
+        "start_offset_utf16": 211,
+        "end_offset_utf16_exclusive": 231,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "study.translation.AccountTest#setUp()"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "study.translation.Account#<init>(int)",
+      "category": "called_code",
+      "content": "public Account(int initialBalance) {\r\n        if (initialBalance < 0 || initialBalance > MAX_BALANCE)\r\n            throw new IllegalArgumentException(\"invalid balance\");\r\n        balance = initialBalance;\r\n    }",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 7,
+        "end_line": 11,
+        "start_offset_utf16": 288,
+        "end_offset_utf16_exclusive": 499,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.AccountTest#setUp()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "study.translation.AccountTest#prepareSequence()",
+      "category": "helper",
+      "content": "private void prepareSequence() {\r\n        account.deposit(50); assertEquals(150, account.getBalance());\r\n        account.withdraw(20); assertEquals(130, account.getBalance());\r\n    }",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 11,
+        "end_line": 14,
+        "start_offset_utf16": 349,
+        "end_offset_utf16_exclusive": 531,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.AccountTest#testSequence()"
+        }
+      ],
+      "categories": [
+        "helper"
+      ]
+    },
+    {
+      "id": "study.translation.Account#withdraw(int)",
+      "category": "called_code",
+      "content": "public void withdraw(int amount) {\r\n        if (amount <= 0) throw new IllegalArgumentException(\"invalid withdrawal\");\r\n        if (amount > balance) throw new InsufficientFundsException(\"insufficient funds\");\r\n        balance -= amount;\r\n    }",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 22,
+        "end_line": 26,
+        "start_offset_utf16": 898,
+        "end_offset_utf16_exclusive": 1142,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.AccountTest#testSequence()"
+        },
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.AccountTest#prepareSequence()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "study.translation.Account#getBalance()",
+      "category": "called_code",
+      "content": "public int getBalance() { return balance; }",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 13,
+        "end_line": 13,
+        "start_offset_utf16": 529,
+        "end_offset_utf16_exclusive": 572,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.AccountTest#testSequence()"
+        },
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.AccountTest#prepareSequence()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "study.translation.Account#deposit(int)",
+      "category": "called_code",
+      "content": "public void deposit(int amount) {\r\n        // 先做减法形式的上限比较，避免先相加造成整数溢出。\r\n        if (amount <= 0 || amount > MAX_BALANCE - balance)\r\n            throw new IllegalArgumentException(\"invalid deposit\");\r\n        balance += amount;\r\n    }",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 15,
+        "end_line": 20,
+        "start_offset_utf16": 621,
+        "end_offset_utf16_exclusive": 854,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.AccountTest#prepareSequence()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "study.translation.InsufficientFundsException",
+      "category": "related_definition",
+      "content": "public final class InsufficientFundsException extends RuntimeException {\r\n    // 创建余额不足异常，保存错误说明；它与非法金额的参数异常不同。\r\n    ",
+      "source": {
+        "file": "src/main/java/study/translation/InsufficientFundsException.java",
+        "start_line": 2,
+        "end_line": 4,
+        "start_offset_utf16": 28,
+        "end_offset_utf16_exclusive": 145,
+        "sha256": "f7e6a26eff82705cba3615cc647bbea341dd3c8437c012307e7716c60668631d"
+      },
+      "reasons": [
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "study.translation.Account#withdraw(int)"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "study.translation.InsufficientFundsException#<init>(String)"
+        }
+      ],
+      "categories": [
+        "related_definition"
+      ]
+    },
+    {
+      "id": "study.translation.InsufficientFundsException#<init>(String)",
+      "category": "called_code",
+      "content": "public InsufficientFundsException(String message) { super(message); }",
+      "source": {
+        "file": "src/main/java/study/translation/InsufficientFundsException.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 145,
+        "end_offset_utf16_exclusive": 214,
+        "sha256": "f7e6a26eff82705cba3615cc647bbea341dd3c8437c012307e7716c60668631d"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.Account#withdraw(int)"
+        },
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "study.translation.InsufficientFundsException#<init>(String)"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "study.translation.AccountTest#testSequence()",
+      "content": "assertEquals(120, account.getBalance())",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 33,
+        "end_line": 33,
+        "start_offset_utf16": 1335,
+        "end_offset_utf16_exclusive": 1374,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "study.translation.AccountTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": "IllegalArgumentException.<init>",
+      "caller": "study.translation.Account#<init>(int)",
+      "content": "new IllegalArgumentException(\"invalid balance\")",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 9,
+        "end_line": 9,
+        "start_offset_utf16": 409,
+        "end_offset_utf16_exclusive": 456,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": []
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "study.translation.AccountTest#prepareSequence()",
+      "content": "assertEquals(150, account.getBalance())",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 12,
+        "end_line": 12,
+        "start_offset_utf16": 412,
+        "end_offset_utf16_exclusive": 451,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "study.translation.AccountTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "study.translation.AccountTest#prepareSequence()",
+      "content": "assertEquals(130, account.getBalance())",
+      "source": {
+        "file": "src/test/java/study/translation/AccountTest.java",
+        "start_line": 13,
+        "end_line": 13,
+        "start_offset_utf16": 484,
+        "end_offset_utf16_exclusive": 523,
+        "sha256": "24a76d813e47270c70552232b8cb8974137cc23fa12140db6f03f549f945ace9"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "study.translation.AccountTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": "IllegalArgumentException.<init>",
+      "caller": "study.translation.Account#withdraw(int)",
+      "content": "new IllegalArgumentException(\"invalid withdrawal\")",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 23,
+        "end_line": 23,
+        "start_offset_utf16": 965,
+        "end_offset_utf16_exclusive": 1015,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": []
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": "IllegalArgumentException.<init>",
+      "caller": "study.translation.Account#deposit(int)",
+      "content": "new IllegalArgumentException(\"invalid deposit\")",
+      "source": {
+        "file": "src/main/java/study/translation/Account.java",
+        "start_line": 18,
+        "end_line": 18,
+        "start_offset_utf16": 771,
+        "end_offset_utf16_exclusive": 818,
+        "sha256": "631d9b6e37fcb0921141954c39c8b47e639f30a9b69f9744036f1d03256b6662"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": []
+    },
+    {
+      "kind": "SUPERCLASS_UNRESOLVED",
+      "reference": "RuntimeException",
+      "source": {
+        "file": "src/main/java/study/translation/InsufficientFundsException.java",
+        "start_line": 2,
+        "end_line": 5,
+        "start_offset_utf16": 28,
+        "end_offset_utf16_exclusive": 217,
+        "sha256": "f7e6a26eff82705cba3615cc647bbea341dd3c8437c012307e7716c60668631d"
+      },
+      "reason": "父类无法在索引内唯一定位",
+      "candidates": []
+    }
+  ],
+  "boundaries": [],
+  "project_issues": [],
+  "completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "生命周期仅支持已识别JUnit4/5声明与简单继承，不解释组合注解、扩展注册和接口默认方法",
+    "重载按名称和参数数量筛选；接口动态实现、链式接收者、反射与动态路径会报告未解析",
+    "保留完整类型可含无关成员；不把类中所有成员视为本次相关成员",
+    "不提供跨语言规则、项目翻译约定筛选或完整模型输入组织",
+    "只读源工程，不执行构建、测试或业务代码"
+  ]
+}

@@ -1,19 +1,8 @@
 # 文档导航
 
-|文档|用途|
-|---|---|
-|[01 实现路线](01-实现路线.md)|理解上下文构建、可执行性评价与论文方法的关系|
-|[02 验证方法与测试用例](02-验证方法与测试用例.md)|核对测试目的、输入、预期行为及验证边界|
-|[03 ReCodeAgent阅读路线](03-ReCodeAgent阅读路线.md)|定位论文分析要点与源码核对材料|
-|[04 文件职责清单](04-文件职责清单.md)|按文件定位源码、配置、文档与历史证据|
-|[05 来源与分支迁移](05-来源与分支迁移.md)|核对材料来源、依赖版本及分支归档范围|
-|[06 验证记录](06-整理验证记录.md)|查看本次复核项目、结果及未执行范围|
+- [当前上下文查找工具](../week7/context-lookup/README.md)
+- [查找样例及核对记录](../week7/context-lookup/docs/测试样例与核对记录.md)
+- [可执行性评价](../week7/context-validation/README.md)
+- [ReCodeAgent研读](../references/reading/recodeagent/README.md)
 
-[返回本周总览](../README.md)
-
-## 上下文专题
-
-- [选择生成提示词](../week7/context-validation/prompts/生成selection.md)：定义智能体读取范围、处理步骤、输出和限制。
-- [人工复验规范](../week7/context-validation/docs/selection人工复验规范.md)：按源码、项目约定及证据记录逐项审查。
-- [工具设计与输入输出](../week7/context-validation/docs/工具设计与输入输出.md)：定位每个工具的输入、处理与结果。
-- [流程逻辑与材料衔接](../week7/context-validation/docs/流程逻辑与材料衔接.md)：将既有逻辑梳理落实到当前文件与命令。
+上下文查找已更换为通用实现；论文正文、评价程序及既有验证证据保持原内容。历史说明中的旧选择方式仅供版本追溯，当前操作以context-lookup为准。
