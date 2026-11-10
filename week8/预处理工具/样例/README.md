@@ -6,13 +6,14 @@
 
 ## 文件与用途
 
-| 文件                           | 用途
-| 结果/input/                    | 唯一样例源码与资源
-| 结果/handoff.json              | 分析入口及状态
-| 结果/members.json              | 成员原文与定位
-| 结果/translation_features.json | 注解名称与重载等语法提示
-| 结果/downstream_handoff.json   | 模块交接要求
-| 运行记录.txt                   | 实际分析与检查结果
+| 文件 | 用途 |
+| --- | --- |
+| 结果/input/ | 唯一样例源码与资源 |
+| 结果/handoff.json | 分析入口及状态 |
+| 结果/members.json | 成员原文与定位 |
+| 结果/translation_features.json | 注解名称与重载等语法提示 |
+| 结果/downstream_handoff.json | 模块交接要求 |
+| 运行记录.txt | 实际分析与检查结果 |
 
 ## 在窗口中复跑
 
