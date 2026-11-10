@@ -1,0 +1,31 @@
+{
+  "version": "test-only-1.1.0",
+  "schema_version": "1.1",
+  "snapshot_id": "b7351b2077a13afb1445a3b0decb8c53b9f7ad943be267a218d3e56fdf6c06b6",
+  "status": "ANALYZED_WITH_LIMITATIONS",
+  "input_root": "input",
+  "capabilities": "capabilities.json",
+  "source_mapping": "source_mapping.json",
+  "features": "translation_features.json",
+  "test_roots": [
+    "src/test/java"
+  ],
+  "resource_roots": [
+    "src/test/resources"
+  ],
+  "members": "members.json",
+  "structure": "test_structure.json",
+  "external_references": "external_references.json",
+  "inventory": "inventory.json",
+  "issues": "issues.json",
+  "test_candidates": "test_candidates.json",
+  "prompt": "交接提示词.md",
+  "report": "结果阅读说明.html",
+  "consumer_guide": "下游模块使用说明.md",
+  "downstream_handoff": "downstream_handoff.json",
+  "source_transformation": "IDENTITY_ONLY",
+  "production_source_read": false,
+  "test_execution": "NOT_RUN",
+  "target_semantics": "NOT_VERIFIED",
+  "input_scope_authority": "USER_DECLARED_TEST_ROOTS_NOT_SEMANTIC_CLASSIFICATION"
+}

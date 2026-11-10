@@ -1,0 +1,26 @@
+{
+  "version": "test-only-1.1.0",
+  "snapshot_id": "b7351b2077a13afb1445a3b0decb8c53b9f7ad943be267a218d3e56fdf6c06b6",
+  "implemented": {
+    "source_snapshot": "BYTE_IDENTICAL_SELECTED_FILES",
+    "source_mapping": "IDENTITY_FILES_AND_SOURCE_MEMBER_KEYS",
+    "syntax_index": "PARSE_ONLY_UTF16_SPANS",
+    "feature_hints": "LIMITED_SYNTAX_ONLY",
+    "reference_recording": "UNRESOLVED_IMPORTS_AND_CALLS",
+    "module_handoff": "FILES_AND_PROMPTS_ONLY"
+  },
+  "not_implemented": [
+    "测试框架类型绑定与运行时测试发现",
+    "测试依赖关系图与闭包",
+    "业务接口解析和契约补全",
+    "翻译单元规划",
+    "已有骨架及上下文工具自动适配",
+    "源码规范化或改写",
+    "累计前缀测试生成",
+    "动态插桩和行为规格",
+    "仓颉骨架和译文生成",
+    "语义等价或检错能力验证"
+  ],
+  "integration_mode": "MANUAL_FILE_HANDOFF_NOT_AUTOMATIC_PIPELINE",
+  "translation_improvement": "NOT_EVALUATED"
+}

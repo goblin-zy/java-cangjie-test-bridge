@@ -1,0 +1,12 @@
+{
+  "project": "../../样例/结果/input",
+  "test_roots": [
+    "src/test/java"
+  ],
+  "resource_roots": [
+    "src/test/resources"
+  ],
+  "java": "java",
+  "javac": "javac",
+  "output_parent": "../.."
+}

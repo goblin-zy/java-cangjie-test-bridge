@@ -1,0 +1,20 @@
+[
+  {
+    "member": "sample.ListTest#addThenClear()",
+    "source_member_key": "8350402c8c595668a2142f2a98e2018bcf07a200f98de3faac70a3f79c84c3b1",
+    "file": "src/test/java/sample/ListTest.java",
+    "annotations": [
+      "Test"
+    ],
+    "status": "ANNOTATION_NAME_CANDIDATE_NOT_RUNTIME_DISCOVERY"
+  },
+  {
+    "member": "sample.ListTest#resourceExists()",
+    "source_member_key": "4acd3c069ecc6a8dcf8fc11ecad2ca5bf7a565aafc6625412d712639a3adfdef",
+    "file": "src/test/java/sample/ListTest.java",
+    "annotations": [
+      "Test"
+    ],
+    "status": "ANNOTATION_NAME_CANDIDATE_NOT_RUNTIME_DISCOVERY"
+  }
+]

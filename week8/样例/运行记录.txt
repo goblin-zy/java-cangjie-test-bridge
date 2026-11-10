@@ -1,0 +1,14 @@
+运行内容：Java测试代码预处理分析
+输入来源：样例/结果/input（交接结果中保存的唯一源码副本）
+输入文件：src/test/java/sample/ListTest.java、src/test/resources/message.txt
+运行入口：主体/src/preprocess.py的prepare与CLI配置入口
+检查：原字节一致、交接材料检查、CLI复跑快照一致、GUI样例路径检查
+结果：全部通过
+状态：ANALYZED_WITH_LIMITATIONS
+Java文件：1
+资源：1
+成员记录：7
+语法特性提示：6
+实际执行范围：预处理及材料核对。JUnit与仓颉测试由下游验证流程执行。
+
+提交准备核对：窗口后台完成样例分析，复跑源快照一致；交接材料与启动环境检查通过。

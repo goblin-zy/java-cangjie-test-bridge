@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "b7351b2077a13afb1445a3b0decb8c53b9f7ad943be267a218d3e56fdf6c06b6",
+  "transformation": "IDENTITY_ONLY",
+  "files": [
+    {
+      "source_relative_path": "src/test/java/sample/ListTest.java",
+      "frozen_path": "input/src/test/java/sample/ListTest.java",
+      "source_sha256": "4a4f4b463c9919e4e170a82f9fc4c01cf825496f012a8a364464a90f8fea570f",
+      "frozen_sha256": "4a4f4b463c9919e4e170a82f9fc4c01cf825496f012a8a364464a90f8fea570f",
+      "operation": "BYTE_IDENTICAL_COPY"
+    },
+    {
+      "source_relative_path": "src/test/resources/message.txt",
+      "frozen_path": "input/src/test/resources/message.txt",
+      "source_sha256": "40937f7b60ba8cb27ca494fea07de6bfde9b3330ae355e940b28fa06a4d21564",
+      "frozen_sha256": "40937f7b60ba8cb27ca494fea07de6bfde9b3330ae355e940b28fa06a4d21564",
+      "operation": "BYTE_IDENTICAL_COPY"
+    }
+  ],
+  "members_index": "members.json",
+  "member_key_field": "source_member_key",
+  "offset_unit": "UTF-16 code units, end exclusive",
+  "member_count": 7,
+  "rewrites": [],
+  "target_mapping": "NOT_GENERATED_BY_PREPROCESSOR"
+}

@@ -1,0 +1,135 @@
+{
+  "snapshot_id": "b7351b2077a13afb1445a3b0decb8c53b9f7ad943be267a218d3e56fdf6c06b6",
+  "material_status": "ANALYZED_WITH_LIMITATIONS",
+  "integration_mode": "MANUAL_FILE_HANDOFF_NOT_AUTOMATIC_PIPELINE",
+  "note": "六类消费者的文件约定与专属提示词；不表示已调用或实现这些模块。",
+  "consumers": [
+    {
+      "module": "上下文查找",
+      "prompt": "prompts/context.md",
+      "available": [
+        "capabilities.json",
+        "issues.json",
+        "external_references.json",
+        "members.json",
+        "translation_features.json"
+      ],
+      "usage": "按本模块prompt与consumer_guide读取材料，先登记缺项，不改冻结输入。",
+      "missing": [
+        "当前任务范围",
+        "授权的上下文源与已有上下文工具"
+      ],
+      "expected": [
+        "上下文及来源",
+        "未解析引用"
+      ]
+    },
+    {
+      "module": "Java骨架提取",
+      "prompt": "prompts/java_skeleton.md",
+      "available": [
+        "capabilities.json",
+        "issues.json",
+        "input/",
+        "members.json",
+        "source_mapping.json",
+        "test_structure.json"
+      ],
+      "usage": "按本模块prompt与consumer_guide读取材料，先登记缺项，不改冻结输入。",
+      "missing": [
+        "现有骨架提取器及输入格式适配"
+      ],
+      "expected": [
+        "Java骨架",
+        "源成员与骨架对应"
+      ]
+    },
+    {
+      "module": "仓颉骨架生成",
+      "prompt": "prompts/cangjie_skeleton.md",
+      "available": [
+        "capabilities.json",
+        "issues.json",
+        "input/",
+        "members.json",
+        "translation_features.json"
+      ],
+      "usage": "按本模块prompt与consumer_guide读取材料，先登记缺项，不改冻结输入。",
+      "missing": [
+        "Java骨架（采用骨架流程时）",
+        "目标类型与接口对应",
+        "转换规则"
+      ],
+      "expected": [
+        "仓颉骨架",
+        "源目标成员对应"
+      ]
+    },
+    {
+      "module": "整体翻译",
+      "prompt": "prompts/whole_translation.md",
+      "available": [
+        "capabilities.json",
+        "issues.json",
+        "input/",
+        "members.json",
+        "external_references.json",
+        "translation_features.json"
+      ],
+      "usage": "按本模块prompt与consumer_guide读取材料，先登记缺项，不改冻结输入。",
+      "missing": [
+        "目标接口或仓颉业务实现",
+        "转换规则",
+        "采用骨架流程时的目标骨架及对应"
+      ],
+      "expected": [
+        "完整测试译文",
+        "资源安排及未完成项"
+      ]
+    },
+    {
+      "module": "片段翻译",
+      "prompt": "prompts/fragment_translation.md",
+      "available": [
+        "capabilities.json",
+        "issues.json",
+        "input/",
+        "members.json",
+        "source_mapping.json",
+        "translation_features.json"
+      ],
+      "usage": "按本模块prompt与consumer_guide读取材料，先登记缺项，不改冻结输入。",
+      "missing": [
+        "翻译单元规划与目标位置",
+        "目标接口和规则",
+        "已有译文及初始化上下文"
+      ],
+      "expected": [
+        "单元译文",
+        "回填与状态记录"
+      ]
+    },
+    {
+      "module": "验证",
+      "prompt": "prompts/validation.md",
+      "available": [
+        "capabilities.json",
+        "issues.json",
+        "input/",
+        "inventory.json",
+        "source_mapping.json",
+        "manifest.json"
+      ],
+      "usage": "按本模块prompt与consumer_guide读取材料，先登记缺项，不改冻结输入。",
+      "missing": [
+        "完整源运行环境",
+        "目标实现与译文",
+        "用例对应及验证命令"
+      ],
+      "expected": [
+        "实际检查结果和日志",
+        "未验证项"
+      ]
+    }
+  ]
+}

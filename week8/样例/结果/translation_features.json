@@ -1,0 +1,115 @@
+{
+  "snapshot_id": "b7351b2077a13afb1445a3b0decb8c53b9f7ad943be267a218d3e56fdf6c06b6",
+  "analysis_level": "SYNTAX_ONLY",
+  "framework_binding": "NOT_ATTEMPTED",
+  "features": [
+    {
+      "kind": "FIELD_INITIALIZER",
+      "file": "src/test/java/sample/ListTest.java",
+      "source_member_keys": [
+        "ad6b86bf50efb9f18b2eefee4dfb1642e7034d523ce13f602439223e79983565"
+      ],
+      "evidence": {
+        "expression": "new ArrayList<>()"
+      },
+      "analysis_level": "SYNTAX_ONLY",
+      "requires_rewrite": "NOT_DETERMINED",
+      "downstream_review": "保留初始化表达式，目标初始化顺序另行确认。"
+    },
+    {
+      "kind": "ANNOTATION_NAME_HINT",
+      "file": "src/test/java/sample/ListTest.java",
+      "source_member_keys": [
+        "9b90bec8f776ef3ef236f844fa302272df265efa3f71a0d99c2f57feed39293d"
+      ],
+      "evidence": {
+        "annotation": "BeforeEach",
+        "role_hint": "SETUP_CANDIDATE"
+      },
+      "analysis_level": "SYNTAX_ONLY",
+      "requires_rewrite": "NOT_DETERMINED",
+      "downstream_review": "名称匹配，未绑定框架；核对实际角色、数据及执行顺序。"
+    },
+    {
+      "kind": "ANNOTATION_NAME_HINT",
+      "file": "src/test/java/sample/ListTest.java",
+      "source_member_keys": [
+        "7ecd59ef50aa6aeac336addfb000be465eb42b75b4ec2d7b364421dbe35b8d95"
+      ],
+      "evidence": {
+        "annotation": "AfterEach",
+        "role_hint": "CLEANUP_CANDIDATE"
+      },
+      "analysis_level": "SYNTAX_ONLY",
+      "requires_rewrite": "NOT_DETERMINED",
+      "downstream_review": "名称匹配，未绑定框架；核对实际角色、数据及执行顺序。"
+    },
+    {
+      "kind": "ANNOTATION_NAME_HINT",
+      "file": "src/test/java/sample/ListTest.java",
+      "source_member_keys": [
+        "8350402c8c595668a2142f2a98e2018bcf07a200f98de3faac70a3f79c84c3b1"
+      ],
+      "evidence": {
+        "annotation": "Test",
+        "role_hint": "TEST_CANDIDATE"
+      },
+      "analysis_level": "SYNTAX_ONLY",
+      "requires_rewrite": "NOT_DETERMINED",
+      "downstream_review": "名称匹配，未绑定框架；核对实际角色、数据及执行顺序。"
+    },
+    {
+      "kind": "ANNOTATION_NAME_HINT",
+      "file": "src/test/java/sample/ListTest.java",
+      "source_member_keys": [
+        "4acd3c069ecc6a8dcf8fc11ecad2ca5bf7a565aafc6625412d712639a3adfdef"
+      ],
+      "evidence": {
+        "annotation": "Test",
+        "role_hint": "TEST_CANDIDATE"
+      },
+      "analysis_level": "SYNTAX_ONLY",
+      "requires_rewrite": "NOT_DETERMINED",
+      "downstream_review": "名称匹配，未绑定框架；核对实际角色、数据及执行顺序。"
+    },
+    {
+      "kind": "OVERLOAD_DECLARATION_CANDIDATE",
+      "file": "src/test/java/sample/ListTest.java",
+      "source_member_keys": [
+        "b47405aaaf91393195a32fc2eec44559e1ca92a2b0371c259c030212264c2f44",
+        "1ac67a95c254f3c4b6ac80aa04de1f10cf42aad85a2391ea782b26212756615e"
+      ],
+      "evidence": {
+        "name": "expectSize",
+        "parameter_types_as_written": [
+          [
+            "int"
+          ],
+          [
+            "int",
+            "String"
+          ]
+        ]
+      },
+      "analysis_level": "SYNTAX_ONLY",
+      "requires_rewrite": "NOT_DETERMINED",
+      "downstream_review": "仅按同文件同类型的声明分组，未解析类型别名、继承或调用绑定；不默认消除重载。"
+    }
+  ],
+  "coverage": [
+    "声明重载候选",
+    "多构造器声明",
+    "显式构造器委托",
+    "字段初始化",
+    "初始化块",
+    "注解名称提示"
+  ],
+  "not_covered": [
+    "完整语言特性识别",
+    "断言语义分类",
+    "框架角色绑定",
+    "测试关系图",
+    "依赖闭包",
+    "自动改写"
+  ]
+}

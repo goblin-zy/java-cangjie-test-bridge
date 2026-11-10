@@ -1,0 +1,561 @@
+{
+  "files": [
+    {
+      "path": "src/test/java/sample/ListTest.java",
+      "package": "sample",
+      "imports": [
+        "java.util.ArrayList",
+        "java.util.List",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.AfterEach",
+        "org.junit.jupiter.api.Test",
+        "static org.junit.jupiter.api.Assertions.*"
+      ],
+      "import_locations": [
+        {
+          "start": 17,
+          "end": 44,
+          "start_line": 2,
+          "end_line": 2
+        },
+        {
+          "start": 46,
+          "end": 68,
+          "start_line": 3,
+          "end_line": 3
+        },
+        {
+          "start": 70,
+          "end": 110,
+          "start_line": 4,
+          "end_line": 4
+        },
+        {
+          "start": 112,
+          "end": 151,
+          "start_line": 5,
+          "end_line": 5
+        },
+        {
+          "start": 153,
+          "end": 187,
+          "start_line": 6,
+          "end_line": 6
+        },
+        {
+          "start": 189,
+          "end": 238,
+          "start_line": 7,
+          "end_line": 7
+        }
+      ],
+      "types": [
+        {
+          "id": "sample.ListTest",
+          "kind": "type",
+          "owner": "sample.ListTest",
+          "start": 242,
+          "end": 882,
+          "start_line": 9,
+          "end_line": 24,
+          "header_end": 271,
+          "name": "ListTest",
+          "extends": null,
+          "implements": [],
+          "annotations": []
+        }
+      ],
+      "members": [
+        {
+          "id": "sample.ListTest#field:values",
+          "kind": "field",
+          "owner": "sample.ListTest",
+          "start": 271,
+          "end": 325,
+          "start_line": 10,
+          "end_line": 10,
+          "name": "values",
+          "type": "List<String>",
+          "initializer": "new ArrayList<>()",
+          "final": true
+        },
+        {
+          "id": "sample.ListTest#prepare()",
+          "kind": "method",
+          "owner": "sample.ListTest",
+          "start": 331,
+          "end": 377,
+          "start_line": 11,
+          "end_line": 11,
+          "name": "prepare",
+          "parameters": [],
+          "annotations": [
+            "BeforeEach"
+          ],
+          "variables": {},
+          "has_body": true,
+          "return_type": "void"
+        },
+        {
+          "id": "sample.ListTest#cleanup()",
+          "kind": "method",
+          "owner": "sample.ListTest",
+          "start": 383,
+          "end": 428,
+          "start_line": 12,
+          "end_line": 12,
+          "name": "cleanup",
+          "parameters": [],
+          "annotations": [
+            "AfterEach"
+          ],
+          "variables": {},
+          "has_body": true,
+          "return_type": "void"
+        },
+        {
+          "id": "sample.ListTest#addThenClear()",
+          "kind": "method",
+          "owner": "sample.ListTest",
+          "start": 434,
+          "end": 584,
+          "start_line": 13,
+          "end_line": 18,
+          "name": "addThenClear",
+          "parameters": [],
+          "annotations": [
+            "Test"
+          ],
+          "variables": {},
+          "has_body": true,
+          "return_type": "void"
+        },
+        {
+          "id": "sample.ListTest#resourceExists()",
+          "kind": "method",
+          "owner": "sample.ListTest",
+          "start": 590,
+          "end": 698,
+          "start_line": 19,
+          "end_line": 21,
+          "name": "resourceExists",
+          "parameters": [],
+          "annotations": [
+            "Test"
+          ],
+          "variables": {},
+          "has_body": true,
+          "return_type": "void"
+        },
+        {
+          "id": "sample.ListTest#expectSize(int)",
+          "kind": "method",
+          "owner": "sample.ListTest",
+          "start": 704,
+          "end": 776,
+          "start_line": 22,
+          "end_line": 22,
+          "name": "expectSize",
+          "parameters": [
+            "int"
+          ],
+          "annotations": [],
+          "variables": {
+            "expected": "int"
+          },
+          "has_body": true,
+          "return_type": "void"
+        },
+        {
+          "id": "sample.ListTest#expectSize(int,String)",
+          "kind": "method",
+          "owner": "sample.ListTest",
+          "start": 782,
+          "end": 879,
+          "start_line": 23,
+          "end_line": 23,
+          "name": "expectSize",
+          "parameters": [
+            "int",
+            "String"
+          ],
+          "annotations": [],
+          "variables": {
+            "expected": "int",
+            "message": "String"
+          },
+          "has_body": true,
+          "return_type": "void"
+        }
+      ],
+      "calls": [
+        {
+          "id": "sample.ListTest#field:values@307",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 307,
+          "end": 324,
+          "start_line": 10,
+          "end_line": 10,
+          "caller": "sample.ListTest#field:values",
+          "name": "<init>",
+          "receiver": "ArrayList<>",
+          "constructor": true,
+          "arguments": [],
+          "literals": []
+        },
+        {
+          "id": "sample.ListTest#prepare()@360",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 360,
+          "end": 374,
+          "start_line": 11,
+          "end_line": 11,
+          "caller": "sample.ListTest#prepare()",
+          "name": "clear",
+          "receiver": "values",
+          "constructor": false,
+          "arguments": [],
+          "literals": []
+        },
+        {
+          "id": "sample.ListTest#cleanup()@411",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 411,
+          "end": 425,
+          "start_line": 12,
+          "end_line": 12,
+          "caller": "sample.ListTest#cleanup()",
+          "name": "clear",
+          "receiver": "values",
+          "constructor": false,
+          "arguments": [],
+          "literals": []
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@471",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 471,
+          "end": 488,
+          "start_line": 14,
+          "end_line": 14,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "add",
+          "receiver": "values",
+          "constructor": false,
+          "arguments": [
+            "\"one\""
+          ],
+          "literals": [
+            "one"
+          ]
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@499",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 499,
+          "end": 512,
+          "start_line": 15,
+          "end_line": 15,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "expectSize",
+          "receiver": "",
+          "constructor": false,
+          "arguments": [
+            "1"
+          ],
+          "literals": [
+            1
+          ]
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@523",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 523,
+          "end": 537,
+          "start_line": 16,
+          "end_line": 16,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "clear",
+          "receiver": "values",
+          "constructor": false,
+          "arguments": [],
+          "literals": []
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@548",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 548,
+          "end": 576,
+          "start_line": 17,
+          "end_line": 17,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "assertTrue",
+          "receiver": "",
+          "constructor": false,
+          "arguments": [
+            "values.isEmpty()"
+          ],
+          "literals": [
+            null
+          ]
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@559",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 559,
+          "end": 575,
+          "start_line": 17,
+          "end_line": 17,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "isEmpty",
+          "receiver": "values",
+          "constructor": false,
+          "arguments": [],
+          "literals": []
+        },
+        {
+          "id": "sample.ListTest#resourceExists()@629",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 629,
+          "end": 690,
+          "start_line": 20,
+          "end_line": 20,
+          "caller": "sample.ListTest#resourceExists()",
+          "name": "assertNotNull",
+          "receiver": "",
+          "constructor": false,
+          "arguments": [
+            "getClass().getResourceAsStream(\"/message.txt\")"
+          ],
+          "literals": [
+            null
+          ]
+        },
+        {
+          "id": "sample.ListTest#resourceExists()@643",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 643,
+          "end": 689,
+          "start_line": 20,
+          "end_line": 20,
+          "caller": "sample.ListTest#resourceExists()",
+          "name": "getResourceAsStream",
+          "receiver": "getClass()",
+          "constructor": false,
+          "arguments": [
+            "\"/message.txt\""
+          ],
+          "literals": [
+            "/message.txt"
+          ]
+        },
+        {
+          "id": "sample.ListTest#resourceExists()@643",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 643,
+          "end": 653,
+          "start_line": 20,
+          "end_line": 20,
+          "caller": "sample.ListTest#resourceExists()",
+          "name": "getClass",
+          "receiver": "",
+          "constructor": false,
+          "arguments": [],
+          "literals": []
+        },
+        {
+          "id": "sample.ListTest#expectSize(int)@736",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 736,
+          "end": 773,
+          "start_line": 22,
+          "end_line": 22,
+          "caller": "sample.ListTest#expectSize(int)",
+          "name": "assertEquals",
+          "receiver": "",
+          "constructor": false,
+          "arguments": [
+            "expected",
+            "values.size()"
+          ],
+          "literals": [
+            null,
+            null
+          ]
+        },
+        {
+          "id": "sample.ListTest#expectSize(int)@759",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 759,
+          "end": 772,
+          "start_line": 22,
+          "end_line": 22,
+          "caller": "sample.ListTest#expectSize(int)",
+          "name": "size",
+          "receiver": "values",
+          "constructor": false,
+          "arguments": [],
+          "literals": []
+        },
+        {
+          "id": "sample.ListTest#expectSize(int,String)@830",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 830,
+          "end": 876,
+          "start_line": 23,
+          "end_line": 23,
+          "caller": "sample.ListTest#expectSize(int,String)",
+          "name": "assertEquals",
+          "receiver": "",
+          "constructor": false,
+          "arguments": [
+            "expected",
+            "values.size()",
+            "message"
+          ],
+          "literals": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "sample.ListTest#expectSize(int,String)@853",
+          "kind": "call",
+          "owner": "sample.ListTest",
+          "start": 853,
+          "end": 866,
+          "start_line": 23,
+          "end_line": 23,
+          "caller": "sample.ListTest#expectSize(int,String)",
+          "name": "size",
+          "receiver": "values",
+          "constructor": false,
+          "arguments": [],
+          "literals": []
+        }
+      ],
+      "references": [
+        {
+          "id": "sample.ListTest#prepare()@ref360",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 360,
+          "end": 372,
+          "start_line": 11,
+          "end_line": 11,
+          "caller": "sample.ListTest#prepare()",
+          "name": "clear",
+          "receiver": "values",
+          "constructor": false
+        },
+        {
+          "id": "sample.ListTest#cleanup()@ref411",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 411,
+          "end": 423,
+          "start_line": 12,
+          "end_line": 12,
+          "caller": "sample.ListTest#cleanup()",
+          "name": "clear",
+          "receiver": "values",
+          "constructor": false
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@ref471",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 471,
+          "end": 481,
+          "start_line": 14,
+          "end_line": 14,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "add",
+          "receiver": "values",
+          "constructor": false
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@ref523",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 523,
+          "end": 535,
+          "start_line": 16,
+          "end_line": 16,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "clear",
+          "receiver": "values",
+          "constructor": false
+        },
+        {
+          "id": "sample.ListTest#addThenClear()@ref559",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 559,
+          "end": 573,
+          "start_line": 17,
+          "end_line": 17,
+          "caller": "sample.ListTest#addThenClear()",
+          "name": "isEmpty",
+          "receiver": "values",
+          "constructor": false
+        },
+        {
+          "id": "sample.ListTest#resourceExists()@ref643",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 643,
+          "end": 673,
+          "start_line": 20,
+          "end_line": 20,
+          "caller": "sample.ListTest#resourceExists()",
+          "name": "getResourceAsStream",
+          "receiver": "getClass()",
+          "constructor": false
+        },
+        {
+          "id": "sample.ListTest#expectSize(int)@ref759",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 759,
+          "end": 770,
+          "start_line": 22,
+          "end_line": 22,
+          "caller": "sample.ListTest#expectSize(int)",
+          "name": "size",
+          "receiver": "values",
+          "constructor": false
+        },
+        {
+          "id": "sample.ListTest#expectSize(int,String)@ref853",
+          "kind": "reference",
+          "owner": "sample.ListTest",
+          "start": 853,
+          "end": 864,
+          "start_line": 23,
+          "end_line": 23,
+          "caller": "sample.ListTest#expectSize(int,String)",
+          "name": "size",
+          "receiver": "values",
+          "constructor": false
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

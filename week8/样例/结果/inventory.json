@@ -1,0 +1,16 @@
+[
+  {
+    "file": "src/test/java/sample/ListTest.java",
+    "kind": "test_source",
+    "sha256": "4a4f4b463c9919e4e170a82f9fc4c01cf825496f012a8a364464a90f8fea570f",
+    "size": 884,
+    "operation": "BYTE_IDENTICAL_COPY"
+  },
+  {
+    "file": "src/test/resources/message.txt",
+    "kind": "test_resource",
+    "sha256": "40937f7b60ba8cb27ca494fea07de6bfde9b3330ae355e940b28fa06a4d21564",
+    "size": 17,
+    "operation": "BYTE_IDENTICAL_COPY"
+  }
+]
