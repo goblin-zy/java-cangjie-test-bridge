@@ -1,0 +1,16 @@
+.git/
+.vscode/
+.cjpm-history
+/build/
+/ci_lib/
+/ci_test/
+/module-resolve.json
+log/
+tmp/
+module-lock.json
+*.macrocall
+target/
+cjpm.lock
+.cache/
+test_temp/
+test/report/

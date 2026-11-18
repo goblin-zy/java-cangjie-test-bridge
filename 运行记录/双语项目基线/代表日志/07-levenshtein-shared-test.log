@@ -1,0 +1,10 @@
+Command: ./shared.exe --no-color --no-progress
+--------------------------------------------------------------------------------------------------
+TP: default, time elapsed: 554200 ns, RESULT:
+    TCS: SharedLevenshteinVectors, time elapsed: 546200 ns, RESULT:
+    [ PASSED ] CASE: compareJavaInputs (321900 ns)
+Summary: TOTAL: 1
+    PASSED: 1, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------
+Exit code: 0

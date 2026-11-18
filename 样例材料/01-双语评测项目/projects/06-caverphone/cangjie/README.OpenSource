@@ -1,0 +1,11 @@
+[
+    {
+        "Name": " caverphone4cj",
+        "License": " ISC ",
+        "License File": "LICENSE",
+        "Version Number": "0.0.1 ",
+        "Owner": "tcort"
+        "Upstream URL": "https://github.com/tcort/caverphone",
+        "Description": " A Cangjie implementation of the Caverphone 2.0 (aka Caverphone Revised) phonetic matching algorithm."
+    }
+]

@@ -1,0 +1,10 @@
+Command: ./shared.exe --no-color --no-progress
+--------------------------------------------------------------------------------------------------
+TP: default, time elapsed: 774300 ns, RESULT:
+    TCS: SharedBase32Vectors, time elapsed: 758800 ns, RESULT:
+    [ PASSED ] CASE: compareJavaInputs (346900 ns)
+Summary: TOTAL: 1
+    PASSED: 1, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------
+Exit code: 0

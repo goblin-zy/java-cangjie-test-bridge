@@ -1,10 +1,20 @@
-# Java与仓颉测试项目
+# 本周交付｜Java 到仓颉测试翻译
 
-个人交付按分支保存：
+本周整理了 8 组双语评测项目，并梳理 Java 骨架提取器与仓颉骨架翻译工具的输入、输出和实现。双语项目为翻译测试提供两侧业务实现、原测试和已有基线。
 
-- [蔡俊杰week6：第六周材料](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week6)
-- [蔡俊杰week7：第七周骨架提取与参考测试](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week7)
-- [蒋逸舟week7：上下文查找工具、可行性验证方法执行、ReCodeAgent论文阅读](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%92%8B%E9%80%B8%E8%88%9Fweek7)
-- [hzy-week7：项目约定与公共材料工具](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/hzy-week7)
+[本周进度汇报](本周进度汇报.md) · [工具优化方案](主体/工具优化方案.md)
 
-main保留团队导航；个人分支保存源码、使用说明和验证记录。误合入的个人材料已通过后续提交撤下，既有提交历史保留供追溯。
+| 目录 | 内容 |
+| --- | --- |
+| [主体](主体/README.md) | Java 提取器源码、仓颉骨架翻译提示词、结构检查脚本，以及两个工具各自的输入输出说明和源码讲解 |
+| [样例材料](样例材料/README.md) | 8 组 Java 与仓颉项目，另附 Smart Library 和 Commons IO 的骨架提取输入 |
+| [运行记录](运行记录/README.md) | 双语项目基线、两份骨架的提取产物、仓颉样例、成员映射和测试发现记录 |
+| [版本更新记录](版本更新记录.md) | 本版调整的文件、内容与用途 |
+
+## 各部分怎样使用
+
+- **双语评测**。从一组项目选取 Java 原测试，把它交给测试翻译器，生成的仓颉测试再用对应的仓颉业务和参考测试检验。已有基线覆盖所选场景。
+- **Java 骨架提取**。`JavaTestSkeletonExtractor.java` 读取 Java 源文件或目录，输出含占位方法体的骨架和 `members.json`。成员表保存原实现、签名和源码位置。
+- **仓颉骨架翻译**。模型依据提示词读取 Java 骨架、成员表和项目约定，生成仓颉声明、待填位置与成员对应。Python 脚本可复核随包的两份样例。
+
+两份样例共核对 17 条成员映射。已有仓颉样例使用前一版提示词生成，已有编译和测试发现记录。修订提示词待重新生成验收，测试方法体待填充。

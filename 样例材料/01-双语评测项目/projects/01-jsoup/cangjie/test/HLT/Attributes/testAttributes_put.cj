@@ -1,0 +1,68 @@
+// 3rd_party_lib:html4cj/build/html4cj
+// 3rd_party_lib_ohos:html4cj/build/aarch64-linux-ohos/html4cj
+//dependence:../util_test/createsourcedata.cj
+import cangjie_tpc::html4cj.*
+import std.unittest.*
+import std.collection.*
+
+@Test
+public class AttributesTest {
+    let ins_1: Attributes = Attributes()
+    let sourceDataIns: SourceData = SourceData()
+    var strRes: String = ""
+    var returnFlag: Int64 = 0
+    var resInt: Int64 = -1
+    let tuple_res: (Array<String>, ArrayList<String>, HashSet<String>) = sourceDataIns.generateSourceDataWithString()
+
+    @TestCase
+    func testAttributes_put_01(): Unit {
+        try {
+            strRes = ins_1.get("hao吃") //key不存在
+        } catch (e1: NoneValueException) {
+            returnFlag = 1
+        }
+        @Assert(strRes, "")
+        strRes = ins_1.put(tuple_res[0][1], Some(tuple_res[0][9])).toString()
+        @Assert(strRes.toRuneArray().size, 146)
+        strRes = ins_1.get(tuple_res[0][1])
+        @Assert(strRes.toRuneArray().size, 122)
+        @Assert(returnFlag, 0)
+    }
+
+    @TestCase
+    func testAttributes_put_02(): Unit {
+        let ins_2: Attributes = Attributes()
+        strRes = ins_2.put(tuple_res[0][1], None).toString()
+        @Assert(strRes.toRuneArray().size, 17)
+        strRes = ins_2.get(tuple_res[0][1])
+        @Assert(strRes.toRuneArray().size, 0)
+    }
+
+    @TestCase
+    func testAttributes_put_03(): Unit {
+        let ins_3: Attributes = Attributes()
+        strRes = ins_3.add(tuple_res[0][1], Some(tuple_res[0][2])).toString()
+        resInt = ins_3.size
+        @Assert(strRes.toRuneArray().size, 27)
+        @Assert(resInt, 1)
+        strRes = ins_3.get(tuple_res[0][1])
+        @Assert(strRes.toRuneArray().size, 7)
+        strRes = ins_3.put(tuple_res[0][1], Some("当前键已存在")).toString()
+        resInt = ins_3.size
+        @Assert(strRes.toRuneArray().size, 26)
+        @Assert(resInt, 1)
+        strRes = ins_3.get(tuple_res[0][1]) // 键重复，值覆盖
+        @Assert(strRes, "当前键已存在")
+        @Assert(returnFlag, 0)
+    }
+
+    @TestCase
+    func testAttributes_put_04(): Unit {
+        let str: String = sourceDataIns.getLargeString(2000) //超长
+        let ins_2: Attributes = Attributes()
+        strRes = ins_2.put(tuple_res[0][1], str).toString()
+        @Assert(strRes.toRuneArray().size, 198020)
+        strRes = ins_2.get(tuple_res[0][1])
+        @Assert(strRes.toRuneArray().size, 198000)
+    }
+}

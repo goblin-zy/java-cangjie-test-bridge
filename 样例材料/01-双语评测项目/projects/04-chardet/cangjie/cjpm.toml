@@ -1,0 +1,14 @@
+[dependencies]
+  charset4cj = {branch = "v1.0.0", git = "https://gitcode.com/Cangjie-TPC/charset4cj.git"}
+
+[package]
+  cjc-version = "1.0.0"
+  compile-option = "-O2"
+  description = "nothing here"
+  link-option = ""
+  name = "chardet4cj"
+  output-type = "dynamic"
+  src-dir = "src"
+  target-dir = ""
+  version = "1.0.4"
+  package-configuration = {}

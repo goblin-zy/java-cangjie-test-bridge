@@ -1,0 +1,68 @@
+--- one_delta_test_original.txt
++++ one_delta_test_revised.txt
+@@ -1,54 +1,11 @@
+-<p>Esta &eacute; uma obra Online.</p>
+-<p>&nbsp;</p>
+-<p><strong>Este texto &eacute; negrito</strong></p>
+-<p><em>Este texto &eacute; it&aacute;lico</em></p>
+-<p><span style="text-decoration:underline;">Este texto est&aacute; sublinhado</span></p>
+-<p><span style="text-decoration: line-through;">Este texto est&aacute; riscado</span></p>
+-<p style="text-align: center;">Este texto est&aacute; centralizado</p>
+-<p style="text-align: right;">Este texto est&aacute; alinhado a direita</p>
+-<ol>
+-<li>Este texto est&aacute; em uma lista num&eacute;rica<ol>
+-<li>Este texto est&aacute; identado</li>
+-</ol></li>
+-</ol>
+-<p><a title="uol" href="" target="_blank">Este
+-aqui &eacute; um link</a></p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>,
+-<p>&nbsp;</p>
+-<p>P&aacute;gina 1</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>P&aacute;gina 2</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>&nbsp;</p>
+-<p>P&aacute;gina 3</p>
+-<p>&nbsp;</p>
++<p>Revis&atilde;o 3</p><p>&nbsp;</p><p>Esta &eacute; uma obra
++Online.</p><p>&nbsp;</p><p><strong>Este texto &eacute;
++negrit</strong></p><p>Este texto &eacute; it&aacute;lico/p><p><span
++style="text-decoration: undeline;">Este texto est&aacute;
++sublinhado</span></p><p>Este texto est&aacute; riscado agora n&atilde;o
++est&aacute; mais</p>p style="text-align: left;">Este texto est&aacute;
++centralizado nem este</p><p style="text-align: right;">Este texto
++est&aacute; alinhado a direita</p><ol><li>Este texto est&aacute; em uma
++lista num&eacute;rica</li></ol><p><a title="uol"
++href="" target="_blank">Este aqui &eacute; um
++link</a></p>

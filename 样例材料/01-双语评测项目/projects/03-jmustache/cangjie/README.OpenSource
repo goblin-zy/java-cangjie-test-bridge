@@ -1,0 +1,11 @@
+[
+    {
+        "Name": " jmustache ",
+        "License": " BSD-3-Clause ",
+        "License File": " LICENSE ",
+        "Owner": ""
+        "Upstream URL": " https://github.com/samskivert/jmustache.git ",
+        "Version Number": " v1.0.0 ",
+        "Description": " A Java implementation of the Mustache templating language."
+    }
+]

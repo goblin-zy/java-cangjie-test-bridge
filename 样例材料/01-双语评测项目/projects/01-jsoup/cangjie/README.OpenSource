@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "jsoup",
+        "License": "MIT License",
+        "License File": "LICENSE",
+        "Version Number": "v1.15.4",
+        "Owner" : "jhy",
+        "Upstream URL": "https://github.com/jhy/jsoup",
+        "Description": "HTML Parser"
+    }
+]

@@ -1,0 +1,14 @@
+Command: ./baseline.exe --no-color --no-progress --filter=*.testByTag,*.byEscapedTag,*.testById,*.byEscapedId,*.testByClass
+--------------------------------------------------------------------------------------------------
+TP: default, time elapsed: 6807600 ns, RESULT:
+    TCS: SelectorTest, time elapsed: 6800000 ns, RESULT:
+    [ PASSED ] CASE: testByTag (1924700 ns)
+    [ PASSED ] CASE: byEscapedTag (610800 ns)
+    [ PASSED ] CASE: testById (1042300 ns)
+    [ PASSED ] CASE: byEscapedId (666400 ns)
+    [ PASSED ] CASE: testByClass (1509500 ns)
+Summary: TOTAL: 89
+    PASSED: 5, SKIPPED: 84, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------
+Exit code: 0

@@ -1,0 +1,68 @@
+package caverphone
+import std.unittest.*
+import std.unittest.testmacro.*
+import std.unicode.*
+import std.regex.*
+import std.fs.*
+import encoding.json.*
+import serialization.serialization.*
+
+/* ===== Emitted by MacroCall @Test in caverphone_test.cj:10:1 ===== */
+/* 10.1 */@Attribute[TEST_GENERATED] class caverphone_test <: TestClass {
+/* 10.2 */    @Attribute[TestCase_0]
+/* 10.3 */    func testHex(): Unit {
+/* 10.4 */        let bytes = File.readFrom("D:\\code\\Cangjie\\caverphone\\src\\testdata.json")
+/* 10.5 */        let a = String.fromUtf8(bytes)
+/* 10.6 */        let json = JsonValue.fromStr(a)
+/* 10.7 */        let arr = json.asArray()
+/* 10.8 */        for(i in 0 .. arr.size()) {
+/* 10.9 */            var dm = DataModel.fromJson(arr[i])
+/* 10.10 */            var A = Person.deserialize(dm)
+/* 10.11 */            assertEqual("caverphone(A.input)", "A.expected", caverphone(A.input), A.expected)
+/* 10.12 */        }
+/* 10.13 */    }
+/* 10.14 */    
+/* 10.15 */    init() {
+/* 10.16 */    }
+/* 10.17 */    private func classConfiguration(): Configuration {
+/* 10.18 */        let configuration = Configuration()
+/* 10.19 */        
+/* 10.20 */        return configuration
+/* 10.21 */    }
+/* 10.22 */    public override func asTestSuite(): TestSuite {
+/* 10.23 */        
+/* 10.24 */        let suiteConfiguration = classConfiguration()
+/* 10.25 */        let suiteBuilder = TestSuite.builder("caverphone_test").configure(suiteConfiguration)
+/* 10.26 */        
+/* 10.27 */        { => let caseConfig = Configuration()
+/* 10.28 */            
+/* 10.29 */            let testHexTestFunc = { => testHex();() }
+/* 10.30 */            suiteBuilder.add(
+/* 10.31 */            UnitTestCase.create(
+/* 10.32 */            "testHex",
+/* 10.33 */            configuration: caseConfig,
+/* 10.34 */            body: testHexTestFunc
+/* 10.35 */            )
+/* 10.36 */            )
+/* 10.37 */            
+/* 10.38 */        }()
+/* 10.39 */        
+/* 10.40 */        return suiteBuilder.build()
+/* 10.41 */    }
+/* 10.42 */    private func inheritedFromClassAnnotatedByTestTemplate < T >(): TestSuite where T <: TestClass {
+/* 10.43 */        throw Exception("Unreachable code")
+/* 10.44 */    }
+/* 10.45 */}
+/* 10.46 */
+/* 10.47 */
+/* 10.48 */interface TestPackageExtension_caverphone_test {
+/* 10.49 */    func registercaverphone_test(): Unit
+/* 10.50 */}
+/* 10.51 */extend TestPackage <: TestPackageExtension_caverphone_test {
+/* 10.52 */    @Attribute[TEST_REGISTER]
+/* 10.53 */    public func registercaverphone_test() {
+/* 10.54 */        registerSuite({ => caverphone_test().asTestSuite() })
+/* 10.55 */    }
+/* 10.56 */}
+/* 10.57 */
+/* ===== End of the Emit ===== */
