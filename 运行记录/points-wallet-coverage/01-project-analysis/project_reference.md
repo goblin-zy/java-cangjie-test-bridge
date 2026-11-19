@@ -1,0 +1,1 @@
+积分钱包。两个普通 JUnit 测试，共享 setup 和 newWallet。目标接口按项目 README 暂定。

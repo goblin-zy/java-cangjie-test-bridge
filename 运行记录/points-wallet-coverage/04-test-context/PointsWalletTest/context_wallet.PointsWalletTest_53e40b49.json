@@ -1,0 +1,582 @@
+{
+  "schema_version": "concrete-test-context-1.0",
+  "target": {
+    "project": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet",
+    "type": "wallet.PointsWalletTest",
+    "methods": [
+      "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "wallet.PointsWalletTest#rejectsOverspending()"
+    ],
+    "file": "src/test/java/wallet/PointsWalletTest.java"
+  },
+  "scope": {
+    "source_roots": [
+      "src/main/java",
+      "src/test/java"
+    ],
+    "resource_roots": [],
+    "fallback_project_scan": false,
+    "java_files_indexed": 2,
+    "max_depth": 6,
+    "max_members": 300,
+    "max_resource_bytes": 262144,
+    "stop_conditions": [
+      "外部定义或无法唯一匹配的引用",
+      "依赖循环去重",
+      "达到深度、成员或资源大小上限"
+    ],
+    "analysis": "JDK17 syntax plus conservative project-local lookup; no compiler symbol attribution"
+  },
+  "original_tests": [
+    {
+      "id": "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "content": "@Test\n    void spendsPointsInOrder() {\n        assertTrue(wallet.spend(30));\n        assertEquals(70, wallet.balance());\n        assertTrue(wallet.spend(20));\n        assertEquals(50, wallet.balance());\n    }",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 21,
+        "end_line": 27,
+        "start_offset_utf16": 493,
+        "end_offset_utf16_exclusive": 701,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      }
+    },
+    {
+      "id": "wallet.PointsWalletTest#rejectsOverspending()",
+      "content": "@Test\n    void rejectsOverspending() {\n        assertFalse(wallet.spend(150));\n        assertEquals(100, wallet.balance());\n    }",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 29,
+        "end_line": 33,
+        "start_offset_utf16": 707,
+        "end_offset_utf16_exclusive": 836,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      }
+    }
+  ],
+  "related_members": {
+    "src/test/java/wallet/PointsWalletTest.java": [
+      "wallet.PointsWalletTest#field:wallet",
+      "wallet.PointsWalletTest#setup()",
+      "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "wallet.PointsWalletTest#rejectsOverspending()",
+      "wallet.PointsWalletTest#newWallet()"
+    ],
+    "src/main/java/wallet/PointsWallet.java": [
+      "wallet.PointsWallet#field:points",
+      "wallet.PointsWallet#spend(int)",
+      "wallet.PointsWallet#balance()",
+      "wallet.PointsWallet#<init>(int)"
+    ]
+  },
+  "records": [
+    {
+      "id": "wallet.PointsWalletTest",
+      "category": "original_test_class",
+      "content": "class PointsWalletTest {\n    private PointsWallet wallet;\n\n    private PointsWallet newWallet() {\n        return new PointsWallet(100);\n    }\n\n    @BeforeEach\n    void setup() {\n        wallet = newWallet();\n    }\n\n    @Test\n    void spendsPointsInOrder() {\n        assertTrue(wallet.spend(30));\n        assertEquals(70, wallet.balance());\n        assertTrue(wallet.spend(20));\n        assertEquals(50, wallet.balance());\n    }\n\n    @Test\n    void rejectsOverspending() {\n        assertFalse(wallet.spend(150));\n        assertEquals(100, wallet.balance());\n    }\n}",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 9,
+        "end_line": 34,
+        "start_offset_utf16": 274,
+        "end_offset_utf16_exclusive": 838,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "wallet.PointsWalletTest"
+        },
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "wallet.PointsWalletTest#setup()"
+        },
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "wallet.PointsWalletTest#spendsPointsInOrder()"
+        },
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "wallet.PointsWalletTest#rejectsOverspending()"
+        },
+        {
+          "reason": "完整原始测试类；相关成员另行标记",
+          "via": null
+        }
+      ],
+      "categories": [
+        "related_definition",
+        "original_test_class"
+      ]
+    },
+    {
+      "id": "src/test/java/wallet/PointsWalletTest.java#import:0",
+      "category": "imports",
+      "content": "import org.junit.jupiter.api.BeforeEach;",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 3,
+        "end_line": 3,
+        "start_offset_utf16": 17,
+        "end_offset_utf16_exclusive": 57,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "src/test/java/wallet/PointsWalletTest.java#import:1",
+      "category": "imports",
+      "content": "import org.junit.jupiter.api.Test;",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 58,
+        "end_offset_utf16_exclusive": 92,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "src/test/java/wallet/PointsWalletTest.java#import:2",
+      "category": "imports",
+      "content": "import static org.junit.jupiter.api.Assertions.assertEquals;",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 5,
+        "end_line": 5,
+        "start_offset_utf16": 93,
+        "end_offset_utf16_exclusive": 153,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "src/test/java/wallet/PointsWalletTest.java#import:3",
+      "category": "imports",
+      "content": "import static org.junit.jupiter.api.Assertions.assertFalse;",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 6,
+        "end_line": 6,
+        "start_offset_utf16": 154,
+        "end_offset_utf16_exclusive": 213,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "src/test/java/wallet/PointsWalletTest.java#import:4",
+      "category": "imports",
+      "content": "import static org.junit.jupiter.api.Assertions.assertTrue;",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 7,
+        "end_line": 7,
+        "start_offset_utf16": 214,
+        "end_offset_utf16_exclusive": 272,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "wallet.PointsWalletTest#field:wallet",
+      "category": "field_initialization",
+      "content": "private PointsWallet wallet;",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 10,
+        "end_line": 10,
+        "start_offset_utf16": 303,
+        "end_offset_utf16_exclusive": 331,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "wallet.PointsWalletTest"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "wallet.PointsWalletTest#setup()",
+      "category": "lifecycle",
+      "content": "@BeforeEach\n    void setup() {\n        wallet = newWallet();\n    }",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 16,
+        "end_line": 19,
+        "start_offset_utf16": 421,
+        "end_offset_utf16_exclusive": 487,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "适用的JUnit生命周期声明: BeforeEach",
+          "via": "wallet.PointsWalletTest"
+        }
+      ],
+      "categories": [
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "category": "target_test",
+      "content": "@Test\n    void spendsPointsInOrder() {\n        assertTrue(wallet.spend(30));\n        assertEquals(70, wallet.balance());\n        assertTrue(wallet.spend(20));\n        assertEquals(50, wallet.balance());\n    }",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 21,
+        "end_line": 27,
+        "start_offset_utf16": 493,
+        "end_offset_utf16_exclusive": 701,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "本次查找的目标测试",
+          "via": "wallet.PointsWalletTest"
+        }
+      ],
+      "categories": [
+        "target_test"
+      ]
+    },
+    {
+      "id": "wallet.PointsWalletTest#rejectsOverspending()",
+      "category": "target_test",
+      "content": "@Test\n    void rejectsOverspending() {\n        assertFalse(wallet.spend(150));\n        assertEquals(100, wallet.balance());\n    }",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 29,
+        "end_line": 33,
+        "start_offset_utf16": 707,
+        "end_offset_utf16_exclusive": 836,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "本次查找的目标测试",
+          "via": "wallet.PointsWalletTest"
+        }
+      ],
+      "categories": [
+        "target_test"
+      ]
+    },
+    {
+      "id": "wallet.PointsWalletTest#newWallet()",
+      "category": "helper",
+      "content": "private PointsWallet newWallet() {\n        return new PointsWallet(100);\n    }",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 12,
+        "end_line": 14,
+        "start_offset_utf16": 337,
+        "end_offset_utf16_exclusive": 415,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "wallet.PointsWalletTest#setup()"
+        }
+      ],
+      "categories": [
+        "helper"
+      ]
+    },
+    {
+      "id": "wallet.PointsWallet",
+      "category": "related_definition",
+      "content": "public final class PointsWallet {\n    ",
+      "source": {
+        "file": "src/main/java/wallet/PointsWallet.java",
+        "start_line": 3,
+        "end_line": 4,
+        "start_offset_utf16": 17,
+        "end_offset_utf16_exclusive": 55,
+        "sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9"
+      },
+      "reasons": [
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "wallet.PointsWalletTest#spendsPointsInOrder()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "wallet.PointsWalletTest#rejectsOverspending()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "wallet.PointsWalletTest#newWallet()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "wallet.PointsWallet#<init>(int)"
+        }
+      ],
+      "categories": [
+        "related_definition"
+      ]
+    },
+    {
+      "id": "wallet.PointsWallet#field:points",
+      "category": "field_initialization",
+      "content": "private int points;",
+      "source": {
+        "file": "src/main/java/wallet/PointsWallet.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 55,
+        "end_offset_utf16_exclusive": 74,
+        "sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "wallet.PointsWalletTest#spendsPointsInOrder()"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "wallet.PointsWallet#spend(int)",
+      "category": "called_code",
+      "content": "public boolean spend(int amount) {\n        if (amount > points) {\n            return false;\n        }\n        points -= amount;\n        return true;\n    }",
+      "source": {
+        "file": "src/main/java/wallet/PointsWallet.java",
+        "start_line": 10,
+        "end_line": 16,
+        "start_offset_utf16": 155,
+        "end_offset_utf16_exclusive": 309,
+        "sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "wallet.PointsWalletTest#spendsPointsInOrder()"
+        },
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "wallet.PointsWalletTest#rejectsOverspending()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "wallet.PointsWallet#balance()",
+      "category": "called_code",
+      "content": "public int balance() {\n        return points;\n    }",
+      "source": {
+        "file": "src/main/java/wallet/PointsWallet.java",
+        "start_line": 18,
+        "end_line": 20,
+        "start_offset_utf16": 315,
+        "end_offset_utf16_exclusive": 366,
+        "sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "wallet.PointsWalletTest#spendsPointsInOrder()"
+        },
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "wallet.PointsWalletTest#rejectsOverspending()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "wallet.PointsWallet#<init>(int)",
+      "category": "called_code",
+      "content": "public PointsWallet(int points) {\n        this.points = points;\n    }",
+      "source": {
+        "file": "src/main/java/wallet/PointsWallet.java",
+        "start_line": 6,
+        "end_line": 8,
+        "start_offset_utf16": 80,
+        "end_offset_utf16_exclusive": 149,
+        "sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "wallet.PointsWalletTest#newWallet()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertTrue",
+      "caller": "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "content": "assertTrue(wallet.spend(30))",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 23,
+        "end_line": 23,
+        "start_offset_utf16": 540,
+        "end_offset_utf16_exclusive": 568,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "wallet.PointsWalletTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "content": "assertEquals(70, wallet.balance())",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 24,
+        "end_line": 24,
+        "start_offset_utf16": 578,
+        "end_offset_utf16_exclusive": 612,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "wallet.PointsWalletTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertTrue",
+      "caller": "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "content": "assertTrue(wallet.spend(20))",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 25,
+        "end_line": 25,
+        "start_offset_utf16": 622,
+        "end_offset_utf16_exclusive": 650,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "wallet.PointsWalletTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "wallet.PointsWalletTest#spendsPointsInOrder()",
+      "content": "assertEquals(50, wallet.balance())",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 26,
+        "end_line": 26,
+        "start_offset_utf16": 660,
+        "end_offset_utf16_exclusive": 694,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "wallet.PointsWalletTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertFalse",
+      "caller": "wallet.PointsWalletTest#rejectsOverspending()",
+      "content": "assertFalse(wallet.spend(150))",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 31,
+        "end_line": 31,
+        "start_offset_utf16": 754,
+        "end_offset_utf16_exclusive": 784,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "wallet.PointsWalletTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "wallet.PointsWalletTest#rejectsOverspending()",
+      "content": "assertEquals(100, wallet.balance())",
+      "source": {
+        "file": "src/test/java/wallet/PointsWalletTest.java",
+        "start_line": 32,
+        "end_line": 32,
+        "start_offset_utf16": 794,
+        "end_offset_utf16_exclusive": 829,
+        "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "wallet.PointsWalletTest"
+      ]
+    }
+  ],
+  "boundaries": [],
+  "project_issues": [],
+  "completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "生命周期仅支持已识别JUnit4/5声明与简单继承，不解释组合注解、扩展注册和接口默认方法",
+    "重载按名称和参数数量筛选；接口动态实现、链式接收者、反射与动态路径会报告未解析",
+    "保留完整类型可含无关成员；不把类中所有成员视为本次相关成员",
+    "不提供跨语言规则、项目翻译约定筛选或完整模型输入组织",
+    "只读源工程，不执行构建、测试或业务代码"
+  ]
+}

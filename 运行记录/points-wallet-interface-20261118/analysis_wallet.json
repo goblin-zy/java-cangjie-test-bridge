@@ -1,0 +1,141 @@
+{
+  "snapshot_id": "56bafc635c90c0bf8b3109a8",
+  "reviewed_file_ids": [
+    "java_business:wallet/PointsWallet.java",
+    "java_tests:wallet/PointsWalletTest.java"
+  ],
+  "reviewed_categories": [
+    "C03"
+  ],
+  "items": [
+    {
+      "id": "wallet-spend",
+      "category": "C03",
+      "subject": "wallet.PointsWallet.spend(int)",
+      "title": "拟定目标接口 spend(Int32): Bool",
+      "scope": "wallet.PointsWallet",
+      "related_members": [
+        "M-ddb5194ed980dd905af7a440"
+      ],
+      "content": {
+        "source_signature": "public boolean spend(int amount)",
+        "target_signature": "spend(Int32): Bool",
+        "call_form": "wallet.spend(amount)",
+        "behavior": "amount 大于现有积分时返回 false 且余额不变；否则扣减并返回 true。",
+        "decisions": "拟沿用源包 wallet、类型和成员名称；Java int 采用相同位宽的 Int32，boolean 对应 Bool。行为依据 Java，目标实现待核对。",
+        "implementation_evidence": "absent"
+      },
+      "basis": "ai_analysis",
+      "status": "pending",
+      "sources": [
+        {
+          "file_id": "java_business:wallet/PointsWallet.java",
+          "start_line": 10,
+          "end_line": 16,
+          "quote": "    public boolean spend(int amount) {\n        if (amount > points) {\n            return false;\n        }\n        points -= amount;\n        return true;\n    }"
+        },
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 31,
+          "end_line": 31,
+          "quote": "        assertFalse(wallet.spend(150));"
+        },
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 23,
+          "end_line": 23,
+          "quote": "        assertTrue(wallet.spend(30));"
+        },
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 25,
+          "end_line": 25,
+          "quote": "        assertTrue(wallet.spend(20));"
+        }
+      ]
+    },
+    {
+      "id": "wallet-balance",
+      "category": "C03",
+      "subject": "wallet.PointsWallet.balance()",
+      "title": "拟定目标接口 balance(): Int32",
+      "scope": "wallet.PointsWallet",
+      "related_members": [
+        "M-45fca66f02d1d08d00faaf5f"
+      ],
+      "content": {
+        "source_signature": "public int balance()",
+        "target_signature": "balance(): Int32",
+        "call_form": "wallet.balance()",
+        "behavior": "读取当前积分，查询不改变状态。",
+        "decisions": "拟沿用源包 wallet、类型和成员名称；Java int 采用相同位宽的 Int32，boolean 对应 Bool。行为依据 Java，目标实现待核对。",
+        "implementation_evidence": "absent"
+      },
+      "basis": "ai_analysis",
+      "status": "pending",
+      "sources": [
+        {
+          "file_id": "java_business:wallet/PointsWallet.java",
+          "start_line": 18,
+          "end_line": 20,
+          "quote": "    public int balance() {\n        return points;\n    }"
+        },
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 26,
+          "end_line": 26,
+          "quote": "        assertEquals(50, wallet.balance());"
+        },
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 32,
+          "end_line": 32,
+          "quote": "        assertEquals(100, wallet.balance());"
+        },
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 24,
+          "end_line": 24,
+          "quote": "        assertEquals(70, wallet.balance());"
+        }
+      ]
+    },
+    {
+      "id": "wallet-constructor",
+      "category": "C03",
+      "subject": "wallet.PointsWallet.PointsWallet(int)",
+      "title": "拟定目标接口 PointsWallet(Int32)",
+      "scope": "wallet.PointsWallet",
+      "related_members": [
+        "M-5a28b130da3f461c5d6f89c6"
+      ],
+      "content": {
+        "source_signature": "public PointsWallet(int points)",
+        "target_signature": "PointsWallet(Int32)",
+        "call_form": "PointsWallet(initialPoints)",
+        "behavior": "以给定积分初始化独立实例。",
+        "decisions": "拟沿用源包 wallet、类型和成员名称；Java int 采用相同位宽的 Int32，boolean 对应 Bool。行为依据 Java，目标实现待核对。",
+        "implementation_evidence": "absent"
+      },
+      "basis": "ai_analysis",
+      "status": "pending",
+      "sources": [
+        {
+          "file_id": "java_business:wallet/PointsWallet.java",
+          "start_line": 6,
+          "end_line": 8,
+          "quote": "    public PointsWallet(int points) {\n        this.points = points;\n    }"
+        },
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 13,
+          "end_line": 13,
+          "quote": "        return new PointsWallet(100);"
+        }
+      ]
+    }
+  ],
+  "analysis_notes": [
+    "已核对唯一分片的两份源码及引用，准备方法经 newWallet 调用构造器，两条测试共用 spend 和 balance。保留五项未匹配问题；类由构造约定涵盖，私有字段无需公开。仅审查目标接口约定。"
+  ]
+}

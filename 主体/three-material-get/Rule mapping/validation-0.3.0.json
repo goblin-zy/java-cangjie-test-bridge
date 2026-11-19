@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-03",
+  "version": "0.3.0",
+  "checks": "JSON parsing; original fields; unique IDs; category mapping; old 21 rules unchanged; candidate preservation; document references and table columns",
+  "rules": 33,
+  "new_rules": 12,
+  "usage_counts": {
+    "测试代码基础表达": 21,
+    "按需辅助表达": 2,
+    "测试框架迁移": 10
+  },
+  "result": "passed",
+  "execution_validation": "未编译或运行 Java/仓颉规则示例；只完成结构和资料一致性检查",
+  "json_sha256": "5fce5a33f882cbf5a7a7d282723c6f296638a664aa5e6bc8b8ccb2833c58e3e9",
+  "detail_doc_sha256": "a5f995dfab35868e22e90126dfa6032006e817f096c2c82b92c450ba7003c083"
+}

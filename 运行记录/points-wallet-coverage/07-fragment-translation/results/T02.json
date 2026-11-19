@@ -1,0 +1,9 @@
+{
+  "task_id": "T02",
+  "packet_sha256": "b8fbf63488d67891d3b2dbdffe1d500775e0a9e7fee1dcc62850153eee0229d0",
+  "code": "wallet = Some(newWallet())",
+  "imports": [],
+  "unresolved": [
+    "目标接口尚未核对"
+  ]
+}

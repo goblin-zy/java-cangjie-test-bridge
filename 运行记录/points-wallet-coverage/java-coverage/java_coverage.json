@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "scope": "whole selected test invocation including fixtures",
+  "tests": [
+    {
+      "test": "wallet.PointsWalletTest#spendsPointsInOrder",
+      "test_result": "passed",
+      "executed_cases": 1,
+      "exit_code": 0,
+      "coverage_status": "collected",
+      "executed_methods": [
+        {
+          "class": "wallet.PointsWallet",
+          "name": "<init>",
+          "descriptor": "(I)V",
+          "line": "6"
+        },
+        {
+          "class": "wallet.PointsWallet",
+          "name": "spend",
+          "descriptor": "(I)Z",
+          "line": "11"
+        },
+        {
+          "class": "wallet.PointsWallet",
+          "name": "balance",
+          "descriptor": "()I",
+          "line": "19"
+        }
+      ],
+      "evidence": "e6fa4bc33a987b43"
+    },
+    {
+      "test": "wallet.PointsWalletTest#rejectsOverspending",
+      "test_result": "passed",
+      "executed_cases": 1,
+      "exit_code": 0,
+      "coverage_status": "collected",
+      "executed_methods": [
+        {
+          "class": "wallet.PointsWallet",
+          "name": "<init>",
+          "descriptor": "(I)V",
+          "line": "6"
+        },
+        {
+          "class": "wallet.PointsWallet",
+          "name": "spend",
+          "descriptor": "(I)Z",
+          "line": "11"
+        },
+        {
+          "class": "wallet.PointsWallet",
+          "name": "balance",
+          "descriptor": "()I",
+          "line": "19"
+        }
+      ],
+      "evidence": "5d6de7d518479333"
+    }
+  ],
+  "status": "complete",
+  "class_hashes": {
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\01-project-analysis\\classes\\main\\wallet\\PointsWallet.class": "27d5479290ea72e3a004bcbc660caeaaa7ae87a315b7ddc8114d6987c2e1a8f3"
+  }
+}

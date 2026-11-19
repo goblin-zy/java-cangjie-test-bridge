@@ -1,0 +1,175 @@
+{
+  "$defs": {
+    "ParserSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "java": {
+          "default": "java",
+          "title": "Java",
+          "type": "string"
+        },
+        "javac": {
+          "default": "javac",
+          "title": "Javac",
+          "type": "string"
+        },
+        "cjc": {
+          "default": "cjc",
+          "title": "Cjc",
+          "type": "string"
+        },
+        "cangjie_helper": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cangjie Helper"
+        },
+        "java_source_roots": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Java Source Roots",
+          "type": "array"
+        },
+        "java_classpath": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Java Classpath",
+          "type": "array"
+        },
+        "java_language_level": {
+          "default": "JAVA_17",
+          "title": "Java Language Level",
+          "type": "string"
+        },
+        "timeout_seconds": {
+          "default": 120,
+          "minimum": 1,
+          "title": "Timeout Seconds",
+          "type": "integer"
+        }
+      },
+      "title": "ParserSettings",
+      "type": "object"
+    },
+    "SourceRoot": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "pattern": "^[A-Za-z0-9_-]+$",
+          "title": "Name",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "language": {
+          "enum": [
+            "java",
+            "cangjie",
+            "documents"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "role": {
+          "default": "mixed",
+          "enum": [
+            "business",
+            "test",
+            "mixed",
+            "documentation"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "include": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Include",
+          "type": "array"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Exclude",
+          "type": "array"
+        },
+        "encoding": {
+          "default": "utf-8-sig",
+          "title": "Encoding",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "path",
+        "language"
+      ],
+      "title": "SourceRoot",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "project_name": {
+      "title": "Project Name",
+      "type": "string"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/SourceRoot"
+      },
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array"
+    },
+    "output_dir": {
+      "default": "outputs/current",
+      "title": "Output Dir",
+      "type": "string"
+    },
+    "allow_target_tests": {
+      "default": false,
+      "title": "Allow Target Tests",
+      "type": "boolean"
+    },
+    "allow_unparsed_target_evidence": {
+      "default": false,
+      "title": "Allow Unparsed Target Evidence",
+      "type": "boolean"
+    },
+    "exclude": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Exclude",
+      "type": "array"
+    },
+    "max_file_bytes": {
+      "default": 3000000,
+      "minimum": 1,
+      "title": "Max File Bytes",
+      "type": "integer"
+    },
+    "parsers": {
+      "$ref": "#/$defs/ParserSettings"
+    }
+  },
+  "required": [
+    "project_name",
+    "sources"
+  ],
+  "title": "ProjectConfig",
+  "type": "object"
+}

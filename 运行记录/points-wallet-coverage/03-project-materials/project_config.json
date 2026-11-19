@@ -1,0 +1,43 @@
+{
+  "project_name": "points-wallet",
+  "sources": [
+    {
+      "name": "java_business",
+      "path": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java",
+      "language": "java",
+      "role": "business"
+    },
+    {
+      "name": "java_tests",
+      "path": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java",
+      "language": "java",
+      "role": "test"
+    },
+    {
+      "name": "project_docs",
+      "path": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\README.md",
+      "language": "documents",
+      "role": "documentation"
+    }
+  ],
+  "output_dir": "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\03-project-materials\\scan",
+  "allow_target_tests": false,
+  "allow_unparsed_target_evidence": false,
+  "exclude": [],
+  "max_file_bytes": 3000000,
+  "parsers": {
+    "java": "D:\\program_study\\yrys\\environment-config\\tools\\jdk-17\\bin\\java.exe",
+    "javac": "D:\\program_study\\yrys\\environment-config\\tools\\jdk-17\\bin\\javac.exe",
+    "cjc": "cjc",
+    "cangjie_helper": null,
+    "java_source_roots": [
+      "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java",
+      "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java"
+    ],
+    "java_classpath": [
+      "D:\\program_study\\yrys\\environment-config\\libraries\\junit-platform-console-standalone-1.13.4.jar"
+    ],
+    "java_language_level": "JAVA_17",
+    "timeout_seconds": 120
+  }
+}

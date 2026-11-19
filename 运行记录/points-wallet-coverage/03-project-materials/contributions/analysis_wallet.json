@@ -1,0 +1,82 @@
+{
+  "snapshot_id": "a07cfb9abf855d9b5240252b",
+  "reviewed_file_ids": [
+    "java_business:wallet/PointsWallet.java",
+    "java_tests:wallet/PointsWalletTest.java",
+    "project_docs:README.md"
+  ],
+  "reviewed_categories": [
+    "C03",
+    "C04",
+    "C05"
+  ],
+  "analysis_notes": [
+    "核对业务接口、消费约定与共享准备方法。目标实现缺失，接口按 README 暂定。"
+  ],
+  "items": [
+    {
+      "id": "wallet-api",
+      "category": "C03",
+      "subject": "wallet.PointsWallet",
+      "title": "暂定仓颉接口",
+      "content": {
+        "api": [
+          "PointsWallet(Int32)",
+          "spend(Int32): Bool",
+          "balance(): Int32"
+        ]
+      },
+      "basis": "document_statement",
+      "status": "pending",
+      "scope": "points-wallet",
+      "sources": [
+        {
+          "file_id": "project_docs:README.md",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Java 源码在 `src/main/java`，JUnit 5 测试在 `src/test/java`。目标测试沿用包名 `wallet`，暂定业务接口为 `PointsWallet(Int32)`、`spend(Int32): Bool` 和 `balance(): Int32`。目标业务实现由接收方提供。"
+        }
+      ]
+    },
+    {
+      "id": "wallet-contract",
+      "category": "C04",
+      "subject": "wallet.PointsWallet",
+      "title": "消费和余额约定",
+      "content": {
+        "behavior": "余额不足时返回 false 并保持余额，否则扣减并返回 true。"
+      },
+      "basis": "source_fact",
+      "status": "extracted",
+      "scope": "points-wallet",
+      "sources": [
+        {
+          "file_id": "java_business:wallet/PointsWallet.java",
+          "start_line": 10,
+          "end_line": 20,
+          "quote": "    public boolean spend(int amount) {\n        if (amount > points) {\n            return false;\n        }\n        points -= amount;\n        return true;\n    }\n\n    public int balance() {\n        return points;\n    }"
+        }
+      ]
+    },
+    {
+      "id": "wallet-fixture",
+      "category": "C05",
+      "subject": "wallet.PointsWallet",
+      "title": "每条测试从 100 积分开始",
+      "content": {
+        "setup": "setup 调用 newWallet，创建独立钱包。"
+      },
+      "basis": "source_fact",
+      "status": "extracted",
+      "scope": "points-wallet",
+      "sources": [
+        {
+          "file_id": "java_tests:wallet/PointsWalletTest.java",
+          "start_line": 12,
+          "end_line": 19,
+          "quote": "    private PointsWallet newWallet() {\n        return new PointsWallet(100);\n    }\n\n    @BeforeEach\n    void setup() {\n        wallet = newWallet();\n    }"
+        }
+      ]
+    }
+  ]
+}

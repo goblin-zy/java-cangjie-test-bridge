@@ -1,0 +1,14 @@
+{
+  "files": [
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-interface-20261118\\scan\\parser_artifacts\\java_snapshot\\D\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java\\wallet\\PointsWallet.java",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-interface-20261118\\scan\\parser_artifacts\\java_snapshot\\D\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java\\wallet\\PointsWalletTest.java"
+  ],
+  "source_roots": [
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-interface-20261118\\scan\\parser_artifacts\\java_snapshot\\D\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-interface-20261118\\scan\\parser_artifacts\\java_snapshot\\D\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java"
+  ],
+  "classpath": [
+    "D:\\program_study\\yrys\\environment-config\\libraries\\junit-platform-console-standalone-1.13.4.jar"
+  ],
+  "language_level": "JAVA_17"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Platform Suite" tests="0" skipped="0" failures="0" errors="0" time="0.022" hostname="DESKTOP-AQ2OLLL" timestamp="2026-11-11T19:58:33">
+<properties>
+<property name="file.encoding" value="GBK"/>
+<property name="file.separator" value="\"/>
+<property name="java.class.path" value="D:\program_study\yrys\environment-config\libraries\junit-platform-console-standalone-1.13.4.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="D:\program_study\yrys\environment-config\tools\jdk-17"/>
+<property name="java.io.tmpdir" value="D:\program_study\yrys\tmp\"/>
+<property name="java.library.path" value="D:\program_study\yrys\environment-config\tools\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\native\powershell;C:\Users\Jack\.codex\tmp\arg0-windows\codex-arg0NSPgL3;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\native\powershell;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\native\libheif\libheif\bin;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\native\jxrlib\jxrlib\bin;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\native\poppler\Library\bin;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\bin\override;D:\program_study\3_up\tools\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Google_download\Git\cmd;D:\Google_download\cursor\resources\app\bin;D:\mygo\bin;D:\class_need\;D:\class_need\Scripts\;;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\Jack\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Jack\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jack\.cargo\bin;d:\Google_download\Trae CN\bin;C:\Users\Jack\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\MinGW\bin;C:\Users\Jack\go\bin;D:\Google_download\Qoder\bin;D:\Google_download\nodejs;C:\Users\Jack\.agent-reach-venv\Scripts;C:\Users\Jack\AppData\Local\Programs\DockerDesktop\resources\bin;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\bin\fallback;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\node\bin;C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\dependencies\native\git\cmd;C:\Program Files\WindowsApps\OpenAI.Codex_26.1103.7773.0_x64__2p2nqsd0c76g0\app\resources;."/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="https://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+<property name="java.version" value="17.0.8"/>
+<property name="java.version.date" value="2023-07-18"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+<property name="jdk.debug" value="release"/>
+<property name="junit.docs.version" value="1.13.4"/>
+<property name="line.separator" value="&#13;&#10;"/>
+<property name="native.encoding" value="GBK"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 11"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="D:\program_study\yrys\environment-config\tools\jdk-17\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="D:\program_study\yrys\environment-config\libraries\junit-platform-console-standalone-1.13.4.jar execute --class-path D:\program_study\yrys\Translation-all\output\points-wallet-coverage\01-project-analysis\classes\main;D:\program_study\yrys\Translation-all\output\points-wallet-coverage\01-project-analysis\classes\test --select-method wallet.PointsWalletTest#spendsPointsInOrder --reports-dir D:\program_study\yrys\Translation-all\output\points-wallet-coverage\java-coverage\e6fa4bc33a987b43\junit --fail-if-no-tests --disable-ansi-colors"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="GBK"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="user.country" value="CN"/>
+<property name="user.dir" value="D:\program_study\yrys\Translation-all\01-projects\points-wallet"/>
+<property name="user.home" value="C:\Users\Jack"/>
+<property name="user.language" value="zh"/>
+<property name="user.name" value="Jack"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="Asia/Shanghai"/>
+<property name="user.variant" value=""/>
+</properties>
+<system-out><![CDATA[
+unique-id: [engine:junit-platform-suite]
+display-name: JUnit Platform Suite
+]]></system-out>
+</testsuite>

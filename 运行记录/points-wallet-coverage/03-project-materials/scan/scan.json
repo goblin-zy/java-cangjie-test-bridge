@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "project_name": "points-wallet",
+  "snapshot_id": "a07cfb9abf855d9b5240252b",
+  "config": {
+    "project_name": "points-wallet",
+    "sources": [
+      {
+        "name": "java_business",
+        "path": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java",
+        "language": "java",
+        "role": "business",
+        "include": [
+          "**/*"
+        ],
+        "exclude": [],
+        "encoding": "utf-8-sig"
+      },
+      {
+        "name": "java_tests",
+        "path": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java",
+        "language": "java",
+        "role": "test",
+        "include": [
+          "**/*"
+        ],
+        "exclude": [],
+        "encoding": "utf-8-sig"
+      },
+      {
+        "name": "project_docs",
+        "path": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\README.md",
+        "language": "documents",
+        "role": "documentation",
+        "include": [
+          "**/*"
+        ],
+        "exclude": [],
+        "encoding": "utf-8-sig"
+      }
+    ],
+    "output_dir": "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\03-project-materials\\scan",
+    "allow_target_tests": false,
+    "allow_unparsed_target_evidence": false,
+    "exclude": [],
+    "max_file_bytes": 3000000,
+    "parsers": {
+      "java": "D:\\program_study\\yrys\\environment-config\\tools\\jdk-17\\bin\\java.exe",
+      "javac": "D:\\program_study\\yrys\\environment-config\\tools\\jdk-17\\bin\\javac.exe",
+      "cjc": "cjc",
+      "cangjie_helper": null,
+      "java_source_roots": [
+        "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java",
+        "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java"
+      ],
+      "java_classpath": [
+        "D:\\program_study\\yrys\\environment-config\\libraries\\junit-platform-console-standalone-1.13.4.jar"
+      ],
+      "java_language_level": "JAVA_17",
+      "timeout_seconds": 120
+    }
+  },
+  "config_path": "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\03-project-materials\\project_config.json",
+  "versions": {
+    "java_business": {
+      "root": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java",
+      "commit": null,
+      "note": "非可读Git工作副本；使用逐文件SHA-256"
+    },
+    "java_tests": {
+      "root": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java",
+      "commit": null,
+      "note": "非可读Git工作副本；使用逐文件SHA-256"
+    },
+    "project_docs": {
+      "root": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet",
+      "commit": null,
+      "note": "非可读Git工作副本；使用逐文件SHA-256"
+    }
+  },
+  "parser_source_hashes": {
+    "adapters\\java\\ProjectExtractor.java": "3657157e0f116913357cf30bbd9316505cc0b603dd5563ff386d6f4f64063465",
+    "adapters\\cangjie\\ast_dump.cj": "9fa0f4c0c05d10e2e7bcaba4e0e2b3875716e827b2f9add42f3145151ef924f1",
+    "src\\pmtool\\__init__.py": "a8a2b7e40811f8aaf93d14ba41438282f8b68858ef22ef74bb801a50c60d689b",
+    "src\\pmtool\\__main__.py": "23bb93dfa82b94036fce266f0a5b99f353ebebb2bb71dd25eb3379875a9fc557",
+    "src\\pmtool\\cj_ast.py": "8195a3682a10d8f309cf16464238c6fa8e1c6422cb47bb43a997c31d22994f9f",
+    "src\\pmtool\\cli.py": "e5d0c1ab40843a06cf6c86994935ae325b9422398b6efca3c4bb5097f25388c1",
+    "src\\pmtool\\config_extract.py": "c0e996483ab7479699b8e18084d1cb4d30900698542a9bebc40b3242feb3b821",
+    "src\\pmtool\\db.py": "3eaceb119ba6959edff6dcb544ab9b6db94c0c539fe6198d15a30d6c31be689f",
+    "src\\pmtool\\frontends.py": "e185eee78a3dd2beebff71eaec5e395cfab732eadbe9ff84ae4403dbbf42b0b1",
+    "src\\pmtool\\materials.py": "32842c514ee534e8522d95ff827810ca38614a7ec44aabcfbad1c676cc24dc9d",
+    "src\\pmtool\\models.py": "0d446cea1dc5d8249da76e1c76c520520390bf7d58eee3b1c36348b90ab6ac2c",
+    "src\\pmtool\\packets.py": "ce9db3a7fd503469cba6b7dd4203e0aeb58a1424dc14c8f7a964a35159bc913a",
+    "src\\pmtool\\scan.py": "06468e70d2c2cc2a478a96016d9a610fbb330bf66f1a77e9d611ba5f78ed7b71",
+    "src\\pmtool\\util.py": "c43aa0bbc704f105bd88e128a96785b45d07465d793aeff1ff3e4daf7b0ad544"
+  },
+  "parser_environment": {
+    "classpath": [
+      {
+        "path": "D:\\program_study\\yrys\\environment-config\\libraries\\junit-platform-console-standalone-1.13.4.jar",
+        "sha256": "3fdfc37e29744a9a67dd5365e81467e26fbde0b7aa204e6f8bbe79eeaa7ae892"
+      }
+    ],
+    "java_libraries": [
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\checker-qual-3.43.0.jar",
+        "sha256": "3fbc2e98f05854c3df16df9abaa955b91b15b3ecac33623208ed6424640ef0f6"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\error_prone_annotations-2.28.0.jar",
+        "sha256": "f3fc8a3a0a4020706a373b00e7f57c2512dd26d1f83d28c7d38768f8682b231e"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\failureaccess-1.0.2.jar",
+        "sha256": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\gson-2.11.0.jar",
+        "sha256": "57928d6e5a6edeb2abd3770a8f95ba44dce45f3b23b7a9dc2b309c581552a78b"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\guava-33.3.1-jre.jar",
+        "sha256": "4bf0e2c5af8e4525c96e8fde17a4f7307f97f8478f11c4c8e35a0e3298ae4e90"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\j2objc-annotations-3.0.0.jar",
+        "sha256": "88241573467ddca44ffd4d74aa04c2bbfd11bf7c17e0c342c94c9de7a70a7c64"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\javaparser-core-3.26.3.jar",
+        "sha256": "a24c4fa7799ffe0c7a9af11d4eecd757098ed4498f86067bf28b46b2bfea1833"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\javaparser-symbol-solver-core-3.26.3.jar",
+        "sha256": "56b8a20297b940e0554584bea6429a62a424f3385d7eb8040f5a0254d6f715ac"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\javassist-3.30.2-GA.jar",
+        "sha256": "eba37290994b5e4868f3af98ff113f6244a6b099385d9ad46881307d3cb01aaf"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\jsr305-3.0.2.jar",
+        "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+      },
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\lib\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+        "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+      }
+    ],
+    "java_classes": [
+      {
+        "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\java\\classes\\ProjectExtractor.class",
+        "sha256": "4304d9ec3409a72f574342353336e3a69cdb960b75d7ba5b23eeffeaffa65830"
+      }
+    ],
+    "environment": {
+      "JAVA_HOME": null,
+      "CANGJIE_HOME": null
+    },
+    "java": {
+      "path": "D:\\program_study\\yrys\\environment-config\\tools\\jdk-17\\bin\\java.exe",
+      "sha256": "cd2202966eee212ee1c58d54a1e55a8db9110b84fd0be356538bfbdd79a27132"
+    },
+    "jdk_release": {
+      "path": "D:\\program_study\\yrys\\environment-config\\tools\\jdk-17\\release",
+      "sha256": "90a7d1167433e9cca8ca0a426b7d1681d74a8669f6eaa6af10e3dcfbd6367726"
+    },
+    "cjc": {
+      "configured": "cjc",
+      "available": false
+    },
+    "cangjie_helper": {
+      "path": "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Project Agreement and Public Materials Generation Tool\\.build\\cangjie\\ast_dump.exe",
+      "sha256": null
+    },
+    "limitations": "记录已识别助手、JAR、JDK元数据及环境根；不保证穷尽系统动态库，也不证明SDK运行正确。"
+  },
+  "coverage": {
+    "files": 3,
+    "members": 11,
+    "references": 25,
+    "issues": 5,
+    "status_counts": {
+      "collected": 1,
+      "parsed": 2
+    }
+  },
+  "analysis_state": "program_only",
+  "execution": "未运行输入项目或测试"
+}

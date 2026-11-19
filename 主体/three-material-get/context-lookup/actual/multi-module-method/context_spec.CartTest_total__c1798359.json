@@ -1,0 +1,938 @@
+{
+  "schema_version": "concrete-test-context-1.0",
+  "target": {
+    "project": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java—仓颉测试代码翻译方法探索\\deliverables\\上下文查找工具_通用实现\\examples\\projects\\多模块测试工程",
+    "type": "spec.CartTest",
+    "methods": [
+      "spec.CartTest#total()"
+    ],
+    "file": "checks/src/test/java/spec/CartTest.java"
+  },
+  "scope": {
+    "source_roots": [
+      "checks/src/test/java",
+      "core/src/main/java"
+    ],
+    "resource_roots": [
+      "checks/src/test/resources"
+    ],
+    "fallback_project_scan": false,
+    "java_files_indexed": 8,
+    "max_depth": 6,
+    "max_members": 300,
+    "max_resource_bytes": 262144,
+    "stop_conditions": [
+      "外部定义或无法唯一匹配的引用",
+      "依赖循环去重",
+      "达到深度、成员或资源大小上限"
+    ],
+    "analysis": "JDK17 syntax plus conservative project-local lookup; no compiler symbol attribution"
+  },
+  "original_tests": [
+    {
+      "id": "spec.CartTest#total()",
+      "content": "@Test public void total() throws Exception {\r\n        seed();\r\n        try (InputStream input = TestSupport.data()) { assertNotNull(input); }\r\n        assertEquals(Limits.THREE, cart.total());\r\n    }",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 13,
+        "end_line": 17,
+        "start_offset_utf16": 403,
+        "end_offset_utf16_exclusive": 602,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      }
+    }
+  ],
+  "related_members": {
+    "checks/src/test/java/spec/CartTest.java": [
+      "spec.CartTest#field:DATA",
+      "spec.CartTest#total()",
+      "spec.CartTest#seed()"
+    ],
+    "checks/src/test/java/support/BaseCase.java": [
+      "support.BaseCase#field:cart",
+      "support.BaseCase#prepare()",
+      "support.BaseCase#clean()"
+    ],
+    "core/src/main/java/app/Cart.java": [
+      "app.Cart#field:amount",
+      "app.Cart#add(int)",
+      "app.Cart#clear()",
+      "app.Cart#total()"
+    ],
+    "core/src/main/java/app/Limits.java": [
+      "app.Limits#field:THREE"
+    ],
+    "checks/src/test/java/support/TestSupport.java": [
+      "support.TestSupport#data()",
+      "support.TestSupport#check(Cart)"
+    ]
+  },
+  "records": [
+    {
+      "id": "spec.CartTest",
+      "category": "original_test_class",
+      "content": "public class CartTest extends BaseCase {\r\n    private static final String DATA = \"/fixtures/price.txt\";\r\n    void seed() { TestSupport.check(cart); }\r\n    @Test public void total() throws Exception {\r\n        seed();\r\n        try (InputStream input = TestSupport.data()) { assertNotNull(input); }\r\n        assertEquals(Limits.THREE, cart.total());\r\n    }\r\n    @Test public void constantResource() {\r\n        assertNotNull(getClass().getResourceAsStream(DATA));\r\n    }\r\n    @Test public void uncertain() {\r\n        getClass().getResourceAsStream(System.getProperty(\"fixture.path\"));\r\n        Engine engine = null;\r\n        engine.run();\r\n        Over.check(1);\r\n    }\r\n    @Test public void cyclic() { TestSupport.cycleA(); }\r\n}",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 10,
+        "end_line": 28,
+        "start_offset_utf16": 248,
+        "end_offset_utf16_exclusive": 975,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "spec.CartTest"
+        },
+        {
+          "reason": "完整原测试类型；相关成员另行标记",
+          "via": "spec.CartTest#total()"
+        },
+        {
+          "reason": "完整原始测试类；相关成员另行标记",
+          "via": null
+        }
+      ],
+      "categories": [
+        "related_definition",
+        "original_test_class"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:0",
+      "category": "imports",
+      "content": "import app.Limits;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 2,
+        "end_line": 2,
+        "start_offset_utf16": 15,
+        "end_offset_utf16_exclusive": 33,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:1",
+      "category": "imports",
+      "content": "import app.Engine;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 3,
+        "end_line": 3,
+        "start_offset_utf16": 35,
+        "end_offset_utf16_exclusive": 53,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:2",
+      "category": "imports",
+      "content": "import support.BaseCase;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 55,
+        "end_offset_utf16_exclusive": 79,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:3",
+      "category": "imports",
+      "content": "import support.TestSupport;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 5,
+        "end_line": 5,
+        "start_offset_utf16": 81,
+        "end_offset_utf16_exclusive": 108,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:4",
+      "category": "imports",
+      "content": "import support.Over;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 6,
+        "end_line": 6,
+        "start_offset_utf16": 110,
+        "end_offset_utf16_exclusive": 130,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:5",
+      "category": "imports",
+      "content": "import org.junit.jupiter.api.Test;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 7,
+        "end_line": 7,
+        "start_offset_utf16": 132,
+        "end_offset_utf16_exclusive": 166,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:6",
+      "category": "imports",
+      "content": "import java.io.InputStream;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 8,
+        "end_line": 8,
+        "start_offset_utf16": 168,
+        "end_offset_utf16_exclusive": 195,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/spec/CartTest.java#import:7",
+      "category": "imports",
+      "content": "import static org.junit.jupiter.api.Assertions.*;",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 9,
+        "end_line": 9,
+        "start_offset_utf16": 197,
+        "end_offset_utf16_exclusive": 246,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "spec.CartTest#field:DATA",
+      "category": "field_initialization",
+      "content": "private static final String DATA = \"/fixtures/price.txt\";",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 11,
+        "end_line": 11,
+        "start_offset_utf16": 294,
+        "end_offset_utf16_exclusive": 351,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "spec.CartTest"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "support.BaseCase",
+      "category": "related_definition",
+      "content": "public class BaseCase {\r\n    ",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 5,
+        "end_line": 6,
+        "start_offset_utf16": 119,
+        "end_offset_utf16_exclusive": 148,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reasons": [
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "spec.CartTest"
+        }
+      ],
+      "categories": [
+        "related_definition"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/support/BaseCase.java#import:0",
+      "category": "imports",
+      "content": "import app.Cart;",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 2,
+        "end_line": 2,
+        "start_offset_utf16": 18,
+        "end_offset_utf16_exclusive": 34,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/support/BaseCase.java#import:1",
+      "category": "imports",
+      "content": "import org.junit.jupiter.api.BeforeEach;",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 3,
+        "end_line": 3,
+        "start_offset_utf16": 36,
+        "end_offset_utf16_exclusive": 76,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/support/BaseCase.java#import:2",
+      "category": "imports",
+      "content": "import org.junit.jupiter.api.AfterEach;",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 78,
+        "end_offset_utf16_exclusive": 117,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "support.BaseCase#field:cart",
+      "category": "field_initialization",
+      "content": "protected Cart cart = new Cart();",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 6,
+        "end_line": 6,
+        "start_offset_utf16": 148,
+        "end_offset_utf16_exclusive": 181,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "spec.CartTest"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "support.BaseCase#prepare()",
+      "category": "lifecycle",
+      "content": "@BeforeEach public void prepare() { cart.add(2); }",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 7,
+        "end_line": 7,
+        "start_offset_utf16": 187,
+        "end_offset_utf16_exclusive": 237,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reasons": [
+        {
+          "reason": "适用的JUnit生命周期声明: BeforeEach",
+          "via": "spec.CartTest"
+        }
+      ],
+      "categories": [
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "support.BaseCase#clean()",
+      "category": "lifecycle",
+      "content": "@AfterEach public void clean() { cart.clear(); }",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 8,
+        "end_line": 8,
+        "start_offset_utf16": 243,
+        "end_offset_utf16_exclusive": 291,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reasons": [
+        {
+          "reason": "适用的JUnit生命周期声明: AfterEach",
+          "via": "spec.CartTest"
+        }
+      ],
+      "categories": [
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "spec.CartTest#total()",
+      "category": "target_test",
+      "content": "@Test public void total() throws Exception {\r\n        seed();\r\n        try (InputStream input = TestSupport.data()) { assertNotNull(input); }\r\n        assertEquals(Limits.THREE, cart.total());\r\n    }",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 13,
+        "end_line": 17,
+        "start_offset_utf16": 403,
+        "end_offset_utf16_exclusive": 602,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "本次查找的目标测试",
+          "via": "spec.CartTest"
+        }
+      ],
+      "categories": [
+        "target_test"
+      ]
+    },
+    {
+      "id": "app.Cart",
+      "category": "related_definition",
+      "content": "public class Cart {\r\n    ",
+      "source": {
+        "file": "core/src/main/java/app/Cart.java",
+        "start_line": 2,
+        "end_line": 3,
+        "start_offset_utf16": 14,
+        "end_offset_utf16_exclusive": 39,
+        "sha256": "2651193e729509c8682642290b09bf444e1b4d3a17e5f15d7ed6ad735eb8980d"
+      },
+      "reasons": [
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "support.BaseCase#field:cart"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "support.BaseCase#prepare()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "support.BaseCase#clean()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "spec.CartTest#total()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "support.TestSupport#check(Cart)"
+        }
+      ],
+      "categories": [
+        "related_definition"
+      ]
+    },
+    {
+      "id": "app.Cart#field:amount",
+      "category": "field_initialization",
+      "content": "private int amount = 0;",
+      "source": {
+        "file": "core/src/main/java/app/Cart.java",
+        "start_line": 3,
+        "end_line": 3,
+        "start_offset_utf16": 39,
+        "end_offset_utf16_exclusive": 62,
+        "sha256": "2651193e729509c8682642290b09bf444e1b4d3a17e5f15d7ed6ad735eb8980d"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "support.BaseCase#field:cart"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "app.Cart#add(int)",
+      "category": "called_code",
+      "content": "public void add(int n) { amount += n; }",
+      "source": {
+        "file": "core/src/main/java/app/Cart.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 68,
+        "end_offset_utf16_exclusive": 107,
+        "sha256": "2651193e729509c8682642290b09bf444e1b4d3a17e5f15d7ed6ad735eb8980d"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "support.BaseCase#prepare()"
+        },
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "support.TestSupport#check(Cart)"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "app.Cart#clear()",
+      "category": "called_code",
+      "content": "public void clear() { amount = 0; }",
+      "source": {
+        "file": "core/src/main/java/app/Cart.java",
+        "start_line": 6,
+        "end_line": 6,
+        "start_offset_utf16": 156,
+        "end_offset_utf16_exclusive": 191,
+        "sha256": "2651193e729509c8682642290b09bf444e1b4d3a17e5f15d7ed6ad735eb8980d"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "support.BaseCase#clean()"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "support.TestSupport",
+      "category": "related_definition",
+      "content": "public class TestSupport {\r\n    ",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 5,
+        "end_line": 6,
+        "start_offset_utf16": 116,
+        "end_offset_utf16_exclusive": 148,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reasons": [
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "spec.CartTest#total()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "spec.CartTest#seed()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "support.TestSupport#data()"
+        },
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "support.TestSupport#check(Cart)"
+        }
+      ],
+      "categories": [
+        "related_definition"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/support/TestSupport.java#import:0",
+      "category": "imports",
+      "content": "import app.Cart;",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 2,
+        "end_line": 2,
+        "start_offset_utf16": 18,
+        "end_offset_utf16_exclusive": 34,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/support/TestSupport.java#import:1",
+      "category": "imports",
+      "content": "import java.io.InputStream;",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 3,
+        "end_line": 3,
+        "start_offset_utf16": 36,
+        "end_offset_utf16_exclusive": 63,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "checks/src/test/java/support/TestSupport.java#import:2",
+      "category": "imports",
+      "content": "import static org.junit.jupiter.api.Assertions.*;",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 4,
+        "end_line": 4,
+        "start_offset_utf16": 65,
+        "end_offset_utf16_exclusive": 114,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reasons": [
+        {
+          "reason": "来源文件的原始导入",
+          "via": null
+        }
+      ],
+      "categories": [
+        "imports"
+      ]
+    },
+    {
+      "id": "app.Limits",
+      "category": "related_definition",
+      "content": "public class Limits { ",
+      "source": {
+        "file": "core/src/main/java/app/Limits.java",
+        "start_line": 2,
+        "end_line": 2,
+        "start_offset_utf16": 14,
+        "end_offset_utf16_exclusive": 36,
+        "sha256": "1ca772c89ecb713a159c2d75750fb0ee232d96f0eea2792c00ab24f423c7efbf"
+      },
+      "reasons": [
+        {
+          "reason": "相关类型声明头；实际相关字段和方法另外提供",
+          "via": "spec.CartTest#total()"
+        }
+      ],
+      "categories": [
+        "related_definition"
+      ]
+    },
+    {
+      "id": "app.Limits#field:THREE",
+      "category": "field_initialization",
+      "content": "public static final int THREE = 3;",
+      "source": {
+        "file": "core/src/main/java/app/Limits.java",
+        "start_line": 2,
+        "end_line": 2,
+        "start_offset_utf16": 36,
+        "end_offset_utf16_exclusive": 70,
+        "sha256": "1ca772c89ecb713a159c2d75750fb0ee232d96f0eea2792c00ab24f423c7efbf"
+      },
+      "reasons": [
+        {
+          "reason": "保留相关类型的字段与初始化；未做字段最小化",
+          "via": "spec.CartTest#total()"
+        }
+      ],
+      "categories": [
+        "field_initialization"
+      ]
+    },
+    {
+      "id": "spec.CartTest#seed()",
+      "category": "helper",
+      "content": "void seed() { TestSupport.check(cart); }",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 12,
+        "end_line": 12,
+        "start_offset_utf16": 357,
+        "end_offset_utf16_exclusive": 397,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "spec.CartTest#total()"
+        }
+      ],
+      "categories": [
+        "helper"
+      ]
+    },
+    {
+      "id": "support.TestSupport#data()",
+      "category": "helper",
+      "content": "public static InputStream data() {\r\n        return TestSupport.class.getResourceAsStream(\"/fixtures/price.txt\");\r\n    }",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 10,
+        "end_line": 12,
+        "start_offset_utf16": 279,
+        "end_offset_utf16_exclusive": 398,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "spec.CartTest#total()"
+        }
+      ],
+      "categories": [
+        "helper"
+      ]
+    },
+    {
+      "id": "app.Cart#total()",
+      "category": "called_code",
+      "content": "public int total() { return amount; }",
+      "source": {
+        "file": "core/src/main/java/app/Cart.java",
+        "start_line": 5,
+        "end_line": 5,
+        "start_offset_utf16": 113,
+        "end_offset_utf16_exclusive": 150,
+        "sha256": "2651193e729509c8682642290b09bf444e1b4d3a17e5f15d7ed6ad735eb8980d"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "spec.CartTest#total()"
+        },
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "support.TestSupport#check(Cart)"
+        }
+      ],
+      "categories": [
+        "called_code"
+      ]
+    },
+    {
+      "id": "support.TestSupport#check(Cart)",
+      "category": "helper",
+      "content": "public static void check(Cart value) {\r\n        value.add(1);\r\n        assertEquals(3, value.total()); // 辅助方法中的断言必须保留\r\n    }",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 6,
+        "end_line": 9,
+        "start_offset_utf16": 148,
+        "end_offset_utf16_exclusive": 273,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reasons": [
+        {
+          "reason": "调用所需实现；包含其中的断言与进一步调用",
+          "via": "spec.CartTest#seed()"
+        }
+      ],
+      "categories": [
+        "helper"
+      ]
+    },
+    {
+      "id": "resource:checks/src/test/resources/fixtures/price.txt",
+      "category": "resource",
+      "categories": [
+        "resource"
+      ],
+      "content": "价格=3\r\n",
+      "encoding": "utf-8",
+      "source": {
+        "file": "checks/src/test/resources/fixtures/price.txt",
+        "start_line": 1,
+        "end_line": 1,
+        "sha256": "6b5989a06cc02443b0c9414637e440ac0ff0136d417fa841403cf30fc9b7d1ff"
+      },
+      "reasons": [
+        {
+          "reason": "资源读取调用所引用的实际内容",
+          "via": "support.TestSupport#data()"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertNotNull",
+      "caller": "spec.CartTest#total()",
+      "content": "assertNotNull(input)",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 15,
+        "end_line": 15,
+        "start_offset_utf16": 521,
+        "end_offset_utf16_exclusive": 541,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "spec.CartTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "spec.CartTest#total()",
+      "content": "assertEquals(Limits.THREE, cart.total())",
+      "source": {
+        "file": "checks/src/test/java/spec/CartTest.java",
+        "start_line": 16,
+        "end_line": 16,
+        "start_offset_utf16": 554,
+        "end_offset_utf16_exclusive": 594,
+        "sha256": "2c4c28cf3a6f26ea1e9e796ac59d36bda5e30a6a6ca85d3c65b7d2f1f066a8e0"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "spec.CartTest"
+      ]
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": "TestSupport.class.getResourceAsStream",
+      "caller": "support.TestSupport#data()",
+      "content": "TestSupport.class.getResourceAsStream(\"/fixtures/price.txt\")",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 11,
+        "end_line": 11,
+        "start_offset_utf16": 330,
+        "end_offset_utf16_exclusive": 390,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": []
+    },
+    {
+      "kind": "REFERENCE_UNRESOLVED",
+      "reference": ".assertEquals",
+      "caller": "support.TestSupport#check(Cart)",
+      "content": "assertEquals(3, value.total())",
+      "source": {
+        "file": "checks/src/test/java/support/TestSupport.java",
+        "start_line": 8,
+        "end_line": 8,
+        "start_offset_utf16": 219,
+        "end_offset_utf16_exclusive": 249,
+        "sha256": "98443c7b3207a8ac4c5d51cfc3936c5f435136d14b187f3dea200594dd0f40ae"
+      },
+      "reason": "索引内未唯一找到定义；可能为外部API、未解析接收者、接口动态实现或隐式行为",
+      "candidates": [
+        "support.TestSupport"
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "IMPLICIT_DEFAULT_CONSTRUCTOR",
+      "reference": "app.Cart",
+      "source": {
+        "file": "checks/src/test/java/support/BaseCase.java",
+        "start_line": 6,
+        "end_line": 6,
+        "start_offset_utf16": 170,
+        "end_offset_utf16_exclusive": 180,
+        "sha256": "e93518abb396fefe061ec53dd115aa0b02762f1c6fce345ace9ed43ec9b8b1fb"
+      },
+      "reason": "无显式构造器，保留类型与字段初始化"
+    }
+  ],
+  "project_issues": [],
+  "completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "生命周期仅支持已识别JUnit4/5声明与简单继承，不解释组合注解、扩展注册和接口默认方法",
+    "重载按名称和参数数量筛选；接口动态实现、链式接收者、反射与动态路径会报告未解析",
+    "保留完整类型可含无关成员；不把类中所有成员视为本次相关成员",
+    "不提供跨语言规则、项目翻译约定筛选或完整模型输入组织",
+    "只读源工程，不执行构建、测试或业务代码"
+  ]
+}

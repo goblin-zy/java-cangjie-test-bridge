@@ -1,0 +1,57 @@
+[
+  {
+    "source_members_file": "02-java-skeleton/members.json",
+    "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#field:wallet",
+    "target_file": "wallet/points_wallet_test.cj",
+    "target_member": "wallet",
+    "target_signature": "private var wallet: ?PointsWallet",
+    "status": "mapped",
+    "fill_slot": null,
+    "slot_id": null,
+    "adaptation": "目标业务接口暂定"
+  },
+  {
+    "source_members_file": "02-java-skeleton/members.json",
+    "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#newWallet()",
+    "target_file": "wallet/points_wallet_test.cj",
+    "target_member": "newWallet",
+    "target_signature": "private func newWallet(): PointsWallet",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "T01",
+    "adaptation": "目标业务接口暂定"
+  },
+  {
+    "source_members_file": "02-java-skeleton/members.json",
+    "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#setup()",
+    "target_file": "wallet/points_wallet_test.cj",
+    "target_member": "setup",
+    "target_signature": "private func setup(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "T02",
+    "adaptation": "目标业务接口暂定"
+  },
+  {
+    "source_members_file": "02-java-skeleton/members.json",
+    "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#spendsPointsInOrder()",
+    "target_file": "wallet/points_wallet_test.cj",
+    "target_member": "spendsPointsInOrder",
+    "target_signature": "    func spendsPointsInOrder(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "T03",
+    "adaptation": "目标业务接口暂定"
+  },
+  {
+    "source_members_file": "02-java-skeleton/members.json",
+    "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()",
+    "target_file": "wallet/points_wallet_test.cj",
+    "target_member": "rejectsOverspending",
+    "target_signature": "    func rejectsOverspending(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "T04",
+    "adaptation": "目标业务接口暂定"
+  }
+]

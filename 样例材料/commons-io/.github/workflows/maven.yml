@@ -1,0 +1,88 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Java CI
+
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '**/workflows/*.yml'
+      - '!**/workflows/maven.yml'
+  pull_request:
+    paths-ignore:
+      - '**/workflows/*.yml'
+      - '!**/workflows/maven.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        java: [ 8, 11, 17, 21 ]
+        experimental: [false]
+        include:
+          # Update java 8/ubuntu to add deploy step
+          - java: 8
+            os: ubuntu-latest
+            experimental: false
+            deploy: true
+#          - java: 22-ea
+#            os: ubuntu-latest
+#            experimental: true        
+#          - java: 22-ea
+#            os: windows-latest
+#            experimental: true        
+#          - java: 22-ea
+#            os: macos-latest
+#            experimental: true        
+      fail-fast: false
+        
+    steps:
+    - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
+      with:
+        persist-credentials: false
+    - uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+    - name: Set up JDK ${{ matrix.java }}
+      uses: actions/setup-java@99b8673ff64fbf99d8d325f52d9a5bdedb8483e9 # v4.2.1
+      with:
+        distribution: 'temurin'
+        java-version: ${{ matrix.java }}
+        # these values cause the plugin to set up the Maven settings.xml file
+        server-id: apache.snapshots.https # Value of the distributionManagement/repository/id field of the pom.xml
+        server-username: NEXUS_USER # env variable for username in deploy
+        server-password: NEXUS_PW # env variable for token in deploy
+    - name: Build with Maven
+      run: mvn --show-version --batch-mode --no-transfer-progress -DtrimStackTrace=false
+    - name: Deploy SNAPSHOT using minimal build
+      if: matrix.deploy && github.repository == 'apache/commons-io' && github.ref_name == 'master' 
+      env:
+        NEXUS_USER: ${{ secrets.NEXUS_USER }}
+        NEXUS_PW: ${{ secrets.NEXUS_PW }}
+      run: >
+        echo "Deploy SNAPSHOT" >> $GITHUB_STEP_SUMMARY;
+        mvn --show-version --batch-mode --no-transfer-progress deploy -Dgpg.skip 
+        -DskipTests -Drat.skip -Djacoco.skip -Dcyclonedx.skip -Dspotbugs.skip -Dspdx.skip -Dpmd.skip

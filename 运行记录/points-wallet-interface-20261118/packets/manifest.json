@@ -1,0 +1,31 @@
+{
+  "snapshot_id": "56bafc635c90c0bf8b3109a8",
+  "module": null,
+  "max_chars": 70000,
+  "budget_unit": "compact JSON Unicode characters, not model tokens",
+  "parts": [
+    {
+      "file": "packet_0001.json",
+      "records": 45
+    }
+  ],
+  "all_modules": [
+    "java_business",
+    "java_tests"
+  ],
+  "included_file_ids": [
+    "java_business:wallet/PointsWallet.java",
+    "java_tests:wallet/PointsWalletTest.java"
+  ],
+  "other_available_files": [],
+  "coverage": {
+    "files": 2,
+    "members": 11,
+    "references": 25,
+    "issues": 5,
+    "status_counts": {
+      "parsed": 2
+    }
+  },
+  "next_step": "逐个阅读所有parts；跨模块缺少定义时使用show/query，不宣称读完未提供的材料。"
+}

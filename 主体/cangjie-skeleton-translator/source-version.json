@@ -1,0 +1,20 @@
+{
+  "branch": "蔡俊杰week8",
+  "commit": "dd2dd206ca66bc807d90ebbbfcd28dfb21b14cac",
+  "project_files": 721,
+  "project_changed": 641,
+  "project_added": 0,
+  "project_removed": 0,
+  "backup": "D:\\program_study\\yrys\\environment-config\\downloads\\local-before-cjj-update-20261104-154617.zip",
+  "excluded": [
+    "validation",
+    "model-output",
+    "member_mapping.json",
+    "check_skeleton.py",
+    "compile-support"
+  ],
+  "removed_obsolete": [
+    "src/java_to_cangjie_skeleton.py",
+    "翻译骨架.ps1"
+  ]
+}
