@@ -1,0 +1,119 @@
+[
+  {
+    "project": "01-jsoup",
+    "java": "Jsoup.parse(String)",
+    "cangjie": "Html4cj.parse(String)",
+    "file": "html4cj.cj",
+    "line": 52,
+    "sha256": "d47d12039ca7274d76e859693dce2802508d36491f2f2e6dcb38f8591b1db743",
+    "adaptation": "保留 HTML 原字符串，实际调用仓颉解析器"
+  },
+  {
+    "project": "01-jsoup",
+    "java": "Element.select(String)",
+    "cangjie": "Element.select(String)",
+    "file": "element.cj",
+    "line": 336,
+    "sha256": "b7176b2df8f128db6376429eb3c9cadac9537d6320dd6aea93641a815107d140",
+    "adaptation": "保留 CSS 查询、大小写和转义"
+  },
+  {
+    "project": "01-jsoup",
+    "java": "Elements.size() / get(i)",
+    "cangjie": "Elements.size / operator []",
+    "file": "elements.cj",
+    "line": 18,
+    "sha256": "7dcb481157e80eec7c4c91e1a1f01ba06f93dd31aada36ab4bda515747a11b0d",
+    "adaptation": "方法改为属性，下标访问节点，计数为 Int64"
+  },
+  {
+    "project": "01-jsoup",
+    "java": "expectFirst / id / text",
+    "cangjie": "同名仓颉成员",
+    "file": "element.cj",
+    "line": 378,
+    "sha256": "b7176b2df8f128db6376429eb3c9cadac9537d6320dd6aea93641a815107d140",
+    "adaptation": "直接读取真实节点的 ID 和文本"
+  },
+  {
+    "project": "03-jmustache",
+    "java": "Mustache.compiler()",
+    "cangjie": "Mustache.compiler()",
+    "file": "mustache.cj",
+    "line": 23,
+    "sha256": "1ff6064b60f1bf5f407fd37a49b47db6e8044c0cbc74f63c57b8f15d2d669fdb",
+    "adaptation": "使用实际默认编译器"
+  },
+  {
+    "project": "03-jmustache",
+    "java": "Compiler.compile(template)",
+    "cangjie": "Compiler.compile(String)",
+    "file": "mustache.cj",
+    "line": 403,
+    "sha256": "1ff6064b60f1bf5f407fd37a49b47db6e8044c0cbc74f63c57b8f15d2d669fdb",
+    "adaptation": "保留模板原文及 defaultValue 设置"
+  },
+  {
+    "project": "03-jmustache",
+    "java": "Template.execute(Map/array)",
+    "cangjie": "Template.execute(DataModel)",
+    "file": "template.cj",
+    "line": 32,
+    "sha256": "510397446304b93e4a4bce25d090b0034ae79c2eb605421c3b0ae1cb21fd1123",
+    "adaptation": "Map/数组显式转为 DataModelStruct/Seq"
+  },
+  {
+    "project": "03-jmustache",
+    "java": "上下文取值与数组下标",
+    "cangjie": "MapVariableFetcher / ListVariableFetcher",
+    "file": "basic_collector.cj",
+    "line": 46,
+    "sha256": "acab0fc5e38397e39a133eb233d77e2c435374b508fc6c71aaa382a1e72208cf",
+    "adaptation": "字段与数组值由实际业务读取；makeModel 只转换容器"
+  },
+  {
+    "project": "05-diff-utils",
+    "java": "DiffUtils.diff(List,List)",
+    "cangjie": "DiffUtils.diff(ArrayList,ArrayList)",
+    "file": "diffutils.cj",
+    "line": 24,
+    "sha256": "8b6c51547dba1b9b5156240af7419b10781de90bcb0a1c07d599f95180a98dda",
+    "adaptation": "不改输入行及顺序，使用默认差异算法"
+  },
+  {
+    "project": "05-diff-utils",
+    "java": "Patch.getDeltas()",
+    "cangjie": "Patch.getDeltas()",
+    "file": "patch.cj",
+    "line": 34,
+    "sha256": "bf38d6f130f132c1dcead038831c3845566b44c129a3704ec41039081ccc42fb",
+    "adaptation": "核对差异数量并读取真实 Delta"
+  },
+  {
+    "project": "05-diff-utils",
+    "java": "Delta.getOriginal/getRevised",
+    "cangjie": "同名仓颉成员",
+    "file": "delta.cj",
+    "line": 44,
+    "sha256": "7d4051560096af7c3f9c8102cce57967850814b549be1fdf716841b443610475",
+    "adaptation": "读取原/新 Chunk"
+  },
+  {
+    "project": "05-diff-utils",
+    "java": "Chunk.equals",
+    "cangjie": "Chunk.equals",
+    "file": "chunk.cj",
+    "line": 104,
+    "sha256": "1fea5e1de4d160e834e3eea46ee01e5ec4846f488baa310be5d3b6a71218d4af",
+    "adaptation": "同时检查位置与行内容"
+  },
+  {
+    "project": "07-levenshtein",
+    "java": "new LevenshteinDistance().apply(a,b)",
+    "cangjie": "leven(a,b)",
+    "file": "leven.cj",
+    "line": 3,
+    "sha256": "f6b3271cc3ec9ec6cc2f728c56cfb393af66f4f4b1a716761539a83f5182ea3b",
+    "adaptation": "仅映射无阈值计算；结果为 Int64；本轮十组输入均为 ASCII"
+  }
+]

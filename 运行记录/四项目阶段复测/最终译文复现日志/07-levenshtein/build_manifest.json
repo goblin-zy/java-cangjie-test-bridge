@@ -1,0 +1,20 @@
+{
+  "variant": "FINAL_TRANSLATION_WITH_UNMODIFIED_BUSINESS",
+  "sources": {
+    "leven.cj": "f6b3271cc3ec9ec6cc2f728c56cfb393af66f4f4b1a716761539a83f5182ea3b",
+    "translated_test.cj": "8ca6615ee6e859f50a2635f3371ff874b57c0ab5522a927e9d3951ddd663c62e"
+  },
+  "binary_sha256": "16193cd4816feb20fa0db44c1696f7a0479b5228b71a5770847761f3bf552b3a",
+  "compiler": "Cangjie Compiler: 1.2.0 (cjnative)\r\nTarget: x86_64-w64-mingw32",
+  "command": [
+    "E:\\cangjie\\bin\\cjc.exe",
+    "--test",
+    "-p",
+    "D:\\CodexArtifacts\\four-projects-runnable-20261125\\projects\\07-levenshtein\\src",
+    "-o",
+    "D:\\CodexArtifacts\\four-projects-runnable-20261125\\projects\\07-levenshtein\\bin\\tests.exe",
+    "--diagnostic-format",
+    "noColor"
+  ],
+  "libraries": []
+}

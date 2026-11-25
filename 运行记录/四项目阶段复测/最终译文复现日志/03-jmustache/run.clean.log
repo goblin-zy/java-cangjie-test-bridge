@@ -1,0 +1,14 @@
+78
+7878--------------------------------------------------------------------------------------------------
+TP: cjmustache, time elapsed: 1045700 ns, RESULT:
+    TCS: MustacheTranslationTest, time elapsed: 1039700 ns, RESULT:
+    [ PASSED ] CASE: testSimpleVariable (487100 ns)
+    [ PASSED ] CASE: testPrimitiveArrayVariable (98900 ns)
+    [ PASSED ] CASE: testPrimitiveArrayIndexVariable (48800 ns)
+    [ PASSED ] CASE: testPrimitiveArrayIndexOutOfBoundsVariable (40400 ns)
+    [ PASSED ] CASE: testOneShotSection (45600 ns)
+    [ PASSED ] CASE: testListSection (47200 ns)
+Summary: TOTAL: 6
+    PASSED: 6, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,96 @@
+{
+  "status": "PASSED",
+  "projects": [
+    {
+      "project": "01-jsoup",
+      "status": "PASSED",
+      "returncode": 0,
+      "counts": {
+        "total": 5,
+        "passed": 5,
+        "skipped": 0,
+        "error": 0,
+        "failed": 0
+      },
+      "passed_methods": [
+        "testByTag",
+        "byEscapedTag",
+        "testById",
+        "byEscapedId",
+        "testByClass"
+      ],
+      "binary": "projects/01-jsoup/bin/tests.exe",
+      "binary_sha256": "92c4b8a77e4e4bc838c3dac6e218b351a93ef28982ccb0d49bfe6c2627bf8a62",
+      "source_variant": "FINAL_TRANSLATION",
+      "log": "projects/01-jsoup/logs/run.clean.log"
+    },
+    {
+      "project": "03-jmustache",
+      "status": "PASSED",
+      "returncode": 0,
+      "counts": {
+        "total": 6,
+        "passed": 6,
+        "skipped": 0,
+        "error": 0,
+        "failed": 0
+      },
+      "passed_methods": [
+        "testSimpleVariable",
+        "testPrimitiveArrayVariable",
+        "testPrimitiveArrayIndexVariable",
+        "testPrimitiveArrayIndexOutOfBoundsVariable",
+        "testOneShotSection",
+        "testListSection"
+      ],
+      "binary": "projects/03-jmustache/bin/tests.exe",
+      "binary_sha256": "e721c8b9652bfe44ef797424859f26f51e9574461ebff723d9a5f02868151c16",
+      "source_variant": "FINAL_TRANSLATION",
+      "log": "projects/03-jmustache/logs/run.clean.log"
+    },
+    {
+      "project": "05-diff-utils",
+      "status": "PASSED",
+      "returncode": 0,
+      "counts": {
+        "total": 3,
+        "passed": 3,
+        "skipped": 0,
+        "error": 0,
+        "failed": 0
+      },
+      "passed_methods": [
+        "testDiff_Insert",
+        "testDiff_Delete",
+        "testDiff_Change"
+      ],
+      "binary": "projects/05-diff-utils/bin/tests.exe",
+      "binary_sha256": "6e8625139c48a1a06afcf5b3aa6f9d4ac68c5c76adebaca2709125785f988726",
+      "source_variant": "FINAL_TRANSLATION",
+      "log": "projects/05-diff-utils/logs/run.clean.log"
+    },
+    {
+      "project": "07-levenshtein",
+      "status": "PASSED",
+      "returncode": 0,
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "skipped": 0,
+        "error": 0,
+        "failed": 0
+      },
+      "passed_methods": [
+        "testGetLevenshteinDistance_StringString"
+      ],
+      "binary": "projects/07-levenshtein/bin/tests.exe",
+      "binary_sha256": "16193cd4816feb20fa0db44c1696f7a0479b5228b71a5770847761f3bf552b3a",
+      "source_variant": "FINAL_TRANSLATION",
+      "log": "projects/07-levenshtein/logs/run.clean.log"
+    }
+  ],
+  "total_passed": 15,
+  "scope": "SELECTED_PAIRED_METHODS_ONLY",
+  "sdk_home": "E:\\cangjie",
+  "stdx_directory": "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx"
+}

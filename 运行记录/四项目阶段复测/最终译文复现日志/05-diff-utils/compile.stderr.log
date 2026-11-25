@@ -1,0 +1,257 @@
+warning: unused import 'std.collection.*'
+ ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\path_node.cj:7:1:
+  | 
+7 | import std.collection.*
+  | ^^^^^^^^^^^^^^^^^^^^^^^ unused import
+  | 
+  # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getTag'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row.cj:34:5:
+   | 
+34 |       public func getTag(): Tag {
+   |  _____^
+35 | |         return tag
+36 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setTag'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row.cj:45:5:
+   | 
+45 |       public func setTag(tag: Tag): Unit {
+   |  _____^
+46 | |         this.tag = tag
+47 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'generateDiffRows'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:49:5:
+   | 
+49 |       public func generateDiffRows(original: ArrayList<String>, revised: ArrayList<String>): ArrayList<DiffRow> {
+   |  _____^
+50 | |         return generateDiffRows(original, revised, DiffUtils.diff(original, revised, equalizer))
+51 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getOldLine'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row.cj:56:5:
+   | 
+56 |       public func getOldLine():String {
+   |  _____^
+57 | |         return oldLine
+58 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused variable:'original_'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:66:13:
+   | 
+66 |         var original_ = StringUtills.normalize(original)
+   |             ^^^^^^^^^ unused variable
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setOldLine'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row.cj:67:5:
+   | 
+67 |       public func setOldLine(oldLine: String): Unit {
+   |  _____^
+68 | |         this.oldLine = oldLine
+69 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused variable:'revised_'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:67:13:
+   | 
+67 |         var revised_ = StringUtills.normalize(revised)
+   |             ^^^^^^^^ unused variable
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getNewLine'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row.cj:78:5:
+   | 
+78 |       public func getNewLine(): String {
+   |  _____^
+79 | |         return newLine
+80 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'toString'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\path_node.cj:79:5:
+   | 
+79 |       public func toString(): String {
+   |  _____^
+80 | |         var buf: StringBuilder =  StringBuilder("[")
+   | | ...
+92 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setNewLine'
+  ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row.cj:89:5:
+   | 
+89 |       public func setNewLine(newLine: String): Unit {
+   |  _____^
+90 | |         this.newLine = newLine
+91 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseUnifiedDiff'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diffutils.cj:97:5:
+    | 
+97  |       public static func parseUnifiedDiff(diff: ArrayList<String>): Patch<String> {
+    |  _____^
+98  | |         var inPrelude = true
+    | | ...
+151 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'generateUnifiedDiff'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diffutils.cj:194:5:
+    | 
+194 |       public static func generateUnifiedDiff(original: String,
+    |  _____^
+195 | |             revised: String, originalLines: ArrayList<String>, patch: Patch<String>,
+    | | ...
+253 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'wrapInTag'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:254:5:
+    | 
+254 |       public static func wrapInTag(line: String, tag: String, cssClass: ?String): String {
+    |  _____^
+255 | |         var tagBuilder = StringBuilder()
+    | | ...
+274 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'showInlineDiffs'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:348:5:
+    | 
+348 |       public func showInlineDiffs(val: Bool): Builder {
+    |  _____^
+349 | |         showInlineDiffs_ = val
+    | | ...
+351 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'ignoreWhiteSpaces'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:361:5:
+    | 
+361 |       public func ignoreWhiteSpaces(val: Bool): Builder {
+    |  _____^
+362 | |         ignoreWhiteSpaces_ = val
+    | | ...
+364 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'ignoreBlankLines'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:373:5:
+    | 
+373 |       public func ignoreBlankLines(val: Bool): Builder {
+    |  _____^
+374 | |         ignoreBlankLines_ = val
+    | | ...
+376 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'InlineOldTag'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:386:5:
+    | 
+386 |       public func InlineOldTag(tag: String): Builder {
+    |  _____^
+387 | |         InlineOldTag_ = tag
+    | | ...
+389 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'InlineNewTag'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:399:5:
+    | 
+399 |       public func InlineNewTag(tag: String): Builder {
+    |  _____^
+400 | |         InlineNewTag_ = tag
+    | | ...
+402 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'InlineOldCssClass'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:412:5:
+    | 
+412 |       public func InlineOldCssClass(cssClass: String): Builder {
+    |  _____^
+413 | |         InlineOldCssClass_ = cssClass
+    | | ...
+415 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'InlineNewCssClass'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:425:5:
+    | 
+425 |       public func InlineNewCssClass(cssClass: String): Builder {
+    |  _____^
+426 | |         InlineNewCssClass_ = cssClass
+    | | ...
+428 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'columnWidth'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:438:5:
+    | 
+438 |       public func columnWidth(width: Int64): Builder {
+    |  _____^
+439 | |         if (width > 0) {
+    | | ...
+443 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'build'
+   ==> D:\CodexArtifacts\four-projects-runnable-20261125\projects\05-diff-utils\src\diff_row_generator.cj:452:5:
+    | 
+452 |       public func build(): DiffRowGenerator {
+    |  _____^
+453 | |         return DiffRowGenerator(this)
+454 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+23 warnings generated, 23 warnings printed.

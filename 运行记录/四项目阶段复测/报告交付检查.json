@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "business_interface_mappings": 13,
+  "method_mappings": 15,
+  "report_links_and_line_ranges": "PASSED",
+  "runnable_source_and_binary_hashes": "PASSED",
+  "relocated_package_tests": 15,
+  "launcher_exit_code": 0
+}

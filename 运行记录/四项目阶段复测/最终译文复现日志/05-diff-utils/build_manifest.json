@@ -1,0 +1,39 @@
+{
+  "variant": "FINAL_TRANSLATION_WITH_UNMODIFIED_BUSINESS",
+  "sources": {
+    "change_delta.cj": "098578562751bbe788b5e4166a2164ddf8a0434cad9751dc5c5b9a3623fe1aba",
+    "chunk.cj": "1fea5e1de4d160e834e3eea46ee01e5ec4846f488baa310be5d3b6a71218d4af",
+    "delete_delta.cj": "bcd0063059a1c8d08a1f99f75f0629d0fb67d7ff5a7252bba907e42d0998b531",
+    "delta.cj": "7d4051560096af7c3f9c8102cce57967850814b549be1fdf716841b443610475",
+    "delta_comparator.cj": "2c7426954eb942c5dfedbf38fde0bf7cb85a0a05aa5b658d4375ac090b7cdf8a",
+    "diff_algorithlm.cj": "fdd0a1bcf74aebd2b5acf966e496e7e441715924acaa0db2c888669997e9016f",
+    "diff_exception.cj": "62e8f8afd34dde26e5260f3d99d35f6b20c32664d7dd5cafd705d1a2c6d7b9fe",
+    "diff_node.cj": "933a942b14cee63905efc4018a77dea26cb9590c1ef0b7c6916f0dafe6012611",
+    "diff_row.cj": "7d5fc1a71169c0b01ab00bfb48e6ade4ece03f7418131b7030e69e144643dec7",
+    "diff_row_generator.cj": "3043f842284ac5849f923be96f8692b8bb1ec6ccf6f33607fe9f3ad91b4f3630",
+    "differentiation_failedexception.cj": "c6f8e4860ccd5353db85b334506a1a52b92c03569d179e901626232c2b86f6ff",
+    "diffutils.cj": "8b6c51547dba1b9b5156240af7419b10781de90bcb0a1c07d599f95180a98dda",
+    "equalizer.cj": "b9da67945bd0676662dc3b7bade903ef20acd2c5009737bfec9846e482b15358",
+    "insert_delta.cj": "7c946ea3f8687f7d2f001b4fb9646359344e3f229b54650dae142f449b9cb9ba",
+    "myers_diff.cj": "4b330ebf22dd06e2c54c9be74b3a1db1bf86d35e2a9df1ae0fa6e08650e2e5d5",
+    "patch.cj": "bf38d6f130f132c1dcead038831c3845566b44c129a3704ec41039081ccc42fb",
+    "path_faulled_exception.cj": "78336d7b4ad19c4f8ca1a6d6530b3aef953b4cdb714ac5d2dc476edc70e5186c",
+    "path_node.cj": "60c6f7b19bdb412efc8528b09ca7234d8b4e60c44208b183d0f998217de84abf",
+    "snake.cj": "aee1e799cf0a44086637f77a839cf936023e14764dd109c6000942bcf6f096cb",
+    "string_utils.cj": "73d33d8fd38bd2db35d82c1bd8b43f3aace02eb5602b2d8dad8954fcb2d0ec7d",
+    "translated_test.cj": "ddc975f74d4304076c4aab5a44d1e4e33778412c8ef7919b17bd7253aaaad652"
+  },
+  "binary_sha256": "6e8625139c48a1a06afcf5b3aa6f9d4ac68c5c76adebaca2709125785f988726",
+  "compiler": "Cangjie Compiler: 1.2.0 (cjnative)\r\nTarget: x86_64-w64-mingw32",
+  "command": [
+    "E:\\cangjie\\bin\\cjc.exe",
+    "--test",
+    "-p",
+    "D:\\CodexArtifacts\\four-projects-runnable-20261125\\projects\\05-diff-utils\\src",
+    "-o",
+    "D:\\CodexArtifacts\\four-projects-runnable-20261125\\projects\\05-diff-utils\\bin\\tests.exe",
+    "--diagnostic-format",
+    "noColor"
+  ],
+  "libraries": []
+}

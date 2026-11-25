@@ -1,0 +1,37 @@
+{
+  "variant": "FINAL_TRANSLATION_WITH_UNMODIFIED_BUSINESS",
+  "sources": {
+    "basic_collector.cj": "acab0fc5e38397e39a133eb233d77e2c435374b508fc6c71aaa382a1e72208cf",
+    "default_collector.cj": "9a8dedfadb24cd136817c786add4ab8593c3038b7c20d76ca1db5c0ca2e9eded",
+    "escapers.cj": "95fe5982d2f89bc92f3eec58639cb5faaba18c0543b4d591ae816584b8c5c9ef",
+    "helpers.cj": "2fa46ace4a882d34656c1d4a23968c9e16b56937bd766afc93a67c4f452e884f",
+    "mustache.cj": "1ff6064b60f1bf5f407fd37a49b47db6e8044c0cbc74f63c57b8f15d2d669fdb",
+    "my_exception.cj": "918a70b1daff5ac3e48270653268d44f469a19afe5382338fc05297c2300eb03",
+    "template.cj": "510397446304b93e4a4bce25d090b0034ae79c2eb605421c3b0ae1cb21fd1123",
+    "translated_test.cj": "7cf7122c7852483a7cc09c23678372f31f620486425181cb3ad4d838f688f7d0"
+  },
+  "binary_sha256": "e721c8b9652bfe44ef797424859f26f51e9574461ebff723d9a5f02868151c16",
+  "compiler": "Cangjie Compiler: 1.2.0 (cjnative)\r\nTarget: x86_64-w64-mingw32",
+  "command": [
+    "E:\\cangjie\\bin\\cjc.exe",
+    "--test",
+    "-p",
+    "D:\\CodexArtifacts\\four-projects-runnable-20261125\\projects\\03-jmustache\\src",
+    "-o",
+    "D:\\CodexArtifacts\\four-projects-runnable-20261125\\projects\\03-jmustache\\bin\\tests.exe",
+    "--diagnostic-format",
+    "noColor",
+    "--import-path",
+    "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+    "-L",
+    "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+    "-lstdx.serialization.serialization",
+    "-lstdx.serialization",
+    "-lstdx.encoding.json"
+  ],
+  "libraries": [
+    "stdx.serialization.serialization",
+    "stdx.serialization",
+    "stdx.encoding.json"
+  ]
+}

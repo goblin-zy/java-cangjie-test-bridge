@@ -1,0 +1,13 @@
+78
+7878--------------------------------------------------------------------------------------------------
+TP: cangjie_tpc::html4cj, time elapsed: 6438900 ns, RESULT:
+    TCS: SelectorTranslationTest, time elapsed: 6435000 ns, RESULT:
+    [ PASSED ] CASE: testByTag (1720700 ns)
+    [ PASSED ] CASE: byEscapedTag (639000 ns)
+    [ PASSED ] CASE: testById (1215200 ns)
+    [ PASSED ] CASE: byEscapedId (738000 ns)
+    [ PASSED ] CASE: testByClass (1818300 ns)
+Summary: TOTAL: 5
+    PASSED: 5, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------
