@@ -1,3 +1,5 @@
 __pycache__/
-*.pyc
-week7/context-lookup/runs/
+*.py[cod]
+*.class
+/本地运行/
+.DS_Store

@@ -1,0 +1,23 @@
+{
+  "status": "SEARCHED",
+  "total": 2,
+  "records": [
+    {
+      "key": "071ee3effdccbbad8d127f16c876fbce4073ee9c1372c6e90457ae55fb4c56ab",
+      "id": "org.ahocorasick.interval.Interval#overlapsWith(Interval)",
+      "kind": "method",
+      "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+      "start_line": 63,
+      "roles": []
+    },
+    {
+      "key": "4c174ff705ff8aded87f09a3f496b9f723388cd4339cc0adababbd44ee97fa11",
+      "id": "org.ahocorasick.interval.Interval#overlapsWith(int)",
+      "kind": "method",
+      "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+      "start_line": 68,
+      "roles": []
+    }
+  ],
+  "next_offset": null
+}

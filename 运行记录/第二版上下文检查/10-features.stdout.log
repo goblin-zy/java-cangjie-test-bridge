@@ -1,0 +1,26 @@
+{
+  "status": "COMPATIBILITY_FEATURES_READ",
+  "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+  "source_transformation": "UNSUPPORTED",
+  "total": 1,
+  "records": [
+    {
+      "kind": "OVERLOAD_GROUP",
+      "member_keys": [
+        "071ee3effdccbbad8d127f16c876fbce4073ee9c1372c6e90457ae55fb4c56ab",
+        "4c174ff705ff8aded87f09a3f496b9f723388cd4339cc0adababbd44ee97fa11"
+      ],
+      "type_keys": [
+        "d75098f4ddf78129425577c1428d8a85208abc358c40fbb8274ff2f7e1b77f12"
+      ],
+      "reference_keys": [],
+      "node_keys": [],
+      "member_kind": "method",
+      "name": "overlapsWith",
+      "status": "REVIEW_REQUIRED",
+      "source_transformation": "UNSUPPORTED",
+      "key": "09f49339d280d8bb09aa59991513d198f2ca39dfd382af3a6cdcb7ad2f80b49b"
+    }
+  ],
+  "next_offset": null
+}

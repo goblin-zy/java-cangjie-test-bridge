@@ -1,0 +1,62 @@
+[
+  {
+    "command": "overview",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "search",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "read",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "read",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "references",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "references",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "resolve",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "search",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "resources",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "file",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "lookup",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "analyze",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "features",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "build",
+    "status": "CLI_ACCEPTED"
+  },
+  {
+    "command": "suite",
+    "status": "CLI_ACCEPTED"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "schema_version": "whole-translation-task-0.4",
+  "prompt_version": "\u7b2c\u4e8c\u7248",
+  "is_template": true,
+  "task_id": null,
+  "mode": "whole",
+  "path_base": "CONFIG_DIRECTORY",
+  "project_root": null,
+  "output_dir": null,
+  "python_executable": "python",
+  "versions": {
+    "java": null,
+    "junit": null,
+    "cangjie": null,
+    "target_test_framework": null
+  },
+  "context": {
+    "input_mode": "PROJECT_SOURCE",
+    "tool_version": "java-test-context-second-edition",
+    "index_schema": "java-test-context-2.1",
+    "tool": null,
+    "index": null,
+    "source_manifest": null,
+    "build_output": null,
+    "source_roots": {
+      "business": null,
+      "test": null,
+      "support": null
+    },
+    "resource_roots": null,
+    "test_scope": [],
+    "exclude": [],
+    "classpath": [],
+    "budgets": {
+      "max_depth": 6,
+      "max_members": 200,
+      "max_chars": 30000
+    },
+    "preferred_view": "compact",
+    "suites": [
+      {
+        "id": "suite_1",
+        "source_type": null,
+        "output_dir": null,
+        "tasks_file": null,
+        "agent_context": null,
+        "full_context": null,
+        "shared_context": null
+      }
+    ],
+    "internal_analysis": {
+      "read_summary_first": true,
+      "query_member_on_demand": true,
+      "preserve_assertion_candidates": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED"
+    }
+  },
+  "java_extractions": [
+    {
+      "id": "source_1",
+      "extraction_root": null,
+      "members_file": null,
+      "report_file": null,
+      "source_path_map": {}
+    }
+  ],
+  "skeleton_bundles": [
+    {
+      "id": "skeleton_1",
+      "skeleton_root": null,
+      "mapping_file": null,
+      "source_members_base": null,
+      "target_files_base": null,
+      "translation_report": null,
+      "diagnostics": null
+    }
+  ],
+  "rules": {
+    "json": null,
+    "markdown": null
+  },
+  "project_materials": {
+    "json": null,
+    "markdown": null,
+    "scan_index": null,
+    "scan_record": null,
+    "tool_root": null
+  },
+  "targets": [
+    {
+      "source_type": null,
+      "source_file": null,
+      "context_suite_id": "suite_1",
+      "java_extraction_id": "source_1",
+      "skeleton_bundle_id": "skeleton_1",
+      "output_files": []
+    }
+  ],
+  "allowed_target_source_roots": [],
+  "excluded_read_paths": [],
+  "optional_coverage_report": null,
+  "preparation_policy": {
+    "build_missing_context_from_project": true,
+    "export_missing_context_suites": true,
+    "extract_missing_java_facts_with_delivered_tool": true,
+    "generate_new_project_materials": false,
+    "generate_new_cangjie_skeleton": false
+  },
+  "constraints": {
+    "write_new_output_only": true,
+    "allow_necessary_test_helpers_in_output": true,
+    "allow_reference_tests": false,
+    "modify_target_business": false,
+    "collect_coverage": false,
+    "compile_or_run_projects": false,
+    "call_model_api_or_server": false,
+    "rewrite_java_source": false,
+    "generate_executable_test_prefixes": false
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "INDEX_READABLE",
+  "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+  "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+  "summary": {
+    "java_files": 40,
+    "types": 46,
+    "members": 349,
+    "references": 1612,
+    "resolution_counts": {
+      "resolved_static": 1119,
+      "external": 371,
+      "implicit_project_constructor": 9,
+      "unresolved": 113
+    },
+    "test_methods": 94,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 1281,
+    "recognized_assertions": 115,
+    "assertion_candidates": 0,
+    "compatibility_features": 33
+  },
+  "selected_test_files": [
+    "src/test/java/org/ahocorasick/interval/IntervalTest.java"
+  ],
+  "resource_roots": [],
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1
+  },
+  "semantic_problems": [],
+  "artifacts": [],
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review"
+  ],
+  "internal_analysis_capabilities": {
+    "statement_structure": true,
+    "assertion_evidence": true,
+    "compatibility_feature_detection": true,
+    "source_transformation": "UNSUPPORTED",
+    "executable_test_prefix_generation": "UNSUPPORTED",
+    "runtime_control_flow": "NOT_ESTABLISHED",
+    "operation_assertion_causality": "NOT_ESTABLISHED"
+  }
+}

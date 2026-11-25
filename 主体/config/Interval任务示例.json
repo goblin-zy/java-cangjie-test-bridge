@@ -1,0 +1,129 @@
+{
+  "schema_version": "whole-translation-task-0.4",
+  "prompt_version": "\u7b2c\u4e8c\u7248",
+  "is_template": true,
+  "task_id": "interval-whole",
+  "mode": "whole",
+  "path_base": "CONFIG_DIRECTORY",
+  "project_root": "../../\u6837\u4f8b\u6750\u6599/Interval\u53cc\u8bed\u9879\u76ee/java",
+  "output_dir": "../../\u672c\u5730\u8fd0\u884c/\u6574\u4f53\u8bd1\u6587",
+  "python_executable": "python",
+  "versions": {
+    "java": null,
+    "junit": null,
+    "cangjie": null,
+    "target_test_framework": null
+  },
+  "context": {
+    "input_mode": "PROJECT_SOURCE",
+    "tool_version": "java-test-context-second-edition",
+    "index_schema": "java-test-context-2.1",
+    "tool": "../\u4e0a\u4e0b\u6587\u5de5\u5177/context_tool.py",
+    "index": "../../\u672c\u5730\u8fd0\u884c/interval-index/project_schema.json",
+    "source_manifest": "../../\u672c\u5730\u8fd0\u884c/interval-index/source_manifest.json",
+    "build_output": "../../\u672c\u5730\u8fd0\u884c/interval-index",
+    "source_roots": {
+      "business": null,
+      "test": null,
+      "support": null
+    },
+    "resource_roots": null,
+    "test_scope": [
+      "src/test/java/org/ahocorasick/interval/IntervalTest.java"
+    ],
+    "exclude": [],
+    "classpath": [],
+    "budgets": {
+      "max_depth": 6,
+      "max_members": 200,
+      "max_chars": 30000
+    },
+    "preferred_view": "compact",
+    "suites": [
+      {
+        "id": "suite_1",
+        "source_type": "org.ahocorasick.interval.IntervalTest",
+        "output_dir": "../../\u672c\u5730\u8fd0\u884c/IntervalTest",
+        "tasks_file": "../../\u672c\u5730\u8fd0\u884c/IntervalTest/tasks.json",
+        "agent_context": "../../\u672c\u5730\u8fd0\u884c/IntervalTest/agent_context.json",
+        "full_context": "../../\u672c\u5730\u8fd0\u884c/IntervalTest/initial_context.json",
+        "shared_context": "../../\u672c\u5730\u8fd0\u884c/IntervalTest/shared.json"
+      }
+    ],
+    "internal_analysis": {
+      "read_summary_first": true,
+      "query_member_on_demand": true,
+      "preserve_assertion_candidates": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED"
+    }
+  },
+  "java_extractions": [
+    {
+      "id": "source_1",
+      "extraction_root": null,
+      "members_file": null,
+      "report_file": null,
+      "source_path_map": {}
+    }
+  ],
+  "skeleton_bundles": [
+    {
+      "id": "skeleton_1",
+      "skeleton_root": null,
+      "mapping_file": null,
+      "source_members_base": null,
+      "target_files_base": null,
+      "translation_report": null,
+      "diagnostics": null
+    }
+  ],
+  "rules": {
+    "json": null,
+    "markdown": null
+  },
+  "project_materials": {
+    "json": null,
+    "markdown": null,
+    "scan_index": null,
+    "scan_record": null,
+    "tool_root": null
+  },
+  "targets": [
+    {
+      "source_type": "org.ahocorasick.interval.IntervalTest",
+      "source_file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+      "context_suite_id": "suite_1",
+      "java_extraction_id": "source_1",
+      "skeleton_bundle_id": "skeleton_1",
+      "output_files": [
+        "interval_bridge_test.cj"
+      ]
+    }
+  ],
+  "allowed_target_source_roots": [
+    "../../\u6837\u4f8b\u6750\u6599/Interval\u53cc\u8bed\u9879\u76ee/cangjie/src"
+  ],
+  "excluded_read_paths": [
+    "../../\u8fd0\u884c\u8bb0\u5f55/\u5df2\u6709\u6574\u4f53\u7ffb\u8bd1\u6837\u4f8b"
+  ],
+  "optional_coverage_report": null,
+  "preparation_policy": {
+    "build_missing_context_from_project": true,
+    "export_missing_context_suites": true,
+    "extract_missing_java_facts_with_delivered_tool": true,
+    "generate_new_project_materials": false,
+    "generate_new_cangjie_skeleton": false
+  },
+  "constraints": {
+    "write_new_output_only": true,
+    "allow_necessary_test_helpers_in_output": true,
+    "allow_reference_tests": false,
+    "modify_target_business": false,
+    "collect_coverage": false,
+    "compile_or_run_projects": false,
+    "call_model_api_or_server": false,
+    "rewrite_java_source": false,
+    "generate_executable_test_prefixes": false
+  }
+}

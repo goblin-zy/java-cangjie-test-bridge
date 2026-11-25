@@ -1,0 +1,11 @@
+[
+    {
+        "Name": " aho-corasick",
+        "License": " Apache-2.0 License ",
+        "License File": " LICENSE ",
+        "Version Number": " v0.6.3 ",
+        "Owner": " robert-bor"
+        "Upstream URL": " https://github.com/robert-bor/aho-corasick ",
+        "Description": " Most free-text searching is based on Lucene-like approaches, where the search text is parsed into its various components. For every keyword a lookup is done to see where it occurs."
+    }
+]

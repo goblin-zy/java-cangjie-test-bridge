@@ -1,0 +1,211 @@
+{
+  "status": "QUERIED",
+  "member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+  "total": 5,
+  "records": [
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_construct()@299:assertEquals",
+        "start": 299,
+        "end": 328,
+        "start_line": 16,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "caller_start": 203,
+        "caller_source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "resolution": "unresolved",
+        "end_line": 16,
+        "call_kind": "method",
+        "reference_key": "01f7de6c9a00603e76b7b39d1e70637e2c0f6a94a3122be323daed337b294fb2",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "1",
+          "i.getStart()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "522c81bb9d0bbbb470c7ef7356dd6c3e53643e02d014f0c4dd4d8fbfd668e035",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(1, i.getStart())",
+      "targets": [],
+      "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "resolved_static",
+      "reference": {
+        "kind": "call",
+        "name": "getStart",
+        "id": "org.ahocorasick.interval.IntervalTest#test_construct()@315:getStart",
+        "start": 315,
+        "end": 327,
+        "start_line": 16,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "caller_start": 203,
+        "caller_source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "resolution": "resolved_static",
+        "end_line": 16,
+        "call_kind": "method",
+        "reference_key": "148cecfd1a63d871c668867a994521281616d9262d777b559ab479b147b2acd0",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [
+          "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3"
+        ],
+        "candidates": [],
+        "dispatch": "DECLARED_TARGET_ONLY",
+        "binding_basis": "SOURCE_LOCATION",
+        "arguments": [],
+        "scope_as_written": "i",
+        "target_signature": "org.ahocorasick.interval.Interval.getStart()",
+        "target_owner": "org.ahocorasick.interval.Interval",
+        "static": false,
+        "receiver_type": "org.ahocorasick.interval.Interval",
+        "analysis_node_key": "522c81bb9d0bbbb470c7ef7356dd6c3e53643e02d014f0c4dd4d8fbfd668e035",
+        "control_node_keys": []
+      },
+      "expression": "i.getStart()",
+      "targets": [
+        {
+          "key": "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3",
+          "id": "org.ahocorasick.interval.Interval#getStart()",
+          "file": "src/main/java/org/ahocorasick/interval/Interval.java"
+        }
+      ],
+      "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_construct()@338:assertEquals",
+        "start": 338,
+        "end": 365,
+        "start_line": 17,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "caller_start": 203,
+        "caller_source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "resolution": "unresolved",
+        "end_line": 17,
+        "call_kind": "method",
+        "reference_key": "e85c9b91848bcf2a9db8b8e5ab91e38d617e9a7f766cae42ffb7b42904a11221",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "3",
+          "i.getEnd()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "6d45d00abfe089557a0272a22e39590db8fe99d43c5fdceebfa6ffbde81c50e7",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(3, i.getEnd())",
+      "targets": [],
+      "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "resolved_static",
+      "reference": {
+        "kind": "call",
+        "name": "getEnd",
+        "id": "org.ahocorasick.interval.IntervalTest#test_construct()@354:getEnd",
+        "start": 354,
+        "end": 364,
+        "start_line": 17,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "caller_start": 203,
+        "caller_source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "resolution": "resolved_static",
+        "end_line": 17,
+        "call_kind": "method",
+        "reference_key": "12cc5ead9b8153fcf1f6ff449c765097b2c250ea02c00ac188e6d9b92c9bc1be",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [
+          "2cd8efa2c4cf5fe56df74c926fd8a04c044a9f24b8eb273416efb9bc9a572f26"
+        ],
+        "candidates": [],
+        "dispatch": "DECLARED_TARGET_ONLY",
+        "binding_basis": "SOURCE_LOCATION",
+        "arguments": [],
+        "scope_as_written": "i",
+        "target_signature": "org.ahocorasick.interval.Interval.getEnd()",
+        "target_owner": "org.ahocorasick.interval.Interval",
+        "static": false,
+        "receiver_type": "org.ahocorasick.interval.Interval",
+        "analysis_node_key": "6d45d00abfe089557a0272a22e39590db8fe99d43c5fdceebfa6ffbde81c50e7",
+        "control_node_keys": []
+      },
+      "expression": "i.getEnd()",
+      "targets": [
+        {
+          "key": "2cd8efa2c4cf5fe56df74c926fd8a04c044a9f24b8eb273416efb9bc9a572f26",
+          "id": "org.ahocorasick.interval.Interval#getEnd()",
+          "file": "src/main/java/org/ahocorasick/interval/Interval.java"
+        }
+      ],
+      "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "resolved_static",
+      "reference": {
+        "kind": "call",
+        "name": "<init>",
+        "id": "org.ahocorasick.interval.IntervalTest#test_construct()@271:<init>",
+        "start": 271,
+        "end": 289,
+        "start_line": 15,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "caller_start": 203,
+        "caller_source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "resolution": "resolved_static",
+        "end_line": 15,
+        "call_kind": "constructor",
+        "reference_key": "5a294bb7da6a9584119a65da1b90a338c7c21ee214c670906b616ddc5da2fb8e",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [
+          "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+        ],
+        "candidates": [],
+        "dispatch": "CONSTRUCTOR",
+        "binding_basis": "SOURCE_LOCATION",
+        "target_signature": "org.ahocorasick.interval.Interval.Interval(int, int)",
+        "target_owner": "org.ahocorasick.interval.Interval",
+        "analysis_node_key": "391de62c4821a232f9f3db8e136866f7f8acd181b3529595aed3de2bf252776a",
+        "control_node_keys": []
+      },
+      "expression": "new Interval(1, 3)",
+      "targets": [
+        {
+          "key": "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f",
+          "id": "org.ahocorasick.interval.Interval#<init>(int,int)",
+          "file": "src/main/java/org/ahocorasick/interval/Interval.java"
+        }
+      ],
+      "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    }
+  ],
+  "next_offset": null
+}

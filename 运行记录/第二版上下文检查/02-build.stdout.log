@@ -1,0 +1,24 @@
+{
+  "status": "INDEX_CREATED",
+  "index": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java\u2014\u4ed3\u9889\u6d4b\u8bd5\u4ee3\u7801\u7ffb\u8bd1\u65b9\u6cd5\u63a2\u7d22\\deliverables\\\u848b\u9038\u821fweek11\\\u8fd0\u884c\u8bb0\u5f55\\\u7b2c\u4e8c\u7248\u4e0a\u4e0b\u6587\u68c0\u67e5\\index\\project_schema.json",
+  "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+  "summary": {
+    "java_files": 40,
+    "types": 46,
+    "members": 349,
+    "references": 1612,
+    "resolution_counts": {
+      "resolved_static": 1119,
+      "external": 371,
+      "implicit_project_constructor": 9,
+      "unresolved": 113
+    },
+    "test_methods": 94,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 1281,
+    "recognized_assertions": 115,
+    "assertion_candidates": 0,
+    "compatibility_features": 33
+  },
+  "semantic_problems": 0
+}

@@ -1,0 +1,20 @@
+{
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "json": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java\u2014\u4ed3\u9889\u6d4b\u8bd5\u4ee3\u7801\u7ffb\u8bd1\u65b9\u6cd5\u63a2\u7d22\\deliverables\\\u848b\u9038\u821fweek11\\\u8fd0\u884c\u8bb0\u5f55\\\u7b2c\u4e8c\u7248\u4e0a\u4e0b\u6587\u68c0\u67e5\\zero-budget\\initial_context.json",
+  "markdown": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java\u2014\u4ed3\u9889\u6d4b\u8bd5\u4ee3\u7801\u7ffb\u8bd1\u65b9\u6cd5\u63a2\u7d22\\deliverables\\\u848b\u9038\u821fweek11\\\u8fd0\u884c\u8bb0\u5f55\\\u7b2c\u4e8c\u7248\u4e0a\u4e0b\u6587\u68c0\u67e5\\zero-budget\\initial_context.md",
+  "agent_json": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java\u2014\u4ed3\u9889\u6d4b\u8bd5\u4ee3\u7801\u7ffb\u8bd1\u65b9\u6cd5\u63a2\u7d22\\deliverables\\\u848b\u9038\u821fweek11\\\u8fd0\u884c\u8bb0\u5f55\\\u7b2c\u4e8c\u7248\u4e0a\u4e0b\u6587\u68c0\u67e5\\zero-budget\\agent_context.json",
+  "view": "compact",
+  "recommended_input": "C:\\Users\\jiangyizhou\\Documents\\ChatGPT\\Java\u2014\u4ed3\u9889\u6d4b\u8bd5\u4ee3\u7801\u7ffb\u8bd1\u65b9\u6cd5\u63a2\u7d22\\deliverables\\\u848b\u9038\u821fweek11\\\u8fd0\u884c\u8bb0\u5f55\\\u7b2c\u4e8c\u7248\u4e0a\u4e0b\u6587\u68c0\u67e5\\zero-budget\\agent_context.json",
+  "full_json_bytes": 20601,
+  "agent_json_bytes": 14169,
+  "records": 8,
+  "unresolved": 2,
+  "required_not_included": 8,
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 0,
+    "included_chars": 0,
+    "visited_members": 6
+  }
+}

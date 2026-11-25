@@ -1,0 +1,90 @@
+{
+  "schema_version": "test-context-suite-2.0",
+  "index_id": "8f6ff14575ccba66072a4aa3e611c7b6c353d37a057571530070b2f835c0bc95",
+  "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+  "target_type": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+  "shared": {
+    "file": "shared.json",
+    "sha256": "8b1ea616ecc50314063040ee4f895fe230a3cdfafde8260024eef141ab65e9fa"
+  },
+  "tests": [
+    {
+      "test_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_construct()",
+      "file": "tests/test_construct-c94991bd5f25.json",
+      "sha256": "37ea16a744691824ef089e16382d7ba3af381994d2267e454f687f8defb44528",
+      "unresolved": 2,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_size()",
+      "file": "tests/test_size-c39dde96373e.json",
+      "sha256": "8608e118886e610b6459b1d36189b957b36366b0cf7d06eaf42d75c0bb179b95",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+      "file": "tests/test_intervaloverlaps-ebb5c412f342.json",
+      "sha256": "9f0e36d1ab015aeab4636a2c6af43ffbe76d6bb57d3e5eea9eb1fd45e8aeffc6",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+      "file": "tests/test_intervalDoesNotOverlap-6a572de90cfb.json",
+      "sha256": "f874ae7cb13c0625d71edf9b3e08c20cbbf955ce391c0692840e88dcc6da4c7b",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+      "file": "tests/test_pointOverlaps-9d6a9442a969.json",
+      "sha256": "dca0c17343f65fbd0194eaee9e96d69c80e0a3fee8e3aa381aaf5073755cacda",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+      "file": "tests/test_pointDoesNotOverlap-22dd77392235.json",
+      "sha256": "76c731bee3f1a0179e74f50ed88ab15d3773dda4d9107bf95fc21286b7430c3d",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+      "file": "tests/test_comparable-01f24b3d83d8.json",
+      "sha256": "625c69ad9c29ad16c90d57eb3d63e1505c9e6ebb0a2830358d5ec2d6444e1375",
+      "unresolved": 3,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+      "file": "tests/test_checkToString-0909431c75bd.json",
+      "sha256": "26e578d1360d57be19a59fe8fc85d1e6e34d2e26fc870249cd89ff7f929fa838",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+      "file": "tests/test_compareToNegativeTest-39ff2e503f58.json",
+      "sha256": "d293f57ca57cc7cf12838c126f49ebc33806997bcaf331427a451c4d79be5890",
+      "unresolved": 1,
+      "required_not_included": 0
+    }
+  ],
+  "agent_entry": "agent_context.json",
+  "reading_order": [
+    "agent_context.json for whole-class translation",
+    "shared.json + tests/<selected>.json for one-test evidence",
+    "local CLI queries as needed"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "edition": "\u7b2c\u4e8c\u7248",
+  "checked_on": "2026-11-25",
+  "status": "PASSED",
+  "unit_tests": 40,
+  "actual_commands_passed": 11,
+  "prompt_commands_accepted": 15,
+  "project_summary": {
+    "java_files": 40,
+    "types": 46,
+    "members": 349,
+    "references": 1612,
+    "resolution_counts": {
+      "resolved_static": 1119,
+      "external": 371,
+      "implicit_project_constructor": 9,
+      "unresolved": 113
+    },
+    "test_methods": 94,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 1281,
+    "recognized_assertions": 115,
+    "assertion_candidates": 0,
+    "compatibility_features": 33
+  },
+  "selected_tests": 9,
+  "construct_test_top_level_statements": 3,
+  "construct_test_recognized_checks": 2,
+  "shared_references_checked": true,
+  "source_conversion": "UNSUPPORTED",
+  "executable_test_prefixes": "UNSUPPORTED",
+  "new_whole_translation_generation": "NOT_RUN",
+  "current_java_or_cangjie_project_execution": "NOT_RUN",
+  "tool_label": "java-test-context-second-edition"
+}

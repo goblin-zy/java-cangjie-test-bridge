@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-11-23",
+  "artifact_role": "EXISTING_TRANSLATION_REFERENCE",
+  "generated_by_second_edition_prompt": false,
+  "translated_test_file": "interval_bridge_test.cj",
+  "translated_test_sha256": "416380814e0db4db59054656368bd7d804d19e74808f9f0f5384d5edffd97133",
+  "business_files": 32,
+  "all_business_bytes_match_checked_inputs": true,
+  "compiler": "1.2.0 (cjnative), x86_64-w64-mingw32",
+  "compile_exit": 0,
+  "warnings": 33,
+  "tests": {
+    "total": 9,
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "test_names": [
+      "test_construct",
+      "test_size",
+      "test_intervaloverlaps",
+      "test_intervalDoesNotOverlap",
+      "test_pointOverlaps",
+      "test_pointDoesNotOverlap",
+      "test_comparable",
+      "test_checkToString",
+      "test_compareToNegativeTest"
+    ]
+  },
+  "source_java_test_execution": "NOT_RUN",
+  "original_cjpm_configuration": "NOT_RUN",
+  "mode": "Direct cjc --test; not original cjpm platform build."
+}
