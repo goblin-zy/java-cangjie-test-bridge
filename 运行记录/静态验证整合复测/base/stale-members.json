@@ -1,0 +1,646 @@
+{
+  "schema_version": "1.0",
+  "tool": "week7-java-test-skeleton-extractor",
+  "java_language_level": 17,
+  "parser": "JDK javac Tree API; parse only, no symbol attribution",
+  "offset_unit": "UTF-16 code units; end offsets exclusive; line/column 1-based",
+  "input_root": "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-project\\src\\test\\java",
+  "summary": {
+    "files": 5,
+    "classes": 5,
+    "members": 7,
+    "roles": {
+      "field": 1,
+      "helper": 2,
+      "lifecycle_BeforeEach": 1,
+      "test": 3
+    },
+    "errors": 0
+  },
+  "files": [
+    {
+      "source_file": "fake/Test.java",
+      "original_file": "original/fake/Test.java",
+      "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "skeleton_file": "skeleton/fake/Test.java",
+      "skeleton_sha256": "f06342463b0d47e75b006d818b9d3e68411ff27b50e39bcf8e28d3ff6931b014",
+      "status": "extracted",
+      "package": "fake",
+      "imports": [],
+      "members": 0,
+      "replaced_bodies": 0
+    },
+    {
+      "source_file": "p/BaseCase.java",
+      "original_file": "original/p/BaseCase.java",
+      "source_sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+      "skeleton_file": "skeleton/p/BaseCase.java",
+      "skeleton_sha256": "d2f119dfbf9b7f93a4420b4e2e29c959caf887c14d01b9975616beb187a943af",
+      "status": "extracted",
+      "package": "p",
+      "imports": [
+        "junit.framework.TestCase"
+      ],
+      "members": 4,
+      "replaced_bodies": 3
+    },
+    {
+      "source_file": "p/ChildCase.java",
+      "original_file": "original/p/ChildCase.java",
+      "source_sha256": "994de2fda9cd18ead6516f2c4d520538bc4e175103e84110388c8ea532f15b45",
+      "skeleton_file": "skeleton/p/ChildCase.java",
+      "skeleton_sha256": "139c12090eaec618fd4f18d21c988f9bfdf81a1260855078e3ba8206b8b34195",
+      "status": "extracted",
+      "package": "p",
+      "imports": [],
+      "members": 1,
+      "replaced_bodies": 1
+    },
+    {
+      "source_file": "p/FakeCase.java",
+      "original_file": "original/p/FakeCase.java",
+      "source_sha256": "44a242682973488ef19c99f1a16cb78f2cd8840039521398354e365639c46397",
+      "skeleton_file": "skeleton/p/FakeCase.java",
+      "skeleton_sha256": "44f9f46d9f80f6820bd47bad6d09c1d674cd060a6f91a4b2c250e394f69e9785",
+      "status": "extracted",
+      "package": "p",
+      "imports": [
+        "fake.Test"
+      ],
+      "members": 1,
+      "replaced_bodies": 1
+    },
+    {
+      "source_file": "p/FourCase.java",
+      "original_file": "original/p/FourCase.java",
+      "source_sha256": "e2dbb8c7827d61d682fee3c2b5d583dfdbd8df2fca570cc867cb1501f42b76af",
+      "skeleton_file": "skeleton/p/FourCase.java",
+      "skeleton_sha256": "be521ecab71d3e8d9e559a62c0f8900f30c575d1a81e5ee6a55e85fa43e9ea97",
+      "status": "extracted",
+      "package": "p",
+      "imports": [
+        "org.junit.Test"
+      ],
+      "members": 1,
+      "replaced_bodies": 1
+    }
+  ],
+  "classes": [
+    {
+      "id": "fake/Test.java::fake.Test",
+      "name": "Test",
+      "qualified_name": "fake.Test",
+      "kind": "ANNOTATION_TYPE",
+      "superclass": null,
+      "annotations": [],
+      "source_location": {
+        "file": "original/fake/Test.java",
+        "start_offset_utf16": 14,
+        "end_offset_utf16_exclusive": 39,
+        "start_line": 1,
+        "start_column": 15,
+        "end_line": 1,
+        "end_column": 39
+      },
+      "skeleton_location": {
+        "file": "skeleton/fake/Test.java",
+        "start_offset_utf16": 14,
+        "end_offset_utf16_exclusive": 39,
+        "start_line": 1,
+        "start_column": 15,
+        "end_line": 1,
+        "end_column": 39
+      }
+    },
+    {
+      "id": "p/BaseCase.java::p.BaseCase",
+      "name": "BaseCase",
+      "qualified_name": "p.BaseCase",
+      "kind": "CLASS",
+      "superclass": "TestCase",
+      "annotations": [],
+      "source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 44,
+        "end_offset_utf16_exclusive": 237,
+        "start_line": 1,
+        "start_column": 45,
+        "end_line": 1,
+        "end_column": 237
+      },
+      "skeleton_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 44,
+        "end_offset_utf16_exclusive": 419,
+        "start_line": 1,
+        "start_column": 45,
+        "end_line": 7,
+        "end_column": 3
+      }
+    },
+    {
+      "id": "p/ChildCase.java::p.ChildCase",
+      "name": "ChildCase",
+      "qualified_name": "p.ChildCase",
+      "kind": "CLASS",
+      "superclass": "BaseCase",
+      "annotations": [],
+      "source_location": {
+        "file": "original/p/ChildCase.java",
+        "start_offset_utf16": 11,
+        "end_offset_utf16_exclusive": 96,
+        "start_line": 1,
+        "start_column": 12,
+        "end_line": 1,
+        "end_column": 96
+      },
+      "skeleton_location": {
+        "file": "skeleton/p/ChildCase.java",
+        "start_offset_utf16": 11,
+        "end_offset_utf16_exclusive": 149,
+        "start_line": 1,
+        "start_column": 12,
+        "end_line": 3,
+        "end_column": 3
+      }
+    },
+    {
+      "id": "p/FakeCase.java::p.FakeCase",
+      "name": "FakeCase",
+      "qualified_name": "p.FakeCase",
+      "kind": "CLASS",
+      "superclass": null,
+      "annotations": [],
+      "source_location": {
+        "file": "original/p/FakeCase.java",
+        "start_offset_utf16": 29,
+        "end_offset_utf16_exclusive": 85,
+        "start_line": 1,
+        "start_column": 30,
+        "end_line": 1,
+        "end_column": 85
+      },
+      "skeleton_location": {
+        "file": "skeleton/p/FakeCase.java",
+        "start_offset_utf16": 29,
+        "end_offset_utf16_exclusive": 155,
+        "start_line": 1,
+        "start_column": 30,
+        "end_line": 3,
+        "end_column": 3
+      }
+    },
+    {
+      "id": "p/FourCase.java::p.FourCase",
+      "name": "FourCase",
+      "qualified_name": "p.FourCase",
+      "kind": "CLASS",
+      "superclass": null,
+      "annotations": [],
+      "source_location": {
+        "file": "original/p/FourCase.java",
+        "start_offset_utf16": 34,
+        "end_offset_utf16_exclusive": 181,
+        "start_line": 1,
+        "start_column": 35,
+        "end_line": 1,
+        "end_column": 181
+      },
+      "skeleton_location": {
+        "file": "skeleton/p/FourCase.java",
+        "start_offset_utf16": 34,
+        "end_offset_utf16_exclusive": 212,
+        "start_line": 1,
+        "start_column": 35,
+        "end_line": 3,
+        "end_column": 3
+      }
+    }
+  ],
+  "members": [
+    {
+      "id": "p/BaseCase.java::p.BaseCase#field:value",
+      "kind": "field",
+      "role": "field",
+      "owner": "p.BaseCase",
+      "name": "value",
+      "type": "int",
+      "declaration": "protected int value=1;",
+      "initializer": "1",
+      "source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 94,
+        "end_offset_utf16_exclusive": 116,
+        "start_line": 1,
+        "start_column": 95,
+        "end_line": 1,
+        "end_column": 116
+      },
+      "has_body": false,
+      "skeleton_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 94,
+        "end_offset_utf16_exclusive": 116,
+        "start_line": 1,
+        "start_column": 95,
+        "end_line": 1,
+        "end_column": 116
+      }
+    },
+    {
+      "id": "p/BaseCase.java::p.BaseCase#setUp()",
+      "kind": "method",
+      "role": "lifecycle_BeforeEach",
+      "owner": "p.BaseCase",
+      "name": "setUp",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "void",
+      "annotations": [],
+      "modifiers": [
+        "protected"
+      ],
+      "throws": [],
+      "signature_source": "protected void setUp() ",
+      "has_body": true,
+      "original_body": "{ value=2; }",
+      "source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 117,
+        "end_offset_utf16_exclusive": 152,
+        "start_line": 1,
+        "start_column": 118,
+        "end_line": 1,
+        "end_column": 152
+      },
+      "body_source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 140,
+        "end_offset_utf16_exclusive": 152,
+        "start_line": 1,
+        "start_column": 141,
+        "end_line": 1,
+        "end_column": 152
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 117,
+        "end_offset_utf16_exclusive": 212,
+        "start_line": 1,
+        "start_column": 118,
+        "end_line": 3,
+        "end_column": 1
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 140,
+        "end_offset_utf16_exclusive": 212,
+        "start_line": 1,
+        "start_column": 141,
+        "end_line": 3,
+        "end_column": 1
+      },
+      "test_framework": "junit3"
+    },
+    {
+      "id": "p/BaseCase.java::p.BaseCase#testFromBase()",
+      "kind": "method",
+      "role": "test",
+      "owner": "p.BaseCase",
+      "name": "testFromBase",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "void",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public void testFromBase() ",
+      "has_body": true,
+      "original_body": "{ assert value==2; }",
+      "source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 153,
+        "end_offset_utf16_exclusive": 200,
+        "start_line": 1,
+        "start_column": 154,
+        "end_line": 1,
+        "end_column": 200
+      },
+      "body_source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 180,
+        "end_offset_utf16_exclusive": 200,
+        "start_line": 1,
+        "start_column": 181,
+        "end_line": 1,
+        "end_column": 200
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 213,
+        "end_offset_utf16_exclusive": 312,
+        "start_line": 3,
+        "start_column": 3,
+        "end_line": 5,
+        "end_column": 1
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 240,
+        "end_offset_utf16_exclusive": 312,
+        "start_line": 3,
+        "start_column": 30,
+        "end_line": 5,
+        "end_column": 1
+      },
+      "test_framework": "junit3"
+    },
+    {
+      "id": "p/BaseCase.java::p.BaseCase#testStatic()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "p.BaseCase",
+      "name": "testStatic",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "void",
+      "annotations": [],
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "throws": [],
+      "signature_source": "public static void testStatic() ",
+      "has_body": true,
+      "original_body": "{}",
+      "source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 201,
+        "end_offset_utf16_exclusive": 235,
+        "start_line": 1,
+        "start_column": 202,
+        "end_line": 1,
+        "end_column": 235
+      },
+      "body_source_location": {
+        "file": "original/p/BaseCase.java",
+        "start_offset_utf16": 233,
+        "end_offset_utf16_exclusive": 235,
+        "start_line": 1,
+        "start_column": 234,
+        "end_line": 1,
+        "end_column": 235
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 313,
+        "end_offset_utf16_exclusive": 417,
+        "start_line": 5,
+        "start_column": 3,
+        "end_line": 7,
+        "end_column": 1
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/p/BaseCase.java",
+        "start_offset_utf16": 345,
+        "end_offset_utf16_exclusive": 417,
+        "start_line": 5,
+        "start_column": 35,
+        "end_line": 7,
+        "end_column": 1
+      }
+    },
+    {
+      "id": "p/ChildCase.java::p.ChildCase#testOwn()",
+      "kind": "method",
+      "role": "test",
+      "owner": "p.ChildCase",
+      "name": "testOwn",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "void",
+      "annotations": [],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "public void testOwn() ",
+      "has_body": true,
+      "original_body": "{ assert value>0; }",
+      "source_location": {
+        "file": "original/p/ChildCase.java",
+        "start_offset_utf16": 53,
+        "end_offset_utf16_exclusive": 94,
+        "start_line": 1,
+        "start_column": 54,
+        "end_line": 1,
+        "end_column": 94
+      },
+      "body_source_location": {
+        "file": "original/p/ChildCase.java",
+        "start_offset_utf16": 75,
+        "end_offset_utf16_exclusive": 94,
+        "start_line": 1,
+        "start_column": 76,
+        "end_line": 1,
+        "end_column": 94
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/p/ChildCase.java",
+        "start_offset_utf16": 53,
+        "end_offset_utf16_exclusive": 147,
+        "start_line": 1,
+        "start_column": 54,
+        "end_line": 3,
+        "end_column": 1
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/p/ChildCase.java",
+        "start_offset_utf16": 75,
+        "end_offset_utf16_exclusive": 147,
+        "start_line": 1,
+        "start_column": 76,
+        "end_line": 3,
+        "end_column": 1
+      },
+      "test_framework": "junit3"
+    },
+    {
+      "id": "p/FakeCase.java::p.FakeCase#pretend()",
+      "kind": "method",
+      "role": "helper",
+      "owner": "p.FakeCase",
+      "name": "pretend",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "void",
+      "annotations": [
+        {
+          "source": "@Test",
+          "name": "Test",
+          "resolved_candidate": "fake.Test",
+          "arguments": {},
+          "resolution": "syntactic import lookup, not full type attribution"
+        }
+      ],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "@Test public void pretend() ",
+      "has_body": true,
+      "original_body": "{}",
+      "source_location": {
+        "file": "original/p/FakeCase.java",
+        "start_offset_utf16": 53,
+        "end_offset_utf16_exclusive": 83,
+        "start_line": 1,
+        "start_column": 54,
+        "end_line": 1,
+        "end_column": 83
+      },
+      "body_source_location": {
+        "file": "original/p/FakeCase.java",
+        "start_offset_utf16": 81,
+        "end_offset_utf16_exclusive": 83,
+        "start_line": 1,
+        "start_column": 82,
+        "end_line": 1,
+        "end_column": 83
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/p/FakeCase.java",
+        "start_offset_utf16": 53,
+        "end_offset_utf16_exclusive": 153,
+        "start_line": 1,
+        "start_column": 54,
+        "end_line": 3,
+        "end_column": 1
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/p/FakeCase.java",
+        "start_offset_utf16": 81,
+        "end_offset_utf16_exclusive": 153,
+        "start_line": 1,
+        "start_column": 82,
+        "end_line": 3,
+        "end_column": 1
+      }
+    },
+    {
+      "id": "p/FourCase.java::p.FourCase#check()",
+      "kind": "method",
+      "role": "test",
+      "owner": "p.FourCase",
+      "name": "check",
+      "parameter_types": [],
+      "parameters": [],
+      "return_type": "void",
+      "annotations": [
+        {
+          "source": "@Test(expected = IllegalArgumentException.class, timeout = 250)",
+          "name": "Test",
+          "resolved_candidate": "org.junit.Test",
+          "arguments": {
+            "expected": "IllegalArgumentException.class",
+            "timeout": "250"
+          },
+          "resolution": "syntactic import lookup, not full type attribution"
+        }
+      ],
+      "modifiers": [
+        "public"
+      ],
+      "throws": [],
+      "signature_source": "@Test(expected=IllegalArgumentException.class, timeout=250) public void check() ",
+      "has_body": true,
+      "original_body": "{ throw new IllegalArgumentException(); }",
+      "source_location": {
+        "file": "original/p/FourCase.java",
+        "start_offset_utf16": 58,
+        "end_offset_utf16_exclusive": 179,
+        "start_line": 1,
+        "start_column": 59,
+        "end_line": 1,
+        "end_column": 179
+      },
+      "test_framework": "junit4",
+      "body_source_location": {
+        "file": "original/p/FourCase.java",
+        "start_offset_utf16": 138,
+        "end_offset_utf16_exclusive": 179,
+        "start_line": 1,
+        "start_column": 139,
+        "end_line": 1,
+        "end_column": 179
+      },
+      "placeholder_kind": "throw UnsupportedOperationException; structure only",
+      "constructor_delegation": null,
+      "skeleton_location": {
+        "file": "skeleton/p/FourCase.java",
+        "start_offset_utf16": 58,
+        "end_offset_utf16_exclusive": 210,
+        "start_line": 1,
+        "start_column": 59,
+        "end_line": 3,
+        "end_column": 1
+      },
+      "skeleton_body_location": {
+        "file": "skeleton/p/FourCase.java",
+        "start_offset_utf16": 138,
+        "end_offset_utf16_exclusive": 210,
+        "start_line": 1,
+        "start_column": 139,
+        "end_line": 3,
+        "end_column": 1
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "file": "p/FakeCase.java",
+      "severity": "warning",
+      "code": "UNRESOLVED_TEST_ANNOTATION",
+      "line": 1,
+      "message": "No confirmed JUnit binding for Test; no test role assumed"
+    }
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "p/ChildCase.java::p.ChildCase#testOwn()",
+      "declaring_class": "p.ChildCase",
+      "execution_class": "p.ChildCase",
+      "selector": "p.ChildCase#testOwn()",
+      "framework": "junit3",
+      "basis": "source"
+    },
+    {
+      "source_member_id": "p/BaseCase.java::p.BaseCase#testFromBase()",
+      "declaring_class": "p.BaseCase",
+      "execution_class": "p.ChildCase",
+      "selector": "p.ChildCase#testFromBase()",
+      "framework": "junit3",
+      "basis": "source"
+    },
+    {
+      "source_member_id": "p/FourCase.java::p.FourCase#check()",
+      "declaring_class": "p.FourCase",
+      "execution_class": "p.FourCase",
+      "selector": "p.FourCase#check()",
+      "framework": "junit4",
+      "basis": "source"
+    }
+  ]
+}

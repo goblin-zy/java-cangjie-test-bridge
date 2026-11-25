@@ -1,0 +1,23 @@
+{
+  "status": "SUITE_CREATED_WITH_LIMITATIONS",
+  "json": "D:\\CodexArtifacts\\static-integration-002\\base\\context-suite\\initial_context.json",
+  "markdown": "D:\\CodexArtifacts\\static-integration-002\\base\\context-suite\\initial_context.md",
+  "agent_json": "D:\\CodexArtifacts\\static-integration-002\\base\\context-suite\\agent_context.json",
+  "view": "compact",
+  "recommended_input": "D:\\CodexArtifacts\\static-integration-002\\base\\context-suite\\agent_context.json",
+  "full_json_bytes": 81022,
+  "agent_json_bytes": 39362,
+  "records": 21,
+  "unresolved": 12,
+  "required_not_included": 0,
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 1917,
+    "visited_members": 19
+  },
+  "tests": 9,
+  "tasks": "D:\\CodexArtifacts\\static-integration-002\\base\\context-suite\\tasks.json",
+  "shared": "D:\\CodexArtifacts\\static-integration-002\\base\\context-suite\\shared.json"
+}

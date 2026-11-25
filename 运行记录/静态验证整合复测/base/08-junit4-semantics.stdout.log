@@ -1,0 +1,20 @@
+{
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "json": "D:\\CodexArtifacts\\static-integration-002\\base\\four-view\\initial_context.json",
+  "markdown": "D:\\CodexArtifacts\\static-integration-002\\base\\four-view\\initial_context.md",
+  "agent_json": "D:\\CodexArtifacts\\static-integration-002\\base\\four-view\\agent_context.json",
+  "view": "compact",
+  "recommended_input": "D:\\CodexArtifacts\\static-integration-002\\base\\four-view\\agent_context.json",
+  "full_json_bytes": 8013,
+  "agent_json_bytes": 7415,
+  "records": 2,
+  "unresolved": 0,
+  "required_not_included": 0,
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 147,
+    "visited_members": 1
+  }
+}

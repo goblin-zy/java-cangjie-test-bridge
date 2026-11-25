@@ -84,3 +84,7 @@
 | 集成适配/prepare_skeleton_check.py | 把整体任务复制为检查器要求的目录与配置 |
 
 成员表是上下文的可选输入；要使用 week12 继承入口，应在建索引前提供。同版表冻结到 `artifacts/java-members/`；`project_schema.json.java_members` 和初始上下文中的 `test_invocations` 保存源 ID 与执行入口。完整文件含义及调用时机见 [week12 对接](集成适配/README.md)。
+
+## 四、最终译文的静态验证
+
+输入为整体任务、最终译文、成员映射及同版上下文/业务。prepare_static_validation.py 生成静态验证可读取的目录；Agent 按总控提示词提交标注与比较，输出两份带注释源码和 report.json/md。文件职责见 [静态验证](静态验证/README.md)。它安排在整体填充之后，与填充前骨架结构检查分别使用。

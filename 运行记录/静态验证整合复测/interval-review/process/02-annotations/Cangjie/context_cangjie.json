@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "file": "inputs/0/interval_test.cj",
+      "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+    },
+    {
+      "file": "inputs/1/interval_test.cj",
+      "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+    },
+    {
+      "file": "inputs/10/interval.cj",
+      "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+    },
+    {
+      "file": "inputs/13/intervalable.cj",
+      "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+    }
+  ],
+  "unknowns": [],
+  "analysis_mode": "CURRENT_AGENT_FIXED_REVIEW_NO_INDEPENDENT_BLIND_SESSIONS"
+}

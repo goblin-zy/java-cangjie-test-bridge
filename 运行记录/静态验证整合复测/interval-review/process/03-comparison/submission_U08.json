@@ -1,0 +1,42 @@
+{
+  "id": "U08",
+  "packet_hash": "88f7cd20300945b2380d9fd73f27122aa788ffabe39ace4d5f8bad293bb77ecc",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "准备、操作和全部断言",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J038",
+        "J039",
+        "J040"
+      ],
+      "cangjie": [
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "reason": "构造区间(4,6)，要求真实toString返回4:6。"
+    },
+    {
+      "kind": "interface",
+      "topic": "真实业务接口与必要结构适配",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J038",
+        "J039",
+        "J040"
+      ],
+      "cangjie": [
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "reason": "构造区间(4,6)，要求真实toString返回4:6。",
+      "contract_reference": {
+        "quote": "本轮接口前提（test_checkToString）：构造区间(4,6)，要求真实toString返回4:6。",
+        "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+      }
+    }
+  ]
+}

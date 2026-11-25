@@ -10,6 +10,10 @@
     "skeleton_prompt": "主体/仓颉骨架翻译器/骨架翻译提示词.md",
     "skeleton_checker": "主体/仓颉骨架翻译器/check_skeleton.py",
     "check_adapter": "主体/集成适配/prepare_skeleton_check.py",
-    "integration_test": "主体/集成适配/tests/run_integration.py"
+    "integration_test": "主体/集成适配/tests/run_integration.py",
+    "static_adapter": "主体/集成适配/prepare_static_validation.py",
+    "static_validator": "主体/静态验证/src/verify_tool.py",
+    "static_prompt": "主体/静态验证/src/prompts/验证总控提示词.md",
+    "static_integration_test": "主体/集成适配/tests/run_static_integration.py"
   }
 }

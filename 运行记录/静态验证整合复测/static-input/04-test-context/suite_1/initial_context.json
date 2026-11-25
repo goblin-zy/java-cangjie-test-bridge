@@ -1,0 +1,1832 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+  "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1
+  },
+  "semantic_problems": [],
+  "profile": "whole",
+  "scope": "combined",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+  "selected_tests": [
+    "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+    "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+    "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+    "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+    "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+    "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+    "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+    "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+    "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_construct()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_construct()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_size()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_size()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_comparable()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_checkToString()"
+    },
+    {
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+      "declaring_class": "org.ahocorasick.interval.IntervalTest",
+      "execution_class": "org.ahocorasick.interval.IntervalTest",
+      "selector": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+      "package": "org.ahocorasick.interval",
+      "imports": [
+        {
+          "start": 35,
+          "end": 57,
+          "name": "org.junit.Test",
+          "static": false
+        },
+        {
+          "start": 59,
+          "end": 85,
+          "name": "java.util.Iterator",
+          "static": false
+        },
+        {
+          "start": 86,
+          "end": 107,
+          "name": "java.util.Set",
+          "static": false
+        },
+        {
+          "start": 108,
+          "end": 133,
+          "name": "java.util.TreeSet",
+          "static": false
+        },
+        {
+          "start": 135,
+          "end": 168,
+          "name": "org.junit.Assert.*",
+          "static": true
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+      "package": "org.ahocorasick.interval",
+      "imports": [
+        {
+          "start": 35,
+          "end": 68,
+          "name": "org.ahocorasick.trie.Emit",
+          "static": false
+        },
+        {
+          "start": 69,
+          "end": 109,
+          "name": "org.ahocorasick.trie.PayloadEmit",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+      "display_id": "org.ahocorasick.interval.IntervalTest",
+      "content_kind": "full",
+      "content": "public class IntervalTest {\n\n    @Test\n    public void test_construct() {\n        final Interval i = new Interval(1, 3);\n        assertEquals(1, i.getStart());\n        assertEquals(3, i.getEnd());\n    }\n\n    @Test\n    public void test_size() {\n        assertEquals(3, new Interval(0, 2).size());\n    }\n\n    @Test\n    public void test_intervaloverlaps() {\n        assertTrue(new Interval(1, 3).overlapsWith(new Interval(2, 4)));\n    }\n\n    @Test\n    public void test_intervalDoesNotOverlap() {\n        assertFalse(new Interval(1, 13).overlapsWith(new Interval(27, 42)));\n    }\n\n    @Test\n    public void test_pointOverlaps() {\n        assertTrue(new Interval(1, 3).overlapsWith(2));\n    }\n\n    @Test\n    public void test_pointDoesNotOverlap() {\n        assertFalse(new Interval(1, 13).overlapsWith(42));\n    }\n\n    @Test\n    public void test_comparable() {\n        final Set<Interval> intervals = new TreeSet<>();\n        intervals.add(new Interval(4, 6));\n        intervals.add(new Interval(2, 7));\n        intervals.add(new Interval(3, 4));\n        final Iterator<Interval> it = intervals.iterator();\n        assertEquals(2, it.next().getStart());\n        assertEquals(3, it.next().getStart());\n        assertEquals(4, it.next().getStart());\n    }\n\n    @Test\n    public void test_checkToString() {\n        assertEquals(\"4:6\", new Interval(4, 6).toString());\n    }\n\n    @Test\n    public void test_compareToNegativeTest() {\n        assertEquals(-1, new Interval(4, 6).compareTo(new Object()));\n    }\n\n}",
+      "content_chars": 1501,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 11,
+        "end_line": 67,
+        "start_offset_utf16": 170,
+        "end_offset_utf16_exclusive": 1671
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST_TYPE"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_construct()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 169,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 13,
+        "end_line": 18,
+        "start_offset_utf16": 203,
+        "end_offset_utf16_exclusive": 372
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_size()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 93,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 20,
+        "end_line": 23,
+        "start_offset_utf16": 378,
+        "end_offset_utf16_exclusive": 471
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 126,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 25,
+        "end_line": 28,
+        "start_offset_utf16": 477,
+        "end_offset_utf16_exclusive": 603
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 136,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 30,
+        "end_line": 33,
+        "start_offset_utf16": 609,
+        "end_offset_utf16_exclusive": 745
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 106,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 35,
+        "end_line": 38,
+        "start_offset_utf16": 751,
+        "end_offset_utf16_exclusive": 857
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 115,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 40,
+        "end_line": 43,
+        "start_offset_utf16": 863,
+        "end_offset_utf16_exclusive": 978
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 434,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 45,
+        "end_line": 55,
+        "start_offset_utf16": 984,
+        "end_offset_utf16_exclusive": 1418
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 110,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 57,
+        "end_line": 60,
+        "start_offset_utf16": 1424,
+        "end_offset_utf16_exclusive": 1534
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 128,
+      "source": {
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "start_line": 62,
+        "end_line": 65,
+        "start_offset_utf16": 1540,
+        "end_offset_utf16_exclusive": 1668
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "SELECTED_TEST",
+      "covered_by": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "d75098f4ddf78129425577c1428d8a85208abc358c40fbb8274ff2f7e1b77f12",
+      "display_id": "org.ahocorasick.interval.Interval",
+      "content_kind": "signature",
+      "content": "public class Interval implements Intervalable {",
+      "content_chars": 47,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 10,
+        "end_line": 10,
+        "start_offset_utf16": 239,
+        "end_offset_utf16_exclusive": 286
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3",
+      "display_id": "org.ahocorasick.interval.Interval#getStart()",
+      "content_kind": "signature",
+      "content": "@Override\n    public int getStart() ",
+      "content_chars": 36,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 31,
+        "end_line": 32,
+        "start_offset_utf16": 824,
+        "end_offset_utf16_exclusive": 860
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "2cd8efa2c4cf5fe56df74c926fd8a04c044a9f24b8eb273416efb9bc9a572f26",
+      "display_id": "org.ahocorasick.interval.Interval#getEnd()",
+      "content_kind": "signature",
+      "content": "@Override\n    public int getEnd() ",
+      "content_chars": 34,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 41,
+        "end_line": 42,
+        "start_offset_utf16": 1057,
+        "end_offset_utf16_exclusive": 1091
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f",
+      "display_id": "org.ahocorasick.interval.Interval#<init>(int,int)",
+      "content_kind": "signature",
+      "content": "public Interval(final int start, final int end) ",
+      "content_chars": 48,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 21,
+        "end_line": 21,
+        "start_offset_utf16": 549,
+        "end_offset_utf16_exclusive": 597
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "a9c3691a59ca42fe805aae30b72ef2ec491f0a2276aa54ebbb0a27111ebfc546",
+      "display_id": "org.ahocorasick.interval.Interval#size()",
+      "content_kind": "signature",
+      "content": "@Override\n    public int size() ",
+      "content_chars": 32,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 51,
+        "end_line": 52,
+        "start_offset_utf16": 1262,
+        "end_offset_utf16_exclusive": 1294
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "071ee3effdccbbad8d127f16c876fbce4073ee9c1372c6e90457ae55fb4c56ab",
+      "display_id": "org.ahocorasick.interval.Interval#overlapsWith(Interval)",
+      "content_kind": "signature",
+      "content": "public boolean overlapsWith(final Interval other) ",
+      "content_chars": 50,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 63,
+        "end_line": 63,
+        "start_offset_utf16": 1547,
+        "end_offset_utf16_exclusive": 1597
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "4c174ff705ff8aded87f09a3f496b9f723388cd4339cc0adababbd44ee97fa11",
+      "display_id": "org.ahocorasick.interval.Interval#overlapsWith(int)",
+      "content_kind": "signature",
+      "content": "public boolean overlapsWith(int point) ",
+      "content_chars": 39,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 68,
+        "end_line": 68,
+        "start_offset_utf16": 1703,
+        "end_offset_utf16_exclusive": 1742
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "3af12592bfbc43931d528b3452c54cdbb65cdcd77d1c6e91b7f88895167ccb8f",
+      "display_id": "org.ahocorasick.interval.Interval#toString()",
+      "content_kind": "signature",
+      "content": "@Override\n    public String toString() ",
+      "content_chars": 39,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 103,
+        "end_line": 104,
+        "start_offset_utf16": 2662,
+        "end_offset_utf16_exclusive": 2701
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "6ad2c5efc34cbb9e394c17f21e53281f481cf462fa245884d796fc473cb1994d",
+      "display_id": "org.ahocorasick.interval.Interval#compareTo(Object)",
+      "content_kind": "signature",
+      "content": "@Override\n    public int compareTo(Object o) ",
+      "content_chars": 45,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 87,
+        "end_line": 88,
+        "start_offset_utf16": 2190,
+        "end_offset_utf16_exclusive": 2235
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "ea23eb55391c5c9a5ccb650531a03cc29ed0492ed3854c8d4548bb82718e0cef",
+      "display_id": "org.ahocorasick.interval.Interval#field:start",
+      "content_kind": "full",
+      "content": "private final int start;",
+      "content_chars": 24,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 12,
+        "end_line": 12,
+        "start_offset_utf16": 292,
+        "end_offset_utf16_exclusive": 316
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "BUSINESS_INITIALIZATION_EVIDENCE"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "8c7e7718997d1d9635093bf764c832f1cf1bbf4f924b34dada7e1fe88f7c5321",
+      "display_id": "org.ahocorasick.interval.Interval#field:end",
+      "content_kind": "full",
+      "content": "private final int end;",
+      "content_chars": 22,
+      "source": {
+        "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+        "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+        "start_line": 13,
+        "end_line": 13,
+        "start_offset_utf16": 321,
+        "end_offset_utf16_exclusive": 343
+      },
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+      "reason": "BUSINESS_INITIALIZATION_EVIDENCE"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "01f7de6c9a00603e76b7b39d1e70637e2c0f6a94a3122be323daed337b294fb2",
+      "caller": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "148cecfd1a63d871c668867a994521281616d9262d777b559ab479b147b2acd0",
+      "caller": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "resolution": "resolved_static",
+      "targets": [
+        "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "e85c9b91848bcf2a9db8b8e5ab91e38d617e9a7f766cae42ffb7b42904a11221",
+      "caller": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "12cc5ead9b8153fcf1f6ff449c765097b2c250ea02c00ac188e6d9b92c9bc1be",
+      "caller": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "resolution": "resolved_static",
+      "targets": [
+        "2cd8efa2c4cf5fe56df74c926fd8a04c044a9f24b8eb273416efb9bc9a572f26"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "5a294bb7da6a9584119a65da1b90a338c7c21ee214c670906b616ddc5da2fb8e",
+      "caller": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "f28ac233d91a4cef6e0d17d30e208b1338fdd2fedee362d2af8c1a45b9e969ff",
+      "caller": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "64b192127855902402793829700092299e3b38db6add00d4ef2c97954f13c5bd",
+      "caller": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "resolution": "resolved_static",
+      "targets": [
+        "a9c3691a59ca42fe805aae30b72ef2ec491f0a2276aa54ebbb0a27111ebfc546"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "6e409757f0cf04ecdfe299e8679a1e024aa67f76c7b4065439e07198e6772460",
+      "caller": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "3cc8e8ebadc8798d6e509b3d4a9fae635c76e1ca0b644f41e95292bbcc3b3abf",
+      "caller": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "a625b7e0eadcd3f19c0ea3d452de2c3b45463b02482e2b6fe9fcbb2a0823a633",
+      "caller": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "resolution": "resolved_static",
+      "targets": [
+        "071ee3effdccbbad8d127f16c876fbce4073ee9c1372c6e90457ae55fb4c56ab"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "5bee89c3a4844924e64ab77cc09669a461163d5f6863e867c414684ee0fba7b4",
+      "caller": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "f8eebd17b4467d86e9a3302f32076fc1604f0efa6c4b361e30bb300de3620812",
+      "caller": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "2452a25ece04f073a3a9eeea9048b1b473987e4e219caad0d17d7c7bcf00eda5",
+      "caller": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "100e60908c21de8760f890b534b55f399b076ecf4f765ece3e15d2ab986dfd8b",
+      "caller": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "resolution": "resolved_static",
+      "targets": [
+        "071ee3effdccbbad8d127f16c876fbce4073ee9c1372c6e90457ae55fb4c56ab"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "c314beeb3407f8f5599b4147a409633698d489816621926bd44bba3fb11ba9fc",
+      "caller": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "6824a00230930b093c184f877fcde4b807fc5f4e84a4a22e2a6031bfe2eb00a6",
+      "caller": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "b467ecb615507f80fc88f04d6da32f2d84cfcb20ea4cb28da46d95c37a858046",
+      "caller": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "f027fb7a460d15a18cd3ffe0a87dbe8840a2f44452242a565d8bc179bf874c35",
+      "caller": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "resolution": "resolved_static",
+      "targets": [
+        "4c174ff705ff8aded87f09a3f496b9f723388cd4339cc0adababbd44ee97fa11"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "df31e5313dd61730e8181260209c4ecf0676bf0168f53c320488f74c7ab0c67e",
+      "caller": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "5d22ba831692fbcf109b176a615e2166891b296b46ff4036845b9c9ee6856e29",
+      "caller": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "a172ceab1d6db4c33f8c0fde656fe4ba520ffbcd19660a9bcb41e807b1a6e764",
+      "caller": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "resolution": "resolved_static",
+      "targets": [
+        "4c174ff705ff8aded87f09a3f496b9f723388cd4339cc0adababbd44ee97fa11"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "65bf62b330364782346958150dcfd63c4bb037893d5695230da0f66e0479949d",
+      "caller": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "eaea562dd84e3db7cbda66031ca89bfca1e4b9e1fa9dcae71e2f96a1f2e78109",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "e9f5ac0013298c1d878c3a9aef3d484131aaac37788a489c1fd58172ca0a2f24",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "af59d849df606874af5fe9a30957e0f9e60486e7c8ee69cb6abd848a1d7a1686",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "193c5cfa7add69a3c71b67ccd9194e2014f595524a4e7bb0701ecc14ea4559aa",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "1d96f980b59d75a000bc1302b4ec98b290c4ee7da7ea3e238556cf10f0ec2b54",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "cf59f12f9971c1eef67e45ce76647bd8b8d2af8e99102bb5f4d2b1fa8e2a37e2",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "resolved_static",
+      "targets": [
+        "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "36150c2a59f4272d080a1089e78509d50a630b342b629a68fe68a444bb3c83fd",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "98e3ca8116951ae0f4bbab81f5f140c79c3849418e3ed50e1b607b3fe9eff426",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "9d3294feb2b4883c76b7d62311fd8cd6d2dc0e0718d64a7f776658cc3b5792e4",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "resolved_static",
+      "targets": [
+        "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "eaa56d9343610c25bed37f8eb3017e4944a5aecd67a6de969c1469ee169dde4d",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "7c33d3f6b375458fad168fa421c3181f33562b51be9dbf85f929e05862af34b0",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "59378933c59fcb554ae5233253ea8939acc0a5f84a4ce3fb8eb106d859f97039",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "resolved_static",
+      "targets": [
+        "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "fee5e025d4e12ab944610e8a035d9c33a29462ef4531968f66d1c03d64cfb144",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "9ed44d3ff7d1911347776ae8e7e997f109f042e7151b60185140e0c730e2dd87",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "9b4b0da588c86ff1a357d71c224c45633cde60b776fb2f693805cc08856e944f",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "7591ea77e7a05bfe68c9540f673cd3f30fcd1fee5f2783804433f2b33f205b5a",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "e745ea9515c92e2d690b1d311d3a973f051e73932b263516c0e866bb2a114e34",
+      "caller": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "ccfd25722de414bd1a197f957b0c51d163d7bbde935a16a606c42af58c31698b",
+      "caller": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "06c935500695743168752a1d7b98d7076c5ed5ff8b24eebbcbc021b9a04468c2",
+      "caller": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "resolution": "resolved_static",
+      "targets": [
+        "3af12592bfbc43931d528b3452c54cdbb65cdcd77d1c6e91b7f88895167ccb8f"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "bc0b6f369ac1d08407865400e89ad7e1be61b6e4eefcbe2050e80d4bfab905bb",
+      "caller": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "5a52739a6bd3480c53e1576ffb74d0349fab63ef62cacce13ac16f4f92015d34",
+      "caller": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "resolution": "unresolved",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "b3bf29a8ccf7d3284bcd4d50567c190e33e42b684414aa894e45da4ceb88b6f3",
+      "caller": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "resolution": "resolved_static",
+      "targets": [
+        "6ad2c5efc34cbb9e394c17f21e53281f481cf462fa245884d796fc473cb1994d"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "58aa674eab1bee68469c2a091c8fff452c43ad8823b768ad63459a0278410c12",
+      "caller": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "resolution": "resolved_static",
+      "targets": [
+        "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "1634d082cbe074b65dc37737309c153907ce8612bd0fe8e45093fdb8f7c9f4ec",
+      "caller": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "CONSTRUCTOR"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [],
+  "resources": [],
+  "unresolved": [
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_construct()@299:assertEquals",
+        "start": 299,
+        "end": 328,
+        "start_line": 16,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "caller_start": 203,
+        "caller_source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "resolution": "unresolved",
+        "end_line": 16,
+        "call_kind": "method",
+        "reference_key": "01f7de6c9a00603e76b7b39d1e70637e2c0f6a94a3122be323daed337b294fb2",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "1",
+          "i.getStart()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "522c81bb9d0bbbb470c7ef7356dd6c3e53643e02d014f0c4dd4d8fbfd668e035",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(1, i.getStart())",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_construct()@338:assertEquals",
+        "start": 338,
+        "end": 365,
+        "start_line": 17,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "caller_start": 203,
+        "caller_source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "resolution": "unresolved",
+        "end_line": 17,
+        "call_kind": "method",
+        "reference_key": "e85c9b91848bcf2a9db8b8e5ab91e38d617e9a7f766cae42ffb7b42904a11221",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "3",
+          "i.getEnd()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "6d45d00abfe089557a0272a22e39590db8fe99d43c5fdceebfa6ffbde81c50e7",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(3, i.getEnd())",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_size()@422:assertEquals",
+        "start": 422,
+        "end": 464,
+        "start_line": 22,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_size()",
+        "caller_start": 378,
+        "caller_source_member_key": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+        "resolution": "unresolved",
+        "end_line": 22,
+        "call_kind": "method",
+        "reference_key": "f28ac233d91a4cef6e0d17d30e208b1338fdd2fedee362d2af8c1a45b9e969ff",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "3",
+          "new Interval(0, 2).size()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "5bdb5efcdf5da738627115c3f2400151c98dfa613d3d8e35447d9f5cfaab8d00",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(3, new Interval(0, 2).size())",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertTrue",
+        "id": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()@533:assertTrue",
+        "start": 533,
+        "end": 596,
+        "start_line": 27,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+        "caller_start": 477,
+        "caller_source_member_key": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+        "resolution": "unresolved",
+        "end_line": 27,
+        "call_kind": "method",
+        "reference_key": "3cc8e8ebadc8798d6e509b3d4a9fae635c76e1ca0b644f41e95292bbcc3b3abf",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "new Interval(1, 3).overlapsWith(new Interval(2, 4))"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "55a64b3fd14e4389870a468aead43b4993ed1be099d25929cec887ee952ddd02",
+        "control_node_keys": []
+      },
+      "expression": "assertTrue(new Interval(1, 3).overlapsWith(new Interval(2, 4)))",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertFalse",
+        "id": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()@671:assertFalse",
+        "start": 671,
+        "end": 738,
+        "start_line": 32,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+        "caller_start": 609,
+        "caller_source_member_key": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+        "resolution": "unresolved",
+        "end_line": 32,
+        "call_kind": "method",
+        "reference_key": "2452a25ece04f073a3a9eeea9048b1b473987e4e219caad0d17d7c7bcf00eda5",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "new Interval(1, 13).overlapsWith(new Interval(27, 42))"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "aee654f83e905bd44b69aba3bdb6b3337aaad0d5e7841cd39162e75c83decade",
+        "control_node_keys": []
+      },
+      "expression": "assertFalse(new Interval(1, 13).overlapsWith(new Interval(27, 42)))",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertTrue",
+        "id": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()@804:assertTrue",
+        "start": 804,
+        "end": 850,
+        "start_line": 37,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+        "caller_start": 751,
+        "caller_source_member_key": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+        "resolution": "unresolved",
+        "end_line": 37,
+        "call_kind": "method",
+        "reference_key": "b467ecb615507f80fc88f04d6da32f2d84cfcb20ea4cb28da46d95c37a858046",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "new Interval(1, 3).overlapsWith(2)"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "c5ff05e699383b41ab0b6d06d244e9ff76edd6640cd2d5c6cbdd7600afdd2fd2",
+        "control_node_keys": []
+      },
+      "expression": "assertTrue(new Interval(1, 3).overlapsWith(2))",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertFalse",
+        "id": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()@922:assertFalse",
+        "start": 922,
+        "end": 971,
+        "start_line": 42,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+        "caller_start": 863,
+        "caller_source_member_key": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+        "resolution": "unresolved",
+        "end_line": 42,
+        "call_kind": "method",
+        "reference_key": "5d22ba831692fbcf109b176a615e2166891b296b46ff4036845b9c9ee6856e29",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "new Interval(1, 13).overlapsWith(42)"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "bc5113430d89d077487b1871716c89d5f1c536ded976422a4ab13b866ca06256",
+        "control_node_keys": []
+      },
+      "expression": "assertFalse(new Interval(1, 13).overlapsWith(42))",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_comparable()@1280:assertEquals",
+        "start": 1280,
+        "end": 1317,
+        "start_line": 52,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+        "caller_start": 984,
+        "caller_source_member_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+        "resolution": "unresolved",
+        "end_line": 52,
+        "call_kind": "method",
+        "reference_key": "1d96f980b59d75a000bc1302b4ec98b290c4ee7da7ea3e238556cf10f0ec2b54",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "2",
+          "it.next().getStart()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "f203011ab4de3de1b3fd834c2caa6fc2ae576e11c9ddb4fb4e0f951f363853b8",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(2, it.next().getStart())",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_comparable()@1327:assertEquals",
+        "start": 1327,
+        "end": 1364,
+        "start_line": 53,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+        "caller_start": 984,
+        "caller_source_member_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+        "resolution": "unresolved",
+        "end_line": 53,
+        "call_kind": "method",
+        "reference_key": "98e3ca8116951ae0f4bbab81f5f140c79c3849418e3ed50e1b607b3fe9eff426",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "3",
+          "it.next().getStart()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "6ed59824c5ed3bc8b72650e9a602aa7e2ea06cac258165e783fad2e677cb339d",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(3, it.next().getStart())",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_comparable()@1374:assertEquals",
+        "start": 1374,
+        "end": 1411,
+        "start_line": 54,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+        "caller_start": 984,
+        "caller_source_member_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+        "resolution": "unresolved",
+        "end_line": 54,
+        "call_kind": "method",
+        "reference_key": "7c33d3f6b375458fad168fa421c3181f33562b51be9dbf85f929e05862af34b0",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "4",
+          "it.next().getStart()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "4834c997a003412c181a764079bf64e3b0c046252349245f80ab0ebf042e8677",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(4, it.next().getStart())",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_checkToString()@1477:assertEquals",
+        "start": 1477,
+        "end": 1527,
+        "start_line": 59,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+        "caller_start": 1424,
+        "caller_source_member_key": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+        "resolution": "unresolved",
+        "end_line": 59,
+        "call_kind": "method",
+        "reference_key": "ccfd25722de414bd1a197f957b0c51d163d7bbde935a16a606c42af58c31698b",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "\"4:6\"",
+          "new Interval(4, 6).toString()"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "literal_path": "4:6",
+        "analysis_node_key": "dcb9fc299948fffc4b3062411a041be30056b0defd54f5d02ad8ef4304f47232",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(\"4:6\", new Interval(4, 6).toString())",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    },
+    {
+      "status": "unresolved",
+      "reference": {
+        "kind": "call",
+        "name": "assertEquals",
+        "id": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()@1601:assertEquals",
+        "start": 1601,
+        "end": 1661,
+        "start_line": 64,
+        "owner": "org.ahocorasick.interval.IntervalTest",
+        "owner_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+        "caller": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+        "caller_start": 1540,
+        "caller_source_member_key": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+        "resolution": "unresolved",
+        "end_line": 64,
+        "call_kind": "method",
+        "reference_key": "5a52739a6bd3480c53e1576ffb74d0349fab63ef62cacce13ac16f4f92015d34",
+        "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+        "target_keys": [],
+        "candidates": [],
+        "dispatch": "NOT_ESTABLISHED",
+        "binding_basis": "NOT_ESTABLISHED",
+        "arguments": [
+          "-1",
+          "new Interval(4, 6).compareTo(new Object())"
+        ],
+        "reason": "UnsolvedSymbolException: Unsolved symbol : org.junit.Assert",
+        "analysis_node_key": "42b3dc550294fc7c053ca936b3348034af62b05473cd76c60e54e67ea0331a58",
+        "control_node_keys": []
+      },
+      "expression": "assertEquals(-1, new Interval(4, 6).compareTo(new Object()))",
+      "targets": [],
+      "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+      "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "eaea562dd84e3db7cbda66031ca89bfca1e4b9e1fa9dcae71e2f96a1f2e78109",
+      "signature": "java.util.Set.add(E)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "e9f5ac0013298c1d878c3a9aef3d484131aaac37788a489c1fd58172ca0a2f24",
+      "signature": "java.util.Set.add(E)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "af59d849df606874af5fe9a30957e0f9e60486e7c8ee69cb6abd848a1d7a1686",
+      "signature": "java.util.Set.add(E)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "193c5cfa7add69a3c71b67ccd9194e2014f595524a4e7bb0701ecc14ea4559aa",
+      "signature": "java.util.Set.iterator()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "36150c2a59f4272d080a1089e78509d50a630b342b629a68fe68a444bb3c83fd",
+      "signature": "java.util.Iterator.next()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "eaa56d9343610c25bed37f8eb3017e4944a5aecd67a6de969c1469ee169dde4d",
+      "signature": "java.util.Iterator.next()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "fee5e025d4e12ab944610e8a035d9c33a29462ef4531968f66d1c03d64cfb144",
+      "signature": "java.util.Iterator.next()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "9ed44d3ff7d1911347776ae8e7e997f109f042e7151b60185140e0c730e2dd87",
+      "signature": "java.util.TreeSet.TreeSet()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "1634d082cbe074b65dc37737309c153907ce8612bd0fe8e45093fdb8f7c9f4ec",
+      "signature": "java.lang.Object.Object()"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "b17178369fdc1af090f26ae3239e324a9489c44123d63a3ce0e6c43b9d0a36f3"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "2cd8efa2c4cf5fe56df74c926fd8a04c044a9f24b8eb273416efb9bc9a572f26"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "3fb9112731d2f7ba8cdcbfb42d319a0a5e77b690f2a244cd6fa6f07f8a03385f"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "a9c3691a59ca42fe805aae30b72ef2ec491f0a2276aa54ebbb0a27111ebfc546"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "071ee3effdccbbad8d127f16c876fbce4073ee9c1372c6e90457ae55fb4c56ab"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "4c174ff705ff8aded87f09a3f496b9f723388cd4339cc0adababbd44ee97fa11"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "3af12592bfbc43931d528b3452c54cdbb65cdcd77d1c6e91b7f88895167ccb8f"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "6ad2c5efc34cbb9e394c17f21e53281f481cf462fa245884d796fc473cb1994d"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 1917,
+    "visited_members": 19
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+        "top_level_steps": [
+          {
+            "key": "d8812c07b6762fdae123ab8db5b998509eb5e2e0794999db5d67a31acb63103c",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              47,
+              47
+            ]
+          },
+          {
+            "key": "fad36e9c05b4d12bb8d6eaa2606174a02a9135ae94aeebac4d2229e01c91341c",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              48,
+              48
+            ]
+          },
+          {
+            "key": "287005cd60446fdcde9b5673346dc71c615722e9a3dbd5adee644851b58b7ac4",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              49,
+              49
+            ]
+          },
+          {
+            "key": "94d1a913347d6ae96b393f1d4eb6b19a084f156a4b87d9de4609b67f45d6704f",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              50,
+              50
+            ]
+          },
+          {
+            "key": "c61c9d8eb0cf666777e97325595f83cea69a219d73f4d6d6fbf42b46d3fb7f73",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              51,
+              51
+            ]
+          },
+          {
+            "key": "f203011ab4de3de1b3fd834c2caa6fc2ae576e11c9ddb4fb4e0f951f363853b8",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              52,
+              52
+            ]
+          },
+          {
+            "key": "6ed59824c5ed3bc8b72650e9a602aa7e2ea06cac258165e783fad2e677cb339d",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              53,
+              53
+            ]
+          },
+          {
+            "key": "4834c997a003412c181a764079bf64e3b0c046252349245f80ab0ebf042e8677",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              54,
+              54
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 3,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db"
+      },
+      {
+        "member_key": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+        "top_level_steps": [
+          {
+            "key": "dcb9fc299948fffc4b3062411a041be30056b0defd54f5d02ad8ef4304f47232",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              59,
+              59
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0"
+      },
+      {
+        "member_key": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+        "top_level_steps": [
+          {
+            "key": "bc5113430d89d077487b1871716c89d5f1c536ded976422a4ab13b866ca06256",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              42,
+              42
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5"
+      },
+      {
+        "member_key": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+        "top_level_steps": [
+          {
+            "key": "42b3dc550294fc7c053ca936b3348034af62b05473cd76c60e54e67ea0331a58",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              64,
+              64
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2"
+      },
+      {
+        "member_key": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+        "top_level_steps": [
+          {
+            "key": "aee654f83e905bd44b69aba3bdb6b3337aaad0d5e7841cd39162e75c83decade",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              32,
+              32
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd"
+      },
+      {
+        "member_key": "8c7e7718997d1d9635093bf764c832f1cf1bbf4f924b34dada7e1fe88f7c5321",
+        "display_id": "org.ahocorasick.interval.Interval#field:end",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 8c7e7718997d1d9635093bf764c832f1cf1bbf4f924b34dada7e1fe88f7c5321"
+      },
+      {
+        "member_key": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+        "top_level_steps": [
+          {
+            "key": "c5ff05e699383b41ab0b6d06d244e9ff76edd6640cd2d5c6cbdd7600afdd2fd2",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              37,
+              37
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453"
+      },
+      {
+        "member_key": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_size()",
+        "top_level_steps": [
+          {
+            "key": "5bdb5efcdf5da738627115c3f2400151c98dfa613d3d8e35447d9f5cfaab8d00",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              22,
+              22
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8"
+      },
+      {
+        "member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_construct()",
+        "top_level_steps": [
+          {
+            "key": "391de62c4821a232f9f3db8e136866f7f8acd181b3529595aed3de2bf252776a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              15,
+              15
+            ]
+          },
+          {
+            "key": "522c81bb9d0bbbb470c7ef7356dd6c3e53643e02d014f0c4dd4d8fbfd668e035",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              16,
+              16
+            ]
+          },
+          {
+            "key": "6d45d00abfe089557a0272a22e39590db8fe99d43c5fdceebfa6ffbde81c50e7",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              17,
+              17
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 2,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0"
+      },
+      {
+        "member_key": "ea23eb55391c5c9a5ccb650531a03cc29ed0492ed3854c8d4548bb82718e0cef",
+        "display_id": "org.ahocorasick.interval.Interval#field:start",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id ea23eb55391c5c9a5ccb650531a03cc29ed0492ed3854c8d4548bb82718e0cef"
+      },
+      {
+        "member_key": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+        "display_id": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+        "top_level_steps": [
+          {
+            "key": "55a64b3fd14e4389870a468aead43b4993ed1be099d25929cec887ee952ddd02",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              27,
+              27
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ]
+}

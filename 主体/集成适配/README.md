@@ -51,3 +51,11 @@ flowchart TD
 `tests/run_integration.py` 接收 `--output` 新目录。依赖 JDK 17、Python 和可用的仓颉 SDK；Java 入口可用 `PP_TEST_JAVA/PP_TEST_JAVAC`，编译器可用 `CJ_TEST_CJC` 指定，运行库由当前 SDK 环境提供。脚本会下载固定 JUnit/Hamcrest 依赖并实际执行 Java 和仓颉测试，普通静态翻译任务不需要运行它。
 
 此脚本回放本次 Agent 根据原测试整理的固定 Interval 骨架和译文，验证提取→上下文→检查→填充及执行接口，不是通用自动翻译程序，也没有重新调用规则和公共材料生成器。合成边界用例检查继承、注解、摘要与错误映射；当前实际结果见 [集成验证](../../运行记录/week12集成验证/README.md)。
+
+## 最终译文接入静态验证
+
+prepare_static_validation.py 接收 --task（完整整体任务）、--translated（实际最终 .cj 目录）、--output（新准备目录）和可选 --bundle。它复用来源/映射路径校验，新增最终译文和第二版上下文副本；校验 suite 文件摘要与索引身份，Java 业务从冻结快照读取。
+
+输出的 translation_config.json 增加 java_members_file、execution_classes、context_files、context_identity 和 side_sources。静态验证程序接收该目录即可，不要求把整体任务配置直接传给它。每轮一个执行类/一对测试文件；跨文件继承成员进入范围但标为受阻。
+
+正常静态审阅的输入输出见 [静态验证说明](../静态验证/README.md)。三部分复跑入口 tests/run_static_integration.py 保存固定 Interval 审阅和受控错误的流程回归，不是自动模型审阅器。实际结果见 [整合复测](../../运行记录/静态验证整合复测/README.md)。

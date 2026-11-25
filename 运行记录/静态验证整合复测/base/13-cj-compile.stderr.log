@@ -1,0 +1,363 @@
+warning: function 'sortBy' is deprecated. Use global function `public func sort<T>(data: ArrayList<T>, by!: (T, T) -> Ordering, stable!: Bool = false, descending!: Bool = false): Unit` in std.sort instead.
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\interval_tree.cj:19:19:
+   | 
+19 |         intervals.sortBy(stable: false, comparator: compareSize)
+   |                   ^^^^^^ deprecated
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'sortBy' is deprecated. Use global function `public func sort<T>(data: ArrayList<T>, by!: (T, T) -> Ordering, stable!: Bool = false, descending!: Bool = false): Unit` in std.sort instead.
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\interval_tree.cj:39:19:
+   | 
+39 |         intervals.sortBy(stable: false, comparator: comparePosition)
+   |                   ^^^^^^ deprecated
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'sortBy' is deprecated. Use global function `public func sort<T>(data: ArrayList<T>, by!: (T, T) -> Ordering, stable!: Bool = false, descending!: Bool = false): Unit` in std.sort instead.
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\payload_trie.cj:160:22:
+    | 
+160 |             payloads.sortBy(stable: false, comparator: this.compareTo)
+    |                      ^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'sortBy' is deprecated. Use global function `public func sort<T>(data: ArrayList<T>, by!: (T, T) -> Ordering, stable!: Bool = false, descending!: Bool = false): Unit` in std.sort instead.
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\payload_trie.cj:226:26:
+    | 
+226 |                 payloads.sortBy(stable: false, comparator: this.compareTo)
+    |                          ^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'sortBy' is deprecated. Use global function `public func sort<T>(data: ArrayList<T>, by!: (T, T) -> Ordering, stable!: Bool = false, descending!: Bool = false): Unit` in std.sort instead.
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\payload_trie.cj:263:22:
+    | 
+263 |             payloads.sortBy(stable: false, comparator: this.compareTo)
+    |                      ^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: unused function:'isStopOnHit'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_config.cj:18:5:
+   | 
+18 |       public func isStopOnHit(): Bool {
+   |  _____^
+19 | |         return stopOnHit
+20 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'tokenize'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie.cj:18:5:
+   | 
+18 |       public func tokenize(text: String): ArrayList<Token> {
+   |  _____^
+19 | |         let tokens: ArrayList<PayloadToken<String>> = this.payloadTrie.tokenize(text)
+   | | ...
+21 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getFragment'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\token.cj:19:5:
+   | 
+19 |       public func getFragment(): String {
+   |  _____^
+20 | |         return this.fragment
+21 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getKeyword'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\emit.cj:24:5:
+   | 
+24 |       public func getKeyword(): String {
+   |  _____^
+25 | |         return this.keyword
+26 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'isOnlyWholeWordsWhiteSpaceSeparated'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_config.cj:42:5:
+   | 
+42 |       public func isOnlyWholeWordsWhiteSpaceSeparated(): Bool {
+   |  _____^
+43 | |         return onlyWholeWordsWhiteSpaceSeparated
+44 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseText'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie.cj:43:5:
+   | 
+43 |       public func parseText(text: String): ArrayList<Emit> {
+   |  _____^
+44 | |         let parsedText: ArrayList<PayloadEmit<String>> = this.payloadTrie.parseText(text)
+   | | ...
+46 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseText'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie.cj:48:5:
+   | 
+48 |       public func parseText(text: String, emitHandler: StatefulEmitHandler): ArrayList<Emit> {
+   |  _____^
+49 | |         let parsedText: ArrayList<PayloadEmit<String>> = this.payloadTrie.parseText(text, StatefulPayloadEmitDelegateHandler(emitHandler))
+   | | ...
+51 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'addKeyword'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:49:5:
+   | 
+49 |       public func addKeyword(keyword: String): TrieBuilder {
+   |  _____^
+50 | |         delegate.addKeyword(keyword, None)
+   | | ...
+52 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'containsMatch'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie.cj:53:5:
+   | 
+53 |       public func containsMatch(text: String): Bool {
+   |  _____^
+54 | |         if (let None <- firstMatch(text)) {
+   | | ...
+58 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseText'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie.cj:60:5:
+   | 
+60 |       public func parseText(text: String, emitHandler: EmitHandler): Unit {
+   |  _____^
+61 | |         this.payloadTrie.parseText(text, PayloadEmitDelegateHandler(emitHandler))
+62 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'addKeywords'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:60:5:
+   | 
+60 |       public func addKeywords(keywords: Array<String>): TrieBuilder {
+   |  _____^
+61 | |         for (i in 0..keywords.size) {
+   | | ...
+65 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'nextState'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:65:5:
+   | 
+65 |       public func nextState(character: Rune): ?State {
+   |  _____^
+66 | |         return nextState(character, false)
+67 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'addKeywords'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:73:5:
+   | 
+73 |       public func addKeywords(keywords: ArrayList<String>): TrieBuilder {
+   |  _____^
+74 | |         for (keyword in keywords) {
+   | | ...
+78 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'addState'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:73:5:
+   | 
+73 |       public func addState(keyword: String): State {
+   |  _____^
+74 | |         var state: State = this
+   | | ...
+79 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'builder'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie.cj:85:5:
+   | 
+85 |       public static func builder(): TrieBuilder {
+   |  _____^
+86 | |         return TrieBuilder()
+87 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'onlyWholeWords'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:85:5:
+   | 
+85 |       public func onlyWholeWords(): TrieBuilder {
+   |  _____^
+86 | |         this.delegate.onlyWholeWords()
+   | | ...
+88 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getDepth'
+  ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:90:5:
+   | 
+90 |       public func getDepth(): Int32 {
+   |  _____^
+91 | |         return this.depth
+92 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'onlyWholeWordsWhiteSpaceSeparated'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:97:5:
+    | 
+97  |       public func onlyWholeWordsWhiteSpaceSeparated(): TrieBuilder {
+    |  _____^
+98  | |         this.delegate.onlyWholeWordsWhiteSpaceSeparated()
+    | | ...
+100 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'addEmit'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:101:5:
+    | 
+101 |       public func addEmit(emits: ArrayList<String>): Unit {
+    |  _____^
+102 | |         let arr = unsafe { emits.getRawArray() }
+    | | ...
+106 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'stopOnHit'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:107:5:
+    | 
+107 |       public func stopOnHit(): TrieBuilder {
+    |  _____^
+108 | |         this.delegate.stopOnHit()
+    | | ...
+110 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'emit'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:108:5:
+    | 
+108 |       public func emit(): ArrayList<String> {
+    |  _____^
+109 | |         if (let None <- this.emits) {
+    | | ...
+113 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'failures'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:115:5:
+    | 
+115 |       public func failures(): ?State {
+    |  _____^
+116 | |         return this.failure
+117 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'build'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:117:5:
+    | 
+117 |       public func build(): Trie {
+    |  _____^
+118 | |         var payloadTrie: PayloadTrie<String> = this.delegate.build()
+    | | ...
+120 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setFailure'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:119:5:
+    | 
+119 |       public func setFailure(failState: State): Unit {
+    |  _____^
+120 | |         return this.failure = failState
+121 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getStates'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:123:5:
+    | 
+123 |       public func getStates(): Collection<State> {
+    |  _____^
+124 | |         return this.success.values()
+125 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'caseInsensitive'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:125:5:
+    | 
+125 |       public func caseInsensitive(): TrieBuilder {
+    |  _____^
+126 | |         return ignoreCase()
+127 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getTransitions'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\state.cj:127:5:
+    | 
+127 |       public func getTransitions(): Collection<Rune> {
+    |  _____^
+128 | |         return this.success.keys()
+129 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'removeOverlaps'
+   ==> D:\CodexArtifacts\static-integration-002\base\cangjie-run\src\trie_builder.cj:132:5:
+    | 
+132 |       public func removeOverlaps(): TrieBuilder {
+    |  _____^
+133 | |         return ignoreOverlaps()
+134 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+33 warnings generated, 33 warnings printed.

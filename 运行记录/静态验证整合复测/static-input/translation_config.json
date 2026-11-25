@@ -1,0 +1,47 @@
+{
+  "project_root": "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java",
+  "test_files": [
+    "src/test/java/org/ahocorasick/interval/IntervalTest.java"
+  ],
+  "test_support_files": [],
+  "selected_test_methods": [
+    "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+    "org.ahocorasick.interval.IntervalTest#test_comparable()",
+    "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+    "org.ahocorasick.interval.IntervalTest#test_construct()",
+    "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+    "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+    "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+    "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+    "org.ahocorasick.interval.IntervalTest#test_size()"
+  ],
+  "java_members_file": "02-java-skeleton/0/members.json",
+  "execution_classes": [
+    "org.ahocorasick.interval.IntervalTest"
+  ],
+  "context_files": [
+    "04-test-context/suite_1/agent_context.json",
+    "04-test-context/suite_1/initial_context.json",
+    "04-test-context/suite_1/shared.json",
+    "04-test-context/suite_1/tasks.json",
+    "04-test-context/suite_1/tests/test_checkToString-0909431c75bd.json",
+    "04-test-context/suite_1/tests/test_comparable-01f24b3d83d8.json",
+    "04-test-context/suite_1/tests/test_compareToNegativeTest-39ff2e503f58.json",
+    "04-test-context/suite_1/tests/test_construct-c94991bd5f25.json",
+    "04-test-context/suite_1/tests/test_intervalDoesNotOverlap-6a572de90cfb.json",
+    "04-test-context/suite_1/tests/test_intervaloverlaps-ebb5c412f342.json",
+    "04-test-context/suite_1/tests/test_pointDoesNotOverlap-22dd77392235.json",
+    "04-test-context/suite_1/tests/test_pointOverlaps-9d6a9442a969.json",
+    "04-test-context/suite_1/tests/test_size-c39dde96373e.json"
+  ],
+  "context_identity": {
+    "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+    "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+  },
+  "side_sources": {
+    "java": [],
+    "cangjie": [
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\cangjie\\src"
+    ]
+  }
+}

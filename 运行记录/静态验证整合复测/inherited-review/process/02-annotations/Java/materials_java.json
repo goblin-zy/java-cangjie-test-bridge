@@ -1,0 +1,34 @@
+[
+  {
+    "file": "inputs/0/ChildCase.java",
+    "sha256": "994de2fda9cd18ead6516f2c4d520538bc4e175103e84110388c8ea532f15b45"
+  },
+  {
+    "file": "inputs/1/ChildCase.java",
+    "sha256": "139c12090eaec618fd4f18d21c988f9bfdf81a1260855078e3ba8206b8b34195"
+  },
+  {
+    "file": "inputs/2/agent_context.json",
+    "sha256": "be368bf8a0d88cae7e67aae8f3ba0f8382a2425852083002113e2ac37abeb11d"
+  },
+  {
+    "file": "inputs/3/initial_context.json",
+    "sha256": "82d3cafa28701ff5cbc330dc82f5d8f18c231a5e6171b3b0b96e2d69b2f582b9"
+  },
+  {
+    "file": "inputs/4/shared.json",
+    "sha256": "5479faf0e168a24334bd558443d1d246125c0ee4da94208ff5bd00414e560968"
+  },
+  {
+    "file": "inputs/5/tasks.json",
+    "sha256": "7a340890ebe358dd2cbd0795ee15dacca18c80693a86479082b3a8e83af352c7"
+  },
+  {
+    "file": "inputs/6/testFromBase-9c74b46a9b50.json",
+    "sha256": "4b6cf26d80007afd1185580b8920034a839638ce4109f4ab4b8d6ec105bde03d"
+  },
+  {
+    "file": "inputs/7/testOwn-f15efbb4ec33.json",
+    "sha256": "0ce15dc213e5467a1e03a8c56fd1c8bead0db676f3bf46013b38b800d54b9420"
+  }
+]

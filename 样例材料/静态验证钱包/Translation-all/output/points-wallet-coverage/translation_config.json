@@ -1,0 +1,8 @@
+{
+  "project_root": "../../01-projects/points-wallet",
+  "output_dir": ".",
+  "test_files": [
+    "src/test/java/wallet/PointsWalletTest.java"
+  ],
+  "test_support_files": []
+}

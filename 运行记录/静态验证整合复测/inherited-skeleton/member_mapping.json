@@ -1,0 +1,16 @@
+[
+  {
+    "source_member_id": "p/BaseCase.java::p.BaseCase#testFromBase()",
+    "source_members_file": "members.json",
+    "target_file": "inherited.cj",
+    "target_member": "testFromBase",
+    "status": "mapped"
+  },
+  {
+    "source_member_id": "p/ChildCase.java::p.ChildCase#testOwn()",
+    "source_members_file": "members.json",
+    "target_file": "inherited.cj",
+    "target_member": "testOwn",
+    "status": "mapped"
+  }
+]

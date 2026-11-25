@@ -103,5 +103,10 @@
   "week12_integration": {
     "provenance": "合并来源.json",
     "record": "运行记录/week12集成验证/README.md"
+  },
+  "static_validation_integration": {
+    "provenance": "静态验证合并来源.json",
+    "record": "运行记录/静态验证整合复测/README.md",
+    "summary": "运行记录/静态验证整合复测/summary.json"
   }
 }

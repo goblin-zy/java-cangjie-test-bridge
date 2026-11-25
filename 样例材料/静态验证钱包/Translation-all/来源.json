@@ -1,0 +1,350 @@
+{
+  "upstream_commit": "8cc9485ead9ac71eccf6c55a725176a1adc808dc",
+  "files": {
+    "01-projects/points-wallet/README.md": {
+      "source": "样例材料/points-wallet/README.md",
+      "upstream_sha256": "d39c4c11d6c13828021d032f71f8ffed406603264d38b49be7523995db8220c4",
+      "delivered_sha256": "d39c4c11d6c13828021d032f71f8ffed406603264d38b49be7523995db8220c4"
+    },
+    "01-projects/points-wallet/src/main/java/wallet/PointsWallet.java": {
+      "source": "样例材料/points-wallet/src/main/java/wallet/PointsWallet.java",
+      "upstream_sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9",
+      "delivered_sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9"
+    },
+    "01-projects/points-wallet/src/test/java/wallet/PointsWalletTest.java": {
+      "source": "样例材料/points-wallet/src/test/java/wallet/PointsWalletTest.java",
+      "upstream_sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8",
+      "delivered_sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+    },
+    "output/points-wallet-coverage/01-project-analysis/classes/main/wallet/PointsWallet.class": {
+      "source": "运行记录/points-wallet-coverage/01-project-analysis/classes/main/wallet/PointsWallet.class",
+      "upstream_sha256": "27d5479290ea72e3a004bcbc660caeaaa7ae87a315b7ddc8114d6987c2e1a8f3",
+      "delivered_sha256": "27d5479290ea72e3a004bcbc660caeaaa7ae87a315b7ddc8114d6987c2e1a8f3"
+    },
+    "output/points-wallet-coverage/01-project-analysis/classes/test/wallet/PointsWalletTest.class": {
+      "source": "运行记录/points-wallet-coverage/01-project-analysis/classes/test/wallet/PointsWalletTest.class",
+      "upstream_sha256": "9384eca6bfb8ab7d1a377280fd93532ce4fbbeb685c91f926f5236737efa6a13",
+      "delivered_sha256": "9384eca6bfb8ab7d1a377280fd93532ce4fbbeb685c91f926f5236737efa6a13"
+    },
+    "output/points-wallet-coverage/01-project-analysis/project_reference.md": {
+      "source": "运行记录/points-wallet-coverage/01-project-analysis/project_reference.md",
+      "upstream_sha256": "947df4d8730e20a6bf1f61275f8e6541fc951ad89cf42cc1fcfa1915f2a54cfd",
+      "delivered_sha256": "947df4d8730e20a6bf1f61275f8e6541fc951ad89cf42cc1fcfa1915f2a54cfd"
+    },
+    "output/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Collector$1.class": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Collector$1.class",
+      "upstream_sha256": "2a6f4bce3f91e7a6de244ba9e12e4c0ad5c29c3ad9d41c6b8967f52540422bde",
+      "delivered_sha256": "2a6f4bce3f91e7a6de244ba9e12e4c0ad5c29c3ad9d41c6b8967f52540422bde"
+    },
+    "output/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Collector$2.class": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Collector$2.class",
+      "upstream_sha256": "20d8cdcd498ce5e4cd8acd5588f14934c23ebe63b6f6dc13cedf83ae7156135a",
+      "delivered_sha256": "20d8cdcd498ce5e4cd8acd5588f14934c23ebe63b6f6dc13cedf83ae7156135a"
+    },
+    "output/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Collector.class": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Collector.class",
+      "upstream_sha256": "81bb4f323532c88af56cf72cae7f6807831e746f3dc8ef4a5aa6450ca17fc89b",
+      "delivered_sha256": "81bb4f323532c88af56cf72cae7f6807831e746f3dc8ef4a5aa6450ca17fc89b"
+    },
+    "output/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Edit.class": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor$Edit.class",
+      "upstream_sha256": "dbd8341c1081e54bcb1604896e56129a8484b4b2f7c82a5317155d1b645f856e",
+      "delivered_sha256": "dbd8341c1081e54bcb1604896e56129a8484b4b2f7c82a5317155d1b645f856e"
+    },
+    "output/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor.class": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton-build/JavaTestSkeletonExtractor.class",
+      "upstream_sha256": "4ee9e9a85e32d782566385d3e6fa52e1e567f6d8107e8d605d353bdc560989a0",
+      "delivered_sha256": "4ee9e9a85e32d782566385d3e6fa52e1e567f6d8107e8d605d353bdc560989a0"
+    },
+    "output/points-wallet-coverage/02-java-skeleton/extraction-report.md": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton/extraction-report.md",
+      "upstream_sha256": "2258710fbbf200a85067f6ad39c7d2f1af8cd82007068dacb6282c74b60b279f",
+      "delivered_sha256": "2258710fbbf200a85067f6ad39c7d2f1af8cd82007068dacb6282c74b60b279f"
+    },
+    "output/points-wallet-coverage/02-java-skeleton/members.json": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton/members.json",
+      "upstream_sha256": "281b0d3832cc6f9787c5e8e599b76e2512226e8c16ae434fedf7c4de17cdc5f9",
+      "delivered_sha256": "9b8f141cc839ab73b5d43354835c4f90498cf7efc1840eb18778d14c5bb36ffa"
+    },
+    "output/points-wallet-coverage/02-java-skeleton/original/PointsWalletTest.java": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton/original/PointsWalletTest.java",
+      "upstream_sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8",
+      "delivered_sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+    },
+    "output/points-wallet-coverage/02-java-skeleton/skeleton/PointsWalletTest.java": {
+      "source": "运行记录/points-wallet-coverage/02-java-skeleton/skeleton/PointsWalletTest.java",
+      "upstream_sha256": "bfa351cece0f7bb5a3cdb1a2a990a3cbbe6541e5c8e96735edb1df30c156b0ec",
+      "delivered_sha256": "bfa351cece0f7bb5a3cdb1a2a990a3cbbe6541e5c8e96735edb1df30c156b0ec"
+    },
+    "output/points-wallet-coverage/03-project-materials/contributions/analysis_wallet.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/contributions/analysis_wallet.json",
+      "upstream_sha256": "8d04ca311ba9440089a994c8e4c9bf9def766a1abfc702c5cef337f326c44fe5",
+      "delivered_sha256": "8d04ca311ba9440089a994c8e4c9bf9def766a1abfc702c5cef337f326c44fe5"
+    },
+    "output/points-wallet-coverage/03-project-materials/draft.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/draft.json",
+      "upstream_sha256": "3da572fff9b82ee702517ae34c4d3093ba5255ba7073ada289191903cdb5b48e",
+      "delivered_sha256": "3da572fff9b82ee702517ae34c4d3093ba5255ba7073ada289191903cdb5b48e"
+    },
+    "output/points-wallet-coverage/03-project-materials/final/project_materials.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/final/project_materials.json",
+      "upstream_sha256": "c18de8c97c9b7dae5a095c047caeec08328373005706a6a55644da24c5b4d984",
+      "delivered_sha256": "c18de8c97c9b7dae5a095c047caeec08328373005706a6a55644da24c5b4d984"
+    },
+    "output/points-wallet-coverage/03-project-materials/final/project_materials.md": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/final/project_materials.md",
+      "upstream_sha256": "8f4a9a574e9b32436285211e346069cfb3c9fb98d332c879e0ad1814d5d97a25",
+      "delivered_sha256": "8f4a9a574e9b32436285211e346069cfb3c9fb98d332c879e0ad1814d5d97a25"
+    },
+    "output/points-wallet-coverage/03-project-materials/packets/manifest.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/packets/manifest.json",
+      "upstream_sha256": "9e3ad12f5912e72e9dd9c7041e944534ec301401e0fb0cd6fda0d2e0e2c2005b",
+      "delivered_sha256": "9e3ad12f5912e72e9dd9c7041e944534ec301401e0fb0cd6fda0d2e0e2c2005b"
+    },
+    "output/points-wallet-coverage/03-project-materials/packets/packet_0001.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/packets/packet_0001.json",
+      "upstream_sha256": "fd4b83401a9163d6dbf457517b97f39cc6a8f6347234336b6211ee7b3700eb51",
+      "delivered_sha256": "fd4b83401a9163d6dbf457517b97f39cc6a8f6347234336b6211ee7b3700eb51"
+    },
+    "output/points-wallet-coverage/03-project-materials/project_config.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/project_config.json",
+      "upstream_sha256": "f60de0437403785f6bc8079f50a5cc5eb3f7a5d8d2b5110278e65bc75c21109b",
+      "delivered_sha256": "f60de0437403785f6bc8079f50a5cc5eb3f7a5d8d2b5110278e65bc75c21109b"
+    },
+    "output/points-wallet-coverage/03-project-materials/reviewed.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/reviewed.json",
+      "upstream_sha256": "c18de8c97c9b7dae5a095c047caeec08328373005706a6a55644da24c5b4d984",
+      "delivered_sha256": "c18de8c97c9b7dae5a095c047caeec08328373005706a6a55644da24c5b4d984"
+    },
+    "output/points-wallet-coverage/03-project-materials/reviewed.merge_audit.json": {
+      "source": "运行记录/points-wallet-coverage/03-project-materials/reviewed.merge_audit.json",
+      "upstream_sha256": "b19470eb18ae70bbb4442cb4abb694fd93e5c3ea474904b30483ab6d9657ab14",
+      "delivered_sha256": "b19470eb18ae70bbb4442cb4abb694fd93e5c3ea474904b30483ab6d9657ab14"
+    },
+    "output/points-wallet-coverage/04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json": {
+      "source": "运行记录/points-wallet-coverage/04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+      "upstream_sha256": "f8d7ea3a1d494b1640b02e2fd6e92a514e5eccc7fbd90aa6f4a1d5cda342c1dd",
+      "delivered_sha256": "f8d7ea3a1d494b1640b02e2fd6e92a514e5eccc7fbd90aa6f4a1d5cda342c1dd"
+    },
+    "output/points-wallet-coverage/04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.md": {
+      "source": "运行记录/points-wallet-coverage/04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.md",
+      "upstream_sha256": "71f963dcfb507bd9872b07bc676ee8ed96f86c58592b4065601d7175f17d1ad9",
+      "delivered_sha256": "71f963dcfb507bd9872b07bc676ee8ed96f86c58592b4065601d7175f17d1ad9"
+    },
+    "output/points-wallet-coverage/05-cangjie-skeleton/handoff.md": {
+      "source": "运行记录/points-wallet-coverage/05-cangjie-skeleton/handoff.md",
+      "upstream_sha256": "32491d36eb843f1db439a36a376b37156eb5f4ef7c4ba6e04015d8a47f34c676",
+      "delivered_sha256": "32491d36eb843f1db439a36a376b37156eb5f4ef7c4ba6e04015d8a47f34c676"
+    },
+    "output/points-wallet-coverage/05-cangjie-skeleton/member_mapping.json": {
+      "source": "运行记录/points-wallet-coverage/05-cangjie-skeleton/member_mapping.json",
+      "upstream_sha256": "cc0af191f11820fc0277b92f06a269192edd1a388549d174468ee72b5dbb5a72",
+      "delivered_sha256": "cc0af191f11820fc0277b92f06a269192edd1a388549d174468ee72b5dbb5a72"
+    },
+    "output/points-wallet-coverage/05-cangjie-skeleton/translation_report.json": {
+      "source": "运行记录/points-wallet-coverage/05-cangjie-skeleton/translation_report.json",
+      "upstream_sha256": "b1e1be2c9022363df2b2278055f3afc22837cbe038090bc442dd7591a9757083",
+      "delivered_sha256": "b1e1be2c9022363df2b2278055f3afc22837cbe038090bc442dd7591a9757083"
+    },
+    "output/points-wallet-coverage/05-cangjie-skeleton/wallet/points_wallet_test.cj": {
+      "source": "运行记录/points-wallet-coverage/05-cangjie-skeleton/wallet/points_wallet_test.cj",
+      "upstream_sha256": "f98c34fb0c2faa61fde7f412ae1d9c6973c1b4d7ffa650c2dbdb8c8087c20b25",
+      "delivered_sha256": "f98c34fb0c2faa61fde7f412ae1d9c6973c1b4d7ffa650c2dbdb8c8087c20b25"
+    },
+    "output/points-wallet-coverage/06-whole-translation/test/wallet/points_wallet_test.cj": {
+      "source": "运行记录/points-wallet-coverage/06-whole-translation/test/wallet/points_wallet_test.cj",
+      "upstream_sha256": "1ee68dd6c8ead0fe9616dd1aa520943ece705740cf720e736ab5e1e2edf253f9",
+      "delivered_sha256": "1ee68dd6c8ead0fe9616dd1aa520943ece705740cf720e736ab5e1e2edf253f9"
+    },
+    "output/points-wallet-coverage/06-whole-translation/translation_handoff.md": {
+      "source": "运行记录/points-wallet-coverage/06-whole-translation/translation_handoff.md",
+      "upstream_sha256": "1da8fbe2afd06af32d0354c4296310a4b662ff9f43a1fa761a1c910fb720d8ec",
+      "delivered_sha256": "1da8fbe2afd06af32d0354c4296310a4b662ff9f43a1fa761a1c910fb720d8ec"
+    },
+    "output/points-wallet-coverage/06-whole-translation/verification.md": {
+      "source": "运行记录/points-wallet-coverage/06-whole-translation/verification.md",
+      "upstream_sha256": "cfe8ef3a4c5d0a3b03c99f93595bb55fd3cfbca34e03b1cc648fab7fc842d969",
+      "delivered_sha256": "cfe8ef3a4c5d0a3b03c99f93595bb55fd3cfbca34e03b1cc648fab7fc842d969"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/assembly_report.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/assembly_report.json",
+      "upstream_sha256": "2d404e3454dd32168eef2f7d57dd23186045bfefd8deaa24e291e6adffc0748d",
+      "delivered_sha256": "2d404e3454dd32168eef2f7d57dd23186045bfefd8deaa24e291e6adffc0748d"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/fragment_plan.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/fragment_plan.json",
+      "upstream_sha256": "8259a5c19454b1ecfa379ddc4b0944c5ff737a3d5b7237fd5f0d971ea60340f8",
+      "delivered_sha256": "8259a5c19454b1ecfa379ddc4b0944c5ff737a3d5b7237fd5f0d971ea60340f8"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/packets/T01.md": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/packets/T01.md",
+      "upstream_sha256": "23df121063081b271430bb8481e4e4002feaf927f3c5a40dc705205a284fb120",
+      "delivered_sha256": "23df121063081b271430bb8481e4e4002feaf927f3c5a40dc705205a284fb120"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/packets/T02.md": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/packets/T02.md",
+      "upstream_sha256": "b8fbf63488d67891d3b2dbdffe1d500775e0a9e7fee1dcc62850153eee0229d0",
+      "delivered_sha256": "b8fbf63488d67891d3b2dbdffe1d500775e0a9e7fee1dcc62850153eee0229d0"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/packets/T03.md": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/packets/T03.md",
+      "upstream_sha256": "13af61ab4806ee237facd44f99dd86db38fca0b912f5412c999696b59002ca72",
+      "delivered_sha256": "13af61ab4806ee237facd44f99dd86db38fca0b912f5412c999696b59002ca72"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/packets/T04.md": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/packets/T04.md",
+      "upstream_sha256": "faaef36fa13d09fb0d9ec40ad391b3e3a72955aa7df876b692b903f7f5e64d88",
+      "delivered_sha256": "faaef36fa13d09fb0d9ec40ad391b3e3a72955aa7df876b692b903f7f5e64d88"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/results/T01.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/results/T01.json",
+      "upstream_sha256": "9b942d4835bd81e08b4d76379ef59d9bd23c95a4f54882cbcb542190ced3936a",
+      "delivered_sha256": "9b942d4835bd81e08b4d76379ef59d9bd23c95a4f54882cbcb542190ced3936a"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/results/T02.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/results/T02.json",
+      "upstream_sha256": "3572a860c883b5082b2965ecf3ee6583331e8cd9781f8f35f018d9c20ba2d694",
+      "delivered_sha256": "3572a860c883b5082b2965ecf3ee6583331e8cd9781f8f35f018d9c20ba2d694"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/results/T03.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/results/T03.json",
+      "upstream_sha256": "84bafa64965262d395ea57cdf398b005a0ba3b7e9495b7e235e6c41238d71fa0",
+      "delivered_sha256": "84bafa64965262d395ea57cdf398b005a0ba3b7e9495b7e235e6c41238d71fa0"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/results/T04.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/results/T04.json",
+      "upstream_sha256": "f2e3b8205f9a5a32f36af759ac8e2a8ca73ff61d5f9524317581b07ed6da04c3",
+      "delivered_sha256": "f2e3b8205f9a5a32f36af759ac8e2a8ca73ff61d5f9524317581b07ed6da04c3"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/review.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/review.json",
+      "upstream_sha256": "607b45704f13ce19bac005c7fabfb0a9ba2506d5e4393521785cc9c112bc9486",
+      "delivered_sha256": "607b45704f13ce19bac005c7fabfb0a9ba2506d5e4393521785cc9c112bc9486"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/submissions/T01.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/submissions/T01.json",
+      "upstream_sha256": "4fa240f900b9b22c66ab34a1981ca3fe0867f21c0fc2f49f9420fc6bcb30898d",
+      "delivered_sha256": "4fa240f900b9b22c66ab34a1981ca3fe0867f21c0fc2f49f9420fc6bcb30898d"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/submissions/T02.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/submissions/T02.json",
+      "upstream_sha256": "d26618be42a74c7076605b2fb3c032066272445e34d12fb408a42f98a9af0c9d",
+      "delivered_sha256": "d26618be42a74c7076605b2fb3c032066272445e34d12fb408a42f98a9af0c9d"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/submissions/T03.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/submissions/T03.json",
+      "upstream_sha256": "a22de00f59471fc7b2beb530b50bf35f0874b49823e65278737d90194410a7e4",
+      "delivered_sha256": "a22de00f59471fc7b2beb530b50bf35f0874b49823e65278737d90194410a7e4"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/submissions/T04.json": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/submissions/T04.json",
+      "upstream_sha256": "2e845d8c6d35baf3acf2455b06dfc9d9a1bd1e3c32590ce798d7f46fcbde1038",
+      "delivered_sha256": "2e845d8c6d35baf3acf2455b06dfc9d9a1bd1e3c32590ce798d7f46fcbde1038"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/test/wallet/points_wallet_test.cj": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/test/wallet/points_wallet_test.cj",
+      "upstream_sha256": "defcf950f5cd99b4f94c279931db96dc0ad096902ca55d8b219f4b3aaaf8e6b3",
+      "delivered_sha256": "defcf950f5cd99b4f94c279931db96dc0ad096902ca55d8b219f4b3aaaf8e6b3"
+    },
+    "output/points-wallet-coverage/07-fragment-translation/verification.md": {
+      "source": "运行记录/points-wallet-coverage/07-fragment-translation/verification.md",
+      "upstream_sha256": "cfe8ef3a4c5d0a3b03c99f93595bb55fd3cfbca34e03b1cc648fab7fc842d969",
+      "delivered_sha256": "cfe8ef3a4c5d0a3b03c99f93595bb55fd3cfbca34e03b1cc648fab7fc842d969"
+    },
+    "output/points-wallet-coverage/java-coverage/5d6de7d518479333/coverage.exec": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/5d6de7d518479333/coverage.exec",
+      "upstream_sha256": "9b53fce4a5323b1f0b66ab57e4499ab194e8c83e29b81e41146a6bc6c5ab5dd8",
+      "delivered_sha256": "9b53fce4a5323b1f0b66ab57e4499ab194e8c83e29b81e41146a6bc6c5ab5dd8"
+    },
+    "output/points-wallet-coverage/java-coverage/5d6de7d518479333/coverage.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/5d6de7d518479333/coverage.xml",
+      "upstream_sha256": "cbe0f49763fc4ab461af3e20a09be8d581299394ea88654caef2454a234e9741",
+      "delivered_sha256": "cbe0f49763fc4ab461af3e20a09be8d581299394ea88654caef2454a234e9741"
+    },
+    "output/points-wallet-coverage/java-coverage/5d6de7d518479333/junit/TEST-junit-jupiter.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/5d6de7d518479333/junit/TEST-junit-jupiter.xml",
+      "upstream_sha256": "19f7498afb194b096a3fbbe692c23259a37b691e18392a86de87b1b0305e5a20",
+      "delivered_sha256": "19f7498afb194b096a3fbbe692c23259a37b691e18392a86de87b1b0305e5a20"
+    },
+    "output/points-wallet-coverage/java-coverage/5d6de7d518479333/junit/TEST-junit-platform-suite.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/5d6de7d518479333/junit/TEST-junit-platform-suite.xml",
+      "upstream_sha256": "7af82fcb4104971844ac8a7684bf26df50ab162378939d08084801ee0d3aa297",
+      "delivered_sha256": "7af82fcb4104971844ac8a7684bf26df50ab162378939d08084801ee0d3aa297"
+    },
+    "output/points-wallet-coverage/java-coverage/5d6de7d518479333/junit/TEST-junit-vintage.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/5d6de7d518479333/junit/TEST-junit-vintage.xml",
+      "upstream_sha256": "6cc7eacf9fd483f4cccc001693007d266628489b2e320488870a76fae8dd967f",
+      "delivered_sha256": "6cc7eacf9fd483f4cccc001693007d266628489b2e320488870a76fae8dd967f"
+    },
+    "output/points-wallet-coverage/java-coverage/5d6de7d518479333/report.log": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/5d6de7d518479333/report.log",
+      "upstream_sha256": "42d0862f502760a14d0e90d3b39262bca148fe1d27118519ed5d6b78aec1cad6",
+      "delivered_sha256": "42d0862f502760a14d0e90d3b39262bca148fe1d27118519ed5d6b78aec1cad6"
+    },
+    "output/points-wallet-coverage/java-coverage/5d6de7d518479333/test.log": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/5d6de7d518479333/test.log",
+      "upstream_sha256": "e2154422b26a0934284a3fc33e6a2a4b5f25ed1eade00170d1ff098a7a2a415f",
+      "delivered_sha256": "e2154422b26a0934284a3fc33e6a2a4b5f25ed1eade00170d1ff098a7a2a415f"
+    },
+    "output/points-wallet-coverage/java-coverage/coverage_config.json": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/coverage_config.json",
+      "upstream_sha256": "b11953899e5479e719ee9a76fb888de42ee73555b7c136b03e76df1e60b9db99",
+      "delivered_sha256": "b11953899e5479e719ee9a76fb888de42ee73555b7c136b03e76df1e60b9db99"
+    },
+    "output/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/coverage.exec": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/coverage.exec",
+      "upstream_sha256": "2fe7990d0f2be603fcc204b1d90e2706b6514e4706308ef16461a36eaa7e171b",
+      "delivered_sha256": "2fe7990d0f2be603fcc204b1d90e2706b6514e4706308ef16461a36eaa7e171b"
+    },
+    "output/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/coverage.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/coverage.xml",
+      "upstream_sha256": "b6e3a624b164ce1fad9a4b7e4e32c468fc0bcec67919104090cac9b82749a17a",
+      "delivered_sha256": "b6e3a624b164ce1fad9a4b7e4e32c468fc0bcec67919104090cac9b82749a17a"
+    },
+    "output/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/junit/TEST-junit-jupiter.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/junit/TEST-junit-jupiter.xml",
+      "upstream_sha256": "2f3aa976ccaae9b51529d9f428812105bc37b6723c2904489d9559d99879ffad",
+      "delivered_sha256": "2f3aa976ccaae9b51529d9f428812105bc37b6723c2904489d9559d99879ffad"
+    },
+    "output/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/junit/TEST-junit-platform-suite.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/junit/TEST-junit-platform-suite.xml",
+      "upstream_sha256": "e2532665b1a8dbbf309fd912fb16fd841c53eddc76fa6aeb9fde0accc72ba3fa",
+      "delivered_sha256": "e2532665b1a8dbbf309fd912fb16fd841c53eddc76fa6aeb9fde0accc72ba3fa"
+    },
+    "output/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/junit/TEST-junit-vintage.xml": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/junit/TEST-junit-vintage.xml",
+      "upstream_sha256": "461e48063fff841be48e2b9f4405e6010d3412812565f5960bd068adb7e35a30",
+      "delivered_sha256": "461e48063fff841be48e2b9f4405e6010d3412812565f5960bd068adb7e35a30"
+    },
+    "output/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/report.log": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/report.log",
+      "upstream_sha256": "deccaee07758d83dc591d4b3b756d6e4d51f9b4b86d482b97c74a15f19a91e95",
+      "delivered_sha256": "deccaee07758d83dc591d4b3b756d6e4d51f9b4b86d482b97c74a15f19a91e95"
+    },
+    "output/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/test.log": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/e6fa4bc33a987b43/test.log",
+      "upstream_sha256": "123a3de969ca5764e38f448385c7df5e05f0e0e30b1e18d79fc69e593eeb4b50",
+      "delivered_sha256": "123a3de969ca5764e38f448385c7df5e05f0e0e30b1e18d79fc69e593eeb4b50"
+    },
+    "output/points-wallet-coverage/java-coverage/java_coverage.json": {
+      "source": "运行记录/points-wallet-coverage/java-coverage/java_coverage.json",
+      "upstream_sha256": "eda3bd16dc158024326e6c9aa60980bde48534186b0f140d7256bfb32485c001",
+      "delivered_sha256": "eda3bd16dc158024326e6c9aa60980bde48534186b0f140d7256bfb32485c001"
+    },
+    "output/points-wallet-coverage/translation_config.json": {
+      "source": "运行记录/points-wallet-coverage/translation_config.json",
+      "upstream_sha256": "5b9f78703bb48bdf60784756985c0d454840215bd60370113437713052313b57",
+      "delivered_sha256": "4dfdacd03df77f37289f4412b1a11dc3b37d8871e4be310333a10f9454108fdc"
+    },
+    "output/points-wallet-coverage/translation_summary.md": {
+      "source": "运行记录/points-wallet-coverage/translation_summary.md",
+      "upstream_sha256": "a61774607830c88af3f4219149f647d8a5c12b6bdb4bf037cca314e6eb97be4b",
+      "delivered_sha256": "a61774607830c88af3f4219149f647d8a5c12b6bdb4bf037cca314e6eb97be4b"
+    }
+  },
+  "adaptations": [
+    "配置项目路径改为相对路径",
+    "使用蔡俊杰week12提取器补齐缺失的02-java-skeleton"
+  ],
+  "purpose": "静态验证回归输入；不是新翻译结果"
+}

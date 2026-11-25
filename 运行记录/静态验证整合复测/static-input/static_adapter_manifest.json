@@ -1,0 +1,11 @@
+{
+  "task": "D:\\CodexArtifacts\\static-integration-002\\whole_task.json",
+  "translated": "D:\\CodexArtifacts\\static-integration-002\\base\\translation\\translated",
+  "source_ids": "UNCHANGED",
+  "context_identity": {
+    "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+    "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+  },
+  "scope": "ONE_EXECUTION_CLASS_FINAL_WHOLE_TRANSLATION",
+  "inherited_cross_file_annotations": "REPORTED_AS_BLOCKED_BY_VALIDATOR"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "U02",
+  "packet_hash": "4e9510228ccbbb08a203d31151ac38dca3a83ed9d62ef5b57dea9cb39a9b88b4",
+  "checks": [
+    {
+      "topic": "测试入口",
+      "kind": "source",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J10"
+      ],
+      "cangjie": [
+        "C02",
+        "C03",
+        "C14"
+      ],
+      "reason": "Java 用 @Test 标记无参方法；仓颉引入测试框架，在 @Test 类内以 @TestCase 标记对应无参方法。依据 translation_rules.json 的 TEST-01 核对声明。"
+    },
+    {
+      "topic": "每例初始化与对象来源",
+      "kind": "source",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J01",
+        "J02",
+        "J03",
+        "J04"
+      ],
+      "cangjie": [
+        "C04",
+        "C05",
+        "C06",
+        "C15",
+        "C16"
+      ],
+      "reason": "Java 在 @BeforeEach 中调用 newWallet()，仓颉在这条测试开头显式调用 setup()，用 Some 包装创建结果，随即 getOrThrow() 取得同一钱包。两边构造表达式都传 100；在这条直线路径上，取值前已有显式赋值。两侧都没有显式清理。"
+    },
+    {
+      "topic": "超额消费的返回值",
+      "kind": "source",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J11"
+      ],
+      "cangjie": [
+        "C17"
+      ],
+      "reason": "同一调用位置传入 150。assertFalse 与 @Assert(false, …) 都要求本次调用返回 false。"
+    },
+    {
+      "topic": "失败后的余额",
+      "kind": "source",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J12"
+      ],
+      "cangjie": [
+        "C18"
+      ],
+      "reason": "在返回值检查之后，对原钱包调用 balance()，相等断言要求 100。漏掉这条断言会放过返回 false 却改变余额的情形。"
+    },
+    {
+      "topic": "目标业务接口的含义",
+      "kind": "interface",
+      "status": "信息不足",
+      "java": [
+        "J02",
+        "J11",
+        "J12"
+      ],
+      "cangjie": [
+        "C05",
+        "C17",
+        "C18"
+      ],
+      "reason": "Java 实现将构造入参存为积分；spend 在余额足够时扣减并返回 true，超额时返回 false 且不扣减；balance 返回当前积分。目标测试只显示调用与期望，单位、返回值含义及状态变化仍缺独立依据。",
+      "recheck": "已回到两侧构造、消费和余额表达式，并查阅 PointsWallet.java 与骨架交接 handoff.md。交接把目标业务接口标为暂定，不能据此确认业务语义。"
+    }
+  ],
+  "name": "rejectsOverspending",
+  "status": "信息不足"
+}

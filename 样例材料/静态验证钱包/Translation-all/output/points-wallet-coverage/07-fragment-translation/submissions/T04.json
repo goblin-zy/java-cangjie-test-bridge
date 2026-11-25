@@ -1,0 +1,9 @@
+{
+  "task_id": "T04",
+  "packet_sha256": "faaef36fa13d09fb0d9ec40ad391b3e3a72955aa7df876b692b903f7f5e64d88",
+  "code": "setup()\nlet prepared = wallet.getOrThrow()\n@Assert(false, prepared.spend(150i32))\n@Assert(100i32, prepared.balance())",
+  "imports": [],
+  "unresolved": [
+    "目标接口尚未核对"
+  ]
+}

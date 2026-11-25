@@ -1,0 +1,16 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "spendsPointsInOrder",
+      "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#spendsPointsInOrder()"
+    },
+    {
+      "id": "U02",
+      "name": "rejectsOverspending",
+      "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()"
+    }
+  ],
+  "configuration": "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\translation_config.json",
+  "members_file": "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\members.json"
+}

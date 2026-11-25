@@ -1,0 +1,51 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "test_construct",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()"
+    },
+    {
+      "id": "U02",
+      "name": "test_size",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()"
+    },
+    {
+      "id": "U03",
+      "name": "test_intervaloverlaps",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()"
+    },
+    {
+      "id": "U04",
+      "name": "test_intervalDoesNotOverlap",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()"
+    },
+    {
+      "id": "U05",
+      "name": "test_pointOverlaps",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()"
+    },
+    {
+      "id": "U06",
+      "name": "test_pointDoesNotOverlap",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()"
+    },
+    {
+      "id": "U07",
+      "name": "test_comparable",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()"
+    },
+    {
+      "id": "U08",
+      "name": "test_checkToString",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()"
+    },
+    {
+      "id": "U09",
+      "name": "test_compareToNegativeTest",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()"
+    }
+  ],
+  "configuration": "D:\\CodexArtifacts\\static-integration-002\\static-input\\translation_config.json",
+  "members_file": "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\members.json"
+}

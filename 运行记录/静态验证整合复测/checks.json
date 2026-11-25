@@ -1,0 +1,58 @@
+[
+  {
+    "name": "新上下文交付包含整类共享逐条文件",
+    "status": "PASSED"
+  },
+  {
+    "name": "成员表路径可接收week12嵌套交付",
+    "status": "PASSED"
+  },
+  {
+    "name": "九个测试由源清单和执行类正确定位",
+    "status": "PASSED"
+  },
+  {
+    "name": "第二版上下文实际进入取材清单",
+    "status": "PASSED"
+  },
+  {
+    "name": "java插注释后可还原原文",
+    "status": "PASSED"
+  },
+  {
+    "name": "cangjie插注释后可还原原文",
+    "status": "PASSED"
+  },
+  {
+    "name": "九个单元均完成静态比较",
+    "status": "PASSED"
+  },
+  {
+    "name": "结论有明确接口前提",
+    "status": "PASSED"
+  },
+  {
+    "name": "交付引用全部回到真实标注源码",
+    "status": "PASSED"
+  },
+  {
+    "name": "最终译文变化后拒绝旧比较材料",
+    "status": "PASSED"
+  },
+  {
+    "name": "确认差异不会被接口一致项覆盖",
+    "status": "PASSED"
+  },
+  {
+    "name": "上下文摘要变化和失败交付均被拒绝",
+    "status": "PASSED"
+  },
+  {
+    "name": "继承测试不漏算且跨文件声明明确受阻",
+    "status": "PASSED"
+  },
+  {
+    "name": "标注后的仓颉交付仍九条通过",
+    "status": "PASSED"
+  }
+]

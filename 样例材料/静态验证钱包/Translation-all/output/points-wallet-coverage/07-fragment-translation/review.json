@@ -1,0 +1,190 @@
+{
+  "T01": {
+    "refs": [
+      {
+        "root": "run",
+        "file": "java-coverage/java_coverage.json",
+        "pointer": "/tests/0",
+        "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+      },
+      {
+        "root": "run",
+        "file": "java-coverage/java_coverage.json",
+        "pointer": "/tests/1",
+        "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/10",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/15",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "03-project-materials/final/project_materials.json",
+        "pointer": "",
+        "purpose": "核对暂定接口与准备约定"
+      }
+    ],
+    "depends_on": [],
+    "unresolved": [
+      "目标业务接口尚未核对"
+    ]
+  },
+  "T02": {
+    "refs": [
+      {
+        "root": "run",
+        "file": "java-coverage/java_coverage.json",
+        "pointer": "/tests/0",
+        "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+      },
+      {
+        "root": "run",
+        "file": "java-coverage/java_coverage.json",
+        "pointer": "/tests/1",
+        "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/6",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/7",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/10",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "03-project-materials/final/project_materials.json",
+        "pointer": "",
+        "purpose": "核对暂定接口与准备约定"
+      }
+    ],
+    "depends_on": [
+      "T01"
+    ],
+    "unresolved": [
+      "目标业务接口尚未核对"
+    ]
+  },
+  "T03": {
+    "refs": [
+      {
+        "root": "run",
+        "file": "java-coverage/java_coverage.json",
+        "pointer": "/tests/0",
+        "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/6",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/7",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/8",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/13",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/14",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "03-project-materials/final/project_materials.json",
+        "pointer": "",
+        "purpose": "核对暂定接口与准备约定"
+      }
+    ],
+    "depends_on": [
+      "T02"
+    ],
+    "unresolved": [
+      "目标业务接口尚未核对"
+    ]
+  },
+  "T04": {
+    "refs": [
+      {
+        "root": "run",
+        "file": "java-coverage/java_coverage.json",
+        "pointer": "/tests/1",
+        "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/6",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/7",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/9",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/13",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+        "pointer": "/records/14",
+        "purpose": "核对原始逻辑或相关定义"
+      },
+      {
+        "root": "run",
+        "file": "03-project-materials/final/project_materials.json",
+        "pointer": "",
+        "purpose": "核对暂定接口与准备约定"
+      }
+    ],
+    "depends_on": [
+      "T02"
+    ],
+    "unresolved": [
+      "目标业务接口尚未核对"
+    ]
+  }
+}

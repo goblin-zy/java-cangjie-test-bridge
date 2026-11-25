@@ -1,0 +1,16 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "testFromBase",
+      "source_member_id": "p/BaseCase.java::p.BaseCase#testFromBase()"
+    },
+    {
+      "id": "U02",
+      "name": "testOwn",
+      "source_member_id": "p/ChildCase.java::p.ChildCase#testOwn()"
+    }
+  ],
+  "configuration": "D:\\CodexArtifacts\\static-integration-002\\inherited-input\\translation_config.json",
+  "members_file": "D:\\CodexArtifacts\\static-integration-002\\inherited-input\\02-java-skeleton\\0\\members.json"
+}

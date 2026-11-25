@@ -1,0 +1,11 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "test_size",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()"
+    }
+  ],
+  "configuration": "D:\\CodexArtifacts\\static-integration-002\\mutant-input\\translation_config.json",
+  "members_file": "D:\\CodexArtifacts\\static-integration-002\\mutant-input\\02-java-skeleton\\0\\members.json"
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 203,
+      "end_offset_utf16_exclusive": 372,
+      "start_line": 13,
+      "start_column": 5,
+      "end_line": 18,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 203,
+      "end_offset_utf16_exclusive": 322,
+      "start_line": 13,
+      "start_column": 5,
+      "end_line": 16,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_construct",
+    "target_signature": "func test_construct(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_01",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 378,
+      "end_offset_utf16_exclusive": 471,
+      "start_line": 20,
+      "start_column": 5,
+      "end_line": 23,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 328,
+      "end_offset_utf16_exclusive": 442,
+      "start_line": 18,
+      "start_column": 5,
+      "end_line": 21,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_size",
+    "target_signature": "func test_size(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_02",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 477,
+      "end_offset_utf16_exclusive": 603,
+      "start_line": 25,
+      "start_column": 5,
+      "end_line": 28,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 448,
+      "end_offset_utf16_exclusive": 574,
+      "start_line": 23,
+      "start_column": 5,
+      "end_line": 26,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_intervaloverlaps",
+    "target_signature": "func test_intervaloverlaps(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_03",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 609,
+      "end_offset_utf16_exclusive": 745,
+      "start_line": 30,
+      "start_column": 5,
+      "end_line": 33,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 580,
+      "end_offset_utf16_exclusive": 712,
+      "start_line": 28,
+      "start_column": 5,
+      "end_line": 31,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_intervalDoesNotOverlap",
+    "target_signature": "func test_intervalDoesNotOverlap(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_04",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 751,
+      "end_offset_utf16_exclusive": 857,
+      "start_line": 35,
+      "start_column": 5,
+      "end_line": 38,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 718,
+      "end_offset_utf16_exclusive": 841,
+      "start_line": 33,
+      "start_column": 5,
+      "end_line": 36,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_pointOverlaps",
+    "target_signature": "func test_pointOverlaps(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_05",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 863,
+      "end_offset_utf16_exclusive": 978,
+      "start_line": 40,
+      "start_column": 5,
+      "end_line": 43,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 847,
+      "end_offset_utf16_exclusive": 976,
+      "start_line": 38,
+      "start_column": 5,
+      "end_line": 41,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_pointDoesNotOverlap",
+    "target_signature": "func test_pointDoesNotOverlap(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_06",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 984,
+      "end_offset_utf16_exclusive": 1418,
+      "start_line": 45,
+      "start_column": 5,
+      "end_line": 55,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 982,
+      "end_offset_utf16_exclusive": 1102,
+      "start_line": 43,
+      "start_column": 5,
+      "end_line": 46,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_comparable",
+    "target_signature": "func test_comparable(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_07",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 1424,
+      "end_offset_utf16_exclusive": 1534,
+      "start_line": 57,
+      "start_column": 5,
+      "end_line": 60,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 1108,
+      "end_offset_utf16_exclusive": 1231,
+      "start_line": 48,
+      "start_column": 5,
+      "end_line": 51,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_checkToString",
+    "target_signature": "func test_checkToString(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_08",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_members_file": "02-java-skeleton/0/members.json",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+    "source_location": {
+      "file": "original/IntervalTest.java",
+      "start_offset_utf16": 1540,
+      "end_offset_utf16_exclusive": 1668,
+      "start_line": 62,
+      "start_column": 5,
+      "end_line": 65,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/IntervalTest.java",
+      "start_offset_utf16": 1237,
+      "end_offset_utf16_exclusive": 1368,
+      "start_line": 53,
+      "start_column": 5,
+      "end_line": 56,
+      "end_column": 5
+    },
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalTest",
+    "target_member": "test_compareToNegativeTest",
+    "target_signature": "func test_compareToNegativeTest(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "W12_09",
+    "adaptation": "\u5b8c\u6574\u6d4b\u8bd5\u65b9\u6cd5\uff0c\u586b\u5145\u65f6\u4fdd\u7559\u539f\u8f93\u5165\u3001\u65ad\u8a00\u548c\u8c03\u7528\u987a\u5e8f\u3002"
+  },
+  {
+    "source_member_id": null,
+    "target_file": "interval_test.cj",
+    "target_class": "IntervalBridge",
+    "target_member": "interval",
+    "target_signature": "public let interval: Interval",
+    "status": "mapped",
+    "fill_slot": null,
+    "adaptation": "\u6d4b\u8bd5\u7aef\u6bd4\u8f83\u9002\u914d\u5668\u4fdd\u5b58\u771f\u5b9e\u4e1a\u52a1\u5bf9\u8c61\uff0c\u6bd4\u8f83\u59d4\u6258\u73b0\u6709 compareTo\u3002"
+  }
+]

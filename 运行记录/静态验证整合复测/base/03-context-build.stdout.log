@@ -1,0 +1,24 @@
+{
+  "status": "INDEX_CREATED",
+  "index": "D:\\CodexArtifacts\\static-integration-002\\base\\context-index\\project_schema.json",
+  "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+  "summary": {
+    "java_files": 40,
+    "types": 46,
+    "members": 349,
+    "references": 1612,
+    "resolution_counts": {
+      "resolved_static": 1119,
+      "external": 371,
+      "implicit_project_constructor": 9,
+      "unresolved": 113
+    },
+    "test_methods": 94,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 1281,
+    "recognized_assertions": 115,
+    "assertion_candidates": 0,
+    "compatibility_features": 33
+  },
+  "semantic_problems": 0
+}

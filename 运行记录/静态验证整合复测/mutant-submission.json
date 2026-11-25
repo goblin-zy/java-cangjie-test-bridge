@@ -1,0 +1,43 @@
+{
+  "id": "U01",
+  "packet_hash": "aefb3ad2788f5fbbdeae0122789a1a47c6d8ed237bda6fc86dc69241b75b0d52",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "长度断言的期望值",
+      "status": "发现差异",
+      "java": [
+        "J013",
+        "J014",
+        "J015"
+      ],
+      "cangjie": [
+        "C017",
+        "C018",
+        "C019"
+      ],
+      "reason": "Java要求区间(0,2)长度等于3，受控错误译文改成4。",
+      "recheck": "已重新读取两侧test_size原文，定位3与4的实际字面量。"
+    },
+    {
+      "kind": "interface",
+      "topic": "真实size定义",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J013",
+        "J014",
+        "J015"
+      ],
+      "cangjie": [
+        "C017",
+        "C018",
+        "C019"
+      ],
+      "reason": "业务size实现仍为end-start+1，未随错误译文改动。",
+      "contract_reference": {
+        "quote": "本轮接口前提（test_size）：构造区间(0,2)，调用真实size并要求3，保留端点包含的长度语义。",
+        "assumption": "使用本轮未修改的业务源码。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "file": "inputs/0/IntervalTest.java",
+      "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+    },
+    {
+      "file": "inputs/1/IntervalTest.java",
+      "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+    },
+    {
+      "file": "inputs/2/agent_context.json",
+      "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+    }
+  ],
+  "unknowns": [],
+  "analysis_mode": "CURRENT_AGENT_FIXED_REVIEW_NO_INDEPENDENT_BLIND_SESSIONS"
+}

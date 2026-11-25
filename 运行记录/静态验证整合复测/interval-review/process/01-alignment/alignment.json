@@ -1,0 +1,736 @@
+{
+  "route": "whole",
+  "units": [
+    {
+      "id": "U01",
+      "name": "test_construct",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_construct()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        13,
+        18
+      ],
+      "cangjie": [
+        14,
+        19
+      ],
+      "candidates": [
+        [
+          14,
+          19
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 203,
+            "end_offset_utf16_exclusive": 372,
+            "start_line": 13,
+            "start_column": 5,
+            "end_line": 18,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 203,
+            "end_offset_utf16_exclusive": 322,
+            "start_line": 13,
+            "start_column": 5,
+            "end_line": 16,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_construct",
+          "target_signature": "func test_construct(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_01",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U02",
+      "name": "test_size",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_size()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        20,
+        23
+      ],
+      "cangjie": [
+        20,
+        23
+      ],
+      "candidates": [
+        [
+          20,
+          23
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 378,
+            "end_offset_utf16_exclusive": 471,
+            "start_line": 20,
+            "start_column": 5,
+            "end_line": 23,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 328,
+            "end_offset_utf16_exclusive": 442,
+            "start_line": 18,
+            "start_column": 5,
+            "end_line": 21,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_size",
+          "target_signature": "func test_size(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_02",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U03",
+      "name": "test_intervaloverlaps",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        25,
+        28
+      ],
+      "cangjie": [
+        24,
+        27
+      ],
+      "candidates": [
+        [
+          24,
+          27
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 477,
+            "end_offset_utf16_exclusive": 603,
+            "start_line": 25,
+            "start_column": 5,
+            "end_line": 28,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 448,
+            "end_offset_utf16_exclusive": 574,
+            "start_line": 23,
+            "start_column": 5,
+            "end_line": 26,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_intervaloverlaps",
+          "target_signature": "func test_intervaloverlaps(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_03",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U04",
+      "name": "test_intervalDoesNotOverlap",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        30,
+        33
+      ],
+      "cangjie": [
+        28,
+        31
+      ],
+      "candidates": [
+        [
+          28,
+          31
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 609,
+            "end_offset_utf16_exclusive": 745,
+            "start_line": 30,
+            "start_column": 5,
+            "end_line": 33,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 580,
+            "end_offset_utf16_exclusive": 712,
+            "start_line": 28,
+            "start_column": 5,
+            "end_line": 31,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_intervalDoesNotOverlap",
+          "target_signature": "func test_intervalDoesNotOverlap(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_04",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U05",
+      "name": "test_pointOverlaps",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        35,
+        38
+      ],
+      "cangjie": [
+        32,
+        35
+      ],
+      "candidates": [
+        [
+          32,
+          35
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 751,
+            "end_offset_utf16_exclusive": 857,
+            "start_line": 35,
+            "start_column": 5,
+            "end_line": 38,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 718,
+            "end_offset_utf16_exclusive": 841,
+            "start_line": 33,
+            "start_column": 5,
+            "end_line": 36,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_pointOverlaps",
+          "target_signature": "func test_pointOverlaps(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_05",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U06",
+      "name": "test_pointDoesNotOverlap",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        40,
+        43
+      ],
+      "cangjie": [
+        36,
+        39
+      ],
+      "candidates": [
+        [
+          36,
+          39
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 863,
+            "end_offset_utf16_exclusive": 978,
+            "start_line": 40,
+            "start_column": 5,
+            "end_line": 43,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 847,
+            "end_offset_utf16_exclusive": 976,
+            "start_line": 38,
+            "start_column": 5,
+            "end_line": 41,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_pointDoesNotOverlap",
+          "target_signature": "func test_pointDoesNotOverlap(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_06",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U07",
+      "name": "test_comparable",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        45,
+        55
+      ],
+      "cangjie": [
+        40,
+        50
+      ],
+      "candidates": [
+        [
+          40,
+          50
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 984,
+            "end_offset_utf16_exclusive": 1418,
+            "start_line": 45,
+            "start_column": 5,
+            "end_line": 55,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 982,
+            "end_offset_utf16_exclusive": 1102,
+            "start_line": 43,
+            "start_column": 5,
+            "end_line": 46,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_comparable",
+          "target_signature": "func test_comparable(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_07",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U08",
+      "name": "test_checkToString",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        57,
+        60
+      ],
+      "cangjie": [
+        51,
+        54
+      ],
+      "candidates": [
+        [
+          51,
+          54
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 1424,
+            "end_offset_utf16_exclusive": 1534,
+            "start_line": 57,
+            "start_column": 5,
+            "end_line": 60,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 1108,
+            "end_offset_utf16_exclusive": 1231,
+            "start_line": 48,
+            "start_column": 5,
+            "end_line": 51,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_checkToString",
+          "target_signature": "func test_checkToString(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_08",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U09",
+      "name": "test_compareToNegativeTest",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+      "source_file": "original/IntervalTest.java",
+      "test_framework": "junit4",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+          "framework": "junit4",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        62,
+        65
+      ],
+      "cangjie": [
+        55,
+        58
+      ],
+      "candidates": [
+        [
+          55,
+          58
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+          "source_location": {
+            "file": "original/IntervalTest.java",
+            "start_offset_utf16": 1540,
+            "end_offset_utf16_exclusive": 1668,
+            "start_line": 62,
+            "start_column": 5,
+            "end_line": 65,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/IntervalTest.java",
+            "start_offset_utf16": 1237,
+            "end_offset_utf16_exclusive": 1368,
+            "start_line": 53,
+            "start_column": 5,
+            "end_line": 56,
+            "end_column": 5
+          },
+          "target_file": "interval_test.cj",
+          "target_class": "IntervalTest",
+          "target_member": "test_compareToNegativeTest",
+          "target_signature": "func test_compareToNegativeTest(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "W12_09",
+          "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    }
+  ],
+  "files": {
+    "java": "IntervalTest.java",
+    "cangjie": "interval_test.cj"
+  },
+  "contract": {
+    "status": "assumed",
+    "path": "D:\\CodexArtifacts\\static-integration-002\\interval-review\\process\\01-alignment\\contract\\target_contract.md",
+    "snapshot": "contract/target_contract.md",
+    "sha256": "1b9bf7388ee5206d18297b15ad196bf7a6f2a81aeb18f98318579fef9f7e165f"
+  },
+  "versions": {
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\java\\src\\test\\java\\org\\ahocorasick\\interval\\IntervalTest.java": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\06-whole-translation\\test\\interval_test.cj": "3631a2baa1ecc14d4f6cccc9fe97aa0581749b6792acfd84a409f276f7ac12ec",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\original\\IntervalTest.java": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\translation_config.json": "acb137300d27140184c6dfc696ae37733a668d08479fa981e82ee457af822e97",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\members.json": "4e5a842ad24f667fc2120a99b05e916f6b8b02dbc47bb708f4a984209f4694fe",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\member_mapping.json": "3b477bd1c700847e3b7bc6dd7ccfc0395181badccd2aa48a99bfb3ee84b2c3b9",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\agent_context.json": "62ed2c8269acd06b02854bb3136a819cae1ece8175ef3507de5b60549fd34327",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\initial_context.json": "ba891d2cd505eb76328e5c327cbc205999a6a2c0cd0d70627722f9cf359d060e",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\shared.json": "b85f8f148347aca8fbd48cf9d9b755e54439a678463f3d5888aae227dc3f94ac",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tasks.json": "665c03fc601b482c8cc1ad06be29e0d543a73d28aa7ac4852ca38055805188ae",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_checkToString-0909431c75bd.json": "317644825d429180dbd2658a973d7c290fbae9c619a31523e4985c22c0b96150",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_comparable-01f24b3d83d8.json": "9ecd1e3f9e5605ceca8d5abe3286fc1ff6ccaef64e340a3fb26ee837823f7179",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_compareToNegativeTest-39ff2e503f58.json": "2df89a9522a3dfa321fb09d106bdc9dbdce55fddc9795864ef027991c0559d50",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_construct-c94991bd5f25.json": "59cb2788f981cb403cee54ce555a502e2ff649d4d5e3a238eb328b71b60ebcc1",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervalDoesNotOverlap-6a572de90cfb.json": "068d121b87c094c34c9fc3bf356049b14b5955b7d6fdc7c909ae6b55dae19974",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervaloverlaps-ebb5c412f342.json": "f7e4ddb38c332863eeb66308c3eaa1af5bb9e774faafa343cff98e524f841ae5",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointDoesNotOverlap-22dd77392235.json": "9214f6758c0ff5cae43ebfdf079fd132978b7677af05b7a3595b06e9a33af132",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointOverlaps-9d6a9442a969.json": "4d2c0265ca522631513be171056fbf2c1290216d950a6cca244fba8ae51153e0",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_size-c39dde96373e.json": "694fb89dc0bb3a252892c983fefc5b9162e180fa4039b173a25fef382d785764",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\skeleton\\IntervalTest.java": "d711618e6e166a766ece911d162c90deccdf6e45f8eb47883df68e81b916400f",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\interval_test.cj": "d15ba8db5de3f920c779d3c998a5a7555e638db6de635e1755abf57edfcd561c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\abstract_stateful_emit_handler.cj": "8ac6b37aa86cbe44a6ef67a289976b599bd8dacf2cc6f3b93fb69cf9fecab04f",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\abstract_stateful_payload_emit_handler.cj": "7779d0212753559e85ca7b4bb13a68645d23c9fcb859fdcb24c92ce92b63002c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_emit_handler.cj": "07ca3de55be34b9d202373e3f4c4051557c59a448133af1059bb89e4bc908f75",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_payload_emit_handler.cj": "687e7b9e6701d8c6f14831de6878a625dd27c355d4744d0787f6ee8c01cf935c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_token.cj": "1d114f4f14dc47d490add47531686ffc8d6209fd31728fb4a7271c73d926544c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\emit.cj": "1a89e9f66d3e9a6df3153365649c547e26fc58024df8d5f275b6feb57aef9040",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\emit_handler.cj": "8c887148e1ae1eaacb41c9621f277b34f21322c124736c26e02b8d1ed85fb488",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\fragment_token.cj": "ae7929e59550a5294a8de22145182fb27c2a5dd21310d4062173f1c2ddd4f564",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval.cj": "36b288af3598c7b56a37a92726bf941ae5a31f244df85cdff90e0debd5bcbe7f",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval_node.cj": "ae7d2ad55edc45a8df0c0ab996c26194b89170022a099a376ad6b3016eea8e91",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval_tree.cj": "825c6550ea0b8fe6ea337522f5de0cce57df90e5163c9386c3127d43a8cd19f9",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\intervalable.cj": "8e629efa6134dfd4251138185c60b241f4bae7120ef213f2f5943fbaafc685ab",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\match_token.cj": "48707ed3d53dcfda7c37cdad0b5314fc77d504e879b27beeb7b1099892083367",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\package.cj": "46d0426154a60f8f66a041d59cf703465f15abb115403ff52d9690f1680e61d1",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload.cj": "f79d16aa0953965925bfb2fd632d579cd4bf5531ee7b3be984075c1779775216",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit.cj": "a11fd77a7795d02f4c25df4b814844cab2a7b8feadf2277e96e790ffb0d190c8",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit_delegate_handler.cj": "67433d96fb51a55b408a661120bdef124db6559d631f217960d413f145fa38b0",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit_handler.cj": "90654cf0ff0347a2065cf47aa876c1fe9ceea096be7bb7bcf22fdb33036ad1fc",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_fragment_token.cj": "7809731e6adaafef9ca4e342738b64058f59f7cdbf00d84b0efa94be93b0110e",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_match_token.cj": "56e17c61c176501db981e0711e09840678fbb310e4e9c8b8c87c9487d1709e43",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_state.cj": "c82e929e86254c96ba6c7ed74808477d751f31e704fb9e71ed1542c5b5975c4a",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_token.cj": "0cc8d2ca928fd2ce2c96a1bb83dae592b9ba74aefb2e158714db543c9c087203",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_trie.cj": "0004430342033d306eed3ec8e568587ff48a8674c3e050c884f40887178ee388",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_trie_builder.cj": "fbdfee5e5bb30ee47ed3994db6424968bd3891d9562ee24419b3c5ed3e270723",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\state.cj": "9db67852c57c1693415ff11c262723815c971f0724e7a0ab6fed266d97e4d475",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_emit_handler.cj": "7520573329834e8bec2763daea4f182d2463a3f1837713983ee27713a521bd2e",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_payload_emit_delegate_handler.cj": "335cfd48da47a53e3eb48ec7032a30b15921507a848ebcea2db0573089886a84",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_payload_emit_handler.cj": "4949535c47529ccc345c6884547769734cc54006fc78e02ba49da82bdf5dbbcf",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\token.cj": "bb96de5dc205d489134f74657b61a634ce78de67717d896d39eaa277b2410cfd",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie.cj": "c0d120e5ccbb880dbe75d8c771c829183a657f8ad4ac73ece351a475a437aa75",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie_builder.cj": "6325003a0cbec09cf009d73709a06867dd841a2ae21915f4deade79848f11ed2",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie_config.cj": "a947e157049f7824eeaee8c74581c1a458e71a7f2b319fc3c6b1a05328ec8e62",
+    "D:\\CodexArtifacts\\static-integration-002\\target_contract.md": "1b9bf7388ee5206d18297b15ad196bf7a6f2a81aeb18f98318579fef9f7e165f"
+  },
+  "materials": [
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\translation_config.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\members.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\member_mapping.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\agent_context.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\initial_context.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\shared.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tasks.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_checkToString-0909431c75bd.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_comparable-01f24b3d83d8.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_compareToNegativeTest-39ff2e503f58.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_construct-c94991bd5f25.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervalDoesNotOverlap-6a572de90cfb.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervaloverlaps-ebb5c412f342.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointDoesNotOverlap-22dd77392235.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointOverlaps-9d6a9442a969.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_size-c39dde96373e.json"
+  ],
+  "missing_materials": [
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\translation_report.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\handoff.md",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\03-project-materials\\final\\project_materials.json",
+    "D:\\CodexArtifacts\\three-material-get\\Rule mapping\\translation_rules.json"
+  ],
+  "side_inputs": {
+    "java": [
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\skeleton\\IntervalTest.java",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\agent_context.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\initial_context.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\shared.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tasks.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_checkToString-0909431c75bd.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_comparable-01f24b3d83d8.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_compareToNegativeTest-39ff2e503f58.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_construct-c94991bd5f25.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervalDoesNotOverlap-6a572de90cfb.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervaloverlaps-ebb5c412f342.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointDoesNotOverlap-22dd77392235.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointOverlaps-9d6a9442a969.json",
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_size-c39dde96373e.json"
+    ],
+    "cangjie": [
+      "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\interval_test.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\abstract_stateful_emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\abstract_stateful_payload_emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_payload_emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_token.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\emit.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\fragment_token.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval_node.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval_tree.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\intervalable.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\match_token.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\package.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit_delegate_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_fragment_token.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_match_token.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_state.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_token.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_trie.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_trie_builder.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\state.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_payload_emit_delegate_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_payload_emit_handler.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\token.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie_builder.cj",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie_config.cj"
+    ]
+  },
+  "extraction_matches": true,
+  "selection": [
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+    "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()"
+  ]
+}

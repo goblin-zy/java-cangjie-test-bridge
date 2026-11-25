@@ -1,0 +1,46 @@
+{
+  "id": "U09",
+  "packet_hash": "7310d3688bbce2ce58470a4ac68966f1e9a9dec0afe09fd9a2e1211d515dd518",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "准备、操作和全部断言",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J041",
+        "J042",
+        "J043"
+      ],
+      "cangjie": [
+        "C045",
+        "C046",
+        "C047",
+        "C009"
+      ],
+      "reason": "构造区间(4,6)，传入不属于Intervalable的普通对象，要求真实compareTo返回-1；UnrelatedValue承担原new Object()的角色。"
+    },
+    {
+      "kind": "interface",
+      "topic": "真实业务接口与必要结构适配",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J041",
+        "J042",
+        "J043"
+      ],
+      "cangjie": [
+        "C045",
+        "C046",
+        "C047",
+        "C009"
+      ],
+      "reason": "构造区间(4,6)，传入不属于Intervalable的普通对象，要求真实compareTo返回-1；UnrelatedValue承担原new Object()的角色。",
+      "contract_reference": {
+        "quote": "本轮接口前提（test_compareToNegativeTest）：构造区间(4,6)，传入不属于Intervalable的普通对象，要求真实compareTo返回-1；UnrelatedValue承担原new Object()的角色。",
+        "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+      }
+    }
+  ],
+  "name": "test_compareToNegativeTest",
+  "status": "在所列前提和范围内一致"
+}

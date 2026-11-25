@@ -1,0 +1,281 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "943598eca8d8deee694e92c632c6018f57f6600c9b367c32442172ce4ec005f2",
+  "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+  "input_issues": {},
+  "semantic_problems": [],
+  "profile": "fragment",
+  "scope": "test",
+  "purpose": "\u7ffb\u8bd1\u6307\u5b9a\u6d4b\u8bd5\u65b9\u6cd5\uff1a\u4fdd\u7559\u6240\u5728\u7c7b\u53ca\u751f\u547d\u5468\u671f\uff0c\u5c55\u5f00\u8be5\u65b9\u6cd5\u7684\u8f85\u52a9\u4f9d\u8d56\u3002",
+  "target_type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+  "selected_tests": [
+    "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "p/ChildCase.java::p.ChildCase#testOwn()",
+      "declaring_class": "p.ChildCase",
+      "execution_class": "p.ChildCase",
+      "selector": "p.ChildCase#testOwn()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+      "execution_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+      "declaring_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "p.ChildCase#testOwn()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/p/BaseCase.java",
+      "package": "p",
+      "imports": [
+        {
+          "start": 11,
+          "end": 43,
+          "name": "junit.framework.TestCase",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/test/java/p/ChildCase.java",
+      "package": "p",
+      "imports": []
+    }
+  ],
+  "records": [
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+      "display_id": "p.ChildCase",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 41,
+      "source": {
+        "file": "src/test/java/p/ChildCase.java",
+        "sha256": "994de2fda9cd18ead6516f2c4d520538bc4e175103e84110388c8ea532f15b45",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 11,
+        "end_offset_utf16_exclusive": 52
+      },
+      "index_id": "943598eca8d8deee694e92c632c6018f57f6600c9b367c32442172ce4ec005f2",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "SELECTED_TEST_TYPE",
+      "shared_record": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+      "display_id": "p.BaseCase",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 49,
+      "source": {
+        "file": "src/test/java/p/BaseCase.java",
+        "sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 44,
+        "end_offset_utf16_exclusive": 93
+      },
+      "index_id": "943598eca8d8deee694e92c632c6018f57f6600c9b367c32442172ce4ec005f2",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "INHERITED_TYPE_HEADER",
+      "shared_record": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+      "display_id": "p.ChildCase#testOwn()",
+      "content_kind": "full",
+      "content": "public void testOwn() { assert value>0; }",
+      "content_chars": 41,
+      "source": {
+        "file": "src/test/java/p/ChildCase.java",
+        "sha256": "994de2fda9cd18ead6516f2c4d520538bc4e175103e84110388c8ea532f15b45",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 53,
+        "end_offset_utf16_exclusive": 94
+      },
+      "index_id": "943598eca8d8deee694e92c632c6018f57f6600c9b367c32442172ce4ec005f2",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "SELECTED_TEST"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1",
+      "display_id": "p.BaseCase#field:value",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 22,
+      "source": {
+        "file": "src/test/java/p/BaseCase.java",
+        "sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 94,
+        "end_offset_utf16_exclusive": 116
+      },
+      "index_id": "943598eca8d8deee694e92c632c6018f57f6600c9b367c32442172ce4ec005f2",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "RESOLVED_DEPENDENCY",
+      "shared_record": "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "112b81649fae24b360870a406640b6001688947cfd99ed0c1e177bc2d7301ce4",
+      "caller": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+      "resolution": "resolved_static",
+      "targets": [
+        "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [
+          "bd30d1dfd30af4272eb4454efd7d3e580e5d0c44af26882b0f38ef74a996e110"
+        ],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1",
+      "owner_type_key": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+      "kind": "field",
+      "start": 108,
+      "modifiers": [
+        "protected"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "PARENT_NOT_BOUND",
+      "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+      "candidates": []
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 41,
+    "visited_members": 2
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+        "display_id": "p.ChildCase#testOwn()",
+        "top_level_steps": [
+          {
+            "key": "9f8d46febc0bed7c167c0fcec6fd88c042b6704269d2ca18f0f025260858b5c6",
+            "ast_kind": "AssertStmt",
+            "lines": [
+              1,
+              1
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ],
+  "shared_ref": {
+    "file": "../shared.json",
+    "sha256": "5479faf0e168a24334bd558443d1d246125c0ee4da94208ff5bd00414e560968",
+    "index_id": "943598eca8d8deee694e92c632c6018f57f6600c9b367c32442172ce4ec005f2",
+    "required": true
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "unit": {
+    "id": "U02",
+    "name": "rejectsOverspending",
+    "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()",
+    "java": [
+      29,
+      33
+    ],
+    "cangjie": [
+      28,
+      34
+    ],
+    "candidates": [
+      [
+        28,
+        34
+      ]
+    ],
+    "mapping": [
+      {
+        "source_members_file": "02-java-skeleton/members.json",
+        "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()",
+        "target_file": "wallet/points_wallet_test.cj",
+        "target_member": "rejectsOverspending",
+        "target_signature": "    func rejectsOverspending(): Unit",
+        "status": "mapped",
+        "fill_slot": "body",
+        "slot_id": "T04",
+        "adaptation": "目标业务接口暂定"
+      }
+    ],
+    "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+  },
+  "route": "whole",
+  "contract": {
+    "status": "missing"
+  },
+  "materials": [
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\translation_config.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\members.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\member_mapping.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\translation_report.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\handoff.md",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\03-project-materials\\final\\project_materials.json",
+    "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Rule mapping\\translation_rules.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\04-test-context\\PointsWalletTest\\context_wallet.PointsWalletTest_53e40b49.json"
+  ],
+  "sides": {
+    "java": {
+      "file": "PointsWalletTest.java",
+      "segments": {
+        "J01": {
+          "start": 10,
+          "end": 10,
+          "quote": "    private PointsWallet wallet;",
+          "片段编号": "J01",
+          "环节": "初始化与准备",
+          "维度": "夹具成员",
+          "内容": "声明 PointsWallet 类型的 wallet，供 setup 写入，两个测试均通过该字段访问钱包。",
+          "关联": "J04 写入；J06–J09、J11–J12 读取",
+          "依据": "PointsWalletTest.java:10–10，成员声明",
+          "待确认": "无",
+          "annotated": [
+            17,
+            17
+          ]
+        },
+        "J02": {
+          "start": 12,
+          "end": 14,
+          "quote": "    private PointsWallet newWallet() {\n        return new PointsWallet(100);\n    }",
+          "片段编号": "J02",
+          "环节": "初始化与准备",
+          "维度": "辅助工厂",
+          "内容": "每次调用都创建初始积分为 100 的新钱包并返回。",
+          "关联": "由 J04 调用；为 J06、J11 提供初始余额",
+          "依据": "PointsWalletTest.java:12–14，构造器在 PointsWallet.java:6–8 保存初始积分",
+          "待确认": "无",
+          "annotated": [
+            26,
+            28
+          ]
+        },
+        "J03": {
+          "start": 16,
+          "end": 17,
+          "quote": "    @BeforeEach\n    void setup() {",
+          "片段编号": "J03",
+          "环节": "初始化与准备",
+          "维度": "生命周期",
+          "内容": "JUnit 的 @BeforeEach 指定 setup 在每个测试方法执行前运行。",
+          "关联": "为 J05 和 J10 分别安排 J04",
+          "依据": "PointsWalletTest.java:16–17，@BeforeEach 修饰 setup",
+          "待确认": "无",
+          "annotated": [
+            37,
+            38
+          ]
+        },
+        "J04": {
+          "start": 18,
+          "end": 18,
+          "quote": "        wallet = newWallet();",
+          "片段编号": "J04",
+          "环节": "初始化与准备",
+          "维度": "夹具赋值",
+          "内容": "调用 newWallet()，把新钱包写入当前测试的 wallet 字段。",
+          "关联": "J02 → J01；两条用例各自从 100 开始",
+          "依据": "PointsWalletTest.java:18–18，setup 中唯一的赋值语句",
+          "待确认": "无",
+          "annotated": [
+            46,
+            46
+          ]
+        },
+        "J05": {
+          "start": 21,
+          "end": 22,
+          "quote": "    @Test\n    void spendsPointsInOrder() {",
+          "片段编号": "J05",
+          "环节": "初始化与准备",
+          "维度": "用例入口",
+          "内容": "@Test 标记连续消费用例，方法体依次验证两次消费及每次后的余额。",
+          "关联": "承接 J03–J04，依序执行 J06–J09",
+          "依据": "PointsWalletTest.java:21–22，@Test 与方法声明",
+          "待确认": "无",
+          "annotated": [
+            56,
+            57
+          ]
+        },
+        "J06": {
+          "start": 23,
+          "end": 23,
+          "quote": "        assertTrue(wallet.spend(30));",
+          "片段编号": "J06",
+          "环节": "结果检查（被测操作）",
+          "维度": "首次消费与成功标志",
+          "内容": "对初始余额 100 调用 spend(30)，assertTrue 要求返回 true。",
+          "关联": "J04 → 本次扣减 → J07",
+          "依据": "PointsWalletTest.java:23–23，PointsWallet.java:10–16 在额度充足时扣减后返回 true",
+          "待确认": "无",
+          "annotated": [
+            65,
+            65
+          ]
+        },
+        "J07": {
+          "start": 24,
+          "end": 24,
+          "quote": "        assertEquals(70, wallet.balance());",
+          "片段编号": "J07",
+          "环节": "结果检查（被测操作）",
+          "维度": "中间余额",
+          "内容": "读取 wallet.balance()，assertEquals 要求等于 70，检查首次扣减后的状态。",
+          "关联": "J06 后、J08 前",
+          "依据": "PointsWalletTest.java:24–24，PointsWallet.java:18–20 返回当前 points",
+          "待确认": "无",
+          "annotated": [
+            73,
+            73
+          ]
+        },
+        "J08": {
+          "start": 25,
+          "end": 25,
+          "quote": "        assertTrue(wallet.spend(20));",
+          "片段编号": "J08",
+          "环节": "结果检查（被测操作）",
+          "维度": "连续消费与成功标志",
+          "内容": "在同一钱包再次调用 spend(20)，assertTrue 要求返回 true。",
+          "关联": "承接 J06/J07 的余额 70，结果由下一行核对",
+          "依据": "PointsWalletTest.java:25–25，PointsWallet.java:10–16 扣减后返回 true",
+          "待确认": "无",
+          "annotated": [
+            81,
+            81
+          ]
+        },
+        "J09": {
+          "start": 26,
+          "end": 26,
+          "quote": "        assertEquals(50, wallet.balance());",
+          "片段编号": "J09",
+          "环节": "结果检查（被测操作）",
+          "维度": "最终余额",
+          "内容": "读取同一钱包的余额，assertEquals 要求连续扣除 30 和 20 后为 50。",
+          "关联": "J06 → J08 → 本检查",
+          "依据": "PointsWalletTest.java:26–26，PointsWallet.java:18–20 读取余额",
+          "待确认": "无",
+          "annotated": [
+            89,
+            89
+          ]
+        },
+        "J10": {
+          "start": 29,
+          "end": 30,
+          "quote": "    @Test\n    void rejectsOverspending() {",
+          "片段编号": "J10",
+          "环节": "初始化与准备",
+          "维度": "用例入口",
+          "内容": "@Test 标记超额消费用例，使用 setup 独立准备的钱包。",
+          "关联": "J03–J04 → J11、J12",
+          "依据": "PointsWalletTest.java:29–30，@Test 与方法声明",
+          "待确认": "无",
+          "annotated": [
+            99,
+            100
+          ]
+        },
+        "J11": {
+          "start": 31,
+          "end": 31,
+          "quote": "        assertFalse(wallet.spend(150));",
+          "片段编号": "J11",
+          "环节": "结果检查（被测操作）",
+          "维度": "超额消费与拒绝标志",
+          "内容": "余额 100 时调用 spend(150)，assertFalse 要求返回 false。",
+          "关联": "J04 → 本次拒绝 → J12",
+          "依据": "PointsWalletTest.java:31–31，PointsWallet.java:11–14 超额时在扣减之前返回 false",
+          "待确认": "无",
+          "annotated": [
+            108,
+            108
+          ]
+        },
+        "J12": {
+          "start": 32,
+          "end": 32,
+          "quote": "        assertEquals(100, wallet.balance());",
+          "片段编号": "J12",
+          "环节": "结果检查（被测操作）",
+          "维度": "失败后的余额",
+          "内容": "读取余额，assertEquals 要求仍为初始值 100，检查拒绝操作未改变积分。",
+          "关联": "与 J11 共同验证拒绝的返回值和状态",
+          "依据": "PointsWalletTest.java:32–32，PointsWallet.java:11–14、18–20 显示超额直接返回及余额读取",
+          "待确认": "无",
+          "annotated": [
+            116,
+            116
+          ]
+        }
+      },
+      "context": {
+        "sources": [
+          {
+            "path": "Translation-all/01-projects/points-wallet/src/test/java/wallet/PointsWalletTest.java",
+            "location": "第 9–34 行",
+            "purpose": "定位测试类、夹具、两个用例、顺序与断言。"
+          },
+          {
+            "path": "Translation-all/01-projects/points-wallet/src/main/java/wallet/PointsWallet.java",
+            "location": "第 4–20 行",
+            "purpose": "核对初始化、成功与超额分支及余额查询的实现语义。"
+          }
+        ],
+        "unknowns": [],
+        "范围说明": "本次静态阅读源码。两个测试均未声明显式清理。"
+      },
+      "edit_check": {
+        "original_sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8",
+        "annotated_sha256": "65588b48247f05bd19e7d684131b187b1e019fc6121b896154288f673624cae3",
+        "restored_original": true,
+        "segments": 12
+      }
+    },
+    "cangjie": {
+      "file": "points_wallet_test.cj",
+      "segments": {
+        "C01": {
+          "start": 1,
+          "end": 1,
+          "quote": "package wallet",
+          "片段编号": "C01",
+          "环节": "初始化与准备",
+          "维度": "包",
+          "内容": "测试声明在 wallet 包内。",
+          "关联": "作用于整个文件",
+          "依据": "points_wallet_test.cj 第1–1行：package wallet",
+          "待确认": "无",
+          "annotated": [
+            8,
+            8
+          ]
+        },
+        "C02": {
+          "start": 3,
+          "end": 4,
+          "quote": "import std.unittest.*\nimport std.unittest.testmacro.*",
+          "片段编号": "C02",
+          "环节": "初始化与准备",
+          "维度": "框架依赖",
+          "内容": "导入单元测试库及其宏。",
+          "关联": "支持测试标记及断言",
+          "依据": "points_wallet_test.cj 第3–4行：import std.unittest.* / import std.unittest.testmacro.*",
+          "待确认": "无",
+          "annotated": [
+            17,
+            18
+          ]
+        },
+        "C03": {
+          "start": 6,
+          "end": 7,
+          "quote": "@Test\nclass PointsWalletTest {",
+          "片段编号": "C03",
+          "环节": "初始化与准备",
+          "维度": "测试容器",
+          "内容": "以 @Test 标记 PointsWalletTest 类。",
+          "关联": "包含下列两个 @TestCase 方法",
+          "依据": "points_wallet_test.cj 第6–7行：@Test / class PointsWalletTest {",
+          "待确认": "无",
+          "annotated": [
+            27,
+            28
+          ]
+        },
+        "C04": {
+          "start": 8,
+          "end": 8,
+          "quote": "    private var wallet: ?PointsWallet = None",
+          "片段编号": "C04",
+          "环节": "初始化与准备",
+          "维度": "夹具状态",
+          "内容": "声明可选钱包字段，初值 None。",
+          "关联": "setup 写入，测试读出",
+          "依据": "points_wallet_test.cj 第8–8行：private var wallet: ?PointsWallet = None",
+          "待确认": "无",
+          "annotated": [
+            36,
+            36
+          ]
+        },
+        "C05": {
+          "start": 10,
+          "end": 12,
+          "quote": "    private func newWallet(): PointsWallet {\n        return PointsWallet(100i32)\n    }",
+          "片段编号": "C05",
+          "环节": "初始化与准备",
+          "维度": "辅助构造",
+          "内容": "newWallet 调用 PointsWallet(100i32) 并返回构造结果。",
+          "关联": "供 setup 调用",
+          "依据": "points_wallet_test.cj 第10–12行：private func newWallet(): PointsWallet { / return PointsWallet(100i32) / }",
+          "待确认": "构造参数的业务含义缺乏目标实现或接口约定佐证。",
+          "annotated": [
+            45,
+            47
+          ]
+        },
+        "C06": {
+          "start": 14,
+          "end": 16,
+          "quote": "    private func setup(): Unit {\n        wallet = Some(newWallet())\n    }",
+          "片段编号": "C06",
+          "环节": "初始化与准备",
+          "维度": "夹具赋值",
+          "内容": "setup 调用 newWallet，以 Some 包装结果写入 wallet。",
+          "关联": "两个测试均显式调用",
+          "依据": "points_wallet_test.cj 第14–16行：private func setup(): Unit { / wallet = Some(newWallet()) / }",
+          "待确认": "无",
+          "annotated": [
+            56,
+            58
+          ]
+        },
+        "C07": {
+          "start": 18,
+          "end": 19,
+          "quote": "    @TestCase\n    func spendsPointsInOrder(): Unit {",
+          "片段编号": "C07",
+          "环节": "初始化与准备",
+          "维度": "测试入口",
+          "内容": "以 @TestCase 标记 spendsPointsInOrder 方法。",
+          "关联": "spendsPointsInOrder",
+          "依据": "points_wallet_test.cj 第18–19行：@TestCase / func spendsPointsInOrder(): Unit {",
+          "待确认": "无",
+          "annotated": [
+            67,
+            68
+          ]
+        },
+        "C08": {
+          "start": 20,
+          "end": 20,
+          "quote": "        setup()",
+          "片段编号": "C08",
+          "环节": "初始化与准备",
+          "维度": "准备调用",
+          "内容": "显式执行 setup，为本次测试设置钱包。",
+          "关联": "spendsPointsInOrder",
+          "依据": "points_wallet_test.cj 第20–20行：setup()",
+          "待确认": "无",
+          "annotated": [
+            76,
+            76
+          ]
+        },
+        "C09": {
+          "start": 21,
+          "end": 21,
+          "quote": "        let active = wallet.getOrThrow()",
+          "片段编号": "C09",
+          "环节": "初始化与准备",
+          "维度": "夹具读取",
+          "内容": "从 wallet 调用 getOrThrow() 取得 active，后续操作使用该对象。",
+          "关联": "spendsPointsInOrder，依赖前一行 setup",
+          "依据": "points_wallet_test.cj 第21–21行：let active = wallet.getOrThrow()",
+          "待确认": "无",
+          "annotated": [
+            84,
+            84
+          ]
+        },
+        "C10": {
+          "start": 22,
+          "end": 22,
+          "quote": "        @Assert(true, active.spend(30i32))",
+          "片段编号": "C10",
+          "环节": "结果检查（被测操作）",
+          "维度": "返回值断言",
+          "内容": "调用 active.spend(30i32)，将其返回值与断言中列出的 true 比较。",
+          "关联": "spendsPointsInOrder，使用同一 active，按原文顺序执行",
+          "依据": "points_wallet_test.cj 第22–22行：@Assert(true, active.spend(30i32))",
+          "待确认": "目标业务签名和实现缺失，未核实运行结果。",
+          "annotated": [
+            92,
+            92
+          ]
+        },
+        "C11": {
+          "start": 23,
+          "end": 23,
+          "quote": "        @Assert(70i32, active.balance())",
+          "片段编号": "C11",
+          "环节": "结果检查（被测操作）",
+          "维度": "返回值断言",
+          "内容": "调用 active.balance()，将其返回值与断言中列出的 70i32 比较。",
+          "关联": "spendsPointsInOrder，使用同一 active，按原文顺序执行",
+          "依据": "points_wallet_test.cj 第23–23行：@Assert(70i32, active.balance())",
+          "待确认": "目标业务签名和实现缺失，未核实运行结果。",
+          "annotated": [
+            100,
+            100
+          ]
+        },
+        "C12": {
+          "start": 24,
+          "end": 24,
+          "quote": "        @Assert(true, active.spend(20i32))",
+          "片段编号": "C12",
+          "环节": "结果检查（被测操作）",
+          "维度": "返回值断言",
+          "内容": "调用 active.spend(20i32)，将其返回值与断言中列出的 true 比较。",
+          "关联": "spendsPointsInOrder，使用同一 active，按原文顺序执行",
+          "依据": "points_wallet_test.cj 第24–24行：@Assert(true, active.spend(20i32))",
+          "待确认": "目标业务签名和实现缺失，未核实运行结果。",
+          "annotated": [
+            108,
+            108
+          ]
+        },
+        "C13": {
+          "start": 25,
+          "end": 25,
+          "quote": "        @Assert(50i32, active.balance())",
+          "片段编号": "C13",
+          "环节": "结果检查（被测操作）",
+          "维度": "返回值断言",
+          "内容": "调用 active.balance()，将其返回值与断言中列出的 50i32 比较。",
+          "关联": "spendsPointsInOrder，使用同一 active，按原文顺序执行",
+          "依据": "points_wallet_test.cj 第25–25行：@Assert(50i32, active.balance())",
+          "待确认": "目标业务签名和实现缺失，未核实运行结果。",
+          "annotated": [
+            116,
+            116
+          ]
+        },
+        "C14": {
+          "start": 28,
+          "end": 29,
+          "quote": "    @TestCase\n    func rejectsOverspending(): Unit {",
+          "片段编号": "C14",
+          "环节": "初始化与准备",
+          "维度": "测试入口",
+          "内容": "以 @TestCase 标记 rejectsOverspending 方法。",
+          "关联": "rejectsOverspending",
+          "依据": "points_wallet_test.cj 第28–29行：@TestCase / func rejectsOverspending(): Unit {",
+          "待确认": "无",
+          "annotated": [
+            126,
+            127
+          ]
+        },
+        "C15": {
+          "start": 30,
+          "end": 30,
+          "quote": "        setup()",
+          "片段编号": "C15",
+          "环节": "初始化与准备",
+          "维度": "准备调用",
+          "内容": "显式执行 setup，为本次测试设置钱包。",
+          "关联": "rejectsOverspending",
+          "依据": "points_wallet_test.cj 第30–30行：setup()",
+          "待确认": "无",
+          "annotated": [
+            135,
+            135
+          ]
+        },
+        "C16": {
+          "start": 31,
+          "end": 31,
+          "quote": "        let active = wallet.getOrThrow()",
+          "片段编号": "C16",
+          "环节": "初始化与准备",
+          "维度": "夹具读取",
+          "内容": "从 wallet 调用 getOrThrow() 取得 active，后续操作使用该对象。",
+          "关联": "rejectsOverspending，依赖前一行 setup",
+          "依据": "points_wallet_test.cj 第31–31行：let active = wallet.getOrThrow()",
+          "待确认": "无",
+          "annotated": [
+            143,
+            143
+          ]
+        },
+        "C17": {
+          "start": 32,
+          "end": 32,
+          "quote": "        @Assert(false, active.spend(150i32))",
+          "片段编号": "C17",
+          "环节": "结果检查（被测操作）",
+          "维度": "返回值断言",
+          "内容": "调用 active.spend(150i32)，将其返回值与断言中列出的 false 比较。",
+          "关联": "rejectsOverspending，使用同一 active，按原文顺序执行",
+          "依据": "points_wallet_test.cj 第32–32行：@Assert(false, active.spend(150i32))",
+          "待确认": "目标业务签名和实现缺失，未核实运行结果。",
+          "annotated": [
+            151,
+            151
+          ]
+        },
+        "C18": {
+          "start": 33,
+          "end": 33,
+          "quote": "        @Assert(100i32, active.balance())",
+          "片段编号": "C18",
+          "环节": "结果检查（被测操作）",
+          "维度": "返回值断言",
+          "内容": "调用 active.balance()，将其返回值与断言中列出的 100i32 比较。",
+          "关联": "rejectsOverspending，使用同一 active，按原文顺序执行",
+          "依据": "points_wallet_test.cj 第33–33行：@Assert(100i32, active.balance())",
+          "待确认": "目标业务签名和实现缺失，未核实运行结果。",
+          "annotated": [
+            159,
+            159
+          ]
+        }
+      },
+      "context": {
+        "unknowns": [
+          "缺少目标业务实现、接口约定，无法独立核实构造与消费的实际语义。",
+          "仅静态阅读，编译、测试发现及断言实际结果待验证。"
+        ],
+        "清理": "两个测试均无显式清理操作。",
+        "sources": [
+          {
+            "path": "Translation-all/output/points-wallet-coverage/06-whole-translation/test/wallet/points_wallet_test.cj",
+            "位置": "第1–35行",
+            "用途": "识别框架、夹具、两个测试的调用顺序及断言值"
+          }
+        ]
+      },
+      "edit_check": {
+        "original_sha256": "1ee68dd6c8ead0fe9616dd1aa520943ece705740cf720e736ab5e1e2edf253f9",
+        "annotated_sha256": "33b7610a37a34726ee1b8f0f0a1f76e0cc99b6a1954721388ef46bb7c314fa7f",
+        "restored_original": true,
+        "segments": 18
+      }
+    }
+  },
+  "packet_hash": "4e9510228ccbbb08a203d31151ac38dca3a83ed9d62ef5b57dea9cb39a9b88b4"
+}

@@ -1,0 +1,288 @@
+{
+  "tasks": {
+    "T01": {
+      "mapping": {
+        "source_members_file": "02-java-skeleton/members.json",
+        "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#newWallet()",
+        "target_file": "wallet/points_wallet_test.cj",
+        "target_member": "newWallet",
+        "target_signature": "private func newWallet(): PointsWallet",
+        "status": "mapped",
+        "fill_slot": "body",
+        "slot_id": "T01",
+        "adaptation": "目标业务接口暂定"
+      },
+      "file": "wallet/points_wallet_test.cj",
+      "source": "{\n        return new PointsWallet(100);\n    }",
+      "status": "applied",
+      "refs": [
+        {
+          "root": "run",
+          "file": "java-coverage/java_coverage.json",
+          "pointer": "/tests/0",
+          "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+        },
+        {
+          "root": "run",
+          "file": "java-coverage/java_coverage.json",
+          "pointer": "/tests/1",
+          "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/10",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/15",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "03-project-materials/final/project_materials.json",
+          "pointer": "",
+          "purpose": "核对暂定接口与准备约定"
+        }
+      ],
+      "depends_on": [],
+      "unresolved": [
+        "目标业务接口尚未核对"
+      ],
+      "result": {
+        "task_id": "T01",
+        "packet_sha256": "23df121063081b271430bb8481e4e4002feaf927f3c5a40dc705205a284fb120",
+        "code": "return PointsWallet(100i32)",
+        "imports": [],
+        "unresolved": [
+          "目标接口尚未核对"
+        ]
+      }
+    },
+    "T02": {
+      "mapping": {
+        "source_members_file": "02-java-skeleton/members.json",
+        "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#setup()",
+        "target_file": "wallet/points_wallet_test.cj",
+        "target_member": "setup",
+        "target_signature": "private func setup(): Unit",
+        "status": "mapped",
+        "fill_slot": "body",
+        "slot_id": "T02",
+        "adaptation": "目标业务接口暂定"
+      },
+      "file": "wallet/points_wallet_test.cj",
+      "source": "{\n        wallet = newWallet();\n    }",
+      "status": "applied",
+      "refs": [
+        {
+          "root": "run",
+          "file": "java-coverage/java_coverage.json",
+          "pointer": "/tests/0",
+          "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+        },
+        {
+          "root": "run",
+          "file": "java-coverage/java_coverage.json",
+          "pointer": "/tests/1",
+          "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/6",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/7",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/10",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "03-project-materials/final/project_materials.json",
+          "pointer": "",
+          "purpose": "核对暂定接口与准备约定"
+        }
+      ],
+      "depends_on": [
+        "T01"
+      ],
+      "unresolved": [
+        "目标业务接口尚未核对"
+      ],
+      "result": {
+        "task_id": "T02",
+        "packet_sha256": "b8fbf63488d67891d3b2dbdffe1d500775e0a9e7fee1dcc62850153eee0229d0",
+        "code": "wallet = Some(newWallet())",
+        "imports": [],
+        "unresolved": [
+          "目标接口尚未核对"
+        ]
+      }
+    },
+    "T03": {
+      "mapping": {
+        "source_members_file": "02-java-skeleton/members.json",
+        "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#spendsPointsInOrder()",
+        "target_file": "wallet/points_wallet_test.cj",
+        "target_member": "spendsPointsInOrder",
+        "target_signature": "    func spendsPointsInOrder(): Unit",
+        "status": "mapped",
+        "fill_slot": "body",
+        "slot_id": "T03",
+        "adaptation": "目标业务接口暂定"
+      },
+      "file": "wallet/points_wallet_test.cj",
+      "source": "{\n        assertTrue(wallet.spend(30));\n        assertEquals(70, wallet.balance());\n        assertTrue(wallet.spend(20));\n        assertEquals(50, wallet.balance());\n    }",
+      "status": "applied",
+      "refs": [
+        {
+          "root": "run",
+          "file": "java-coverage/java_coverage.json",
+          "pointer": "/tests/0",
+          "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/6",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/7",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/8",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/13",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/14",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "03-project-materials/final/project_materials.json",
+          "pointer": "",
+          "purpose": "核对暂定接口与准备约定"
+        }
+      ],
+      "depends_on": [
+        "T02"
+      ],
+      "unresolved": [
+        "目标业务接口尚未核对"
+      ],
+      "result": {
+        "task_id": "T03",
+        "packet_sha256": "13af61ab4806ee237facd44f99dd86db38fca0b912f5412c999696b59002ca72",
+        "code": "setup()\nlet prepared = wallet.getOrThrow()\n@Assert(true, prepared.spend(30i32))\n@Assert(70i32, prepared.balance())\n@Assert(true, prepared.spend(20i32))\n@Assert(50i32, prepared.balance())",
+        "imports": [],
+        "unresolved": [
+          "目标接口尚未核对"
+        ]
+      }
+    },
+    "T04": {
+      "mapping": {
+        "source_members_file": "02-java-skeleton/members.json",
+        "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()",
+        "target_file": "wallet/points_wallet_test.cj",
+        "target_member": "rejectsOverspending",
+        "target_signature": "    func rejectsOverspending(): Unit",
+        "status": "mapped",
+        "fill_slot": "body",
+        "slot_id": "T04",
+        "adaptation": "目标业务接口暂定"
+      },
+      "file": "wallet/points_wallet_test.cj",
+      "source": "{\n        assertFalse(wallet.spend(150));\n        assertEquals(100, wallet.balance());\n    }",
+      "status": "applied",
+      "refs": [
+        {
+          "root": "run",
+          "file": "java-coverage/java_coverage.json",
+          "pointer": "/tests/1",
+          "purpose": "复核整次测试实际运行的业务方法，来源按原文判定"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/6",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/7",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/9",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/13",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+          "pointer": "/records/14",
+          "purpose": "核对原始逻辑或相关定义"
+        },
+        {
+          "root": "run",
+          "file": "03-project-materials/final/project_materials.json",
+          "pointer": "",
+          "purpose": "核对暂定接口与准备约定"
+        }
+      ],
+      "depends_on": [
+        "T02"
+      ],
+      "unresolved": [
+        "目标业务接口尚未核对"
+      ],
+      "result": {
+        "task_id": "T04",
+        "packet_sha256": "faaef36fa13d09fb0d9ec40ad391b3e3a72955aa7df876b692b903f7f5e64d88",
+        "code": "setup()\nlet prepared = wallet.getOrThrow()\n@Assert(false, prepared.spend(150i32))\n@Assert(100i32, prepared.balance())",
+        "imports": [],
+        "unresolved": [
+          "目标接口尚未核对"
+        ]
+      }
+    }
+  },
+  "files": {
+    "wallet/points_wallet_test.cj": "f98c34fb0c2faa61fde7f412ae1d9c6973c1b4d7ffa650c2dbdb8c8087c20b25"
+  },
+  "blocked_mappings": []
+}

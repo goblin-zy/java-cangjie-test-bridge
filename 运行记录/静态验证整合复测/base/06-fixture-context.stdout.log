@@ -1,0 +1,22 @@
+{
+  "status": "INDEX_CREATED",
+  "index": "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-index\\project_schema.json",
+  "index_id": "943598eca8d8deee694e92c632c6018f57f6600c9b367c32442172ce4ec005f2",
+  "summary": {
+    "java_files": 5,
+    "types": 5,
+    "members": 7,
+    "references": 4,
+    "resolution_counts": {
+      "resolved_static": 3,
+      "external": 1
+    },
+    "test_methods": 3,
+    "selected_test_methods_declared": 3,
+    "internal_nodes": 10,
+    "recognized_assertions": 2,
+    "assertion_candidates": 0,
+    "compatibility_features": 0
+  },
+  "semantic_problems": 0
+}

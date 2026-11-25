@@ -1,0 +1,275 @@
+[
+  {
+    "name": "01-compile-extractor",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/javac.exe",
+      "-encoding",
+      "UTF-8",
+      "-d",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\extractor-classes",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\Java\u9aa8\u67b6\u63d0\u53d6\u5668\\JavaTestSkeletonExtractor.java"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "02-extract-interval",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "-cp",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\extractor-classes",
+      "JavaTestSkeletonExtractor",
+      "--input",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\test\\java\\org\\ahocorasick\\interval\\IntervalTest.java",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\java-extraction"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "03-context-build",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u4e0a\u4e0b\u6587\u5de5\u5177\\context_tool.py",
+      "build",
+      "--project",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java",
+      "--test-scope",
+      "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+      "--java-members",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\java-extraction\\members.json",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\context-index",
+      "--java",
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "--javac",
+      "C:/Program Files/Java/jdk-17/bin/javac.exe"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "04-context-suite",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u4e0a\u4e0b\u6587\u5de5\u5177\\context_tool.py",
+      "suite",
+      "--index",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\context-index\\project_schema.json",
+      "--target",
+      "org.ahocorasick.interval.IntervalTest",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\context-suite"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "05-extract-fixtures",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "-cp",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\extractor-classes",
+      "JavaTestSkeletonExtractor",
+      "--input",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-project\\src\\test\\java",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-extraction"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "06-fixture-context",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u4e0a\u4e0b\u6587\u5de5\u5177\\context_tool.py",
+      "build",
+      "--project",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-project",
+      "--java-members",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-extraction\\members.json",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-index",
+      "--java",
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "--javac",
+      "C:/Program Files/Java/jdk-17/bin/javac.exe"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "07-inherited-suite",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u4e0a\u4e0b\u6587\u5de5\u5177\\context_tool.py",
+      "suite",
+      "--index",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-index\\project_schema.json",
+      "--target",
+      "p.ChildCase",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-suite"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "08-junit4-semantics",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u4e0a\u4e0b\u6587\u5de5\u5177\\context_tool.py",
+      "initial",
+      "--index",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-index\\project_schema.json",
+      "--target",
+      "p.FourCase",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\four-view"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-reject-stale",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u4e0a\u4e0b\u6587\u5de5\u5177\\context_tool.py",
+      "build",
+      "--project",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\fixture-project",
+      "--java-members",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\stale-members.json",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\stale-index",
+      "--java",
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "--javac",
+      "C:/Program Files/Java/jdk-17/bin/javac.exe"
+    ],
+    "returncode": 1,
+    "expected": 1
+  },
+  {
+    "name": "10-adapt-check-layout",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u96c6\u6210\u9002\u914d\\prepare_skeleton_check.py",
+      "--task",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\whole_task.json",
+      "--output",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\checker-run"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "11-check-skeleton",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u4e3b\u4f53\\\u4ed3\u9889\u9aa8\u67b6\u7ffb\u8bd1\u5668\\check_skeleton.py",
+      "--run",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\checker-run",
+      "--target-source",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\cangjie\\src",
+      "--report",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\structure-check.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "12-cjc-version",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--version"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "13-cj-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\cangjie-run\\src",
+      "-o",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\cangjie-run\\tests.exe",
+      "--diagnostic-format",
+      "noColor"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "14-cj-execute",
+    "command": [
+      "D:\\CodexArtifacts\\static-integration-002\\base\\cangjie-run\\tests.exe"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "15-java-compile",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/javac.exe",
+      "-encoding",
+      "UTF-8",
+      "--release",
+      "17",
+      "-cp",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\java-deps\\junit-4.13.2.jar;D:\\CodexArtifacts\\static-integration-002\\base\\java-deps\\hamcrest-core-1.3.jar",
+      "-d",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\java-test-classes",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\interval\\Interval.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\interval\\Intervalable.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\interval\\IntervalableComparatorByPosition.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\interval\\IntervalableComparatorBySize.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\interval\\IntervalNode.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\interval\\IntervalTree.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\DefaultToken.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\Emit.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\FragmentToken.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\AbstractStatefulEmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\AbstractStatefulPayloadEmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\DefaultEmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\DefaultPayloadEmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\EmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\PayloadEmitDelegateHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\PayloadEmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\StatefulEmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\StatefulPayloadEmitDelegateHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\handler\\StatefulPayloadEmitHandler.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\MatchToken.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\Payload.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\PayloadEmit.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\PayloadFragmentToken.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\PayloadMatchToken.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\PayloadState.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\PayloadToken.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\PayloadTrie.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\State.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\Token.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\Trie.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\main\\java\\org\\ahocorasick\\trie\\TrieConfig.java",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java\\src\\test\\java\\org\\ahocorasick\\interval\\IntervalTest.java"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "16-java-execute",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "-cp",
+      "D:\\CodexArtifacts\\static-integration-002\\base\\java-test-classes;D:\\CodexArtifacts\\static-integration-002\\base\\java-deps\\junit-4.13.2.jar;D:\\CodexArtifacts\\static-integration-002\\base\\java-deps\\hamcrest-core-1.3.jar",
+      "org.junit.runner.JUnitCore",
+      "org.ahocorasick.interval.IntervalTest"
+    ],
+    "returncode": 0,
+    "expected": 0
+  }
+]

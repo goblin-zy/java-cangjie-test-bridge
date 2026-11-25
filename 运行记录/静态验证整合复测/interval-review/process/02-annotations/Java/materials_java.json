@@ -1,0 +1,62 @@
+[
+  {
+    "file": "inputs/0/IntervalTest.java",
+    "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14"
+  },
+  {
+    "file": "inputs/1/IntervalTest.java",
+    "sha256": "d711618e6e166a766ece911d162c90deccdf6e45f8eb47883df68e81b916400f"
+  },
+  {
+    "file": "inputs/2/agent_context.json",
+    "sha256": "62ed2c8269acd06b02854bb3136a819cae1ece8175ef3507de5b60549fd34327"
+  },
+  {
+    "file": "inputs/3/initial_context.json",
+    "sha256": "ba891d2cd505eb76328e5c327cbc205999a6a2c0cd0d70627722f9cf359d060e"
+  },
+  {
+    "file": "inputs/4/shared.json",
+    "sha256": "b85f8f148347aca8fbd48cf9d9b755e54439a678463f3d5888aae227dc3f94ac"
+  },
+  {
+    "file": "inputs/5/tasks.json",
+    "sha256": "665c03fc601b482c8cc1ad06be29e0d543a73d28aa7ac4852ca38055805188ae"
+  },
+  {
+    "file": "inputs/6/test_checkToString-0909431c75bd.json",
+    "sha256": "317644825d429180dbd2658a973d7c290fbae9c619a31523e4985c22c0b96150"
+  },
+  {
+    "file": "inputs/7/test_comparable-01f24b3d83d8.json",
+    "sha256": "9ecd1e3f9e5605ceca8d5abe3286fc1ff6ccaef64e340a3fb26ee837823f7179"
+  },
+  {
+    "file": "inputs/8/test_compareToNegativeTest-39ff2e503f58.json",
+    "sha256": "2df89a9522a3dfa321fb09d106bdc9dbdce55fddc9795864ef027991c0559d50"
+  },
+  {
+    "file": "inputs/9/test_construct-c94991bd5f25.json",
+    "sha256": "59cb2788f981cb403cee54ce555a502e2ff649d4d5e3a238eb328b71b60ebcc1"
+  },
+  {
+    "file": "inputs/10/test_intervalDoesNotOverlap-6a572de90cfb.json",
+    "sha256": "068d121b87c094c34c9fc3bf356049b14b5955b7d6fdc7c909ae6b55dae19974"
+  },
+  {
+    "file": "inputs/11/test_intervaloverlaps-ebb5c412f342.json",
+    "sha256": "f7e4ddb38c332863eeb66308c3eaa1af5bb9e774faafa343cff98e524f841ae5"
+  },
+  {
+    "file": "inputs/12/test_pointDoesNotOverlap-22dd77392235.json",
+    "sha256": "9214f6758c0ff5cae43ebfdf079fd132978b7677af05b7a3595b06e9a33af132"
+  },
+  {
+    "file": "inputs/13/test_pointOverlaps-9d6a9442a969.json",
+    "sha256": "4d2c0265ca522631513be171056fbf2c1290216d950a6cca244fba8ae51153e0"
+  },
+  {
+    "file": "inputs/14/test_size-c39dde96373e.json",
+    "sha256": "694fb89dc0bb3a252892c983fefc5b9162e180fa4039b173a25fef382d785764"
+  }
+]

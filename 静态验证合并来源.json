@@ -1,0 +1,19 @@
+{
+  "branch": "hzy-week11-Static-Validation",
+  "commit": "a787dc79e94155757b9a91939b064d56c1dfce1b",
+  "base_integration": "df41dae4684697538edc6fb926a0e4a4b089d360",
+  "upstream_source": "主体/静态验证/src",
+  "upstream_records": "运行记录/静态验证",
+  "wallet_fixture": "样例材料/静态验证钱包/Translation-all",
+  "history_note": "静态验证分支使用独立历史，以merge保留双方提交来源",
+  "unchanged_core_sha256": {
+    "verify_tool.py": "bc28193899eb92bbc687a1b95fefb317531a64a89a3eadcf84964b11928115ea",
+    "workflow.py": "d5fe2193dffeafebce8abfeb3a2a3758c2974251e32f62ebd805ead213ee0d2f",
+    "comparison.py": "24915876b0df33003ca6340054dbda84ee1ce621e60c21ae8dff992e2187bf4e",
+    "locating.py": "faa98a2cadce48622a5fd090a5155d24dfccb3ffaf415629005fa4c3bc44e521"
+  },
+  "adapted_source": [
+    "alignment.py: 可配置成员表、第二版上下文、执行类关联与受阻范围",
+    "tests/test_workflow.py: 使用仓库内样例路径"
+  ]
+}

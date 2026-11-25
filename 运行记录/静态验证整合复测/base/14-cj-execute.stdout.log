@@ -1,0 +1,17 @@
+[?25l[0J7[;r8
+[1F7[9999E8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mahoCorasick4cj[0m, time elapsed: 917300 ns, RESULT:
+    TCS: [33mIntervalTest[0m, time elapsed: 904300 ns, RESULT:
+    [[32m PASSED [0m] CASE: test_construct (220400 ns)
+    [[32m PASSED [0m] CASE: test_size (9900 ns)
+    [[32m PASSED [0m] CASE: test_intervaloverlaps (14300 ns)
+    [[32m PASSED [0m] CASE: test_intervalDoesNotOverlap (7400 ns)
+    [[32m PASSED [0m] CASE: test_pointOverlaps (13400 ns)
+    [[32m PASSED [0m] CASE: test_pointDoesNotOverlap (5500 ns)
+    [[32m PASSED [0m] CASE: test_comparable (201500 ns)
+    [[32m PASSED [0m] CASE: test_checkToString (24900 ns)
+    [[32m PASSED [0m] CASE: test_compareToNegativeTest (6900 ns)
+Summary: TOTAL: 9
+    [32mPASSED[0m: 9, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 0
+--------------------------------------------------------------------------------------------------

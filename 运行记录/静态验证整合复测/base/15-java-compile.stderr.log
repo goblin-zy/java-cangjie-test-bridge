@@ -1,0 +1,7 @@
+D:\CodexArtifacts\week12-integration-20261125\repository\样例材料\Interval双语项目\java\src\main\java\org\ahocorasick\trie\Trie.java:216: 警告: [dep-ann] 未使用 @Deprecated 对已过时的项目进行注释
+        public TrieBuilder caseInsensitive() {
+                           ^
+D:\CodexArtifacts\week12-integration-20261125\repository\样例材料\Interval双语项目\java\src\main\java\org\ahocorasick\trie\Trie.java:224: 警告: [dep-ann] 未使用 @Deprecated 对已过时的项目进行注释
+        public TrieBuilder removeOverlaps() {
+                           ^
+2 个警告

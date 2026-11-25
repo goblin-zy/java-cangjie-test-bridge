@@ -1,0 +1,1 @@
+package p; public class ChildCase extends BaseCase { public void testOwn() { assert value>0; } }

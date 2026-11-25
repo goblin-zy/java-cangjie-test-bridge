@@ -1,0 +1,42 @@
+{
+  "id": "U05",
+  "packet_hash": "b9a500ae477e7a8919ef3ae14d9fbe7bdf33f8d76a0f1353d1dc9de6167fd3bf",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "准备、操作和全部断言",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J022",
+        "J023",
+        "J024"
+      ],
+      "cangjie": [
+        "C026",
+        "C027",
+        "C028"
+      ],
+      "reason": "区间(1,3)对点2调用点重载，要求重叠为真。"
+    },
+    {
+      "kind": "interface",
+      "topic": "真实业务接口与必要结构适配",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J022",
+        "J023",
+        "J024"
+      ],
+      "cangjie": [
+        "C026",
+        "C027",
+        "C028"
+      ],
+      "reason": "区间(1,3)对点2调用点重载，要求重叠为真。",
+      "contract_reference": {
+        "quote": "本轮接口前提（test_pointOverlaps）：区间(1,3)对点2调用点重载，要求重叠为真。",
+        "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+      }
+    }
+  ]
+}

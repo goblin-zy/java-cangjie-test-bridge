@@ -1,0 +1,118 @@
+package wallet;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class PointsWalletTest {
+    // 片段编号：J01
+    // 环节：初始化与准备
+    // 维度：夹具成员
+    // 内容：声明 PointsWallet 类型的 wallet，供 setup 写入，两个测试均通过该字段访问钱包。
+    // 关联：J04 写入；J06–J09、J11–J12 读取
+    // 依据：PointsWalletTest.java:10–10，成员声明
+    // 待确认：无
+    private PointsWallet wallet;
+
+    // 片段编号：J02
+    // 环节：初始化与准备
+    // 维度：辅助工厂
+    // 内容：每次调用都创建初始积分为 100 的新钱包并返回。
+    // 关联：由 J04 调用；为 J06、J11 提供初始余额
+    // 依据：PointsWalletTest.java:12–14，构造器在 PointsWallet.java:6–8 保存初始积分
+    // 待确认：无
+    private PointsWallet newWallet() {
+        return new PointsWallet(100);
+    }
+
+    // 片段编号：J03
+    // 环节：初始化与准备
+    // 维度：生命周期
+    // 内容：JUnit 的 @BeforeEach 指定 setup 在每个测试方法执行前运行。
+    // 关联：为 J05 和 J10 分别安排 J04
+    // 依据：PointsWalletTest.java:16–17，@BeforeEach 修饰 setup
+    // 待确认：无
+    @BeforeEach
+    void setup() {
+        // 片段编号：J04
+        // 环节：初始化与准备
+        // 维度：夹具赋值
+        // 内容：调用 newWallet()，把新钱包写入当前测试的 wallet 字段。
+        // 关联：J02 → J01；两条用例各自从 100 开始
+        // 依据：PointsWalletTest.java:18–18，setup 中唯一的赋值语句
+        // 待确认：无
+        wallet = newWallet();
+    }
+
+    // 片段编号：J05
+    // 环节：初始化与准备
+    // 维度：用例入口
+    // 内容：@Test 标记连续消费用例，方法体依次验证两次消费及每次后的余额。
+    // 关联：承接 J03–J04，依序执行 J06–J09
+    // 依据：PointsWalletTest.java:21–22，@Test 与方法声明
+    // 待确认：无
+    @Test
+    void spendsPointsInOrder() {
+        // 片段编号：J06
+        // 环节：结果检查（被测操作）
+        // 维度：首次消费与成功标志
+        // 内容：对初始余额 100 调用 spend(30)，assertTrue 要求返回 true。
+        // 关联：J04 → 本次扣减 → J07
+        // 依据：PointsWalletTest.java:23–23，PointsWallet.java:10–16 在额度充足时扣减后返回 true
+        // 待确认：无
+        assertTrue(wallet.spend(30));
+        // 片段编号：J07
+        // 环节：结果检查（被测操作）
+        // 维度：中间余额
+        // 内容：读取 wallet.balance()，assertEquals 要求等于 70，检查首次扣减后的状态。
+        // 关联：J06 后、J08 前
+        // 依据：PointsWalletTest.java:24–24，PointsWallet.java:18–20 返回当前 points
+        // 待确认：无
+        assertEquals(70, wallet.balance());
+        // 片段编号：J08
+        // 环节：结果检查（被测操作）
+        // 维度：连续消费与成功标志
+        // 内容：在同一钱包再次调用 spend(20)，assertTrue 要求返回 true。
+        // 关联：承接 J06/J07 的余额 70，结果由下一行核对
+        // 依据：PointsWalletTest.java:25–25，PointsWallet.java:10–16 扣减后返回 true
+        // 待确认：无
+        assertTrue(wallet.spend(20));
+        // 片段编号：J09
+        // 环节：结果检查（被测操作）
+        // 维度：最终余额
+        // 内容：读取同一钱包的余额，assertEquals 要求连续扣除 30 和 20 后为 50。
+        // 关联：J06 → J08 → 本检查
+        // 依据：PointsWalletTest.java:26–26，PointsWallet.java:18–20 读取余额
+        // 待确认：无
+        assertEquals(50, wallet.balance());
+    }
+
+    // 片段编号：J10
+    // 环节：初始化与准备
+    // 维度：用例入口
+    // 内容：@Test 标记超额消费用例，使用 setup 独立准备的钱包。
+    // 关联：J03–J04 → J11、J12
+    // 依据：PointsWalletTest.java:29–30，@Test 与方法声明
+    // 待确认：无
+    @Test
+    void rejectsOverspending() {
+        // 片段编号：J11
+        // 环节：结果检查（被测操作）
+        // 维度：超额消费与拒绝标志
+        // 内容：余额 100 时调用 spend(150)，assertFalse 要求返回 false。
+        // 关联：J04 → 本次拒绝 → J12
+        // 依据：PointsWalletTest.java:31–31，PointsWallet.java:11–14 超额时在扣减之前返回 false
+        // 待确认：无
+        assertFalse(wallet.spend(150));
+        // 片段编号：J12
+        // 环节：结果检查（被测操作）
+        // 维度：失败后的余额
+        // 内容：读取余额，assertEquals 要求仍为初始值 100，检查拒绝操作未改变积分。
+        // 关联：与 J11 共同验证拒绝的返回值和状态
+        // 依据：PointsWalletTest.java:32–32，PointsWallet.java:11–14、18–20 显示超额直接返回及余额读取
+        // 待确认：无
+        assertEquals(100, wallet.balance());
+    }
+}

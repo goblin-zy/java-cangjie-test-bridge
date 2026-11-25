@@ -1,0 +1,161 @@
+// 片段编号：C01
+// 环节：初始化与准备
+// 维度：包
+// 内容：测试声明在 wallet 包内。
+// 关联：作用于整个文件
+// 依据：points_wallet_test.cj 第1–1行：package wallet
+// 待确认：无
+package wallet
+
+// 片段编号：C02
+// 环节：初始化与准备
+// 维度：框架依赖
+// 内容：导入单元测试库及其宏。
+// 关联：支持测试标记及断言
+// 依据：points_wallet_test.cj 第3–4行：import std.unittest.* / import std.unittest.testmacro.*
+// 待确认：无
+import std.unittest.*
+import std.unittest.testmacro.*
+
+// 片段编号：C03
+// 环节：初始化与准备
+// 维度：测试容器
+// 内容：以 @Test 标记 PointsWalletTest 类。
+// 关联：包含下列两个 @TestCase 方法
+// 依据：points_wallet_test.cj 第6–7行：@Test / class PointsWalletTest {
+// 待确认：无
+@Test
+class PointsWalletTest {
+    // 片段编号：C04
+    // 环节：初始化与准备
+    // 维度：夹具状态
+    // 内容：声明可选钱包字段，初值 None。
+    // 关联：setup 写入，测试读出
+    // 依据：points_wallet_test.cj 第8–8行：private var wallet: ?PointsWallet = None
+    // 待确认：无
+    private var wallet: ?PointsWallet = None
+
+    // 片段编号：C05
+    // 环节：初始化与准备
+    // 维度：辅助构造
+    // 内容：newWallet 调用 PointsWallet(100i32) 并返回构造结果。
+    // 关联：供 setup 调用
+    // 依据：points_wallet_test.cj 第10–12行：private func newWallet(): PointsWallet { / return PointsWallet(100i32) / }
+    // 待确认：构造参数的业务含义缺乏目标实现或接口约定佐证。
+    private func newWallet(): PointsWallet {
+        return PointsWallet(100i32)
+    }
+
+    // 片段编号：C06
+    // 环节：初始化与准备
+    // 维度：夹具赋值
+    // 内容：setup 调用 newWallet，以 Some 包装结果写入 wallet。
+    // 关联：两个测试均显式调用
+    // 依据：points_wallet_test.cj 第14–16行：private func setup(): Unit { / wallet = Some(newWallet()) / }
+    // 待确认：无
+    private func setup(): Unit {
+        wallet = Some(newWallet())
+    }
+
+    // 片段编号：C07
+    // 环节：初始化与准备
+    // 维度：测试入口
+    // 内容：以 @TestCase 标记 spendsPointsInOrder 方法。
+    // 关联：spendsPointsInOrder
+    // 依据：points_wallet_test.cj 第18–19行：@TestCase / func spendsPointsInOrder(): Unit {
+    // 待确认：无
+    @TestCase
+    func spendsPointsInOrder(): Unit {
+        // 片段编号：C08
+        // 环节：初始化与准备
+        // 维度：准备调用
+        // 内容：显式执行 setup，为本次测试设置钱包。
+        // 关联：spendsPointsInOrder
+        // 依据：points_wallet_test.cj 第20–20行：setup()
+        // 待确认：无
+        setup()
+        // 片段编号：C09
+        // 环节：初始化与准备
+        // 维度：夹具读取
+        // 内容：从 wallet 调用 getOrThrow() 取得 active，后续操作使用该对象。
+        // 关联：spendsPointsInOrder，依赖前一行 setup
+        // 依据：points_wallet_test.cj 第21–21行：let active = wallet.getOrThrow()
+        // 待确认：无
+        let active = wallet.getOrThrow()
+        // 片段编号：C10
+        // 环节：结果检查（被测操作）
+        // 维度：返回值断言
+        // 内容：调用 active.spend(30i32)，将其返回值与断言中列出的 true 比较。
+        // 关联：spendsPointsInOrder，使用同一 active，按原文顺序执行
+        // 依据：points_wallet_test.cj 第22–22行：@Assert(true, active.spend(30i32))
+        // 待确认：目标业务签名和实现缺失，未核实运行结果。
+        @Assert(true, active.spend(30i32))
+        // 片段编号：C11
+        // 环节：结果检查（被测操作）
+        // 维度：返回值断言
+        // 内容：调用 active.balance()，将其返回值与断言中列出的 70i32 比较。
+        // 关联：spendsPointsInOrder，使用同一 active，按原文顺序执行
+        // 依据：points_wallet_test.cj 第23–23行：@Assert(70i32, active.balance())
+        // 待确认：目标业务签名和实现缺失，未核实运行结果。
+        @Assert(70i32, active.balance())
+        // 片段编号：C12
+        // 环节：结果检查（被测操作）
+        // 维度：返回值断言
+        // 内容：调用 active.spend(20i32)，将其返回值与断言中列出的 true 比较。
+        // 关联：spendsPointsInOrder，使用同一 active，按原文顺序执行
+        // 依据：points_wallet_test.cj 第24–24行：@Assert(true, active.spend(20i32))
+        // 待确认：目标业务签名和实现缺失，未核实运行结果。
+        @Assert(true, active.spend(20i32))
+        // 片段编号：C13
+        // 环节：结果检查（被测操作）
+        // 维度：返回值断言
+        // 内容：调用 active.balance()，将其返回值与断言中列出的 50i32 比较。
+        // 关联：spendsPointsInOrder，使用同一 active，按原文顺序执行
+        // 依据：points_wallet_test.cj 第25–25行：@Assert(50i32, active.balance())
+        // 待确认：目标业务签名和实现缺失，未核实运行结果。
+        @Assert(50i32, active.balance())
+    }
+
+    // 片段编号：C14
+    // 环节：初始化与准备
+    // 维度：测试入口
+    // 内容：以 @TestCase 标记 rejectsOverspending 方法。
+    // 关联：rejectsOverspending
+    // 依据：points_wallet_test.cj 第28–29行：@TestCase / func rejectsOverspending(): Unit {
+    // 待确认：无
+    @TestCase
+    func rejectsOverspending(): Unit {
+        // 片段编号：C15
+        // 环节：初始化与准备
+        // 维度：准备调用
+        // 内容：显式执行 setup，为本次测试设置钱包。
+        // 关联：rejectsOverspending
+        // 依据：points_wallet_test.cj 第30–30行：setup()
+        // 待确认：无
+        setup()
+        // 片段编号：C16
+        // 环节：初始化与准备
+        // 维度：夹具读取
+        // 内容：从 wallet 调用 getOrThrow() 取得 active，后续操作使用该对象。
+        // 关联：rejectsOverspending，依赖前一行 setup
+        // 依据：points_wallet_test.cj 第31–31行：let active = wallet.getOrThrow()
+        // 待确认：无
+        let active = wallet.getOrThrow()
+        // 片段编号：C17
+        // 环节：结果检查（被测操作）
+        // 维度：返回值断言
+        // 内容：调用 active.spend(150i32)，将其返回值与断言中列出的 false 比较。
+        // 关联：rejectsOverspending，使用同一 active，按原文顺序执行
+        // 依据：points_wallet_test.cj 第32–32行：@Assert(false, active.spend(150i32))
+        // 待确认：目标业务签名和实现缺失，未核实运行结果。
+        @Assert(false, active.spend(150i32))
+        // 片段编号：C18
+        // 环节：结果检查（被测操作）
+        // 维度：返回值断言
+        // 内容：调用 active.balance()，将其返回值与断言中列出的 100i32 比较。
+        // 关联：rejectsOverspending，使用同一 active，按原文顺序执行
+        // 依据：points_wallet_test.cj 第33–33行：@Assert(100i32, active.balance())
+        // 待确认：目标业务签名和实现缺失，未核实运行结果。
+        @Assert(100i32, active.balance())
+    }
+}

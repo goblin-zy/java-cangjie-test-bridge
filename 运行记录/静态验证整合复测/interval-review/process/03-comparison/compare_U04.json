@@ -1,0 +1,1596 @@
+{
+  "unit": {
+    "id": "U04",
+    "name": "test_intervalDoesNotOverlap",
+    "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+    "source_file": "original/IntervalTest.java",
+    "test_framework": "junit4",
+    "test_invocations": [
+      {
+        "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+        "declaring_class": "org.ahocorasick.interval.IntervalTest",
+        "execution_class": "org.ahocorasick.interval.IntervalTest",
+        "selector": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+        "framework": "junit4",
+        "basis": "source"
+      }
+    ],
+    "java": [
+      30,
+      33
+    ],
+    "cangjie": [
+      28,
+      31
+    ],
+    "candidates": [
+      [
+        28,
+        31
+      ]
+    ],
+    "mapping": [
+      {
+        "source_members_file": "02-java-skeleton/0/members.json",
+        "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+        "source_location": {
+          "file": "original/IntervalTest.java",
+          "start_offset_utf16": 609,
+          "end_offset_utf16_exclusive": 745,
+          "start_line": 30,
+          "start_column": 5,
+          "end_line": 33,
+          "end_column": 5
+        },
+        "java_skeleton_location": {
+          "file": "skeleton/IntervalTest.java",
+          "start_offset_utf16": 580,
+          "end_offset_utf16_exclusive": 712,
+          "start_line": 28,
+          "start_column": 5,
+          "end_line": 31,
+          "end_column": 5
+        },
+        "target_file": "interval_test.cj",
+        "target_class": "IntervalTest",
+        "target_member": "test_intervalDoesNotOverlap",
+        "target_signature": "func test_intervalDoesNotOverlap(): Unit",
+        "status": "mapped",
+        "fill_slot": "body",
+        "slot_id": "W12_04",
+        "adaptation": "完整测试方法，填充时保留原输入、断言和调用顺序。"
+      }
+    ],
+    "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+  },
+  "route": "whole",
+  "contract": {
+    "status": "assumed",
+    "path": "D:\\CodexArtifacts\\static-integration-002\\interval-review\\process\\01-alignment\\contract\\target_contract.md",
+    "snapshot": "contract/target_contract.md",
+    "sha256": "1b9bf7388ee5206d18297b15ad196bf7a6f2a81aeb18f98318579fef9f7e165f"
+  },
+  "materials": [
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\translation_config.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\members.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\member_mapping.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\agent_context.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\initial_context.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\shared.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tasks.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_checkToString-0909431c75bd.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_comparable-01f24b3d83d8.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_compareToNegativeTest-39ff2e503f58.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_construct-c94991bd5f25.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervalDoesNotOverlap-6a572de90cfb.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervaloverlaps-ebb5c412f342.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointDoesNotOverlap-22dd77392235.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointOverlaps-9d6a9442a969.json",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_size-c39dde96373e.json"
+  ],
+  "sides": {
+    "java": {
+      "file": "IntervalTest.java",
+      "segments": {
+        "J001": {
+          "start": 1,
+          "end": 1,
+          "quote": "package org.ahocorasick.interval;",
+          "片段编号": "J001",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：package org.ahocorasick.interval;",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "IntervalTest.java原文第1行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            8,
+            8
+          ]
+        },
+        "J002": {
+          "start": 3,
+          "end": 3,
+          "quote": "import org.junit.Test;",
+          "片段编号": "J002",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import org.junit.Test;",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "IntervalTest.java原文第3行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            17,
+            17
+          ]
+        },
+        "J003": {
+          "start": 5,
+          "end": 5,
+          "quote": "import java.util.Iterator;",
+          "片段编号": "J003",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import java.util.Iterator;",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "IntervalTest.java原文第5行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            26,
+            26
+          ]
+        },
+        "J004": {
+          "start": 6,
+          "end": 6,
+          "quote": "import java.util.Set;",
+          "片段编号": "J004",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import java.util.Set;",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "IntervalTest.java原文第6行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            34,
+            34
+          ]
+        },
+        "J005": {
+          "start": 7,
+          "end": 7,
+          "quote": "import java.util.TreeSet;",
+          "片段编号": "J005",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import java.util.TreeSet;",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "IntervalTest.java原文第7行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            42,
+            42
+          ]
+        },
+        "J006": {
+          "start": 9,
+          "end": 9,
+          "quote": "import static org.junit.Assert.*;",
+          "片段编号": "J006",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import static org.junit.Assert.*;",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "IntervalTest.java原文第9行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            51,
+            51
+          ]
+        },
+        "J007": {
+          "start": 11,
+          "end": 11,
+          "quote": "public class IntervalTest {",
+          "片段编号": "J007",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public class IntervalTest {",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "IntervalTest.java原文第11行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            60,
+            60
+          ]
+        },
+        "J008": {
+          "start": 13,
+          "end": 13,
+          "quote": "    @Test",
+          "片段编号": "J008",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第13行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            69,
+            69
+          ]
+        },
+        "J009": {
+          "start": 14,
+          "end": 14,
+          "quote": "    public void test_construct() {",
+          "片段编号": "J009",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_construct() {",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第14行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            77,
+            77
+          ]
+        },
+        "J010": {
+          "start": 15,
+          "end": 15,
+          "quote": "        final Interval i = new Interval(1, 3);",
+          "片段编号": "J010",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：final Interval i = new Interval(1, 3);",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第15行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            85,
+            85
+          ]
+        },
+        "J011": {
+          "start": 16,
+          "end": 16,
+          "quote": "        assertEquals(1, i.getStart());",
+          "片段编号": "J011",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(1, i.getStart());",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第16行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            93,
+            93
+          ]
+        },
+        "J012": {
+          "start": 17,
+          "end": 17,
+          "quote": "        assertEquals(3, i.getEnd());",
+          "片段编号": "J012",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(3, i.getEnd());",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第17行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            101,
+            101
+          ]
+        },
+        "J013": {
+          "start": 20,
+          "end": 20,
+          "quote": "    @Test",
+          "片段编号": "J013",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第20行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            111,
+            111
+          ]
+        },
+        "J014": {
+          "start": 21,
+          "end": 21,
+          "quote": "    public void test_size() {",
+          "片段编号": "J014",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_size() {",
+          "关联": "test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第21行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            119,
+            119
+          ]
+        },
+        "J015": {
+          "start": 22,
+          "end": 22,
+          "quote": "        assertEquals(3, new Interval(0, 2).size());",
+          "片段编号": "J015",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(3, new Interval(0, 2).size());",
+          "关联": "test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第22行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            127,
+            127
+          ]
+        },
+        "J016": {
+          "start": 25,
+          "end": 25,
+          "quote": "    @Test",
+          "片段编号": "J016",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第25行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            137,
+            137
+          ]
+        },
+        "J017": {
+          "start": 26,
+          "end": 26,
+          "quote": "    public void test_intervaloverlaps() {",
+          "片段编号": "J017",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_intervaloverlaps() {",
+          "关联": "test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第26行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            145,
+            145
+          ]
+        },
+        "J018": {
+          "start": 27,
+          "end": 27,
+          "quote": "        assertTrue(new Interval(1, 3).overlapsWith(new Interval(2, 4)));",
+          "片段编号": "J018",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertTrue(new Interval(1, 3).overlapsWith(new Interval(2, 4)));",
+          "关联": "test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第27行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            153,
+            153
+          ]
+        },
+        "J019": {
+          "start": 30,
+          "end": 30,
+          "quote": "    @Test",
+          "片段编号": "J019",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第30行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            163,
+            163
+          ]
+        },
+        "J020": {
+          "start": 31,
+          "end": 31,
+          "quote": "    public void test_intervalDoesNotOverlap() {",
+          "片段编号": "J020",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_intervalDoesNotOverlap() {",
+          "关联": "test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第31行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            171,
+            171
+          ]
+        },
+        "J021": {
+          "start": 32,
+          "end": 32,
+          "quote": "        assertFalse(new Interval(1, 13).overlapsWith(new Interval(27, 42)));",
+          "片段编号": "J021",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertFalse(new Interval(1, 13).overlapsWith(new Interval(27, 42)));",
+          "关联": "test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第32行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            179,
+            179
+          ]
+        },
+        "J022": {
+          "start": 35,
+          "end": 35,
+          "quote": "    @Test",
+          "片段编号": "J022",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第35行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            189,
+            189
+          ]
+        },
+        "J023": {
+          "start": 36,
+          "end": 36,
+          "quote": "    public void test_pointOverlaps() {",
+          "片段编号": "J023",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_pointOverlaps() {",
+          "关联": "test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第36行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            197,
+            197
+          ]
+        },
+        "J024": {
+          "start": 37,
+          "end": 37,
+          "quote": "        assertTrue(new Interval(1, 3).overlapsWith(2));",
+          "片段编号": "J024",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertTrue(new Interval(1, 3).overlapsWith(2));",
+          "关联": "test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第37行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            205,
+            205
+          ]
+        },
+        "J025": {
+          "start": 40,
+          "end": 40,
+          "quote": "    @Test",
+          "片段编号": "J025",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第40行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            215,
+            215
+          ]
+        },
+        "J026": {
+          "start": 41,
+          "end": 41,
+          "quote": "    public void test_pointDoesNotOverlap() {",
+          "片段编号": "J026",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_pointDoesNotOverlap() {",
+          "关联": "test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第41行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            223,
+            223
+          ]
+        },
+        "J027": {
+          "start": 42,
+          "end": 42,
+          "quote": "        assertFalse(new Interval(1, 13).overlapsWith(42));",
+          "片段编号": "J027",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertFalse(new Interval(1, 13).overlapsWith(42));",
+          "关联": "test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第42行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            231,
+            231
+          ]
+        },
+        "J028": {
+          "start": 45,
+          "end": 45,
+          "quote": "    @Test",
+          "片段编号": "J028",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第45行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            241,
+            241
+          ]
+        },
+        "J029": {
+          "start": 46,
+          "end": 46,
+          "quote": "    public void test_comparable() {",
+          "片段编号": "J029",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_comparable() {",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第46行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            249,
+            249
+          ]
+        },
+        "J030": {
+          "start": 47,
+          "end": 47,
+          "quote": "        final Set<Interval> intervals = new TreeSet<>();",
+          "片段编号": "J030",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：final Set<Interval> intervals = new TreeSet<>();",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第47行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            257,
+            257
+          ]
+        },
+        "J031": {
+          "start": 48,
+          "end": 48,
+          "quote": "        intervals.add(new Interval(4, 6));",
+          "片段编号": "J031",
+          "环节": "被测操作",
+          "维度": "声明与准备",
+          "内容": "按源码顺序向同一有序集合加入区间：intervals.add(new Interval(4, 6));",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第48行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            265,
+            265
+          ]
+        },
+        "J032": {
+          "start": 49,
+          "end": 49,
+          "quote": "        intervals.add(new Interval(2, 7));",
+          "片段编号": "J032",
+          "环节": "被测操作",
+          "维度": "声明与准备",
+          "内容": "按源码顺序向同一有序集合加入区间：intervals.add(new Interval(2, 7));",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第49行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            273,
+            273
+          ]
+        },
+        "J033": {
+          "start": 50,
+          "end": 50,
+          "quote": "        intervals.add(new Interval(3, 4));",
+          "片段编号": "J033",
+          "环节": "被测操作",
+          "维度": "声明与准备",
+          "内容": "按源码顺序向同一有序集合加入区间：intervals.add(new Interval(3, 4));",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第50行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            281,
+            281
+          ]
+        },
+        "J034": {
+          "start": 51,
+          "end": 51,
+          "quote": "        final Iterator<Interval> it = intervals.iterator();",
+          "片段编号": "J034",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：final Iterator<Interval> it = intervals.iterator();",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第51行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            289,
+            289
+          ]
+        },
+        "J035": {
+          "start": 52,
+          "end": 52,
+          "quote": "        assertEquals(2, it.next().getStart());",
+          "片段编号": "J035",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(2, it.next().getStart());",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第52行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            297,
+            297
+          ]
+        },
+        "J036": {
+          "start": 53,
+          "end": 53,
+          "quote": "        assertEquals(3, it.next().getStart());",
+          "片段编号": "J036",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(3, it.next().getStart());",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第53行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            305,
+            305
+          ]
+        },
+        "J037": {
+          "start": 54,
+          "end": 54,
+          "quote": "        assertEquals(4, it.next().getStart());",
+          "片段编号": "J037",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(4, it.next().getStart());",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第54行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            313,
+            313
+          ]
+        },
+        "J038": {
+          "start": 57,
+          "end": 57,
+          "quote": "    @Test",
+          "片段编号": "J038",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第57行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            323,
+            323
+          ]
+        },
+        "J039": {
+          "start": 58,
+          "end": 58,
+          "quote": "    public void test_checkToString() {",
+          "片段编号": "J039",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_checkToString() {",
+          "关联": "test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第58行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            331,
+            331
+          ]
+        },
+        "J040": {
+          "start": 59,
+          "end": 59,
+          "quote": "        assertEquals(\"4:6\", new Interval(4, 6).toString());",
+          "片段编号": "J040",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(\"4:6\", new Interval(4, 6).toString());",
+          "关联": "test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第59行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            339,
+            339
+          ]
+        },
+        "J041": {
+          "start": 62,
+          "end": 62,
+          "quote": "    @Test",
+          "片段编号": "J041",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第62行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            349,
+            349
+          ]
+        },
+        "J042": {
+          "start": 63,
+          "end": 63,
+          "quote": "    public void test_compareToNegativeTest() {",
+          "片段编号": "J042",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public void test_compareToNegativeTest() {",
+          "关联": "test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第63行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            357,
+            357
+          ]
+        },
+        "J043": {
+          "start": 64,
+          "end": 64,
+          "quote": "        assertEquals(-1, new Interval(4, 6).compareTo(new Object()));",
+          "片段编号": "J043",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：assertEquals(-1, new Interval(4, 6).compareTo(new Object()));",
+          "关联": "test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "IntervalTest.java原文第64行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            365,
+            365
+          ]
+        }
+      },
+      "context": {
+        "sources": [
+          {
+            "file": "inputs/0/IntervalTest.java",
+            "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+          },
+          {
+            "file": "inputs/1/IntervalTest.java",
+            "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+          },
+          {
+            "file": "inputs/2/agent_context.json",
+            "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+          }
+        ],
+        "unknowns": [],
+        "analysis_mode": "CURRENT_AGENT_FIXED_REVIEW_NO_INDEPENDENT_BLIND_SESSIONS"
+      },
+      "edit_check": {
+        "original_sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+        "annotated_sha256": "6965444134032f987f6d8f6d7069c86a7337320a82f6e93263a8c8ac05a47453",
+        "restored_original": true,
+        "segments": 43
+      }
+    },
+    "cangjie": {
+      "file": "interval_test.cj",
+      "segments": {
+        "C001": {
+          "start": 1,
+          "end": 1,
+          "quote": "package ahoCorasick4cj",
+          "片段编号": "C001",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：package ahoCorasick4cj",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第1行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            8,
+            8
+          ]
+        },
+        "C002": {
+          "start": 2,
+          "end": 2,
+          "quote": "import std.collection.*",
+          "片段编号": "C002",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import std.collection.*",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第2行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            16,
+            16
+          ]
+        },
+        "C003": {
+          "start": 3,
+          "end": 3,
+          "quote": "import std.unittest.*",
+          "片段编号": "C003",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import std.unittest.*",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第3行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            24,
+            24
+          ]
+        },
+        "C004": {
+          "start": 4,
+          "end": 4,
+          "quote": "import std.unittest.testmacro.*",
+          "片段编号": "C004",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：import std.unittest.testmacro.*",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第4行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            32,
+            32
+          ]
+        },
+        "C005": {
+          "start": 6,
+          "end": 6,
+          "quote": "private class IntervalBridge <: Comparable<IntervalBridge> {",
+          "片段编号": "C005",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：private class IntervalBridge <: Comparable<IntervalBridge> {",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第6行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            41,
+            41
+          ]
+        },
+        "C006": {
+          "start": 7,
+          "end": 7,
+          "quote": "    public let interval: Interval",
+          "片段编号": "C006",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public let interval: Interval",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第7行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            49,
+            49
+          ]
+        },
+        "C007": {
+          "start": 8,
+          "end": 8,
+          "quote": "    public init(interval: Interval) { this.interval = interval }",
+          "片段编号": "C007",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：public init(interval: Interval) { this.interval = interval }",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第8行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            57,
+            57
+          ]
+        },
+        "C008": {
+          "start": 9,
+          "end": 9,
+          "quote": "    public func compare(rhs: IntervalBridge): Ordering { return interval.compareTo(rhs.interval).compare(0) }",
+          "片段编号": "C008",
+          "环节": "被测操作",
+          "维度": "声明与准备",
+          "内容": "委托真实业务compareTo，再把比较结果转换为Ordering。",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第9行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            65,
+            65
+          ]
+        },
+        "C009": {
+          "start": 11,
+          "end": 11,
+          "quote": "private class UnrelatedValue { public init() {} }",
+          "片段编号": "C009",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：private class UnrelatedValue { public init() {} }",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第11行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            74,
+            74
+          ]
+        },
+        "C010": {
+          "start": 12,
+          "end": 12,
+          "quote": "@Test",
+          "片段编号": "C010",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@Test",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第12行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            82,
+            82
+          ]
+        },
+        "C011": {
+          "start": 13,
+          "end": 13,
+          "quote": "class IntervalTest {",
+          "片段编号": "C011",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：class IntervalTest {",
+          "关联": "供本类测试使用的包、框架、声明或辅助结构。",
+          "依据": "interval_test.cj原文第13行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            90,
+            90
+          ]
+        },
+        "C012": {
+          "start": 14,
+          "end": 14,
+          "quote": "    @TestCase",
+          "片段编号": "C012",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第14行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            98,
+            98
+          ]
+        },
+        "C013": {
+          "start": 15,
+          "end": 15,
+          "quote": "    func test_construct(): Unit {",
+          "片段编号": "C013",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_construct(): Unit {",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第15行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            106,
+            106
+          ]
+        },
+        "C014": {
+          "start": 16,
+          "end": 16,
+          "quote": "        let interval = Interval(1, 3)",
+          "片段编号": "C014",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：let interval = Interval(1, 3)",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第16行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            114,
+            114
+          ]
+        },
+        "C015": {
+          "start": 17,
+          "end": 17,
+          "quote": "        @Assert(Int32(1), interval.getStart())",
+          "片段编号": "C015",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Int32(1), interval.getStart())",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第17行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            122,
+            122
+          ]
+        },
+        "C016": {
+          "start": 18,
+          "end": 18,
+          "quote": "        @Assert(Int32(3), interval.getEnd())",
+          "片段编号": "C016",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Int32(3), interval.getEnd())",
+          "关联": "test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第18行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            130,
+            130
+          ]
+        },
+        "C017": {
+          "start": 20,
+          "end": 20,
+          "quote": "    @TestCase",
+          "片段编号": "C017",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第20行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            139,
+            139
+          ]
+        },
+        "C018": {
+          "start": 21,
+          "end": 21,
+          "quote": "    func test_size(): Unit {",
+          "片段编号": "C018",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_size(): Unit {",
+          "关联": "test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第21行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            147,
+            147
+          ]
+        },
+        "C019": {
+          "start": 22,
+          "end": 22,
+          "quote": "        @Assert(Int32(3), Interval(0, 2).size())",
+          "片段编号": "C019",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Int32(3), Interval(0, 2).size())",
+          "关联": "test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第22行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            155,
+            155
+          ]
+        },
+        "C020": {
+          "start": 24,
+          "end": 24,
+          "quote": "    @TestCase",
+          "片段编号": "C020",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第24行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            164,
+            164
+          ]
+        },
+        "C021": {
+          "start": 25,
+          "end": 25,
+          "quote": "    func test_intervaloverlaps(): Unit {",
+          "片段编号": "C021",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_intervaloverlaps(): Unit {",
+          "关联": "test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第25行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            172,
+            172
+          ]
+        },
+        "C022": {
+          "start": 26,
+          "end": 26,
+          "quote": "        @Assert(Interval(1, 3).overlapsWith(Interval(2, 4)))",
+          "片段编号": "C022",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Interval(1, 3).overlapsWith(Interval(2, 4)))",
+          "关联": "test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第26行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            180,
+            180
+          ]
+        },
+        "C023": {
+          "start": 28,
+          "end": 28,
+          "quote": "    @TestCase",
+          "片段编号": "C023",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第28行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            189,
+            189
+          ]
+        },
+        "C024": {
+          "start": 29,
+          "end": 29,
+          "quote": "    func test_intervalDoesNotOverlap(): Unit {",
+          "片段编号": "C024",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_intervalDoesNotOverlap(): Unit {",
+          "关联": "test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第29行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            197,
+            197
+          ]
+        },
+        "C025": {
+          "start": 30,
+          "end": 30,
+          "quote": "        @Assert(!Interval(1, 13).overlapsWith(Interval(27, 42)))",
+          "片段编号": "C025",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(!Interval(1, 13).overlapsWith(Interval(27, 42)))",
+          "关联": "test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第30行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            205,
+            205
+          ]
+        },
+        "C026": {
+          "start": 32,
+          "end": 32,
+          "quote": "    @TestCase",
+          "片段编号": "C026",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第32行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            214,
+            214
+          ]
+        },
+        "C027": {
+          "start": 33,
+          "end": 33,
+          "quote": "    func test_pointOverlaps(): Unit {",
+          "片段编号": "C027",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_pointOverlaps(): Unit {",
+          "关联": "test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第33行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            222,
+            222
+          ]
+        },
+        "C028": {
+          "start": 34,
+          "end": 34,
+          "quote": "        @Assert(Interval(1, 3).overlapsWith(Int32(2)))",
+          "片段编号": "C028",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Interval(1, 3).overlapsWith(Int32(2)))",
+          "关联": "test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第34行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            230,
+            230
+          ]
+        },
+        "C029": {
+          "start": 36,
+          "end": 36,
+          "quote": "    @TestCase",
+          "片段编号": "C029",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第36行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            239,
+            239
+          ]
+        },
+        "C030": {
+          "start": 37,
+          "end": 37,
+          "quote": "    func test_pointDoesNotOverlap(): Unit {",
+          "片段编号": "C030",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_pointDoesNotOverlap(): Unit {",
+          "关联": "test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第37行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            247,
+            247
+          ]
+        },
+        "C031": {
+          "start": 38,
+          "end": 38,
+          "quote": "        @Assert(!Interval(1, 13).overlapsWith(Int32(42)))",
+          "片段编号": "C031",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(!Interval(1, 13).overlapsWith(Int32(42)))",
+          "关联": "test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第38行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            255,
+            255
+          ]
+        },
+        "C032": {
+          "start": 40,
+          "end": 40,
+          "quote": "    @TestCase",
+          "片段编号": "C032",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第40行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            264,
+            264
+          ]
+        },
+        "C033": {
+          "start": 41,
+          "end": 41,
+          "quote": "    func test_comparable(): Unit {",
+          "片段编号": "C033",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_comparable(): Unit {",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第41行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            272,
+            272
+          ]
+        },
+        "C034": {
+          "start": 42,
+          "end": 42,
+          "quote": "        let ordered = TreeSet<IntervalBridge>()",
+          "片段编号": "C034",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：let ordered = TreeSet<IntervalBridge>()",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第42行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            280,
+            280
+          ]
+        },
+        "C035": {
+          "start": 43,
+          "end": 43,
+          "quote": "        ordered.add(IntervalBridge(Interval(4, 6)))",
+          "片段编号": "C035",
+          "环节": "被测操作",
+          "维度": "声明与准备",
+          "内容": "按源码顺序向同一有序集合加入区间：ordered.add(IntervalBridge(Interval(4, 6)))",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第43行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            288,
+            288
+          ]
+        },
+        "C036": {
+          "start": 44,
+          "end": 44,
+          "quote": "        ordered.add(IntervalBridge(Interval(2, 7)))",
+          "片段编号": "C036",
+          "环节": "被测操作",
+          "维度": "声明与准备",
+          "内容": "按源码顺序向同一有序集合加入区间：ordered.add(IntervalBridge(Interval(2, 7)))",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第44行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            296,
+            296
+          ]
+        },
+        "C037": {
+          "start": 45,
+          "end": 45,
+          "quote": "        ordered.add(IntervalBridge(Interval(3, 4)))",
+          "片段编号": "C037",
+          "环节": "被测操作",
+          "维度": "声明与准备",
+          "内容": "按源码顺序向同一有序集合加入区间：ordered.add(IntervalBridge(Interval(3, 4)))",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第45行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            304,
+            304
+          ]
+        },
+        "C038": {
+          "start": 46,
+          "end": 46,
+          "quote": "        let cursor = ordered.iterator()",
+          "片段编号": "C038",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：let cursor = ordered.iterator()",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第46行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            312,
+            312
+          ]
+        },
+        "C039": {
+          "start": 47,
+          "end": 47,
+          "quote": "        @Assert(Int32(2), cursor.next().getOrThrow().interval.getStart())",
+          "片段编号": "C039",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Int32(2), cursor.next().getOrThrow().interval.getStart())",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第47行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            320,
+            320
+          ]
+        },
+        "C040": {
+          "start": 48,
+          "end": 48,
+          "quote": "        @Assert(Int32(3), cursor.next().getOrThrow().interval.getStart())",
+          "片段编号": "C040",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Int32(3), cursor.next().getOrThrow().interval.getStart())",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第48行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            328,
+            328
+          ]
+        },
+        "C041": {
+          "start": 49,
+          "end": 49,
+          "quote": "        @Assert(Int32(4), cursor.next().getOrThrow().interval.getStart())",
+          "片段编号": "C041",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Int32(4), cursor.next().getOrThrow().interval.getStart())",
+          "关联": "test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第49行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            336,
+            336
+          ]
+        },
+        "C042": {
+          "start": 51,
+          "end": 51,
+          "quote": "    @TestCase",
+          "片段编号": "C042",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第51行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            345,
+            345
+          ]
+        },
+        "C043": {
+          "start": 52,
+          "end": 52,
+          "quote": "    func test_checkToString(): Unit {",
+          "片段编号": "C043",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_checkToString(): Unit {",
+          "关联": "test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第52行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            353,
+            353
+          ]
+        },
+        "C044": {
+          "start": 53,
+          "end": 53,
+          "quote": "        @Assert(\"4:6\", Interval(4, 6).toString())",
+          "片段编号": "C044",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(\"4:6\", Interval(4, 6).toString())",
+          "关联": "test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第53行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            361,
+            361
+          ]
+        },
+        "C045": {
+          "start": 55,
+          "end": 55,
+          "quote": "    @TestCase",
+          "片段编号": "C045",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：@TestCase",
+          "关联": "test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第55行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            370,
+            370
+          ]
+        },
+        "C046": {
+          "start": 56,
+          "end": 56,
+          "quote": "    func test_compareToNegativeTest(): Unit {",
+          "片段编号": "C046",
+          "环节": "初始化与准备",
+          "维度": "声明与准备",
+          "内容": "保留声明、对象或操作：func test_compareToNegativeTest(): Unit {",
+          "关联": "test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第56行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            378,
+            378
+          ]
+        },
+        "C047": {
+          "start": 57,
+          "end": 57,
+          "quote": "        @Assert(Int32(-1), Interval(4, 6).compareTo(UnrelatedValue()))",
+          "片段编号": "C047",
+          "环节": "被测操作（结果检查）",
+          "维度": "断言与操作",
+          "内容": "保留本次调用及断言：@Assert(Int32(-1), Interval(4, 6).compareTo(UnrelatedValue()))",
+          "关联": "test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。",
+          "依据": "interval_test.cj原文第57行",
+          "待确认": "无；完整接口前提见联合比较约定",
+          "annotated": [
+            386,
+            386
+          ]
+        }
+      },
+      "context": {
+        "sources": [
+          {
+            "file": "inputs/0/interval_test.cj",
+            "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+          },
+          {
+            "file": "inputs/1/interval_test.cj",
+            "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+          },
+          {
+            "file": "inputs/10/interval.cj",
+            "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+          },
+          {
+            "file": "inputs/13/intervalable.cj",
+            "reason": "固定回归读取本侧测试、相关业务定义或同版上下文"
+          }
+        ],
+        "unknowns": [],
+        "analysis_mode": "CURRENT_AGENT_FIXED_REVIEW_NO_INDEPENDENT_BLIND_SESSIONS"
+      },
+      "edit_check": {
+        "original_sha256": "3631a2baa1ecc14d4f6cccc9fe97aa0581749b6792acfd84a409f276f7ac12ec",
+        "annotated_sha256": "a4e01d0a67de110a5fd5f8b4692464bfb35a5ee52cf1aea8afb4b7b328fde86b",
+        "restored_original": true,
+        "segments": 47
+      }
+    }
+  },
+  "packet_hash": "df09ac420da32ac77aa283ef8efec4820c3cf8a9e2e0d292d2f0ba327400f864"
+}

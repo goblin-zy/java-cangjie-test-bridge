@@ -1,0 +1,1478 @@
+{
+  "route": "whole",
+  "files": {
+    "java": "IntervalTest.java",
+    "cangjie": "interval_test.cj"
+  },
+  "versions": {
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\java\\src\\test\\java\\org\\ahocorasick\\interval\\IntervalTest.java": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\06-whole-translation\\test\\interval_test.cj": "3631a2baa1ecc14d4f6cccc9fe97aa0581749b6792acfd84a409f276f7ac12ec",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\original\\IntervalTest.java": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\translation_config.json": "acb137300d27140184c6dfc696ae37733a668d08479fa981e82ee457af822e97",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\members.json": "4e5a842ad24f667fc2120a99b05e916f6b8b02dbc47bb708f4a984209f4694fe",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\member_mapping.json": "3b477bd1c700847e3b7bc6dd7ccfc0395181badccd2aa48a99bfb3ee84b2c3b9",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\agent_context.json": "62ed2c8269acd06b02854bb3136a819cae1ece8175ef3507de5b60549fd34327",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\initial_context.json": "ba891d2cd505eb76328e5c327cbc205999a6a2c0cd0d70627722f9cf359d060e",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\shared.json": "b85f8f148347aca8fbd48cf9d9b755e54439a678463f3d5888aae227dc3f94ac",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tasks.json": "665c03fc601b482c8cc1ad06be29e0d543a73d28aa7ac4852ca38055805188ae",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_checkToString-0909431c75bd.json": "317644825d429180dbd2658a973d7c290fbae9c619a31523e4985c22c0b96150",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_comparable-01f24b3d83d8.json": "9ecd1e3f9e5605ceca8d5abe3286fc1ff6ccaef64e340a3fb26ee837823f7179",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_compareToNegativeTest-39ff2e503f58.json": "2df89a9522a3dfa321fb09d106bdc9dbdce55fddc9795864ef027991c0559d50",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_construct-c94991bd5f25.json": "59cb2788f981cb403cee54ce555a502e2ff649d4d5e3a238eb328b71b60ebcc1",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervalDoesNotOverlap-6a572de90cfb.json": "068d121b87c094c34c9fc3bf356049b14b5955b7d6fdc7c909ae6b55dae19974",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_intervaloverlaps-ebb5c412f342.json": "f7e4ddb38c332863eeb66308c3eaa1af5bb9e774faafa343cff98e524f841ae5",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointDoesNotOverlap-22dd77392235.json": "9214f6758c0ff5cae43ebfdf079fd132978b7677af05b7a3595b06e9a33af132",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_pointOverlaps-9d6a9442a969.json": "4d2c0265ca522631513be171056fbf2c1290216d950a6cca244fba8ae51153e0",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\04-test-context\\suite_1\\tests\\test_size-c39dde96373e.json": "694fb89dc0bb3a252892c983fefc5b9162e180fa4039b173a25fef382d785764",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\02-java-skeleton\\0\\skeleton\\IntervalTest.java": "d711618e6e166a766ece911d162c90deccdf6e45f8eb47883df68e81b916400f",
+    "D:\\CodexArtifacts\\static-integration-002\\static-input\\05-cangjie-skeleton\\interval_test.cj": "d15ba8db5de3f920c779d3c998a5a7555e638db6de635e1755abf57edfcd561c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\abstract_stateful_emit_handler.cj": "8ac6b37aa86cbe44a6ef67a289976b599bd8dacf2cc6f3b93fb69cf9fecab04f",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\abstract_stateful_payload_emit_handler.cj": "7779d0212753559e85ca7b4bb13a68645d23c9fcb859fdcb24c92ce92b63002c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_emit_handler.cj": "07ca3de55be34b9d202373e3f4c4051557c59a448133af1059bb89e4bc908f75",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_payload_emit_handler.cj": "687e7b9e6701d8c6f14831de6878a625dd27c355d4744d0787f6ee8c01cf935c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\default_token.cj": "1d114f4f14dc47d490add47531686ffc8d6209fd31728fb4a7271c73d926544c",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\emit.cj": "1a89e9f66d3e9a6df3153365649c547e26fc58024df8d5f275b6feb57aef9040",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\emit_handler.cj": "8c887148e1ae1eaacb41c9621f277b34f21322c124736c26e02b8d1ed85fb488",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\fragment_token.cj": "ae7929e59550a5294a8de22145182fb27c2a5dd21310d4062173f1c2ddd4f564",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval.cj": "36b288af3598c7b56a37a92726bf941ae5a31f244df85cdff90e0debd5bcbe7f",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval_node.cj": "ae7d2ad55edc45a8df0c0ab996c26194b89170022a099a376ad6b3016eea8e91",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval_tree.cj": "825c6550ea0b8fe6ea337522f5de0cce57df90e5163c9386c3127d43a8cd19f9",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\intervalable.cj": "8e629efa6134dfd4251138185c60b241f4bae7120ef213f2f5943fbaafc685ab",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\match_token.cj": "48707ed3d53dcfda7c37cdad0b5314fc77d504e879b27beeb7b1099892083367",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\package.cj": "46d0426154a60f8f66a041d59cf703465f15abb115403ff52d9690f1680e61d1",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload.cj": "f79d16aa0953965925bfb2fd632d579cd4bf5531ee7b3be984075c1779775216",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit.cj": "a11fd77a7795d02f4c25df4b814844cab2a7b8feadf2277e96e790ffb0d190c8",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit_delegate_handler.cj": "67433d96fb51a55b408a661120bdef124db6559d631f217960d413f145fa38b0",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_emit_handler.cj": "90654cf0ff0347a2065cf47aa876c1fe9ceea096be7bb7bcf22fdb33036ad1fc",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_fragment_token.cj": "7809731e6adaafef9ca4e342738b64058f59f7cdbf00d84b0efa94be93b0110e",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_match_token.cj": "56e17c61c176501db981e0711e09840678fbb310e4e9c8b8c87c9487d1709e43",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_state.cj": "c82e929e86254c96ba6c7ed74808477d751f31e704fb9e71ed1542c5b5975c4a",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_token.cj": "0cc8d2ca928fd2ce2c96a1bb83dae592b9ba74aefb2e158714db543c9c087203",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_trie.cj": "0004430342033d306eed3ec8e568587ff48a8674c3e050c884f40887178ee388",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\payload_trie_builder.cj": "fbdfee5e5bb30ee47ed3994db6424968bd3891d9562ee24419b3c5ed3e270723",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\state.cj": "9db67852c57c1693415ff11c262723815c971f0724e7a0ab6fed266d97e4d475",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_emit_handler.cj": "7520573329834e8bec2763daea4f182d2463a3f1837713983ee27713a521bd2e",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_payload_emit_delegate_handler.cj": "335cfd48da47a53e3eb48ec7032a30b15921507a848ebcea2db0573089886a84",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\stateful_payload_emit_handler.cj": "4949535c47529ccc345c6884547769734cc54006fc78e02ba49da82bdf5dbbcf",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\token.cj": "bb96de5dc205d489134f74657b61a634ce78de67717d896d39eaa277b2410cfd",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie.cj": "c0d120e5ccbb880dbe75d8c771c829183a657f8ad4ac73ece351a475a437aa75",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie_builder.cj": "6325003a0cbec09cf009d73709a06867dd841a2ae21915f4deade79848f11ed2",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\trie_config.cj": "a947e157049f7824eeaee8c74581c1a458e71a7f2b319fc3c6b1a05328ec8e62",
+    "D:\\CodexArtifacts\\static-integration-002\\target_contract.md": "1b9bf7388ee5206d18297b15ad196bf7a6f2a81aeb18f98318579fef9f7e165f"
+  },
+  "contract": {
+    "status": "assumed",
+    "path": "D:\\CodexArtifacts\\static-integration-002\\interval-review\\process\\01-alignment\\contract\\target_contract.md",
+    "snapshot": "contract/target_contract.md",
+    "sha256": "1b9bf7388ee5206d18297b15ad196bf7a6f2a81aeb18f98318579fef9f7e165f"
+  },
+  "scope": {
+    "units": [
+      {
+        "id": "U01",
+        "name": "test_construct",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U02",
+        "name": "test_size",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U03",
+        "name": "test_intervaloverlaps",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U04",
+        "name": "test_intervalDoesNotOverlap",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U05",
+        "name": "test_pointOverlaps",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U06",
+        "name": "test_pointDoesNotOverlap",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U07",
+        "name": "test_comparable",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U08",
+        "name": "test_checkToString",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U09",
+        "name": "test_compareToNegativeTest",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      }
+    ],
+    "selected": 9,
+    "compared": 9,
+    "cross_review": {
+      "action": "复用已有依据",
+      "affected": [],
+      "reason": "原测试没有共享字段、生命周期或资源；每条创建自身对象。有序集合适配仅用于comparable测试，已单独核对。"
+    }
+  },
+  "results": [
+    {
+      "id": "U01",
+      "packet_hash": "14aeb8f601ffc0a99749fccfbdbea41c935e1534a7dbedd8b1efab8d13bdedc0",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J008",
+            "J009",
+            "J010",
+            "J011",
+            "J012"
+          ],
+          "cangjie": [
+            "C012",
+            "C013",
+            "C014",
+            "C015",
+            "C016"
+          ],
+          "reason": "构造区间(1,3)，依次检查起点1、终点3；仓颉显式Int32匹配业务签名。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J008",
+            "J009",
+            "J010",
+            "J011",
+            "J012"
+          ],
+          "cangjie": [
+            "C012",
+            "C013",
+            "C014",
+            "C015",
+            "C016"
+          ],
+          "reason": "构造区间(1,3)，依次检查起点1、终点3；仓颉显式Int32匹配业务签名。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_construct）：构造区间(1,3)，依次检查起点1、终点3；仓颉显式Int32匹配业务签名。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_construct",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U02",
+      "packet_hash": "eca3b9c396bb499e248a31e316995fa52305759c9a97f37652512f3c0b70d1f7",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J013",
+            "J014",
+            "J015"
+          ],
+          "cangjie": [
+            "C017",
+            "C018",
+            "C019"
+          ],
+          "reason": "构造区间(0,2)，调用真实size并要求3，保留端点包含的长度语义。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J013",
+            "J014",
+            "J015"
+          ],
+          "cangjie": [
+            "C017",
+            "C018",
+            "C019"
+          ],
+          "reason": "构造区间(0,2)，调用真实size并要求3，保留端点包含的长度语义。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_size）：构造区间(0,2)，调用真实size并要求3，保留端点包含的长度语义。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_size",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U03",
+      "packet_hash": "f3f8a78ded761ec437b02ec242a6da4d47835894800963fa89eadd3a823613fe",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J016",
+            "J017",
+            "J018"
+          ],
+          "cangjie": [
+            "C020",
+            "C021",
+            "C022"
+          ],
+          "reason": "区间(1,3)与(2,4)调用区间重载，要求重叠为真。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J016",
+            "J017",
+            "J018"
+          ],
+          "cangjie": [
+            "C020",
+            "C021",
+            "C022"
+          ],
+          "reason": "区间(1,3)与(2,4)调用区间重载，要求重叠为真。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_intervaloverlaps）：区间(1,3)与(2,4)调用区间重载，要求重叠为真。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_intervaloverlaps",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U04",
+      "packet_hash": "df09ac420da32ac77aa283ef8efec4820c3cf8a9e2e0d292d2f0ba327400f864",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J019",
+            "J020",
+            "J021"
+          ],
+          "cangjie": [
+            "C023",
+            "C024",
+            "C025"
+          ],
+          "reason": "区间(1,13)与(27,42)调用区间重载，要求重叠为假。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J019",
+            "J020",
+            "J021"
+          ],
+          "cangjie": [
+            "C023",
+            "C024",
+            "C025"
+          ],
+          "reason": "区间(1,13)与(27,42)调用区间重载，要求重叠为假。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_intervalDoesNotOverlap）：区间(1,13)与(27,42)调用区间重载，要求重叠为假。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_intervalDoesNotOverlap",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U05",
+      "packet_hash": "b9a500ae477e7a8919ef3ae14d9fbe7bdf33f8d76a0f1353d1dc9de6167fd3bf",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J022",
+            "J023",
+            "J024"
+          ],
+          "cangjie": [
+            "C026",
+            "C027",
+            "C028"
+          ],
+          "reason": "区间(1,3)对点2调用点重载，要求重叠为真。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J022",
+            "J023",
+            "J024"
+          ],
+          "cangjie": [
+            "C026",
+            "C027",
+            "C028"
+          ],
+          "reason": "区间(1,3)对点2调用点重载，要求重叠为真。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_pointOverlaps）：区间(1,3)对点2调用点重载，要求重叠为真。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_pointOverlaps",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U06",
+      "packet_hash": "cfb1b89f07d1e042c80fd35105e7f5e33ac201dd8cd2d4cc8b910672f08dd81e",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J025",
+            "J026",
+            "J027"
+          ],
+          "cangjie": [
+            "C029",
+            "C030",
+            "C031"
+          ],
+          "reason": "区间(1,13)对点42调用点重载，要求重叠为假。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J025",
+            "J026",
+            "J027"
+          ],
+          "cangjie": [
+            "C029",
+            "C030",
+            "C031"
+          ],
+          "reason": "区间(1,13)对点42调用点重载，要求重叠为假。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_pointDoesNotOverlap）：区间(1,13)对点42调用点重载，要求重叠为假。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_pointDoesNotOverlap",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U07",
+      "packet_hash": "37b70f1221867bff74282f0a678562ff62d6a9a31461b68a1b2ac7908e0e74cf",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J028",
+            "J029",
+            "J030",
+            "J031",
+            "J032",
+            "J033",
+            "J034",
+            "J035",
+            "J036",
+            "J037"
+          ],
+          "cangjie": [
+            "C032",
+            "C033",
+            "C034",
+            "C035",
+            "C036",
+            "C037",
+            "C038",
+            "C039",
+            "C040",
+            "C041",
+            "C005",
+            "C008"
+          ],
+          "reason": "按(4,6)、(2,7)、(3,4)顺序放入同一有序集合，推进同一迭代器并依次断言起点2、3、4；IntervalBridge委托真实compareTo并转换Ordering。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J028",
+            "J029",
+            "J030",
+            "J031",
+            "J032",
+            "J033",
+            "J034",
+            "J035",
+            "J036",
+            "J037"
+          ],
+          "cangjie": [
+            "C032",
+            "C033",
+            "C034",
+            "C035",
+            "C036",
+            "C037",
+            "C038",
+            "C039",
+            "C040",
+            "C041",
+            "C005",
+            "C008"
+          ],
+          "reason": "按(4,6)、(2,7)、(3,4)顺序放入同一有序集合，推进同一迭代器并依次断言起点2、3、4；IntervalBridge委托真实compareTo并转换Ordering。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_comparable）：按(4,6)、(2,7)、(3,4)顺序放入同一有序集合，推进同一迭代器并依次断言起点2、3、4；IntervalBridge委托真实compareTo并转换Ordering。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_comparable",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U08",
+      "packet_hash": "88f7cd20300945b2380d9fd73f27122aa788ffabe39ace4d5f8bad293bb77ecc",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J038",
+            "J039",
+            "J040"
+          ],
+          "cangjie": [
+            "C042",
+            "C043",
+            "C044"
+          ],
+          "reason": "构造区间(4,6)，要求真实toString返回4:6。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J038",
+            "J039",
+            "J040"
+          ],
+          "cangjie": [
+            "C042",
+            "C043",
+            "C044"
+          ],
+          "reason": "构造区间(4,6)，要求真实toString返回4:6。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_checkToString）：构造区间(4,6)，要求真实toString返回4:6。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_checkToString",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U09",
+      "packet_hash": "7310d3688bbce2ce58470a4ac68966f1e9a9dec0afe09fd9a2e1211d515dd518",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "准备、操作和全部断言",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J041",
+            "J042",
+            "J043"
+          ],
+          "cangjie": [
+            "C045",
+            "C046",
+            "C047",
+            "C009"
+          ],
+          "reason": "构造区间(4,6)，传入不属于Intervalable的普通对象，要求真实compareTo返回-1；UnrelatedValue承担原new Object()的角色。"
+        },
+        {
+          "kind": "interface",
+          "topic": "真实业务接口与必要结构适配",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J041",
+            "J042",
+            "J043"
+          ],
+          "cangjie": [
+            "C045",
+            "C046",
+            "C047",
+            "C009"
+          ],
+          "reason": "构造区间(4,6)，传入不属于Intervalable的普通对象，要求真实compareTo返回-1；UnrelatedValue承担原new Object()的角色。",
+          "contract_reference": {
+            "quote": "本轮接口前提（test_compareToNegativeTest）：构造区间(4,6)，传入不属于Intervalable的普通对象，要求真实compareTo返回-1；UnrelatedValue承担原new Object()的角色。",
+            "assumption": "使用本轮快照中的Interval业务及测试辅助委托，范围限定于原用例。"
+          }
+        }
+      ],
+      "name": "test_compareToNegativeTest",
+      "status": "在所列前提和范围内一致"
+    }
+  ],
+  "evidence": {
+    "java/J008": {
+      "file": "IntervalTest.java",
+      "original": [
+        13,
+        13
+      ],
+      "annotated": [
+        69,
+        69
+      ],
+      "quote": "    @Test"
+    },
+    "java/J009": {
+      "file": "IntervalTest.java",
+      "original": [
+        14,
+        14
+      ],
+      "annotated": [
+        77,
+        77
+      ],
+      "quote": "    public void test_construct() {"
+    },
+    "java/J010": {
+      "file": "IntervalTest.java",
+      "original": [
+        15,
+        15
+      ],
+      "annotated": [
+        85,
+        85
+      ],
+      "quote": "        final Interval i = new Interval(1, 3);"
+    },
+    "java/J011": {
+      "file": "IntervalTest.java",
+      "original": [
+        16,
+        16
+      ],
+      "annotated": [
+        93,
+        93
+      ],
+      "quote": "        assertEquals(1, i.getStart());"
+    },
+    "java/J012": {
+      "file": "IntervalTest.java",
+      "original": [
+        17,
+        17
+      ],
+      "annotated": [
+        101,
+        101
+      ],
+      "quote": "        assertEquals(3, i.getEnd());"
+    },
+    "cangjie/C012": {
+      "file": "interval_test.cj",
+      "original": [
+        14,
+        14
+      ],
+      "annotated": [
+        98,
+        98
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C013": {
+      "file": "interval_test.cj",
+      "original": [
+        15,
+        15
+      ],
+      "annotated": [
+        106,
+        106
+      ],
+      "quote": "    func test_construct(): Unit {"
+    },
+    "cangjie/C014": {
+      "file": "interval_test.cj",
+      "original": [
+        16,
+        16
+      ],
+      "annotated": [
+        114,
+        114
+      ],
+      "quote": "        let interval = Interval(1, 3)"
+    },
+    "cangjie/C015": {
+      "file": "interval_test.cj",
+      "original": [
+        17,
+        17
+      ],
+      "annotated": [
+        122,
+        122
+      ],
+      "quote": "        @Assert(Int32(1), interval.getStart())"
+    },
+    "cangjie/C016": {
+      "file": "interval_test.cj",
+      "original": [
+        18,
+        18
+      ],
+      "annotated": [
+        130,
+        130
+      ],
+      "quote": "        @Assert(Int32(3), interval.getEnd())"
+    },
+    "java/J013": {
+      "file": "IntervalTest.java",
+      "original": [
+        20,
+        20
+      ],
+      "annotated": [
+        111,
+        111
+      ],
+      "quote": "    @Test"
+    },
+    "java/J014": {
+      "file": "IntervalTest.java",
+      "original": [
+        21,
+        21
+      ],
+      "annotated": [
+        119,
+        119
+      ],
+      "quote": "    public void test_size() {"
+    },
+    "java/J015": {
+      "file": "IntervalTest.java",
+      "original": [
+        22,
+        22
+      ],
+      "annotated": [
+        127,
+        127
+      ],
+      "quote": "        assertEquals(3, new Interval(0, 2).size());"
+    },
+    "cangjie/C017": {
+      "file": "interval_test.cj",
+      "original": [
+        20,
+        20
+      ],
+      "annotated": [
+        139,
+        139
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C018": {
+      "file": "interval_test.cj",
+      "original": [
+        21,
+        21
+      ],
+      "annotated": [
+        147,
+        147
+      ],
+      "quote": "    func test_size(): Unit {"
+    },
+    "cangjie/C019": {
+      "file": "interval_test.cj",
+      "original": [
+        22,
+        22
+      ],
+      "annotated": [
+        155,
+        155
+      ],
+      "quote": "        @Assert(Int32(3), Interval(0, 2).size())"
+    },
+    "java/J016": {
+      "file": "IntervalTest.java",
+      "original": [
+        25,
+        25
+      ],
+      "annotated": [
+        137,
+        137
+      ],
+      "quote": "    @Test"
+    },
+    "java/J017": {
+      "file": "IntervalTest.java",
+      "original": [
+        26,
+        26
+      ],
+      "annotated": [
+        145,
+        145
+      ],
+      "quote": "    public void test_intervaloverlaps() {"
+    },
+    "java/J018": {
+      "file": "IntervalTest.java",
+      "original": [
+        27,
+        27
+      ],
+      "annotated": [
+        153,
+        153
+      ],
+      "quote": "        assertTrue(new Interval(1, 3).overlapsWith(new Interval(2, 4)));"
+    },
+    "cangjie/C020": {
+      "file": "interval_test.cj",
+      "original": [
+        24,
+        24
+      ],
+      "annotated": [
+        164,
+        164
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C021": {
+      "file": "interval_test.cj",
+      "original": [
+        25,
+        25
+      ],
+      "annotated": [
+        172,
+        172
+      ],
+      "quote": "    func test_intervaloverlaps(): Unit {"
+    },
+    "cangjie/C022": {
+      "file": "interval_test.cj",
+      "original": [
+        26,
+        26
+      ],
+      "annotated": [
+        180,
+        180
+      ],
+      "quote": "        @Assert(Interval(1, 3).overlapsWith(Interval(2, 4)))"
+    },
+    "java/J019": {
+      "file": "IntervalTest.java",
+      "original": [
+        30,
+        30
+      ],
+      "annotated": [
+        163,
+        163
+      ],
+      "quote": "    @Test"
+    },
+    "java/J020": {
+      "file": "IntervalTest.java",
+      "original": [
+        31,
+        31
+      ],
+      "annotated": [
+        171,
+        171
+      ],
+      "quote": "    public void test_intervalDoesNotOverlap() {"
+    },
+    "java/J021": {
+      "file": "IntervalTest.java",
+      "original": [
+        32,
+        32
+      ],
+      "annotated": [
+        179,
+        179
+      ],
+      "quote": "        assertFalse(new Interval(1, 13).overlapsWith(new Interval(27, 42)));"
+    },
+    "cangjie/C023": {
+      "file": "interval_test.cj",
+      "original": [
+        28,
+        28
+      ],
+      "annotated": [
+        189,
+        189
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C024": {
+      "file": "interval_test.cj",
+      "original": [
+        29,
+        29
+      ],
+      "annotated": [
+        197,
+        197
+      ],
+      "quote": "    func test_intervalDoesNotOverlap(): Unit {"
+    },
+    "cangjie/C025": {
+      "file": "interval_test.cj",
+      "original": [
+        30,
+        30
+      ],
+      "annotated": [
+        205,
+        205
+      ],
+      "quote": "        @Assert(!Interval(1, 13).overlapsWith(Interval(27, 42)))"
+    },
+    "java/J022": {
+      "file": "IntervalTest.java",
+      "original": [
+        35,
+        35
+      ],
+      "annotated": [
+        189,
+        189
+      ],
+      "quote": "    @Test"
+    },
+    "java/J023": {
+      "file": "IntervalTest.java",
+      "original": [
+        36,
+        36
+      ],
+      "annotated": [
+        197,
+        197
+      ],
+      "quote": "    public void test_pointOverlaps() {"
+    },
+    "java/J024": {
+      "file": "IntervalTest.java",
+      "original": [
+        37,
+        37
+      ],
+      "annotated": [
+        205,
+        205
+      ],
+      "quote": "        assertTrue(new Interval(1, 3).overlapsWith(2));"
+    },
+    "cangjie/C026": {
+      "file": "interval_test.cj",
+      "original": [
+        32,
+        32
+      ],
+      "annotated": [
+        214,
+        214
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C027": {
+      "file": "interval_test.cj",
+      "original": [
+        33,
+        33
+      ],
+      "annotated": [
+        222,
+        222
+      ],
+      "quote": "    func test_pointOverlaps(): Unit {"
+    },
+    "cangjie/C028": {
+      "file": "interval_test.cj",
+      "original": [
+        34,
+        34
+      ],
+      "annotated": [
+        230,
+        230
+      ],
+      "quote": "        @Assert(Interval(1, 3).overlapsWith(Int32(2)))"
+    },
+    "java/J025": {
+      "file": "IntervalTest.java",
+      "original": [
+        40,
+        40
+      ],
+      "annotated": [
+        215,
+        215
+      ],
+      "quote": "    @Test"
+    },
+    "java/J026": {
+      "file": "IntervalTest.java",
+      "original": [
+        41,
+        41
+      ],
+      "annotated": [
+        223,
+        223
+      ],
+      "quote": "    public void test_pointDoesNotOverlap() {"
+    },
+    "java/J027": {
+      "file": "IntervalTest.java",
+      "original": [
+        42,
+        42
+      ],
+      "annotated": [
+        231,
+        231
+      ],
+      "quote": "        assertFalse(new Interval(1, 13).overlapsWith(42));"
+    },
+    "cangjie/C029": {
+      "file": "interval_test.cj",
+      "original": [
+        36,
+        36
+      ],
+      "annotated": [
+        239,
+        239
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C030": {
+      "file": "interval_test.cj",
+      "original": [
+        37,
+        37
+      ],
+      "annotated": [
+        247,
+        247
+      ],
+      "quote": "    func test_pointDoesNotOverlap(): Unit {"
+    },
+    "cangjie/C031": {
+      "file": "interval_test.cj",
+      "original": [
+        38,
+        38
+      ],
+      "annotated": [
+        255,
+        255
+      ],
+      "quote": "        @Assert(!Interval(1, 13).overlapsWith(Int32(42)))"
+    },
+    "java/J028": {
+      "file": "IntervalTest.java",
+      "original": [
+        45,
+        45
+      ],
+      "annotated": [
+        241,
+        241
+      ],
+      "quote": "    @Test"
+    },
+    "java/J029": {
+      "file": "IntervalTest.java",
+      "original": [
+        46,
+        46
+      ],
+      "annotated": [
+        249,
+        249
+      ],
+      "quote": "    public void test_comparable() {"
+    },
+    "java/J030": {
+      "file": "IntervalTest.java",
+      "original": [
+        47,
+        47
+      ],
+      "annotated": [
+        257,
+        257
+      ],
+      "quote": "        final Set<Interval> intervals = new TreeSet<>();"
+    },
+    "java/J031": {
+      "file": "IntervalTest.java",
+      "original": [
+        48,
+        48
+      ],
+      "annotated": [
+        265,
+        265
+      ],
+      "quote": "        intervals.add(new Interval(4, 6));"
+    },
+    "java/J032": {
+      "file": "IntervalTest.java",
+      "original": [
+        49,
+        49
+      ],
+      "annotated": [
+        273,
+        273
+      ],
+      "quote": "        intervals.add(new Interval(2, 7));"
+    },
+    "java/J033": {
+      "file": "IntervalTest.java",
+      "original": [
+        50,
+        50
+      ],
+      "annotated": [
+        281,
+        281
+      ],
+      "quote": "        intervals.add(new Interval(3, 4));"
+    },
+    "java/J034": {
+      "file": "IntervalTest.java",
+      "original": [
+        51,
+        51
+      ],
+      "annotated": [
+        289,
+        289
+      ],
+      "quote": "        final Iterator<Interval> it = intervals.iterator();"
+    },
+    "java/J035": {
+      "file": "IntervalTest.java",
+      "original": [
+        52,
+        52
+      ],
+      "annotated": [
+        297,
+        297
+      ],
+      "quote": "        assertEquals(2, it.next().getStart());"
+    },
+    "java/J036": {
+      "file": "IntervalTest.java",
+      "original": [
+        53,
+        53
+      ],
+      "annotated": [
+        305,
+        305
+      ],
+      "quote": "        assertEquals(3, it.next().getStart());"
+    },
+    "java/J037": {
+      "file": "IntervalTest.java",
+      "original": [
+        54,
+        54
+      ],
+      "annotated": [
+        313,
+        313
+      ],
+      "quote": "        assertEquals(4, it.next().getStart());"
+    },
+    "cangjie/C032": {
+      "file": "interval_test.cj",
+      "original": [
+        40,
+        40
+      ],
+      "annotated": [
+        264,
+        264
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C033": {
+      "file": "interval_test.cj",
+      "original": [
+        41,
+        41
+      ],
+      "annotated": [
+        272,
+        272
+      ],
+      "quote": "    func test_comparable(): Unit {"
+    },
+    "cangjie/C034": {
+      "file": "interval_test.cj",
+      "original": [
+        42,
+        42
+      ],
+      "annotated": [
+        280,
+        280
+      ],
+      "quote": "        let ordered = TreeSet<IntervalBridge>()"
+    },
+    "cangjie/C035": {
+      "file": "interval_test.cj",
+      "original": [
+        43,
+        43
+      ],
+      "annotated": [
+        288,
+        288
+      ],
+      "quote": "        ordered.add(IntervalBridge(Interval(4, 6)))"
+    },
+    "cangjie/C036": {
+      "file": "interval_test.cj",
+      "original": [
+        44,
+        44
+      ],
+      "annotated": [
+        296,
+        296
+      ],
+      "quote": "        ordered.add(IntervalBridge(Interval(2, 7)))"
+    },
+    "cangjie/C037": {
+      "file": "interval_test.cj",
+      "original": [
+        45,
+        45
+      ],
+      "annotated": [
+        304,
+        304
+      ],
+      "quote": "        ordered.add(IntervalBridge(Interval(3, 4)))"
+    },
+    "cangjie/C038": {
+      "file": "interval_test.cj",
+      "original": [
+        46,
+        46
+      ],
+      "annotated": [
+        312,
+        312
+      ],
+      "quote": "        let cursor = ordered.iterator()"
+    },
+    "cangjie/C039": {
+      "file": "interval_test.cj",
+      "original": [
+        47,
+        47
+      ],
+      "annotated": [
+        320,
+        320
+      ],
+      "quote": "        @Assert(Int32(2), cursor.next().getOrThrow().interval.getStart())"
+    },
+    "cangjie/C040": {
+      "file": "interval_test.cj",
+      "original": [
+        48,
+        48
+      ],
+      "annotated": [
+        328,
+        328
+      ],
+      "quote": "        @Assert(Int32(3), cursor.next().getOrThrow().interval.getStart())"
+    },
+    "cangjie/C041": {
+      "file": "interval_test.cj",
+      "original": [
+        49,
+        49
+      ],
+      "annotated": [
+        336,
+        336
+      ],
+      "quote": "        @Assert(Int32(4), cursor.next().getOrThrow().interval.getStart())"
+    },
+    "cangjie/C005": {
+      "file": "interval_test.cj",
+      "original": [
+        6,
+        6
+      ],
+      "annotated": [
+        41,
+        41
+      ],
+      "quote": "private class IntervalBridge <: Comparable<IntervalBridge> {"
+    },
+    "cangjie/C008": {
+      "file": "interval_test.cj",
+      "original": [
+        9,
+        9
+      ],
+      "annotated": [
+        65,
+        65
+      ],
+      "quote": "    public func compare(rhs: IntervalBridge): Ordering { return interval.compareTo(rhs.interval).compare(0) }"
+    },
+    "java/J038": {
+      "file": "IntervalTest.java",
+      "original": [
+        57,
+        57
+      ],
+      "annotated": [
+        323,
+        323
+      ],
+      "quote": "    @Test"
+    },
+    "java/J039": {
+      "file": "IntervalTest.java",
+      "original": [
+        58,
+        58
+      ],
+      "annotated": [
+        331,
+        331
+      ],
+      "quote": "    public void test_checkToString() {"
+    },
+    "java/J040": {
+      "file": "IntervalTest.java",
+      "original": [
+        59,
+        59
+      ],
+      "annotated": [
+        339,
+        339
+      ],
+      "quote": "        assertEquals(\"4:6\", new Interval(4, 6).toString());"
+    },
+    "cangjie/C042": {
+      "file": "interval_test.cj",
+      "original": [
+        51,
+        51
+      ],
+      "annotated": [
+        345,
+        345
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C043": {
+      "file": "interval_test.cj",
+      "original": [
+        52,
+        52
+      ],
+      "annotated": [
+        353,
+        353
+      ],
+      "quote": "    func test_checkToString(): Unit {"
+    },
+    "cangjie/C044": {
+      "file": "interval_test.cj",
+      "original": [
+        53,
+        53
+      ],
+      "annotated": [
+        361,
+        361
+      ],
+      "quote": "        @Assert(\"4:6\", Interval(4, 6).toString())"
+    },
+    "java/J041": {
+      "file": "IntervalTest.java",
+      "original": [
+        62,
+        62
+      ],
+      "annotated": [
+        349,
+        349
+      ],
+      "quote": "    @Test"
+    },
+    "java/J042": {
+      "file": "IntervalTest.java",
+      "original": [
+        63,
+        63
+      ],
+      "annotated": [
+        357,
+        357
+      ],
+      "quote": "    public void test_compareToNegativeTest() {"
+    },
+    "java/J043": {
+      "file": "IntervalTest.java",
+      "original": [
+        64,
+        64
+      ],
+      "annotated": [
+        365,
+        365
+      ],
+      "quote": "        assertEquals(-1, new Interval(4, 6).compareTo(new Object()));"
+    },
+    "cangjie/C045": {
+      "file": "interval_test.cj",
+      "original": [
+        55,
+        55
+      ],
+      "annotated": [
+        370,
+        370
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C046": {
+      "file": "interval_test.cj",
+      "original": [
+        56,
+        56
+      ],
+      "annotated": [
+        378,
+        378
+      ],
+      "quote": "    func test_compareToNegativeTest(): Unit {"
+    },
+    "cangjie/C047": {
+      "file": "interval_test.cj",
+      "original": [
+        57,
+        57
+      ],
+      "annotated": [
+        386,
+        386
+      ],
+      "quote": "        @Assert(Int32(-1), Interval(4, 6).compareTo(UnrelatedValue()))"
+    },
+    "cangjie/C009": {
+      "file": "interval_test.cj",
+      "original": [
+        11,
+        11
+      ],
+      "annotated": [
+        74,
+        74
+      ],
+      "quote": "private class UnrelatedValue { public init() {} }"
+    }
+  },
+  "rechecks": [],
+  "method": "双侧源码静态比较"
+}

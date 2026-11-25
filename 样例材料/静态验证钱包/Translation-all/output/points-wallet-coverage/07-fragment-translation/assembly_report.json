@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "generated": [
+    "wallet/points_wallet_test.cj"
+  ],
+  "incomplete": {},
+  "blocked_mappings": [],
+  "intent_review": "NOT_RUN",
+  "compile": "NOT_RUN",
+  "test_execution": "NOT_RUN"
+}

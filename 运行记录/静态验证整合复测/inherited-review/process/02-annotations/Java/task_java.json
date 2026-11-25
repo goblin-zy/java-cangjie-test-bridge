@@ -1,0 +1,18 @@
+{
+  "side": "java",
+  "source": "inputs/0/ChildCase.java",
+  "units": [
+    {
+      "id": "U01",
+      "lines": null
+    },
+    {
+      "id": "U02",
+      "lines": [
+        1,
+        1
+      ]
+    }
+  ],
+  "instruction": "仅使用本任务列出的输入材料。按源码顺序提交带原文行号的注释与实际查阅记录。"
+}

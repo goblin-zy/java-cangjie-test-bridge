@@ -1,0 +1,14 @@
+{
+  "status": "generated",
+  "compile": "NOT_RUN",
+  "target_package": "wallet",
+  "unresolved": [
+    "缺少仓颉 SDK 与目标业务实现"
+  ],
+  "sources": [
+    "02-java-skeleton/members.json",
+    "04-test-context/PointsWalletTest/context_wallet.PointsWalletTest_53e40b49.json",
+    "03-project-materials/final/project_materials.json",
+    "three-material-get/Rule mapping/translation_rules.json"
+  ]
+}

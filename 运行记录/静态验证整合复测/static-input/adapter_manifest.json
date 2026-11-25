@@ -1,0 +1,13 @@
+{
+  "task": "D:\\CodexArtifacts\\static-integration-002\\whole_task.json",
+  "inputs": [
+    {
+      "source": "D:\\CodexArtifacts\\static-integration-002\\base\\java-extraction\\members.json",
+      "copy": "02-java-skeleton/0/members.json",
+      "sha256": "4e5a842ad24f667fc2120a99b05e916f6b8b02dbc47bb708f4a984209f4694fe"
+    }
+  ],
+  "scope": "PATH_ADAPTATION_COPY_ONLY",
+  "source_member_ids": "UNCHANGED",
+  "config_kind": "week12-checker-native-not-whole-task"
+}

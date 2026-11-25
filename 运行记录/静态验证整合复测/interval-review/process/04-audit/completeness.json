@@ -1,0 +1,65 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "test_construct",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U02",
+      "name": "test_size",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U03",
+      "name": "test_intervaloverlaps",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U04",
+      "name": "test_intervalDoesNotOverlap",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U05",
+      "name": "test_pointOverlaps",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U06",
+      "name": "test_pointDoesNotOverlap",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U07",
+      "name": "test_comparable",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U08",
+      "name": "test_checkToString",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U09",
+      "name": "test_compareToNegativeTest",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    }
+  ],
+  "selected": 9,
+  "compared": 9,
+  "cross_review": {
+    "action": "复用已有依据",
+    "affected": [],
+    "reason": "原测试没有共享字段、生命周期或资源；每条创建自身对象。有序集合适配仅用于comparable测试，已单独核对。"
+  }
+}

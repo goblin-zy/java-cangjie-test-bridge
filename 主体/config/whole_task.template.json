@@ -127,5 +127,16 @@
     "output_dir": null,
     "report": null,
     "native_config_generated_by_adapter": true
+  },
+  "static_validation": {
+    "adapter": "../集成适配/prepare_static_validation.py",
+    "tool": "../静态验证/src/verify_tool.py",
+    "prompt": "../静态验证/src/prompts/验证总控提示词.md",
+    "stage": "AFTER_FINAL_WHOLE_TRANSLATION",
+    "translated_dir": null,
+    "prepared_dir": null,
+    "run_dir": null,
+    "contract": null,
+    "enabled_by_current_task": false
   }
 }

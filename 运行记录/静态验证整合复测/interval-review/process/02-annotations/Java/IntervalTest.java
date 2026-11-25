@@ -1,0 +1,368 @@
+// 片段编号：J001
+// 环节：初始化与准备
+// 维度：声明与准备
+// 内容：保留声明、对象或操作：package org.ahocorasick.interval;
+// 关联：供本类测试使用的包、框架、声明或辅助结构。
+// 依据：IntervalTest.java原文第1行
+// 待确认：无；完整接口前提见联合比较约定
+package org.ahocorasick.interval;
+
+// 片段编号：J002
+// 环节：初始化与准备
+// 维度：声明与准备
+// 内容：保留声明、对象或操作：import org.junit.Test;
+// 关联：供本类测试使用的包、框架、声明或辅助结构。
+// 依据：IntervalTest.java原文第3行
+// 待确认：无；完整接口前提见联合比较约定
+import org.junit.Test;
+
+// 片段编号：J003
+// 环节：初始化与准备
+// 维度：声明与准备
+// 内容：保留声明、对象或操作：import java.util.Iterator;
+// 关联：供本类测试使用的包、框架、声明或辅助结构。
+// 依据：IntervalTest.java原文第5行
+// 待确认：无；完整接口前提见联合比较约定
+import java.util.Iterator;
+// 片段编号：J004
+// 环节：初始化与准备
+// 维度：声明与准备
+// 内容：保留声明、对象或操作：import java.util.Set;
+// 关联：供本类测试使用的包、框架、声明或辅助结构。
+// 依据：IntervalTest.java原文第6行
+// 待确认：无；完整接口前提见联合比较约定
+import java.util.Set;
+// 片段编号：J005
+// 环节：初始化与准备
+// 维度：声明与准备
+// 内容：保留声明、对象或操作：import java.util.TreeSet;
+// 关联：供本类测试使用的包、框架、声明或辅助结构。
+// 依据：IntervalTest.java原文第7行
+// 待确认：无；完整接口前提见联合比较约定
+import java.util.TreeSet;
+
+// 片段编号：J006
+// 环节：初始化与准备
+// 维度：声明与准备
+// 内容：保留声明、对象或操作：import static org.junit.Assert.*;
+// 关联：供本类测试使用的包、框架、声明或辅助结构。
+// 依据：IntervalTest.java原文第9行
+// 待确认：无；完整接口前提见联合比较约定
+import static org.junit.Assert.*;
+
+// 片段编号：J007
+// 环节：初始化与准备
+// 维度：声明与准备
+// 内容：保留声明、对象或操作：public class IntervalTest {
+// 关联：供本类测试使用的包、框架、声明或辅助结构。
+// 依据：IntervalTest.java原文第11行
+// 待确认：无；完整接口前提见联合比较约定
+public class IntervalTest {
+
+    // 片段编号：J008
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第13行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J009
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_construct() {
+    // 关联：test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第14行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_construct() {
+        // 片段编号：J010
+        // 环节：初始化与准备
+        // 维度：声明与准备
+        // 内容：保留声明、对象或操作：final Interval i = new Interval(1, 3);
+        // 关联：test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第15行
+        // 待确认：无；完整接口前提见联合比较约定
+        final Interval i = new Interval(1, 3);
+        // 片段编号：J011
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals(1, i.getStart());
+        // 关联：test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第16行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals(1, i.getStart());
+        // 片段编号：J012
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals(3, i.getEnd());
+        // 关联：test_construct本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第17行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals(3, i.getEnd());
+    }
+
+    // 片段编号：J013
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第20行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J014
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_size() {
+    // 关联：test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第21行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_size() {
+        // 片段编号：J015
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals(3, new Interval(0, 2).size());
+        // 关联：test_size本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第22行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals(3, new Interval(0, 2).size());
+    }
+
+    // 片段编号：J016
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第25行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J017
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_intervaloverlaps() {
+    // 关联：test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第26行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_intervaloverlaps() {
+        // 片段编号：J018
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertTrue(new Interval(1, 3).overlapsWith(new Interval(2, 4)));
+        // 关联：test_intervaloverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第27行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertTrue(new Interval(1, 3).overlapsWith(new Interval(2, 4)));
+    }
+
+    // 片段编号：J019
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第30行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J020
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_intervalDoesNotOverlap() {
+    // 关联：test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第31行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_intervalDoesNotOverlap() {
+        // 片段编号：J021
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertFalse(new Interval(1, 13).overlapsWith(new Interval(27, 42)));
+        // 关联：test_intervalDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第32行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertFalse(new Interval(1, 13).overlapsWith(new Interval(27, 42)));
+    }
+
+    // 片段编号：J022
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第35行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J023
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_pointOverlaps() {
+    // 关联：test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第36行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_pointOverlaps() {
+        // 片段编号：J024
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertTrue(new Interval(1, 3).overlapsWith(2));
+        // 关联：test_pointOverlaps本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第37行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertTrue(new Interval(1, 3).overlapsWith(2));
+    }
+
+    // 片段编号：J025
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第40行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J026
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_pointDoesNotOverlap() {
+    // 关联：test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第41行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_pointDoesNotOverlap() {
+        // 片段编号：J027
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertFalse(new Interval(1, 13).overlapsWith(42));
+        // 关联：test_pointDoesNotOverlap本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第42行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertFalse(new Interval(1, 13).overlapsWith(42));
+    }
+
+    // 片段编号：J028
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第45行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J029
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_comparable() {
+    // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第46行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_comparable() {
+        // 片段编号：J030
+        // 环节：初始化与准备
+        // 维度：声明与准备
+        // 内容：保留声明、对象或操作：final Set<Interval> intervals = new TreeSet<>();
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第47行
+        // 待确认：无；完整接口前提见联合比较约定
+        final Set<Interval> intervals = new TreeSet<>();
+        // 片段编号：J031
+        // 环节：被测操作
+        // 维度：声明与准备
+        // 内容：按源码顺序向同一有序集合加入区间：intervals.add(new Interval(4, 6));
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第48行
+        // 待确认：无；完整接口前提见联合比较约定
+        intervals.add(new Interval(4, 6));
+        // 片段编号：J032
+        // 环节：被测操作
+        // 维度：声明与准备
+        // 内容：按源码顺序向同一有序集合加入区间：intervals.add(new Interval(2, 7));
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第49行
+        // 待确认：无；完整接口前提见联合比较约定
+        intervals.add(new Interval(2, 7));
+        // 片段编号：J033
+        // 环节：被测操作
+        // 维度：声明与准备
+        // 内容：按源码顺序向同一有序集合加入区间：intervals.add(new Interval(3, 4));
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第50行
+        // 待确认：无；完整接口前提见联合比较约定
+        intervals.add(new Interval(3, 4));
+        // 片段编号：J034
+        // 环节：初始化与准备
+        // 维度：声明与准备
+        // 内容：保留声明、对象或操作：final Iterator<Interval> it = intervals.iterator();
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第51行
+        // 待确认：无；完整接口前提见联合比较约定
+        final Iterator<Interval> it = intervals.iterator();
+        // 片段编号：J035
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals(2, it.next().getStart());
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第52行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals(2, it.next().getStart());
+        // 片段编号：J036
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals(3, it.next().getStart());
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第53行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals(3, it.next().getStart());
+        // 片段编号：J037
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals(4, it.next().getStart());
+        // 关联：test_comparable本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第54行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals(4, it.next().getStart());
+    }
+
+    // 片段编号：J038
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第57行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J039
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_checkToString() {
+    // 关联：test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第58行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_checkToString() {
+        // 片段编号：J040
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals("4:6", new Interval(4, 6).toString());
+        // 关联：test_checkToString本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第59行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals("4:6", new Interval(4, 6).toString());
+    }
+
+    // 片段编号：J041
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：@Test
+    // 关联：test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第62行
+    // 待确认：无；完整接口前提见联合比较约定
+    @Test
+    // 片段编号：J042
+    // 环节：初始化与准备
+    // 维度：声明与准备
+    // 内容：保留声明、对象或操作：public void test_compareToNegativeTest() {
+    // 关联：test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。
+    // 依据：IntervalTest.java原文第63行
+    // 待确认：无；完整接口前提见联合比较约定
+    public void test_compareToNegativeTest() {
+        // 片段编号：J043
+        // 环节：被测操作（结果检查）
+        // 维度：断言与操作
+        // 内容：保留本次调用及断言：assertEquals(-1, new Interval(4, 6).compareTo(new Object()));
+        // 关联：test_compareToNegativeTest本侧的对象、调用或检查；结合本侧相邻语句阅读。
+        // 依据：IntervalTest.java原文第64行
+        // 待确认：无；完整接口前提见联合比较约定
+        assertEquals(-1, new Interval(4, 6).compareTo(new Object()));
+    }
+
+}

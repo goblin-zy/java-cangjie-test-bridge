@@ -19,3 +19,5 @@
 已知差异：Java 与仓颉构造器对反向区间的处理不同，所选 9 个用例未覆盖该输入。
 
 Java 源码来自原材料登记的 robert-bor/aho-corasick 固定提交 e68720d0afd51093fbba1232edf154ad71a62ac3。原 README、许可、仓颉 LICENSE、README.OpenSource 和版权注释随工程保留。
+
+[静态验证钱包](静态验证钱包/README.md) 补齐原有验证回归的输入；本次三部分整合继续使用 Interval 双语项目。

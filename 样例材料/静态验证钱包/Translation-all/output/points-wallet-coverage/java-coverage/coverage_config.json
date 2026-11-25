@@ -1,0 +1,19 @@
+{
+  "project_root": "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet",
+  "output_dir": "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\java-coverage",
+  "java": "D:\\program_study\\yrys\\environment-config\\tools\\jdk-17\\bin\\java.exe",
+  "junit_jar": "D:\\program_study\\yrys\\environment-config\\libraries\\junit-platform-console-standalone-1.13.4.jar",
+  "agent_jar": "D:\\program_study\\yrys\\environment-config\\tools\\jacoco\\jacocoagent.jar",
+  "cli_jar": "D:\\program_study\\yrys\\environment-config\\tools\\jacoco\\jacococli.jar",
+  "business_classes": [
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\01-project-analysis\\classes\\main"
+  ],
+  "classpath": [
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\01-project-analysis\\classes\\main",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\01-project-analysis\\classes\\test"
+  ],
+  "tests": [
+    "wallet.PointsWalletTest#spendsPointsInOrder",
+    "wallet.PointsWalletTest#rejectsOverspending"
+  ]
+}

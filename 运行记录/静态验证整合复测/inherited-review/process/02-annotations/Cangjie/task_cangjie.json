@@ -1,0 +1,21 @@
+{
+  "side": "cangjie",
+  "source": "inputs/0/inherited.cj",
+  "units": [
+    {
+      "id": "U01",
+      "lines": [
+        6,
+        9
+      ]
+    },
+    {
+      "id": "U02",
+      "lines": [
+        10,
+        13
+      ]
+    }
+  ],
+  "instruction": "仅使用本任务列出的输入材料。按源码顺序提交带原文行号的注释与实际查阅记录。"
+}
