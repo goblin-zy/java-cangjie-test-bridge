@@ -1,0 +1,17 @@
+[?25l[0J7[;r8
+[1F7[9999E8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: ahoCorasick4cj, time elapsed: 778900 ns, RESULT:
+    TCS: IntervalTest, time elapsed: 767400 ns, RESULT:
+    [ PASSED ] CASE: test_construct (186800 ns)
+    [ PASSED ] CASE: test_size (8500 ns)
+    [ PASSED ] CASE: test_intervaloverlaps (12700 ns)
+    [ PASSED ] CASE: test_intervalDoesNotOverlap (6700 ns)
+    [ PASSED ] CASE: test_pointOverlaps (11200 ns)
+    [ PASSED ] CASE: test_pointDoesNotOverlap (4700 ns)
+    [ PASSED ] CASE: test_comparable (173800 ns)
+    [ PASSED ] CASE: test_checkToString (21100 ns)
+    [ PASSED ] CASE: test_compareToNegativeTest (5800 ns)
+Summary: TOTAL: 9
+    PASSED: 9, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

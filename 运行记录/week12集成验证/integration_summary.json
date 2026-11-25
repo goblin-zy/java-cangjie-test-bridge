@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "upstream_commit": "a546d3efbd156e02c4c9d48f2a93a0e9ddc51d29",
+  "source_tests": 9,
+  "context_tests": 9,
+  "skeleton_check": {
+    "status": "passed",
+    "checked_members": 9,
+    "required_members": 9,
+    "slots": 9,
+    "blocked": [],
+    "errors": []
+  },
+  "checks_passed": 21,
+  "commands": 16,
+  "java_tests_passed": 9,
+  "cangjie_tests_passed": 9,
+  "cangjie_sdk": "Cangjie Compiler: 1.2.0 (cjnative)\r\nTarget: x86_64-w64-mingw32",
+  "scope": "Interval class end-to-end plus synthetic interface boundary checks; not all eight upstream projects.",
+  "business_modified": false,
+  "model_api_used": false
+}

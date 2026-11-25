@@ -1,0 +1,3 @@
+package p; import org.junit.Test; public class FourCase { @Test(expected=IllegalArgumentException.class, timeout=250) public void check() {
+    throw new UnsupportedOperationException("SKELETON_PLACEHOLDER");
+} }

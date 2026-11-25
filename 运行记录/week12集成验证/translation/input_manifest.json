@@ -1,0 +1,33 @@
+{
+  "scope": "WEEK12_INTERFACE_INTEGRATION_REPLAY",
+  "inputs": [
+    {
+      "path": "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\Java骨架提取器\\JavaTestSkeletonExtractor.java",
+      "sha256": "d7fefd492124fcc080413b57fd4ec0c82b061f35aef13482ce8f595c8ff44748"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\仓颉骨架翻译器\\check_skeleton.py",
+      "sha256": "5516d9b2a2c8bcde8aca080ce78e5c6eed4ccd103d35b1db5c9a522008ed7069"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\java-extraction\\members.json",
+      "sha256": "4e5a842ad24f667fc2120a99b05e916f6b8b02dbc47bb708f4a984209f4694fe"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\context-index\\project_schema.json",
+      "sha256": "730970787a0bd0f3aa318432ffd170aa9889cb819b74b3a59b831bfe984d81f4"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\skeleton\\member_mapping.json",
+      "sha256": "4cacbc4299cf37d42e14e10c388830badc1890bf05d231a8e0e3864b6d6564b6"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src\\interval.cj",
+      "sha256": "36b288af3598c7b56a37a92726bf941ae5a31f244df85cdff90e0debd5bcbe7f"
+    }
+  ],
+  "rules_and_project_material_generators": "NOT_RUN",
+  "translation_generation": "CURRENT_AGENT_REVIEWED_SOURCE_AND_TARGET_FIXED_REPLAY",
+  "historical_translation_used": false,
+  "model_api_used": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASSED",
+  "tests": 40,
+  "command": [
+    "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "主体/上下文工具/tests",
+    "-v"
+  ],
+  "returncode": 0,
+  "log": "context-regression.log"
+}

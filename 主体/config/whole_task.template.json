@@ -1,6 +1,6 @@
 {
   "schema_version": "whole-translation-task-0.4",
-  "prompt_version": "\u7b2c\u4e8c\u7248",
+  "prompt_version": "第二版",
   "is_template": true,
   "task_id": null,
   "mode": "whole",
@@ -54,7 +54,8 @@
       "preserve_assertion_candidates": true,
       "source_transformation": "UNSUPPORTED",
       "executable_test_prefix_generation": "UNSUPPORTED"
-    }
+    },
+    "java_members": []
   },
   "java_extractions": [
     {
@@ -117,5 +118,14 @@
     "call_model_api_or_server": false,
     "rewrite_java_source": false,
     "generate_executable_test_prefixes": false
+  },
+  "skeleton_structure_check": {
+    "adapter": "../集成适配/prepare_skeleton_check.py",
+    "checker": "../仓颉骨架翻译器/check_skeleton.py",
+    "stage": "BEFORE_WHOLE_FILL",
+    "bundle_id": "skeleton_1",
+    "output_dir": null,
+    "report": null,
+    "native_config_generated_by_adapter": true
   }
 }

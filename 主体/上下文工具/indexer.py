@@ -9,6 +9,7 @@ from common import SCHEMA, VERSION, identity, load, save, sha
 from project_source import scan_project
 from facts import normalize_facts
 from internal_analysis import build_internal_analysis
+from java_members import import_members
 
 TESTS = {"Test": "test", "ParameterizedTest": "parameterized_test", "RepeatedTest": "repeated_test",
          "TestFactory": "dynamic_test", "TestTemplate": "template_test"}
@@ -40,7 +41,7 @@ def annotation_name(name, file, types):
 def build(project_root, output, *, java="java", javac="javac", classpath=(), timeout=300,
           syntax_only=False, materials=None, rules=None, member_map=None,
           business_roots=None, test_roots=None, support_roots=None, resource_roots=None,
-          test_scope=(), exclude=()):
+          test_scope=(), exclude=(), java_members=()):
     """完整构建入口；源码与依赖身份变化时必须构建新目录。
 
     scan_project 保存字节副本；analyze 调用 JavaParser.parse/findAll/resolve；
@@ -144,7 +145,7 @@ def build(project_root, output, *, java="java", javac="javac", classpath=(), tim
             # JUnit3 recognition is deliberately limited to declared TestCase inheritance.
             owner = types.get(member.get("owner_type_key"), {})
             parent_names = owner.get("parent_names", [])
-            if "junit.framework.TestCase" in parent_names and member["kind"] == "method" and not member["parameters"]:
+            if "junit.framework.TestCase" in parent_names and member["kind"] == "method" and not member["parameters"] and "static" not in member["modifiers"]:
                 if member["name"].startswith("test") and member.get("return_type") == "void" and "public" in member["modifiers"]:
                     member["roles"].append("test_junit3")
                 elif member["name"] in {"setUp", "tearDown"}:
@@ -212,6 +213,7 @@ def build(project_root, output, *, java="java", javac="javac", classpath=(), tim
                         node["candidates"] = [k for k in methods_by_name.get(source["name"], [])
                                               if members[k]["kind"] in {"method", "constructor"}]
                 references[source["reference_key"]] = node
+        imported = import_members(java_members, context, project_root, files, types, members, out)
         internal = build_internal_analysis(context.facts, files, types, members, references)
         artifacts = {}
         for name, path in [("materials", materials), ("rules", rules), ("member_map", member_map)]:
@@ -236,7 +238,9 @@ def build(project_root, output, *, java="java", javac="javac", classpath=(), tim
         meta = {"schema_version": SCHEMA, "tool_version": VERSION, "snapshot_id": context.snapshot_id,
                 "source_manifest": "source_manifest.json", "source_manifest_sha256": sha(context.manifest_path),
                 "backend": fingerprint, "artifacts": artifacts,
-                "internal_analyzer_sha256": sha(Path(__file__).with_name("internal_analysis.py"))}
+                "internal_analyzer_sha256": sha(Path(__file__).with_name("internal_analysis.py")),
+                "java_members_adapter_sha256": sha(Path(__file__).with_name("java_members.py")),
+                "java_members": imported}
         index_id = identity(meta)
         schema = {**meta, "index_id": index_id, "summary": summary, "files": files, "types": types, "members": members,
                   "references": references, "internal_analysis": internal, "selected_test_files": context.scope["selected_test_files"],

@@ -26,6 +26,7 @@ def parser():
         b.add_argument("--" + flag, dest=dest, action="append", help="相对项目的目录，可重复")
     b.add_argument("--test-scope", action="append", default=[], help="测试文件相对路径 glob，可重复")
     b.add_argument("--exclude", action="append", default=[])
+    b.add_argument("--java-members", action="append", default=[], help="week12 Java 成员表，可重复；须与本次项目同版")
     for name in ["materials", "rules", "member-map"]:
         b.add_argument("--" + name)
     for name in ["overview", "search", "read", "file", "references", "resolve", "resources", "initial", "suite", "lookup", "analyze", "features"]:

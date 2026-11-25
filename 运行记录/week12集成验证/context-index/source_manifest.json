@@ -1,0 +1,377 @@
+{
+  "schema_version": "context-source-2.0",
+  "project_root": "source",
+  "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+  "inventory": [
+    {
+      "file": ".gitignore",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "0c4674d54ed138a099b6245ba2ce783f36d47b66cbef0f2cef2fb185dc466c1d",
+      "size": 55
+    },
+    {
+      "file": "LICENSE.md",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "6c6ebc5454a777b258931b323a86fbd37c6cb39df192c90d3306b68dd6febd07",
+      "size": 11341
+    },
+    {
+      "file": "README.md",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "2ea83b272283d8febb22e560286155381e528dab1f41a563df759bdcf9040c63",
+      "size": 7494
+    },
+    {
+      "file": "pom.xml",
+      "source_role": "build_config",
+      "parse_input": false,
+      "sha256": "40b129a4df555946878e76c0e0d8d6b49c7ad388b0639544ba96ade6e23a127c",
+      "size": 6318
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+      "size": 2755
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/interval/IntervalNode.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "6297ab4d40bc0792dc141b5dee75fc84d4b76468ad5eacddf04bf7b6d7132d64",
+      "size": 4298
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/interval/IntervalTree.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "75928c182c20d0162d6bd1f3397c3fdbc51044872190e25f37b58aa13b6f030d",
+      "size": 1417
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/interval/Intervalable.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "cd7a5d0382b142bf16a4c27557307deebbafd9e5dd6e0affdd7f3cdb151db886",
+      "size": 140
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/interval/IntervalableComparatorByPosition.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "556fe698859ba3f13c4ac016c05ed1866e2ea07c56ecc3241bee9fb04f503ce5",
+      "size": 332
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/interval/IntervalableComparatorBySize.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c6b1ff5420aae0a5badaa4b7bacd0e78fbb5e950e4703c2be6ba0d700af316f6",
+      "size": 477
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/DefaultToken.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "83b4e250845308c98f2eba78d7a8cfd78166472307866dfa097a6a8035ace838",
+      "size": 524
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/Emit.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c82e2f25ad085f923733373e5dd77e403423685ffd4c74b0f073c9e4fe780101",
+      "size": 596
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/FragmentToken.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "19ba1a6aca70e2b7e5cf5bb1efb6fb203a2498c120dfa21c34560097bbdbccab",
+      "size": 297
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/MatchToken.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "90fedd878212935afc7ca07efd04aaed7e96dacac9695feb4f499b256fee57d8",
+      "size": 374
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/Payload.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "23d9add7b3aee8e499bdbbb91a407590582162f92e49d81cf33febfad5902995",
+      "size": 672
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/PayloadEmit.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "fe75cd39d80622f2fcc157cf7cd483150f5ef5b6259af0383a6c7eea4cf4b328",
+      "size": 1239
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/PayloadFragmentToken.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "b55203092a58eb474d4319771d596bada547689017246072cdbff3a2c7920a54",
+      "size": 664
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/PayloadMatchToken.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "7ddbfb7176bfc61601aaec65b248b334ce841c2ca223922a5baf204bd6b6b2ee",
+      "size": 718
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/PayloadState.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "1337c22e7c1d7a6cd118fe56a2279cdbb4850a0b633d30ed070e2148127b643e",
+      "size": 4003
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/PayloadToken.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "691ca1a269beca8994db6701855966f33cd19b015542a2f7747359e8b2f6c528",
+      "size": 737
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/PayloadTrie.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "a98e209c1a1c8f1200fd71e2ff724bf88fa570860728c25d36aa5c978af8ba51",
+      "size": 16438
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/State.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "59fb45568906e8dbaf17bcdd390efa9be9410292fa2f1090df28f21a33dcc676",
+      "size": 3612
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/Token.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "5a424f84024d7dc854852f4ad87099b593dd23aa37bcf4e4dcc7f67750b19e6d",
+      "size": 317
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/Trie.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "bcfd9263b2ecd4caafa3d7446ce02b612ffe7a961b41ea5e3e2b52292d38ce7c",
+      "size": 7184
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/TrieConfig.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "a45da33d9ea31d60e417a59544204aef0ec08bffeff2267d001b5e1a501ae530",
+      "size": 1336
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/AbstractStatefulEmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "6e6c3bbc045f7986ab6d129bb2a2ac72472c05b7a91cce94357e81580a2b7e0c",
+      "size": 432
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/AbstractStatefulPayloadEmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "3a7a5ab897013dc2b9d04f18ad1e0ea7e8574e284ee50852310d9c2d8192e5df",
+      "size": 489
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/DefaultEmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "cc6fe0b91b6610385903bfac0c610e4a61f670a1e789063def3687aa7a743ecc",
+      "size": 448
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/DefaultPayloadEmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "0a52e0fa5684e54c08e8b20ace8ff7e8c6bc04ea19106c8fdf3e48aaa249be04",
+      "size": 505
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/EmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "1b7e14878427e73562f3edb30188df16b641a2bf3157b8917e909f9c016d8bca",
+      "size": 136
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/PayloadEmitDelegateHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "3715d9fdd4c2035a6ad6bbeba537517e85d344aab0b3ef157286b34fb525ea18",
+      "size": 635
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/PayloadEmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "af5cd8b855915a72deb12577a3bdce4a7b5fe6de153f59808408dafd57cb62ae",
+      "size": 163
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/StatefulEmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "521966188a9aabcbc8d9ddfc3e408adba12a636a2219d4b0f9b495b233819254",
+      "size": 186
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/StatefulPayloadEmitDelegateHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "94853327c3d46a8bb084a1fd5f184985408d8f76b76da8fd4783ec9f58035028",
+      "size": 1232
+    },
+    {
+      "file": "src/main/java/org/ahocorasick/trie/handler/StatefulPayloadEmitHandler.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "552a25002bf0581f87d1436a19d7749de3b3cbe28885fe011353fe2196e23667",
+      "size": 222
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "194c5e4f9f5724a4f9a445bcea4ed58a4a85a55c7b33577463f0ebd6253beb14",
+      "size": 1672
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/interval/IntervalTreeTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "c72d296f05c8214c274124dfc14a969df7ae3f7f374cda410eac4a3ad28fedf4",
+      "size": 1747
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/interval/IntervalableComparatorByPositionTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e841742121ca63cb464ec8727eae640d67a6e55999174b71f8c1a87b7a8134ed",
+      "size": 726
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/interval/IntervalableComparatorBySizeTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "03e7c82192104f18b4c01418ad1213460dd9781ad99cc21e53ee42c57c054448",
+      "size": 1111
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/trie/EmitTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "03b7a0379a203d941789907740ce5d02110a7b2a64fce885bb96f12fac4aac84",
+      "size": 847
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/trie/PayloadTrieTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "9f3ac1ef5acfcac93b7676fb09945f264151197085eebac7f4800da60b30e2e6",
+      "size": 24372
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/trie/StateTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e22ba154f3c555f30c6e95e1f442cddc45acc585eb6b8360470cd7f7a55d8743",
+      "size": 2163
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/trie/TestHelper.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "4bc8037751a3166d68c3c3e942888df9756ec5289ddfcd37f948625d6aef8e31",
+      "size": 1225
+    },
+    {
+      "file": "src/test/java/org/ahocorasick/trie/TrieTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "0cf765d69e9c9481995178c54717d370933227f09737bee1c65ad09340d6b866",
+      "size": 21131
+    },
+    {
+      "file": "\u4ea4\u4ed8\u8bf4\u660e.md",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "8854e0719952654a61f019b289e602bd17c57b5d17e282203b0d372010dbaf5b",
+      "size": 434
+    }
+  ],
+  "scope": {
+    "source_roots": {
+      "business": [
+        "src/main/java"
+      ],
+      "test": [
+        "src/test/java"
+      ],
+      "support": []
+    },
+    "resource_roots": [],
+    "selected_test_files": [
+      "src/test/java/org/ahocorasick/interval/IntervalTest.java"
+    ],
+    "test_scope": [
+      "src/test/java/org/ahocorasick/interval/IntervalTest.java"
+    ],
+    "build_declarations": [
+      {
+        "file": "pom.xml",
+        "kind": "maven",
+        "properties": {
+          "java.version": "1.8",
+          "project.build.sourceEncoding": "UTF-8",
+          "junit.version": "4.13.2",
+          "maven.cobertura.version": "2.5.2",
+          "maven.javadoc.version": "2.8",
+          "maven.project.version": "2.4",
+          "maven.site.plugin.version": "3.3",
+          "project.basedir": ".",
+          "basedir": "."
+        },
+        "source_version_as_declared": null,
+        "dependencies": [
+          {
+            "groupId": "junit",
+            "artifactId": "junit",
+            "version": "4.13.2",
+            "scope": "test"
+          }
+        ],
+        "effective_model": "NOT_EVALUATED"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "kind": "DEPENDENCIES_NOT_RESOLVED",
+      "message": "\u53ea\u4fdd\u5b58\u4f9d\u8d56\u58f0\u660e\uff0c\u672a\u4e0b\u8f7dJAR\u6216\u6c42\u89e3\u8fd0\u884c\u7c7b\u8def\u5f84",
+      "severity": "warning",
+      "file": "pom.xml"
+    }
+  ],
+  "origin": "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\\u6837\u4f8b\u6750\u6599\\Interval\u53cc\u8bed\u9879\u76ee\\java",
+  "transformation": "IDENTITY_ONLY"
+}

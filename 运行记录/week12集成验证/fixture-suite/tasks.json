@@ -1,0 +1,64 @@
+{
+  "schema_version": "test-context-suite-2.0",
+  "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+  "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+  "target_type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+  "shared": {
+    "file": "shared.json",
+    "sha256": "8a7d676191fe5ef50b965c1098bdda0a9c9a307512d75e22d6051d9d12136272"
+  },
+  "tests": [
+    {
+      "test_key": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+      "display_id": "p.ChildCase#testOwn()",
+      "file": "tests/testOwn-f15efbb4ec33.json",
+      "test_invocations": [
+        {
+          "source_member_id": "p/ChildCase.java::p.ChildCase#testOwn()",
+          "declaring_class": "p.ChildCase",
+          "execution_class": "p.ChildCase",
+          "selector": "p.ChildCase#testOwn()",
+          "framework": "junit3",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+          "execution_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+          "declaring_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "p.ChildCase#testOwn()"
+        }
+      ],
+      "sha256": "c248e36a29f7054d5191c52a87a75561b1ed467cc5d155a70e7ab06b5e5caf26",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9",
+      "display_id": "p.BaseCase#testFromBase()",
+      "file": "tests/testFromBase-9c74b46a9b50.json",
+      "test_invocations": [
+        {
+          "source_member_id": "p/BaseCase.java::p.BaseCase#testFromBase()",
+          "declaring_class": "p.BaseCase",
+          "execution_class": "p.ChildCase",
+          "selector": "p.ChildCase#testFromBase()",
+          "framework": "junit3",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9",
+          "execution_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+          "declaring_type_key": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "p.ChildCase#testFromBase()"
+        }
+      ],
+      "sha256": "054dc5a3685ae6cde2147e0fa253ca028019d5bafbf09f738493e18e01846961",
+      "unresolved": 0,
+      "required_not_included": 0
+    }
+  ],
+  "agent_entry": "agent_context.json",
+  "reading_order": [
+    "agent_context.json for whole-class translation",
+    "shared.json + tests/<selected>.json for one-test evidence",
+    "local CLI queries as needed"
+  ]
+}

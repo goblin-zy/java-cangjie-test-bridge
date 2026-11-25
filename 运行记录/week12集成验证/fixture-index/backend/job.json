@@ -1,0 +1,14 @@
+{
+  "source_roots": [
+    "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-index\\source\\src\\test\\java"
+  ],
+  "classpath": [],
+  "syntax_only": false,
+  "files": [
+    "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-index\\source\\src\\test\\java\\fake\\Test.java",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-index\\source\\src\\test\\java\\p\\BaseCase.java",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-index\\source\\src\\test\\java\\p\\ChildCase.java",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-index\\source\\src\\test\\java\\p\\FakeCase.java",
+    "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-index\\source\\src\\test\\java\\p\\FourCase.java"
+  ]
+}

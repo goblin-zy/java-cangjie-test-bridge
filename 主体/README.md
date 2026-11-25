@@ -72,3 +72,15 @@
 组织完整任务使用 [整体流程调用提示词](整体翻译/整体流程调用提示词.md)；进入翻译阶段使用 [整体翻译提示词](整体翻译/translate_whole.md)。通用任务模板在 [config](config/whole_task.template.json)。
 
 源码实现见 [源码指南](源码阅读指南.md)，职责及待实现项见 [流程说明](职责分工与流程.md)，实际结果见 [运行记录](../运行记录/README.md)。
+
+## 三、week12 工具入口
+
+| 文件 | 负责的工作 |
+| --- | --- |
+| Java骨架提取器/JavaTestSkeletonExtractor.java | Java 源码变为声明骨架、原逻辑成员表及源侧执行类关联 |
+| 上下文工具/java_members.py | 校验并接收成员表，关联上下文 key、继承执行类和注解参数 |
+| 仓颉骨架翻译器/骨架翻译提示词.md | Agent 根据材料生成目标骨架及成员映射，已适配第二版上下文 |
+| 仓颉骨架翻译器/check_skeleton.py | 在整体填充前检查声明、映射、槽位和包命名空间 |
+| 集成适配/prepare_skeleton_check.py | 把整体任务复制为检查器要求的目录与配置 |
+
+成员表是上下文的可选输入；要使用 week12 继承入口，应在建索引前提供。同版表冻结到 `artifacts/java-members/`；`project_schema.json.java_members` 和初始上下文中的 `test_invocations` 保存源 ID 与执行入口。完整文件含义及调用时机见 [week12 对接](集成适配/README.md)。

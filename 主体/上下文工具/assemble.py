@@ -128,6 +128,9 @@ def assemble(project, target, profile="whole", max_depth=6, max_members=200, max
         signature_only = member["kind"] in {"method", "constructor"} and (business or profile == "skeleton")
         add(key, "signature" if signature_only else "full", reason)
         roles = set(member["roles"])
+        if member.get("test_execution_semantics"):
+            boundaries.append({"kind": "TEST_EXECUTION_SEMANTICS_REQUIRE_REVIEW", "member": key,
+                               "semantics": member["test_execution_semantics"]})
         if roles.intersection({"parameterized_test", "template_test", "dynamic_test", "repeated_test", "disabled"}):
             boundaries.append({"kind": "TEST_EXECUTION_SEMANTICS_REQUIRE_REVIEW", "member": key,
                                "roles": sorted(roles), "annotation_details": member.get("annotation_details", [])})
@@ -179,6 +182,10 @@ def assemble(project, target, profile="whole", max_depth=6, max_members=200, max
             "input_issues": project.input.summary()["issue_counts"], "semantic_problems": project.data['problems'],
             "profile": profile, "scope": scope, "purpose": PROFILES[profile], "target_type": type_key,
             "selected_tests": [] if scope == "shared" else tests,
+            # 执行类可以是子类，源成员仍属于基类；两种身份都交给 Agent。
+            "test_invocations": [r for r in project.data.get("java_members", {}).get("test_invocations", [])
+                                 if r["execution_type_key"] == type_key and r["source_member_key"] in tests
+                                 and scope != "shared"],
             "imports": imports, "records": records, "dependency_edges": graph, "lifecycle": lifecycle_groups,
             "initialization": sorted(initialization, key=lambda r: (hierarchy.index(r["owner_type_key"]), r["start"])),
             "resources": resources, "unresolved": unresolved, "boundaries": boundaries,
@@ -211,7 +218,7 @@ def write_context(project, value, output, view="compact"):
     for r in reading["records"]:
         paragraphs += ["## " + r["display_id"], json.dumps({k: r[k] for k in ["id", "status", "source"]}, ensure_ascii=False),
                        "```java\n" + r["content"] + "\n```" if r["content"] is not None else r["status"] + ("：" + r["covered_by"] if r.get("covered_by") else "")]
-    fields = ["selected_tests", "imports", "lifecycle", "initialization", "resources", "test_structure", "unresolved", "required_not_included", "boundaries", "budget", "input_issues", "semantic_problems", "semantic_completeness", "artifacts", "limitations"]
+    fields = ["selected_tests", "test_invocations", "imports", "lifecycle", "initialization", "resources", "test_structure", "unresolved", "required_not_included", "boundaries", "budget", "input_issues", "semantic_problems", "semantic_completeness", "artifacts", "limitations"]
     if view == "compact":
         fields += ["covered_by_source", "boundary_counts", "external_interfaces", "bodies_available_on_demand", "dependency_counts"]
     for field in fields:
@@ -268,6 +275,7 @@ def write_suite(project, target, output, max_depth=6, max_members=200, max_chars
         filename = "tests/" + project.members[key]["name"] + "-" + key[:12] + ".json"
         save(folder / filename, value)
         entries.append({"test_key": key, "display_id": project.members[key]["id"], "file": filename,
+                        "test_invocations": value["test_invocations"],
                         "sha256": sha(folder / filename), "unresolved": len(value["unresolved"]),
                         "required_not_included": len(value["required_not_included"])})
     manifest = {"schema_version": "test-context-suite-2.0", "index_id": project.data["index_id"],

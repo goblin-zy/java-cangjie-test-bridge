@@ -1,0 +1,225 @@
+{
+  "schema_version": "test-context-suite-2.0",
+  "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+  "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+  "target_type": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+  "shared": {
+    "file": "shared.json",
+    "sha256": "b85f8f148347aca8fbd48cf9d9b755e54439a678463f3d5888aae227dc3f94ac"
+  },
+  "tests": [
+    {
+      "test_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_construct()",
+      "file": "tests/test_construct-c94991bd5f25.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_construct()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_construct()"
+        }
+      ],
+      "sha256": "59cb2788f981cb403cee54ce555a502e2ff649d4d5e3a238eb328b71b60ebcc1",
+      "unresolved": 2,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_size()",
+      "file": "tests/test_size-c39dde96373e.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_size()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_size()"
+        }
+      ],
+      "sha256": "694fb89dc0bb3a252892c983fefc5b9162e180fa4039b173a25fef382d785764",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+      "file": "tests/test_intervaloverlaps-ebb5c412f342.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()"
+        }
+      ],
+      "sha256": "f7e4ddb38c332863eeb66308c3eaa1af5bb9e774faafa343cff98e524f841ae5",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+      "file": "tests/test_intervalDoesNotOverlap-6a572de90cfb.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()"
+        }
+      ],
+      "sha256": "068d121b87c094c34c9fc3bf356049b14b5955b7d6fdc7c909ae6b55dae19974",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+      "file": "tests/test_pointOverlaps-9d6a9442a969.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_pointOverlaps()"
+        }
+      ],
+      "sha256": "4d2c0265ca522631513be171056fbf2c1290216d950a6cca244fba8ae51153e0",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+      "file": "tests/test_pointDoesNotOverlap-22dd77392235.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()"
+        }
+      ],
+      "sha256": "9214f6758c0ff5cae43ebfdf079fd132978b7677af05b7a3595b06e9a33af132",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+      "file": "tests/test_comparable-01f24b3d83d8.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_comparable()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_comparable()"
+        }
+      ],
+      "sha256": "9ecd1e3f9e5605ceca8d5abe3286fc1ff6ccaef64e340a3fb26ee837823f7179",
+      "unresolved": 3,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+      "file": "tests/test_checkToString-0909431c75bd.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_checkToString()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_checkToString()"
+        }
+      ],
+      "sha256": "317644825d429180dbd2658a973d7c290fbae9c619a31523e4985c22c0b96150",
+      "unresolved": 1,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "display_id": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+      "file": "tests/test_compareToNegativeTest-39ff2e503f58.json",
+      "test_invocations": [
+        {
+          "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+          "declaring_class": "org.ahocorasick.interval.IntervalTest",
+          "execution_class": "org.ahocorasick.interval.IntervalTest",
+          "selector": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+          "execution_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "declaring_type_key": "f8752fd88a26aedb0a35639b230657fb56c4bc15b08c8932355afeef5cef7ee5",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()"
+        }
+      ],
+      "sha256": "2df89a9522a3dfa321fb09d106bdc9dbdce55fddc9795864ef027991c0559d50",
+      "unresolved": 1,
+      "required_not_included": 0
+    }
+  ],
+  "agent_entry": "agent_context.json",
+  "reading_order": [
+    "agent_context.json for whole-class translation",
+    "shared.json + tests/<selected>.json for one-test evidence",
+    "local CLI queries as needed"
+  ]
+}

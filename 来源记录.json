@@ -1,7 +1,7 @@
 {
-  "edition": "\u7b2c\u4e8c\u7248",
+  "edition": "第二版",
   "prepared_on": "2026-11-25",
-  "intended_branch": "\u848b\u9038\u821fweek11",
+  "intended_branch": "codex/jiang-week12-integration",
   "week7_comparison": {
     "scope": "week7/context-lookup",
     "files": {
@@ -90,14 +90,18 @@
     "java/src/test/java/org/ahocorasick/trie/StateTest.java": "e22ba154f3c555f30c6e95e1f442cddc45acc585eb6b8360470cd7f7a55d8743",
     "java/src/test/java/org/ahocorasick/trie/TestHelper.java": "4bc8037751a3166d68c3c3e942888df9756ec5289ddfcd37f948625d6aef8e31",
     "java/src/test/java/org/ahocorasick/trie/TrieTest.java": "0cf765d69e9c9481995178c54717d370933227f09737bee1c65ad09340d6b866",
-    "java/\u4ea4\u4ed8\u8bf4\u660e.md": "8854e0719952654a61f019b289e602bd17c57b5d17e282203b0d372010dbaf5b"
+    "java/交付说明.md": "8854e0719952654a61f019b289e602bd17c57b5d17e282203b0d372010dbaf5b"
   },
   "existing_translation": {
     "sha256": "416380814e0db4db59054656368bd7d804d19e74808f9f0f5384d5edffd97133",
     "generated_by_second_edition_prompt": false
   },
   "notes": [
-    "\u53d1\u884c\u540d\u79f0\u4ec5\u4f7f\u7528\u7b2c\u4e8c\u7248\uff1b\u673a\u5668\u534f\u8bae\u6807\u8bc6\u4e0e\u7b2c\u4e09\u65b9\u4f9d\u8d56\u7248\u672c\u4fdd\u7559\u4ee5\u7ef4\u6301\u517c\u5bb9\u3002",
-    "Java \u548c\u4ed3\u9889\u539f\u59cb\u8bb8\u53ef\u3001\u5de5\u7a0b\u58f0\u660e\u53ca\u6765\u6e90\u6750\u6599\u968f\u6837\u4f8b\u4fdd\u7559\u3002"
-  ]
+    "发行名称仅使用第二版；机器协议标识与第三方依赖版本保留以维持兼容。",
+    "Java 和仓颉原始许可、工程声明及来源材料随样例保留。"
+  ],
+  "week12_integration": {
+    "provenance": "合并来源.json",
+    "record": "运行记录/week12集成验证/README.md"
+  }
 }

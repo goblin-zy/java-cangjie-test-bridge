@@ -1,0 +1,18 @@
+{
+  "status": "CONTENT_INCLUDED",
+  "id": "4c174ff705ff8aded87f09a3f496b9f723388cd4339cc0adababbd44ee97fa11",
+  "display_id": "org.ahocorasick.interval.Interval#overlapsWith(int)",
+  "content_kind": "full",
+  "content": "public boolean overlapsWith(int point) {\n        return this.start <= point && point <= this.end;\n    }",
+  "content_chars": 103,
+  "source": {
+    "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+    "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+    "start_line": 68,
+    "end_line": 70,
+    "start_offset_utf16": 1703,
+    "end_offset_utf16_exclusive": 1806
+  },
+  "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+  "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "context-source-2.0",
+  "project_root": "source",
+  "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+  "inventory": [
+    {
+      "file": "src/test/java/fake/Test.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "f06342463b0d47e75b006d818b9d3e68411ff27b50e39bcf8e28d3ff6931b014",
+      "size": 39
+    },
+    {
+      "file": "src/test/java/p/BaseCase.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+      "size": 237
+    },
+    {
+      "file": "src/test/java/p/ChildCase.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "994de2fda9cd18ead6516f2c4d520538bc4e175103e84110388c8ea532f15b45",
+      "size": 96
+    },
+    {
+      "file": "src/test/java/p/FakeCase.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "44a242682973488ef19c99f1a16cb78f2cd8840039521398354e365639c46397",
+      "size": 85
+    },
+    {
+      "file": "src/test/java/p/FourCase.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e2dbb8c7827d61d682fee3c2b5d583dfdbd8df2fca570cc867cb1501f42b76af",
+      "size": 181
+    }
+  ],
+  "scope": {
+    "source_roots": {
+      "business": [],
+      "test": [
+        "src/test/java"
+      ],
+      "support": []
+    },
+    "resource_roots": [],
+    "selected_test_files": [
+      "src/test/java/fake/Test.java",
+      "src/test/java/p/BaseCase.java",
+      "src/test/java/p/ChildCase.java",
+      "src/test/java/p/FakeCase.java",
+      "src/test/java/p/FourCase.java"
+    ],
+    "test_scope": [],
+    "build_declarations": []
+  },
+  "issues": [],
+  "origin": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-project",
+  "transformation": "IDENTITY_ONLY"
+}

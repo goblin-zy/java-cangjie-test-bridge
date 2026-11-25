@@ -1,0 +1,1 @@
+package fake; public @interface Test {}

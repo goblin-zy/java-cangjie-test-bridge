@@ -1,0 +1,23 @@
+{
+  "status": "SUITE_CREATED_WITH_LIMITATIONS",
+  "json": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-suite\\initial_context.json",
+  "markdown": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-suite\\initial_context.md",
+  "agent_json": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-suite\\agent_context.json",
+  "view": "compact",
+  "recommended_input": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-suite\\agent_context.json",
+  "full_json_bytes": 15266,
+  "agent_json_bytes": 12635,
+  "records": 6,
+  "unresolved": 0,
+  "required_not_included": 0,
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 238,
+    "visited_members": 4
+  },
+  "tests": 2,
+  "tasks": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-suite\\tasks.json",
+  "shared": "D:\\CodexArtifacts\\week12-integration-20261125\\run-002\\fixture-suite\\shared.json"
+}

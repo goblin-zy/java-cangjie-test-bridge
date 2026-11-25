@@ -1,0 +1,391 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+  "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+  "input_issues": {},
+  "semantic_problems": [],
+  "profile": "whole",
+  "scope": "combined",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+  "selected_tests": [
+    "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+    "9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "p/ChildCase.java::p.ChildCase#testOwn()",
+      "declaring_class": "p.ChildCase",
+      "execution_class": "p.ChildCase",
+      "selector": "p.ChildCase#testOwn()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+      "execution_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+      "declaring_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "p.ChildCase#testOwn()"
+    },
+    {
+      "source_member_id": "p/BaseCase.java::p.BaseCase#testFromBase()",
+      "declaring_class": "p.BaseCase",
+      "execution_class": "p.ChildCase",
+      "selector": "p.ChildCase#testFromBase()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9",
+      "execution_type_key": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+      "declaring_type_key": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "p.ChildCase#testFromBase()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/p/BaseCase.java",
+      "package": "p",
+      "imports": [
+        {
+          "start": 11,
+          "end": 43,
+          "name": "junit.framework.TestCase",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/test/java/p/ChildCase.java",
+      "package": "p",
+      "imports": []
+    }
+  ],
+  "records": [
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+      "display_id": "p.ChildCase",
+      "content_kind": "full",
+      "content": "public class ChildCase extends BaseCase { public void testOwn() { assert value>0; } }",
+      "content_chars": 85,
+      "source": {
+        "file": "src/test/java/p/ChildCase.java",
+        "sha256": "994de2fda9cd18ead6516f2c4d520538bc4e175103e84110388c8ea532f15b45",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 11,
+        "end_offset_utf16_exclusive": 96
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "SELECTED_TEST_TYPE"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+      "display_id": "p.BaseCase",
+      "content_kind": "signature",
+      "content": "public abstract class BaseCase extends TestCase {",
+      "content_chars": 49,
+      "source": {
+        "file": "src/test/java/p/BaseCase.java",
+        "sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 44,
+        "end_offset_utf16_exclusive": 93
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "INHERITED_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1",
+      "display_id": "p.BaseCase#field:value",
+      "content_kind": "full",
+      "content": "protected int value=1;",
+      "content_chars": 22,
+      "source": {
+        "file": "src/test/java/p/BaseCase.java",
+        "sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 94,
+        "end_offset_utf16_exclusive": 116
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "TEST_INITIALIZATION"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "bd30d1dfd30af4272eb4454efd7d3e580e5d0c44af26882b0f38ef74a996e110",
+      "display_id": "p.BaseCase#setUp()",
+      "content_kind": "full",
+      "content": "protected void setUp() { value=2; }",
+      "content_chars": 35,
+      "source": {
+        "file": "src/test/java/p/BaseCase.java",
+        "sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 117,
+        "end_offset_utf16_exclusive": 152
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "LIFECYCLE"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+      "display_id": "p.ChildCase#testOwn()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 41,
+      "source": {
+        "file": "src/test/java/p/ChildCase.java",
+        "sha256": "994de2fda9cd18ead6516f2c4d520538bc4e175103e84110388c8ea532f15b45",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 53,
+        "end_offset_utf16_exclusive": 94
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "SELECTED_TEST",
+      "covered_by": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9",
+      "display_id": "p.BaseCase#testFromBase()",
+      "content_kind": "full",
+      "content": "public void testFromBase() { assert value==2; }",
+      "content_chars": 47,
+      "source": {
+        "file": "src/test/java/p/BaseCase.java",
+        "sha256": "874331ba52964a7044c66c5c9efbbc984be94c31eb1742c7d986b8db46ed8b37",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 153,
+        "end_offset_utf16_exclusive": 200
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "SELECTED_TEST"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "013781beb2b0f19375df98a9018109d1b1fbed3f8d4a5ae08b93a15bcb3625c6",
+      "caller": "bd30d1dfd30af4272eb4454efd7d3e580e5d0c44af26882b0f38ef74a996e110",
+      "resolution": "resolved_static",
+      "targets": [
+        "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "112b81649fae24b360870a406640b6001688947cfd99ed0c1e177bc2d7301ce4",
+      "caller": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+      "resolution": "resolved_static",
+      "targets": [
+        "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "fc8f489bf9aed4786a04746e85565e2eb05abf8dcda0b90905938d4d93e88c91",
+      "caller": "9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9",
+      "resolution": "resolved_static",
+      "targets": [
+        "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [
+          "bd30d1dfd30af4272eb4454efd7d3e580e5d0c44af26882b0f38ef74a996e110"
+        ],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "008bb86c7dd9ea267cf88900fec7168562c6256d20e87ab5c627dfe6ebee18c3",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1",
+      "owner_type_key": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+      "kind": "field",
+      "start": 108,
+      "modifiers": [
+        "protected"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "PARENT_NOT_BOUND",
+      "type": "c2be7d415c2a219ca4824dc8a59f79a3ad5720bd7b312a6e2ede4fd3006ca350",
+      "candidates": []
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 238,
+    "visited_members": 4
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1",
+        "display_id": "p.BaseCase#field:value",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 397b3aff2bd34ca1e205923c1e8d2dd15e57567862e1fdfcf2a15a517a9f8ae1"
+      },
+      {
+        "member_key": "9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9",
+        "display_id": "p.BaseCase#testFromBase()",
+        "top_level_steps": [
+          {
+            "key": "d7835931deb2ad4aba963e6fdcc77722b9eaab60a99856f2c26d2e0c3b0065a0",
+            "ast_kind": "AssertStmt",
+            "lines": [
+              1,
+              1
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 9c74b46a9b5016de0275d399ed4cb920da57e94d42d955e0205c586a543728b9"
+      },
+      {
+        "member_key": "bd30d1dfd30af4272eb4454efd7d3e580e5d0c44af26882b0f38ef74a996e110",
+        "display_id": "p.BaseCase#setUp()",
+        "top_level_steps": [
+          {
+            "key": "2767b3a0710c53da546a80c58278b1d81c63dab9bcea5669ad7a7d2395a91f75",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              1,
+              1
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id bd30d1dfd30af4272eb4454efd7d3e580e5d0c44af26882b0f38ef74a996e110"
+      },
+      {
+        "member_key": "f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1",
+        "display_id": "p.ChildCase#testOwn()",
+        "top_level_steps": [
+          {
+            "key": "9f8d46febc0bed7c167c0fcec6fd88c042b6704269d2ca18f0f025260858b5c6",
+            "ast_kind": "AssertStmt",
+            "lines": [
+              1,
+              1
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id f15efbb4ec332d0d65b7abdb163b4a4e6730d5747ac1e633e62cf05a1dd1ebe1"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "source_type": "org.ahocorasick.interval.IntervalTest",
+  "source_methods": 9,
+  "target_test_cases": 9,
+  "source_lifecycle_or_fields": [],
+  "ordering_adaptation": "TreeSet<IntervalBridge> delegates Interval.compareTo, never calculates expected starts",
+  "unchanged_checks": [
+    "construct start/end",
+    "inclusive size",
+    "interval overlap positive/negative",
+    "point overlap positive/negative",
+    "sorted starts 2/3/4",
+    "toString 4:6",
+    "non-Interval compare -1"
+  ],
+  "source_business_rewriting": false,
+  "target_business_rewriting": false
+}

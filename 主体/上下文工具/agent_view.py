@@ -39,6 +39,7 @@ def compact_context(value):
             "index_id": value["index_id"], "snapshot_id": value["snapshot_id"],
             "profile": value["profile"], "purpose": value["purpose"], "target_type": value["target_type"],
             "selected_tests": value["selected_tests"], "full_context_file": "initial_context.json",
+            "test_invocations": value.get("test_invocations", []),
             "files": files,
             "imports": [{"file": r["file"], "package": r["package"],
                          "imports": [{"name": imp["name"], "static": imp["static"]} for imp in r["imports"]]}

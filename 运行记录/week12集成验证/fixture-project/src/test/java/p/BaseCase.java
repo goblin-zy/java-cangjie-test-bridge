@@ -1,0 +1,1 @@
+package p; import junit.framework.TestCase; public abstract class BaseCase extends TestCase { protected int value=1; protected void setUp() { value=2; } public void testFromBase() { assert value==2; } public static void testStatic() {} }

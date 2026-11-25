@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "checks": [
+    "context-index: readable",
+    "fixture-index: readable",
+    "suite/shared hashes and identity",
+    "upstream Java/Python implementation hashes unchanged",
+    "all JSON parses",
+    "subject Python syntax",
+    "current documentation links"
+  ],
+  "context_tests": 40,
+  "integration_checks": 21,
+  "java_tests": 9,
+  "cangjie_tests": 9
+}

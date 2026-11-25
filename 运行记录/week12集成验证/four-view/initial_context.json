@@ -1,0 +1,210 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+  "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+  "input_issues": {},
+  "semantic_problems": [],
+  "profile": "whole",
+  "scope": "combined",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+  "selected_tests": [
+    "e7302335cf05af7fee28ec563126044f8d32d94d0dee825ba6c854977c70952f"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "p/FourCase.java::p.FourCase#check()",
+      "declaring_class": "p.FourCase",
+      "execution_class": "p.FourCase",
+      "selector": "p.FourCase#check()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "e7302335cf05af7fee28ec563126044f8d32d94d0dee825ba6c854977c70952f",
+      "execution_type_key": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+      "declaring_type_key": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "p.FourCase#check()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/p/FourCase.java",
+      "package": "p",
+      "imports": [
+        {
+          "start": 11,
+          "end": 33,
+          "name": "org.junit.Test",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+      "display_id": "p.FourCase",
+      "content_kind": "full",
+      "content": "public class FourCase { @Test(expected=IllegalArgumentException.class, timeout=250) public void check() { throw new IllegalArgumentException(); } }",
+      "content_chars": 147,
+      "source": {
+        "file": "src/test/java/p/FourCase.java",
+        "sha256": "e2dbb8c7827d61d682fee3c2b5d583dfdbd8df2fca570cc867cb1501f42b76af",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 34,
+        "end_offset_utf16_exclusive": 181
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "SELECTED_TEST_TYPE"
+    },
+    {
+      "status": "COVERED_BY_INCLUDED_SOURCE",
+      "id": "e7302335cf05af7fee28ec563126044f8d32d94d0dee825ba6c854977c70952f",
+      "display_id": "p.FourCase#check()",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 121,
+      "source": {
+        "file": "src/test/java/p/FourCase.java",
+        "sha256": "e2dbb8c7827d61d682fee3c2b5d583dfdbd8df2fca570cc867cb1501f42b76af",
+        "start_line": 1,
+        "end_line": 1,
+        "start_offset_utf16": 58,
+        "end_offset_utf16_exclusive": 179
+      },
+      "index_id": "d9644bed028bb9b4fd5f045017a2733ac5cdeb431b5c4c3dae1c83578225d3cc",
+      "snapshot_id": "699b94ead0c53c9687b55ed5cb7c42afd4e316afbd2903c0817a0d32c6c09893",
+      "reason": "SELECTED_TEST",
+      "covered_by": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "6fbc9d1a9301a9ea53092b1d5dcc15c204e9892eaae8256ab7eb14ad00228c97",
+      "caller": "e7302335cf05af7fee28ec563126044f8d32d94d0dee825ba6c854977c70952f",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "CONSTRUCTOR"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "b55311829fcd570ff550c39747e2538be99866eb9677bb05bc72caee6c3a2069",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "TEST_EXECUTION_SEMANTICS_REQUIRE_REVIEW",
+      "member": "e7302335cf05af7fee28ec563126044f8d32d94d0dee825ba6c854977c70952f",
+      "semantics": [
+        {
+          "framework": "junit4",
+          "annotation_arguments": {
+            "expected": "IllegalArgumentException.class",
+            "timeout": "250"
+          },
+          "basis": "SOURCE_ANNOTATION_NOT_EXECUTION"
+        }
+      ]
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "6fbc9d1a9301a9ea53092b1d5dcc15c204e9892eaae8256ab7eb14ad00228c97",
+      "signature": "java.lang.IllegalArgumentException.IllegalArgumentException()"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 147,
+    "visited_members": 1
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "e7302335cf05af7fee28ec563126044f8d32d94d0dee825ba6c854977c70952f",
+        "display_id": "p.FourCase#check()",
+        "top_level_steps": [
+          {
+            "key": "63a56467f6dd517e939342aa46353ffe1e46580b16e6d6010be31b8b939dd260",
+            "ast_kind": "ThrowStmt",
+            "lines": [
+              1,
+              1
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id e7302335cf05af7fee28ec563126044f8d32d94d0dee825ba6c854977c70952f"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ]
+}

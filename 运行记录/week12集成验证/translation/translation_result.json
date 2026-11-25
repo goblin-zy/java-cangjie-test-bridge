@@ -1,0 +1,283 @@
+{
+  "schema_version": "whole-translation-result-0.2",
+  "mode": "whole",
+  "task_id": "interval-week12-integration",
+  "status": "GENERATED",
+  "generation_status": "COMPLETE",
+  "interface_status": "VERIFIED",
+  "scope": "IntervalTest whole-class fixed translation replay; no full material-generation regression",
+  "source_snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a",
+  "context_index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+  "classes": [
+    {
+      "source_type": "org.ahocorasick.interval.IntervalTest",
+      "test_methods": 9,
+      "target_class": "IntervalTest",
+      "output_file": "translated/interval_test.cj"
+    }
+  ],
+  "members": [
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+      "context_key": "c94991bd5f2541c9da9c0412c26f1799f834509448e461d525fce4184e45a6d0",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_construct",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_construct()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+      "context_key": "c39dde96373e535c64e330ee1a31d2019cb334aa735443c40f384df2ef95afe8",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_size",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_size()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+      "context_key": "ebb5c412f342193a4b7cee08de1af0ab0a36bfd022fafd1a5269532dabeb5690",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_intervaloverlaps",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervaloverlaps()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+      "context_key": "6a572de90cfb0a3a8a6984fac58b6c6342cb5b34e79f7ed35e3ea66ba8b929dd",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_intervalDoesNotOverlap",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_intervalDoesNotOverlap()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+      "context_key": "9d6a9442a96979d3a11882f7ba90bc6ad7f80178b660485133776a4deaa67453",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_pointOverlaps",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointOverlaps()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+      "context_key": "22dd773922358e3baaa4b33951bb1c673c627674825740162cb13b40b8db94b5",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_pointDoesNotOverlap",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_pointDoesNotOverlap()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+      "context_key": "01f24b3d83d885ae5f2afaab04f9e5f4c3f2775387adba5f3cf90c78bc2751db",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_comparable",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+      "context_key": "0909431c75bde909bfc0f6eaabd86ad6bf5bf332cf1cf9745d948e3e42bd0da0",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_checkToString",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_checkToString()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    },
+    {
+      "source_members_file": "../java-extraction/members.json",
+      "source_member_id": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+      "context_key": "39ff2e503f584ed93a0ac31b54bc9cb25655b075056d42919cdf36163f9088a2",
+      "role": "test",
+      "status": "TRANSLATED",
+      "target_file": "translated/interval_test.cj",
+      "target_member": "test_compareToNegativeTest",
+      "rule_ids": [],
+      "material_refs": [],
+      "evidence": [
+        {
+          "kind": "java-original",
+          "path": "../java-extraction/members.json",
+          "item": "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()",
+          "purpose": "保留本方法原输入、操作顺序与全部断言"
+        },
+        {
+          "kind": "target-business",
+          "path": "../../../样例材料/Interval双语项目/cangjie/src/interval.cj",
+          "purpose": "核对对应构造器、方法签名及实际行为"
+        }
+      ]
+    }
+  ],
+  "introduced_helpers": [
+    {
+      "helper_id": "IntervalBridge",
+      "target_file": "translated/interval_test.cj",
+      "target_signature": "private class IntervalBridge <: Comparable<IntervalBridge>",
+      "source_member_ids": [
+        "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_comparable()"
+      ],
+      "necessity": "源 Java Interval 可自然排序，目标 Interval 未实现 Comparable；为 TreeSet 提供排序委托",
+      "delegates_to": "actual Interval.compareTo(Object): Int32",
+      "semantic_changes": "将真实比较结果转换为 Ordering，保持本例三对象及 2/3/4 的断言",
+      "checks": {
+        "compile": "PASSED",
+        "test_comparable": "PASSED"
+      }
+    },
+    {
+      "helper_id": "UnrelatedValue",
+      "target_file": "translated/interval_test.cj",
+      "target_signature": "private class UnrelatedValue",
+      "source_member_ids": [
+        "IntervalTest.java::org.ahocorasick.interval.IntervalTest#test_compareToNegativeTest()"
+      ],
+      "necessity": "对应 Java new Object()，提供不属于 Intervalable 的普通对象",
+      "delegates_to": "actual Interval.compareTo(Object)",
+      "semantic_changes": "无业务逻辑，仅改变构造的目标对象类型",
+      "checks": {
+        "compile": "PASSED",
+        "test_compareToNegativeTest": "PASSED"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "translated/interval_test.cj",
+      "sha256": "3631a2baa1ecc14d4f6cccc9fe97aa0581749b6792acfd84a409f276f7ac12ec"
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "verification": {
+    "java_execution": "PASSED_9_OF_9",
+    "cangjie_execution": "PASSED_9_OF_9",
+    "equivalence_proof": "NOT_ESTABLISHED",
+    "other_projects": "NOT_RUN"
+  }
+}

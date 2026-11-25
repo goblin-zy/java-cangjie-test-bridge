@@ -1,0 +1,18 @@
+{
+  "status": "CONTENT_INCLUDED",
+  "id": "6ad2c5efc34cbb9e394c17f21e53281f481cf462fa245884d796fc473cb1994d",
+  "display_id": "org.ahocorasick.interval.Interval#compareTo(Object)",
+  "content_kind": "full",
+  "content": "@Override\n    public int compareTo(Object o) {\n        if (!(o instanceof Intervalable)) {\n            return -1;\n        }\n        Intervalable other = (Intervalable) o;\n        int comparison = this.start - other.getStart();\n        return comparison != 0 ? comparison : this.end - other.getEnd();\n    }",
+  "content_chars": 305,
+  "source": {
+    "file": "src/main/java/org/ahocorasick/interval/Interval.java",
+    "sha256": "f31968501268ed7116802722a628d3fa3ab3aff078e5c0658425df3ec4a81832",
+    "start_line": 87,
+    "end_line": 95,
+    "start_offset_utf16": 2190,
+    "end_offset_utf16_exclusive": 2495
+  },
+  "index_id": "03881df1a26b800293f9c31758f4948084cbb7385dd1178ace4e1f44400020af",
+  "snapshot_id": "160dd4b594c3facc726a90bdb45564e0945568ea1357d12e2389dd21408ec06a"
+}

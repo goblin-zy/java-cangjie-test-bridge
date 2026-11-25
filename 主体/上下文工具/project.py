@@ -42,6 +42,9 @@ class Project:
             for target in r["target_keys"]:
                 self.incoming[target].append(key)
         self.artifacts = {}
+        for record in self.data.get("java_members", {}).get("tables", []):
+            if sha(safe_path(self.root, record["file"])) != record["sha256"]:
+                raise ValueError("Java 成员表副本已经变化")
         for record in self.data["backend"].get("project_classpath", []):
             if sha(safe_path(self.root, record["file"])) != record["sha256"]:
                 raise ValueError("索引所用外部JAR已经变化")
@@ -187,8 +190,13 @@ class Project:
             node = self.types[current]
             for ambiguity in node.get("parent_ambiguities", []):
                 issues.append({"kind": "PARENT_AMBIGUOUS", "type": current, **ambiguity})
-            for parent in node["parents"]:
+            source_parent = self.data.get("java_members", {}).get("test_parent_edges", {}).get(current)
+            parents = node["parents"] or ([source_parent] if source_parent else [])
+            for parent in parents:
                 visit(parent)
+            if source_parent and not node["parents"]:
+                issues.append({"kind": "SOURCE_TEST_INHERITANCE", "type": current,
+                               "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY"})
             if node.get("extends") and node["parent_resolution"] != "SYMBOL_SOLVER":
                 issues.append({"kind": "PARENT_NOT_BOUND", "type": current, "candidates": node.get("parent_candidates", [])})
             result.append(current); active.remove(current)
@@ -238,6 +246,9 @@ class Project:
                     override = (k, "private")
                 effective[override] = k
         selected = [k for k in effective.values() if tests.intersection(self.members[k]["roles"])]
+        invocation_rows = [r for r in self.data.get("java_members", {}).get("test_invocations", []) if r["execution_type_key"] == type_key]
+        if invocation_rows:
+            selected = list(dict.fromkeys(r["source_member_key"] for r in invocation_rows))
         if method is not None:
             selected = [method] if method in selected else []
         if not selected:

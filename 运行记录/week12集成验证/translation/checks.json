@@ -1,0 +1,16 @@
+{
+  "structure": {
+    "status": "passed",
+    "checked_members": 9,
+    "required_members": 9,
+    "slots": 9,
+    "blocked": [],
+    "errors": []
+  },
+  "compile": "PASSED",
+  "java_tests": "PASSED_9_OF_9",
+  "cangjie_tests": "PASSED_9_OF_9",
+  "material_generation": "NOT_RUN",
+  "source_rewriting": "NOT_RUN",
+  "coverage": "NOT_RUN"
+}

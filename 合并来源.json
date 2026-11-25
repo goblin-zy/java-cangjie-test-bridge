@@ -1,0 +1,33 @@
+{
+  "upstream_branch": "蔡俊杰week12",
+  "upstream_commit": "a546d3efbd156e02c4c9d48f2a93a0e9ddc51d29",
+  "our_branch": "蒋逸舟week11",
+  "our_commit": "f50a653f3239c1c58a42e2fab93c5c825947d194",
+  "upstream_files_sha256": {
+    "README.md": "c2ed552203620eb71ed189529b15df5a47af112a9b183270da8c35076f4ed238",
+    "测试与优化报告.md": "7b050a0e43b46c7c82295304c9d1c1d5959b4c173c000264f3b472b6d20fe8f1",
+    "Java骨架提取器/JavaTestSkeletonExtractor.java": "d7fefd492124fcc080413b57fd4ec0c82b061f35aef13482ce8f595c8ff44748",
+    "仓颉骨架翻译器/check_skeleton.py": "5516d9b2a2c8bcde8aca080ce78e5c6eed4ccd103d35b1db5c9a522008ed7069",
+    "仓颉骨架翻译器/骨架翻译提示词.md": "1bbc9781b65a41bc5db1091e81bc59787b0cf1d27bb07fb8f695be3f7dfde215"
+  },
+  "integration_branch": "codex/jiang-week12-integration",
+  "unchanged_implementations": {
+    "主体/Java骨架提取器/JavaTestSkeletonExtractor.java": "Java骨架提取器/JavaTestSkeletonExtractor.java",
+    "主体/仓颉骨架翻译器/check_skeleton.py": "仓颉骨架翻译器/check_skeleton.py"
+  },
+  "adaptations": [
+    "README 保留我方入口",
+    "骨架提示词对接第二版上下文",
+    "上游报告链接按主体目录调整",
+    "上下文新增可选成员表输入",
+    "整体任务到结构检查目录的复制适配"
+  ],
+  "upstream_checkout_sha256": {
+    "README.md": "10f18739c4434a866a9736b68830b92fa98fb2f9dae1ef8b211f48ba988548ba",
+    "测试与优化报告.md": "afa8ebedfb7557133381a28f5c3578141bc74d7d8698bbdb2d8ee56215b31ffe",
+    "Java骨架提取器/JavaTestSkeletonExtractor.java": "e429ca55cd47da3d248eb7f34e287817e29feff70d122535ce2459d209ec8fd4",
+    "仓颉骨架翻译器/check_skeleton.py": "44dd5d30da516b9178b8d1d03461c6b2d86e0ad0d1ce8a4df22f5959b9280e6c",
+    "仓颉骨架翻译器/骨架翻译提示词.md": "eaa1584847371e5bbdfac4541ea005f46ec2419689d218d1b1a6633953fbde09"
+  },
+  "hash_basis": "upstream_files: committed Git blob bytes; checkout: local CRLF conversion may differ"
+}
