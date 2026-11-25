@@ -1,0 +1,128 @@
+{
+  "kind": "DERIVED_SELECTED_CONTEXT_EVIDENCE_NOT_FULL_SUITE",
+  "source_tasks_sha256": "de363a594cd0f8b838041a0d7165a532397b1cd114112f2d7cd00049322cf4f9",
+  "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+  "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+  "shared": {
+    "file": "shared.json",
+    "sha256": "81f44aa373fc7a26b517ffe7ec08cbcf0b2fae48ece8cf1499683fab96c54de9"
+  },
+  "selected_tests": [
+    {
+      "test_key": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "display_id": "org.jsoup.select.SelectorTest#testByTag()",
+      "file": "tests/testByTag-2331cb7dd919.json",
+      "test_invocations": [
+        {
+          "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByTag()",
+          "declaring_class": "org.jsoup.select.SelectorTest",
+          "execution_class": "org.jsoup.select.SelectorTest",
+          "selector": "org.jsoup.select.SelectorTest#testByTag()",
+          "framework": "junit-jupiter",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+          "execution_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "declaring_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.jsoup.select.SelectorTest#testByTag()"
+        }
+      ],
+      "sha256": "9f6a5c64d03ef1de10136cc7e460defe7240919ea43649d951eddc0cd4ead969",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "ccd22b8e9e5e4c86bcfd67227e447266d9be954cfe96dadce24b1995f655b0ce",
+      "display_id": "org.jsoup.select.SelectorTest#byEscapedTag()",
+      "file": "tests/byEscapedTag-ccd22b8e9e5e.json",
+      "test_invocations": [
+        {
+          "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedTag()",
+          "declaring_class": "org.jsoup.select.SelectorTest",
+          "execution_class": "org.jsoup.select.SelectorTest",
+          "selector": "org.jsoup.select.SelectorTest#byEscapedTag()",
+          "framework": "junit-jupiter",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "ccd22b8e9e5e4c86bcfd67227e447266d9be954cfe96dadce24b1995f655b0ce",
+          "execution_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "declaring_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.jsoup.select.SelectorTest#byEscapedTag()"
+        }
+      ],
+      "sha256": "668be349475c48c58aa94e99a81fc76f3456bea7ac5f23debe044179515f32a8",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "659e588d382d58acd45126909abf73681f224d210a1851857db45b95af9bada9",
+      "display_id": "org.jsoup.select.SelectorTest#testById()",
+      "file": "tests/testById-659e588d382d.json",
+      "test_invocations": [
+        {
+          "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testById()",
+          "declaring_class": "org.jsoup.select.SelectorTest",
+          "execution_class": "org.jsoup.select.SelectorTest",
+          "selector": "org.jsoup.select.SelectorTest#testById()",
+          "framework": "junit-jupiter",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "659e588d382d58acd45126909abf73681f224d210a1851857db45b95af9bada9",
+          "execution_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "declaring_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.jsoup.select.SelectorTest#testById()"
+        }
+      ],
+      "sha256": "3e67f29722784d36ab1e00e6b35969822975d5085ff361a5a28ec08362a5d5f5",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "bdb7f32ee4b5e6eb5c4daaca7e58007c3d14d7c8898b57140d23ce10b887cf11",
+      "display_id": "org.jsoup.select.SelectorTest#byEscapedId()",
+      "file": "tests/byEscapedId-bdb7f32ee4b5.json",
+      "test_invocations": [
+        {
+          "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedId()",
+          "declaring_class": "org.jsoup.select.SelectorTest",
+          "execution_class": "org.jsoup.select.SelectorTest",
+          "selector": "org.jsoup.select.SelectorTest#byEscapedId()",
+          "framework": "junit-jupiter",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "bdb7f32ee4b5e6eb5c4daaca7e58007c3d14d7c8898b57140d23ce10b887cf11",
+          "execution_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "declaring_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.jsoup.select.SelectorTest#byEscapedId()"
+        }
+      ],
+      "sha256": "e77f2c5430cc61145b61249c0246f738b6041f5af0ffafb441318f7ce6a0a867",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "6ff25c835a57961ef0967e5dde9cae2da1e54981d9a8164b6640c5ac673b24aa",
+      "display_id": "org.jsoup.select.SelectorTest#testByClass()",
+      "file": "tests/testByClass-6ff25c835a57.json",
+      "test_invocations": [
+        {
+          "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByClass()",
+          "declaring_class": "org.jsoup.select.SelectorTest",
+          "execution_class": "org.jsoup.select.SelectorTest",
+          "selector": "org.jsoup.select.SelectorTest#testByClass()",
+          "framework": "junit-jupiter",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "6ff25c835a57961ef0967e5dde9cae2da1e54981d9a8164b6640c5ac673b24aa",
+          "execution_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "declaring_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.jsoup.select.SelectorTest#testByClass()"
+        }
+      ],
+      "sha256": "6a84d4296a8b9b0299494f247bba24e651ed80713f63d16ff05c70d20ece158e",
+      "unresolved": 0,
+      "required_not_included": 0
+    }
+  ],
+  "full_index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\project_schema.json"
+}

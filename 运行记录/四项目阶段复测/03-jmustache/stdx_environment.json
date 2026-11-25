@@ -1,0 +1,39 @@
+{
+  "root": "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+  "local_build": true,
+  "captured_after_execution": true,
+  "files": [
+    {
+      "file": "libstdx.encoding.json.dll",
+      "sha256": "aa98308a9d840f3a84a421c7a763786ff9d243d2813843293a41f8fc177132c6"
+    },
+    {
+      "file": "libstdx.encoding.json.stream.dll",
+      "sha256": "b3ee4aa227353051941aea785ea32d26b9e4c78f4d06610e3debad7c54c2e515"
+    },
+    {
+      "file": "libstdx.serialization.dll",
+      "sha256": "85038371eccfe518e94e3c30b42cf9cf8ed7536b221085594cbb7924e35d747a"
+    },
+    {
+      "file": "libstdx.serialization.serialization.dll",
+      "sha256": "925836d7d8108c538fca59b2ccea60550224b4e98ccc5568500a45b013cdab2d"
+    },
+    {
+      "file": "stdx.encoding.json.cjo",
+      "sha256": "a703c8a6a18653f58b5fcd5274a5ca9102ceffa2f6e42adeed7e24a12eb35d4c"
+    },
+    {
+      "file": "stdx.encoding.json.stream.cjo",
+      "sha256": "dbbd0d51461668bcf33895b9c8538c90fb0017166dae89a8766c312443cd9074"
+    },
+    {
+      "file": "stdx.serialization.cjo",
+      "sha256": "49e5d17cc32f45ae0dff608ae7f1b6722a8acc15b9abf7d9894abfbd4e2f852b"
+    },
+    {
+      "file": "stdx.serialization.serialization.cjo",
+      "sha256": "1632e2c8490e3531406717ed3c46b80505d80b9f9b25048a45dfe058d8ec7ef3"
+    }
+  ]
+}

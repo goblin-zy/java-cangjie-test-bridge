@@ -1,0 +1,117 @@
+[
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByTag()",
+    "extracted_role": "test",
+    "test_framework": "junit-jupiter",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+    "source_file": "src/test/java/org/jsoup/select/SelectorTest.java",
+    "source_sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 480,
+      "end_offset_utf16_exclusive": 981,
+      "start_line": 21,
+      "start_column": 5,
+      "end_line": 31,
+      "end_column": 5
+    },
+    "source_member_name": "testByTag",
+    "direct_recognized_checks": 5,
+    "execution_class": "org.jsoup.select.SelectorTest",
+    "declaring_class": "org.jsoup.select.SelectorTest"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedTag()",
+    "extracted_role": "test",
+    "test_framework": "junit-jupiter",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "ccd22b8e9e5e4c86bcfd67227e447266d9be954cfe96dadce24b1995f655b0ce",
+    "source_file": "src/test/java/org/jsoup/select/SelectorTest.java",
+    "source_sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 987,
+      "end_offset_utf16_exclusive": 1338,
+      "start_line": 33,
+      "start_column": 5,
+      "end_line": 42,
+      "end_column": 5
+    },
+    "source_member_name": "byEscapedTag",
+    "direct_recognized_checks": 2,
+    "execution_class": "org.jsoup.select.SelectorTest",
+    "declaring_class": "org.jsoup.select.SelectorTest"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testById()",
+    "extracted_role": "test",
+    "test_framework": "junit-jupiter",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "659e588d382d58acd45126909abf73681f224d210a1851857db45b95af9bada9",
+    "source_file": "src/test/java/org/jsoup/select/SelectorTest.java",
+    "source_sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 1344,
+      "end_offset_utf16_exclusive": 1738,
+      "start_line": 44,
+      "start_column": 5,
+      "end_line": 52,
+      "end_column": 5
+    },
+    "source_member_name": "testById",
+    "direct_recognized_checks": 4,
+    "execution_class": "org.jsoup.select.SelectorTest",
+    "declaring_class": "org.jsoup.select.SelectorTest"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedId()",
+    "extracted_role": "test",
+    "test_framework": "junit-jupiter",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "bdb7f32ee4b5e6eb5c4daaca7e58007c3d14d7c8898b57140d23ce10b887cf11",
+    "source_file": "src/test/java/org/jsoup/select/SelectorTest.java",
+    "source_sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 1744,
+      "end_offset_utf16_exclusive": 2182,
+      "start_line": 54,
+      "start_column": 5,
+      "end_line": 65,
+      "end_column": 5
+    },
+    "source_member_name": "byEscapedId",
+    "direct_recognized_checks": 3,
+    "execution_class": "org.jsoup.select.SelectorTest",
+    "declaring_class": "org.jsoup.select.SelectorTest"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByClass()",
+    "extracted_role": "test",
+    "test_framework": "junit-jupiter",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "6ff25c835a57961ef0967e5dde9cae2da1e54981d9a8164b6640c5ac673b24aa",
+    "source_file": "src/test/java/org/jsoup/select/SelectorTest.java",
+    "source_sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 2188,
+      "end_offset_utf16_exclusive": 2716,
+      "start_line": 67,
+      "start_column": 5,
+      "end_line": 78,
+      "end_column": 5
+    },
+    "source_member_name": "testByClass",
+    "direct_recognized_checks": 5,
+    "execution_class": "org.jsoup.select.SelectorTest",
+    "declaring_class": "org.jsoup.select.SelectorTest"
+  }
+]

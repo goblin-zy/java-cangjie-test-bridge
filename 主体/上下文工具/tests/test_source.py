@@ -76,6 +76,23 @@ class SourceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, '重叠'):
             scan_project(self.source, self.base / 'overlap', business_roots=['src'], test_roots=['src'])
 
+    def test_filtered_root_resources_preserve_java_sources(self):
+        self.put('src/main/java/A.java', 'class A {}')
+        self.put('src/test/java/ATest.java', 'class ATest {}')
+        self.put('LICENSE', 'license text')
+        self.put('README.md', 'excluded readme')
+        self.put('pom.xml', '''<project><build><resources><resource>
+          <directory>./</directory><targetPath>META-INF</targetPath>
+          <includes><include>LICENSE</include><include>README.md</include></includes>
+          <excludes><exclude>README.md</exclude></excludes>
+        </resource></resources></build></project>''')
+        source = scan_project(self.source, self.base / 'filtered', test_scope=['src/test/java/ATest.java'])
+        self.assertEqual(source.scope['selected_test_files'], ['src/test/java/ATest.java'])
+        self.assertTrue(source.files['src/main/java/A.java']['parse_input'])
+        self.assertEqual(source.files['LICENSE']['source_role'], 'resource')
+        self.assertNotEqual(source.files['README.md']['source_role'], 'resource')
+        self.assertEqual(source.scope['filtered_resources'], [{'file': 'LICENSE', 'classpath_path': 'META-INF/LICENSE'}])
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

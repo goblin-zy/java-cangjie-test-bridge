@@ -1,0 +1,14 @@
+{
+  "package":"diffUtils4cj",
+  "class":"DiffTranslationTest",
+  "imports":["std.collection.*","std.unittest.*","std.unittest.testmacro.*"],
+  "helpers":"",
+  "shared":"",
+  "methods":[
+    {"name":"testDiff_Insert","body":"let patch = DiffUtils.diff<String>(ArrayList<String>([\"hhh\"]), ArrayList<String>([\"hhh\", \"jjj\", \"kkk\"]))\n@Assert(patch is Patch<String>)\n@Assert(Int64(1), patch.getDeltas().size)\nlet delta = patch.getDeltas()[0]\n@Assert(delta is InsertDelta<String>)\n@Assert(Chunk<String>(1, ArrayList<String>()).equals(delta.getOriginal()))\n@Assert(Chunk<String>(1, ArrayList<String>([\"jjj\", \"kkk\"])).equals(delta.getRevised()))","reason":"保留hhh到hhh/jjj/kkk的输入；五项检查分别对应非空Patch、单个差异、最终类InsertDelta及位置1的原/新Chunk内容。"},
+    {"name":"testDiff_Delete","body":"let patch = DiffUtils.diff<String>(ArrayList<String>([\"ddd\", \"fff\", \"ggg\"]), ArrayList<String>([\"ggg\"]))\n@Assert(patch is Patch<String>)\n@Assert(Int64(1), patch.getDeltas().size)\nlet delta = patch.getDeltas()[0]\n@Assert(delta is DeleteDelta<String>)\n@Assert(Chunk<String>(0, ArrayList<String>([\"ddd\", \"fff\"])).equals(delta.getOriginal()))\n@Assert(Chunk<String>(0, ArrayList<String>()).equals(delta.getRevised()))","reason":"保留ddd/fff/ggg到ggg的输入；五项检查分别对应非空Patch、单个差异、最终类DeleteDelta及位置0的原/新Chunk内容。"},
+    {"name":"testDiff_Change","body":"let before = ArrayList<String>([\"aaa\", \"bbb\", \"ccc\"])\nlet after = ArrayList<String>([\"aaa\", \"zzz\", \"ccc\"])\nlet patch = DiffUtils.diff<String>(before, after)\n@Assert(patch is Patch<String>)\n@Assert(Int64(1), patch.getDeltas().size)\nlet delta = patch.getDeltas()[0]\n@Assert(delta is ChangeDelta<String>)\n@Assert(Chunk<String>(1, ArrayList<String>([\"bbb\"])).equals(delta.getOriginal()))\n@Assert(Chunk<String>(1, ArrayList<String>([\"zzz\"])).equals(delta.getRevised()))","reason":"保留aaa/bbb/ccc到aaa/zzz/ccc的输入；五项检查分别对应非空Patch、单个差异、最终类ChangeDelta及位置1的bbb到zzz的Chunk。"}
+  ],
+  "interface_notes":["Java List<String>适配为ArrayList<String>，DiffUtils.diff仍调用实际目标业务。","目标Patch为非空引用类型，显式Patch类型检查对应原非空检查；未用常量或替代业务生成结果。","InsertDelta/DeleteDelta/ChangeDelta均为未声明open的最终类，因此is类型检查与源getClass的精确类型要求在本轮对应。","Chunk相等检查调用实际Chunk.equals，保留行列表与位置两部分。"],
+  "evidence_files":["diffutils.cj","patch.cj","delta.cj","chunk.cj","insert_delta.cj","delete_delta.cj","change_delta.cj"]
+}

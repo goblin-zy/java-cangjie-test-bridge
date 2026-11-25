@@ -1,0 +1,14 @@
+[?25l[0J7[;r8
+[1F7[9999E8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mcjmustache[0m, time elapsed: 1345700 ns, RESULT:
+    TCS: [33mMustacheTranslationTest[0m, time elapsed: 1335900 ns, RESULT:
+    [[32m PASSED [0m] CASE: testSimpleVariable (676200 ns)
+    [[32m PASSED [0m] CASE: testPrimitiveArrayVariable (111900 ns)
+    [[32m PASSED [0m] CASE: testPrimitiveArrayIndexVariable (50800 ns)
+    [[32m PASSED [0m] CASE: testPrimitiveArrayIndexOutOfBoundsVariable (60100 ns)
+    [[32m PASSED [0m] CASE: testOneShotSection (51300 ns)
+    [[32m PASSED [0m] CASE: testListSection (52500 ns)
+Summary: TOTAL: 6
+    [32mPASSED[0m: 6, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 0
+--------------------------------------------------------------------------------------------------

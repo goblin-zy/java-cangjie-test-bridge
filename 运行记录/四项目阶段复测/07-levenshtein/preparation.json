@@ -1,0 +1,42 @@
+{
+  "status": "PREPARED",
+  "project": "07-levenshtein",
+  "selected_methods": [
+    "testGetLevenshteinDistance_StringString"
+  ],
+  "selected_count": 1,
+  "java_returncode": 0,
+  "dependencies": [
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar",
+      "sha256": "004a478c2d40f8f524af27ff579d9459d57beb5c1db8ec1dfb9621cc506f75d3"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\assertj-core-3.24.2.jar",
+      "sha256": "df3d0b348f1fe806bdddcb10fa4ae63c6679e9888d4bc7055f09848517976aa3"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\commons-lang3-3.14.0.jar",
+      "sha256": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c"
+    }
+  ],
+  "context_summary": {
+    "java_files": 201,
+    "types": 280,
+    "members": 3123,
+    "references": 25429,
+    "resolution_counts": {
+      "external": 10614,
+      "resolved_static": 14443,
+      "implicit_project_constructor": 73,
+      "unresolved": 297,
+      "project_declaration_unmapped": 2
+    },
+    "test_methods": 1177,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 20333,
+    "recognized_assertions": 3031,
+    "assertion_candidates": 48,
+    "compatibility_features": 703
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "INDEX_CREATED",
+  "index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-index\\project_schema.json",
+  "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+  "summary": {
+    "java_files": 16,
+    "types": 141,
+    "members": 635,
+    "references": 2178,
+    "resolution_counts": {
+      "external": 599,
+      "resolved_static": 1548,
+      "implicit_project_constructor": 25,
+      "unresolved": 6
+    },
+    "test_methods": 127,
+    "selected_test_methods_declared": 25,
+    "internal_nodes": 2289,
+    "recognized_assertions": 25,
+    "assertion_candidates": 0,
+    "compatibility_features": 147
+  },
+  "semantic_problems": 0
+}

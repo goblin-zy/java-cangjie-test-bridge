@@ -1,0 +1,32 @@
+[
+  {
+    "method": "testSimpleVariable",
+    "direct_recognized_checks": 0,
+    "reason": "实际检查在test/check辅助函数中"
+  },
+  {
+    "method": "testPrimitiveArrayVariable",
+    "direct_recognized_checks": 0,
+    "reason": "实际检查在test/check辅助函数中"
+  },
+  {
+    "method": "testPrimitiveArrayIndexVariable",
+    "direct_recognized_checks": 0,
+    "reason": "实际检查在test/check辅助函数中"
+  },
+  {
+    "method": "testPrimitiveArrayIndexOutOfBoundsVariable",
+    "direct_recognized_checks": 0,
+    "reason": "实际检查在test/check辅助函数中"
+  },
+  {
+    "method": "testOneShotSection",
+    "direct_recognized_checks": 0,
+    "reason": "实际检查在test/check辅助函数中"
+  },
+  {
+    "method": "testListSection",
+    "direct_recognized_checks": 0,
+    "reason": "实际检查在test/check辅助函数中"
+  }
+]

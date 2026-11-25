@@ -95,7 +95,8 @@
       "context_suite_id": "suite_1",
       "java_extraction_id": "source_1",
       "skeleton_bundle_id": "skeleton_1",
-      "output_files": []
+      "output_files": [],
+      "selected_test_methods": []
     }
   ],
   "allowed_target_source_roots": [],

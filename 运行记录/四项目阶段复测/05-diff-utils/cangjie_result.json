@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "returncode": 0,
+  "counts": {
+    "total": 3,
+    "passed": 3,
+    "skipped": 0,
+    "error": 0,
+    "failed": 0
+  }
+}

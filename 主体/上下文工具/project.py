@@ -304,6 +304,9 @@ class Project:
             return {"status": "unresolved", "kind": "RESOURCE_OUTSIDE_ROOT", "reference": reference}
         candidates = [str(PurePosixPath(root) / anchored) for root in self.data["resource_roots"]
                       if str(PurePosixPath(root) / anchored) in self.input.files]
+        candidates.extend(entry['file'] for entry in self.input.scope.get('filtered_resources', [])
+                          if entry['classpath_path'] == anchored)
+        candidates = list(dict.fromkeys(candidates))
         if len(candidates) != 1:
             return {"status": "ambiguous" if candidates else "unresolved", "kind": "RESOURCE_NOT_UNIQUE",
                     "reference": reference, "path": value, "candidates": candidates}

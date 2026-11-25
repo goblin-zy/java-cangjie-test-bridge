@@ -1,0 +1,352 @@
+{
+  "route": "whole",
+  "units": [
+    {
+      "id": "U01",
+      "name": "testDiff_Insert",
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+      "source_file": "original/DiffTest.java",
+      "test_framework": "junit3",
+      "test_invocations": [
+        {
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+          "declaring_class": "diffutils.DiffTest",
+          "execution_class": "diffutils.DiffTest",
+          "selector": "diffutils.DiffTest#testDiff_Insert()",
+          "framework": "junit3",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        13,
+        21
+      ],
+      "cangjie": [
+        10,
+        19
+      ],
+      "candidates": [
+        [
+          10,
+          19
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+          "source_location": {
+            "file": "original/DiffTest.java",
+            "start_offset_utf16": 237,
+            "end_offset_utf16_exclusive": 786,
+            "start_line": 13,
+            "start_column": 5,
+            "end_line": 21,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/DiffTest.java",
+            "start_offset_utf16": 237,
+            "end_offset_utf16_exclusive": 347,
+            "start_line": 13,
+            "start_column": 5,
+            "end_line": 15,
+            "end_column": 5
+          },
+          "target_file": "translated_test.cj",
+          "target_class": "DiffTranslationTest",
+          "target_member": "testDiff_Insert",
+          "target_signature": "func testDiff_Insert(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "P1",
+          "adaptation": "保留hhh到hhh/jjj/kkk的输入；五项检查分别对应非空Patch、单个差异、最终类InsertDelta及位置1的原/新Chunk内容。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U02",
+      "name": "testDiff_Delete",
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+      "source_file": "original/DiffTest.java",
+      "test_framework": "junit3",
+      "test_invocations": [
+        {
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+          "declaring_class": "diffutils.DiffTest",
+          "execution_class": "diffutils.DiffTest",
+          "selector": "diffutils.DiffTest#testDiff_Delete()",
+          "framework": "junit3",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        23,
+        31
+      ],
+      "cangjie": [
+        20,
+        29
+      ],
+      "candidates": [
+        [
+          20,
+          29
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+          "source_location": {
+            "file": "original/DiffTest.java",
+            "start_offset_utf16": 794,
+            "end_offset_utf16_exclusive": 1343,
+            "start_line": 23,
+            "start_column": 5,
+            "end_line": 31,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/DiffTest.java",
+            "start_offset_utf16": 355,
+            "end_offset_utf16_exclusive": 465,
+            "start_line": 17,
+            "start_column": 5,
+            "end_line": 19,
+            "end_column": 5
+          },
+          "target_file": "translated_test.cj",
+          "target_class": "DiffTranslationTest",
+          "target_member": "testDiff_Delete",
+          "target_signature": "func testDiff_Delete(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "P2",
+          "adaptation": "保留ddd/fff/ggg到ggg的输入；五项检查分别对应非空Patch、单个差异、最终类DeleteDelta及位置0的原/新Chunk内容。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U03",
+      "name": "testDiff_Change",
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Change()",
+      "source_file": "original/DiffTest.java",
+      "test_framework": "junit3",
+      "test_invocations": [
+        {
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Change()",
+          "declaring_class": "diffutils.DiffTest",
+          "execution_class": "diffutils.DiffTest",
+          "selector": "diffutils.DiffTest#testDiff_Change()",
+          "framework": "junit3",
+          "basis": "source"
+        }
+      ],
+      "java": [
+        33,
+        44
+      ],
+      "cangjie": [
+        30,
+        41
+      ],
+      "candidates": [
+        [
+          30,
+          41
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/0/members.json",
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Change()",
+          "source_location": {
+            "file": "original/DiffTest.java",
+            "start_offset_utf16": 1351,
+            "end_offset_utf16_exclusive": 2019,
+            "start_line": 33,
+            "start_column": 5,
+            "end_line": 44,
+            "end_column": 5
+          },
+          "java_skeleton_location": {
+            "file": "skeleton/DiffTest.java",
+            "start_offset_utf16": 473,
+            "end_offset_utf16_exclusive": 583,
+            "start_line": 21,
+            "start_column": 5,
+            "end_line": 23,
+            "end_column": 5
+          },
+          "target_file": "translated_test.cj",
+          "target_class": "DiffTranslationTest",
+          "target_member": "testDiff_Change",
+          "target_signature": "func testDiff_Change(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "P3",
+          "adaptation": "保留aaa/bbb/ccc到aaa/zzz/ccc的输入；五项检查分别对应非空Patch、单个差异、最终类ChangeDelta及位置1的bbb到zzz的Chunk。"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    }
+  ],
+  "files": {
+    "java": "DiffTest.java",
+    "cangjie": "translated_test.cj"
+  },
+  "contract": {
+    "status": "assumed",
+    "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review\\process\\01-alignment\\contract\\target_contract.md",
+    "snapshot": "contract/target_contract.md",
+    "sha256": "376077d07f37b45ed19ffc042d205d6be76e00f53214b4f172c27b75aeb7d1ae"
+  },
+  "versions": {
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\java\\src\\test\\java\\diffutils\\DiffTest.java": "b2c3237aa7ab840c7fcd4111442c64217064ae28c2622c8f53c503bec53b4ed5",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\06-whole-translation\\test\\translated_test.cj": "ddc975f74d4304076c4aab5a44d1e4e33778412c8ef7919b17bd7253aaaad652",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\02-java-skeleton\\0\\original\\DiffTest.java": "b2c3237aa7ab840c7fcd4111442c64217064ae28c2622c8f53c503bec53b4ed5",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\translation_config.json": "dcd7051adc31799a1967cd9a2394f6c755b3a87a880ac2bd6c8b16100dc516be",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\02-java-skeleton\\0\\members.json": "6e9e2a478a60413d5499dbaafd53ea3e86d01da89d0ba6c1bf5c7a5319cf2b99",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\05-cangjie-skeleton\\member_mapping.json": "783dc264dc3b747ea2da8c37234856b49896a5adfab5e99f0b1cf4cd9d355d32",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\agent_context.json": "7b853e2281e9f358efeba57fac17823c8e5cee8801a422a1cceb216baa965cd3",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\initial_context.json": "e848a4ea32398cfbc228257ecd4118a76a6a872eb92a090b863e5855c5644e4e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\shared.json": "668266cda0a630bb84657640831b0e74d759917f91c64b541bf0b79502611580",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tasks.json": "434b53b28b5913c90b5361525b36d9f56b484dc0b381b5dd6e75d1d2548fd5f4",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Change-4b0b6f80b5de.json": "a37c60924fd39a64b9021df178f086a45e2d78886a6ec775ef557e96479c7c71",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Delete-f7468fc5b07f.json": "4db83196da09c3ca6b2030282c074e15e57069b175719f22481063d3f7d95136",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_EmptyList-6361fed79f40.json": "53de477cc6f97964fc09cd4837059f86c0e266bded7802e5262bf7a846a39662",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_EmptyListWithNonEmpty-fa3cc99a6b65.json": "0bf1cb00b0a342a1b966c5943356be80295130a4391a717f8b98c120d117ea5c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Insert-4a81e4d58f82.json": "27a44b3db95fbcbfc01501e10305b517d7cbf5c0da8e0d357f4be60c56511621",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\02-java-skeleton\\0\\skeleton\\DiffTest.java": "bd9502e7f3aa75fb39dc55181105b826bb9d94caa42a96094cb9ffd6797ad810",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\ChangeDelta.java": "8c360e5f6168536b19c2a4e90c6e7e54b984beeeb4ba79bac716568c4efcdb82",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\Chunk.java": "c042907ce257141b43697dd3381f36c05fa86ee572ef009f27937025a1e70779",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DeleteDelta.java": "aba59535d723c3d4c1505c0d2f3f234cf7a2bb71ebaf2e51427baa4d3f0e5c58",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\Delta.java": "c57b0c150782c7fc7e31b68e2f821915657547ae4e30c291df2ba8965234e1ee",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DeltaComparator.java": "b6912d99d10c8a16cd8ded6972563964aec01f288b08ba86baaf7ee2bae594e2",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffAlgorithm.java": "9b8f975c88b43c898b8488be9615990ea0877237e9adc4baad225e886f9ec2ae",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffException.java": "30aed46412b33aa19fed46fce68a1938718c3e8d35d1941c336e642ca0b6d3e9",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffRow.java": "44a86b375e6289053c577af60863340b18af52950ebdca249eb52425351a7764",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffRowGenerator.java": "23abe9348cf6caa892aa737e09091f66c323a21e663cc584ee13c47b9d64e255",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffUtils.java": "810115f36d48b2d178fccde8434bd8164f77690ffad1f83efd30b1d019c5410f",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\InsertDelta.java": "484cd92d4c31db01a3d325bbde6030c7681157b5ed44764e5043c7df943168db",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\Patch.java": "3bbe7eaead43a124934bb7fa59c505e2aa6c2b88bc0786540b4f89ba64e60179",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\PatchFailedException.java": "4a9aa81685da58fcc8022a9417abf0713da6f15900663afa6a5a769aca721a49",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\StringUtills.java": "66ab0d4cf751882faedd5c91bd5211544f97e94383a26eed1a56581c4dd05d71",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\DiffException.java": "ccf206620d817d8d3d71b006ac5f1f7d4b65beee0c791a91e9d98780cc513ea9",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\DiffNode.java": "7218e586cf8d34d1ccaf74973ccfa25d2dc0ab22c37c9c172bcf4997929a6e3f",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\DifferentiationFailedException.java": "e1e82987c0366334e60f739e154db4276ffae7f7d172f6a9d4536c30c3b433e2",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\Equalizer.java": "b594e44249dd676e06d711414cd838f3bca5baab579cb574e2c4724d660c1ffb",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\MyersDiff.java": "625de8b856bdaf9b8bbd5deff830c76d4845a5cada597101272604a2441f77fa",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\PathNode.java": "c5ef5d588804c22813cd4003e37ff19cbc1926704c2768d8353481cb45e2fdb1",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\Snake.java": "aca13f58541a177581d5a3ac43b158220a47c093da5a4c97523f66e199a1a423",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\05-cangjie-skeleton\\translated_test.cj": "fbfe09074583405e914ad6d35b73e33610ddc44dc79e1be9c0fb95c987cfcf8a",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\change_delta.cj": "098578562751bbe788b5e4166a2164ddf8a0434cad9751dc5c5b9a3623fe1aba",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\chunk.cj": "1fea5e1de4d160e834e3eea46ee01e5ec4846f488baa310be5d3b6a71218d4af",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\delete_delta.cj": "bcd0063059a1c8d08a1f99f75f0629d0fb67d7ff5a7252bba907e42d0998b531",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\delta.cj": "7d4051560096af7c3f9c8102cce57967850814b549be1fdf716841b443610475",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\delta_comparator.cj": "2c7426954eb942c5dfedbf38fde0bf7cb85a0a05aa5b658d4375ac090b7cdf8a",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_algorithlm.cj": "fdd0a1bcf74aebd2b5acf966e496e7e441715924acaa0db2c888669997e9016f",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_exception.cj": "62e8f8afd34dde26e5260f3d99d35f6b20c32664d7dd5cafd705d1a2c6d7b9fe",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_node.cj": "933a942b14cee63905efc4018a77dea26cb9590c1ef0b7c6916f0dafe6012611",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_row.cj": "7d5fc1a71169c0b01ab00bfb48e6ade4ece03f7418131b7030e69e144643dec7",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_row_generator.cj": "3043f842284ac5849f923be96f8692b8bb1ec6ccf6f33607fe9f3ad91b4f3630",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\differentiation_failedexception.cj": "c6f8e4860ccd5353db85b334506a1a52b92c03569d179e901626232c2b86f6ff",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diffutils.cj": "8b6c51547dba1b9b5156240af7419b10781de90bcb0a1c07d599f95180a98dda",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\equalizer.cj": "b9da67945bd0676662dc3b7bade903ef20acd2c5009737bfec9846e482b15358",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\insert_delta.cj": "7c946ea3f8687f7d2f001b4fb9646359344e3f229b54650dae142f449b9cb9ba",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\myers_diff.cj": "4b330ebf22dd06e2c54c9be74b3a1db1bf86d35e2a9df1ae0fa6e08650e2e5d5",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\patch.cj": "bf38d6f130f132c1dcead038831c3845566b44c129a3704ec41039081ccc42fb",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\path_faulled_exception.cj": "78336d7b4ad19c4f8ca1a6d6530b3aef953b4cdb714ac5d2dc476edc70e5186c",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\path_node.cj": "60c6f7b19bdb412efc8528b09ca7234d8b4e60c44208b183d0f998217de84abf",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\snake.cj": "aee1e799cf0a44086637f77a839cf936023e14764dd109c6000942bcf6f096cb",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\string_utils.cj": "73d33d8fd38bd2db35d82c1bd8b43f3aace02eb5602b2d8dad8954fcb2d0ec7d",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\target_contract.md": "376077d07f37b45ed19ffc042d205d6be76e00f53214b4f172c27b75aeb7d1ae"
+  },
+  "materials": [
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\translation_config.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\02-java-skeleton\\0\\members.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\05-cangjie-skeleton\\member_mapping.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\agent_context.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\initial_context.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\shared.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tasks.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Change-4b0b6f80b5de.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Delete-f7468fc5b07f.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_EmptyList-6361fed79f40.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_EmptyListWithNonEmpty-fa3cc99a6b65.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Insert-4a81e4d58f82.json"
+  ],
+  "missing_materials": [
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\05-cangjie-skeleton\\translation_report.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\05-cangjie-skeleton\\handoff.md",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\03-project-materials\\final\\project_materials.json",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\three-material-get\\Rule mapping\\translation_rules.json"
+  ],
+  "side_inputs": {
+    "java": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\02-java-skeleton\\0\\skeleton\\DiffTest.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\agent_context.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\initial_context.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\shared.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tasks.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Change-4b0b6f80b5de.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Delete-f7468fc5b07f.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_EmptyList-6361fed79f40.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_EmptyListWithNonEmpty-fa3cc99a6b65.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\04-test-context\\suite_1\\tests\\testDiff_Insert-4a81e4d58f82.json",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\ChangeDelta.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\Chunk.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DeleteDelta.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\Delta.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DeltaComparator.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffAlgorithm.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffException.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffRow.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffRowGenerator.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\DiffUtils.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\InsertDelta.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\Patch.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\PatchFailedException.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\StringUtills.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\DiffException.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\DiffNode.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\DifferentiationFailedException.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\Equalizer.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\MyersDiff.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\PathNode.java",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\source\\src\\main\\java\\difflib\\myers\\Snake.java"
+    ],
+    "cangjie": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\05-cangjie-skeleton\\translated_test.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\change_delta.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\chunk.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\delete_delta.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\delta.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\delta_comparator.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_algorithlm.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_exception.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_node.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_row.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diff_row_generator.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\differentiation_failedexception.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\diffutils.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\equalizer.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\insert_delta.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\myers_diff.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\patch.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\path_faulled_exception.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\path_node.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\snake.cj",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src\\string_utils.cj"
+    ]
+  },
+  "extraction_matches": true,
+  "selection": [
+    "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+    "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+    "DiffTest.java::diffutils.DiffTest#testDiff_Change()"
+  ]
+}

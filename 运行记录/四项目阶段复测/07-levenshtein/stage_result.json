@@ -1,0 +1,59 @@
+{
+  "project": "07-levenshtein",
+  "selected_methods": 1,
+  "source_assertions": 10,
+  "java": {
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cangjie": {
+    "total": 1,
+    "passed": 1,
+    "skipped": 0,
+    "error": 0,
+    "failed": 0
+  },
+  "skeleton": "passed",
+  "static_compared": 1,
+  "static_blocked": 0,
+  "annotated_tests_passed": 1,
+  "context": {
+    "java_files": 201,
+    "types": 280,
+    "members": 3123,
+    "references": 25429,
+    "resolution_counts": {
+      "external": 10614,
+      "resolved_static": 14443,
+      "implicit_project_constructor": 73,
+      "unresolved": 297,
+      "project_declaration_unmapped": 2
+    },
+    "test_methods": 1177,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 20333,
+    "recognized_assertions": 3031,
+    "assertion_candidates": 48,
+    "compatibility_features": 703
+  },
+  "context_parse_issues": [
+    {
+      "kind": "SEMANTIC_PARSE_ISSUES",
+      "file": "src/main/java/org/apache/commons/text/translate/EntityArrays.java",
+      "details": [
+        "NullPointerException: Cannot invoke \"java.util.Map.size()\" because \"m\" is null"
+      ]
+    }
+  ],
+  "analysis_gaps": [
+    {
+      "method": "testGetLevenshteinDistance_StringString",
+      "direct_recognized_checks": 0,
+      "reason": "AssertJ链式assertThat/isEqualTo未纳入当前断言识别表"
+    }
+  ],
+  "business_unchanged": true,
+  "translation_sha256": "8ca6615ee6e859f50a2635f3371ff874b57c0ab5522a927e9d3951ddd663c62e"
+}

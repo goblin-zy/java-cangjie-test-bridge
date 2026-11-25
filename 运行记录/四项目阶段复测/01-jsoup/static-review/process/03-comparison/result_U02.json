@@ -1,0 +1,58 @@
+{
+  "id": "U02",
+  "packet_hash": "585d4c6f2802a228198ecc7dc54f6f704aaab2cabd03b9840f385c82001170b5",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "原输入、调用与全部检查",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J020",
+        "J021",
+        "J022",
+        "J023",
+        "J024",
+        "J025"
+      ],
+      "cangjie": [
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021"
+      ],
+      "reason": "保留HTML中的点和反斜杠，以及CSS选择器的两层转义，依次断言One和Two。"
+    },
+    {
+      "kind": "interface",
+      "topic": "本轮目标接口前提",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J020",
+        "J021",
+        "J022",
+        "J023",
+        "J024",
+        "J025"
+      ],
+      "cangjie": [
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021"
+      ],
+      "reason": "基于当前业务快照和明确的适配条件。",
+      "contract_reference": {
+        "quote": "byEscapedTag：保留HTML中的点和反斜杠，以及CSS选择器的两层转义，依次断言One和Two。",
+        "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+      }
+    }
+  ],
+  "name": "byEscapedTag",
+  "status": "在所列前提和范围内一致"
+}

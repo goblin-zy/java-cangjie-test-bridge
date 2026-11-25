@@ -1,0 +1,11 @@
+{
+  "scope": [
+    "testGetLevenshteinDistance_StringString"
+  ],
+  "source_ids": [
+    "LevenshteinDistanceTest.java::org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()"
+  ],
+  "target_business_modified": false,
+  "historical_cangjie_reference_tests_read": false,
+  "agent_authored": true
+}

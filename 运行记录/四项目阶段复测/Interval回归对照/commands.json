@@ -1,0 +1,467 @@
+[
+  {
+    "name": "01-context-regression",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "主体/上下文工具/tests",
+      "-v"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "02-static-regression",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "主体/静态验证/src/tests",
+      "-v"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "03-week12-flow",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\tests\\run_integration.py",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "04-adapt-static",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_static_validation.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\whole_task.json",
+      "--translated",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\translation\\translated",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\static-input"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "05-init",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\static-input",
+      "--route",
+      "whole",
+      "--contract",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\target_contract.md"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "06-annotate-java",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--side",
+      "java"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "06-annotate-cangjie",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--side",
+      "cangjie"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "07-compare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "compare",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "08-audit-missing",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "audit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review"
+    ],
+    "returncode": 2,
+    "expected": 2
+  },
+  {
+    "name": "09-submit-U01",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U01.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U02",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U02.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U03",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U03.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U04",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U04.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U05",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U05.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U06",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U06.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U07",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U07.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U08",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U08.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "09-submit-U09",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\03-comparison\\submission_U09.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "10-audit-complete",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "audit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "11-summary",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "summary",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--decision",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\04-audit\\class_review.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "12-deliver",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "deliver",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review",
+      "--decision",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\04-audit\\class_review.json",
+      "--narrative",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\interval-review\\process\\05-report\\narrative.md"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "13-init-mutant",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-review",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-input",
+      "--route",
+      "whole",
+      "--test",
+      "test_size",
+      "--contract",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\target_contract.md"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "14-mutant-annotate-java",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-review",
+      "--side",
+      "java"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "14-mutant-annotate-cangjie",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-review",
+      "--side",
+      "cangjie"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "15-mutant-compare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "compare",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-review"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "16-reject-old-verdict",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\stale-submission.json"
+    ],
+    "returncode": 1,
+    "expected": 1
+  },
+  {
+    "name": "17-submit-difference",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\mutant-submission.json"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "17a-reject-context-change",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_static_validation.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\bad-context-task.json",
+      "--translated",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\translation\\translated",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\rejected-input"
+    ],
+    "returncode": 1,
+    "expected": 1
+  },
+  {
+    "name": "17b-reject-failed-input",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\rejected-review",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\rejected-input",
+      "--route",
+      "whole"
+    ],
+    "returncode": 1,
+    "expected": 1
+  },
+  {
+    "name": "17c-inherited-adapter",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_static_validation.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\inherited-task.json",
+      "--translated",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\inherited-skeleton",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\inherited-input"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "17d-inherited-scope",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\inherited-review",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\inherited-input",
+      "--route",
+      "whole"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "18-compile-annotated",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\annotated-cangjie\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\annotated-cangjie\\tests.exe",
+      "--diagnostic-format",
+      "noColor"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "19-run-annotated",
+    "command": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\annotated-cangjie\\tests.exe"
+    ],
+    "returncode": 0,
+    "expected": 0
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "testSimpleVariable",
+      "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testSimpleVariable()"
+    },
+    {
+      "id": "U02",
+      "name": "testPrimitiveArrayVariable",
+      "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayVariable()"
+    },
+    {
+      "id": "U03",
+      "name": "testPrimitiveArrayIndexVariable",
+      "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()"
+    },
+    {
+      "id": "U04",
+      "name": "testPrimitiveArrayIndexOutOfBoundsVariable",
+      "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexOutOfBoundsVariable()"
+    },
+    {
+      "id": "U05",
+      "name": "testOneShotSection",
+      "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testOneShotSection()"
+    },
+    {
+      "id": "U06",
+      "name": "testListSection",
+      "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testListSection()"
+    }
+  ],
+  "configuration": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input\\translation_config.json",
+  "members_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input\\02-java-skeleton\\0\\members.json"
+}

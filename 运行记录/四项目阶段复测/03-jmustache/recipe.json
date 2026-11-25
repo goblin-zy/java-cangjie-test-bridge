@@ -1,0 +1,56 @@
+{
+  "package": "cjmustache",
+  "class": "MustacheTranslationTest",
+  "imports": [
+    "std.unittest.*",
+    "std.unittest.testmacro.*",
+    "stdx.serialization.serialization.*",
+    "std.collection.*"
+  ],
+  "helpers": "private func makeModel(fields: Array<Field>): DataModelStruct {\n    return DataModelStruct(ArrayList<Field>(fields))\n}\n",
+  "shared": "",
+  "methods": [
+    {
+      "name": "testSimpleVariable",
+      "body": "let context = makeModel([Field(\"foo\", \"bar\".serialize())])\nlet result = Mustache.compiler().compile(\"{{foo}}\").execute(context)\n@Assert(\"bar\", result)",
+      "reason": "继承的原测试经test/check辅助方法比较渲染结果；保留foo=bar、模板{{foo}}和期望bar，目标用DataModelStruct表示同一键值。"
+    },
+    {
+      "name": "testPrimitiveArrayVariable",
+      "body": "let items: Array<DataModel> = [Int64(1).serialize(), Int64(2).serialize(), Int64(3).serialize(), Int64(4).serialize()]\nlet context = makeModel([Field(\"foo\", DataModelSeq(ArrayList<DataModel>(items)))])\nlet result = Mustache.compiler().compile(\"{{#foo}}{{this}}{{/foo}}\").execute(context)\n@Assert(\"1234\", result)",
+      "reason": "保留数组1、2、3、4及原循环模板，要求渲染为1234；DataModelSeq只承载原数组，渲染由真实模板业务完成。"
+    },
+    {
+      "name": "testPrimitiveArrayIndexVariable",
+      "body": "let items: Array<DataModel> = [Int64(1).serialize(), Int64(2).serialize(), Int64(3).serialize(), Int64(4).serialize()]\nlet context = makeModel([Field(\"foo\", DataModelSeq(ArrayList<DataModel>(items)))])\nlet result = Mustache.compiler().compile(\"{{foo.0}}\").execute(context)\n@Assert(\"1\", result)",
+      "reason": "保留原数组和foo.0索引模板，要求第一个值渲染为1。"
+    },
+    {
+      "name": "testPrimitiveArrayIndexOutOfBoundsVariable",
+      "body": "let items: Array<DataModel> = [Int64(1).serialize(), Int64(2).serialize(), Int64(3).serialize(), Int64(4).serialize()]\nlet context = makeModel([Field(\"foo\", DataModelSeq(ArrayList<DataModel>(items)))])\nlet compiler = Mustache.compiler().defaultValue(\"?\")\nlet result = compiler.compile(\"{{foo.4}}\").execute(context)\n@Assert(\"?\", result)",
+      "reason": "数组仍仅四个元素，保留越界下标4与defaultValue(?)的编译器设置，要求输出问号。"
+    },
+    {
+      "name": "testOneShotSection",
+      "body": "let inner = makeModel([Field(\"bar\", \"baz\".serialize())])\nlet context = makeModel([Field(\"foo\", inner)])\nlet result = Mustache.compiler().compile(\"{{#foo}}{{bar}}{{/foo}}\").execute(context)\n@Assert(\"baz\", result)",
+      "reason": "保留foo内嵌bar=baz的对象和单对象section模板，要求渲染baz。"
+    },
+    {
+      "name": "testListSection",
+      "body": "let first = makeModel([Field(\"bar\", \"baz\".serialize())])\nlet second = makeModel([Field(\"bar\", \"bif\".serialize())])\nlet items: Array<DataModel> = [first, second]\nlet context = makeModel([Field(\"foo\", DataModelSeq(ArrayList<DataModel>(items)))])\nlet result = Mustache.compiler().compile(\"{{#foo}}{{bar}}{{/foo}}\").execute(context)\n@Assert(\"bazbif\", result)",
+      "reason": "保留两个列表元素bar=baz和bar=bif及原顺序，要求同一section渲染为bazbif。"
+    }
+  ],
+  "interface_notes": [
+    "原Java键值Map和数组显式适配为实际目标业务接受的DataModelStruct/DataModelSeq；没有复制渲染算法。",
+    "六条源测试声明在SharedTests，通过MustacheTest执行；原辅助test/check中的相等检查在目标测试中显式保留。",
+    "这六组字符串不含空白字符，原SpecTest.showWhitespace展示转换对其结果不产生变化。",
+    "makeModel仅将Field数组转换为stdx要求的ArrayList<Field>，委托实际DataModelStruct构造。"
+  ],
+  "evidence_files": [
+    "mustache.cj",
+    "template.cj",
+    "basic_collector.cj",
+    "default_collector.cj"
+  ]
+}

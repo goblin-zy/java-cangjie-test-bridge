@@ -1,0 +1,182 @@
+[
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testSimpleVariable()",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1071,
+      "end_offset_utf16_exclusive": 1175,
+      "start_line": 41,
+      "start_column": 5,
+      "end_line": 43,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1071,
+      "end_offset_utf16_exclusive": 1191,
+      "start_line": 41,
+      "start_column": 5,
+      "end_line": 43,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "MustacheTranslationTest",
+    "target_member": "testSimpleVariable",
+    "target_signature": "func testSimpleVariable(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P1",
+    "adaptation": "继承的原测试经test/check辅助方法比较渲染结果；保留foo=bar、模板{{foo}}和期望bar，目标用DataModelStruct表示同一键值。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayVariable()",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1183,
+      "end_offset_utf16_exclusive": 1332,
+      "start_line": 45,
+      "start_column": 5,
+      "end_line": 47,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1199,
+      "end_offset_utf16_exclusive": 1327,
+      "start_line": 45,
+      "start_column": 5,
+      "end_line": 47,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "MustacheTranslationTest",
+    "target_member": "testPrimitiveArrayVariable",
+    "target_signature": "func testPrimitiveArrayVariable(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P2",
+    "adaptation": "保留数组1、2、3、4及原循环模板，要求渲染为1234；DataModelSeq只承载原数组，渲染由真实模板业务完成。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1340,
+      "end_offset_utf16_exclusive": 1476,
+      "start_line": 49,
+      "start_column": 5,
+      "end_line": 51,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1335,
+      "end_offset_utf16_exclusive": 1468,
+      "start_line": 49,
+      "start_column": 5,
+      "end_line": 51,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "MustacheTranslationTest",
+    "target_member": "testPrimitiveArrayIndexVariable",
+    "target_signature": "func testPrimitiveArrayIndexVariable(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P3",
+    "adaptation": "保留原数组和foo.0索引模板，要求第一个值渲染为1。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexOutOfBoundsVariable()",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1484,
+      "end_offset_utf16_exclusive": 1710,
+      "start_line": 53,
+      "start_column": 5,
+      "end_line": 56,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1476,
+      "end_offset_utf16_exclusive": 1620,
+      "start_line": 53,
+      "start_column": 5,
+      "end_line": 55,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "MustacheTranslationTest",
+    "target_member": "testPrimitiveArrayIndexOutOfBoundsVariable",
+    "target_signature": "func testPrimitiveArrayIndexOutOfBoundsVariable(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P4",
+    "adaptation": "数组仍仅四个元素，保留越界下标4与defaultValue(?)的编译器设置，要求输出问号。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testOneShotSection()",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1718,
+      "end_offset_utf16_exclusive": 1854,
+      "start_line": 58,
+      "start_column": 5,
+      "end_line": 60,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1628,
+      "end_offset_utf16_exclusive": 1748,
+      "start_line": 57,
+      "start_column": 5,
+      "end_line": 59,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "MustacheTranslationTest",
+    "target_member": "testOneShotSection",
+    "target_signature": "func testOneShotSection(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P5",
+    "adaptation": "保留foo内嵌bar=baz的对象和单对象section模板，要求渲染baz。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testListSection()",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1862,
+      "end_offset_utf16_exclusive": 2055,
+      "start_line": 62,
+      "start_column": 5,
+      "end_line": 65,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1756,
+      "end_offset_utf16_exclusive": 1873,
+      "start_line": 61,
+      "start_column": 5,
+      "end_line": 63,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "MustacheTranslationTest",
+    "target_member": "testListSection",
+    "target_signature": "func testListSection(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P6",
+    "adaptation": "保留两个列表元素bar=baz和bar=bif及原顺序，要求同一section渲染为bazbif。"
+  }
+]

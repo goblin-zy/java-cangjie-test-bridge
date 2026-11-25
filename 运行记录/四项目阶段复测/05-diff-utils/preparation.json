@@ -1,0 +1,34 @@
+{
+  "status": "PREPARED",
+  "project": "05-diff-utils",
+  "selected_methods": [
+    "testDiff_Insert",
+    "testDiff_Delete",
+    "testDiff_Change"
+  ],
+  "selected_count": 3,
+  "java_returncode": 0,
+  "dependencies": [
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar",
+      "sha256": "004a478c2d40f8f524af27ff579d9459d57beb5c1db8ec1dfb9621cc506f75d3"
+    }
+  ],
+  "context_summary": {
+    "java_files": 29,
+    "types": 34,
+    "members": 200,
+    "references": 976,
+    "resolution_counts": {
+      "resolved_static": 530,
+      "external": 440,
+      "implicit_project_constructor": 6
+    },
+    "test_methods": 18,
+    "selected_test_methods_declared": 5,
+    "internal_nodes": 1073,
+    "recognized_assertions": 39,
+    "assertion_candidates": 0,
+    "compatibility_features": 25
+  }
+}

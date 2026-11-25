@@ -1,0 +1,15 @@
+{
+  "scope": [
+    "testDiff_Insert",
+    "testDiff_Delete",
+    "testDiff_Change"
+  ],
+  "source_ids": [
+    "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+    "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+    "DiffTest.java::diffutils.DiffTest#testDiff_Change()"
+  ],
+  "target_business_modified": false,
+  "historical_cangjie_reference_tests_read": false,
+  "agent_authored": true
+}

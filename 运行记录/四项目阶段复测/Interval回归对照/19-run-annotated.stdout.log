@@ -1,0 +1,23 @@
+[?25l[0J7[;r8
+
+
+
+[4F7[9999E[3F📦 group ahoCorasick4cj                0% [90m[[0m[90m--------------------[0m[90m][0m [32m    [0m (00:00:00)
+🧪 test IntervalTest.test_construct                                   (00:00:00)
+
+passed: 0, failed: 0                   0% [90m[[0m[90m--------------------[0m[90m][0m  0/9 (00:00:00) 8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mahoCorasick4cj[0m, time elapsed: 792500 ns, RESULT:
+    TCS: [33mIntervalTest[0m, time elapsed: 776500 ns, RESULT:
+    [[32m PASSED [0m] CASE: test_construct (199400 ns)
+    [[32m PASSED [0m] CASE: test_size (7200 ns)
+    [[32m PASSED [0m] CASE: test_intervaloverlaps (14700 ns)
+    [[32m PASSED [0m] CASE: test_intervalDoesNotOverlap (6400 ns)
+    [[32m PASSED [0m] CASE: test_pointOverlaps (11000 ns)
+    [[32m PASSED [0m] CASE: test_pointDoesNotOverlap (6000 ns)
+    [[32m PASSED [0m] CASE: test_comparable (136600 ns)
+    [[32m PASSED [0m] CASE: test_checkToString (17300 ns)
+    [[32m PASSED [0m] CASE: test_compareToNegativeTest (5200 ns)
+Summary: TOTAL: 9
+    [32mPASSED[0m: 9, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 0
+--------------------------------------------------------------------------------------------------

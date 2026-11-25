@@ -1,0 +1,75 @@
+{
+  "project": "03-jmustache",
+  "selected_methods": 6,
+  "source_assertions": 6,
+  "java": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cangjie": {
+    "total": 6,
+    "passed": 6,
+    "skipped": 0,
+    "error": 0,
+    "failed": 0
+  },
+  "skeleton": "passed",
+  "static_compared": 0,
+  "static_blocked": 6,
+  "annotated_tests_passed": 6,
+  "context": {
+    "java_files": 16,
+    "types": 141,
+    "members": 635,
+    "references": 2178,
+    "resolution_counts": {
+      "external": 599,
+      "resolved_static": 1548,
+      "implicit_project_constructor": 25,
+      "unresolved": 6
+    },
+    "test_methods": 127,
+    "selected_test_methods_declared": 25,
+    "internal_nodes": 2289,
+    "recognized_assertions": 25,
+    "assertion_candidates": 0,
+    "compatibility_features": 147
+  },
+  "context_parse_issues": [],
+  "analysis_gaps": [
+    {
+      "method": "testSimpleVariable",
+      "direct_recognized_checks": 0,
+      "reason": "实际检查在test/check辅助函数中"
+    },
+    {
+      "method": "testPrimitiveArrayVariable",
+      "direct_recognized_checks": 0,
+      "reason": "实际检查在test/check辅助函数中"
+    },
+    {
+      "method": "testPrimitiveArrayIndexVariable",
+      "direct_recognized_checks": 0,
+      "reason": "实际检查在test/check辅助函数中"
+    },
+    {
+      "method": "testPrimitiveArrayIndexOutOfBoundsVariable",
+      "direct_recognized_checks": 0,
+      "reason": "实际检查在test/check辅助函数中"
+    },
+    {
+      "method": "testOneShotSection",
+      "direct_recognized_checks": 0,
+      "reason": "实际检查在test/check辅助函数中"
+    },
+    {
+      "method": "testListSection",
+      "direct_recognized_checks": 0,
+      "reason": "实际检查在test/check辅助函数中"
+    }
+  ],
+  "business_unchanged": true,
+  "translation_sha256": "7cf7122c7852483a7cc09c23678372f31f620486425181cb3ad4d838f688f7d0"
+}

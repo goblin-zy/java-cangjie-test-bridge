@@ -1,0 +1,36 @@
+{
+  "kind": "DERIVED_SELECTED_CONTEXT_EVIDENCE_NOT_FULL_SUITE",
+  "source_tasks_sha256": "0f822aaad9b1ec4feab63f30301371c70cc8bdb489a5040007506f0019386443",
+  "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+  "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+  "shared": {
+    "file": "shared.json",
+    "sha256": "5f493ad5c4df1228cf811b3272ceba178f344a1a3c73bfda70f1fb732b8cd4e2"
+  },
+  "selected_tests": [
+    {
+      "test_key": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+      "file": "tests/testGetLevenshteinDistance_StringString-420211c294dd.json",
+      "test_invocations": [
+        {
+          "source_member_id": "LevenshteinDistanceTest.java::org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+          "declaring_class": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+          "execution_class": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+          "selector": "org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+          "framework": "junit-jupiter",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+          "execution_type_key": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+          "declaring_type_key": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()"
+        }
+      ],
+      "sha256": "78a1c71d481bd243034ade91132516c0f42463fdeab409a1fc4c24b22ad9ba76",
+      "unresolved": 0,
+      "required_not_included": 0
+    }
+  ],
+  "full_index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-index\\project_schema.json"
+}

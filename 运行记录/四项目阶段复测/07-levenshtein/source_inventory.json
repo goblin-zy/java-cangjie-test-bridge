@@ -1,0 +1,1198 @@
+{
+  "source_commit": "c99fc226ac87379b9eaf81a9a61d52a32b86c822",
+  "source": "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\07-levenshtein",
+  "tools_commit": "dbe58c8f4ff3849d2968471e41314842b6d3b3e7",
+  "selected": {
+    "type": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+    "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+    "methods": [
+      "testGetLevenshteinDistance_StringString"
+    ],
+    "support": [],
+    "package": "leven4cj"
+  },
+  "files": [
+    {
+      "file": "java\\.gitignore",
+      "sha256": "41083e3e82e19453721b7bdec6ecdb3b7fb74b075b0c60c2868368c845bbca30",
+      "size": 232
+    },
+    {
+      "file": "java\\LICENSE.txt",
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "size": 11560
+    },
+    {
+      "file": "java\\NOTICE.txt",
+      "sha256": "1b4a66caa53f3194f79b7d4a8b1dab45e8253f1f30419598c5b7a17f53672fb4",
+      "size": 179
+    },
+    {
+      "file": "java\\pom.xml",
+      "sha256": "b98ffbd0ca1c7b6ab4e144c2a317f43078a3c1b3eb2a56b43d5181ed542337fc",
+      "size": 20398
+    },
+    {
+      "file": "java\\README.md",
+      "sha256": "18af4e3f29836db696e3c20a3a7d7e14ba7275167f9164cfbc22660e7f0e553f",
+      "size": 6699
+    },
+    {
+      "file": "java\\RELEASE-NOTES.txt",
+      "sha256": "45a836963807c3751b92908545aa0b1cc48c25ce3d0546e1a46bba786d8c9506",
+      "size": 40075
+    },
+    {
+      "file": "java\\交付说明.md",
+      "sha256": "3893e95897eff00ea3784f36503a0d17a7bca2f34c3a0bac1c43bac501878389",
+      "size": 506
+    },
+    {
+      "file": "cangjie\\src\\leven.cj",
+      "sha256": "f6b3271cc3ec9ec6cc2f728c56cfb393af66f4f4b1a716761539a83f5182ea3b",
+      "size": 1302
+    },
+    {
+      "file": "cangjie\\src\\test\\leven_test.cj",
+      "sha256": "29365c59282efaae355283aa315832246b8b1484362d468e78094161352b40f4",
+      "size": 1085
+    },
+    {
+      "file": "java\\src\\assembly\\bin.xml",
+      "sha256": "c564a71cb163ce6133e3b3a512c937c6b320220d901b997da765a7b8c0501dd5",
+      "size": 1847
+    },
+    {
+      "file": "java\\src\\assembly\\src.xml",
+      "sha256": "fdd3d63d4d0671e489235b6d4a1e26b227844c9413ff973cedc82de9b69283ea",
+      "size": 2003
+    },
+    {
+      "file": "java\\src\\changes\\changes.xml",
+      "sha256": "71897c35dfc0194e3b65392358c6b3c83b112e57bd70ab3043f4c4f27144d943",
+      "size": 43348
+    },
+    {
+      "file": "java\\src\\changes\\release-notes.vm",
+      "sha256": "34ae92786819eef119987c56535501e58effe6f529289accb0867cea3f321318",
+      "size": 4558
+    },
+    {
+      "file": "java\\src\\conf\\checkstyle-header.txt",
+      "sha256": "701cc434b734f829ae50d657b4521d11580bc508aa8c087ca93d9938ce8e7145",
+      "size": 817
+    },
+    {
+      "file": "java\\src\\conf\\checkstyle-suppressions.xml",
+      "sha256": "57e2c98acd85e7080da30cdde7e07fc3eb14ad93e035a937072abd37b159af5d",
+      "size": 2802
+    },
+    {
+      "file": "java\\src\\conf\\checkstyle.xml",
+      "sha256": "a12bafe0c788f8042f06383ee14c65d05d6fb5fcbbb99fc0c49ab8b839c8e7ac",
+      "size": 7375
+    },
+    {
+      "file": "java\\src\\conf\\spotbugs-exclude-filter.xml",
+      "sha256": "eff315c91237168986b2dc1bf93f62b21b2c49af2b1d541296d57db0eb659d4d",
+      "size": 2503
+    },
+    {
+      "file": "java\\src\\media\\logo.xcf",
+      "sha256": "8519c6cd45c0eaf370f16f38cc4b927287a78c4f8c7b47904993c416ef9768c0",
+      "size": 17288
+    },
+    {
+      "file": "java\\src\\site\\site.xml",
+      "sha256": "5b856415ff2a12bacd2d61cc2dbfee63a2920dd7363a9fb86256c1bf28eeb8a9",
+      "size": 2079
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\AlphabetConverter.java",
+      "sha256": "a9b73496942d38c70a4fdda9e958bf925297600f742cdb91254cae40bdf429d7",
+      "size": 18860
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\Builder.java",
+      "sha256": "49fbe1d36b5511276fc253c79d816cd72045c12334f9e98abd85ffdffcde1039",
+      "size": 3088
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\CaseUtils.java",
+      "sha256": "96982872998e6da2d7be0775f137938ce46ffd9bf9d8489f0ce09f7892f6ff02",
+      "size": 5799
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\CharacterPredicate.java",
+      "sha256": "0bedf88eb668180a24901be4209346086082dd728d7331748ea2c6c79cc38ebb",
+      "size": 1336
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\CharacterPredicates.java",
+      "sha256": "b78dae6daa6132a21c685c35713e9a521e8e74ba666ff0927756bd6790fe8c17",
+      "size": 3261
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\CompositeFormat.java",
+      "sha256": "e9bc57d744df8ea43deed50d57a2f444f256a36cc5887eb44bace5272f6b231a",
+      "size": 3760
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\ExtendedMessageFormat.java",
+      "sha256": "b419efd1dd373a038907eff9798b8337ae651a2ce54262ecfb9bc5c44fbb235c",
+      "size": 20768
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\FormatFactory.java",
+      "sha256": "41c310674a7e938c46ba18a74a007025a67ae7e4fa4df448d84357574b719105",
+      "size": 1519
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\FormattableUtils.java",
+      "sha256": "4e735adc11d67b498cbfe100622e2887cb9494d2f6e6bacff1828c540cdce981",
+      "size": 7207
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\package-info.java",
+      "sha256": "068468856709e40df94dd7d5f8089f1edb43b3d9fa0d902499525a1c09d38b3a",
+      "size": 928
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\RandomStringGenerator.java",
+      "sha256": "5cac5f06d79c5df42da8b0384fdc03a071ab39fd5b3f8a2080356efa515f65f5",
+      "size": 18744
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StrBuilder.java",
+      "sha256": "c871fdc87f2c2ce09d915766073c773de6f0bce33edf8eb203df8ad65b27e080",
+      "size": 106168
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StringEscapeUtils.java",
+      "sha256": "fbcf1b2aab4aa652ce30e87421b742165af025591277c5f2744b0b820c6dfa0b",
+      "size": 35033
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StringSubstitutor.java",
+      "sha256": "c2bb50ac7eaed9661aef9de0e2becba99b9b9eab0a08a536b7a43d13bf17d149",
+      "size": 67134
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StringTokenizer.java",
+      "sha256": "0e18dc6596f2a24cd806a11a933818fa8330c32130b3d25b9b5d75cbf8c4f6d8",
+      "size": 39256
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StrLookup.java",
+      "sha256": "b17efd5441a94aefc1d80738dd0f65a30f8649057538fa49edd8868ab8bf1d3f",
+      "size": 7211
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StrMatcher.java",
+      "sha256": "97055ffb04d02c42da12381712c5ccd64e6dcf0e9d21411dda21cbee8cb1da2d",
+      "size": 15247
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StrSubstitutor.java",
+      "sha256": "cf858f771e263b7bfdf5f0c02aecff70cd2ed07fe40dfdb29f04478394be1d84",
+      "size": 53626
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\StrTokenizer.java",
+      "sha256": "79247ba041f7838727d1539a59b56b4da76bdf71ddc9afa0d282d3b16632a1ae",
+      "size": 38447
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\TextRandomProvider.java",
+      "sha256": "de3a223c19f9a1b985bd7f67422ee5e3e3758d8f05626bf89ed0a04654ac3ebf",
+      "size": 1931
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\TextStringBuilder.java",
+      "sha256": "fb76c3c43b7a3182983d4161c22f6496c4e280f1787d825e7a6fb526db08c1b3",
+      "size": 117162
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\WordUtils.java",
+      "sha256": "ab8cf55a7a043d92cc40ad84de6471b70fba7a6da77c1beef09ac0e67d4b3029",
+      "size": 36511
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\CommandVisitor.java",
+      "sha256": "fda2110e6b9b8bd43a67d355a98139b2368665ed6f1dd990ae7b6dfc3bb52ac3",
+      "size": 4430
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\DeleteCommand.java",
+      "sha256": "948fc89ddbedfa4429a196f22f776e3167caebd6178146f5f4e525a0bb13b312",
+      "size": 2113
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\EditCommand.java",
+      "sha256": "36a0dc28e34910ac90627bca70f3e35c8d8687e1c79292db8059bc26211666b9",
+      "size": 3441
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\EditScript.java",
+      "sha256": "912f521839d5a9097969df85044769edf27a541029acbb79008d06bccb6754fa",
+      "size": 4399
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\InsertCommand.java",
+      "sha256": "a21b7179a524b5da801ce0b44f6fe3239f829179378b99cd198aabe856580659",
+      "size": 2122
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\KeepCommand.java",
+      "sha256": "36deebde3494a71f01fb5fda66442c090f6cbed3be22f48c6c8c81e1586ca4a0",
+      "size": 2230
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\package-info.java",
+      "sha256": "a199f3c820687de1e82c5338b7b69f7948a4d9c70d9269abb8f348bdaad7d6ed",
+      "size": 1074
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\ReplacementsFinder.java",
+      "sha256": "4b1e2e05a88f61ad1a00e6f26948bf6c5abe337cb9043b4576b7369d9845dc9a",
+      "size": 4426
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\ReplacementsHandler.java",
+      "sha256": "cb1cbb4d2e39bea1719deeb3d2af2cb9b61bf43e7348938042e01c3b09128c83",
+      "size": 2285
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\diff\\StringsComparator.java",
+      "sha256": "1581da18fd001d3a313e2198e9bd675a12aab92f003dc8509fa153ae24986632",
+      "size": 11848
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\io\\package-info.java",
+      "sha256": "3a7b9ea142c7df4e15f1a945f8bbcf38b3864980d9a35ce372a72da4ef677e66",
+      "size": 1314
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\io\\StringSubstitutorReader.java",
+      "sha256": "430e874e1c45b7e3dd5e9668182e562f37fc60ec8f1b83c56390b6ad3fe0f5dc",
+      "size": 12794
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\AbstractPathFencedLookup.java",
+      "sha256": "4b79160ba59c33144cca11d47ec473ac9ac433f2ed3d4ea96f71ff3ce80592f0",
+      "size": 2432
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\AbstractStringLookup.java",
+      "sha256": "cc012f2d597d6e9f70ef4079f5926d9f9af60cc2f340dd1581bc986d8703b186",
+      "size": 3107
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\BiFunctionStringLookup.java",
+      "sha256": "88d161bf5b869bd7cbe3b5456e79256d5d2f5124a595ec9d339f5d9587a73ae3",
+      "size": 3551
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\BiStringLookup.java",
+      "sha256": "ca00d66dee6690607cffe664b6c651f0aa7696de2e4d80f0e57eef5da6907bf3",
+      "size": 2982
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\ConstantStringLookup.java",
+      "sha256": "fb1a5670026c78a3789df60274d64ff3c6f37a099d5d1d4b63879f28a908ed89",
+      "size": 6108
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\DateStringLookup.java",
+      "sha256": "7bde64f8bd4381a22ee8c1175a03a00a92bbe318f57547018b7c79e9176794c6",
+      "size": 3259
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\DefaultStringLookup.java",
+      "sha256": "bf9bb4b3bdb3137afbd7ece024ec7966ada6f4cbf501970cde60a07f2affe735",
+      "size": 8388
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\DnsStringLookup.java",
+      "sha256": "a54143ff1ec83cf1c954a37d5906dfbe0101f1298ec0622baa98485ac2bf7903",
+      "size": 3601
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\FileStringLookup.java",
+      "sha256": "797c2a14220661c44868ba88a82d413addc5fa27014e790166f1f929316d3e92",
+      "size": 3314
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\FunctionStringLookup.java",
+      "sha256": "8e0777a0809dc878f7595fbce41fad48606e325bc7cab684adbc15955b96217c",
+      "size": 3322
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\IllegalArgumentExceptions.java",
+      "sha256": "8f98d93786c94ddd341c98c071246cd8e8397d8a91019968c7d6a0fbb73d4252",
+      "size": 2374
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\InetAddressKeys.java",
+      "sha256": "077b32f9a586ab34873026d17cf8efda7d3b1cd6c58a678fce71d29bfa4b0290",
+      "size": 1509
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\InterpolatorStringLookup.java",
+      "sha256": "db3b23fc5d6f76518cc45d3a2112999c08e6c408576034fc146d30428c4ae32d",
+      "size": 5462
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\JavaPlatformStringLookup.java",
+      "sha256": "160b64f1c5f44020b834a195b4c0108a2cf3afaaa472103f2f7f8f39faadaf1e",
+      "size": 8476
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\LocalHostStringLookup.java",
+      "sha256": "6fd03839b7b37dfd829516a86b2e5142f8eff0e3e8ac1a56a1550d8adbc13786",
+      "size": 2638
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\package-info.java",
+      "sha256": "ba963f83f141dfaa2571174192e33d4d25f0c0906e97c452796644572a48190b",
+      "size": 1883
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\PropertiesStringLookup.java",
+      "sha256": "c903238759dc158950f512d90e6528542589ddc62c4b48a7e9ec94ac7eb3c1a6",
+      "size": 3583
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\ResourceBundleStringLookup.java",
+      "sha256": "d54008586ff9dbd88ae1767810a13da984a4c71d65d72561e67ed0461f9ce033",
+      "size": 4204
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\ScriptStringLookup.java",
+      "sha256": "aeb69fb8b80657e249f49b15959592d9ebb129a960f4ad0c9d9b62ffc89fd654",
+      "size": 3120
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\StringLookup.java",
+      "sha256": "056c43fe049759e21a0c5fbbcad456110d1ff3df60b46cd4d7b9318dae256904",
+      "size": 2546
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\StringLookupFactory.java",
+      "sha256": "0ebb8113127cf77956028b56a6025c5928647aecae940eb8f6e06efcd20dde8b",
+      "size": 61383
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\UrlDecoderStringLookup.java",
+      "sha256": "88f0e1228c311f8604005f681234489a7109970bd0806640708c80eb7868ac8d",
+      "size": 2092
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\UrlEncoderStringLookup.java",
+      "sha256": "04c876838913f63f8332624dac1dcabbbdd067b34da73b22e69d6f098c1db766",
+      "size": 2063
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\UrlStringLookup.java",
+      "sha256": "b053a8de49adf3375d84865927d6afab33fdca949521553658319d02d1bbc7eb",
+      "size": 3171
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\XmlDecoderStringLookup.java",
+      "sha256": "06bc22b3026452c1539ef64debb0af6fa8a1f5cbd2a98459915f80b253ce4515",
+      "size": 1445
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\XmlEncoderStringLookup.java",
+      "sha256": "99de03572a6aa05be1ebb50914e66004b9f4770060d123517f848d11ad8260f9",
+      "size": 1455
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\lookup\\XmlStringLookup.java",
+      "sha256": "bfb4ff52af3c4b1f6a26f1a5776dead2dc1d0f7b8264b3275a11e933250f1476",
+      "size": 3938
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\matcher\\AbstractStringMatcher.java",
+      "sha256": "ae0c2e7943ab2a3cb4fd7ffb7b1c480cbac2cbb9d6ceb31569367d20acfb6fff",
+      "size": 14634
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\matcher\\package-info.java",
+      "sha256": "85e18a767add4887f5037d7ae4ca9d797f801d3c91f67da87c7e87f39b9078fa",
+      "size": 1155
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\matcher\\StringMatcher.java",
+      "sha256": "d9205a60932cb0e4f18d336f8b6a45b1bab85b111a015ba2bba11c4eb7476547",
+      "size": 7240
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\matcher\\StringMatcherFactory.java",
+      "sha256": "622ed3bdd71d26de3a06ef51bd62b3fa6283f550473af5e95bff1fc784145969",
+      "size": 8119
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\numbers\\DoubleFormat.java",
+      "sha256": "91e2e493e5cdc9fe5ebfc5d20b2e59d75820f75a5611f7a435438ecedac06daa",
+      "size": 32442
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\numbers\\package-info.java",
+      "sha256": "c88a037724a348631c4d6fe0a8c51f9320e8cd95f982bf71ab0ed3397e90402c",
+      "size": 971
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\numbers\\ParsedDecimal.java",
+      "sha256": "444a338a5576ed87bfe446231178147214ed9bf7d3dc27bb517625776735eaad",
+      "size": 28562
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\CharSequenceTokenizer.java",
+      "sha256": "e76825e798bfc28a8e521fdcdd397fac27364e899354b878776f4d10b5471af0",
+      "size": 956
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\CosineDistance.java",
+      "sha256": "ca3205a72993fe650ad60e0ceac8b7be69785167f0c43f9741bb6e6edeaf5290",
+      "size": 2030
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\CosineSimilarity.java",
+      "sha256": "5a3ed7091b5d2357ff36f667b9ec21ab8893efdbe57a15c2c8ed6972ffbe0371",
+      "size": 4041
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\Counter.java",
+      "sha256": "15dba46f711cb4b9ee123efd3f9a0d8ab63e7ae6f59bf69273a2b6f3d05f64d3",
+      "size": 2127
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\EditDistance.java",
+      "sha256": "1bdfe1f1863c724cf85387c99c9d81a50c0df5d4807c10a32fc8e09df2d3de32",
+      "size": 2317
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\EditDistanceFrom.java",
+      "sha256": "e9137adb2ee9ad2e0b7339194b29608686cb3f67016ab83fdde7d01055b9d76d",
+      "size": 3690
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\FuzzyScore.java",
+      "sha256": "9a5850ad450d0c296c912e76d4f645c4d4d18d3f53b4703fd258ba3219d1c9f7",
+      "size": 5486
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\HammingDistance.java",
+      "sha256": "71f2ca6e68fa1710d2ba6d3ebddde9de79371e2bfc68c743d44d9e41d49e7b7f",
+      "size": 2938
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\IntersectionResult.java",
+      "sha256": "2a6fa41e6c218d78532931ff120e6b4dcf490c829c3a17dad5c09fe0f8e42541",
+      "size": 3746
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\IntersectionSimilarity.java",
+      "sha256": "462f92689abcbbf6faeb0bfeebc631882f63e58402ca5ea8e3d6b8fdc745fce6",
+      "size": 8601
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\JaccardDistance.java",
+      "sha256": "a1ee23c7467477e7d8c763be9171babcd2200b9e33be4275078692a5394e9274",
+      "size": 1976
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\JaccardSimilarity.java",
+      "sha256": "d94d119ec44d476256ee7b7f5a098a524e7bbf26c234b2ab3aec2834190be4b3",
+      "size": 3477
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\JaroWinklerDistance.java",
+      "sha256": "d7af2a7fd43770baf6c05876b56c1e4939bcc38cc74803ae16eee3cb48216da1",
+      "size": 3830
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\JaroWinklerSimilarity.java",
+      "sha256": "e0757c2ce69ef5ee089a6a15b203a849c981a18535ed289ced295a97577ef6a3",
+      "size": 6357
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\LevenshteinDetailedDistance.java",
+      "sha256": "84ee0adfdc10786b8877eb6aaf437f8cd5f89ea1cb0271d2c6578fd9093fc409",
+      "size": 21379
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\LevenshteinDistance.java",
+      "sha256": "d791fb03a46b2eca1e9d2999e08b7183b8dd2585a6e521ba394335c8310642b5",
+      "size": 15206
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\LevenshteinResults.java",
+      "sha256": "1f50e5a0642a61ffd11e8cafe0ffcb85063e7e32b67a7b54f127bc9f3d7c6b12",
+      "size": 4066
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\LongestCommonSubsequence.java",
+      "sha256": "14ed7ea54b97baf7615c4b8ec5ad5fad04abafa879c0a7decd4218ac8d8d1c8d",
+      "size": 13491
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\LongestCommonSubsequenceDistance.java",
+      "sha256": "08727d7ced1d7d66660534e619c8402f1a8765536b17a68386396256e24ae40e",
+      "size": 2461
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\package-info.java",
+      "sha256": "4df78f839a8d0b1a9f90d16dcc7b892faee7425eedfd7851309b8581987e1b4f",
+      "size": 2440
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\RegexTokenizer.java",
+      "sha256": "a2c44cbf23c914cfc518905380453c4c663a6197ea190f10b650ac688dca3397",
+      "size": 2284
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\SimilarityScore.java",
+      "sha256": "c6ce3188aafb1b69831bb928d48fb94ce7868f2d7542d20b5b3f483946c93c21",
+      "size": 2329
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\SimilarityScoreFrom.java",
+      "sha256": "a1cf0927d00173e35638ca6787f1ef459c718b667bb648e58b26a7c39448ce01",
+      "size": 3773
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\similarity\\Tokenizer.java",
+      "sha256": "7f6891ab465bc6c7a43c564ff8bb3524d5fac397967b0ffc22b126dbf15f9236",
+      "size": 1155
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\AggregateTranslator.java",
+      "sha256": "1bfc44977f1f654b66c17e1072db13c240672f5795f63a2e16dfee793a4563c0",
+      "size": 2391
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\CharSequenceTranslator.java",
+      "sha256": "59acc0b3c64df226cbc7671298cf3c1b45d1b05c76c8737ba2870536d99cba47",
+      "size": 5766
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\CodePointTranslator.java",
+      "sha256": "9e5a1f6afecc0e4063894ee4071341a1c1f358795ee0616d31df6d2c101eb382",
+      "size": 2047
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\CsvTranslators.java",
+      "sha256": "cd5122c35f6cae30d7179b2f514f2e7111e353ace1df49c77af30438d7601dd1",
+      "size": 3750
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\EntityArrays.java",
+      "sha256": "68a7017a566635bece7b6484b0b090ce1a9f9cc3da620cd7efa899616bb4b898",
+      "size": 29747
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\JavaUnicodeEscaper.java",
+      "sha256": "c734f062da61b879442e93b231c65764013aceaf0bdc06b797b91da334f84f4c",
+      "size": 4022
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\LookupTranslator.java",
+      "sha256": "6cafbb9f4c7e1bbea8967c1d402e3dfd5f73ca5825f46ab3c8a793af32f79beb",
+      "size": 3972
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\NumericEntityEscaper.java",
+      "sha256": "2da561554457e020038c9227462abf6a781e943b20c6e1fb82d11b440a97e932",
+      "size": 4336
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\NumericEntityUnescaper.java",
+      "sha256": "17b7836dedd1dd8ee89563108e2b3c4b98e859735ad8a6e3eace9c8e920deebe",
+      "size": 5612
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\OctalUnescaper.java",
+      "sha256": "77955064be70fdc26c3edac2078530134b0d675752abf3c1a8e6f2f8c81673d7",
+      "size": 3231
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\package-info.java",
+      "sha256": "d760dd222b1bb916f62f7cc3c827855e69041bc58205bca90332976de0a9b85f",
+      "size": 1168
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\SinglePassTranslator.java",
+      "sha256": "8cd5514013dc6f557772d04681eb2e45c76f39edf18affe87adb4f0e2cfbee65",
+      "size": 2493
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\UnicodeEscaper.java",
+      "sha256": "5ec9c57028277b2c790d47e182d67b6a7f55d66aebadcbe88886982a0f4d1569",
+      "size": 4977
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\UnicodeUnescaper.java",
+      "sha256": "5d450e3aca7f3aebe2e2f895e6ffb7f51006585d7f3bc1a91291d1808053a1d6",
+      "size": 2592
+    },
+    {
+      "file": "java\\src\\main\\java\\org\\apache\\commons\\text\\translate\\UnicodeUnpairedSurrogateRemover.java",
+      "sha256": "5d24c016fdb770316f456aa7b71eea6e047d18780628b0e192304f21ed818438",
+      "size": 1557
+    },
+    {
+      "file": "java\\src\\site\\resources\\download_text.cgi",
+      "sha256": "06b7b936aa604382526a605aba6f3fc6a19c78bf8a291ba52466ad3f8468c9f5",
+      "size": 160
+    },
+    {
+      "file": "java\\src\\site\\resources\\profile.jacoco",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\developerguide.xml",
+      "sha256": "4032e1a0e323d23f2154d1bad882dff475805734256f6aa767d7a97c118e728a",
+      "size": 7131
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\download_text.xml",
+      "sha256": "7b112cb4e2b474e61145506da2e87eb4fadba3c8ea9b971ce2892962f995d1f8",
+      "size": 8348
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\index.xml",
+      "sha256": "f85588a8a06a4c724aafab160856832c03cb42ef937507e53a375f1e3994cbbc",
+      "size": 4150
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\issue-tracking.xml",
+      "sha256": "33906202561a2461c8a4bb25ba7b51671c31583a85d743a6c23337ee4859e868",
+      "size": 5945
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\mail-lists.xml",
+      "sha256": "cbbca29987816de29de38395fe9135dac25b6634c2875ede8a45c615da986cc7",
+      "size": 9132
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\proposal.xml",
+      "sha256": "0f5a245207724ce80affa229f39bf31bd2db0c129bcea9f7f0a50479b90a2460",
+      "size": 3120
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\security.xml",
+      "sha256": "9dfc52ed2afc0a902e343a6fa01dfe8ca09661850a77ababbe2850466c082a4a",
+      "size": 7156
+    },
+    {
+      "file": "java\\src\\site\\xdoc\\userguide.xml",
+      "sha256": "95a63d68b5491d4d3ed18e29e1daed6a6017ed3e6d1dba1b5478dda619245394",
+      "size": 12363
+    },
+    {
+      "file": "java\\src\\site\\resources\\images\\logo.png",
+      "sha256": "cb816fe7bfd2d9e55002c9d4fe150e9c814f4429fe0f820fd700896fd2d93ac4",
+      "size": 10143
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\AlphabetConverterTest.java",
+      "sha256": "ec0411d144aa15ba0539be725280f96d177165cc797be9e1b91a7d4f272711d9",
+      "size": 14854
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\CaseUtilsTest.java",
+      "sha256": "306022be0f96e4ac506a9a7ec52c03a6999593666fa496fa49de7399dd8a93cc",
+      "size": 4178
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\CharacterPredicatesTest.java",
+      "sha256": "aa31353587dccbcdfcb27c6eba8ec647f93e9099b9235c143c171e26dd81459e",
+      "size": 5511
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\CompositeFormatTest.java",
+      "sha256": "c0c3b27f4e56369a440dedb94d64146d9873ecc0da3001001c0a11a5178ca7ee",
+      "size": 3293
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\ExtendedMessageFormatTest.java",
+      "sha256": "87520287e9a36589a93cb3d5cac6eb459652747bfbff95758cee0b0103987160",
+      "size": 24996
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\FormattableUtilsTest.java",
+      "sha256": "97b1a7b1a465b6880ff472705c2009bb768f8faf1eb69bb5270c7d06eea5f72f",
+      "size": 10780
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\RandomStringGeneratorTest.java",
+      "sha256": "81c02c62b9c0beceb42b4bc5d505e0c8835e01daf70216d40dac778abd4c6838",
+      "size": 13191
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StrBuilderAppendInsertTest.java",
+      "sha256": "6eb89bebec7e01d841599eabb474bd26cc63d7b33609b19cea18f606c3653729",
+      "size": 48984
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StrBuilderTest.java",
+      "sha256": "e67b88bdad08d1dc3c97f2cb9032f134b6aec012ac349c13298a7af642e64691",
+      "size": 72734
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StringEscapeUtilsTest.java",
+      "sha256": "e672f4213e62ca11cc6e4d122cfb8358766195593cd7e95b5e6eb8906f3658f6",
+      "size": 28327
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StringSubstitutorTest.java",
+      "sha256": "f8a42c0353d4603d4fc03829a262f82ebc512984a92e51d1a7f651d0411be017",
+      "size": 43120
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StringSubstitutorWithInterpolatorStringLookupTest.java",
+      "sha256": "35452e317b3a1ac50078c7dc359a3a5051344ea2fae8b86e90796b804810e44f",
+      "size": 13059
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StringTokenizerTest.java",
+      "sha256": "2ff8e3f6ff85811a466aa55c6b42f375c870b28e20df816647a7dd561a97d727",
+      "size": 34758
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StrLookupTest.java",
+      "sha256": "9ab56e73799ebbd7e1ec62db6fe7fe9a672198e57449f8e05e769f68ed046691",
+      "size": 5332
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StrMatcherTest.java",
+      "sha256": "8010db97b3b715c170d3aad848d16c0899730e5816fd534a6ae39f98feb8bb99",
+      "size": 9369
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StrSubstitutorTest.java",
+      "sha256": "1545672e3bada7e1c02a6e9aa6d0e545f19f68b0f137cf327f66776f7d06238f",
+      "size": 30968
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\StrTokenizerTest.java",
+      "sha256": "c1556677f0805238665503052b0a30e37075c16dc5fb51b2ab399ae38f40b622",
+      "size": 32773
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\TextStringBuilderAppendInsertTest.java",
+      "sha256": "d0ae0ade58352ef1588c2304f7240209261d9e4871ac37b713e4be2d08bfb0f4",
+      "size": 44485
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\TextStringBuilderTest.java",
+      "sha256": "c9a4fe47c3041bc4935f818a6f6e9074593e6fdd6087ab2ac902c28c9f6f4629",
+      "size": 93301
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\WordUtilsTest.java",
+      "sha256": "9ec1e7cd20ff8c6773122aa9ce6568aa47a59f5c07f906c5d39059f2d8da67f4",
+      "size": 31165
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\diff\\ReplacementsFinderTest.java",
+      "sha256": "b0e2db77d79dacc96cb58c3c56afeb6595aefc93b38907027751dc1816635e60",
+      "size": 3668
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\diff\\StringsComparatorTest.java",
+      "sha256": "b08b83ee4c4dc9d7d6451043d75cb7edf033b3a87b240a218486286646b9bd78",
+      "size": 3978
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\io\\StringSubstitutorFilterReaderTest.java",
+      "sha256": "7614a536797aa7731ede29c6366c9e9445f9e32f2f7814ee8bf9d08295c2f960",
+      "size": 13066
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\jmh\\DoubleFormatPerformance.java",
+      "sha256": "64619824bc9f0457fd546c9180d7f2e6e2bdef7f83dd12eb46158d0c3735393f",
+      "size": 10761
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\jmh\\LongestCommonSubsequencePerformance.java",
+      "sha256": "36935707e0c3e79dcfc2efd86c5a37a2494af45e8c93e25054e0b3f647e1acae",
+      "size": 7395
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\AbstractStringLookupTest.java",
+      "sha256": "cd9dd1eaf5e41653d9a0f532f09aa31d98bb651aaf6c86025a9b5aced7909698",
+      "size": 2042
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\Base64DecoderStringLookupTest.java",
+      "sha256": "a6174154155326dc98aef8137c3884612dbfe5b8062aa3a73e2c4130c4a496ba",
+      "size": 1586
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\Base64EncoderStringLookupTest.java",
+      "sha256": "3c9f96d6f559cad4dc283b083c7e61db3ba6d7a605805f5ef4616acfd239b814",
+      "size": 1586
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\BiFunctionStringLookupTest.java",
+      "sha256": "efe1514a80817bb0c23d7aff9a5eb663dfda3c0f381125306b670820960283d0",
+      "size": 4242
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\BiStringLookupTest.java",
+      "sha256": "9f3c7d17edc407f2b5e9b9fe12a01c7e0e11101d147135683b04a93890fb5405",
+      "size": 1180
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\ConstantStringLookupBasicTest.java",
+      "sha256": "d76234d26bfa9b658e2615a9500dafc10d4a9173d36dea06c1106a58d49683b8",
+      "size": 2917
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\ConstantStringLookupTest.java",
+      "sha256": "0326fdafe61ada5641a7786b095f1f6c4d17dd7d52cc4cb0d8353151334a8b3a",
+      "size": 4835
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\DateStringLookupTest.java",
+      "sha256": "82fb0042838f19bcd0e16496a98054a4674dcbc4f414cd769765375f094240d7",
+      "size": 2405
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\DefaultStringLookupTest.java",
+      "sha256": "ba75cb8942e696499ec2eea847000ef537572a5543e822f68a2bba0440a467aa",
+      "size": 3844
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\DnsStringLookupTest.java",
+      "sha256": "ed0309120d474d1c3aa44bea6311228a041ba97ef0731386de346b62bb489ad9",
+      "size": 3224
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\EnvironmentVariableStringLookupTest.java",
+      "sha256": "ddb84cf56e36fcdebe0f8096f632c18a7c5de182ef22cb71ad6cb80fe8b9eb40",
+      "size": 1965
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\FileStringLookupTest.java",
+      "sha256": "cb6e4e8c5bffa8657b6ae23f527d6aaf7a4fad7b39a0efef4d5ea586db27f9c0",
+      "size": 7008
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\FunctionStringLookupTest.java",
+      "sha256": "cdee47171375318f52b70d899dcdb1d2f559dae64f2310a8fcbde6f9c5b6d8d8",
+      "size": 2148
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\InterpolatorStringLookupTest.java",
+      "sha256": "9798547c8b60c86ae23e6f60fd6fd2079b89abda7244a5f764d891a1e9146f6b",
+      "size": 4647
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\JavaPlatformStringLookupTest.java",
+      "sha256": "1747c7371588ed1d311aad2ae982ea7e45461928260a7504acf3d46e2d51ee9e",
+      "size": 2022
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\LocalHostStringLookupTest.java",
+      "sha256": "799d03ae3ffbe6e4bcccd6cb81239ff266d55828eb91a3076e1e9d85e800d1ff",
+      "size": 2287
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\NullStringLookupTest.java",
+      "sha256": "3b7ca0f5119313e86f68a1a91c4edebb5449ca582133fb67083249fd0cc63af5",
+      "size": 1470
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\PropertiesStringLookupTest.java",
+      "sha256": "490d8fc226d1c5ba3ff03f38ca4040c7499b4937dd806cf3dfb32be9d112114e",
+      "size": 8581
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\ResourceBundleStringLookupTest.java",
+      "sha256": "f7974ce5a2980652675d25b523a00bb66a8240875a4b84a6a372caca5edb1f10",
+      "size": 3776
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\ScriptEngineFactoryHelper.java",
+      "sha256": "2c9d7c822e86880878d08d3d27403a8742ae824852a92f4fa5b419586c451629",
+      "size": 1847
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\ScriptStringLookupTest.java",
+      "sha256": "41a45cf11ef9af9dbafb32de85aa4cf77dfdffe99693a2e8f3c0f92c8938e2ad",
+      "size": 2776
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\StringLookupFactoryTest.java",
+      "sha256": "04e5cc921510774e1020afe0c3bab56ee7fb227b1dbab60be64002e4701f9c6e",
+      "size": 11623
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\SystemPropertyStringLookupTest.java",
+      "sha256": "2b38f30065008e2c79e4e6dcfa9378d1a0e596c407967e406224cd7a045d01ad",
+      "size": 1643
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\UrlDecoderStringLookupTest.java",
+      "sha256": "5c03365b5e7c0ae854037d36b50c7a70018b7cc79831ac586e71b5639e79f8d6",
+      "size": 2536
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\UrlEncoderStringLookupTest.java",
+      "sha256": "e0c9697cbf8a61e67b33fc90a501c8c250c715cb715c09325ce78e7e1a300ef6",
+      "size": 2223
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\UrlStringLookupTest.java",
+      "sha256": "b4b821908418e17d61b90aaf07ab401034382acb539da37031a3720a82cf3df7",
+      "size": 3018
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\XmlDecoderStringLookupTest.java",
+      "sha256": "01aa21adde4b2548a8fffed253acc588cec134bb06ff7560d625c1fc2cfa1212",
+      "size": 1577
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\XmlEncoderStringLookupTest.java",
+      "sha256": "5bb5fa933cfd0116ac87ce4d2bf3459d3255a7eb7cb18f734a6c9b4c5c26ea58",
+      "size": 1577
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\XmlStringLookupTest.java",
+      "sha256": "2ad2ab937e233501172dfc777db4059f92ad0094a7867522e167bf9cd424d222",
+      "size": 4259
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\matcher\\StringMatcherFactoryTest.java",
+      "sha256": "18cc11551cb198e31ad45f826508da0bc147011a1065cc54e10142ea82efcc39",
+      "size": 7162
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\matcher\\StringMatcherOnCharArrayTest.java",
+      "sha256": "2f1352b8427a52ecd69cd1e9d7ce2101da53890ce7aacf2910aac6054c7d21ff",
+      "size": 18927
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\matcher\\StringMatcherOnCharSequenceStringTest.java",
+      "sha256": "3d1fa687218a97c04755f58b6236baa7f7e610814fefdc2d66802f60bce96b0e",
+      "size": 18647
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\matcher\\StringSubstitutorGetSetTest.java",
+      "sha256": "08e5015f5a7593f38ad9627fe706d1c8855e74c746b0e77ade3c9362311c3c7e",
+      "size": 4497
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\numbers\\DoubleFormatTest.java",
+      "sha256": "c9c0a9695ac1e72277e9a6deb61e74fcabe775345a8b7ecb5c00608ade2619f8",
+      "size": 27522
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\numbers\\ParsedDecimalTest.java",
+      "sha256": "ecee8fea121bd74a5bb7745049b610cbec8c0a3e832d219882583a68f64b0bfc",
+      "size": 28316
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\CosineDistanceTest.java",
+      "sha256": "4cc4ba832996d43ead0d5224a5d5a7d7771e97ecb27b9b8ac7ae3c0c3dcfdc92",
+      "size": 2488
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\CosineSimilarityTest.java",
+      "sha256": "4cb435c703b2124392c59cfd583aead454c88a258fac1c39a1ba89ba3f302113",
+      "size": 2417
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\FuzzyScoreTest.java",
+      "sha256": "cbff8b0684d3a72b27c8d3fc9f86e2e2165f63e1d7cbfd32e4043bfaa7fd2f04",
+      "size": 2824
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\HammingDistanceTest.java",
+      "sha256": "1ea1a75ba21f85668cb37e8996145916735ed4cb80d5b95f83e7be383d7f0796",
+      "size": 2265
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\IntersectionResultTest.java",
+      "sha256": "de7078f89eca611c53fb25d46fd94bed92a6cf514748011535dd60ad056237f7",
+      "size": 5909
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\IntersectionSimilarityTest.java",
+      "sha256": "c2d84d01bdf356ee26fd2bc41c3b492cf95172ac2dd021ae09e23c9c74a44bea",
+      "size": 16286
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\JaccardDistanceTest.java",
+      "sha256": "601350631448e497e6dcbac5abcba0b928a3d93aee35a2d357e98e75423584e4",
+      "size": 3150
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\JaccardSimilarityTest.java",
+      "sha256": "0add83c33c5531245b7333a4984d4737203be0a9a52826e80be5a7bef81dde25",
+      "size": 3114
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\JaroWinklerDistanceTest.java",
+      "sha256": "de114e83be4db416bfeb2dc1244f539e1e5394977c8e952b75b59beca414c902",
+      "size": 3300
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\JaroWinklerSimilarityTest.java",
+      "sha256": "147d08ef7e9a649070994de3c7f702f2b570d52fe6942119df14f3c0b1986507",
+      "size": 4279
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\LevenshteinDetailedDistanceTest.java",
+      "sha256": "185a9210bfebe34ad62f1cd6da669ff246ad8853e5e6eee94d7e09b77ce17ef5",
+      "size": 22813
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\LevenshteinDistanceTest.java",
+      "sha256": "079618b994dae7cca4bea1281868f0811e5eb8515f47c2fb5cb6e3b4c5da2451",
+      "size": 7305
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\LevenshteinResultsTest.java",
+      "sha256": "be3467a9e85b78dcb68665942b7021a276d420ed9fbabbcce38dde1551e8a881",
+      "size": 2929
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\LongestCommonSubsequenceDistanceTest.java",
+      "sha256": "7fa6eedecabe80d0e2838b6c95dce6113d002e11c3141a8dc49cd77e7016fa3c",
+      "size": 3016
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\LongestCommonSubsequenceTest.java",
+      "sha256": "0c83e2388a22468848a8663675f2b13a30abe3cf8353fb32431ec79181419130",
+      "size": 7111
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\ParameterizedEditDistanceFromTest.java",
+      "sha256": "dc6515c4ce445d090911b1289e6c8fc6429fd30e6861455ab47b40e29d712e6d",
+      "size": 2758
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\ParameterizedLevenshteinDistanceTest.java",
+      "sha256": "6e5cc1f1990b76a106410aec32e89240a7b85811f6cd60e0b730f0926419dca0",
+      "size": 4183
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\ParameterizedSimilarityScoreFromTest.java",
+      "sha256": "62e0d81869379019f2e09e613341afe10db0dea11deb31cb062b19f54f535a64",
+      "size": 2366
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\SimilarityScoreFromTest.java",
+      "sha256": "67381e9325451db914190c8f1340b38e34eb29c252bf9e2da7ab6132ebea3539",
+      "size": 1666
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\similarity\\StringMetricFromTest.java",
+      "sha256": "e2bd2335c35a5dadca97d119f77d04a2f11c42ef1b9baed53ab1d32d0e28b0f6",
+      "size": 2597
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\AggregateTranslatorTest.java",
+      "sha256": "9cf8302b0d0efdb27880684d18752c98471a8ff8b1a1954be170c6d8c1ca34ef",
+      "size": 2906
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\CodePointTranslatorTest.java",
+      "sha256": "b7aeb32392a0c0986bf78f55d374f485e2998cf6763f0dbfe5d12f593c5459c0",
+      "size": 1629
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\CsvTranslatorsTest.java",
+      "sha256": "8d7b2445dbbb919deef62d1649f5c332bb8311379c4e88ba80c8a4060d21a8b2",
+      "size": 5634
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\EntityArraysTest.java",
+      "sha256": "be44fe0514ad39a362877dd2b86bdd665d357871b93925d8b47be152a0b73eba",
+      "size": 5260
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\JavaUnicodeEscaperTest.java",
+      "sha256": "a32a539b95510b39e4e5919bbcbfa6afe02776537aab0dbd5b9d8249997b188f",
+      "size": 2672
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\LookupTranslatorTest.java",
+      "sha256": "1c6c01e3cc01ede78a33f61c29b2e3695674d3a60090373f9b23a0b48b9d65b5",
+      "size": 3332
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\NumericEntityEscaperTest.java",
+      "sha256": "92ea556bdf941e75a37895b73dd876e8bed3ea52be23c2749117f7064d860e16",
+      "size": 2501
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\NumericEntityUnescaperTest.java",
+      "sha256": "ee62ed61a0937b9d7a056e88673149d37ec371329986f66772eba27b9dd66683",
+      "size": 4070
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\OctalUnescaperTest.java",
+      "sha256": "d1a7c3bd2732963b0c26580d2d1a98f2a0ea0a708963c1a2e1255f23a1db1bc9",
+      "size": 3423
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\SinglePassTranslatorTest.java",
+      "sha256": "a6be8949e84f2c5d18b7ab900c4348a74ca423e958e8ddcaea76b8d1b9ddbb09",
+      "size": 2324
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\UnicodeEscaperTest.java",
+      "sha256": "8b8ee0e0e73926d31d3d1706c8fcdd13abfdc923afef4c0fa71748ecf49a78c3",
+      "size": 2089
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\UnicodeUnescaperTest.java",
+      "sha256": "dd563c8d97985823f5bbe795ecee2250dcd15e5e61773c141a62c8a70df380a2",
+      "size": 1994
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\translate\\UnicodeUnpairedSurrogateRemoverTest.java",
+      "sha256": "5f32ada43b0a948d6f26f76a1bf42a60f7bb94c26e8f610ce54874b0a5fc98b1",
+      "size": 1844
+    },
+    {
+      "file": "java\\src\\test\\java\\org\\apache\\commons\\text\\lookup\\external\\CustomStringSubstitutorTest.java",
+      "sha256": "3b2fc38e5a4b7bebec6b8bd693cb28b61b9bdf243492e2d592d3fac671a8d20c",
+      "size": 1899
+    },
+    {
+      "file": "java\\src\\test\\resources\\org\\apache\\commons\\text\\document.properties",
+      "sha256": "5091ca0126f70272246e55eb744c24eda6446e5d302c661c9ac59896b78461a0",
+      "size": 820
+    },
+    {
+      "file": "java\\src\\test\\resources\\org\\apache\\commons\\text\\document.xml",
+      "sha256": "3ba155674159b4723cd78dd45f79ef53e36fdab7d49b8def324559ec7667a82d",
+      "size": 958
+    },
+    {
+      "file": "java\\src\\test\\resources\\org\\apache\\commons\\text\\lcs-perf-analysis-inputs.csv",
+      "sha256": "a3178bb940f18a3bc541c783928d97625612c967cde0b8f94656df0650700f37",
+      "size": 5849
+    },
+    {
+      "file": "java\\src\\test\\resources\\org\\apache\\commons\\text\\stringEscapeUtilsTestData.txt",
+      "sha256": "d4b4964e58d08c25ec6a89a1284215096b32b0d0556928bd0432f9dfe5d84c95",
+      "size": 6038
+    },
+    {
+      "file": "java\\src\\test\\resources\\org\\apache\\commons\\text\\example\\testResourceBundleLookup.properties",
+      "sha256": "ae5273a0e4718beae74f5579711d6b6ce44fd6f8433238205d17a1b43c8332a4",
+      "size": 894
+    }
+  ],
+  "java_files": 201,
+  "business_cangjie_files": 2
+}

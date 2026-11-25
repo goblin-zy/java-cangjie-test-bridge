@@ -1,0 +1,19 @@
+{
+  "scope": [
+    "testByTag",
+    "byEscapedTag",
+    "testById",
+    "byEscapedId",
+    "testByClass"
+  ],
+  "source_ids": [
+    "SelectorTest.java::org.jsoup.select.SelectorTest#testByTag()",
+    "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedTag()",
+    "SelectorTest.java::org.jsoup.select.SelectorTest#testById()",
+    "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedId()",
+    "SelectorTest.java::org.jsoup.select.SelectorTest#testByClass()"
+  ],
+  "target_business_modified": false,
+  "historical_cangjie_reference_tests_read": false,
+  "agent_authored": true
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testSimpleVariable()",
+    "extracted_role": "test",
+    "test_framework": "junit4",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "d3c8a36cd5bfb5148574744c0b4d5081b4bd1b583f23becac30c83bb7761b1d7",
+    "source_file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+    "source_sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1071,
+      "end_offset_utf16_exclusive": 1175,
+      "start_line": 41,
+      "start_column": 5,
+      "end_line": 43,
+      "end_column": 5
+    },
+    "source_member_name": "testSimpleVariable",
+    "direct_recognized_checks": 0,
+    "execution_class": "com.samskivert.mustache.MustacheTest",
+    "declaring_class": "com.samskivert.mustache.SharedTests"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayVariable()",
+    "extracted_role": "test",
+    "test_framework": "junit4",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "02cf364c46ed9b90c566c1a13bb3f8af88b37ffd94449ab543199373a3e8dc03",
+    "source_file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+    "source_sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1183,
+      "end_offset_utf16_exclusive": 1332,
+      "start_line": 45,
+      "start_column": 5,
+      "end_line": 47,
+      "end_column": 5
+    },
+    "source_member_name": "testPrimitiveArrayVariable",
+    "direct_recognized_checks": 0,
+    "execution_class": "com.samskivert.mustache.MustacheTest",
+    "declaring_class": "com.samskivert.mustache.SharedTests"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+    "extracted_role": "test",
+    "test_framework": "junit4",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+    "source_file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+    "source_sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1340,
+      "end_offset_utf16_exclusive": 1476,
+      "start_line": 49,
+      "start_column": 5,
+      "end_line": 51,
+      "end_column": 5
+    },
+    "source_member_name": "testPrimitiveArrayIndexVariable",
+    "direct_recognized_checks": 0,
+    "execution_class": "com.samskivert.mustache.MustacheTest",
+    "declaring_class": "com.samskivert.mustache.SharedTests"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexOutOfBoundsVariable()",
+    "extracted_role": "test",
+    "test_framework": "junit4",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "94cc4a0251358fb9f963ef9485ba31909b18fb2f3b04dbe6b3c376fa143be2fb",
+    "source_file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+    "source_sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1484,
+      "end_offset_utf16_exclusive": 1710,
+      "start_line": 53,
+      "start_column": 5,
+      "end_line": 56,
+      "end_column": 5
+    },
+    "source_member_name": "testPrimitiveArrayIndexOutOfBoundsVariable",
+    "direct_recognized_checks": 0,
+    "execution_class": "com.samskivert.mustache.MustacheTest",
+    "declaring_class": "com.samskivert.mustache.SharedTests"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testOneShotSection()",
+    "extracted_role": "test",
+    "test_framework": "junit4",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "c076f07027c8c157340d45d9da03e5b24f9f03f3a499bcd36897a83981fe322c",
+    "source_file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+    "source_sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1718,
+      "end_offset_utf16_exclusive": 1854,
+      "start_line": 58,
+      "start_column": 5,
+      "end_line": 60,
+      "end_column": 5
+    },
+    "source_member_name": "testOneShotSection",
+    "direct_recognized_checks": 0,
+    "execution_class": "com.samskivert.mustache.MustacheTest",
+    "declaring_class": "com.samskivert.mustache.SharedTests"
+  },
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testListSection()",
+    "extracted_role": "test",
+    "test_framework": "junit4",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "6cdc26fd66e14cb90fffadd4a250e1a7a3b168cacabe5a892f3c38939ced35b7",
+    "source_file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+    "source_sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+    "source_location": {
+      "file": "original/com/samskivert/mustache/SharedTests.java",
+      "start_offset_utf16": 1862,
+      "end_offset_utf16_exclusive": 2055,
+      "start_line": 62,
+      "start_column": 5,
+      "end_line": 65,
+      "end_column": 5
+    },
+    "source_member_name": "testListSection",
+    "direct_recognized_checks": 0,
+    "execution_class": "com.samskivert.mustache.MustacheTest",
+    "declaring_class": "com.samskivert.mustache.SharedTests"
+  }
+]

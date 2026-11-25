@@ -1,0 +1,64 @@
+{
+  "id": "U01",
+  "packet_hash": "68b2403edc2c14a8bd7ef596a92ad6d7eb7e5d98b0089bc5300d8e800dfa9039",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "原输入、调用与全部检查",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J009",
+        "J010",
+        "J011",
+        "J012",
+        "J013",
+        "J014",
+        "J015",
+        "J016"
+      ],
+      "cangjie": [
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C014",
+        "C015"
+      ],
+      "reason": "保留hhh到hhh/jjj/kkk的输入；五项检查分别对应非空Patch、单个差异、最终类InsertDelta及位置1的原/新Chunk内容。"
+    },
+    {
+      "kind": "interface",
+      "topic": "本轮目标接口前提",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J009",
+        "J010",
+        "J011",
+        "J012",
+        "J013",
+        "J014",
+        "J015",
+        "J016"
+      ],
+      "cangjie": [
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C014",
+        "C015"
+      ],
+      "reason": "基于当前业务快照和明确的适配条件。",
+      "contract_reference": {
+        "quote": "testDiff_Insert：保留hhh到hhh/jjj/kkk的输入；五项检查分别对应非空Patch、单个差异、最终类InsertDelta及位置1的原/新Chunk内容。",
+        "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+      }
+    }
+  ]
+}

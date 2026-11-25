@@ -8,12 +8,25 @@
   "history_note": "静态验证分支使用独立历史，以merge保留双方提交来源",
   "unchanged_core_sha256": {
     "verify_tool.py": "bc28193899eb92bbc687a1b95fefb317531a64a89a3eadcf84964b11928115ea",
-    "workflow.py": "d5fe2193dffeafebce8abfeb3a2a3758c2974251e32f62ebd805ead213ee0d2f",
     "comparison.py": "24915876b0df33003ca6340054dbda84ee1ce621e60c21ae8dff992e2187bf4e",
     "locating.py": "faa98a2cadce48622a5fd090a5155d24dfccb3ffaf415629005fa4c3bc44e521"
   },
   "adapted_source": [
     "alignment.py: 可配置成员表、第二版上下文、执行类关联与受阻范围",
-    "tests/test_workflow.py: 使用仓库内样例路径"
-  ]
+    "tests/test_workflow.py: 使用仓库内样例路径",
+    "workflow.py: 词法状态下判断仓颉原始字面量，避免CSS字符串误报",
+    "alignment.py: 同行注解、选定执行入口与参考测试排除"
+  ],
+  "upstream_core_sha256": {
+    "verify_tool.py": "bc28193899eb92bbc687a1b95fefb317531a64a89a3eadcf84964b11928115ea",
+    "workflow.py": "d5fe2193dffeafebce8abfeb3a2a3758c2974251e32f62ebd805ead213ee0d2f",
+    "comparison.py": "24915876b0df33003ca6340054dbda84ee1ce621e60c21ae8dff992e2187bf4e",
+    "locating.py": "faa98a2cadce48622a5fd090a5155d24dfccb3ffaf415629005fa4c3bc44e521"
+  },
+  "integrated_core_sha256": {
+    "verify_tool.py": "bc28193899eb92bbc687a1b95fefb317531a64a89a3eadcf84964b11928115ea",
+    "workflow.py": "87eb29d22057576d553f317f78823cae03f3076540c408e9f584f08cb283894b",
+    "comparison.py": "24915876b0df33003ca6340054dbda84ee1ce621e60c21ae8dff992e2187bf4e",
+    "locating.py": "faa98a2cadce48622a5fd090a5155d24dfccb3ffaf415629005fa4c3bc44e521"
+  }
 }

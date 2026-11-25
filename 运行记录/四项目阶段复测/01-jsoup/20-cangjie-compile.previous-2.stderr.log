@@ -1,0 +1,51 @@
+error: unrecognized escape '\p' in string literal
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\translated_test.cj:21:51:
+   | 
+21 |         let doc = Html4cj.parse("<p.p>One</p.p> <p\p>Two</p\p>")
+   |                                 ~                 ^^ unrecognized escape
+   |                                 |
+   |                                 because it is in string literal
+   | 
+   # note: found 12 possible escapes: '\r', '\f', '\v', '\n', '\t', '\b', '\0', '\\', '\'', '\"', '\u{__}', '\$' in string literal
+
+error: unrecognized escape '\.' in string literal
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\translated_test.cj:22:37:
+   | 
+22 |         let one = doc.expectFirst("p\.p")
+   |                                   ~ ^^ unrecognized escape
+   |                                   |
+   |                                   because it is in string literal
+   | 
+   # note: found 12 possible escapes: '\r', '\f', '\v', '\n', '\t', '\b', '\0', '\\', '\'', '\"', '\u{__}', '\$' in string literal
+
+error: unrecognized escape '\d' in string literal
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\translated_test.cj:38:62:
+   | 
+38 |         let doc = Html4cj.parse("<p id='i.d'>One</p> <p id='i\d'>Two</p> <p id='one-two/three'>Three</p>")
+   |                                 ~                            ^^ unrecognized escape
+   |                                 |
+   |                                 because it is in string literal
+   | 
+   # note: found 12 possible escapes: '\r', '\f', '\v', '\n', '\t', '\b', '\0', '\\', '\'', '\"', '\u{__}', '\$' in string literal
+
+error: unrecognized escape '\.' in string literal
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\translated_test.cj:39:38:
+   | 
+39 |         let one = doc.expectFirst("#i\.d")
+   |                                   ~  ^^ unrecognized escape
+   |                                   |
+   |                                   because it is in string literal
+   | 
+   # note: found 12 possible escapes: '\r', '\f', '\v', '\n', '\t', '\b', '\0', '\\', '\'', '\"', '\u{__}', '\$' in string literal
+
+error: unrecognized escape '\/' in string literal
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\translated_test.cj:43:47:
+   | 
+43 |         let third = doc.expectFirst("p#one-two\/three")
+   |                                     ~         ^^ unrecognized escape
+   |                                     |
+   |                                     because it is in string literal
+   | 
+   # note: found 12 possible escapes: '\r', '\f', '\v', '\n', '\t', '\b', '\0', '\\', '\'', '\"', '\u{__}', '\$' in string literal
+
+5 errors generated, 5 errors printed.

@@ -1,0 +1,9 @@
+[?25l[0J7[;r8
+[1F7[9999E8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mleven4cj[0m, time elapsed: 828500 ns, RESULT:
+    TCS: [33mLevenshteinTranslationTest[0m, time elapsed: 806400 ns, RESULT:
+    [[32m PASSED [0m] CASE: testGetLevenshteinDistance_StringString (428600 ns)
+Summary: TOTAL: 1
+    [32mPASSED[0m: 1, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 0
+--------------------------------------------------------------------------------------------------

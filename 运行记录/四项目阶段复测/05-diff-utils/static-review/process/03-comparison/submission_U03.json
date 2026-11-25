@@ -1,0 +1,72 @@
+{
+  "id": "U03",
+  "packet_hash": "12c0c8e460eb1e314a042152c99909971fe8ded7b756f7998f58cc15e4ed00da",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "原输入、调用与全部检查",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J025",
+        "J026",
+        "J027",
+        "J028",
+        "J029",
+        "J030",
+        "J031",
+        "J032",
+        "J033",
+        "J034"
+      ],
+      "cangjie": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035"
+      ],
+      "reason": "保留aaa/bbb/ccc到aaa/zzz/ccc的输入；五项检查分别对应非空Patch、单个差异、最终类ChangeDelta及位置1的bbb到zzz的Chunk。"
+    },
+    {
+      "kind": "interface",
+      "topic": "本轮目标接口前提",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J025",
+        "J026",
+        "J027",
+        "J028",
+        "J029",
+        "J030",
+        "J031",
+        "J032",
+        "J033",
+        "J034"
+      ],
+      "cangjie": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035"
+      ],
+      "reason": "基于当前业务快照和明确的适配条件。",
+      "contract_reference": {
+        "quote": "testDiff_Change：保留aaa/bbb/ccc到aaa/zzz/ccc的输入；五项检查分别对应非空Patch、单个差异、最终类ChangeDelta及位置1的bbb到zzz的Chunk。",
+        "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+      }
+    }
+  ]
+}

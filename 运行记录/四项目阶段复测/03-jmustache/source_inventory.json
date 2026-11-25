@@ -1,0 +1,233 @@
+{
+  "source_commit": "c99fc226ac87379b9eaf81a9a61d52a32b86c822",
+  "source": "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache",
+  "tools_commit": "dbe58c8f4ff3849d2968471e41314842b6d3b3e7",
+  "selected": {
+    "type": "com.samskivert.mustache.MustacheTest",
+    "file": "src/test/java/com/samskivert/mustache/MustacheTest.java",
+    "methods": [
+      "testSimpleVariable",
+      "testPrimitiveArrayVariable",
+      "testPrimitiveArrayIndexVariable",
+      "testPrimitiveArrayIndexOutOfBoundsVariable",
+      "testOneShotSection",
+      "testListSection"
+    ],
+    "support": "ALL",
+    "package": "cjmustache"
+  },
+  "files": [
+    {
+      "file": "java\\.gitignore",
+      "sha256": "c9c148679b4ef4972f64363f3310d69aaaa9bc9ad254ef5a8d6a903ca9ac4aaa",
+      "size": 195
+    },
+    {
+      "file": "java\\.gitmodules",
+      "sha256": "cdf0842121c3a1edc42a31c9bcb8e5841c9ada4f4cd0245b7439187f72d82b7e",
+      "size": 133
+    },
+    {
+      "file": "java\\LICENSE",
+      "sha256": "239102722837946c89a166a0f52807062ce7f226f0200db98c824d9e3348632a",
+      "size": 1491
+    },
+    {
+      "file": "java\\mvnw",
+      "sha256": "825cdc62abd459da5efa6eeb0218f329c0adca3f7d4f7560f6ba2b43b9deb928",
+      "size": 10924
+    },
+    {
+      "file": "java\\mvnw.cmd",
+      "sha256": "3dc8d558cc15e5051a9ef3778099c6a8bcd83320ba0383ece14811194d08d730",
+      "size": 7061
+    },
+    {
+      "file": "java\\pom.xml",
+      "sha256": "2a61efda2ff59a37aa89ef37223a3374cc3add7754c88c6720ced320efd0fe2d",
+      "size": 7950
+    },
+    {
+      "file": "java\\README.md",
+      "sha256": "310abf71b932eb08d3a3db4dd4656f19a4ccfcac547d2c16653a3df3dce24511",
+      "size": 22247
+    },
+    {
+      "file": "java\\交付说明.md",
+      "sha256": "1f80233e0380198c099f20f19a32be81ca84119c6fdc6e628cc16866125d0c35",
+      "size": 501
+    },
+    {
+      "file": "cangjie\\src\\basic_collector.cj",
+      "sha256": "acab0fc5e38397e39a133eb233d77e2c435374b508fc6c71aaa382a1e72208cf",
+      "size": 3884
+    },
+    {
+      "file": "cangjie\\src\\default_collector.cj",
+      "sha256": "9a8dedfadb24cd136817c786add4ab8593c3038b7c20d76ca1db5c0ca2e9eded",
+      "size": 730
+    },
+    {
+      "file": "cangjie\\src\\escapers.cj",
+      "sha256": "95fe5982d2f89bc92f3eec58639cb5faaba18c0543b4d591ae816584b8c5c9ef",
+      "size": 5867
+    },
+    {
+      "file": "cangjie\\src\\helpers.cj",
+      "sha256": "2fa46ace4a882d34656c1d4a23968c9e16b56937bd766afc93a67c4f452e884f",
+      "size": 1085
+    },
+    {
+      "file": "cangjie\\src\\mustache.cj",
+      "sha256": "1ff6064b60f1bf5f407fd37a49b47db6e8044c0cbc74f63c57b8f15d2d669fdb",
+      "size": 69865
+    },
+    {
+      "file": "cangjie\\src\\my_exception.cj",
+      "sha256": "918a70b1daff5ac3e48270653268d44f469a19afe5382338fc05297c2300eb03",
+      "size": 2422
+    },
+    {
+      "file": "cangjie\\src\\template.cj",
+      "sha256": "510397446304b93e4a4bce25d090b0034ae79c2eb605421c3b0ae1cb21fd1123",
+      "size": 20636
+    },
+    {
+      "file": "cangjie\\src\\test\\compile_test.cj",
+      "sha256": "3be53ac54b2f1ef07a850b70ea46ca161b88f2f10c9b13917afc965d5e209a50",
+      "size": 999
+    },
+    {
+      "file": "cangjie\\src\\test\\escapers_test.cj",
+      "sha256": "c482cb468ceac4f14fa93df3b7842b9c6ee02c2be710e8ebc6bbda51549ad7b1",
+      "size": 4831
+    },
+    {
+      "file": "cangjie\\src\\test\\helpers_test.cj",
+      "sha256": "6f142c115fe1cc1f4b3876ac6c89d1d142f55c28e1b60e31aaa7ef8a62557602",
+      "size": 1080
+    },
+    {
+      "file": "cangjie\\src\\test\\shared_test.cj",
+      "sha256": "61e1f2d692e5947bb99f6cb214d9755fd25387f366768c140870d3e00bc8d552",
+      "size": 36327
+    },
+    {
+      "file": "cangjie\\src\\test\\thread_safety_test.cj",
+      "sha256": "289be5eb8a78cff428325c539eb6ea7a06cdeb7881ea6cd2c1e0ff1149fc7eac",
+      "size": 3725
+    },
+    {
+      "file": "cangjie\\src\\test\\templates\\main.html",
+      "sha256": "de780b3f50e51cab273ad8d2455dd815185609749cdc93172352402e387278b6",
+      "size": 18383
+    },
+    {
+      "file": "java\\.mvn\\wrapper\\maven-wrapper.jar",
+      "sha256": "e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a",
+      "size": 62547
+    },
+    {
+      "file": "java\\.mvn\\wrapper\\maven-wrapper.properties",
+      "sha256": "0aaf2bdb47a46f20b0211ad003a8b321d918ccccdd2f30734b33a2c76d5abc05",
+      "size": 972
+    },
+    {
+      "file": "java\\src\\main\\java\\module-info.java",
+      "sha256": "14b24f6bfce881667a8ebb90bf2e408406aba3b3395420e436072573c959838a",
+      "size": 103
+    },
+    {
+      "file": "java\\src\\main\\java\\com\\samskivert\\mustache\\BasicCollector.java",
+      "sha256": "708fa7b71335f835756c15b7047f8af6ac118ad3402b8f63c0cb248f391d2c62",
+      "size": 8206
+    },
+    {
+      "file": "java\\src\\main\\java\\com\\samskivert\\mustache\\DefaultCollector.java",
+      "sha256": "43d4c1871467821b0398615166e704b4ef5515f4fa992c0280e12fb88dd80676",
+      "size": 5804
+    },
+    {
+      "file": "java\\src\\main\\java\\com\\samskivert\\mustache\\Escapers.java",
+      "sha256": "fea6375d93e4cab26e77f0f261d49d83e37cbfa579b00962b42273bd78d6f493",
+      "size": 5170
+    },
+    {
+      "file": "java\\src\\main\\java\\com\\samskivert\\mustache\\Mustache.java",
+      "sha256": "387439edc469e31a01e6a330ce5dadad3a87dc41d3133f64f56f5c78912588e0",
+      "size": 72072
+    },
+    {
+      "file": "java\\src\\main\\java\\com\\samskivert\\mustache\\MustacheException.java",
+      "sha256": "fd09726ff925a73e6c455eb4419c4542f25c5f0e083b8ca499811f13bf1d94b4",
+      "size": 1386
+    },
+    {
+      "file": "java\\src\\main\\java\\com\\samskivert\\mustache\\MustacheParseException.java",
+      "sha256": "3102ff9ae1a654851b24a4cd1edb669660fa3888b5faff92849a3c88fd60f91b",
+      "size": 541
+    },
+    {
+      "file": "java\\src\\main\\java\\com\\samskivert\\mustache\\Template.java",
+      "sha256": "9480d2aae64c467ee67a9f6839ce574ab7ae97927730ef33bdd845b95c6d4e79",
+      "size": 22075
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\MustacheTest.java",
+      "sha256": "83d1a3bc604fa59f70208f56b4f67b2b93df57b46a22688a64d9dfe534dedb36",
+      "size": 11298
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\SharedTests.java",
+      "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+      "size": 39058
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\ThreadSafetyTest.java",
+      "sha256": "6e822dd9dc3f64440dd7d626cbb8e99dee91a5f32dd45ecbaf8cd6b87187d389",
+      "size": 4652
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\specs\\CustomSpecTest.java",
+      "sha256": "fa5057b2b9992098c1a8b9ae39fd2eb374d60ec143a351a2dff5e16972b3fba7",
+      "size": 654
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\specs\\OfficialSpecTest.java",
+      "sha256": "d1d80423d96b5bc320445367de4453ccde82bb74b64f28ed3f84a2cd939fed42",
+      "size": 764
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\specs\\Spec.java",
+      "sha256": "4998eeed526c66015300a579e04c1963a55f9b03a7091e19ac8741c0a4caa856",
+      "size": 2259
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\specs\\SpecAwareTemplateLoader.java",
+      "sha256": "cab0bafd51232d420052ef093a99b35a03470257f9c8246c39f3a1d8e9bc7ad5",
+      "size": 823
+    },
+    {
+      "file": "java\\src\\test\\java\\com\\samskivert\\mustache\\specs\\SpecTest.java",
+      "sha256": "cdfc80adfdad65a12b1a14d5616338c6579f0cd95c50e107bbd16290769505c3",
+      "size": 4602
+    },
+    {
+      "file": "java\\src\\test\\resources\\custom\\specs\\partials.yml",
+      "sha256": "e9f637736140a02c2e687072fffb0e5e7e865e5fd3a765a1f9dccda03c13a446",
+      "size": 4227
+    },
+    {
+      "file": "java\\src\\test\\resources\\custom\\specs\\sections.yml",
+      "sha256": "e69bf41b4295b06a313831ffa47f760a8ea861d1e0614832628729979f32c29e",
+      "size": 401
+    },
+    {
+      "file": "java\\src\\test\\resources\\custom\\specs\\~inheritance.yml",
+      "sha256": "c41a7d1b2b05904a1b37ecb23574116734dec573a594d0ca19648165e8576992",
+      "size": 402
+    }
+  ],
+  "java_files": 16,
+  "business_cangjie_files": 12
+}

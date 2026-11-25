@@ -1,0 +1,13 @@
+[?25l[0J7[;r8
+[1F7[9999E8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mcangjie_tpc::html4cj[0m, time elapsed: 6721100 ns, RESULT:
+    TCS: [33mSelectorTranslationTest[0m, time elapsed: 6712400 ns, RESULT:
+    [[32m PASSED [0m] CASE: testByTag (2120800 ns)
+    [[32m PASSED [0m] CASE: byEscapedTag (674800 ns)
+    [[32m PASSED [0m] CASE: testById (1051200 ns)
+    [[32m PASSED [0m] CASE: byEscapedId (708300 ns)
+    [[32m PASSED [0m] CASE: testByClass (1706800 ns)
+Summary: TOTAL: 5
+    [32mPASSED[0m: 5, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 0
+--------------------------------------------------------------------------------------------------

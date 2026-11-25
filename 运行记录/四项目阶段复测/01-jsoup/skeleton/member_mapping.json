@@ -1,0 +1,152 @@
+[
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByTag()",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 480,
+      "end_offset_utf16_exclusive": 981,
+      "start_line": 21,
+      "start_column": 5,
+      "end_line": 31,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/SelectorTest.java",
+      "start_offset_utf16": 480,
+      "end_offset_utf16_exclusive": 590,
+      "start_line": 21,
+      "start_column": 5,
+      "end_line": 23,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "SelectorTranslationTest",
+    "target_member": "testByTag",
+    "target_signature": "func testByTag(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P1",
+    "adaptation": "保留两段原HTML及DIV大小写查询，检查三个ID及span零命中。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedTag()",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 987,
+      "end_offset_utf16_exclusive": 1338,
+      "start_line": 33,
+      "start_column": 5,
+      "end_line": 42,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/SelectorTest.java",
+      "start_offset_utf16": 596,
+      "end_offset_utf16_exclusive": 709,
+      "start_line": 25,
+      "start_column": 5,
+      "end_line": 27,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "SelectorTranslationTest",
+    "target_member": "byEscapedTag",
+    "target_signature": "func byEscapedTag(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P2",
+    "adaptation": "保留HTML中的点和反斜杠，以及CSS选择器的两层转义，依次断言One和Two。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testById()",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 1344,
+      "end_offset_utf16_exclusive": 1738,
+      "start_line": 44,
+      "start_column": 5,
+      "end_line": 52,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/SelectorTest.java",
+      "start_offset_utf16": 715,
+      "end_offset_utf16_exclusive": 824,
+      "start_line": 29,
+      "start_column": 5,
+      "end_line": 31,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "SelectorTranslationTest",
+    "target_member": "testById",
+    "target_signature": "func testById(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P3",
+    "adaptation": "同一HTML重复ID返回两个节点并保持原文本顺序；另一个HTML不存在foo，仍检查零命中。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedId()",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 1744,
+      "end_offset_utf16_exclusive": 2182,
+      "start_line": 54,
+      "start_column": 5,
+      "end_line": 65,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/SelectorTest.java",
+      "start_offset_utf16": 830,
+      "end_offset_utf16_exclusive": 942,
+      "start_line": 33,
+      "start_column": 5,
+      "end_line": 35,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "SelectorTranslationTest",
+    "target_member": "byEscapedId",
+    "target_signature": "func byEscapedId(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P4",
+    "adaptation": "保留三个原ID和选择器转义，依次检查One、Two、Three。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByClass()",
+    "source_location": {
+      "file": "original/SelectorTest.java",
+      "start_offset_utf16": 2188,
+      "end_offset_utf16_exclusive": 2716,
+      "start_line": 67,
+      "start_column": 5,
+      "end_line": 78,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/SelectorTest.java",
+      "start_offset_utf16": 948,
+      "end_offset_utf16_exclusive": 1060,
+      "start_line": 37,
+      "start_column": 5,
+      "end_line": 39,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "SelectorTranslationTest",
+    "target_member": "testByClass",
+    "target_signature": "func testByClass(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P5",
+    "adaptation": "保留大小写类名、多个类名、缺失类以及带连字符类名的全部五条断言。"
+  }
+]

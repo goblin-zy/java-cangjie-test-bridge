@@ -1,0 +1,21 @@
+{
+  "scope": [
+    "testSimpleVariable",
+    "testPrimitiveArrayVariable",
+    "testPrimitiveArrayIndexVariable",
+    "testPrimitiveArrayIndexOutOfBoundsVariable",
+    "testOneShotSection",
+    "testListSection"
+  ],
+  "source_ids": [
+    "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testSimpleVariable()",
+    "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayVariable()",
+    "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+    "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexOutOfBoundsVariable()",
+    "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testOneShotSection()",
+    "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testListSection()"
+  ],
+  "target_business_modified": false,
+  "historical_cangjie_reference_tests_read": false,
+  "agent_authored": true
+}

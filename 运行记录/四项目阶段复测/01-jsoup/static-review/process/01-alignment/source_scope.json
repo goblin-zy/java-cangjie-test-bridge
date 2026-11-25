@@ -1,0 +1,31 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "testByTag",
+      "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByTag()"
+    },
+    {
+      "id": "U02",
+      "name": "byEscapedTag",
+      "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedTag()"
+    },
+    {
+      "id": "U03",
+      "name": "testById",
+      "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testById()"
+    },
+    {
+      "id": "U04",
+      "name": "byEscapedId",
+      "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#byEscapedId()"
+    },
+    {
+      "id": "U05",
+      "name": "testByClass",
+      "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByClass()"
+    }
+  ],
+  "configuration": "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\translation_config.json",
+  "members_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\02-java-skeleton\\0\\members.json"
+}

@@ -1,0 +1,324 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+  "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "PARENT_MODEL_NOT_EVALUATED": 1,
+    "BUILD_PROFILES_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [
+    {
+      "kind": "SEMANTIC_PARSE_ISSUES",
+      "file": "src/main/java/org/apache/commons/text/translate/EntityArrays.java",
+      "details": [
+        "NullPointerException: Cannot invoke \"java.util.Map.size()\" because \"m\" is null"
+      ]
+    }
+  ],
+  "profile": "whole",
+  "scope": "shared",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+  "selected_tests": [],
+  "test_invocations": [],
+  "imports": [
+    {
+      "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+      "package": "org.apache.commons.text.similarity",
+      "imports": [
+        {
+          "start": 866,
+          "end": 923,
+          "name": "org.assertj.core.api.Assertions.assertThat",
+          "static": true
+        },
+        {
+          "start": 925,
+          "end": 1006,
+          "name": "org.assertj.core.api.Assertions.assertThatIllegalArgumentException",
+          "static": true
+        },
+        {
+          "start": 1010,
+          "end": 1044,
+          "name": "org.junit.jupiter.api.Test",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+      "package": "org.apache.commons.text.similarity",
+      "imports": [
+        {
+          "start": 866,
+          "end": 890,
+          "name": "java.util.Arrays",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+      "content_kind": "signature",
+      "content": "public class LevenshteinDistanceTest {",
+      "content_chars": 38,
+      "source": {
+        "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+        "sha256": "079618b994dae7cca4bea1281868f0811e5eb8515f47c2fb5cb6e3b4c5da2451",
+        "start_line": 27,
+        "end_line": 27,
+        "start_offset_utf16": 1097,
+        "end_offset_utf16_exclusive": 1135
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "SELECTED_TEST_TYPE"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest#field:UNLIMITED_DISTANCE",
+      "content_kind": "full",
+      "content": "private static final LevenshteinDistance UNLIMITED_DISTANCE = new LevenshteinDistance();",
+      "content_chars": 88,
+      "source": {
+        "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+        "sha256": "079618b994dae7cca4bea1281868f0811e5eb8515f47c2fb5cb6e3b4c5da2451",
+        "start_line": 29,
+        "end_line": 29,
+        "start_offset_utf16": 1143,
+        "end_offset_utf16_exclusive": 1231
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "TEST_INITIALIZATION"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "193d15a67cd73ca9719c62663411f4e921287fcdb16be83b2d4e30390eda97d1",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistance",
+      "content_kind": "signature",
+      "content": "public class LevenshteinDistance implements EditDistance<Integer> {",
+      "content_chars": 67,
+      "source": {
+        "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+        "sha256": "d791fb03a46b2eca1e9d2999e08b7183b8dd2585a6e521ba394335c8310642b5",
+        "start_line": 36,
+        "end_line": 36,
+        "start_offset_utf16": 1283,
+        "end_offset_utf16_exclusive": 1350
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "9fd01b4cc913bd535710faae170383ea006038eb0387780c559f318bdcb70449",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistance#<init>()",
+      "content_kind": "signature",
+      "content": "public LevenshteinDistance() ",
+      "content_chars": 29,
+      "source": {
+        "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+        "sha256": "d791fb03a46b2eca1e9d2999e08b7183b8dd2585a6e521ba394335c8310642b5",
+        "start_line": 331,
+        "end_line": 331,
+        "start_offset_utf16": 12555,
+        "end_offset_utf16_exclusive": 12584
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "5ca83f3a1ed8f0ed794d9e2639972911e8283b489cac40da8c9ba1b0239f3b6e",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistance#field:INSTANCE",
+      "content_kind": "full",
+      "content": "private static final LevenshteinDistance INSTANCE = new LevenshteinDistance();",
+      "content_chars": 78,
+      "source": {
+        "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+        "sha256": "d791fb03a46b2eca1e9d2999e08b7183b8dd2585a6e521ba394335c8310642b5",
+        "start_line": 41,
+        "end_line": 41,
+        "start_offset_utf16": 1404,
+        "end_offset_utf16_exclusive": 1482
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "BUSINESS_INITIALIZATION_EVIDENCE"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "197423183717dc7ed965c857beeaac58badba9986930ba62aecd41f1c9303f41",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistance#field:threshold",
+      "content_kind": "full",
+      "content": "private final Integer threshold;",
+      "content_chars": 32,
+      "source": {
+        "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+        "sha256": "d791fb03a46b2eca1e9d2999e08b7183b8dd2585a6e521ba394335c8310642b5",
+        "start_line": 323,
+        "end_line": 323,
+        "start_offset_utf16": 12307,
+        "end_offset_utf16_exclusive": 12339
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "BUSINESS_INITIALIZATION_EVIDENCE"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "73eda36e3117bc94aec16503777b7bb88ca743cca2b1d45478a2a4c13d976aed",
+      "caller": "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc",
+      "resolution": "resolved_static",
+      "targets": [
+        "9fd01b4cc913bd535710faae170383ea006038eb0387780c559f318bdcb70449"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "fa563a62f15ef8980bc1fce32e3353dc4a783cea0d57f939e96738dc0fb4a9c0",
+      "caller": "5ca83f3a1ed8f0ed794d9e2639972911e8283b489cac40da8c9ba1b0239f3b6e",
+      "resolution": "resolved_static",
+      "targets": [
+        "9fd01b4cc913bd535710faae170383ea006038eb0387780c559f318bdcb70449"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc",
+      "owner_type_key": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+      "kind": "field",
+      "start": 1184,
+      "modifiers": [
+        "private",
+        "static",
+        "final"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "9fd01b4cc913bd535710faae170383ea006038eb0387780c559f318bdcb70449"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 332,
+    "visited_members": 4
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "197423183717dc7ed965c857beeaac58badba9986930ba62aecd41f1c9303f41",
+        "display_id": "org.apache.commons.text.similarity.LevenshteinDistance#field:threshold",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 197423183717dc7ed965c857beeaac58badba9986930ba62aecd41f1c9303f41"
+      },
+      {
+        "member_key": "5ca83f3a1ed8f0ed794d9e2639972911e8283b489cac40da8c9ba1b0239f3b6e",
+        "display_id": "org.apache.commons.text.similarity.LevenshteinDistance#field:INSTANCE",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 5ca83f3a1ed8f0ed794d9e2639972911e8283b489cac40da8c9ba1b0239f3b6e"
+      },
+      {
+        "member_key": "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc",
+        "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest#field:UNLIMITED_DISTANCE",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ]
+}

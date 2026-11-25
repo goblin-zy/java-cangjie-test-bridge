@@ -1,0 +1,11 @@
+[?25l[0J7[;r8
+[1F7[9999E8[0J7[;r8[?25h--------------------------------------------------------------------------------------------------
+TP: [33mdiffUtils4cj[0m, time elapsed: 621200 ns, RESULT:
+    TCS: [33mDiffTranslationTest[0m, time elapsed: 612700 ns, RESULT:
+    [[32m PASSED [0m] CASE: testDiff_Insert (342000 ns)
+    [[32m PASSED [0m] CASE: testDiff_Delete (21400 ns)
+    [[32m PASSED [0m] CASE: testDiff_Change (14700 ns)
+Summary: TOTAL: 3
+    [32mPASSED[0m: 3, [32mSKIPPED[0m: 0, ERROR: 0
+    [31mFAILED[0m: 0
+--------------------------------------------------------------------------------------------------

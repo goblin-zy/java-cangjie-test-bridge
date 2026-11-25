@@ -1,0 +1,23 @@
+{
+  "status": "SUITE_CREATED_WITH_LIMITATIONS",
+  "json": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite\\initial_context.json",
+  "markdown": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite\\initial_context.md",
+  "agent_json": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite\\agent_context.json",
+  "view": "compact",
+  "recommended_input": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite\\agent_context.json",
+  "full_json_bytes": 771171,
+  "agent_json_bytes": 397901,
+  "records": 176,
+  "unresolved": 5,
+  "required_not_included": 78,
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 29989,
+    "visited_members": 164
+  },
+  "tests": 124,
+  "tasks": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite\\tasks.json",
+  "shared": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite\\shared.json"
+}

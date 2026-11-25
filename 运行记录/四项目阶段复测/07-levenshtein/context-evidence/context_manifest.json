@@ -1,0 +1,26 @@
+{
+  "schema_version": "java-test-context-2.1",
+  "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+  "schema_sha256": "3c5fe076a3ac4db887aaec31eca10789aaed0c3bdb5ae60a85de551c93557c4f",
+  "summary": {
+    "java_files": 201,
+    "types": 280,
+    "members": 3123,
+    "references": 25429,
+    "resolution_counts": {
+      "external": 10614,
+      "resolved_static": 14443,
+      "implicit_project_constructor": 73,
+      "unresolved": 297,
+      "project_declaration_unmapped": 2
+    },
+    "test_methods": 1177,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 20333,
+    "recognized_assertions": 3031,
+    "assertion_candidates": 48,
+    "compatibility_features": 703
+  },
+  "source_manifest": "source_manifest.json",
+  "source_snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d"
+}

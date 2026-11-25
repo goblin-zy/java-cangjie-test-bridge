@@ -1,0 +1,23 @@
+test_css_hash_strings_are_not_cangjie_raw_literals (test_resolve.ResolveTests.test_css_hash_strings_are_not_cangjie_raw_literals) ... ok
+test_nonadjacent_methods_keep_gap_for_other_unit (test_resolve.ResolveTests.test_nonadjacent_methods_keep_gap_for_other_unit) ... ok
+test_rejects_changes_after_either_side_starts (test_resolve.ResolveTests.test_rejects_changes_after_either_side_starts) ... ok
+test_rejects_partial_methods_and_overlaps_without_writing (test_resolve.ResolveTests.test_rejects_partial_methods_and_overlaps_without_writing) ... ok
+test_same_line_java_annotation_keeps_declaration_range (test_resolve.ResolveTests.test_same_line_java_annotation_keeps_declaration_range) ... ok
+test_audit_detects_one_missing_comparison (test_workflow.WalletWorkflowTests.test_audit_detects_one_missing_comparison) ... ok
+test_cangjie_business_materials_exclude_reference_tests (test_workflow.WalletWorkflowTests.test_cangjie_business_materials_exclude_reference_tests) ... ok
+test_changed_source_cannot_claim_full_scope (test_workflow.WalletWorkflowTests.test_changed_source_cannot_claim_full_scope) ... ok
+test_configured_selectors_limit_source_scope (test_workflow.WalletWorkflowTests.test_configured_selectors_limit_source_scope) ... ok
+test_contract_quote_and_snapshot_version_are_verified (test_workflow.WalletWorkflowTests.test_contract_quote_and_snapshot_version_are_verified) ... ok
+test_fragment_route_selection_locates_only_requested_method (test_workflow.WalletWorkflowTests.test_fragment_route_selection_locates_only_requested_method) ... ok
+test_misquoted_source_anchor_is_rejected (test_workflow.WalletWorkflowTests.test_misquoted_source_anchor_is_rejected) ... ok
+test_missing_contract_only_allows_unknown_interface (test_workflow.WalletWorkflowTests.test_missing_contract_only_allows_unknown_interface) ... ok
+test_note_edit_invalidates_old_submission (test_workflow.WalletWorkflowTests.test_note_edit_invalidates_old_submission) ... ok
+test_replay_through_public_commands (test_workflow.WalletWorkflowTests.test_replay_through_public_commands) ... ok
+test_source_difference_survives_unknown_interface (test_workflow.WalletWorkflowTests.test_source_difference_survives_unknown_interface) ... ok
+test_uncovered_segment_is_rejected (test_workflow.WalletWorkflowTests.test_uncovered_segment_is_rejected) ... ok
+test_unresolved_class_question_must_reach_affected_result (test_workflow.WalletWorkflowTests.test_unresolved_class_question_must_reach_affected_result) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 3.476s
+
+OK

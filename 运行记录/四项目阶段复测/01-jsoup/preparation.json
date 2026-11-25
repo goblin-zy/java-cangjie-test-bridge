@@ -1,0 +1,42 @@
+{
+  "status": "PREPARED",
+  "project": "01-jsoup",
+  "selected_methods": [
+    "testByTag",
+    "byEscapedTag",
+    "testById",
+    "byEscapedId",
+    "testByClass"
+  ],
+  "selected_count": 5,
+  "java_returncode": 0,
+  "dependencies": [
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar",
+      "sha256": "004a478c2d40f8f524af27ff579d9459d57beb5c1db8ec1dfb9621cc506f75d3"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\jsr305-3.0.2.jar",
+      "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+    }
+  ],
+  "context_summary": {
+    "java_files": 137,
+    "types": 338,
+    "members": 3461,
+    "references": 22568,
+    "resolution_counts": {
+      "resolved_static": 15251,
+      "external": 6768,
+      "implicit_project_constructor": 70,
+      "project_declaration_unmapped": 4,
+      "unresolved": 475
+    },
+    "test_methods": 1067,
+    "selected_test_methods_declared": 84,
+    "internal_nodes": 20126,
+    "recognized_assertions": 3406,
+    "assertion_candidates": 5,
+    "compatibility_features": 449
+  }
+}

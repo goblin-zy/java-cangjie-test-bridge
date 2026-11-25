@@ -1,0 +1,793 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+  "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "PARENT_MODEL_NOT_EVALUATED": 1,
+    "BUILD_PROFILES_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [
+    {
+      "kind": "SEMANTIC_PARSE_ISSUES",
+      "file": "src/main/java/org/apache/commons/text/translate/EntityArrays.java",
+      "details": [
+        "NullPointerException: Cannot invoke \"java.util.Map.size()\" because \"m\" is null"
+      ]
+    }
+  ],
+  "profile": "fragment",
+  "scope": "test",
+  "purpose": "\u7ffb\u8bd1\u6307\u5b9a\u6d4b\u8bd5\u65b9\u6cd5\uff1a\u4fdd\u7559\u6240\u5728\u7c7b\u53ca\u751f\u547d\u5468\u671f\uff0c\u5c55\u5f00\u8be5\u65b9\u6cd5\u7684\u8f85\u52a9\u4f9d\u8d56\u3002",
+  "target_type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+  "selected_tests": [
+    "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "LevenshteinDistanceTest.java::org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+      "declaring_class": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+      "execution_class": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+      "selector": "org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+      "framework": "junit-jupiter",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "execution_type_key": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+      "declaring_type_key": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+      "package": "org.apache.commons.text.similarity",
+      "imports": [
+        {
+          "start": 866,
+          "end": 923,
+          "name": "org.assertj.core.api.Assertions.assertThat",
+          "static": true
+        },
+        {
+          "start": 925,
+          "end": 1006,
+          "name": "org.assertj.core.api.Assertions.assertThatIllegalArgumentException",
+          "static": true
+        },
+        {
+          "start": 1010,
+          "end": 1044,
+          "name": "org.junit.jupiter.api.Test",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+      "package": "org.apache.commons.text.similarity",
+      "imports": [
+        {
+          "start": 866,
+          "end": 890,
+          "name": "java.util.Arrays",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 38,
+      "source": {
+        "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+        "sha256": "079618b994dae7cca4bea1281868f0811e5eb8515f47c2fb5cb6e3b4c5da2451",
+        "start_line": 27,
+        "end_line": 27,
+        "start_offset_utf16": 1097,
+        "end_offset_utf16_exclusive": 1135
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "SELECTED_TEST_TYPE",
+      "shared_record": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+      "content_kind": "full",
+      "content": "@Test\r\n    public void testGetLevenshteinDistance_StringString() {\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"\", \"\")).isEqualTo(0);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"\", \"a\")).isEqualTo(1);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"aaapppp\", \"\")).isEqualTo(7);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"frog\", \"fog\")).isEqualTo(1);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"fly\", \"ant\")).isEqualTo(3);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"elephant\", \"hippo\")).isEqualTo(7);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"hippo\", \"elephant\")).isEqualTo(7);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"hippo\", \"zzzzzzzz\")).isEqualTo(8);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"zzzzzzzz\", \"hippo\")).isEqualTo(8);\r\n        assertThat(UNLIMITED_DISTANCE.apply(\"hello\", \"hallo\")).isEqualTo(1);\r\n    }",
+      "content_chars": 836,
+      "source": {
+        "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+        "sha256": "079618b994dae7cca4bea1281868f0811e5eb8515f47c2fb5cb6e3b4c5da2451",
+        "start_line": 61,
+        "end_line": 73,
+        "start_offset_utf16": 2369,
+        "end_offset_utf16_exclusive": 3205
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "SELECTED_TEST"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "193d15a67cd73ca9719c62663411f4e921287fcdb16be83b2d4e30390eda97d1",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistance",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 67,
+      "source": {
+        "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+        "sha256": "d791fb03a46b2eca1e9d2999e08b7183b8dd2585a6e521ba394335c8310642b5",
+        "start_line": 36,
+        "end_line": 36,
+        "start_offset_utf16": 1283,
+        "end_offset_utf16_exclusive": 1350
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "DEPENDENCY_TYPE_HEADER",
+      "shared_record": "193d15a67cd73ca9719c62663411f4e921287fcdb16be83b2d4e30390eda97d1"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistance#apply(CharSequence,CharSequence)",
+      "content_kind": "signature",
+      "content": "@Override\r\n    public Integer apply(final CharSequence left, final CharSequence right) ",
+      "content_chars": 87,
+      "source": {
+        "file": "src/main/java/org/apache/commons/text/similarity/LevenshteinDistance.java",
+        "sha256": "d791fb03a46b2eca1e9d2999e08b7183b8dd2585a6e521ba394335c8310642b5",
+        "start_line": 382,
+        "end_line": 383,
+        "start_offset_utf16": 14777,
+        "end_offset_utf16_exclusive": 14864
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc",
+      "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest#field:UNLIMITED_DISTANCE",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 88,
+      "source": {
+        "file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+        "sha256": "079618b994dae7cca4bea1281868f0811e5eb8515f47c2fb5cb6e3b4c5da2451",
+        "start_line": 29,
+        "end_line": 29,
+        "start_offset_utf16": 1143,
+        "end_offset_utf16_exclusive": 1231
+      },
+      "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+      "snapshot_id": "77359057c9f3b27600bd2d1f7cbc723ef1f71cecb8666f0b3bfb6af9ad40ff5d",
+      "reason": "RESOLVED_DEPENDENCY",
+      "shared_record": "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "4974ca730a33acebe38a65ba272be6e2d40235653b3ce0317bdd9160c8baebce",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "cfd68a9f12b2a8c429433dbc0b4dfb68a0b4c54239b4a19e9e5f30820872f5a9",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "118485b32092a610962089fc4ec02864d7adc5b5627163e95cf6ec9e228ecba6",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "a3dd28a3b36c7f4d3d388c93b1dd60b18864ace28db625d607f5ad00b759707f",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "023f7705b714e6727229fbb170ed3ad2e6a097bd925b2d456b146467ed4b9377",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "463481e8f0ed573f15572d1b23c60423b510b029d081fccafb6c6e82f52d72e0",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "cef0d9fba4afe30fa554d7e6e1b101c1b5bdfa2f4731fdfbdcbdd39b2e2a4890",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "46b1d62149515cd2083defdb50a47d3ea24af60e13b8f5427c892ffae2ff2c32",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "92212df9b9a1c8788b86833dab0a99f93d3fdc5ebf4e4ef7e3b2d3af816474cd",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "89e752f2b6e2a37a550896f904dd144f3817c52d2234cc5be2ea3cebdebc31af",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "ed711c5ba51d8971f96f82e8df77722e3b8d2f3a6488a9ed673eb82248323ae9",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "7b4e633c2256b4c7d770d6aa2c2b981b7aa1a6f82744d424fd008dc69c51d23c",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "15483d258f7ea684f95540b24e9a673326f5770dbbfc8bd290570b796c43ef1c",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "6beb7898e2fb11b47962e5bdb7eaca0b92b1d840ff0d87e5a6061506ca43e527",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "7c60bb4066d8c098e2fd8e4201be7c18b1737ffafbc3b86921b150301bacde7b",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "972bfce944f7d1eb805e2576d75c4cb5877db4b677a3d616f014ff827adedc30",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "a314f264a638f828564232fb8ffc84fbc9b9195e617748811c72e07ba20ecd3c",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "5bc1086462bca759e2e979835665f175e4a1d8ecac8da2edc878fbd018d5788f",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "a86bb01ebe68bf207615f2ccc23d322957d12034d11f1fce52e96841c77a8346",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "818a8ba05fb5717cc2f33026a16e52af7e4cd531eca2d52d916b6a2746d2ce65",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "ec676c3898ec93e8d81bff5f670ca43a4a880d7c7ad75e6fb5364eb4e8a0ff89",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "7a6968eb4d59554dfba9d6216ae0246e9c8637257d9786189f33c7d81449dac6",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "82a5286c30884f3b1cbe93fced26c8911c13d1221226fac9392b33bb696ab757",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "1dec2f09a4704af1e9bd74eb9e7f3bd7c9772fa7e2b2d07aacfa559b81e33743",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "670ae5e7aa6ad75140fd1c7a6f82d8224849585db6bfb10868919975b69864a7",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "0b5f335f4f00e45ddaccc37a89411acf3a99ea554f9dc09d66287e0f5cef1546",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "8f0e36096e66ccc9e21788eba3e2ee41e35ef2d831ffb176df5aff0721ba9943",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "68cf14c3edc1de93b669c6369a7ceb9db69e51f901157b5e4db43d34acdb8d70",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "ea32fce1ac282bfe88ec580e657bd285c61b875ed4232707ed93ee5b293ae1e7",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "4e106a8de679bfa0875462f36a607d19e737b2611e518dc1f56866d299f1a51b",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "61d3989d25698501e5655ba9ece17a5558d848f0d1746563737493936ccdef13",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "f9656fd2e5b8a292e4ff9bbf2cded04d0a9c52f3c5a4544d4b337f5006ff3756",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "af867b1df166ac0ab387dd694d0bfdb5e95f8d0a50d0bf2093f04bf9fd1131d3",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "8de81ad14c0921fb02d065ab2853005b51f0e5ffbb8d6ebe637ba5b5d90f8b23",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "29682c976cb80bac4408df280feb2689742516d7d6a3db0af32f81f5437e443f",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "398c5fa16c4d60c1d25afa03828a52983166cb070a4f0c5565785924969645a7",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "15437f61ab96de6f5bad20e458bbe033af0f9a3ad06d10232041fa19ddec34d5",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "e40c848c423dc0019ad21c5bde1757f41dc274f1fdeffc09598a281f548b7334",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "891c2701aeff7ec0549755a9b29f1ab8b68c48705eafd76a95790472d9694537",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "52785f2f1ae8116853bf131f850fff3c5d9e991f1afc80768d966fc924499d99",
+      "caller": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+      "resolution": "resolved_static",
+      "targets": [
+        "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "fc94a73e21bf901045005ebb3ddeff9d6ea414c1fcfd1ff3c7320517c4fdc2dc",
+      "owner_type_key": "68877bbc1b9b05ca915c66833d8121b9882cd27848470bebb4c0150f391bad13",
+      "kind": "field",
+      "start": 1184,
+      "modifiers": [
+        "private",
+        "static",
+        "final"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "4974ca730a33acebe38a65ba272be6e2d40235653b3ce0317bdd9160c8baebce",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "cfd68a9f12b2a8c429433dbc0b4dfb68a0b4c54239b4a19e9e5f30820872f5a9",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "a3dd28a3b36c7f4d3d388c93b1dd60b18864ace28db625d607f5ad00b759707f",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "023f7705b714e6727229fbb170ed3ad2e6a097bd925b2d456b146467ed4b9377",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "cef0d9fba4afe30fa554d7e6e1b101c1b5bdfa2f4731fdfbdcbdd39b2e2a4890",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "46b1d62149515cd2083defdb50a47d3ea24af60e13b8f5427c892ffae2ff2c32",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "89e752f2b6e2a37a550896f904dd144f3817c52d2234cc5be2ea3cebdebc31af",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "ed711c5ba51d8971f96f82e8df77722e3b8d2f3a6488a9ed673eb82248323ae9",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "15483d258f7ea684f95540b24e9a673326f5770dbbfc8bd290570b796c43ef1c",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "6beb7898e2fb11b47962e5bdb7eaca0b92b1d840ff0d87e5a6061506ca43e527",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "972bfce944f7d1eb805e2576d75c4cb5877db4b677a3d616f014ff827adedc30",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "a314f264a638f828564232fb8ffc84fbc9b9195e617748811c72e07ba20ecd3c",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "a86bb01ebe68bf207615f2ccc23d322957d12034d11f1fce52e96841c77a8346",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "818a8ba05fb5717cc2f33026a16e52af7e4cd531eca2d52d916b6a2746d2ce65",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "7a6968eb4d59554dfba9d6216ae0246e9c8637257d9786189f33c7d81449dac6",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "82a5286c30884f3b1cbe93fced26c8911c13d1221226fac9392b33bb696ab757",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "670ae5e7aa6ad75140fd1c7a6f82d8224849585db6bfb10868919975b69864a7",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "0b5f335f4f00e45ddaccc37a89411acf3a99ea554f9dc09d66287e0f5cef1546",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "68cf14c3edc1de93b669c6369a7ceb9db69e51f901157b5e4db43d34acdb8d70",
+      "signature": "org.assertj.core.api.AbstractIntegerAssert.isEqualTo(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "ea32fce1ac282bfe88ec580e657bd285c61b875ed4232707ed93ee5b293ae1e7",
+      "signature": "org.assertj.core.api.Assertions.assertThat(java.lang.Integer)"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "6cf48aa49ed04dd4511dcb804503affcb3bca5eaa6011b5db9530cc1e6a6e6ef"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 923,
+    "visited_members": 3
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+        "display_id": "org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+        "top_level_steps": [
+          {
+            "key": "efebb65bc785ca0ab9fde841511adca1b9677994cf51ab8301c34e99e66a0629",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              63,
+              63
+            ]
+          },
+          {
+            "key": "7e98ebe7903b7c0f03ff861a9b3930976d9e0d68c31f566e818564cd2d3abc1f",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              64,
+              64
+            ]
+          },
+          {
+            "key": "e29dd1816aab7b2daa501c17680f7a5fb06c5501c6982340cef640484584ac3a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              65,
+              65
+            ]
+          },
+          {
+            "key": "36a7c151c5003e08611a6d264e78a0a15e105f8775f3f96070a108f478f69f61",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              66,
+              66
+            ]
+          },
+          {
+            "key": "650a4fbf3d1642e4c596bac62af7999c870870d16fee473e106dd4a63e5a8015",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              67,
+              67
+            ]
+          },
+          {
+            "key": "ae9e1584cb23b108a50e4ffe9e5f8102a5f5be464b91c06cc794fbcbdb47c02d",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              68,
+              68
+            ]
+          },
+          {
+            "key": "3e016d73a7e485fd2b108e6a10803f400cc532b209d96830d7ded57b70e6abda",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              69,
+              69
+            ]
+          },
+          {
+            "key": "b3815ce8098ba554912877875ef605209aecd114fe7be55301fbd81226912a8a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              70,
+              70
+            ]
+          },
+          {
+            "key": "87d08fc4e985ac6a040b8df6631df866aab9e79f25fb431080c341aafbf21e96",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              71,
+              71
+            ]
+          },
+          {
+            "key": "eb27cec52fa987769a179761b275a24e412dee8d68b388824e20b4a8d6d40cc6",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              72,
+              72
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ],
+  "shared_ref": {
+    "file": "../shared.json",
+    "sha256": "5f493ad5c4df1228cf811b3272ceba178f344a1a3c73bfda70f1fb732b8cd4e2",
+    "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+    "required": true
+  }
+}

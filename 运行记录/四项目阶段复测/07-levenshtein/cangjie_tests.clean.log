@@ -1,0 +1,9 @@
+78
+7878--------------------------------------------------------------------------------------------------
+TP: leven4cj, time elapsed: 828500 ns, RESULT:
+    TCS: LevenshteinTranslationTest, time elapsed: 806400 ns, RESULT:
+    [ PASSED ] CASE: testGetLevenshteinDistance_StringString (428600 ns)
+Summary: TOTAL: 1
+    PASSED: 1, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

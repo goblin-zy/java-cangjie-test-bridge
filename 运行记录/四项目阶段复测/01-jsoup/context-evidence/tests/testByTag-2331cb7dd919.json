@@ -1,0 +1,882 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+  "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "BUILD_PROFILES_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [],
+  "profile": "fragment",
+  "scope": "test",
+  "purpose": "\u7ffb\u8bd1\u6307\u5b9a\u6d4b\u8bd5\u65b9\u6cd5\uff1a\u4fdd\u7559\u6240\u5728\u7c7b\u53ca\u751f\u547d\u5468\u671f\uff0c\u5c55\u5f00\u8be5\u65b9\u6cd5\u7684\u8f85\u52a9\u4f9d\u8d56\u3002",
+  "target_type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+  "selected_tests": [
+    "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "SelectorTest.java::org.jsoup.select.SelectorTest#testByTag()",
+      "declaring_class": "org.jsoup.select.SelectorTest",
+      "execution_class": "org.jsoup.select.SelectorTest",
+      "selector": "org.jsoup.select.SelectorTest#testByTag()",
+      "framework": "junit-jupiter",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "execution_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "declaring_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "org.jsoup.select.SelectorTest#testByTag()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+      "package": "org.jsoup.select",
+      "imports": [
+        {
+          "start": 27,
+          "end": 50,
+          "name": "org.jsoup.Jsoup",
+          "static": false
+        },
+        {
+          "start": 51,
+          "end": 105,
+          "name": "org.jsoup.MultiLocaleExtension.MultiLocaleTest",
+          "static": false
+        },
+        {
+          "start": 106,
+          "end": 132,
+          "name": "org.jsoup.TextUtil",
+          "static": false
+        },
+        {
+          "start": 133,
+          "end": 165,
+          "name": "org.jsoup.nodes.Document",
+          "static": false
+        },
+        {
+          "start": 166,
+          "end": 197,
+          "name": "org.jsoup.nodes.Element",
+          "static": false
+        },
+        {
+          "start": 198,
+          "end": 229,
+          "name": "org.jsoup.parser.Parser",
+          "static": false
+        },
+        {
+          "start": 230,
+          "end": 264,
+          "name": "org.junit.jupiter.api.Test",
+          "static": false
+        },
+        {
+          "start": 266,
+          "end": 290,
+          "name": "java.util.Locale",
+          "static": false
+        },
+        {
+          "start": 292,
+          "end": 341,
+          "name": "org.junit.jupiter.api.Assertions.*",
+          "static": true
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Element.java",
+      "package": "org.jsoup.nodes",
+      "imports": [
+        {
+          "start": 26,
+          "end": 75,
+          "name": "org.jsoup.helper.ChangeNotifyingArrayList",
+          "static": false
+        },
+        {
+          "start": 76,
+          "end": 109,
+          "name": "org.jsoup.helper.Validate",
+          "static": false
+        },
+        {
+          "start": 110,
+          "end": 153,
+          "name": "org.jsoup.internal.NonnullByDefault",
+          "static": false
+        },
+        {
+          "start": 154,
+          "end": 191,
+          "name": "org.jsoup.internal.StringUtil",
+          "static": false
+        },
+        {
+          "start": 192,
+          "end": 230,
+          "name": "org.jsoup.parser.ParseSettings",
+          "static": false
+        },
+        {
+          "start": 231,
+          "end": 259,
+          "name": "org.jsoup.parser.Tag",
+          "static": false
+        },
+        {
+          "start": 260,
+          "end": 294,
+          "name": "org.jsoup.select.Collector",
+          "static": false
+        },
+        {
+          "start": 295,
+          "end": 328,
+          "name": "org.jsoup.select.Elements",
+          "static": false
+        },
+        {
+          "start": 329,
+          "end": 363,
+          "name": "org.jsoup.select.Evaluator",
+          "static": false
+        },
+        {
+          "start": 364,
+          "end": 399,
+          "name": "org.jsoup.select.NodeFilter",
+          "static": false
+        },
+        {
+          "start": 400,
+          "end": 438,
+          "name": "org.jsoup.select.NodeTraversor",
+          "static": false
+        },
+        {
+          "start": 439,
+          "end": 475,
+          "name": "org.jsoup.select.NodeVisitor",
+          "static": false
+        },
+        {
+          "start": 476,
+          "end": 512,
+          "name": "org.jsoup.select.QueryParser",
+          "static": false
+        },
+        {
+          "start": 513,
+          "end": 546,
+          "name": "org.jsoup.select.Selector",
+          "static": false
+        },
+        {
+          "start": 548,
+          "end": 581,
+          "name": "javax.annotation.Nullable",
+          "static": false
+        },
+        {
+          "start": 582,
+          "end": 609,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 610,
+          "end": 645,
+          "name": "java.lang.ref.WeakReference",
+          "static": false
+        },
+        {
+          "start": 646,
+          "end": 673,
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "start": 674,
+          "end": 698,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 699,
+          "end": 727,
+          "name": "java.util.Collection",
+          "static": false
+        },
+        {
+          "start": 728,
+          "end": 757,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 758,
+          "end": 789,
+          "name": "java.util.LinkedHashSet",
+          "static": false
+        },
+        {
+          "start": 790,
+          "end": 812,
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "start": 813,
+          "end": 834,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 835,
+          "end": 856,
+          "name": "java.util.Set",
+          "static": false
+        },
+        {
+          "start": 857,
+          "end": 906,
+          "name": "java.util.concurrent.atomic.AtomicBoolean",
+          "static": false
+        },
+        {
+          "start": 907,
+          "end": 942,
+          "name": "java.util.function.Consumer",
+          "static": false
+        },
+        {
+          "start": 943,
+          "end": 974,
+          "name": "java.util.regex.Pattern",
+          "static": false
+        },
+        {
+          "start": 975,
+          "end": 1021,
+          "name": "java.util.regex.PatternSyntaxException",
+          "static": false
+        },
+        {
+          "start": 1023,
+          "end": 1077,
+          "name": "org.jsoup.internal.Normalizer.normalize",
+          "static": true
+        },
+        {
+          "start": 1078,
+          "end": 1138,
+          "name": "org.jsoup.nodes.TextNode.lastCharIsWhitespace",
+          "static": true
+        },
+        {
+          "start": 1139,
+          "end": 1201,
+          "name": "org.jsoup.parser.TokenQueue.escapeCssIdentifier",
+          "static": true
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/org/jsoup/Jsoup.java",
+      "package": "org.jsoup",
+      "imports": [
+        {
+          "start": 20,
+          "end": 53,
+          "name": "org.jsoup.helper.DataUtil",
+          "static": false
+        },
+        {
+          "start": 54,
+          "end": 93,
+          "name": "org.jsoup.helper.HttpConnection",
+          "static": false
+        },
+        {
+          "start": 94,
+          "end": 126,
+          "name": "org.jsoup.nodes.Document",
+          "static": false
+        },
+        {
+          "start": 127,
+          "end": 158,
+          "name": "org.jsoup.nodes.Element",
+          "static": false
+        },
+        {
+          "start": 159,
+          "end": 190,
+          "name": "org.jsoup.parser.Parser",
+          "static": false
+        },
+        {
+          "start": 191,
+          "end": 223,
+          "name": "org.jsoup.safety.Cleaner",
+          "static": false
+        },
+        {
+          "start": 224,
+          "end": 257,
+          "name": "org.jsoup.safety.Safelist",
+          "static": false
+        },
+        {
+          "start": 259,
+          "end": 292,
+          "name": "javax.annotation.Nullable",
+          "static": false
+        },
+        {
+          "start": 293,
+          "end": 327,
+          "name": "javax.annotation.WillClose",
+          "static": false
+        },
+        {
+          "start": 329,
+          "end": 349,
+          "name": "java.io.File",
+          "static": false
+        },
+        {
+          "start": 350,
+          "end": 377,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 378,
+          "end": 405,
+          "name": "java.io.InputStream",
+          "static": false
+        },
+        {
+          "start": 406,
+          "end": 426,
+          "name": "java.net.URL",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "display_id": "org.jsoup.select.SelectorTest",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 27,
+      "source": {
+        "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+        "sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+        "start_line": 20,
+        "end_line": 20,
+        "start_offset_utf16": 448,
+        "end_offset_utf16_exclusive": 475
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "SELECTED_TEST_TYPE",
+      "shared_record": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "display_id": "org.jsoup.select.SelectorTest#testByTag()",
+      "content_kind": "full",
+      "content": "@Test public void testByTag() {\n        // should be case insensitive\n        Elements els = Jsoup.parse(\"<div id=1><div id=2><p>Hello</p></div></div><DIV id=3>\").select(\"DIV\");\n        assertEquals(3, els.size());\n        assertEquals(\"1\", els.get(0).id());\n        assertEquals(\"2\", els.get(1).id());\n        assertEquals(\"3\", els.get(2).id());\n\n        Elements none = Jsoup.parse(\"<div id=1><div id=2><p>Hello</p></div></div><div id=3>\").select(\"span\");\n        assertEquals(0, none.size());\n    }",
+      "content_chars": 501,
+      "source": {
+        "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+        "sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+        "start_line": 21,
+        "end_line": 31,
+        "start_offset_utf16": 480,
+        "end_offset_utf16_exclusive": 981
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "SELECTED_TEST"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "854da54b49e109e1e15c6531e4aeb652ddc557a07b55f55311147223aec9b340",
+      "display_id": "org.jsoup.nodes.Element",
+      "content_kind": "signature",
+      "content": "@NonnullByDefault\npublic class Element extends Node {",
+      "content_chars": 53,
+      "source": {
+        "file": "src/main/java/org/jsoup/nodes/Element.java",
+        "sha256": "a87a9c48f7ed2d68ccf1ba55487955a685e6192de2b6a9c01f0f365ad4202977",
+        "start_line": 43,
+        "end_line": 44,
+        "start_offset_utf16": 1417,
+        "end_offset_utf16_exclusive": 1470
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "7db244dba9d43805fc2824133b4b54ac27d8549b7db797da8be39931c451e266",
+      "display_id": "org.jsoup.nodes.Element#select(String)",
+      "content_kind": "signature",
+      "content": "public Elements select(String cssQuery) ",
+      "content_chars": 40,
+      "source": {
+        "file": "src/main/java/org/jsoup/nodes/Element.java",
+        "sha256": "a87a9c48f7ed2d68ccf1ba55487955a685e6192de2b6a9c01f0f365ad4202977",
+        "start_line": 417,
+        "end_line": 417,
+        "start_offset_utf16": 14666,
+        "end_offset_utf16_exclusive": 14706
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "8a39c7b9e7e614f52b5948fa720b39ab1827fbe97ed2555e0004314244a4e8f1",
+      "display_id": "org.jsoup.Jsoup",
+      "content_kind": "signature",
+      "content": "public class Jsoup {",
+      "content_chars": 20,
+      "source": {
+        "file": "src/main/java/org/jsoup/Jsoup.java",
+        "sha256": "715dc369a27d6b4265b1dc9e741e2c1613af3fa8b4a96a667156dc76676f795e",
+        "start_line": 24,
+        "end_line": 24,
+        "start_offset_utf16": 520,
+        "end_offset_utf16_exclusive": 540
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "c8edeaaebc920f6cadd54d22a855333935f581ec29a19954475c55765e68a7d2",
+      "display_id": "org.jsoup.Jsoup#parse(String)",
+      "content_kind": "signature",
+      "content": "public static Document parse(String html) ",
+      "content_chars": 42,
+      "source": {
+        "file": "src/main/java/org/jsoup/Jsoup.java",
+        "sha256": "715dc369a27d6b4265b1dc9e741e2c1613af3fa8b4a96a667156dc76676f795e",
+        "start_line": 76,
+        "end_line": 76,
+        "start_offset_utf16": 2497,
+        "end_offset_utf16_exclusive": 2539
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "fdc76ca02c446e0debe842dac587a63392861774781865c9d0efb200eb7817e4",
+      "display_id": "org.jsoup.nodes.Element#id()",
+      "content_kind": "signature",
+      "content": "public String id() ",
+      "content_chars": 19,
+      "source": {
+        "file": "src/main/java/org/jsoup/nodes/Element.java",
+        "sha256": "a87a9c48f7ed2d68ccf1ba55487955a685e6192de2b6a9c01f0f365ad4202977",
+        "start_line": 204,
+        "end_line": 204,
+        "start_offset_utf16": 6373,
+        "end_offset_utf16_exclusive": 6392
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "RESOLVED_DEPENDENCY"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "b8c2e7dcc5bd24ae251a218cb814f8cea44ea7d162196be810d0bd82638558ec",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "resolved_static",
+      "targets": [
+        "7db244dba9d43805fc2824133b4b54ac27d8549b7db797da8be39931c451e266"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "9f296ca11089de6e5cbe9ba0115e243e0a6d6da24c0ccca6bf1db47182c472c4",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "resolved_static",
+      "targets": [
+        "c8edeaaebc920f6cadd54d22a855333935f581ec29a19954475c55765e68a7d2"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "a5dbd4e9606df25398a36fec32345aa006bbb767172e2a9fb168b54524d39aed",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "e0a08941cefbfa04427322ac382c907893f3072bb803d630e9c5ef5054b71fd6",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "c29663743a45385f9d46268e26defa8cac446cbc42b5eca6a4ee02d95dc62c1c",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "f6c73edd396c47543df6e14fcd60e33babe8410d1f332d35c25f1f9f73a6d959",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "resolved_static",
+      "targets": [
+        "fdc76ca02c446e0debe842dac587a63392861774781865c9d0efb200eb7817e4"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "63ccb1a8c29a62110632e4a6b52277ddbcb9c3cb54f86b7530c98fb8050fda99",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "e375c3eff60989a46a4a03aacc4e5476c24a9da6dd8d43e6abc75a1a77531856",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "e526cf65cbaec2f4128834ee6ed8652d6a4da031011590ced6bd112b0c76c16a",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "resolved_static",
+      "targets": [
+        "fdc76ca02c446e0debe842dac587a63392861774781865c9d0efb200eb7817e4"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "38dcb7b819ae420bad3a89548da10480bb8953a00f48bd50431ca9d64ac30696",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "9a92be22c338c14e41fb50d72d9217da24fcefe6d041429b418c2f6d2116c19a",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "7e8426cd93c2b9b9d7a7a1555a3c90b9bc67ae7e9acee9d6f121c39ad564569d",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "resolved_static",
+      "targets": [
+        "fdc76ca02c446e0debe842dac587a63392861774781865c9d0efb200eb7817e4"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "adc1d4f9fbe8cf2e4479e701e2c7057491861be4581d9ffef69f73bd229042d8",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "367cf85fbfbb77e99840d53716bc369b1f2447777144cf2805565f15437e837d",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "resolved_static",
+      "targets": [
+        "7db244dba9d43805fc2824133b4b54ac27d8549b7db797da8be39931c451e266"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "62fa8092db95435f32a9f163177fa3918fa74146dea629339b9698c4a5360e28",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "resolved_static",
+      "targets": [
+        "c8edeaaebc920f6cadd54d22a855333935f581ec29a19954475c55765e68a7d2"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "f5f32a5629653541a7126c07ae241535f42f0d792c963e05793eb2abcd2e1d76",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "fb8cceb5d0d103c2e3799a2d390d344772f6746f6cdeb198420f49e4c069a1cd",
+      "caller": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "b8f4ee7f4ac64aabefa8ec719ffad95ab1f2617e8ec01737eb52a7fde5a47551",
+      "owner_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "kind": "field",
+      "start": 39438,
+      "modifiers": [
+        "private",
+        "final"
+      ]
+    },
+    {
+      "key": "f251774210d205c0325dcbe0ae686a1bc97e1fde27c99547e59e60b1f2e45d55",
+      "owner_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "kind": "field",
+      "start": 39550,
+      "modifiers": [
+        "private",
+        "final"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "a5dbd4e9606df25398a36fec32345aa006bbb767172e2a9fb168b54524d39aed",
+      "signature": "org.junit.jupiter.api.Assertions.assertEquals(int, int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "e0a08941cefbfa04427322ac382c907893f3072bb803d630e9c5ef5054b71fd6",
+      "signature": "java.util.ArrayList.size()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "c29663743a45385f9d46268e26defa8cac446cbc42b5eca6a4ee02d95dc62c1c",
+      "signature": "org.junit.jupiter.api.Assertions.assertEquals(java.lang.Object, java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "63ccb1a8c29a62110632e4a6b52277ddbcb9c3cb54f86b7530c98fb8050fda99",
+      "signature": "java.util.ArrayList.get(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "e375c3eff60989a46a4a03aacc4e5476c24a9da6dd8d43e6abc75a1a77531856",
+      "signature": "org.junit.jupiter.api.Assertions.assertEquals(java.lang.Object, java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "38dcb7b819ae420bad3a89548da10480bb8953a00f48bd50431ca9d64ac30696",
+      "signature": "java.util.ArrayList.get(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "9a92be22c338c14e41fb50d72d9217da24fcefe6d041429b418c2f6d2116c19a",
+      "signature": "org.junit.jupiter.api.Assertions.assertEquals(java.lang.Object, java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "adc1d4f9fbe8cf2e4479e701e2c7057491861be4581d9ffef69f73bd229042d8",
+      "signature": "java.util.ArrayList.get(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "f5f32a5629653541a7126c07ae241535f42f0d792c963e05793eb2abcd2e1d76",
+      "signature": "org.junit.jupiter.api.Assertions.assertEquals(int, int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "fb8cceb5d0d103c2e3799a2d390d344772f6746f6cdeb198420f49e4c069a1cd",
+      "signature": "java.util.ArrayList.size()"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "7db244dba9d43805fc2824133b4b54ac27d8549b7db797da8be39931c451e266"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "c8edeaaebc920f6cadd54d22a855333935f581ec29a19954475c55765e68a7d2"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "fdc76ca02c446e0debe842dac587a63392861774781865c9d0efb200eb7817e4"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 675,
+    "visited_members": 4
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec",
+        "display_id": "org.jsoup.select.SelectorTest#testByTag()",
+        "top_level_steps": [
+          {
+            "key": "f8f29402aea819b0d21497eededb5ae3095c3bb9c0d3857525bbcd9419627cf3",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              23,
+              23
+            ]
+          },
+          {
+            "key": "94dd6d3fddb8005062adb86a773c95ba45f964922777c0637cc34d2da572b9eb",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              24,
+              24
+            ]
+          },
+          {
+            "key": "347fe94d3f278894ba2a4830a6ccbc6a83d510a0d8342e8d4a3f59fd2acca7d9",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              25,
+              25
+            ]
+          },
+          {
+            "key": "647c65d3f79a20e1795e2941f6c00df2a824a71dec83e1870ba09d8fb8e2aac9",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              26,
+              26
+            ]
+          },
+          {
+            "key": "14539efaa863c9a79cdf2e8394854835b5c59726d4dd28fc1ce7d7102cd27802",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              27,
+              27
+            ]
+          },
+          {
+            "key": "98491062e1a58c6c219a167fba8b7c36555b03c7bd2602e904937bbf9df093c0",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              29,
+              29
+            ]
+          },
+          {
+            "key": "09ce0a8fdcc80d85b37221c53e5c3797a134ee95fcc079b5cc2b41edaee47f57",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              30,
+              30
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 5,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 2331cb7dd91903a1e0a33f83831b01b03f9191bab40a1abe0c411f0849dabaec"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ],
+  "shared_ref": {
+    "file": "../shared.json",
+    "sha256": "81f44aa373fc7a26b517ffe7ec08cbcf0b2fae48ece8cf1499683fab96c54de9",
+    "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+    "required": true
+  }
+}

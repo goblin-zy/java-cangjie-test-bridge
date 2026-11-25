@@ -1,0 +1,345 @@
+{
+  "source_commit": "c99fc226ac87379b9eaf81a9a61d52a32b86c822",
+  "source": "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils",
+  "tools_commit": "dbe58c8f4ff3849d2968471e41314842b6d3b3e7",
+  "selected": {
+    "type": "diffutils.DiffTest",
+    "file": "src/test/java/diffutils/DiffTest.java",
+    "methods": [
+      "testDiff_Insert",
+      "testDiff_Delete",
+      "testDiff_Change"
+    ],
+    "support": [],
+    "package": "diffutils4cj"
+  },
+  "files": [
+    {
+      "file": "java\\build.xml",
+      "sha256": "7cb511695e4ab1c6fd215a25b3da457893185fcdf3b43a3293529cd278134cda",
+      "size": 2148
+    },
+    {
+      "file": "java\\LICENSE.txt",
+      "sha256": "f2ffa5942b316849be283deaeb2912e2e5b5b17e91012bede8210210ff3e91e7",
+      "size": 11562
+    },
+    {
+      "file": "java\\pom.xml",
+      "sha256": "b77a1147f532b46aa55fa2e3a33acfae291c01277aed741fe3c4aad35c6b5327",
+      "size": 2870
+    },
+    {
+      "file": "java\\交付说明.md",
+      "sha256": "00f40dbe378a58038f014fff4c1ea50b50d5ad080c1cf76b4042905750621146",
+      "size": 570
+    },
+    {
+      "file": "cangjie\\src\\change_delta.cj",
+      "sha256": "098578562751bbe788b5e4166a2164ddf8a0434cad9751dc5c5b9a3623fe1aba",
+      "size": 3254
+    },
+    {
+      "file": "cangjie\\src\\chunk.cj",
+      "sha256": "1fea5e1de4d160e834e3eea46ee01e5ec4846f488baa310be5d3b6a71218d4af",
+      "size": 3716
+    },
+    {
+      "file": "cangjie\\src\\delete_delta.cj",
+      "sha256": "bcd0063059a1c8d08a1f99f75f0629d0fb67d7ff5a7252bba907e42d0998b531",
+      "size": 2515
+    },
+    {
+      "file": "cangjie\\src\\delta.cj",
+      "sha256": "7d4051560096af7c3f9c8102cce57967850814b549be1fdf716841b443610475",
+      "size": 2991
+    },
+    {
+      "file": "cangjie\\src\\delta_comparator.cj",
+      "sha256": "2c7426954eb942c5dfedbf38fde0bf7cb85a0a05aa5b658d4375ac090b7cdf8a",
+      "size": 721
+    },
+    {
+      "file": "cangjie\\src\\differentiation_failedexception.cj",
+      "sha256": "c6f8e4860ccd5353db85b334506a1a52b92c03569d179e901626232c2b86f6ff",
+      "size": 351
+    },
+    {
+      "file": "cangjie\\src\\diffutils.cj",
+      "sha256": "8b6c51547dba1b9b5156240af7419b10781de90bcb0a1c07d599f95180a98dda",
+      "size": 15371
+    },
+    {
+      "file": "cangjie\\src\\diff_algorithlm.cj",
+      "sha256": "fdd0a1bcf74aebd2b5acf966e496e7e441715924acaa0db2c888669997e9016f",
+      "size": 1199
+    },
+    {
+      "file": "cangjie\\src\\diff_exception.cj",
+      "sha256": "62e8f8afd34dde26e5260f3d99d35f6b20c32664d7dd5cafd705d1a2c6d7b9fe",
+      "size": 400
+    },
+    {
+      "file": "cangjie\\src\\diff_node.cj",
+      "sha256": "933a942b14cee63905efc4018a77dea26cb9590c1ef0b7c6916f0dafe6012611",
+      "size": 1145
+    },
+    {
+      "file": "cangjie\\src\\diff_row.cj",
+      "sha256": "7d5fc1a71169c0b01ab00bfb48e6ade4ece03f7418131b7030e69e144643dec7",
+      "size": 2360
+    },
+    {
+      "file": "cangjie\\src\\diff_row_generator.cj",
+      "sha256": "3043f842284ac5849f923be96f8692b8bb1ec6ccf6f33607fe9f3ad91b4f3630",
+      "size": 16226
+    },
+    {
+      "file": "cangjie\\src\\equalizer.cj",
+      "sha256": "b9da67945bd0676662dc3b7bade903ef20acd2c5009737bfec9846e482b15358",
+      "size": 200
+    },
+    {
+      "file": "cangjie\\src\\insert_delta.cj",
+      "sha256": "7c946ea3f8687f7d2f001b4fb9646359344e3f229b54650dae142f449b9cb9ba",
+      "size": 2657
+    },
+    {
+      "file": "cangjie\\src\\myers_diff.cj",
+      "sha256": "4b330ebf22dd06e2c54c9be74b3a1db1bf86d35e2a9df1ae0fa6e08650e2e5d5",
+      "size": 6802
+    },
+    {
+      "file": "cangjie\\src\\patch.cj",
+      "sha256": "bf38d6f130f132c1dcead038831c3845566b44c129a3704ec41039081ccc42fb",
+      "size": 1851
+    },
+    {
+      "file": "cangjie\\src\\path_faulled_exception.cj",
+      "sha256": "78336d7b4ad19c4f8ca1a6d6530b3aef953b4cdb714ac5d2dc476edc70e5186c",
+      "size": 385
+    },
+    {
+      "file": "cangjie\\src\\path_node.cj",
+      "sha256": "60c6f7b19bdb412efc8528b09ca7234d8b4e60c44208b183d0f998217de84abf",
+      "size": 2376
+    },
+    {
+      "file": "cangjie\\src\\snake.cj",
+      "sha256": "aee1e799cf0a44086637f77a839cf936023e14764dd109c6000942bcf6f096cb",
+      "size": 699
+    },
+    {
+      "file": "cangjie\\src\\string_utils.cj",
+      "sha256": "73d33d8fd38bd2db35d82c1bd8b43f3aace02eb5602b2d8dad8954fcb2d0ec7d",
+      "size": 3469
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\ChangeDelta.java",
+      "sha256": "8c360e5f6168536b19c2a4e90c6e7e54b984beeeb4ba79bac716568c4efcdb82",
+      "size": 2933
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\Chunk.java",
+      "sha256": "c042907ce257141b43697dd3381f36c05fa86ee572ef009f27937025a1e70779",
+      "size": 4533
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\DeleteDelta.java",
+      "sha256": "aba59535d723c3d4c1505c0d2f3f234cf7a2bb71ebaf2e51427baa4d3f0e5c58",
+      "size": 2448
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\Delta.java",
+      "sha256": "c57b0c150782c7fc7e31b68e2f821915657547ae4e30c291df2ba8965234e1ee",
+      "size": 4473
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\DeltaComparator.java",
+      "sha256": "b6912d99d10c8a16cd8ded6972563964aec01f288b08ba86baaf7ee2bae594e2",
+      "size": 756
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\DiffAlgorithm.java",
+      "sha256": "9b8f975c88b43c898b8488be9615990ea0877237e9adc4baad225e886f9ec2ae",
+      "size": 1873
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\DiffException.java",
+      "sha256": "30aed46412b33aa19fed46fce68a1938718c3e8d35d1941c336e642ca0b6d3e9",
+      "size": 1025
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\DiffRow.java",
+      "sha256": "44a86b375e6289053c577af60863340b18af52950ebdca249eb52425351a7764",
+      "size": 3481
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\DiffRowGenerator.java",
+      "sha256": "23abe9348cf6caa892aa737e09091f66c323a21e663cc584ee13c47b9d64e255",
+      "size": 17079
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\DiffUtils.java",
+      "sha256": "810115f36d48b2d178fccde8434bd8164f77690ffad1f83efd30b1d019c5410f",
+      "size": 13697
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\InsertDelta.java",
+      "sha256": "484cd92d4c31db01a3d325bbde6030c7681157b5ed44764e5043c7df943168db",
+      "size": 2382
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\package.html",
+      "sha256": "8367e7b4219b7be6f2b4f5868df812ee7ac78664a49982cd2b281f4ca7b674c2",
+      "size": 3155
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\Patch.java",
+      "sha256": "3bbe7eaead43a124934bb7fa59c505e2aa6c2b88bc0786540b4f89ba64e60179",
+      "size": 2534
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\PatchFailedException.java",
+      "sha256": "4a9aa81685da58fcc8022a9417abf0713da6f15900663afa6a5a769aca721a49",
+      "size": 1058
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\StringUtills.java",
+      "sha256": "66ab0d4cf751882faedd5c91bd5211544f97e94383a26eed1a56581c4dd05d71",
+      "size": 3003
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\DifferentiationFailedException.java",
+      "sha256": "e1e82987c0366334e60f739e154db4276ffae7f7d172f6a9d4536c30c3b433e2",
+      "size": 3371
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\DiffException.java",
+      "sha256": "ccf206620d817d8d3d71b006ac5f1f7d4b65beee0c791a91e9d98780cc513ea9",
+      "size": 3222
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\DiffNode.java",
+      "sha256": "7218e586cf8d34d1ccaf74973ccfa25d2dc0ab22c37c9c172bcf4997929a6e3f",
+      "size": 1620
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\Equalizer.java",
+      "sha256": "b594e44249dd676e06d711414cd838f3bca5baab579cb574e2c4724d660c1ffb",
+      "size": 541
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\MyersDiff.java",
+      "sha256": "625de8b856bdaf9b8bbd5deff830c76d4845a5cada597101272604a2441f77fa",
+      "size": 11401
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\package.html",
+      "sha256": "c5197245ae9df4e5d3c556d0bfccabb1301b80c9aa3aaa1324fe86c90c1f7c30",
+      "size": 1535
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\PathNode.java",
+      "sha256": "c5ef5d588804c22813cd4003e37ff19cbc1926704c2768d8353481cb45e2fdb1",
+      "size": 5116
+    },
+    {
+      "file": "java\\src\\main\\java\\difflib\\myers\\Snake.java",
+      "sha256": "aca13f58541a177581d5a3ac43b158220a47c093da5a4c97523f66e199a1a423",
+      "size": 3748
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\DiffRowGeneratorTest.java",
+      "sha256": "871f58804cf844a9f94d03eb783ecb899e8f77b4106695012c8a587f1e5e7435",
+      "size": 2266
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\DiffTest.java",
+      "sha256": "b2c3237aa7ab840c7fcd4111442c64217064ae28c2622c8f53c503bec53b4ed5",
+      "size": 2626
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\GenerateUnifiedDiffTest.java",
+      "sha256": "c603ad5deaee7d5c0fe14a8029498cadddafc133a1cd060b5a1bde2f12c4d727",
+      "size": 4972
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\PatchTest.java",
+      "sha256": "8a26c56e3287926712b2482618133211b9f9f6cd85fe5db068ed6d82de90018e",
+      "size": 1697
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\TestConstants.java",
+      "sha256": "91a70c6e4c798a96ef530a03645250c837d1188a10b1229eb601217af05d2d89",
+      "size": 590
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\examples\\ApplyPatch.java",
+      "sha256": "1cded7abb01b5b15cea1de4e19e564ffe12d0cdda8d95dc127c9074681e5fe56",
+      "size": 905
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\examples\\ComputeDifference.java",
+      "sha256": "2915f6faf86ba15ddcc8d5b1eb60833cd660431c099a39c95578168be644ef9e",
+      "size": 824
+    },
+    {
+      "file": "java\\src\\test\\java\\diffutils\\examples\\Example.java",
+      "sha256": "65e3d3ca79c9a01f41fb588ad89ab6a8aa7fc2716a14efe1d3b844ae39cb1822",
+      "size": 1199
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\5A.txt",
+      "sha256": "8744d0fee444754d774794955f681a02e58bac69f0417d9e53ea79e54a90ff03",
+      "size": 9340
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\5B.txt",
+      "sha256": "92778ed4428835c17636dedaaa570e34df8081d6e714006c5382d82348c756a4",
+      "size": 9574
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\issue10_base.txt",
+      "sha256": "4ccaefa4e13268cae5c510fbc7523b9bfcec80bb7296cf86067993a6cb0d43ec",
+      "size": 1545
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\issue10_patch.txt",
+      "sha256": "434be8338b6060f39d6e2e40f5d19a2ec33ea4060bc908eca276e90362907307",
+      "size": 276
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\issue11_1.txt",
+      "sha256": "55d702ef042e173e6ad02687ff3cee048650d6c6375a93cc078f8369fd4b3931",
+      "size": 29
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\issue11_2.txt",
+      "sha256": "55d702ef042e173e6ad02687ff3cee048650d6c6375a93cc078f8369fd4b3931",
+      "size": 29
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\one_delta_test_original.txt",
+      "sha256": "e3bfa5897e341b457217230350b9dbcdf181bebd6be638491d2d674ac832c021",
+      "size": 1328
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\one_delta_test_revised.txt",
+      "sha256": "c5d4d3e72922d9e5c32ccbcd851000b10dd480a831945c6b0eca2ab6675c2d76",
+      "size": 662
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\original.txt",
+      "sha256": "70e54a5b1c6d87dd1b82f036b01a5a69b201b452ec166ee3960d1063a1de94f9",
+      "size": 5639
+    },
+    {
+      "file": "java\\src\\test\\resources\\mocks\\revised.txt",
+      "sha256": "d270cce9b6042070916e56b1d64c4ddb784987b3f38aded7b3d42953ca5553a2",
+      "size": 12536
+    }
+  ],
+  "java_files": 29,
+  "business_cangjie_files": 20
+}

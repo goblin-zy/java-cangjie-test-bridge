@@ -1,0 +1,257 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+  "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "BUILD_PROFILES_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [],
+  "profile": "whole",
+  "scope": "shared",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+  "selected_tests": [],
+  "test_invocations": [],
+  "imports": [
+    {
+      "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+      "package": "org.jsoup.select",
+      "imports": [
+        {
+          "start": 27,
+          "end": 50,
+          "name": "org.jsoup.Jsoup",
+          "static": false
+        },
+        {
+          "start": 51,
+          "end": 105,
+          "name": "org.jsoup.MultiLocaleExtension.MultiLocaleTest",
+          "static": false
+        },
+        {
+          "start": 106,
+          "end": 132,
+          "name": "org.jsoup.TextUtil",
+          "static": false
+        },
+        {
+          "start": 133,
+          "end": 165,
+          "name": "org.jsoup.nodes.Document",
+          "static": false
+        },
+        {
+          "start": 166,
+          "end": 197,
+          "name": "org.jsoup.nodes.Element",
+          "static": false
+        },
+        {
+          "start": 198,
+          "end": 229,
+          "name": "org.jsoup.parser.Parser",
+          "static": false
+        },
+        {
+          "start": 230,
+          "end": 264,
+          "name": "org.junit.jupiter.api.Test",
+          "static": false
+        },
+        {
+          "start": 266,
+          "end": 290,
+          "name": "java.util.Locale",
+          "static": false
+        },
+        {
+          "start": 292,
+          "end": 341,
+          "name": "org.junit.jupiter.api.Assertions.*",
+          "static": true
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "display_id": "org.jsoup.select.SelectorTest",
+      "content_kind": "signature",
+      "content": "public class SelectorTest {",
+      "content_chars": 27,
+      "source": {
+        "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+        "sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+        "start_line": 20,
+        "end_line": 20,
+        "start_offset_utf16": 448,
+        "end_offset_utf16_exclusive": 475
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "SELECTED_TEST_TYPE"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "b8f4ee7f4ac64aabefa8ec719ffad95ab1f2617e8ec01737eb52a7fde5a47551",
+      "display_id": "org.jsoup.select.SelectorTest#field:mixedCase",
+      "content_kind": "full",
+      "content": "private final String mixedCase =\n        \"<html xmlns:n=\\\"urn:ns\\\"><n:mixedCase>text</n:mixedCase></html>\";",
+      "content_chars": 107,
+      "source": {
+        "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+        "sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+        "start_line": 1005,
+        "end_line": 1006,
+        "start_offset_utf16": 39417,
+        "end_offset_utf16_exclusive": 39524
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "TEST_INITIALIZATION"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "f251774210d205c0325dcbe0ae686a1bc97e1fde27c99547e59e60b1f2e45d55",
+      "display_id": "org.jsoup.select.SelectorTest#field:lowercase",
+      "content_kind": "full",
+      "content": "private final String lowercase =\n        \"<html xmlns:n=\\\"urn:ns\\\"><n:lowercase>text</n:lowercase></html>\";",
+      "content_chars": 107,
+      "source": {
+        "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+        "sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+        "start_line": 1007,
+        "end_line": 1008,
+        "start_offset_utf16": 39529,
+        "end_offset_utf16_exclusive": 39636
+      },
+      "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+      "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+      "reason": "TEST_INITIALIZATION"
+    }
+  ],
+  "dependency_edges": [],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "b8f4ee7f4ac64aabefa8ec719ffad95ab1f2617e8ec01737eb52a7fde5a47551",
+      "owner_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "kind": "field",
+      "start": 39438,
+      "modifiers": [
+        "private",
+        "final"
+      ]
+    },
+    {
+      "key": "f251774210d205c0325dcbe0ae686a1bc97e1fde27c99547e59e60b1f2e45d55",
+      "owner_type_key": "3a0f9d516ea7b3687e5dc50a28cbda2c741c089b0e69abefc217d5de26c55596",
+      "kind": "field",
+      "start": 39550,
+      "modifiers": [
+        "private",
+        "final"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 241,
+    "visited_members": 2
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "b8f4ee7f4ac64aabefa8ec719ffad95ab1f2617e8ec01737eb52a7fde5a47551",
+        "display_id": "org.jsoup.select.SelectorTest#field:mixedCase",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id b8f4ee7f4ac64aabefa8ec719ffad95ab1f2617e8ec01737eb52a7fde5a47551"
+      },
+      {
+        "member_key": "f251774210d205c0325dcbe0ae686a1bc97e1fde27c99547e59e60b1f2e45d55",
+        "display_id": "org.jsoup.select.SelectorTest#field:lowercase",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id f251774210d205c0325dcbe0ae686a1bc97e1fde27c99547e59e60b1f2e45d55"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ]
+}

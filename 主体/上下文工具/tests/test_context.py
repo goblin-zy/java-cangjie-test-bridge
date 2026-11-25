@@ -22,12 +22,31 @@ JAVAC = os.environ.get("PP_TEST_JAVAC", "javac")
 
 
 class ContextTests(unittest.TestCase):
+    def test_lambda_conditional_parent_chain_is_acyclic(self):
+        internal = self.project.data['internal_analysis']['nodes']
+        nodes = [n for n in internal.values() if n['file'].endswith('LambdaBranchTest.java')]
+        self.assertTrue(any(n['ast_kind'] == 'ConditionalExpr' for n in nodes))
+        for node in nodes:
+            seen = set()
+            current = node['key']
+            while current is not None:
+                self.assertNotIn(current, seen)
+                seen.add(current)
+                current = internal[current]['parent_key']
+
     @classmethod
     def setUpClass(cls):
         cls.temp = tempfile.TemporaryDirectory(prefix="context-acceptance-")
         cls.base = Path(cls.temp.name)
         source = cls.base / "source"
         shutil.copytree(ROOT / "tests/fixtures/mini-project", source)
+        (source / 'src/test/java/demo/LambdaBranchTest.java').write_text('''package demo;
+import org.junit.jupiter.api.Test;
+interface ProbeFilter { int apply(int value, int depth); }
+class LambdaBranchTest {
+  void filter(ProbeFilter filter) {}
+  @Test void choose() { filter((node, depth) -> node == 2 ? 1 : 0); assert true; }
+}''', encoding='utf-8')
         shutil.copyfile(ROOT / 'tests/fixtures/FlowTest.java', source / 'src/test/java/demo/FlowTest.java')
         test = source / "src/test/java/demo/ProbeTest.java"
         test.write_bytes(('''package demo;

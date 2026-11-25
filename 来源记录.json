@@ -108,5 +108,11 @@
     "provenance": "静态验证合并来源.json",
     "record": "运行记录/静态验证整合复测/README.md",
     "summary": "运行记录/静态验证整合复测/summary.json"
+  },
+  "four_project_stage": {
+    "record": "运行记录/四项目阶段复测/README.md",
+    "source_commit": "c99fc226ac87379b9eaf81a9a61d52a32b86c822",
+    "scope": "USER_SELECTED_PAIRED_METHODS",
+    "summary": "运行记录/四项目阶段复测/summary.json"
   }
 }

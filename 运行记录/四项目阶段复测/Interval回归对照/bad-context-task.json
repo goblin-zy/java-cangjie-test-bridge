@@ -1,0 +1,146 @@
+{
+  "schema_version": "whole-translation-task-0.4",
+  "prompt_version": "第二版",
+  "is_template": false,
+  "task_id": "interval-static-integration",
+  "mode": "whole",
+  "path_base": "CONFIG_DIRECTORY",
+  "project_root": "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\java",
+  "output_dir": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\translation",
+  "python_executable": "python",
+  "versions": {
+    "java": null,
+    "junit": null,
+    "cangjie": null,
+    "target_test_framework": null
+  },
+  "context": {
+    "input_mode": "PROJECT_SOURCE",
+    "tool_version": "java-test-context-second-edition",
+    "index_schema": "java-test-context-2.1",
+    "tool": null,
+    "index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\context-index\\project_schema.json",
+    "source_manifest": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\context-index\\source_manifest.json",
+    "build_output": null,
+    "source_roots": {
+      "business": null,
+      "test": null,
+      "support": null
+    },
+    "resource_roots": null,
+    "test_scope": [],
+    "exclude": [],
+    "classpath": [],
+    "budgets": {
+      "max_depth": 6,
+      "max_members": 200,
+      "max_chars": 30000
+    },
+    "preferred_view": "compact",
+    "suites": [
+      {
+        "id": "suite_1",
+        "source_type": null,
+        "output_dir": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\corrupt-suite",
+        "tasks_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\context-suite\\tasks.json",
+        "agent_context": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\context-suite\\agent_context.json",
+        "full_context": null,
+        "shared_context": null
+      }
+    ],
+    "internal_analysis": {
+      "read_summary_first": true,
+      "query_member_on_demand": true,
+      "preserve_assertion_candidates": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED"
+    },
+    "java_members": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\java-extraction\\members.json"
+    ]
+  },
+  "java_extractions": [
+    {
+      "id": "source_1",
+      "extraction_root": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\java-extraction",
+      "members_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\java-extraction\\members.json",
+      "report_file": null,
+      "source_path_map": {}
+    }
+  ],
+  "skeleton_bundles": [
+    {
+      "id": "skeleton_1",
+      "skeleton_root": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\skeleton",
+      "mapping_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\skeleton\\member_mapping.json",
+      "source_members_base": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\java-extraction",
+      "target_files_base": "D:\\CodexArtifacts\\four-projects-tests-20261125\\interval-control\\base\\skeleton",
+      "translation_report": null,
+      "diagnostics": null
+    }
+  ],
+  "rules": {
+    "json": null,
+    "markdown": null
+  },
+  "project_materials": {
+    "json": null,
+    "markdown": null,
+    "scan_index": null,
+    "scan_record": null,
+    "tool_root": null
+  },
+  "targets": [
+    {
+      "source_type": "org.ahocorasick.interval.IntervalTest",
+      "source_file": "src/test/java/org/ahocorasick/interval/IntervalTest.java",
+      "context_suite_id": "suite_1",
+      "java_extraction_id": "source_1",
+      "skeleton_bundle_id": "skeleton_1",
+      "output_files": []
+    }
+  ],
+  "allowed_target_source_roots": [
+    "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\样例材料\\Interval双语项目\\cangjie\\src"
+  ],
+  "excluded_read_paths": [],
+  "optional_coverage_report": null,
+  "preparation_policy": {
+    "build_missing_context_from_project": true,
+    "export_missing_context_suites": true,
+    "extract_missing_java_facts_with_delivered_tool": true,
+    "generate_new_project_materials": false,
+    "generate_new_cangjie_skeleton": false
+  },
+  "constraints": {
+    "write_new_output_only": true,
+    "allow_necessary_test_helpers_in_output": true,
+    "allow_reference_tests": false,
+    "modify_target_business": false,
+    "collect_coverage": false,
+    "compile_or_run_projects": true,
+    "call_model_api_or_server": false,
+    "rewrite_java_source": false,
+    "generate_executable_test_prefixes": false
+  },
+  "skeleton_structure_check": {
+    "adapter": "../集成适配/prepare_skeleton_check.py",
+    "checker": "../仓颉骨架翻译器/check_skeleton.py",
+    "stage": "BEFORE_WHOLE_FILL",
+    "bundle_id": "skeleton_1",
+    "output_dir": null,
+    "report": null,
+    "native_config_generated_by_adapter": true
+  },
+  "static_validation": {
+    "adapter": "../集成适配/prepare_static_validation.py",
+    "tool": "../静态验证/src/verify_tool.py",
+    "prompt": "../静态验证/src/prompts/验证总控提示词.md",
+    "stage": "AFTER_FINAL_WHOLE_TRANSLATION",
+    "translated_dir": null,
+    "prepared_dir": null,
+    "run_dir": null,
+    "contract": null,
+    "enabled_by_current_task": false
+  }
+}

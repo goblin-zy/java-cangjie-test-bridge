@@ -1,0 +1,675 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+  "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "PARENT_MODEL_NOT_EVALUATED": 1,
+    "BUILD_PROFILES_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [],
+  "profile": "whole",
+  "scope": "shared",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+  "selected_tests": [],
+  "test_invocations": [],
+  "imports": [
+    {
+      "file": "src/test/java/com/samskivert/mustache/MustacheTest.java",
+      "package": "com.samskivert.mustache",
+      "imports": [
+        {
+          "start": 179,
+          "end": 206,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 208,
+          "end": 230,
+          "name": "java.io.Writer",
+          "static": false
+        },
+        {
+          "start": 232,
+          "end": 266,
+          "name": "java.text.SimpleDateFormat",
+          "static": false
+        },
+        {
+          "start": 268,
+          "end": 292,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 294,
+          "end": 323,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 325,
+          "end": 347,
+          "name": "java.util.Date",
+          "static": false
+        },
+        {
+          "start": 349,
+          "end": 374,
+          "name": "java.util.HashMap",
+          "static": false
+        },
+        {
+          "start": 376,
+          "end": 402,
+          "name": "java.util.Iterator",
+          "static": false
+        },
+        {
+          "start": 404,
+          "end": 425,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 427,
+          "end": 453,
+          "name": "java.util.Optional",
+          "static": false
+        },
+        {
+          "start": 455,
+          "end": 481,
+          "name": "java.util.TimeZone",
+          "static": false
+        },
+        {
+          "start": 485,
+          "end": 507,
+          "name": "org.junit.Test",
+          "static": false
+        },
+        {
+          "start": 509,
+          "end": 545,
+          "name": "org.junit.Assert.fail",
+          "static": true
+        }
+      ]
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+      "package": "com.samskivert.mustache",
+      "imports": [
+        {
+          "start": 179,
+          "end": 213,
+          "name": "java.util.Map.entry",
+          "static": true
+        },
+        {
+          "start": 215,
+          "end": 259,
+          "name": "org.junit.Assert.assertEquals",
+          "static": true
+        },
+        {
+          "start": 261,
+          "end": 303,
+          "name": "org.junit.Assert.assertTrue",
+          "static": true
+        },
+        {
+          "start": 305,
+          "end": 341,
+          "name": "org.junit.Assert.fail",
+          "static": true
+        },
+        {
+          "start": 345,
+          "end": 372,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 374,
+          "end": 396,
+          "name": "java.io.Reader",
+          "static": false
+        },
+        {
+          "start": 398,
+          "end": 426,
+          "name": "java.io.StringReader",
+          "static": false
+        },
+        {
+          "start": 428,
+          "end": 450,
+          "name": "java.io.Writer",
+          "static": false
+        },
+        {
+          "start": 452,
+          "end": 476,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 478,
+          "end": 507,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 509,
+          "end": 534,
+          "name": "java.util.HashMap",
+          "static": false
+        },
+        {
+          "start": 536,
+          "end": 561,
+          "name": "java.util.HashSet",
+          "static": false
+        },
+        {
+          "start": 563,
+          "end": 594,
+          "name": "java.util.LinkedHashMap",
+          "static": false
+        },
+        {
+          "start": 596,
+          "end": 618,
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "start": 620,
+          "end": 641,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 643,
+          "end": 670,
+          "name": "java.util.Map.Entry",
+          "static": false
+        },
+        {
+          "start": 672,
+          "end": 697,
+          "name": "java.util.Objects",
+          "static": false
+        },
+        {
+          "start": 699,
+          "end": 720,
+          "name": "java.util.Set",
+          "static": false
+        },
+        {
+          "start": 724,
+          "end": 748,
+          "name": "org.junit.Ignore",
+          "static": false
+        },
+        {
+          "start": 750,
+          "end": 772,
+          "name": "org.junit.Rule",
+          "static": false
+        },
+        {
+          "start": 774,
+          "end": 796,
+          "name": "org.junit.Test",
+          "static": false
+        },
+        {
+          "start": 798,
+          "end": 830,
+          "name": "org.junit.rules.TestRule",
+          "static": false
+        },
+        {
+          "start": 832,
+          "end": 867,
+          "name": "org.junit.rules.TestWatcher",
+          "static": false
+        },
+        {
+          "start": 869,
+          "end": 905,
+          "name": "org.junit.runner.Description",
+          "static": false
+        },
+        {
+          "start": 909,
+          "end": 955,
+          "name": "com.samskivert.mustache.specs.SpecTest",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+      "display_id": "com.samskivert.mustache.MustacheTest",
+      "content_kind": "signature",
+      "content": "public class MustacheTest extends SharedTests\r\n{",
+      "content_chars": 48,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/MustacheTest.java",
+        "sha256": "83d1a3bc604fa59f70208f56b4f67b2b93df57b46a22688a64d9dfe534dedb36",
+        "start_line": 26,
+        "end_line": 27,
+        "start_offset_utf16": 735,
+        "end_offset_utf16_exclusive": 783
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "SELECTED_TEST_TYPE"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "display_id": "com.samskivert.mustache.SharedTests",
+      "content_kind": "signature",
+      "content": "public abstract class SharedTests\r\n{",
+      "content_chars": 36,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 39,
+        "end_line": 40,
+        "start_offset_utf16": 1029,
+        "end_offset_utf16_exclusive": 1065
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "INHERITED_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57",
+      "display_id": "com.samskivert.mustache.SharedTests#field:partials",
+      "content_kind": "full",
+      "content": "Map<String,String> partials = new LinkedHashMap<>();",
+      "content_chars": 52,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 232,
+        "end_line": 232,
+        "start_offset_utf16": 8855,
+        "end_offset_utf16_exclusive": 8907
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "TEST_INITIALIZATION"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec",
+      "display_id": "com.samskivert.mustache.SharedTests#field:name",
+      "content_kind": "full",
+      "content": "protected String name;",
+      "content_chars": 22,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 849,
+        "end_line": 849,
+        "start_offset_utf16": 36830,
+        "end_offset_utf16_exclusive": 36852
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "TEST_INITIALIZATION"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "a0a319024bc85f3d32bca23bb41daae471bc017cbe77688c020122b1b39ac29b",
+      "display_id": "com.samskivert.mustache.SharedTests#field:watcher",
+      "content_kind": "full",
+      "content": "@Rule public TestRule watcher = new TestWatcher() {\r\n       protected void starting(Description description) {\r\n           name = description.getDisplayName();\r\n       }\r\n    };",
+      "content_chars": 177,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 851,
+        "end_line": 855,
+        "start_offset_utf16": 36860,
+        "end_offset_utf16_exclusive": 37037
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "TEST_INITIALIZATION"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "3521fa6bfb391536010e35a6239f66e1f3a78af070990718f96ee9cd1d4c22c2",
+      "display_id": "com.samskivert.mustache.SharedTests#field:EMPTY",
+      "content_kind": "full",
+      "content": "protected static Object EMPTY = context();",
+      "content_chars": 42,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 901,
+        "end_line": 901,
+        "start_offset_utf16": 39011,
+        "end_offset_utf16_exclusive": 39053
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "TEST_INITIALIZATION"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641",
+      "display_id": "com.samskivert.mustache.SharedTests#context(Object...)",
+      "content_kind": "full",
+      "content": "protected static Object context (Object... data) {\r\n        Map<String, Object> ctx = new HashMap<String, Object>();\r\n        for (int ii = 0; ii < data.length; ii += 2) {\r\n            ctx.put(data[ii].toString(), data[ii+1]);\r\n        }\r\n        return ctx;\r\n    }",
+      "content_chars": 265,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 893,
+        "end_line": 899,
+        "start_offset_utf16": 38738,
+        "end_offset_utf16_exclusive": 39003
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "367166a8540f0b668332b4fc8e4f4d82083fddc431422de7d1130d0cfa05bb04",
+      "caller": "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "744f335ee4aaf783dd7855bc94b21a9147661886668f907ce385588847e745aa",
+      "caller": "a0a319024bc85f3d32bca23bb41daae471bc017cbe77688c020122b1b39ac29b",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "48c150cdfccfa8d806d1d40703b460fb0c6475e6c57cc62cc3faaaa1fcaecd3e",
+      "caller": "3521fa6bfb391536010e35a6239f66e1f3a78af070990718f96ee9cd1d4c22c2",
+      "resolution": "resolved_static",
+      "targets": [
+        "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "781820d1076819eafc538b820c72d35426e8f46d56fa616d1a372c7fd03b9454",
+      "caller": "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "3ed1e79969fa01929b0aafc28a76b7f40fd66a902edfda91323617a6c231f9b1",
+      "caller": "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "10e6b1560092e6012291023467e36c7f97429039c0fea6eebe1e60cb222ce48f",
+      "caller": "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "CONSTRUCTOR"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 8874,
+      "modifiers": []
+    },
+    {
+      "key": "af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 36847,
+      "modifiers": [
+        "protected"
+      ]
+    },
+    {
+      "key": "a0a319024bc85f3d32bca23bb41daae471bc017cbe77688c020122b1b39ac29b",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 36882,
+      "modifiers": [
+        "public"
+      ]
+    },
+    {
+      "key": "3521fa6bfb391536010e35a6239f66e1f3a78af070990718f96ee9cd1d4c22c2",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 39035,
+      "modifiers": [
+        "protected",
+        "static"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "367166a8540f0b668332b4fc8e4f4d82083fddc431422de7d1130d0cfa05bb04",
+      "signature": "java.util.LinkedHashMap.LinkedHashMap()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "744f335ee4aaf783dd7855bc94b21a9147661886668f907ce385588847e745aa",
+      "signature": "org.junit.rules.TestWatcher.TestWatcher()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "781820d1076819eafc538b820c72d35426e8f46d56fa616d1a372c7fd03b9454",
+      "signature": "java.util.Map.put(K, V)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "3ed1e79969fa01929b0aafc28a76b7f40fd66a902edfda91323617a6c231f9b1",
+      "signature": "java.lang.Object.toString()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "10e6b1560092e6012291023467e36c7f97429039c0fea6eebe1e60cb222ce48f",
+      "signature": "java.util.HashMap.HashMap()"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 642,
+    "visited_members": 5
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "3521fa6bfb391536010e35a6239f66e1f3a78af070990718f96ee9cd1d4c22c2",
+        "display_id": "com.samskivert.mustache.SharedTests#field:EMPTY",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 3521fa6bfb391536010e35a6239f66e1f3a78af070990718f96ee9cd1d4c22c2"
+      },
+      {
+        "member_key": "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641",
+        "display_id": "com.samskivert.mustache.SharedTests#context(Object...)",
+        "top_level_steps": [
+          {
+            "key": "8b2b22646db4d91ded0300e0b24f4067b58870b93707ad4bb24a4922a5ef0a1f",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              894,
+              894
+            ]
+          },
+          {
+            "key": "37f64ae978f5ee650c31b83ff67d4883c86f0578378e08de456fc943135ab93a",
+            "ast_kind": "ForStmt",
+            "lines": [
+              895,
+              897
+            ]
+          },
+          {
+            "key": "7374af6225e5d61965b5b2e31324cc018bc1f92267a50de6c559466c688cdcb8",
+            "ast_kind": "ReturnStmt",
+            "lines": [
+              898,
+              898
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641"
+      },
+      {
+        "member_key": "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57",
+        "display_id": "com.samskivert.mustache.SharedTests#field:partials",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57"
+      },
+      {
+        "member_key": "a0a319024bc85f3d32bca23bb41daae471bc017cbe77688c020122b1b39ac29b",
+        "display_id": "com.samskivert.mustache.SharedTests#field:watcher",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id a0a319024bc85f3d32bca23bb41daae471bc017cbe77688c020122b1b39ac29b"
+      },
+      {
+        "member_key": "af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec",
+        "display_id": "com.samskivert.mustache.SharedTests#field:name",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ]
+}

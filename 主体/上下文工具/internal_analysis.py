@@ -61,7 +61,7 @@ def build_internal_analysis(facts, files, types, members, references):
     member_at = defaultdict(list)
     for key, member in members.items():
         member_at[(member["file"], member["start"], member["kind"])].append(key)
-    nodes, at, by_member = {}, {}, defaultdict(list)
+    nodes, at, by_member = {}, defaultdict(list), defaultdict(list)
     for file in facts["files"]:
         for raw in file.get("body_nodes", []):
             candidates = member_at[(file["file"], raw["member_start"], raw["member_kind"])]
@@ -72,12 +72,20 @@ def build_internal_analysis(facts, files, types, members, references):
             node = {k: v for k, v in raw.items() if k not in {"member_start", "member_kind"}}
             node.update(key=key, member_key=member, file=file["file"], parent_key=None, reference_keys=[])
             nodes[key] = node
-            at[(member, raw["start"], raw["end"])] = key
+            at[(member, raw["start"], raw["end"])].append(key)
             by_member[member].append(key)
     for node in nodes.values():
         span = node.pop("parent_span")
         if span is not None:
-            node["parent_key"] = at.get((node["member_key"], *span))
+            # LambdaExpr 与 ConditionalExpr 可共享区间；父身份不能仅由位置覆盖。
+            candidates = [key for key in at.get((node["member_key"], *span), []) if key != node['key']]
+            kind = node.pop('parent_ast_kind', None)
+            if kind:
+                candidates = [key for key in candidates if nodes[key]['ast_kind'] == kind]
+            if len(candidates) == 1:
+                node['parent_key'] = candidates[0]
+            else:
+                raise ValueError('内部语句父节点不能唯一对应: ' + node['file'] + ':' + str(node['start']))
         parent = nodes.get(node["parent_key"], {})
         node["top_level"] = parent.get("node_kind") == "block" and parent.get("parent_key") is None
     for keys in by_member.values():
@@ -91,7 +99,11 @@ def build_internal_analysis(facts, files, types, members, references):
     def contexts(key):
         """从外到内保存控制/延迟执行包围，不将源码顺序当运行轨迹。"""
         result = []
+        seen = set()
         while key is not None:
+            if key in seen:
+                raise ValueError('内部语句父节点存在循环: ' + key)
+            seen.add(key)
             node = nodes[key]
             if node["node_kind"] in {"control", "container"} or node["role_in_parent"] in {
                     "THEN", "ELSE", "TRY_BODY", "FINALLY_BODY", "CATCH_BODY", "LAMBDA_BODY", "LOOP_BODY"}:

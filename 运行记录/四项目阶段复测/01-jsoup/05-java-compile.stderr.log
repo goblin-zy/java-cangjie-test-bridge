@@ -1,0 +1,12 @@
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:683: 警告: [dep-ann] 未使用 @Deprecated 对已过时的项目进行注释
+    public Node forEachNode(org.jsoup.helper.Consumer<? super Node> action) {
+                ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:1817: 警告: [dep-ann] 未使用 @Deprecated 对已过时的项目进行注释
+    public Element forEach(org.jsoup.helper.Consumer<? super Element> action) {
+                   ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\examples\Wikipedia.java:25: 警告: 最后一个参数使用了不准确的变量类型的 varargs 方法的非 varargs 调用; 
+        System.out.println(String.format(msg, vals));
+                                              ^
+  对于 varargs 调用, 应使用 Object
+  对于非 varargs 调用, 应使用 Object[], 这样也可以抑制此警告
+3 个警告

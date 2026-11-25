@@ -1,0 +1,1577 @@
+{
+  "route": "whole",
+  "files": {
+    "java": "SelectorTest.java",
+    "cangjie": "translated_test.cj"
+  },
+  "versions": {
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\java\\src\\test\\java\\org\\jsoup\\select\\SelectorTest.java": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\06-whole-translation\\test\\translated_test.cj": "9df31e79a6aefdab7fd931fdc18612fd36407f80166eedd994cf4cb628daaf39",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\02-java-skeleton\\0\\original\\SelectorTest.java": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\translation_config.json": "31d0e04972796744f3b7b743ac7b5f0fd487c7d27daba279c3d4873871af0398",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\02-java-skeleton\\0\\members.json": "7d98248b618a004bcb85c0da56c0eb1560016cf1326c2b5394078211bdd50cf5",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\05-cangjie-skeleton\\member_mapping.json": "41a105e666e2a7acb66cab567d7fad9463f6c6c78966ff627c7594d28df3ec2b",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\agent_context.json": "6a8c5c827f28f2a0493b9ce82ad91298fdeb16f5bd44567cce47ee5bf59890fd",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\initial_context.json": "8d5f04500102c243ccba906ac8afc615800c1d63b6f339f394bb98b5ca22b994",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\shared.json": "81f44aa373fc7a26b517ffe7ec08cbcf0b2fae48ece8cf1499683fab96c54de9",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tasks.json": "de363a594cd0f8b838041a0d7165a532397b1cd114112f2d7cd00049322cf4f9",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\adjacentSiblings-e2088d807b12.json": "97f749bda270d83a0b1c920d43847ecb883bfafc8f13888698107e8a1a1ca825",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\adjacentSiblingsWithId-e6d63ff872f2.json": "aaae4c7a6f4336f9155b28ffe6d4afe97e8ca6a56073406182b77eaa3f0e0ba7",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\and-4bbc356500fa.json": "9821408bc22f2c7953683ae035efd459ed6f79c7bdab51b92267844a828498b6",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\attributeWithBrackets-797fc709495c.json": "f5ab33f0aab4ad8b72198cd6e3175a3cd5b05044d42aa62c035bc6ec22501e49",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\byEscapedClass-756ba89656ec.json": "31bb7a26cc136f2971fa37bd2a832d92e60dc1f63525998e58f02edf7d118478",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\byEscapedId-bdb7f32ee4b5.json": "e77f2c5430cc61145b61249c0246f738b6041f5af0ffafb441318f7ce6a0a867",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\byEscapedTag-ccd22b8e9e5e.json": "668be349475c48c58aa94e99a81fc76f3456bea7ac5f23debe044179515f32a8",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\caseInsensitive-51a3807c31fa.json": "dcb7b46284d1111d2ee2b4acb01d53bf4246c44031f99fa8e4b895efe31aa57a",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\childElements-1fd6e2d76dda.json": "1129355f5551c23913134d5b0ef6c0751fda24c8c9c37111463aa4fb4b17495a",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\containsTextQueryIsNormalized-66e65f467dc5.json": "8cbcf49c341608f8ce17da626471b5eb452ed2016de9940306b596a2d0395a69",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\containsWholeOwnText-343bf8284813.json": "b59e64a1b886abcb85fe83f3088039cf259efe79985440c7e1e8b7062155c725",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\containsWholeText-7c2210189a29.json": "952a5c63da959f7e5768dc1917315e57617c29dbd27834283d2f837f9f893844",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\containsWithQuote-2aaa6fe460b6.json": "403201040ec9f085ae02904c65b69de007978cfcd74d1189dbbf5876d51b4d80",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\deeperDescendant-14abe29efa58.json": "cc7416162ef5227b0f165bb8819d2606c13952822d557fc3b733730d48a7ac10",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\descendant-6e77c81fff8a.json": "8bd399463a4f2169e12785259646b37bfcd3cfee38a5df75b3aab5207944500f",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\endsWithEndsWithSpaces-afb99128ab15.json": "cd7ba3b5e30d521d957342131b82e2ab975a8d12b91ecd8fd0471bb47ff416c1",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\findBetweenSpan-e1ce40e16c16.json": "f9bbcb98cb2a09ba553b39960925d7bed5f8423071d66b539257ce69e73db7f6",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\generalSiblings-c3bbdf15c91a.json": "f29cf70a88635ed4e6db7d5aa59bf7a8c9518bc27c215ba004b898c4216accfa",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\handlesCommasInSelector-210ec69a8486.json": "45af581528a3816fb20e7d5d3c4a2c2f95a0fe1b982f617b18cbc7cc0b29bc63",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\html_lowercase_simple_name-83d0a6bd525f.json": "c64f0ced93e39429fc21df94dab5814474cc7f8e2445f474e9da3b9786c2ddf5",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\html_lowercase_wildcard_name-b300290bf370.json": "728b1936e96ca670137c87334a1f3040caad1cd106ef0aa9b5985cb061f9fbb4",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\html_mixed_case_simple_name-557543011528.json": "e2d65539ae0d2eba24b31abbea08a3cb32dcb6196f5198f30a07a4e5a1ffdfcb",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\html_mixed_case_wildcard_name-99367cdb9684.json": "1f3577cc589b06d0b73e23d5fbf4f6ca4bbcb5fdbbc587434d6598502109898c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\matchesOwn-b59f66835e86.json": "e17c99f5f092d5e727b6732bf1a893b9f1583b47d7c01d60daf8bc24b7c12d29",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\matchesWholeOwnText-e8a7b915aa5c.json": "39ef205fbf9ae28c39a604cb4aa2727791ba2f6dffc81343e024627dfefc3f10",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\matchesWholeText-f5d70ed123ff.json": "2d29edcc39f9df4fddb39179d5aea48c83b31f70c40965adbf7f4a8229e5be31",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\matchText-2c9f78c7f67d.json": "632e83f40bf9befdee6e071d7a0a660079a0be5bc6d7719ec6dc9b0da578e0c9",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\matchTextAttributes-4df7be0eb012.json": "d4a10dbddad593d66415aa55bfb99b5dd0890e8f620271df11496707c6bc36d7",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\mixCombinator-0668fb9bb770.json": "f669297ccd93feaf924b7010309f3a05d6f73ed2475c6e8cda4ccb5a45061c58",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\mixCombinatorGroup-ebeae801d6a4.json": "ad8b40b22321e9132bf2e8106ac812e937b267f0627ff3d0dd77dcb688663d73",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\multiChildDescent-cd93bcfe1286.json": "659210648882896a917805514188ba9a1c165b1922f84d7b1f25689a8f712fc7",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\notAdjacent-c73fcea9450e.json": "d4ccabdd0d5bfaabec9ce32eff679a77b7b0ca315f64e7ec78ddf6c36cc57f87",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\notAll-4d9ad14ce51a.json": "2ce66b9cba56088068f92d7aa7cb19122151f39c5327ced7e3b9609571038c46",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\notClass-6f8b7ce80a8b.json": "d24a7c309064d8fcc856bf105fcea517b667011a8d0ddac4cc1a275ed4967ce8",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\notParas-ed69cbf50616.json": "6ae53b40e053737c152ca3088747c7ba993992db208053aaad694144423441bc",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\nthLastChildWithNoParent-8917693c0571.json": "4decdf03d2d75b3821a4992c5b48993f5b7c534943c509ad0cab3816f6b510fb",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\parentChildElement-203be8ac93d0.json": "7e802c184aea092328eae80d1818959ca455e2e1fcc9132520c44eb4bb8c8965",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\parentChildStar-da106f1df35e.json": "593449cc5322a03ff359f559a9f4bde512a5fdbb46049cd5b1c94b3215e8cc73",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\parentWithClassChild-af71ef55c208.json": "026f15538563123c7d3e93686e060b577fc4eeb58e95f1b0f48feda4a1878cd9",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectClassWithSpace-6eecc1ffbba8.json": "b3ed2f96c4900847e2dc20806f866d7374b072b7a661d3de201af47161017b46",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectFirst-ccc6654f3500.json": "be4d97f9ddf163ccbcdb4bba5470ed05680fcee06e9e0be60bf7498614ac752e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectFirstLevelChildrenOnly-d35feede9de3.json": "db578515b6ae4592e40b5e0db6dea4d70374bed38772ca836abb5748c14bcb79",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectFirstWithAnd-f37eaad9ca96.json": "24049d8f28efb2cc1bde41b186ca299b55d117e8617534cae5cc7fd542bb3250",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectFirstWithOr-9995617b0edb.json": "dbdb90d67d70861d09ee7ee7905ee7cc5f9738ef0f6f6149bbf2d6fd01135412",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectorExceptionNotStringFormatException-f37e6a90bd48.json": "6e3918a39c09a5cb0aef4320813ed12f6b4f1d74fae6244ed46e9192a325721b",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectSameElements-81a49f525bc9.json": "5afec5ba9018d31a08899f967bffd8443aeb57f9edddaebdb227b288b02ee4b4",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\selectSupplementaryCharacter-6f3e914845a3.json": "3eb895928738b5bd2d43edc16b845fa289efacfa8d058d26d4b3433b5c72e60e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\splitOnBr-32d737f3ea8f.json": "26d91d195b902d73f207f587f6f5c5de07bc55c19707950466de14f1864f389a",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\startsWithBeginsWithSpace-d83deb347e41.json": "87af09e740bc3c7410d8bbc09c8417e93393d7cbda12fa9ffce1bc347164016e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testAllElements-52c98953fba0.json": "942909b2ba3b57b3deed1b0bd5a95494bb23baa02c6482317e8fd8bb24176cbb",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testAllWithClass-ead0469f430a.json": "c7c11354738c1492e614ad948c8a5d1bafa4faf6b3a0efe3370c8578192d0df5",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testByAttributeRegex-25af7f556804.json": "5d029a9975ecaef202593cfd5ffcd12ccf181dbfc3b8043c50c04ca7d5e0809c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testByAttributeRegexCharacterClass-24160d3fee2f.json": "d57858f2ce78662f1973e8c2d0152166e3702adf3b460e3a510e8f5aaf44eee3",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testByAttributeRegexCombined-d48ff0af2dac.json": "611e920eba86c16591e02ff0f1494f48814042c46fd7040f2ffa1b5dfbaf1be6",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testByClass-6ff25c835a57.json": "6a84d4296a8b9b0299494f247bba24e651ed80713f63d16ff05c70d20ece158e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testByClassCaseInsensitive-d960e86305b2.json": "e1854889196dacbed23575ac7b9ba7854f2b62a5160b322edabf98774d6faf15",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testById-659e588d382d.json": "3e67f29722784d36ab1e00e6b35969822975d5085ff361a5a28ec08362a5d5f5",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testByTag-2331cb7dd919.json": "9f6a5c64d03ef1de10136cc7e460defe7240919ea43649d951eddc0cd4ead969",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testCharactersInIdAndClass-ef815a7124b8.json": "6bba86b02ea266ca9d4011cbee2889587e98ac8387fea7db32eac78fb2ac1654",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testCombinedWithContains-3a8f8f165c79.json": "083e423ba33344e8277deca00f42cae9b85101ae8a58dbf2a614318ac447bed6",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testGroupOr-13d8acbae73f.json": "189ed361dbb3dd32005bd356b0679723805f6c86d5d5ece72679e3d6469bed7c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testGroupOrAttribute-86b33a2affda.json": "7625676e351c39c6834a664206c4c8c8ca0719aeca895abdef3b5fd6e74f9023",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testMatches-5e59c8f9ce1d.json": "11023cf6864f4d83e951e70f38bb239643f608019d94b939036c3c8ad2052755",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testNamespacedTag-4873a42d2a2d.json": "6f6fa0d0235a53ca4a740602e154d8362cfaf19b595598d31dc4b0f1cc9d0ca7",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testNestedHas-ece99aa735b8.json": "bf60d4afa138fcc988b3f5c9e863446750f1f9263e12f2d5f155f02c42376b19",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testPseudoBetween-db31b6ba6559.json": "6b976b5412b283245144afed34a99d8a48932118daa55ae6282b0c8acaf18000",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testPseudoCombined-72cd570f8a8f.json": "67f642dce5e7ceb9bfe7ac8835068592edd6f34b2d679ab62b293597b6a592d0",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testPseudoEquals-6483760b38f3.json": "9cbe5e59d539d12ca35691db399e478b9f1ca00d9b7a223f38d6e8021b920635",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testPseudoGreaterThan-73ebecd78e56.json": "b7f70e85778fef6695adc2e51e5dff5efbeab214ca31d38d7ceb2ab005279f09",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testPseudoHas-2b4dfdaeef7b.json": "bed66b70c110ca30250c9cf22237e4c23a8dbf653a9bd0be4b1c46cdfe4269e7",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testPseudoLessThan-a3baeb05d770.json": "627e0af4115cb2b509816be682a704fb7c79d3106fca152333234e11a387f137",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testPsuedoContainsWithParentheses-122e7d2f142e.json": "48754eea5c256a8bb3d0e7097b73e88759f66aaaf3b21e50ca879de1b6f98238",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testRelaxedTags-f1c3abe5bf91.json": "d25621d1bb745b8414b4d4ccf404ed6eb558cee67d25243283fcde18a66c2b30",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testSupportsLeadingCombinator-55cf28dcdd16.json": "8276cd5113b832e7b124089ef868233193d9672e02ebf79e69782b688a49132f",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testWildCardNamespacedCaseVariations-ec804da642da.json": "cc5d1817e3ae4c36b8af9e67dc02a684a0caf689aefe3d1f3262b24cafd4c3af",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testWildcardNamespacedTag-f9bf05085281.json": "7afaef0d6dc688a049eb35ef982a809c1d644cb66cf7cdc0c6c5a9ec9a5598dd",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\testWildcardNamespacedXmlTag-efe3e7f50dab.json": "c3b0474828808bf4e770b10b30a0eb4a9130e8abeb8bfe57684951fff570969c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\trimSelector-8bf545f8a51f.json": "7093429b666bcb356a4f5b8711f87f59d5df88a6a0a197bc5b6f210701bdef0c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\wildcardNamespaceMatchesNoNamespace-e7bb820f8611.json": "e7b5684d38d7202d08ec8d66c757588e5861aa9f221c087afe5b5029a02a2f87",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\xml_lowercase_simple_name-c4ca8e8dcbd1.json": "383dd40867e03824f4fa9389b1c1de7cfc71528dc691bd54a472c8f26b2b13d8",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\xml_lowercase_wildcard_name-e2fa3d8b3e1b.json": "6cc9d7bb43799c8ad5c0355b3245ff78df956777b2035fa85a28e83b3d28ae07",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\xml_mixed_case_simple_name-9cff01ceb567.json": "0109de279df30a45971c2776d4287bacf4f1bab2b42a4265a5bf055c11344469",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\xml_mixed_case_wildcard_name-72944fe0c00a.json": "63b7d00c9fbdd2fd78a17a607c42a0fdffbbfc551000d7b7fe9706c493f4c142",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\04-test-context\\suite_1\\tests\\xmlWildcardNamespaceTest-8f876ac48f74.json": "c34f067264b0bf5ed17961f242c12cb2260af3b513441d7c1bd76233545a65e7",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\02-java-skeleton\\0\\skeleton\\SelectorTest.java": "3c2f0d9558c800955b516f24d3b5d2edf9c7a6529e36e84a193a58f63c138178",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\Connection.java": "194529cb6b0b11b194acb3df09bf655ebebc23ea655418b0ab1964fbff73bd39",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\HttpStatusException.java": "ecf725c71ae86ab5d915431ce4980b4ffb679d273b1b2561242842fab1ff3196",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\Jsoup.java": "715dc369a27d6b4265b1dc9e741e2c1613af3fa8b4a96a667156dc76676f795e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\SerializationException.java": "96e426ace0e719074fd26e67ca36bb2657050c133af49b1fd4fba3368e652c59",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\UncheckedIOException.java": "ef842a8249921f9339b73570ff5a40973e50c24fa4686020d4964c9eba159f34",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\UnsupportedMimeTypeException.java": "ba4fb475e31d400f274d24c1cac751322061be5af6a6b8297df5b489cc6285ac",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\examples\\HtmlToPlainText.java": "3fe8e5f3dc9b26237f8c71758bcbfe765c6a427ed213cba2f5f00d930e008052",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\examples\\ListLinks.java": "0186ce57dfab252beee2b196b86c94c320abd4b2c1eb1fb7ae8982223c15c594",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\examples\\Wikipedia.java": "816c01ba37559e1a0e52e2e64b0557d4811e5259f73cab52824094e394fea466",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\examples\\package-info.java": "c337a040d58b514b588b78a134a1d185270a01ba5a78d4bd7c5508dbf5f063eb",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\ChangeNotifyingArrayList.java": "c05a78a65ee75cabb0f6535987200c174ffeb39914cfb6170df91a8be9b0e233",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\Consumer.java": "3459e608ebe36bc3b35d2671391e4a5a2193ed24f2154741b3704a37b9f9a133",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\CookieUtil.java": "8e642e7cebb1c099895cf2947b4910e855b88fd0a51a92ca31278c67074476e8",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\DataUtil.java": "9a142061c691ab60312f1f5b5dc62e4579d0061d6ad107bc703fe700f3612ad6",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\HttpConnection.java": "12ec95ec33a1f9ee4d4588c941ef1d22744b1ad7f5597f6d9008179bcde7fc57",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\Validate.java": "df30c9ea9dbe70cb376e8cc40e8c30e6bb4afbdc0b3439d60c28c3e50069368e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\ValidationException.java": "209e9b62845a9effe55d9e684c8ebe76d6f63be27cd66ee0a2ff24ce3585cfbd",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\W3CDom.java": "1b6a1de3c03c285c7ea7b7f43c9e2958ef217e9d78ec1bef13abcb6bb3d3ac4f",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\helper\\package-info.java": "7dad56f47c58b60266cf817dbd3819a52acab19cd3e996d16ea8a3bf30861cb8",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\internal\\ConstrainableInputStream.java": "c1c98e10b6a7ad38e5782f1f5fd7bb44b09b847c88680a4f269046d48529c467",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\internal\\FieldsAreNonnullByDefault.java": "34ba3d2afe68cc8d2f0212b14dd46df2e42a85d0ebc6f42340185be8910db08c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\internal\\NonnullByDefault.java": "22c002a41cd84595879dae69869c1a765ec37b75c045640fec34b9723f8eea57",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\internal\\Normalizer.java": "c678c088b6029cd127da7bb4340958e00867cd5834485c0ceab36c55d780aa53",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\internal\\ReturnsAreNonnullByDefault.java": "c562fd56ad8c4fea456cdc21020a0ba64b19ea2f5376a3cbaa399e57fe9eb452",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\internal\\StringUtil.java": "e6aec7293ce97b317cdaadf71c376b7caef3a5285c49666a93ff590612ec8910",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\internal\\package-info.java": "273c46170e277cc4c47568cad7f30002351fd2bed6d2ccd36449e4bda88b567c",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Attribute.java": "de6d99e7eae6a0666efd38e858693d9bd5dc2f20cf0f6e5183933e43798fa302",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Attributes.java": "c3407a92f6f491b2db1633e02664795808d6377b1685960065c42945b8faf54e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\CDataNode.java": "03bee60972c9d555e55e4a9a5460995b2a08cecac1bde957b279ed5e2233e5b2",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Comment.java": "471543258ec651ec976ede62d73db07a362f644ec9b1013852ef4e213b310908",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\DataNode.java": "66a9bb45b41e2ed15fe6c2f41305060235a652a383a6643c266b16400aa71a47",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Document.java": "4e2c09e67cb81934abd600b9fb0498402cf3fb05dfd41dabed284155d6ade670",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\DocumentType.java": "619cf3787c729a52d679b27380179bde3846c1d7492eafd46565b2f45d19dbc0",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Element.java": "a87a9c48f7ed2d68ccf1ba55487955a685e6192de2b6a9c01f0f365ad4202977",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Entities.java": "2e23ee27398ecb6eb036276075910be098a7d466a8b6bc15f69bd7791a4ec010",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\EntitiesData.java": "5d2d6726a607fca5d0f9393aa6d5dc0882e780507dfb35371cd4d17e7e1e63f9",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\FormElement.java": "99e74181e349e5925b58a39cb9a4cd3dbcba9af076de17a4d4c595191717c1cd",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\LeafNode.java": "1d0fa062fefa4a876e9a848a987cade9e76a5d43536b0c9edb90d8702bf6d327",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Node.java": "126d6ab3426b595b0bdfa089ae024e178055436f2ceee3d8458ac311551e69f4",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\NodeUtils.java": "ca231f8d8f3e484cb4482c65fb24fd19dfab2d314960bc0d4069dd1628625c98",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\PseudoTextElement.java": "fd7e6c26e41679626c1ae645ae9426706e928028088e53adb1ca562a9903a738",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\Range.java": "1180ae22244ee30f41e86b2d9db912ccca7e18da8f21fd6896443d2c1c361dc5",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\TextNode.java": "f5f5f5fdbae40f780c092c2d2196e5f20ab56f1f8626b8435ec6ba2dfc6d9050",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\XmlDeclaration.java": "75d779e02dd26aeebf4c7e05f69cc6f18fd0cf3074a695548b584590bc6678de",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\nodes\\package-info.java": "e9888357f6883e2e905fd9f46a248606c700546c8973970774ce5649a27b13d2",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\package-info.java": "ba4f7c9dd1d33c6607514b10578ba35c78d7a15e5fd2d2533b0e29cd6d173ccf",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\CharacterReader.java": "1b87317c4c128a456780db7641d7f1fbfd5b2b50b930799d33c2ff452bb5eba0",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\HtmlTreeBuilder.java": "94ca0fbd1d9bcd0b58cfc9f2dfdf7b019299e4aab5f03780782505e025fe4a41",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\HtmlTreeBuilderState.java": "c3eeb7c646a30649f615a6feafd2829b3873f7dd72b40fe1e18e5c35b6c768e7",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\ParseError.java": "1c4b2b71972964ceebbefd5ede6fca102811e97dc4b250df880527d2b79cf4c8",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\ParseErrorList.java": "c4aa6c789ee9044cb74ca35255bfd7030b1f45b6f38a4da7744bc48bd6efcea3",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\ParseSettings.java": "787df49719e004c6a5489b6a96f81755914ab38d5dc09ce5525a90e030798e6b",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\Parser.java": "9d14f6f1de3ff9c916966b517e605e9d52cacd611651d960de7875cb3189f6ef",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\Tag.java": "c9ee9601ac315b9f3d74589701f283ac49ac73661dcf48b3e06ff0d4d3061fb2",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\Token.java": "4f292019f1c14300d93f21d32016478cd2f74b0635cf4b8d6320c34312f227c3",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\TokenQueue.java": "3e26bbb9e08055c3add95c005658370f259eb264e5a71ac7c0947c031c56d210",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\Tokeniser.java": "b15f35e59f09baa512c2d0ee07ee98575bcbfc63c3dfdbcd7dd8bd888dd2f373",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\TokeniserState.java": "2908b84dba6fa2742b9c13aa3b3f94c6e59d18c476903570b441d71e348dbb46",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\TreeBuilder.java": "83d5f4d5a6fe85932b6d8eb40ce2c29f73d4a75e3bd64eab473015f2dce4e538",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\XmlTreeBuilder.java": "aaeef6a7c72c01683180e940465f4fe1693607eabe70683e97d46165de470fca",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\parser\\package-info.java": "8f0e7ac368f20d4fa36860fbaa20da9918385fc955c17a3d7f7128a1961318da",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\safety\\Cleaner.java": "6d35bc3971628218f2833d0964f5587f5fa32535925abf103de31180dc45ce03",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\safety\\Safelist.java": "19a32651990089ba6cc27f05beb627011f2d12973bb3c74cb9dd958e5b3fcb89",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\safety\\package-info.java": "84c6064550d9f45f9d4489029b4fe0df4efb13b2883904546395f78ecd626384",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\Collector.java": "ee84a7407b2c2f912c43243edfa2f532bb4e1e8b176d85bcd7310b96c4c89221",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\CombiningEvaluator.java": "73eddf24e0deeed950614fc1cf541ae3d7aeaa101aed71f37cb89934593c0fea",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\Elements.java": "915839331ec2777a89c3a52893b7e85a5286c948371164adf402990e7872f2f2",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\Evaluator.java": "9f2bbe1d45cc2f2341b6e24ac7a8a05caf382bca01ac84528b13f6a1a29c5c30",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\NodeFilter.java": "c6ea686f67d198f14e08dbb0d7e5719a0d87803aba448143fef1f9c478d7a44e",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\NodeTraversor.java": "ddd4db4810c158b9d908b9938c5abc4b294563f03d94efaf76ea5f957c3d2c9d",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\NodeVisitor.java": "2a41177ecc50cca46000545e69f936b669d4b62c4e118cfcea08e591d3e35688",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\QueryParser.java": "ca8bacac78e6a1c4ab1c3681acb963a2f3307347faf6f691304e58effc5ffeb2",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\Selector.java": "ca05c400131f7d6e55e920757ab32275f1e95127cd6df903489ff98045a1a3bf",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\StructuralEvaluator.java": "afa62833791ec17d3da19c10934489c757d897d846142838a8372a288367f0ae",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\source\\src\\main\\java\\org\\jsoup\\select\\package-info.java": "5b5277dfea5f8ac9c221767a3b2e6c66c577c8030d5dff5cf57d900d7f2e3648",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-input\\05-cangjie-skeleton\\translated_test.cj": "a1e0a1c1e421fab9eceecc6ed559b9a20eea2c85466c66437023fc640be4f6d2",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\attribute.cj": "0882179d4c8c28c5db4b6feb232e28f0c52a8628c11c4d3fa93f03c2475f2556",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\attributes.cj": "16d3e6a71f59c70bc0a55ea715a63c3cf407bdbef2268a2f339a13adac1ab712",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\c_data_node.cj": "6086ad335f9d404c3a1e3936a5266b52266147cbf247aca889f35a8eb501858d",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\character_reader.cj": "0e9fee81e4a3c57fd58b8711bc0c023cbbe8c282047e0d3b0064110240617d52",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\collector.cj": "0f51cb0a81ec96f764a0c9e806d8b9e23da7733e504627a71b2603db904b8765",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\combining_evaluator.cj": "fa64e9eb6e1687b341d7fab9a8c2e7f5c3e0d8f39aed4fd382db169c935dcefa",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\comment.cj": "6df1b9f01cb337ef7ef4a0b1c6ce6245721f9f9cd20808d17307829ccf4f5c16",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\data_node.cj": "02703af8578388340aed466e76278d1fe7f6a8729de994fc18995c7efb66ae0d",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\document.cj": "e1b16250dda1ab2451558a7d2621c2e43b987f23a8131dc1e05b10d71c08f9a2",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\document_type.cj": "98ca58839d0a288cb5e253f19483d6e0079d256832d6e72fe1e752a539134449",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\element.cj": "b7176b2df8f128db6376429eb3c9cadac9537d6320dd6aea93641a815107d140",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\elements.cj": "7dcb481157e80eec7c4c91e1a1f01ba06f93dd31aada36ab4bda515747a11b0d",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\entities.cj": "30f9d8c258fc9b2a6e6c03e8524952e131d20fd432d929c098e7438be193c400",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\entities_data.cj": "7b3031ff9a76dd35aba82e29848fa1bd464feb09fbbfc80796be451d3af5c9bf",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\evaluator.cj": "85677dbb614a5fa6b9aea2e9161b0a0385eecc5206a1c7fc6b6243db7427bb50",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\form_element.cj": "42018b4182f31bb29b69dedaf71fce973b79c9af8c06a1a9eb5d5b5562385c09",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\html4cj.cj": "d47d12039ca7274d76e859693dce2802508d36491f2f2e6dcb38f8591b1db743",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\html4cj_exception.cj": "baa2e68291d6e545386d468a1575eb8affe63876a6d09b8d2bf64941304e84d7",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\html_tree_builder.cj": "0988ad074461a29ca4c8c3649e8889cf05b29b4c78ec86722c7dcff763d86e6b",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\html_tree_builder_state.cj": "2f76ca75ae0e1ecbcb6d41d2084ac918375e40bf85adda615eb3a0d3f0ab32d5",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\import.cj": "0e1459447987ddc2c6df72de79a334e6219c2ff81d50dfebd438e97f09e9bd19",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\leaf_node.cj": "1e682c11f8bbbb41c9b51be7578d568827ec996e816ca42113c86684bd7f61b3",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\linked_list.cj": "a5df159ef56d42c4a7c4ee6e4fd77ce5a1c09787f21cce68c56a53a32845e751",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\node.cj": "b16c390b9732798b4d107f248fd75cdd30aa8a05d516a10978eac177c40950d4",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\node_filter.cj": "6be2c7e6aace72f1d5e70b770528eb84bbb776fff7e54f72df93111079d8bcf3",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\node_traversor.cj": "dba4a54726ccb664e5c3da9f901d8ecc65f4a56bfdf1aa66b102990ffd5bab9c",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\node_utils.cj": "a08486bed5981048497d7e6d9a66fb13407542de51901ab3da51043038ab558f",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\node_visitor.cj": "5d2a0f469bb662b974b501cfdd49c35146d91ab6f86056e8781b5e0b282b04c9",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\normalizer.cj": "927a8d9ce5b744a16f121b628a20835dd37df46352472292046335378983b95a",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\parse_error.cj": "60498c45d42b050fdb2825dd1dcff62ce3a8c951f811ebe687f02606707612b8",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\parse_settings.cj": "cb19d59034ab8fc567a0b7fec1aef0b5f8c2346d8fadae5b831cc9a40755cb12",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\parser.cj": "36f3de4820307944d2cfadc435bd3bc24a52d1ed6561dceb47954384408e85ff",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\pseudo_text_element.cj": "5bc2368ee90e4990d3a61957974ab86dacbc938c12452a4485126dc16052e39e",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\query_parser.cj": "70f4842a8e5b8524b568b90c0b9170475d4c169619762d2b85e37e9f543a255b",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\selector.cj": "a3739fd2742f6fd94077204f7a3c414585f19c6cda035c9c42127a27281c7af9",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\src_range.cj": "15258f1e689684db1a5faeb1a94e0a7eeddab0ea41aa2865e914708c359a3c68",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\string_util.cj": "bfc696534bad55e537e1daf1c2797e9cf22d041c54b0b2b523b358d0481db59e",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\structural_evaluator.cj": "f75d4ae7fc9fcea99ecd17d1610bf728a98279c1ed637466d4f7252c011ba7eb",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\tag.cj": "13f11ac45bbdd06f0765c580180a1486737aa30e56ceba060c6d84f42b728e86",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\text_node.cj": "30fffc80335b9efbc568a19129f973e038dec2fc8cf4a070d0fccf52759d30f1",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\token.cj": "2e05e1f4c16143ffdfbd31d541cb1bb8d0748f55420853830822947240fe8a20",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\token_queue.cj": "90922c91e36024b5ce970a8ca597e3bc619e352001eb4c3b4f022c55981f4ee6",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\tokeniser.cj": "1f475cdb65dfcf625d45d564308269ef4420a013d84e463b512d60c01984ddc0",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\tokeniser_state.cj": "89cfc51ae172a28c16ee94e94f900fcd309ec07498b7d520a38f573592ef447b",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\tree_builder.cj": "aa56153ea84304046e672aab10dbe2a3bc06cb0fe18660a1a655f4f3b8022905",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\util.cj": "93a1cd0740bd37daf4479133fbc18ed86109a2277267c846ee294612e46b9e6e",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\validate.cj": "7243b91fac19d57b8f45b29acdddb793cd2e3a1ef2c31d65a7725ef0be79a874",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\xml_declaration.cj": "a026e64caa6939afd8aa463d127bc6d4ed5b710c8b0df4751dddf2f944317b1b",
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\01-jsoup\\cangjie\\src\\xml_tree_builder.cj": "b70c1961b929cfe71e8db0e68fa0469b0702ad6f8dae47d55cd63cb8d4a9d347",
+    "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\target_contract.md": "1b6e9ad5168f8ed3f0d99c75c35c01279a2216f3056e76f175b9528584cfc01e"
+  },
+  "contract": {
+    "status": "assumed",
+    "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\static-review\\process\\01-alignment\\contract\\target_contract.md",
+    "snapshot": "contract/target_contract.md",
+    "sha256": "1b6e9ad5168f8ed3f0d99c75c35c01279a2216f3056e76f175b9528584cfc01e"
+  },
+  "scope": {
+    "units": [
+      {
+        "id": "U01",
+        "name": "testByTag",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U02",
+        "name": "byEscapedTag",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U03",
+        "name": "testById",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U04",
+        "name": "byEscapedId",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      },
+      {
+        "id": "U05",
+        "name": "testByClass",
+        "state": "已比较",
+        "status": "在所列前提和范围内一致"
+      }
+    ],
+    "selected": 5,
+    "compared": 5,
+    "cross_review": {
+      "action": "复用已有依据",
+      "affected": [],
+      "reason": "逐测试保留原输入及断言，依赖源正文/辅助与业务接口；跨文件定位受阻仍单列。"
+    }
+  },
+  "results": [
+    {
+      "id": "U01",
+      "packet_hash": "f74b727298820df3a17377cf496984763a394b5aac01210ab4e85bcf4eb392f8",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "原输入、调用与全部检查",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J012",
+            "J013",
+            "J014",
+            "J015",
+            "J016",
+            "J017",
+            "J018",
+            "J019"
+          ],
+          "cangjie": [
+            "C006",
+            "C007",
+            "C008",
+            "C009",
+            "C010",
+            "C011",
+            "C012",
+            "C013",
+            "C014"
+          ],
+          "reason": "保留两段原HTML及DIV大小写查询，检查三个ID及span零命中。"
+        },
+        {
+          "kind": "interface",
+          "topic": "本轮目标接口前提",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J012",
+            "J013",
+            "J014",
+            "J015",
+            "J016",
+            "J017",
+            "J018",
+            "J019"
+          ],
+          "cangjie": [
+            "C006",
+            "C007",
+            "C008",
+            "C009",
+            "C010",
+            "C011",
+            "C012",
+            "C013",
+            "C014"
+          ],
+          "reason": "基于当前业务快照和明确的适配条件。",
+          "contract_reference": {
+            "quote": "testByTag：保留两段原HTML及DIV大小写查询，检查三个ID及span零命中。",
+            "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+          }
+        }
+      ],
+      "name": "testByTag",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U02",
+      "packet_hash": "585d4c6f2802a228198ecc7dc54f6f704aaab2cabd03b9840f385c82001170b5",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "原输入、调用与全部检查",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J020",
+            "J021",
+            "J022",
+            "J023",
+            "J024",
+            "J025"
+          ],
+          "cangjie": [
+            "C015",
+            "C016",
+            "C017",
+            "C018",
+            "C019",
+            "C020",
+            "C021"
+          ],
+          "reason": "保留HTML中的点和反斜杠，以及CSS选择器的两层转义，依次断言One和Two。"
+        },
+        {
+          "kind": "interface",
+          "topic": "本轮目标接口前提",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J020",
+            "J021",
+            "J022",
+            "J023",
+            "J024",
+            "J025"
+          ],
+          "cangjie": [
+            "C015",
+            "C016",
+            "C017",
+            "C018",
+            "C019",
+            "C020",
+            "C021"
+          ],
+          "reason": "基于当前业务快照和明确的适配条件。",
+          "contract_reference": {
+            "quote": "byEscapedTag：保留HTML中的点和反斜杠，以及CSS选择器的两层转义，依次断言One和Two。",
+            "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+          }
+        }
+      ],
+      "name": "byEscapedTag",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U03",
+      "packet_hash": "9dbec9c84a05b28ecfd725c4a9599bd1835490e475a3c0824ef67b2dc6d9bb1b",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "原输入、调用与全部检查",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J026",
+            "J027",
+            "J028",
+            "J029",
+            "J030",
+            "J031",
+            "J032"
+          ],
+          "cangjie": [
+            "C022",
+            "C023",
+            "C024",
+            "C025",
+            "C026",
+            "C027",
+            "C028",
+            "C029"
+          ],
+          "reason": "同一HTML重复ID返回两个节点并保持原文本顺序；另一个HTML不存在foo，仍检查零命中。"
+        },
+        {
+          "kind": "interface",
+          "topic": "本轮目标接口前提",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J026",
+            "J027",
+            "J028",
+            "J029",
+            "J030",
+            "J031",
+            "J032"
+          ],
+          "cangjie": [
+            "C022",
+            "C023",
+            "C024",
+            "C025",
+            "C026",
+            "C027",
+            "C028",
+            "C029"
+          ],
+          "reason": "基于当前业务快照和明确的适配条件。",
+          "contract_reference": {
+            "quote": "testById：同一HTML重复ID返回两个节点并保持原文本顺序；另一个HTML不存在foo，仍检查零命中。",
+            "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+          }
+        }
+      ],
+      "name": "testById",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U04",
+      "packet_hash": "681a3018dc1332c8149776a18c1333a8913b6e594d96c9e3125a136aafb0aea0",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "原输入、调用与全部检查",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J033",
+            "J034",
+            "J035",
+            "J036",
+            "J037",
+            "J038",
+            "J039",
+            "J040"
+          ],
+          "cangjie": [
+            "C030",
+            "C031",
+            "C032",
+            "C033",
+            "C034",
+            "C035",
+            "C036",
+            "C037",
+            "C038"
+          ],
+          "reason": "保留三个原ID和选择器转义，依次检查One、Two、Three。"
+        },
+        {
+          "kind": "interface",
+          "topic": "本轮目标接口前提",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J033",
+            "J034",
+            "J035",
+            "J036",
+            "J037",
+            "J038",
+            "J039",
+            "J040"
+          ],
+          "cangjie": [
+            "C030",
+            "C031",
+            "C032",
+            "C033",
+            "C034",
+            "C035",
+            "C036",
+            "C037",
+            "C038"
+          ],
+          "reason": "基于当前业务快照和明确的适配条件。",
+          "contract_reference": {
+            "quote": "byEscapedId：保留三个原ID和选择器转义，依次检查One、Two、Three。",
+            "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+          }
+        }
+      ],
+      "name": "byEscapedId",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U05",
+      "packet_hash": "2f050780e79f1414fbb4563f6a85524a865385ac28fb0ac0ab7d873b8a199760",
+      "checks": [
+        {
+          "kind": "source",
+          "topic": "原输入、调用与全部检查",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J041",
+            "J042",
+            "J043",
+            "J044",
+            "J045",
+            "J046",
+            "J047",
+            "J048",
+            "J049"
+          ],
+          "cangjie": [
+            "C039",
+            "C040",
+            "C041",
+            "C042",
+            "C043",
+            "C044",
+            "C045",
+            "C046",
+            "C047",
+            "C048"
+          ],
+          "reason": "保留大小写类名、多个类名、缺失类以及带连字符类名的全部五条断言。"
+        },
+        {
+          "kind": "interface",
+          "topic": "本轮目标接口前提",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J041",
+            "J042",
+            "J043",
+            "J044",
+            "J045",
+            "J046",
+            "J047",
+            "J048",
+            "J049"
+          ],
+          "cangjie": [
+            "C039",
+            "C040",
+            "C041",
+            "C042",
+            "C043",
+            "C044",
+            "C045",
+            "C046",
+            "C047",
+            "C048"
+          ],
+          "reason": "基于当前业务快照和明确的适配条件。",
+          "contract_reference": {
+            "quote": "testByClass：保留大小写类名、多个类名、缺失类以及带连字符类名的全部五条断言。",
+            "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+          }
+        }
+      ],
+      "name": "testByClass",
+      "status": "在所列前提和范围内一致"
+    }
+  ],
+  "evidence": {
+    "java/J012": {
+      "file": "SelectorTest.java",
+      "original": [
+        21,
+        21
+      ],
+      "annotated": [
+        105,
+        105
+      ],
+      "quote": "    @Test public void testByTag() {"
+    },
+    "java/J013": {
+      "file": "SelectorTest.java",
+      "original": [
+        23,
+        23
+      ],
+      "annotated": [
+        114,
+        114
+      ],
+      "quote": "        Elements els = Jsoup.parse(\"<div id=1><div id=2><p>Hello</p></div></div><DIV id=3>\").select(\"DIV\");"
+    },
+    "java/J014": {
+      "file": "SelectorTest.java",
+      "original": [
+        24,
+        24
+      ],
+      "annotated": [
+        122,
+        122
+      ],
+      "quote": "        assertEquals(3, els.size());"
+    },
+    "java/J015": {
+      "file": "SelectorTest.java",
+      "original": [
+        25,
+        25
+      ],
+      "annotated": [
+        130,
+        130
+      ],
+      "quote": "        assertEquals(\"1\", els.get(0).id());"
+    },
+    "java/J016": {
+      "file": "SelectorTest.java",
+      "original": [
+        26,
+        26
+      ],
+      "annotated": [
+        138,
+        138
+      ],
+      "quote": "        assertEquals(\"2\", els.get(1).id());"
+    },
+    "java/J017": {
+      "file": "SelectorTest.java",
+      "original": [
+        27,
+        27
+      ],
+      "annotated": [
+        146,
+        146
+      ],
+      "quote": "        assertEquals(\"3\", els.get(2).id());"
+    },
+    "java/J018": {
+      "file": "SelectorTest.java",
+      "original": [
+        29,
+        29
+      ],
+      "annotated": [
+        155,
+        155
+      ],
+      "quote": "        Elements none = Jsoup.parse(\"<div id=1><div id=2><p>Hello</p></div></div><div id=3>\").select(\"span\");"
+    },
+    "java/J019": {
+      "file": "SelectorTest.java",
+      "original": [
+        30,
+        30
+      ],
+      "annotated": [
+        163,
+        163
+      ],
+      "quote": "        assertEquals(0, none.size());"
+    },
+    "cangjie/C006": {
+      "file": "translated_test.cj",
+      "original": [
+        9,
+        9
+      ],
+      "annotated": [
+        51,
+        51
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C007": {
+      "file": "translated_test.cj",
+      "original": [
+        10,
+        10
+      ],
+      "annotated": [
+        59,
+        59
+      ],
+      "quote": "    func testByTag(): Unit {"
+    },
+    "cangjie/C008": {
+      "file": "translated_test.cj",
+      "original": [
+        11,
+        11
+      ],
+      "annotated": [
+        67,
+        67
+      ],
+      "quote": "        let els = Html4cj.parse(\"<div id=1><div id=2><p>Hello</p></div></div><DIV id=3>\").select(\"DIV\")"
+    },
+    "cangjie/C009": {
+      "file": "translated_test.cj",
+      "original": [
+        12,
+        12
+      ],
+      "annotated": [
+        75,
+        75
+      ],
+      "quote": "        @Assert(Int64(3), els.size)"
+    },
+    "cangjie/C010": {
+      "file": "translated_test.cj",
+      "original": [
+        13,
+        13
+      ],
+      "annotated": [
+        83,
+        83
+      ],
+      "quote": "        @Assert(\"1\", els[0].id())"
+    },
+    "cangjie/C011": {
+      "file": "translated_test.cj",
+      "original": [
+        14,
+        14
+      ],
+      "annotated": [
+        91,
+        91
+      ],
+      "quote": "        @Assert(\"2\", els[1].id())"
+    },
+    "cangjie/C012": {
+      "file": "translated_test.cj",
+      "original": [
+        15,
+        15
+      ],
+      "annotated": [
+        99,
+        99
+      ],
+      "quote": "        @Assert(\"3\", els[2].id())"
+    },
+    "cangjie/C013": {
+      "file": "translated_test.cj",
+      "original": [
+        16,
+        16
+      ],
+      "annotated": [
+        107,
+        107
+      ],
+      "quote": "        let none = Html4cj.parse(\"<div id=1><div id=2><p>Hello</p></div></div><div id=3>\").select(\"span\")"
+    },
+    "cangjie/C014": {
+      "file": "translated_test.cj",
+      "original": [
+        17,
+        17
+      ],
+      "annotated": [
+        115,
+        115
+      ],
+      "quote": "        @Assert(Int64(0), none.size)"
+    },
+    "java/J020": {
+      "file": "SelectorTest.java",
+      "original": [
+        33,
+        33
+      ],
+      "annotated": [
+        173,
+        173
+      ],
+      "quote": "    @Test public void byEscapedTag() {"
+    },
+    "java/J021": {
+      "file": "SelectorTest.java",
+      "original": [
+        35,
+        35
+      ],
+      "annotated": [
+        182,
+        182
+      ],
+      "quote": "        Document doc = Jsoup.parse(\"<p.p>One</p.p> <p\\\\p>Two</p\\\\p>\");"
+    },
+    "java/J022": {
+      "file": "SelectorTest.java",
+      "original": [
+        37,
+        37
+      ],
+      "annotated": [
+        191,
+        191
+      ],
+      "quote": "        Element one = doc.expectFirst(\"p\\\\.p\");"
+    },
+    "java/J023": {
+      "file": "SelectorTest.java",
+      "original": [
+        38,
+        38
+      ],
+      "annotated": [
+        199,
+        199
+      ],
+      "quote": "        assertEquals(\"One\", one.text());"
+    },
+    "java/J024": {
+      "file": "SelectorTest.java",
+      "original": [
+        40,
+        40
+      ],
+      "annotated": [
+        208,
+        208
+      ],
+      "quote": "        Element two = doc.expectFirst(\"p\\\\\\\\p\");"
+    },
+    "java/J025": {
+      "file": "SelectorTest.java",
+      "original": [
+        41,
+        41
+      ],
+      "annotated": [
+        216,
+        216
+      ],
+      "quote": "        assertEquals(\"Two\", two.text());"
+    },
+    "cangjie/C015": {
+      "file": "translated_test.cj",
+      "original": [
+        19,
+        19
+      ],
+      "annotated": [
+        124,
+        124
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C016": {
+      "file": "translated_test.cj",
+      "original": [
+        20,
+        20
+      ],
+      "annotated": [
+        132,
+        132
+      ],
+      "quote": "    func byEscapedTag(): Unit {"
+    },
+    "cangjie/C017": {
+      "file": "translated_test.cj",
+      "original": [
+        21,
+        21
+      ],
+      "annotated": [
+        140,
+        140
+      ],
+      "quote": "        let doc = Html4cj.parse(\"<p.p>One</p.p> <p\\\\p>Two</p\\\\p>\")"
+    },
+    "cangjie/C018": {
+      "file": "translated_test.cj",
+      "original": [
+        22,
+        22
+      ],
+      "annotated": [
+        148,
+        148
+      ],
+      "quote": "        let one = doc.expectFirst(\"p\\\\.p\")"
+    },
+    "cangjie/C019": {
+      "file": "translated_test.cj",
+      "original": [
+        23,
+        23
+      ],
+      "annotated": [
+        156,
+        156
+      ],
+      "quote": "        @Assert(\"One\", one.text())"
+    },
+    "cangjie/C020": {
+      "file": "translated_test.cj",
+      "original": [
+        24,
+        24
+      ],
+      "annotated": [
+        164,
+        164
+      ],
+      "quote": "        let two = doc.expectFirst(\"p\\\\\\\\p\")"
+    },
+    "cangjie/C021": {
+      "file": "translated_test.cj",
+      "original": [
+        25,
+        25
+      ],
+      "annotated": [
+        172,
+        172
+      ],
+      "quote": "        @Assert(\"Two\", two.text())"
+    },
+    "java/J026": {
+      "file": "SelectorTest.java",
+      "original": [
+        44,
+        44
+      ],
+      "annotated": [
+        226,
+        226
+      ],
+      "quote": "    @Test public void testById() {"
+    },
+    "java/J027": {
+      "file": "SelectorTest.java",
+      "original": [
+        45,
+        45
+      ],
+      "annotated": [
+        234,
+        234
+      ],
+      "quote": "        Elements els = Jsoup.parse(\"<div><p id=foo>Hello</p><p id=foo>Foo two!</p></div>\").select(\"#foo\");"
+    },
+    "java/J028": {
+      "file": "SelectorTest.java",
+      "original": [
+        46,
+        46
+      ],
+      "annotated": [
+        242,
+        242
+      ],
+      "quote": "        assertEquals(2, els.size());"
+    },
+    "java/J029": {
+      "file": "SelectorTest.java",
+      "original": [
+        47,
+        47
+      ],
+      "annotated": [
+        250,
+        250
+      ],
+      "quote": "        assertEquals(\"Hello\", els.get(0).text());"
+    },
+    "java/J030": {
+      "file": "SelectorTest.java",
+      "original": [
+        48,
+        48
+      ],
+      "annotated": [
+        258,
+        258
+      ],
+      "quote": "        assertEquals(\"Foo two!\", els.get(1).text());"
+    },
+    "java/J031": {
+      "file": "SelectorTest.java",
+      "original": [
+        50,
+        50
+      ],
+      "annotated": [
+        267,
+        267
+      ],
+      "quote": "        Elements none = Jsoup.parse(\"<div id=1></div>\").select(\"#foo\");"
+    },
+    "java/J032": {
+      "file": "SelectorTest.java",
+      "original": [
+        51,
+        51
+      ],
+      "annotated": [
+        275,
+        275
+      ],
+      "quote": "        assertEquals(0, none.size());"
+    },
+    "cangjie/C022": {
+      "file": "translated_test.cj",
+      "original": [
+        27,
+        27
+      ],
+      "annotated": [
+        181,
+        181
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C023": {
+      "file": "translated_test.cj",
+      "original": [
+        28,
+        28
+      ],
+      "annotated": [
+        189,
+        189
+      ],
+      "quote": "    func testById(): Unit {"
+    },
+    "cangjie/C024": {
+      "file": "translated_test.cj",
+      "original": [
+        29,
+        29
+      ],
+      "annotated": [
+        197,
+        197
+      ],
+      "quote": "        let els = Html4cj.parse(\"<div><p id=foo>Hello</p><p id=foo>Foo two!</p></div>\").select(\"#foo\")"
+    },
+    "cangjie/C025": {
+      "file": "translated_test.cj",
+      "original": [
+        30,
+        30
+      ],
+      "annotated": [
+        205,
+        205
+      ],
+      "quote": "        @Assert(Int64(2), els.size)"
+    },
+    "cangjie/C026": {
+      "file": "translated_test.cj",
+      "original": [
+        31,
+        31
+      ],
+      "annotated": [
+        213,
+        213
+      ],
+      "quote": "        @Assert(\"Hello\", els[0].text())"
+    },
+    "cangjie/C027": {
+      "file": "translated_test.cj",
+      "original": [
+        32,
+        32
+      ],
+      "annotated": [
+        221,
+        221
+      ],
+      "quote": "        @Assert(\"Foo two!\", els[1].text())"
+    },
+    "cangjie/C028": {
+      "file": "translated_test.cj",
+      "original": [
+        33,
+        33
+      ],
+      "annotated": [
+        229,
+        229
+      ],
+      "quote": "        let none = Html4cj.parse(\"<div id=1></div>\").select(\"#foo\")"
+    },
+    "cangjie/C029": {
+      "file": "translated_test.cj",
+      "original": [
+        34,
+        34
+      ],
+      "annotated": [
+        237,
+        237
+      ],
+      "quote": "        @Assert(Int64(0), none.size)"
+    },
+    "java/J033": {
+      "file": "SelectorTest.java",
+      "original": [
+        54,
+        54
+      ],
+      "annotated": [
+        285,
+        285
+      ],
+      "quote": "    @Test public void byEscapedId() {"
+    },
+    "java/J034": {
+      "file": "SelectorTest.java",
+      "original": [
+        55,
+        55
+      ],
+      "annotated": [
+        293,
+        293
+      ],
+      "quote": "        Document doc = Jsoup.parse(\"<p id='i.d'>One</p> <p id='i\\\\d'>Two</p> <p id='one-two/three'>Three</p>\");"
+    },
+    "java/J035": {
+      "file": "SelectorTest.java",
+      "original": [
+        57,
+        57
+      ],
+      "annotated": [
+        302,
+        302
+      ],
+      "quote": "        Element one = doc.expectFirst(\"#i\\\\.d\");"
+    },
+    "java/J036": {
+      "file": "SelectorTest.java",
+      "original": [
+        58,
+        58
+      ],
+      "annotated": [
+        310,
+        310
+      ],
+      "quote": "        assertEquals(\"One\", one.text());"
+    },
+    "java/J037": {
+      "file": "SelectorTest.java",
+      "original": [
+        60,
+        60
+      ],
+      "annotated": [
+        319,
+        319
+      ],
+      "quote": "        Element two = doc.expectFirst(\"#i\\\\\\\\d\");"
+    },
+    "java/J038": {
+      "file": "SelectorTest.java",
+      "original": [
+        61,
+        61
+      ],
+      "annotated": [
+        327,
+        327
+      ],
+      "quote": "        assertEquals(\"Two\", two.text());"
+    },
+    "java/J039": {
+      "file": "SelectorTest.java",
+      "original": [
+        63,
+        63
+      ],
+      "annotated": [
+        336,
+        336
+      ],
+      "quote": "        Element thr = doc.expectFirst(\"p#one-two\\\\/three\");"
+    },
+    "java/J040": {
+      "file": "SelectorTest.java",
+      "original": [
+        64,
+        64
+      ],
+      "annotated": [
+        344,
+        344
+      ],
+      "quote": "        assertEquals(\"Three\", thr.text());"
+    },
+    "cangjie/C030": {
+      "file": "translated_test.cj",
+      "original": [
+        36,
+        36
+      ],
+      "annotated": [
+        246,
+        246
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C031": {
+      "file": "translated_test.cj",
+      "original": [
+        37,
+        37
+      ],
+      "annotated": [
+        254,
+        254
+      ],
+      "quote": "    func byEscapedId(): Unit {"
+    },
+    "cangjie/C032": {
+      "file": "translated_test.cj",
+      "original": [
+        38,
+        38
+      ],
+      "annotated": [
+        262,
+        262
+      ],
+      "quote": "        let doc = Html4cj.parse(\"<p id='i.d'>One</p> <p id='i\\\\d'>Two</p> <p id='one-two/three'>Three</p>\")"
+    },
+    "cangjie/C033": {
+      "file": "translated_test.cj",
+      "original": [
+        39,
+        39
+      ],
+      "annotated": [
+        270,
+        270
+      ],
+      "quote": "        let one = doc.expectFirst(\"#i\\\\.d\")"
+    },
+    "cangjie/C034": {
+      "file": "translated_test.cj",
+      "original": [
+        40,
+        40
+      ],
+      "annotated": [
+        278,
+        278
+      ],
+      "quote": "        @Assert(\"One\", one.text())"
+    },
+    "cangjie/C035": {
+      "file": "translated_test.cj",
+      "original": [
+        41,
+        41
+      ],
+      "annotated": [
+        286,
+        286
+      ],
+      "quote": "        let two = doc.expectFirst(\"#i\\\\\\\\d\")"
+    },
+    "cangjie/C036": {
+      "file": "translated_test.cj",
+      "original": [
+        42,
+        42
+      ],
+      "annotated": [
+        294,
+        294
+      ],
+      "quote": "        @Assert(\"Two\", two.text())"
+    },
+    "cangjie/C037": {
+      "file": "translated_test.cj",
+      "original": [
+        43,
+        43
+      ],
+      "annotated": [
+        302,
+        302
+      ],
+      "quote": "        let third = doc.expectFirst(\"p#one-two\\\\/three\")"
+    },
+    "cangjie/C038": {
+      "file": "translated_test.cj",
+      "original": [
+        44,
+        44
+      ],
+      "annotated": [
+        310,
+        310
+      ],
+      "quote": "        @Assert(\"Three\", third.text())"
+    },
+    "java/J041": {
+      "file": "SelectorTest.java",
+      "original": [
+        67,
+        67
+      ],
+      "annotated": [
+        354,
+        354
+      ],
+      "quote": "    @Test public void testByClass() {"
+    },
+    "java/J042": {
+      "file": "SelectorTest.java",
+      "original": [
+        68,
+        68
+      ],
+      "annotated": [
+        362,
+        362
+      ],
+      "quote": "        Elements els = Jsoup.parse(\"<p id=0 class='ONE two'><p id=1 class='one'><p id=2 class='two'>\").select(\"P.One\");"
+    },
+    "java/J043": {
+      "file": "SelectorTest.java",
+      "original": [
+        69,
+        69
+      ],
+      "annotated": [
+        370,
+        370
+      ],
+      "quote": "        assertEquals(2, els.size());"
+    },
+    "java/J044": {
+      "file": "SelectorTest.java",
+      "original": [
+        70,
+        70
+      ],
+      "annotated": [
+        378,
+        378
+      ],
+      "quote": "        assertEquals(\"0\", els.get(0).id());"
+    },
+    "java/J045": {
+      "file": "SelectorTest.java",
+      "original": [
+        71,
+        71
+      ],
+      "annotated": [
+        386,
+        386
+      ],
+      "quote": "        assertEquals(\"1\", els.get(1).id());"
+    },
+    "java/J046": {
+      "file": "SelectorTest.java",
+      "original": [
+        73,
+        73
+      ],
+      "annotated": [
+        395,
+        395
+      ],
+      "quote": "        Elements none = Jsoup.parse(\"<div class='one'></div>\").select(\".foo\");"
+    },
+    "java/J047": {
+      "file": "SelectorTest.java",
+      "original": [
+        74,
+        74
+      ],
+      "annotated": [
+        403,
+        403
+      ],
+      "quote": "        assertEquals(0, none.size());"
+    },
+    "java/J048": {
+      "file": "SelectorTest.java",
+      "original": [
+        76,
+        76
+      ],
+      "annotated": [
+        412,
+        412
+      ],
+      "quote": "        Elements els2 = Jsoup.parse(\"<div class='One-Two'></div>\").select(\".one-two\");"
+    },
+    "java/J049": {
+      "file": "SelectorTest.java",
+      "original": [
+        77,
+        77
+      ],
+      "annotated": [
+        420,
+        420
+      ],
+      "quote": "        assertEquals(1, els2.size());"
+    },
+    "cangjie/C039": {
+      "file": "translated_test.cj",
+      "original": [
+        46,
+        46
+      ],
+      "annotated": [
+        319,
+        319
+      ],
+      "quote": "    @TestCase"
+    },
+    "cangjie/C040": {
+      "file": "translated_test.cj",
+      "original": [
+        47,
+        47
+      ],
+      "annotated": [
+        327,
+        327
+      ],
+      "quote": "    func testByClass(): Unit {"
+    },
+    "cangjie/C041": {
+      "file": "translated_test.cj",
+      "original": [
+        48,
+        48
+      ],
+      "annotated": [
+        335,
+        335
+      ],
+      "quote": "        let els = Html4cj.parse(\"<p id=0 class='ONE two'><p id=1 class='one'><p id=2 class='two'>\").select(\"P.One\")"
+    },
+    "cangjie/C042": {
+      "file": "translated_test.cj",
+      "original": [
+        49,
+        49
+      ],
+      "annotated": [
+        343,
+        343
+      ],
+      "quote": "        @Assert(Int64(2), els.size)"
+    },
+    "cangjie/C043": {
+      "file": "translated_test.cj",
+      "original": [
+        50,
+        50
+      ],
+      "annotated": [
+        351,
+        351
+      ],
+      "quote": "        @Assert(\"0\", els[0].id())"
+    },
+    "cangjie/C044": {
+      "file": "translated_test.cj",
+      "original": [
+        51,
+        51
+      ],
+      "annotated": [
+        359,
+        359
+      ],
+      "quote": "        @Assert(\"1\", els[1].id())"
+    },
+    "cangjie/C045": {
+      "file": "translated_test.cj",
+      "original": [
+        52,
+        52
+      ],
+      "annotated": [
+        367,
+        367
+      ],
+      "quote": "        let none = Html4cj.parse(\"<div class='one'></div>\").select(\".foo\")"
+    },
+    "cangjie/C046": {
+      "file": "translated_test.cj",
+      "original": [
+        53,
+        53
+      ],
+      "annotated": [
+        375,
+        375
+      ],
+      "quote": "        @Assert(Int64(0), none.size)"
+    },
+    "cangjie/C047": {
+      "file": "translated_test.cj",
+      "original": [
+        54,
+        54
+      ],
+      "annotated": [
+        383,
+        383
+      ],
+      "quote": "        let els2 = Html4cj.parse(\"<div class='One-Two'></div>\").select(\".one-two\")"
+    },
+    "cangjie/C048": {
+      "file": "translated_test.cj",
+      "original": [
+        55,
+        55
+      ],
+      "annotated": [
+        391,
+        391
+      ],
+      "quote": "        @Assert(Int64(1), els2.size)"
+    }
+  },
+  "rechecks": [],
+  "method": "双侧源码静态比较"
+}

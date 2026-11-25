@@ -1,0 +1,41 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "testByTag",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U02",
+      "name": "byEscapedTag",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U03",
+      "name": "testById",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U04",
+      "name": "byEscapedId",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    },
+    {
+      "id": "U05",
+      "name": "testByClass",
+      "state": "已比较",
+      "status": "在所列前提和范围内一致"
+    }
+  ],
+  "selected": 5,
+  "compared": 5,
+  "cross_review": {
+    "action": "复用已有依据",
+    "affected": [],
+    "reason": "逐测试保留原输入及断言，依赖源正文/辅助与业务接口；跨文件定位受阻仍单列。"
+  }
+}

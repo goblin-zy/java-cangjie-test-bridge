@@ -59,3 +59,5 @@ prepare_static_validation.py 接收 --task（完整整体任务）、--translate
 输出的 translation_config.json 增加 java_members_file、execution_classes、context_files、context_identity 和 side_sources。静态验证程序接收该目录即可，不要求把整体任务配置直接传给它。每轮一个执行类/一对测试文件；跨文件继承成员进入范围但标为受阻。
 
 正常静态审阅的输入输出见 [静态验证说明](../静态验证/README.md)。三部分复跑入口 tests/run_static_integration.py 保存固定 Interval 审阅和受控错误的流程回归，不是自动模型审阅器。实际结果见 [整合复测](../../运行记录/静态验证整合复测/README.md)。
+
+按已配对方法复测时，targets[].selected_test_methods 使用 week12 的完整 selector。适配器校验选择器真实存在后向检查配置交付，避免把五个选定方法扩大为整类所有测试。空列表沿用整类入口。Java 业务按 business_source/support_source 从冻结快照提供，仓颉业务取材排除 test/tests 目录及 *_test.cj。

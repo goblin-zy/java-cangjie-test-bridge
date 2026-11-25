@@ -1,0 +1,137 @@
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:12:39:
+   | 
+12 |         let context = DataModelStruct([Field("foo", "bar".serialize())])
+   |                                       ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:19:39:
+   | 
+19 |         let context = DataModelStruct([Field("foo", DataModelSeq(items))])
+   |                                       ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:26:39:
+   | 
+26 |         let context = DataModelStruct([Field("foo", DataModelSeq(items))])
+   |                                       ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:33:39:
+   | 
+33 |         let context = DataModelStruct([Field("foo", DataModelSeq(items))])
+   |                                       ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:40:37:
+   | 
+40 |         let inner = DataModelStruct([Field("bar", "baz".serialize())])
+   |                                     ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:41:39:
+   | 
+41 |         let context = DataModelStruct([Field("foo", inner)])
+   |                                       ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:47:37:
+   | 
+47 |         let first = DataModelStruct([Field("bar", "baz".serialize())])
+   |                                     ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+error: mismatched types
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:48:38:
+   | 
+48 |         let second = DataModelStruct([Field("bar", "bif".serialize())])
+   |                                      ^ expected 'Class-ArrayList<Class-Field>', found 'Array'
+   | 
+note: the error originates in the macro `Test` (consider using `--debug-macro` for more info)
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\translated_test.cj:7:1:
+   | 
+7  |   @Test
+   |  _^
+8  | | class MustacheTranslationTest {
+   | | ...
+54 | | }
+   | |_^
+   | 
+
+9 errors generated, 8 errors printed.

@@ -1,0 +1,1635 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+  "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "PARENT_MODEL_NOT_EVALUATED": 1,
+    "BUILD_PROFILES_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [],
+  "profile": "fragment",
+  "scope": "test",
+  "purpose": "\u7ffb\u8bd1\u6307\u5b9a\u6d4b\u8bd5\u65b9\u6cd5\uff1a\u4fdd\u7559\u6240\u5728\u7c7b\u53ca\u751f\u547d\u5468\u671f\uff0c\u5c55\u5f00\u8be5\u65b9\u6cd5\u7684\u8f85\u52a9\u4f9d\u8d56\u3002",
+  "target_type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+  "selected_tests": [
+    "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+      "declaring_class": "com.samskivert.mustache.SharedTests",
+      "execution_class": "com.samskivert.mustache.MustacheTest",
+      "selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexVariable()",
+      "framework": "junit4",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+      "execution_type_key": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+      "declaring_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexVariable()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/com/samskivert/mustache/MustacheTest.java",
+      "package": "com.samskivert.mustache",
+      "imports": [
+        {
+          "start": 179,
+          "end": 206,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 208,
+          "end": 230,
+          "name": "java.io.Writer",
+          "static": false
+        },
+        {
+          "start": 232,
+          "end": 266,
+          "name": "java.text.SimpleDateFormat",
+          "static": false
+        },
+        {
+          "start": 268,
+          "end": 292,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 294,
+          "end": 323,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 325,
+          "end": 347,
+          "name": "java.util.Date",
+          "static": false
+        },
+        {
+          "start": 349,
+          "end": 374,
+          "name": "java.util.HashMap",
+          "static": false
+        },
+        {
+          "start": 376,
+          "end": 402,
+          "name": "java.util.Iterator",
+          "static": false
+        },
+        {
+          "start": 404,
+          "end": 425,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 427,
+          "end": 453,
+          "name": "java.util.Optional",
+          "static": false
+        },
+        {
+          "start": 455,
+          "end": 481,
+          "name": "java.util.TimeZone",
+          "static": false
+        },
+        {
+          "start": 485,
+          "end": 507,
+          "name": "org.junit.Test",
+          "static": false
+        },
+        {
+          "start": 509,
+          "end": 545,
+          "name": "org.junit.Assert.fail",
+          "static": true
+        }
+      ]
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+      "package": "com.samskivert.mustache",
+      "imports": [
+        {
+          "start": 179,
+          "end": 213,
+          "name": "java.util.Map.entry",
+          "static": true
+        },
+        {
+          "start": 215,
+          "end": 259,
+          "name": "org.junit.Assert.assertEquals",
+          "static": true
+        },
+        {
+          "start": 261,
+          "end": 303,
+          "name": "org.junit.Assert.assertTrue",
+          "static": true
+        },
+        {
+          "start": 305,
+          "end": 341,
+          "name": "org.junit.Assert.fail",
+          "static": true
+        },
+        {
+          "start": 345,
+          "end": 372,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 374,
+          "end": 396,
+          "name": "java.io.Reader",
+          "static": false
+        },
+        {
+          "start": 398,
+          "end": 426,
+          "name": "java.io.StringReader",
+          "static": false
+        },
+        {
+          "start": 428,
+          "end": 450,
+          "name": "java.io.Writer",
+          "static": false
+        },
+        {
+          "start": 452,
+          "end": 476,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 478,
+          "end": 507,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 509,
+          "end": 534,
+          "name": "java.util.HashMap",
+          "static": false
+        },
+        {
+          "start": 536,
+          "end": 561,
+          "name": "java.util.HashSet",
+          "static": false
+        },
+        {
+          "start": 563,
+          "end": 594,
+          "name": "java.util.LinkedHashMap",
+          "static": false
+        },
+        {
+          "start": 596,
+          "end": 618,
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "start": 620,
+          "end": 641,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 643,
+          "end": 670,
+          "name": "java.util.Map.Entry",
+          "static": false
+        },
+        {
+          "start": 672,
+          "end": 697,
+          "name": "java.util.Objects",
+          "static": false
+        },
+        {
+          "start": 699,
+          "end": 720,
+          "name": "java.util.Set",
+          "static": false
+        },
+        {
+          "start": 724,
+          "end": 748,
+          "name": "org.junit.Ignore",
+          "static": false
+        },
+        {
+          "start": 750,
+          "end": 772,
+          "name": "org.junit.Rule",
+          "static": false
+        },
+        {
+          "start": 774,
+          "end": 796,
+          "name": "org.junit.Test",
+          "static": false
+        },
+        {
+          "start": 798,
+          "end": 830,
+          "name": "org.junit.rules.TestRule",
+          "static": false
+        },
+        {
+          "start": 832,
+          "end": 867,
+          "name": "org.junit.rules.TestWatcher",
+          "static": false
+        },
+        {
+          "start": 869,
+          "end": 905,
+          "name": "org.junit.runner.Description",
+          "static": false
+        },
+        {
+          "start": 909,
+          "end": 955,
+          "name": "com.samskivert.mustache.specs.SpecTest",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/Mustache.java",
+      "package": "com.samskivert.mustache",
+      "imports": [
+        {
+          "start": 179,
+          "end": 206,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 208,
+          "end": 230,
+          "name": "java.io.Reader",
+          "static": false
+        },
+        {
+          "start": 232,
+          "end": 260,
+          "name": "java.io.StringReader",
+          "static": false
+        },
+        {
+          "start": 262,
+          "end": 284,
+          "name": "java.io.Writer",
+          "static": false
+        },
+        {
+          "start": 286,
+          "end": 313,
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "start": 315,
+          "end": 339,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 341,
+          "end": 370,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 372,
+          "end": 398,
+          "name": "java.util.Iterator",
+          "static": false
+        },
+        {
+          "start": 400,
+          "end": 431,
+          "name": "java.util.LinkedHashMap",
+          "static": false
+        },
+        {
+          "start": 433,
+          "end": 455,
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "start": 457,
+          "end": 478,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 480,
+          "end": 519,
+          "name": "java.util.concurrent.locks.Lock",
+          "static": false
+        },
+        {
+          "start": 521,
+          "end": 569,
+          "name": "java.util.concurrent.locks.ReentrantLock",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/Template.java",
+      "package": "com.samskivert.mustache",
+      "imports": [
+        {
+          "start": 179,
+          "end": 206,
+          "name": "java.io.IOException",
+          "static": false
+        },
+        {
+          "start": 208,
+          "end": 236,
+          "name": "java.io.StringWriter",
+          "static": false
+        },
+        {
+          "start": 238,
+          "end": 260,
+          "name": "java.io.Writer",
+          "static": false
+        },
+        {
+          "start": 262,
+          "end": 291,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 293,
+          "end": 319,
+          "name": "java.util.Iterator",
+          "static": false
+        },
+        {
+          "start": 321,
+          "end": 342,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 346,
+          "end": 399,
+          "name": "com.samskivert.mustache.Mustache.BlockSegment",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/specs/SpecTest.java",
+      "package": "com.samskivert.mustache.specs",
+      "imports": [
+        {
+          "start": 42,
+          "end": 69,
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "start": 71,
+          "end": 99,
+          "name": "java.util.Collection",
+          "static": false
+        },
+        {
+          "start": 101,
+          "end": 123,
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "start": 125,
+          "end": 146,
+          "name": "java.util.Map",
+          "static": false
+        },
+        {
+          "start": 148,
+          "end": 173,
+          "name": "java.util.Objects",
+          "static": false
+        },
+        {
+          "start": 177,
+          "end": 201,
+          "name": "org.junit.Assert",
+          "static": false
+        },
+        {
+          "start": 203,
+          "end": 225,
+          "name": "org.junit.Test",
+          "static": false
+        },
+        {
+          "start": 227,
+          "end": 258,
+          "name": "org.yaml.snakeyaml.Yaml",
+          "static": false
+        },
+        {
+          "start": 260,
+          "end": 306,
+          "name": "org.yaml.snakeyaml.error.YAMLException",
+          "static": false
+        },
+        {
+          "start": 310,
+          "end": 350,
+          "name": "com.samskivert.mustache.Mustache",
+          "static": false
+        },
+        {
+          "start": 352,
+          "end": 392,
+          "name": "com.samskivert.mustache.Template",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+      "display_id": "com.samskivert.mustache.MustacheTest",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 48,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/MustacheTest.java",
+        "sha256": "83d1a3bc604fa59f70208f56b4f67b2b93df57b46a22688a64d9dfe534dedb36",
+        "start_line": 26,
+        "end_line": 27,
+        "start_offset_utf16": 735,
+        "end_offset_utf16_exclusive": 783
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "SELECTED_TEST_TYPE",
+      "shared_record": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "display_id": "com.samskivert.mustache.SharedTests",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 36,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 39,
+        "end_line": 40,
+        "start_offset_utf16": 1029,
+        "end_offset_utf16_exclusive": 1065
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "INHERITED_TYPE_HEADER",
+      "shared_record": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+      "display_id": "com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+      "content_kind": "full",
+      "content": "@Test public void testPrimitiveArrayIndexVariable () {\r\n        test(\"1\", \"{{foo.0}}\", context(\"foo\", new int[] { 1, 2, 3, 4 }));\r\n    }",
+      "content_chars": 136,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 49,
+        "end_line": 51,
+        "start_offset_utf16": 1340,
+        "end_offset_utf16_exclusive": 1476
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "SELECTED_TEST"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "b717de434fba60ca635ebfdbc083f374fb08ce6a1f5a51b506d68cd94b57d0ab",
+      "display_id": "com.samskivert.mustache.SharedTests#test(String,String,Object)",
+      "content_kind": "full",
+      "content": "protected void test (String expected, String template, Object ctx) {\r\n        test(Mustache.compiler(), expected, template, ctx);\r\n    }",
+      "content_chars": 136,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 885,
+        "end_line": 887,
+        "start_offset_utf16": 38447,
+        "end_offset_utf16_exclusive": 38583
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641",
+      "display_id": "com.samskivert.mustache.SharedTests#context(Object...)",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 265,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 893,
+        "end_line": 899,
+        "start_offset_utf16": 38738,
+        "end_offset_utf16_exclusive": 39003
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY",
+      "shared_record": "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "display_id": "com.samskivert.mustache.SharedTests#test(Mustache.Compiler,String,String,Object)",
+      "content_kind": "full",
+      "content": "protected void test(Mustache.Compiler compiler, String expected, String template, Object ctx) {\r\n        String actual = compiler.compile(template).execute(ctx);\r\n        if (! Objects.equals(expected, actual)) {\r\n            System.out.println(\"\");\r\n            System.out.println(\"----------------------------------------\");\r\n            System.out.println(\"\");\r\n            System.out.println(\"Failed: \" + name);\r\n            System.out.println(\"Template : \\\"\" + SpecTest.showWhitespace(template) + \"\\\"\");\r\n            if (! partials.isEmpty()) {\r\n                System.out.println(\"Partials : \");\r\n                for (Entry<String, String> e : partials.entrySet()) {\r\n                    System.out.println(\"\\t\" + e.getKey() + \": \\\"\" + SpecTest.showWhitespace(e.getValue()) + \"\\\"\");\r\n                }\r\n            }\r\n            System.out.println(\"Expected : \\\"\" + SpecTest.showWhitespace(expected) + \"\\\"\");\r\n            System.out.println(\"Result   : \\\"\" + SpecTest.showWhitespace(actual) + \"\\\"\");\r\n            System.out.println(\"----------------------------------------\");\r\n            System.out.println(\"\");\r\n        }\r\n        check(expected, actual);\r\n    }",
+      "content_chars": 1172,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 857,
+        "end_line": 877,
+        "start_offset_utf16": 37045,
+        "end_offset_utf16_exclusive": 38217
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "43c7e43d7398f55dbf316bbd82f02f2f0cf501ce21dd05f7175eb1dfef2e6f88",
+      "display_id": "com.samskivert.mustache.Mustache",
+      "content_kind": "signature",
+      "content": "public class Mustache {",
+      "content_chars": 23,
+      "source": {
+        "file": "src/main/java/com/samskivert/mustache/Mustache.java",
+        "sha256": "387439edc469e31a01e6a330ce5dadad3a87dc41d3133f64f56f5c78912588e0",
+        "start_line": 33,
+        "end_line": 33,
+        "start_offset_utf16": 967,
+        "end_offset_utf16_exclusive": 990
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "abd185117def61533e6c12c055ac8d1987a5f2659dc0dcc0763beaa4f9411085",
+      "display_id": "com.samskivert.mustache.Mustache#compiler()",
+      "content_kind": "signature",
+      "content": "public static Compiler compiler () ",
+      "content_chars": 35,
+      "source": {
+        "file": "src/main/java/com/samskivert/mustache/Mustache.java",
+        "sha256": "387439edc469e31a01e6a330ce5dadad3a87dc41d3133f64f56f5c78912588e0",
+        "start_line": 428,
+        "end_line": 428,
+        "start_offset_utf16": 20671,
+        "end_offset_utf16_exclusive": 20706
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "84592389392aebf9fa2bcfd514e181e4405e83e0b2fac56f1c9e89fa37df30cb",
+      "display_id": "com.samskivert.mustache.Template",
+      "content_kind": "signature",
+      "content": "public class Template {",
+      "content_chars": 23,
+      "source": {
+        "file": "src/main/java/com/samskivert/mustache/Template.java",
+        "sha256": "9480d2aae64c467ee67a9f6839ce574ab7ae97927730ef33bdd845b95c6d4e79",
+        "start_line": 40,
+        "end_line": 40,
+        "start_offset_utf16": 1915,
+        "end_offset_utf16_exclusive": 1938
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "f1fc9d78b7fab95e06df790a3757f3589c0255d7ab63d95bbd108fe6a92e0c30",
+      "display_id": "com.samskivert.mustache.Template#execute(Object)",
+      "content_kind": "signature",
+      "content": "public String execute (Object context) throws MustacheException ",
+      "content_chars": 64,
+      "source": {
+        "file": "src/main/java/com/samskivert/mustache/Template.java",
+        "sha256": "9480d2aae64c467ee67a9f6839ce574ab7ae97927730ef33bdd845b95c6d4e79",
+        "start_line": 128,
+        "end_line": 128,
+        "start_offset_utf16": 6898,
+        "end_offset_utf16_exclusive": 6962
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "5ca02482ee3190c935cb3c032dfa07c926f7a390b6057765c511433cdccd9cbf",
+      "display_id": "com.samskivert.mustache.Mustache.Compiler",
+      "content_kind": "signature",
+      "content": "public static class Compiler {",
+      "content_chars": 30,
+      "source": {
+        "file": "src/main/java/com/samskivert/mustache/Mustache.java",
+        "sha256": "387439edc469e31a01e6a330ce5dadad3a87dc41d3133f64f56f5c78912588e0",
+        "start_line": 36,
+        "end_line": 36,
+        "start_offset_utf16": 1073,
+        "end_offset_utf16_exclusive": 1103
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "b2ee99fe44d5516831fb6c8f7ac6844bd8d31e3bd8e76ba046d271e984b2358d",
+      "display_id": "com.samskivert.mustache.Mustache.Compiler#compile(String)",
+      "content_kind": "signature",
+      "content": "public Template compile (String template) ",
+      "content_chars": 42,
+      "source": {
+        "file": "src/main/java/com/samskivert/mustache/Mustache.java",
+        "sha256": "387439edc469e31a01e6a330ce5dadad3a87dc41d3133f64f56f5c78912588e0",
+        "start_line": 85,
+        "end_line": 85,
+        "start_offset_utf16": 3604,
+        "end_offset_utf16_exclusive": 3646
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "e7504c80932d87c3ef20b9f622d5af02cbe5ac5d74b99304d0adeb26ec1867cf",
+      "display_id": "com.samskivert.mustache.specs.SpecTest",
+      "content_kind": "signature",
+      "content": "public abstract class SpecTest {",
+      "content_chars": 32,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/specs/SpecTest.java",
+        "sha256": "cdfc80adfdad65a12b1a14d5616338c6579f0cd95c50e107bbd16290769505c3",
+        "start_line": 17,
+        "end_line": 17,
+        "start_offset_utf16": 396,
+        "end_offset_utf16_exclusive": 428
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329",
+      "display_id": "com.samskivert.mustache.specs.SpecTest#showWhitespace(String)",
+      "content_kind": "full",
+      "content": "public static String showWhitespace (String s) {\r\n       s = s.replace(\"\\r\\n\", \"\\u240D\");\r\n       s = s.replace('\\t', '\\u21E5');\r\n       s = s.replace(\"\\n\", \"\\u21B5\\n\");\r\n       s = s.replace(\"\\u240D\", \"\\u240D\\n\");\r\n       return s;\r\n    }",
+      "content_chars": 239,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/specs/SpecTest.java",
+        "sha256": "cdfc80adfdad65a12b1a14d5616338c6579f0cd95c50e107bbd16290769505c3",
+        "start_line": 66,
+        "end_line": 72,
+        "start_offset_utf16": 2667,
+        "end_offset_utf16_exclusive": 2906
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "acd6693793d4c4f38364fb08ff370d503f3f1c417eea87224904efe0999e0765",
+      "display_id": "com.samskivert.mustache.SharedTests#check(String,String)",
+      "content_kind": "full",
+      "content": "protected void check (String expected, String output) {\r\n        //assertEquals(uncrlf(expected), uncrlf(output));\r\n        assertEquals(SpecTest.showWhitespace(expected), SpecTest.showWhitespace(output));\r\n\r\n    }",
+      "content_chars": 214,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 879,
+        "end_line": 883,
+        "start_offset_utf16": 38225,
+        "end_offset_utf16_exclusive": 38439
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec",
+      "display_id": "com.samskivert.mustache.SharedTests#field:name",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 22,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 849,
+        "end_line": 849,
+        "start_offset_utf16": 36830,
+        "end_offset_utf16_exclusive": 36852
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY",
+      "shared_record": "af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec"
+    },
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57",
+      "display_id": "com.samskivert.mustache.SharedTests#field:partials",
+      "content_kind": "full",
+      "content": null,
+      "content_chars": 52,
+      "source": {
+        "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+        "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+        "start_line": 232,
+        "end_line": 232,
+        "start_offset_utf16": 8855,
+        "end_offset_utf16_exclusive": 8907
+      },
+      "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+      "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+      "reason": "RESOLVED_DEPENDENCY",
+      "shared_record": "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "93c545c66d0d6e0c9e7d0ca7eebec9c3eaaeb3bd2f47fe72e5433fdebeb61042",
+      "caller": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+      "resolution": "resolved_static",
+      "targets": [
+        "b717de434fba60ca635ebfdbc083f374fb08ce6a1f5a51b506d68cd94b57d0ab"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "39bea142966abe2fd9a6491c460a88f76dd4f9f817dbf45b50a06b01da201cb4",
+      "caller": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+      "resolution": "resolved_static",
+      "targets": [
+        "3f8500feaf67c2199b51cfdb76a85c3d395a4927546ad529f8a083c017a7e641"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "5b6ad602f491e9f437ba191cd921207627f0b64b9a44363949229d992fd718af",
+      "caller": "b717de434fba60ca635ebfdbc083f374fb08ce6a1f5a51b506d68cd94b57d0ab",
+      "resolution": "resolved_static",
+      "targets": [
+        "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "95279998c1be9fb7d71c09ddc90ddad9c12e9a0a1db69045402cdd91a8ba950c",
+      "caller": "b717de434fba60ca635ebfdbc083f374fb08ce6a1f5a51b506d68cd94b57d0ab",
+      "resolution": "resolved_static",
+      "targets": [
+        "abd185117def61533e6c12c055ac8d1987a5f2659dc0dcc0763beaa4f9411085"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "9401c4da4cbb388e8e21be9f35eca3301928786c75a1063fec47c411ec6990d3",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "f1fc9d78b7fab95e06df790a3757f3589c0255d7ab63d95bbd108fe6a92e0c30"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "295ac8cfac25eb356ecfb1e7e611264ff866b7ab5accaef15ef660580e77f223",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "b2ee99fe44d5516831fb6c8f7ac6844bd8d31e3bd8e76ba046d271e984b2358d"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "bb6b71063db659b2fa48f477837073c3329094a1ba4dfc6c07590fc25acc9b29",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "e78120723c2da4c420c495d03f567f33817dd5d30f53b2ccdb41e1a16178f84c",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "c8f51dda6bfa62fe48228b3d9bfc8122dbafafeb684acea14c1abc0ea284d6eb",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "c43d40c0d61bb043ab9fc8129a58cedf5ad32492c1ec7454b1f49c68ccf72f1f",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "16b6e1140ff3ff48543586eb41bfdb251c24d715047ce3be93d309d38fe9f38c",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "88e9d2dc767567b607a2b56fb40e27d20cb10fb7e3b2c0c2ad034bbe988d2323",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "2e6734e07ab48b3bbe4f2429c47c95e0487fe5d280e773051dee78aa172cfc94",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "5f9fe99a5d19645a9561bb249f2f8fe7bb7175474b9a6456e9309177d5b367b0",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "9c4130e339621f065886f7ffc4ab0cef91f9704d191c6669b481b257657b78e5",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "0b2ed46fced89b48ad8d230eb999f25e304a7a0331b4b21c0b440bc3ec575e56",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "86056e077821d2ad6c6046ba53568895aa707b3d20ae8f8ae1d4eeafb235bb26",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "6479320187f72d431d90e59014ce564fb190c4c4df19212b2fb4d6e57d6d85c5",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "b1adbdc90692a3cfc984a6ce840268713bdba43762fdb9eb5e288167eafde647",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "eba39a2ff57ba7f3db6b0f7064baf469ec37765788e9e7cdc131b9487a1b10df",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "827794c35629f096fad5153e14e3988fbd4a4536c9d7ef95bfdd99776c0b7bf9",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "dc02edc9963e073b7d9dfd8f39069fa3ed371fe17369a3ceec9aa546c0554b3f",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "009b1160b817f4e6c9f8cfc2f4f4f3893cd201c56f8032f7c0ea7be81f993095",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "7a61847ae82ea45c9cd7da5771e39e54ae9099fbb571e35061814bbcad9c5bdd",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "8feb2a88117cedc457b7a0a17e98b38385ba58bff206797d72321981fd0f0a80",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "7fee7b9d24871f572d82df8b387aa9f7e613046ab0bb57e53d9f0a042c8490af",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "b46620582eb857150731313c5c2648202fa2f1271c79fad4823109c84067d963",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "acd6693793d4c4f38364fb08ff370d503f3f1c417eea87224904efe0999e0765"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "2e4ee3708700fe42c5392964731f4501df1fccaca564a917282a0183f67557f1",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "a025cf01e71e9840017d358bc71e24652aa9d081e17dbc7d798b5d1519aa4a02",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "66e2097df9c09d1a77dd71c55d644b173558d0fb530e18f98a20b677034129a0",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "6f6bd8f9acbd77456f282bbae7ea7275ba778487f55d5ba3fb0bf4a0970d947e",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "28554d1a4eb1f2d27202cdfeade05d0b6d9c1e3b41a90da21e10aef41d1da076",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "1616ee0e669eaabfa01270e3968ff13e9a8711ca2025aa28d8327255b52aaf22",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "5f23e301702f35eded1c646803799bf65e5f9a5cea1528bd6611115713eef3b7",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "2fc2801f86f298ba8a72295c4eeb2feb6d9198a5b1c17def4ebd276c34b76733",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "e46bf0a9199860d65e3ee2865b54406bbd5a5f3fd9c54829d01049c15461ba2f",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "cf977ed00115f46e13cddec0961d11d8b24391ab07988ea361b3097d43be1d54",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "635ee6b4f2d75c22f145930269004a61167ef051e156e9aedab5707ecfdb140e",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "f5cb4be4df3d9e59132bb2bbb4f75ca59810fcd304c83c0319123418adbe768e",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "554d6ac850840df68a6c9f448c0ab555ff3fda3e7febffbb37723ec5cf87620e",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "edbf3361b00a484f9899fa3e4b95a952f759d438767b60b3ce899c76433c24fe",
+      "caller": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+      "resolution": "resolved_static",
+      "targets": [
+        "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57"
+      ],
+      "dispatch": "NOT_ESTABLISHED"
+    },
+    {
+      "reference": "ea7578de2a05731572ecf27fc4215c9b8a5a29be3efa06b9439e7265a92832ac",
+      "caller": "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "b4330cc694248c4d418bd2681ca71f99e8dc37a16a7472c24aea6d32cc8f21ed",
+      "caller": "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "0dca8fc057d8995d5e7e81ba6478f814188bad097b8475135a1daf4cbe4ecce7",
+      "caller": "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "25ec8bb79d42312445ac7f3251ac642b592aec070adaeb3d7ea315eddb599412",
+      "caller": "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "f66f738fb679a725ab1b2b9d48dffe3a56fe43fb1da0dc0c7e2fecd70d247f66",
+      "caller": "acd6693793d4c4f38364fb08ff370d503f3f1c417eea87224904efe0999e0765",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "76da379f131ddcf19a5a57995ef277052fab648217eadb9afbd19e33d3ecc485",
+      "caller": "acd6693793d4c4f38364fb08ff370d503f3f1c417eea87224904efe0999e0765",
+      "resolution": "resolved_static",
+      "targets": [
+        "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "b1ff552573a0412a418cac45b14a9f64ef09fb7f4da77850e377f4f59bf50c4d",
+      "caller": "acd6693793d4c4f38364fb08ff370d503f3f1c417eea87224904efe0999e0765",
+      "resolution": "resolved_static",
+      "targets": [
+        "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329"
+      ],
+      "dispatch": "STATIC"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      },
+      {
+        "type": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [
+    {
+      "key": "94d1839b7f88f4af47fc73f4845b56d2eda7354cfe29d27a76a38a63c4c6af57",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 8874,
+      "modifiers": []
+    },
+    {
+      "key": "af135e82e668299989f981d266eca30577dd5d0003f82269a6f717b8ccfda8ec",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 36847,
+      "modifiers": [
+        "protected"
+      ]
+    },
+    {
+      "key": "a0a319024bc85f3d32bca23bb41daae471bc017cbe77688c020122b1b39ac29b",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 36882,
+      "modifiers": [
+        "public"
+      ]
+    },
+    {
+      "key": "3521fa6bfb391536010e35a6239f66e1f3a78af070990718f96ee9cd1d4c22c2",
+      "owner_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+      "kind": "field",
+      "start": 39035,
+      "modifiers": [
+        "protected",
+        "static"
+      ]
+    }
+  ],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "bb6b71063db659b2fa48f477837073c3329094a1ba4dfc6c07590fc25acc9b29",
+      "signature": "java.util.Objects.equals(java.lang.Object, java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "e78120723c2da4c420c495d03f567f33817dd5d30f53b2ccdb41e1a16178f84c",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "c8f51dda6bfa62fe48228b3d9bfc8122dbafafeb684acea14c1abc0ea284d6eb",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "c43d40c0d61bb043ab9fc8129a58cedf5ad32492c1ec7454b1f49c68ccf72f1f",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "16b6e1140ff3ff48543586eb41bfdb251c24d715047ce3be93d309d38fe9f38c",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "88e9d2dc767567b607a2b56fb40e27d20cb10fb7e3b2c0c2ad034bbe988d2323",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "5f9fe99a5d19645a9561bb249f2f8fe7bb7175474b9a6456e9309177d5b367b0",
+      "signature": "java.util.Map.isEmpty()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "9c4130e339621f065886f7ffc4ab0cef91f9704d191c6669b481b257657b78e5",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "0b2ed46fced89b48ad8d230eb999f25e304a7a0331b4b21c0b440bc3ec575e56",
+      "signature": "java.util.Map.entrySet()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "86056e077821d2ad6c6046ba53568895aa707b3d20ae8f8ae1d4eeafb235bb26",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "6479320187f72d431d90e59014ce564fb190c4c4df19212b2fb4d6e57d6d85c5",
+      "signature": "java.util.Map.Entry.getKey()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "eba39a2ff57ba7f3db6b0f7064baf469ec37765788e9e7cdc131b9487a1b10df",
+      "signature": "java.util.Map.Entry.getValue()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "827794c35629f096fad5153e14e3988fbd4a4536c9d7ef95bfdd99776c0b7bf9",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "009b1160b817f4e6c9f8cfc2f4f4f3893cd201c56f8032f7c0ea7be81f993095",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "8feb2a88117cedc457b7a0a17e98b38385ba58bff206797d72321981fd0f0a80",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "7fee7b9d24871f572d82df8b387aa9f7e613046ab0bb57e53d9f0a042c8490af",
+      "signature": "java.io.PrintStream.println(java.lang.String)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "2e4ee3708700fe42c5392964731f4501df1fccaca564a917282a0183f67557f1",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "a025cf01e71e9840017d358bc71e24652aa9d081e17dbc7d798b5d1519aa4a02",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "66e2097df9c09d1a77dd71c55d644b173558d0fb530e18f98a20b677034129a0",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "6f6bd8f9acbd77456f282bbae7ea7275ba778487f55d5ba3fb0bf4a0970d947e",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "28554d1a4eb1f2d27202cdfeade05d0b6d9c1e3b41a90da21e10aef41d1da076",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "1616ee0e669eaabfa01270e3968ff13e9a8711ca2025aa28d8327255b52aaf22",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "5f23e301702f35eded1c646803799bf65e5f9a5cea1528bd6611115713eef3b7",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "2fc2801f86f298ba8a72295c4eeb2feb6d9198a5b1c17def4ebd276c34b76733",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "e46bf0a9199860d65e3ee2865b54406bbd5a5f3fd9c54829d01049c15461ba2f",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "cf977ed00115f46e13cddec0961d11d8b24391ab07988ea361b3097d43be1d54",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "635ee6b4f2d75c22f145930269004a61167ef051e156e9aedab5707ecfdb140e",
+      "signature": "java.lang.System.out"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "abd185117def61533e6c12c055ac8d1987a5f2659dc0dcc0763beaa4f9411085"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "f1fc9d78b7fab95e06df790a3757f3589c0255d7ab63d95bbd108fe6a92e0c30"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "b2ee99fe44d5516831fb6c8f7ac6844bd8d31e3bd8e76ba046d271e984b2358d"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "ea7578de2a05731572ecf27fc4215c9b8a5a29be3efa06b9439e7265a92832ac",
+      "signature": "java.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "b4330cc694248c4d418bd2681ca71f99e8dc37a16a7472c24aea6d32cc8f21ed",
+      "signature": "java.lang.String.replace(char, char)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "0dca8fc057d8995d5e7e81ba6478f814188bad097b8475135a1daf4cbe4ecce7",
+      "signature": "java.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "25ec8bb79d42312445ac7f3251ac642b592aec070adaeb3d7ea315eddb599412",
+      "signature": "java.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "f66f738fb679a725ab1b2b9d48dffe3a56fe43fb1da0dc0c7e2fecd70d247f66",
+      "signature": "org.junit.Assert.assertEquals(java.lang.Object, java.lang.Object)"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 2146,
+    "visited_members": 11
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329",
+        "display_id": "com.samskivert.mustache.specs.SpecTest#showWhitespace(String)",
+        "top_level_steps": [
+          {
+            "key": "19f65c8b54c6802069af9fd32d5341a6c2beeff20adc26fb5bf4d8a6d66081f5",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              67,
+              67
+            ]
+          },
+          {
+            "key": "cf2f4ecca88df4757ff014edb8ebe8ea82a77f03824a878745911918660904ba",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              68,
+              68
+            ]
+          },
+          {
+            "key": "895147ec19efc25b154eba9296fdef14a740c17194275ec17d1c03f544baf3fd",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              69,
+              69
+            ]
+          },
+          {
+            "key": "6f3052bb51f4d417363c69b3ca232b5956caa1843f74739ab6042ce4999f1a69",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              70,
+              70
+            ]
+          },
+          {
+            "key": "2bfaec3a70f69a981cb14e471082a4a89e9673d1f91c45a13c1c7316275f4aee",
+            "ast_kind": "ReturnStmt",
+            "lines": [
+              71,
+              71
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 6ec4e4f71a2e04ebcaf9d1d1dbbd134554e4e4ac79ed7ecbb24fc23485c15329"
+      },
+      {
+        "member_key": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+        "display_id": "com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+        "top_level_steps": [
+          {
+            "key": "0aead5ac92024705176a9fa04fa924c6168c4d1b4eb1a64bf896e8dded180995",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              50,
+              50
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06"
+      },
+      {
+        "member_key": "8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291",
+        "display_id": "com.samskivert.mustache.SharedTests#test(Mustache.Compiler,String,String,Object)",
+        "top_level_steps": [
+          {
+            "key": "d8d63cc776ce7a9852341d8f960262790e8423a83b2592ff4248cd1ce64f5148",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              858,
+              858
+            ]
+          },
+          {
+            "key": "ac2b68089dc7335a87e989042b20bd6885d574d7a04f4a732c3bfe7eece18edb",
+            "ast_kind": "IfStmt",
+            "lines": [
+              859,
+              875
+            ]
+          },
+          {
+            "key": "1a89ff815ab1e4ee3a9771f1b38bad1efb6c59dad6f38a1480926eee5b20811c",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              876,
+              876
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 8da9c53d83df1efda00fa53ec8266a3552c73d527f10a0583f173af6e6548291"
+      },
+      {
+        "member_key": "acd6693793d4c4f38364fb08ff370d503f3f1c417eea87224904efe0999e0765",
+        "display_id": "com.samskivert.mustache.SharedTests#check(String,String)",
+        "top_level_steps": [
+          {
+            "key": "7519624c6d0ef3e37388e28198f668bdada3faad9fc263ddbfece7c9c61f681b",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              881,
+              881
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 1,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id acd6693793d4c4f38364fb08ff370d503f3f1c417eea87224904efe0999e0765"
+      },
+      {
+        "member_key": "b717de434fba60ca635ebfdbc083f374fb08ce6a1f5a51b506d68cd94b57d0ab",
+        "display_id": "com.samskivert.mustache.SharedTests#test(String,String,Object)",
+        "top_level_steps": [
+          {
+            "key": "99a6adb49e5395530098cdc59309788454cd1bfa32833d249251639d936e2765",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              886,
+              886
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id b717de434fba60ca635ebfdbc083f374fb08ce6a1f5a51b506d68cd94b57d0ab"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ],
+  "shared_ref": {
+    "file": "../shared.json",
+    "sha256": "39c9a4169cab889db18a1e20cf74d16f16dde0e529b04d4384063c9aa6dea293",
+    "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+    "required": true
+  }
+}

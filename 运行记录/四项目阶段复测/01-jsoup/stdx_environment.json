@@ -1,0 +1,15 @@
+{
+  "root": "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+  "local_build": true,
+  "captured_after_execution": true,
+  "files": [
+    {
+      "file": "libstdx.encoding.url.dll",
+      "sha256": "00ed2451378ac4f9986fb46a7f5509b8ef416808fd5a976d55aff145644690ae"
+    },
+    {
+      "file": "stdx.encoding.url.cjo",
+      "sha256": "f0c0df0aac965e09d663c8cdf862a05b046bcca993b0607de03d531d6cd9d9e0"
+    }
+  ]
+}

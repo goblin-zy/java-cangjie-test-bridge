@@ -1,0 +1,1572 @@
+{
+  "schema_version": "context-source-2.0",
+  "project_root": "source",
+  "snapshot_id": "45a6374ae9445052754a219336d1ae1e8818f72bc4b88836af67cf417da4eae2",
+  "inventory": [
+    {
+      "file": ".gitattributes",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "70cd35b0d6409862f4c1309e5a910ade143bbea9d291d5f17c177c0e9600df54",
+      "size": 21
+    },
+    {
+      "file": ".gitignore",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "b8abcf2848edb1e44ffa1de42cdd6a68ee05a927ad4853ecaa5d6872e828c6ff",
+      "size": 90
+    },
+    {
+      "file": "CHANGES",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "5469d66dfc3233dc58dc06431fe485584c557276a7beec0f99842bcd7f8b13a0",
+      "size": 88063
+    },
+    {
+      "file": "LICENSE",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "1dcd34a384e31707af7678fd60bda296d03b4f9bf6be36a7d9d2e6c33c8b0860",
+      "size": 1102
+    },
+    {
+      "file": "README.md",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "92195aff0458820c179f77ffdece1cbfc0b1c5d98ed96e1b6190cf9e26bcf2a9",
+      "size": 3093
+    },
+    {
+      "file": "pom.xml",
+      "source_role": "build_config",
+      "parse_input": false,
+      "sha256": "7212890b72c0b860e0225856be7413e78ebd3ecd3ecb8567dde6aac6273dfb89",
+      "size": 13414
+    },
+    {
+      "file": "src/main/java/org/jsoup/Connection.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "194529cb6b0b11b194acb3df09bf655ebebc23ea655418b0ab1964fbff73bd39",
+      "size": 31086
+    },
+    {
+      "file": "src/main/java/org/jsoup/HttpStatusException.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ecf725c71ae86ab5d915431ce4980b4ffb679d273b1b2561242842fab1ff3196",
+      "size": 589
+    },
+    {
+      "file": "src/main/java/org/jsoup/Jsoup.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "715dc369a27d6b4265b1dc9e741e2c1613af3fa8b4a96a667156dc76676f795e",
+      "size": 16166
+    },
+    {
+      "file": "src/main/java/org/jsoup/SerializationException.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "96e426ace0e719074fd26e67ca36bb2657050c133af49b1fd4fba3368e652c59",
+      "size": 1572
+    },
+    {
+      "file": "src/main/java/org/jsoup/UncheckedIOException.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ef842a8249921f9339b73570ff5a40973e50c24fa4686020d4964c9eba159f34",
+      "size": 378
+    },
+    {
+      "file": "src/main/java/org/jsoup/UnsupportedMimeTypeException.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ba4fb475e31d400f274d24c1cac751322061be5af6a6b8297df5b489cc6285ac",
+      "size": 689
+    },
+    {
+      "file": "src/main/java/org/jsoup/examples/HtmlToPlainText.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "3fe8e5f3dc9b26237f8c71758bcbfe765c6a427ed213cba2f5f00d930e008052",
+      "size": 5476
+    },
+    {
+      "file": "src/main/java/org/jsoup/examples/ListLinks.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "0186ce57dfab252beee2b196b86c94c320abd4b2c1eb1fb7ae8982223c15c594",
+      "size": 1807
+    },
+    {
+      "file": "src/main/java/org/jsoup/examples/Wikipedia.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "816c01ba37559e1a0e52e2e64b0557d4811e5259f73cab52824094e394fea466",
+      "size": 750
+    },
+    {
+      "file": "src/main/java/org/jsoup/examples/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c337a040d58b514b588b78a134a1d185270a01ba5a78d4bd7c5508dbf5f063eb",
+      "size": 146
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/ChangeNotifyingArrayList.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c05a78a65ee75cabb0f6535987200c174ffeb39914cfb6170df91a8be9b0e233",
+      "size": 1815
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/Consumer.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "3459e608ebe36bc3b35d2671391e4a5a2193ed24f2154741b3704a37b9f9a133",
+      "size": 810
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/CookieUtil.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "8e642e7cebb1c099895cf2947b4910e855b88fd0a51a92ca31278c67074476e8",
+      "size": 3719
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/DataUtil.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "9a142061c691ab60312f1f5b5dc62e4579d0061d6ad107bc703fe700f3612ad6",
+      "size": 15307
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/HttpConnection.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "12ec95ec33a1f9ee4d4588c941ef1d22744b1ad7f5597f6d9008179bcde7fc57",
+      "size": 49525
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/Validate.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "df30c9ea9dbe70cb376e8cc40e8c30e6bb4afbdc0b3439d60c28c3e50069368e",
+      "size": 6883
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/ValidationException.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "209e9b62845a9effe55d9e684c8ebe76d6f63be27cd66ee0a2ff24ce3585cfbd",
+      "size": 972
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/W3CDom.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "1b6a1de3c03c285c7ea7b7f43c9e2958ef217e9d78ec1bef13abcb6bb3d3ac4f",
+      "size": 19278
+    },
+    {
+      "file": "src/main/java/org/jsoup/helper/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "7dad56f47c58b60266cf817dbd3819a52acab19cd3e996d16ea8a3bf30861cb8",
+      "size": 157
+    },
+    {
+      "file": "src/main/java/org/jsoup/internal/ConstrainableInputStream.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c1c98e10b6a7ad38e5782f1f5fd7bb44b09b847c88680a4f269046d48529c467",
+      "size": 4326
+    },
+    {
+      "file": "src/main/java/org/jsoup/internal/FieldsAreNonnullByDefault.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "34ba3d2afe68cc8d2f0212b14dd46df2e42a85d0ebc6f42340185be8910db08c",
+      "size": 581
+    },
+    {
+      "file": "src/main/java/org/jsoup/internal/NonnullByDefault.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "22c002a41cd84595879dae69869c1a765ec37b75c045640fec34b9723f8eea57",
+      "size": 646
+    },
+    {
+      "file": "src/main/java/org/jsoup/internal/Normalizer.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c678c088b6029cd127da7bb4340958e00867cd5834485c0ceab36c55d780aa53",
+      "size": 785
+    },
+    {
+      "file": "src/main/java/org/jsoup/internal/ReturnsAreNonnullByDefault.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c562fd56ad8c4fea456cdc21020a0ba64b19ea2f5376a3cbaa399e57fe9eb452",
+      "size": 580
+    },
+    {
+      "file": "src/main/java/org/jsoup/internal/StringUtil.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "e6aec7293ce97b317cdaadf71c376b7caef3a5285c49666a93ff590612ec8910",
+      "size": 14524
+    },
+    {
+      "file": "src/main/java/org/jsoup/internal/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "273c46170e277cc4c47568cad7f30002351fd2bed6d2ccd36449e4bda88b567c",
+      "size": 162
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Attribute.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "de6d99e7eae6a0666efd38e858693d9bd5dc2f20cf0f6e5183933e43798fa302",
+      "size": 9147
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Attributes.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c3407a92f6f491b2db1633e02664795808d6377b1685960065c42945b8faf54e",
+      "size": 18208
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/CDataNode.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "03bee60972c9d555e55e4a9a5460995b2a08cecac1bde957b279ed5e2233e5b2",
+      "size": 974
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Comment.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "471543258ec651ec976ede62d73db07a362f644ec9b1013852ef4e213b310908",
+      "size": 2972
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/DataNode.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "66a9bb45b41e2ed15fe6c2f41305060235a652a383a6643c266b16400aa71a47",
+      "size": 1398
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Document.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "4e2c09e67cb81934abd600b9fb0498402cf3fb05dfd41dabed284155d6ade670",
+      "size": 25140
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/DocumentType.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "619cf3787c729a52d679b27380179bde3846c1d7492eafd46565b2f45d19dbc0",
+      "size": 3303
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Element.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "a87a9c48f7ed2d68ccf1ba55487955a685e6192de2b6a9c01f0f365ad4202977",
+      "size": 68784
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Entities.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "2e23ee27398ecb6eb036276075910be098a7d466a8b6bc15f69bd7791a4ec010",
+      "size": 13976
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/EntitiesData.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "5d2d6726a607fca5d0f9393aa6d5dc0882e780507dfb35371cd4d17e7e1e63f9",
+      "size": 33565
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/FormElement.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "99e74181e349e5925b58a39cb9a4cd3dbcba9af076de17a4d4c595191717c1cd",
+      "size": 4815
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/LeafNode.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "1d0fa062fefa4a876e9a848a987cade9e76a5d43536b0c9edb90d8702bf6d327",
+      "size": 2470
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Node.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "126d6ab3426b595b0bdfa089ae024e178055436f2ceee3d8458ac311551e69f4",
+      "size": 31476
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/NodeUtils.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ca231f8d8f3e484cb4482c65fb24fd19dfab2d314960bc0d4069dd1628625c98",
+      "size": 2084
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/PseudoTextElement.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "fd7e6c26e41679626c1ae645ae9426706e928028088e53adb1ca562a9903a738",
+      "size": 615
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/Range.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "1180ae22244ee30f41e86b2d9db912ccca7e18da8f21fd6896443d2c1c361dc5",
+      "size": 6244
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/TextNode.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "f5f5f5fdbae40f780c092c2d2196e5f20ab56f1f8626b8435ec6ba2dfc6d9050",
+      "size": 5477
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/XmlDeclaration.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "75d779e02dd26aeebf4c7e05f69cc6f18fd0cf3074a695548b584590bc6678de",
+      "size": 2868
+    },
+    {
+      "file": "src/main/java/org/jsoup/nodes/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "e9888357f6883e2e905fd9f46a248606c700546c8973970774ce5649a27b13d2",
+      "size": 128
+    },
+    {
+      "file": "src/main/java/org/jsoup/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ba4f7c9dd1d33c6607514b10578ba35c78d7a15e5fd2d2533b0e29cd6d173ccf",
+      "size": 208
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/CharacterReader.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "1b87317c4c128a456780db7641d7f1fbfd5b2b50b930799d33c2ff452bb5eba0",
+      "size": 23906
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/HtmlTreeBuilder.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "94ca0fbd1d9bcd0b58cfc9f2dfdf7b019299e4aab5f03780782505e025fe4a41",
+      "size": 33390
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c3eeb7c646a30649f615a6feafd2829b3873f7dd72b40fe1e18e5c35b6c768e7",
+      "size": 79701
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/ParseError.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "1c4b2b71972964ceebbefd5ede6fca102811e97dc4b250df880527d2b79cf4c8",
+      "size": 1597
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/ParseErrorList.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c4aa6c789ee9044cb74ca35255bfd7030b1f45b6f38a4da7744bc48bd6efcea3",
+      "size": 1241
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/ParseSettings.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "787df49719e004c6a5489b6a96f81755914ab38d5dc09ce5525a90e030798e6b",
+      "size": 2380
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/Parser.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "9d14f6f1de3ff9c916966b517e605e9d52cacd611651d960de7875cb3189f6ef",
+      "size": 9808
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/Tag.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c9ee9601ac315b9f3d74589701f283ac49ac73661dcf48b3e06ff0d4d3061fb2",
+      "size": 11010
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/Token.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "4f292019f1c14300d93f21d32016478cd2f74b0635cf4b8d6320c34312f227c3",
+      "size": 13653
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/TokenQueue.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "3e26bbb9e08055c3add95c005658370f259eb264e5a71ac7c0947c031c56d210",
+      "size": 12465
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/Tokeniser.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "b15f35e59f09baa512c2d0ee07ee98575bcbfc63c3dfdbcd7dd8bd888dd2f373",
+      "size": 13887
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/TokeniserState.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "2908b84dba6fa2742b9c13aa3b3f94c6e59d18c476903570b441d71e348dbb46",
+      "size": 60119
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "83d5f4d5a6fe85932b6d8eb40ce2c29f73d4a75e3bd64eab473015f2dce4e538",
+      "size": 7766
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/XmlTreeBuilder.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "aaeef6a7c72c01683180e940465f4fe1693607eabe70683e97d46165de470fca",
+      "size": 6348
+    },
+    {
+      "file": "src/main/java/org/jsoup/parser/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "8f0e7ac368f20d4fa36860fbaa20da9918385fc955c17a3d7f7128a1961318da",
+      "size": 164
+    },
+    {
+      "file": "src/main/java/org/jsoup/safety/Cleaner.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "6d35bc3971628218f2833d0964f5587f5fa32535925abf103de31180dc45ce03",
+      "size": 9318
+    },
+    {
+      "file": "src/main/java/org/jsoup/safety/Safelist.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "19a32651990089ba6cc27f05beb627011f2d12973bb3c74cb9dd958e5b3fcb89",
+      "size": 26491
+    },
+    {
+      "file": "src/main/java/org/jsoup/safety/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "84c6064550d9f45f9d4489029b4fe0df4efb13b2883904546395f78ecd626384",
+      "size": 94
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/Collector.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ee84a7407b2c2f912c43243edfa2f532bb4e1e8b176d85bcd7310b96c4c89221",
+      "size": 2496
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/CombiningEvaluator.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "73eddf24e0deeed950614fc1cf541ae3d7aeaa101aed71f37cb89934593c0fea",
+      "size": 3107
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/Elements.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "915839331ec2777a89c3a52893b7e85a5286c948371164adf402990e7872f2f2",
+      "size": 21685
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/Evaluator.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "9f2bbe1d45cc2f2341b6e24ac7a8a05caf382bca01ac84528b13f6a1a29c5c30",
+      "size": 23937
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/NodeFilter.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "c6ea686f67d198f14e08dbb0d7e5719a0d87803aba448143fef1f9c478d7a44e",
+      "size": 2568
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/NodeTraversor.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ddd4db4810c158b9d908b9938c5abc4b294563f03d94efaf76ea5f957c3d2c9d",
+      "size": 5430
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/NodeVisitor.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "2a41177ecc50cca46000545e69f936b669d4b62c4e118cfcea08e591d3e35688",
+      "size": 1758
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/QueryParser.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ca8bacac78e6a1c4ab1c3681acb963a2f3307347faf6f691304e58effc5ffeb2",
+      "size": 16156
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/Selector.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "ca05c400131f7d6e55e920757ab32275f1e95127cd6df903489ff98045a1a3bf",
+      "size": 17370
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/StructuralEvaluator.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "afa62833791ec17d3da19c10934489c757d897d846142838a8372a288367f0ae",
+      "size": 4383
+    },
+    {
+      "file": "src/main/java/org/jsoup/select/package-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "5b5277dfea5f8ac9c221767a3b2e6c66c577c8030d5dff5cf57d900d7f2e3648",
+      "size": 220
+    },
+    {
+      "file": "src/main/javadoc/overview.html",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "3c84d93a7b655a6ac2856ca7217b4c625b6a12a40a8dcfb3bb5ade96e3321298",
+      "size": 1194
+    },
+    {
+      "file": "src/test/java/org/jsoup/MultiLocaleExtension.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "c4c2e3c742cd0822ee1727e7bdf4f89dd5c24d993853e1846650f6840c59b0ce",
+      "size": 1224
+    },
+    {
+      "file": "src/test/java/org/jsoup/TextUtil.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "48216be48aa35dae2459fc3f2ea487abda9e3a6924dae3c0b661a4fd6cc684d2",
+      "size": 1010
+    },
+    {
+      "file": "src/test/java/org/jsoup/helper/DataUtilTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "4f94f70535dc8cac7c11f53ba061a8ab8e29d919edef474a425263242925ba45",
+      "size": 11550
+    },
+    {
+      "file": "src/test/java/org/jsoup/helper/HttpConnectionTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "581a5f408456c608417f54621eba81edcb39bb78b1e84725400fdabe9164fee7",
+      "size": 12121
+    },
+    {
+      "file": "src/test/java/org/jsoup/helper/ValidateTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "8b54c816fee2db01809620cc09bf3c3751c9c560d7d7aaa822e838eb3f9c2e0b",
+      "size": 1351
+    },
+    {
+      "file": "src/test/java/org/jsoup/helper/W3CDomTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "afded2c8af2e7493d4dc8527b00ee7f151ed07978f5367ee683cd5a85c3b4e7e",
+      "size": 16114
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/Benchmark.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e928f9cfbd7e67be3bb4dcee16a4023aa9971edf20f970190a95608e904473ce",
+      "size": 1067
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/ConnectIT.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "caddb476acc685ebc2f9fe2496f19a7e2453900bbd2f3b1a8164165d589b2137",
+      "size": 6336
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/ConnectTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "f44a649a441843cfd2f4ac452bcb9fb58f8b01c1bed3f4f5ee3fa4c66a81c7e0",
+      "size": 30775
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/FuzzFixesIT.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "1707b0d41d9eddf591f843db685c134d183bbb9a4cbf250a520610828a29f1ea",
+      "size": 2257
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/FuzzFixesTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "ec12bb47796071157cab3ef2254ab2406c792ca98e7fd3faafee34b93ab73fce",
+      "size": 1896
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/ParseTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e58eb97eac6c1912275fe0cd63804dbde453da0878f1d0a90dc8e60b7775e638",
+      "size": 7236
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/SafelistExtensionTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "65ffec459d04153a85056726fae31f017347feb29adbc84809a0cccd9c62db74",
+      "size": 1532
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/SessionIT.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "d3aa5712facb1e2143f15aae448532af12508b37c5e172589c40bb4b809793af",
+      "size": 4416
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/SessionTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "d1c472696352adfe253712e6c3b8b7af6867640d6348b668f4fa04dfc670c340",
+      "size": 5391
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/TestServer.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "7cd54a9a1fb67ba0494686757eb40c524ec45ebbda8cdfeac6a401f3630610ed",
+      "size": 1326
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/UrlConnectTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "500abafbc5a995a39bd3adabb4e1fc831900f2f735319713888c9af1e58507b7",
+      "size": 22333
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/BaseServlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "327303ca7287d739c1063946abb1959baa81319eb042dbba00806ab13cdb3c82",
+      "size": 940
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/CookieServlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "40df8d72ec9f803f1abb57f50e2f669b49e2c4b4ae874d013c6d233c5740d06f",
+      "size": 2369
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/Deflateservlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "56044d274fdb54c2e6c96c444f43575e50bfc054a22aacacf400df50db2e3d84",
+      "size": 1280
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/EchoServlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "34dd64928c30e57f37280329f9d82a0080ea311a7cf2ab19a586071541e5f55b",
+      "size": 5214
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/FileServlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "0b87f86f38312c9ba5211cffca9df3440c66438441ed2cda5126913259bd00db",
+      "size": 1603
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/HelloServlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "03398fcef8bd75ee15c40440b81f6660f5c9207d1f34c3223decde8d13dbcd4f",
+      "size": 610
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/InterruptedServlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "ef54c52a3d1d12991978a86309ffa1905d19c9a4546414644df98cd9ae739949",
+      "size": 1290
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/RedirectServlet.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "c08b1a1bde37075235b251bf4209b86f03073b04fc08615096714f254b60a356",
+      "size": 1347
+    },
+    {
+      "file": "src/test/java/org/jsoup/integration/servlets/SlowRider.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "6db4e6c9b3382902ad01dbc620994fa83b7d2c232a54002b795cc54d79b4b360",
+      "size": 1957
+    },
+    {
+      "file": "src/test/java/org/jsoup/internal/StringUtilTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "10697578efeb4032c61e2e9a1c4d504a0a7f8e8f19d34bb484b402b455be8867",
+      "size": 8738
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/AttributeTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "0a50ae2df16a7bbb8c167dc033f0a0e22d89aa5fb1a007cf2649ab75d2f82b38",
+      "size": 3403
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/AttributesTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "05860b57efe8e3ec2af07144236e055dfe3c44e06259a59830d675f0d3cca244",
+      "size": 9942
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/BuildEntities.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "d5e066e9d25d0bcd0768eec4bd219c8f57542ab4049f8452b198a4c177d01bf5",
+      "size": 4797
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/CommentTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "ee7b48ed0ba70ab16ed82e34563c0329a173742a8960546098ecd5ee607fc16e",
+      "size": 2022
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/DocumentTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "d868d21f56e35a62122b7058dfe94fa27b8efca2c944399686cc0d1166ad3963",
+      "size": 23596
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/DocumentTypeTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e558140b2fbe93e9b723b817bc7650c1506494703cab2d1cd5950f8eb35ee1ae",
+      "size": 2881
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/ElementIT.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e0652aae26fc330fcf2fe5d770fe649044c34be127b10d7196ea7c177c04a1b2",
+      "size": 5099
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/ElementTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "0c069c7ba277d995e5c4f04ecfbcb6bd9024707a2c1f0281acb6321b3609b846",
+      "size": 102896
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/EntitiesTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "2eb37721d00a60a3ffabfc2ea40b75c5027ace0c7f7e7058641479f99f687155",
+      "size": 7717
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/FormElementTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "c4710873345212d1e73f661db2a2736bbc994d45a13e05535ea43c323c059828",
+      "size": 9343
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/LeafNodeTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "a0c178cabf6c962619ddc97f25c4ab898fd1a56fd6d3a4b46c9879faf9e791d9",
+      "size": 2196
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/NodeTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "cf7549ab4f9fdb6614da81400f120bedfd1880d396128effadea9ae7276bd17e",
+      "size": 16702
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/PositionTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "f67194d6509bd2a146ba5cea3f65a32858597098cb86c126690fa2034ef34ee8",
+      "size": 6937
+    },
+    {
+      "file": "src/test/java/org/jsoup/nodes/TextNodeTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "7b2f429ecdd3e705899222c43038979a6330f9205cdc80d3ba4760a8ab3089a3",
+      "size": 8089
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/AttributeParseTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "6d7a163ad8809a0497a66190331386d17748cb879fed2295e3c256545577fc26",
+      "size": 4045
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/CharacterReaderTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "22a486687d2a83dcf2a57933390e4f5a39bd1dd280edb8d2428c4a3375d8b8a8",
+      "size": 17945
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/HtmlParserTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "0219d5a98ea00d6ae503efe5751d5b888a2246dcc499e8de836f894b77726983",
+      "size": 81790
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "ef2e0d896f716746a1ea29a3dced2fc44add11ec1b1a261a04f7f37be122806e",
+      "size": 3674
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/HtmlTreeBuilderTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "3c57150bf11835ccd07560f85695dad51d627e89f0ecc046675346d370c3d2d3",
+      "size": 1799
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/ParserIT.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "999e36037668c35da78b4a67947bfd4c25b881e8ed8570a0fdfa2f6d009b147e",
+      "size": 1943
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/ParserSettingsTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "7dea16c4e894cc6da8a395386332fb462ed0fa739930c90cd76f51264712e7a6",
+      "size": 1859
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/ParserTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "c4a37554f2712b8cc038674ba1f4a2522f2db0cf0270b73f9653745bf09e9d51",
+      "size": 1226
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/TagTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "054144360d1700a6ce23f906d96c36586cd1d917a293ac13cbc9fef6ceb1e5d5",
+      "size": 2206
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/TokenQueueTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "8bf1e3bb820b4b5ea52316edfdce9041fa80b934e574b6026d4fbda1e73cb06b",
+      "size": 5412
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/TokeniserStateTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "2b29577f5121ab2cc7d3de094393a5679532f5617dc4576a1a32213bbc8659d5",
+      "size": 11240
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/TokeniserTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "ccb17ce796250e4b4eff1ffcb45eb63cceaf6e23df71d9a29cdeeeb3ef159fa5",
+      "size": 7809
+    },
+    {
+      "file": "src/test/java/org/jsoup/parser/XmlTreeBuilderTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "c9a67467ad695ba7b0eaf93eb7f9a111bc0285357b06505f24c77403e94234b0",
+      "size": 13958
+    },
+    {
+      "file": "src/test/java/org/jsoup/safety/CleanerTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "6d64870424f24703c4ad37db4fe99adde2f260a4c837a751033e8b750972ba4e",
+      "size": 18072
+    },
+    {
+      "file": "src/test/java/org/jsoup/safety/SafelistTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "a631b0f6ebcae5f37a573523c53cd3f81d8c2df0182d0aa12b5cf14b89c69863",
+      "size": 2607
+    },
+    {
+      "file": "src/test/java/org/jsoup/select/CssTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "89fa0627ec7586eb2489524544566da9e9dd6877a6d2490e14f2fa0791ca14f1",
+      "size": 7420
+    },
+    {
+      "file": "src/test/java/org/jsoup/select/ElementsTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "3014d7f7f76f34d8bb61945cf914a8e1354e1626c8cd7f9827780b33a1f3d71e",
+      "size": 17011
+    },
+    {
+      "file": "src/test/java/org/jsoup/select/QueryParserTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "d0aeef09f5c37ecb87b960cd90ccd06951edb4ca2cc7bda4b3de29b76ffc534e",
+      "size": 3567
+    },
+    {
+      "file": "src/test/java/org/jsoup/select/SelectorTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "773ce2bf2c1d2d703759c931319a78b6dcd104d6a1205232b17865996c215074",
+      "size": 44579
+    },
+    {
+      "file": "src/test/java/org/jsoup/select/TraversorTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "5a4d3a76156fba5c7e049d462a992e8eddcdbb6a89acd15248905ae474f6e547",
+      "size": 7469
+    },
+    {
+      "file": "src/test/java/org/jsoup/select/XpathTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "e0028833d85db46dfce6fdae2b5ad01e8eef6173578558b4a8d76dbd2c346bb3",
+      "size": 10240
+    },
+    {
+      "file": "src/test/resources/bomtests/bom_utf16be.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "589fc8aec11653aed60c8c3ad6c0104d6d3215de6272b507d2b76465d96afc18",
+      "size": 1700
+    },
+    {
+      "file": "src/test/resources/bomtests/bom_utf16le.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "43194e500dd3f84a3f557522ad854ce452df5630968c513a0e8ac0a076d02d17",
+      "size": 1700
+    },
+    {
+      "file": "src/test/resources/bomtests/bom_utf32be.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "175261784d7ec42223c69a7ecb6da144976db26d3af6bebf0b3bd3b479c12d86",
+      "size": 3400
+    },
+    {
+      "file": "src/test/resources/bomtests/bom_utf32le.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "c482b2d260ba4c0a1e411b0e42cb5c1883549c625bfca648856056f1f938d459",
+      "size": 3400
+    },
+    {
+      "file": "src/test/resources/bomtests/bom_utf8.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "8763d66033b22f2feb45041f058db6e2cfb110664826d8de2dbd560b862664e8",
+      "size": 236
+    },
+    {
+      "file": "src/test/resources/bomtests/bom_utf8.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "1800477ea09ce79ee725eaa0b056bf99b6c0974f5bc4865b2bed01db9d04aa63",
+      "size": 228
+    },
+    {
+      "file": "src/test/resources/fuzztests/1538.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "d21e3386296640b3cb664f9f6f2ba5354a487b7623ea8ea8e1790513f39a3334",
+      "size": 186
+    },
+    {
+      "file": "src/test/resources/fuzztests/1539.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "93c049a8bbbabadf875c0a51cec418e3c24c614128a36d988bf2959302021af2",
+      "size": 73
+    },
+    {
+      "file": "src/test/resources/fuzztests/1542.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "d1943ee14a0c1044bdc61a6116e2cdff3f900eb9034c38ef8cda8d625264c82e",
+      "size": 280
+    },
+    {
+      "file": "src/test/resources/fuzztests/1543.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "ec421f21493258a4a2f53ba3936eae3d6a1661370a4ae708dfbb28f647783e27",
+      "size": 203
+    },
+    {
+      "file": "src/test/resources/fuzztests/1544.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "44a73dc07c6b377a64bcbbe6f6f893b33a533f64ea8e66efdc0735aee632bad6",
+      "size": 355
+    },
+    {
+      "file": "src/test/resources/fuzztests/1569.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "176f232df81fce3e4238b68cd555652d87a5141b02fa7e59b0071d0506bae577",
+      "size": 2004
+    },
+    {
+      "file": "src/test/resources/fuzztests/1577.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "af27e9af54b80226bf1b58c9ce35955f9a2f9d31d75adf689b93c281548ba854",
+      "size": 761
+    },
+    {
+      "file": "src/test/resources/fuzztests/1580-attrname.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "51f60b2790f1a865d5408a9906e0c2607daa5bc51830664346111638ecd09e5a",
+      "size": 1175
+    },
+    {
+      "file": "src/test/resources/fuzztests/1580.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "ab00c135a4d474e9fc73eb7718dbadb59198ea1f1d9b75ef7738e96df7de40f8",
+      "size": 813
+    },
+    {
+      "file": "src/test/resources/fuzztests/1593.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "7464b89eb6a7e287c0aa5e9cd4732d474569c103fdfde999df5f3205046d1659",
+      "size": 734
+    },
+    {
+      "file": "src/test/resources/fuzztests/1595.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "a75aec3db25b97fd5ab3f6bdd53abdf9e5d75c6a5ae02a68b7b39bcfbc68e2d5",
+      "size": 668
+    },
+    {
+      "file": "src/test/resources/fuzztests/1596.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "408308684de697c1e27ae4e089d6a9bf87bfd95f522daf372d38fdc043ab9626",
+      "size": 2796
+    },
+    {
+      "file": "src/test/resources/fuzztests/1605.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "49e687871a88f1c080937312ced4cef4f9e995b478191ff1285c5e9689cdb5a2",
+      "size": 4332
+    },
+    {
+      "file": "src/test/resources/fuzztests/1606.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "66f226745a74a5e7611ebe4019abe8db52e1b0230037c40344806d99bce0bd83",
+      "size": 1406
+    },
+    {
+      "file": "src/test/resources/fuzztests/1607.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "a646a794389caf54679bc151face11aafefa255454494e203de974387ae2c54b",
+      "size": 1431
+    },
+    {
+      "file": "src/test/resources/fuzztests/1611.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "41e92af08716897fd7373e43bc60cfb3b3549a3ec425dccae70702113e277dd5",
+      "size": 808
+    },
+    {
+      "file": "src/test/resources/fuzztests/1612.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "712cfc3bd315cbe465019ef8b82e4a111446057952f0a64fdbebbd4bde7eb90d",
+      "size": 2223
+    },
+    {
+      "file": "src/test/resources/fuzztests/1613.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "bd27bdfdafacde0f58a6a5252a2ed18c0ea92771457c1e90a8d002a0eee79071",
+      "size": 4801
+    },
+    {
+      "file": "src/test/resources/fuzztests/1637.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "24fe2bec3813b38cc4a3146933f7c6d6eae16ac72be163582f0cff420b38d741",
+      "size": 411
+    },
+    {
+      "file": "src/test/resources/fuzztests/1638.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "2dade95001f89732059071a43ed2154bb3b93e2290619f3707f58c290fda87a6",
+      "size": 1832
+    },
+    {
+      "file": "src/test/resources/fuzztests/1639.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "9429511f79a47a31f5d31de9557c63c88a7411133ffb307c57539c00d52cf4cc",
+      "size": 342
+    },
+    {
+      "file": "src/test/resources/fuzztests/1640.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "82a16ae826493f4aa4b29a2e80951c209e09b6ae64ab469e75d4548a07cd645a",
+      "size": 6189
+    },
+    {
+      "file": "src/test/resources/fuzztests/1642.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "6ba86cfa3bd4f9e8f2a898d9ecebcc278db0a3a5b8c2e9d350ceec3479295da5",
+      "size": 180
+    },
+    {
+      "file": "src/test/resources/fuzztests/1644.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "2e20b2fe0edddc5ae27643be11a76a3bce9e75f6477be2d5196262a94f76b46d",
+      "size": 810
+    },
+    {
+      "file": "src/test/resources/fuzztests/1646.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "9eb01b2968762b1903c25bd8611ffecf7a7c541efda380560e0962ad2da69736",
+      "size": 13460
+    },
+    {
+      "file": "src/test/resources/fuzztests/1695.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "5feab0e222396f1dcb0dd5d72f98445eb7acedec5bf5b18370c525d8237b796b",
+      "size": 3937
+    },
+    {
+      "file": "src/test/resources/fuzztests/1696.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "f037b9d1fb56497f37b9ba6e072edfc23d0b403026c28d3ff2a9c4bb16a358e7",
+      "size": 224
+    },
+    {
+      "file": "src/test/resources/fuzztests/1697.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "d3d4ddc679927bc589346af6d64e94a5698f6896f56dbfdadf174a5964472ba2",
+      "size": 1325
+    },
+    {
+      "file": "src/test/resources/fuzztests/36192.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "63c2ed3f8f6ff776d9971addda208fa33cf62e7a71e9b2ecf8179bd3a0bedb14",
+      "size": 4802
+    },
+    {
+      "file": "src/test/resources/fuzztests/39164.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "929946c0be1c2d870f18511b77499c7cad60c16dbfbd879c939444e0bae19d85",
+      "size": 669
+    },
+    {
+      "file": "src/test/resources/fuzztests/48116.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "ab42994039068d22664a8989ceec080161406c895fb6bcc83144dcc777dc36e5",
+      "size": 9078
+    },
+    {
+      "file": "src/test/resources/htmltests/README",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "3fe2418c1179a28f7cd505a34d1c4c4e7b5dc604d73103af1f3fd4b910d19be1",
+      "size": 1156
+    },
+    {
+      "file": "src/test/resources/htmltests/basehref.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "6a0b5262afc11d1c761fe23fad185dab1b3c640ef6eee9bc2d088ae2ddd888ea",
+      "size": 172
+    },
+    {
+      "file": "src/test/resources/htmltests/character-reader-buffer.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "375f5f828c1f1879c799a5b061551e2a0ca5dc55d04c6134e47ec3c01558668c",
+      "size": 282
+    },
+    {
+      "file": "src/test/resources/htmltests/charset-base.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "f4bd41bdcabb282c568c2056e19850c3da552f69f02fb9a37f62b7162d4baffd",
+      "size": 336
+    },
+    {
+      "file": "src/test/resources/htmltests/comments.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "53bef92ce916d50a8ec69ba13ce3a0a90ed7337954640addbcb67380534eb9c1",
+      "size": 508
+    },
+    {
+      "file": "src/test/resources/htmltests/escapes-across-buffer.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "63472721af4b4a159f49bef2857101067996f643e9635f209d63bbbe532e4c64",
+      "size": 14797
+    },
+    {
+      "file": "src/test/resources/htmltests/fake-gzip.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "c466393dfe6cbaee95087cc0aa03975c7b441c288680662e3eff82189b4e6756",
+      "size": 101
+    },
+    {
+      "file": "src/test/resources/htmltests/form-tests.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "ce75819c84131330bf30c88d3729a2fbfd60f22351b21c137a2143b0490d368e",
+      "size": 502
+    },
+    {
+      "file": "src/test/resources/htmltests/gzip.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "9e932401d4f3667ea8d403b976974d0bcfd3f092461a4b285160028aad782f1f",
+      "size": 63
+    },
+    {
+      "file": "src/test/resources/htmltests/gzip.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "822221da2cb21ba5469699067e8f4a588ce3cef56081a7fcbe90915cb16d9195",
+      "size": 85
+    },
+    {
+      "file": "src/test/resources/htmltests/gzip.html.z",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "961c274b0f9c31a46cdb1b3538834d8095518b990c7ac8b60eec999eaa80842f",
+      "size": 85
+    },
+    {
+      "file": "src/test/resources/htmltests/large.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "e442d37dd793e60f21015f9c7c7b8dcc8b0727c3382f1e7c25ef5144d6b199a7",
+      "size": 280735
+    },
+    {
+      "file": "src/test/resources/htmltests/lowercase-charset-test.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "ecba3ba81ce7bd7cc60b6b2167159afa5dbb992c42a29fd39a33494b523370ca",
+      "size": 529
+    },
+    {
+      "file": "src/test/resources/htmltests/medium.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "242d46b4be153aea31032fa8c1c98d25697ec9280d5987e0a17d792a95c3b10f",
+      "size": 6219
+    },
+    {
+      "file": "src/test/resources/htmltests/meta-charset-1.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "fb8bf2bf086dd61317f335415c78ea764f84a6ccbb685a2f94befc78f097d9cf",
+      "size": 67
+    },
+    {
+      "file": "src/test/resources/htmltests/meta-charset-2.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "d74af0eb81e1701de4a9dd955a63b7206af4fa7fc4c29d24e138b7133164de19",
+      "size": 44
+    },
+    {
+      "file": "src/test/resources/htmltests/meta-charset-3.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "056d153e6358556adc29c222c23650a177c4cd5b85f0307fd829d766c7729b13",
+      "size": 45
+    },
+    {
+      "file": "src/test/resources/htmltests/namespaces.xhtml",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "5b5dca5cf2a895c6184cd7ec8249ead689f09c807b857164b0fa72ccf873eced",
+      "size": 710
+    },
+    {
+      "file": "src/test/resources/htmltests/table-invalid-elements.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "2f01d838b430d22b51ebced8ca7b9fec7347f112c62b38a915aa3098dc37e940",
+      "size": 240
+    },
+    {
+      "file": "src/test/resources/htmltests/table-polymer-template.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "348162f4c14e3148a0f8506536976f43c72a7b564d591ab8f509faaa84fbcedd",
+      "size": 1058
+    },
+    {
+      "file": "src/test/resources/htmltests/test-rss.xml",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "bbf7415266b56e9cd3c2fa048a9b178edbcb9c506b7f62c6af9e2dbabe855d19",
+      "size": 808
+    },
+    {
+      "file": "src/test/resources/htmltests/thumb.jpg",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "19fad9edd6654a7f97145aee8eb6b4d0589f60292c4ce9e4b9a79bd7e084a664",
+      "size": 1052
+    },
+    {
+      "file": "src/test/resources/htmltests/upload-form.html",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "d17c0c4e431dcfa8e95530ade17cd9c13dcfb939f5d9396d10d3b741ef9048a6",
+      "size": 404
+    },
+    {
+      "file": "src/test/resources/htmltests/xml-charset.xml",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "32398dcf44991bb99e4dcd7fb8564b6e78181fc1363b592a423929dc25eb96a5",
+      "size": 63
+    },
+    {
+      "file": "src/test/resources/htmltests/xml-test.xml",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "183228822d5114b13bed55112984701a878f13b62034265d382a5a672f0127f6",
+      "size": 45
+    },
+    {
+      "file": "src/test/resources/htmltests/xwiki-1324.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "a932a56cbf73499fdbe01d1915bb5de495e2da53b1b2d00bcddf7dcf81fe3df1",
+      "size": 11041
+    },
+    {
+      "file": "src/test/resources/htmltests/xwiki-edit.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "7798633735d92907c86dc250bc2a98077767c7947dcade6815408402c5ce1970",
+      "size": 13934
+    },
+    {
+      "file": "src/test/resources/htmltests/yahoo-jp.html.gz",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "3cdaefecdc5595d671b37fb8b59c7e1181e0af2da4c7daa2507f337ff4879991",
+      "size": 24669
+    },
+    {
+      "file": "\u4ea4\u4ed8\u8bf4\u660e.md",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "a3961cdc37acc0ba1b8e2b132cb50e27009074079ded7d26613ce3e74414ac96",
+      "size": 500
+    }
+  ],
+  "scope": {
+    "source_roots": {
+      "business": [
+        "src/main/java"
+      ],
+      "test": [
+        "src/test/java"
+      ],
+      "support": []
+    },
+    "filtered_resources": [
+      {
+        "file": "CHANGES",
+        "classpath_path": "META-INF/CHANGES"
+      },
+      {
+        "file": "LICENSE",
+        "classpath_path": "META-INF/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "classpath_path": "META-INF/README.md"
+      }
+    ],
+    "resource_roots": [
+      "src/test/resources"
+    ],
+    "selected_test_files": [
+      "src/test/java/org/jsoup/select/SelectorTest.java"
+    ],
+    "test_scope": [
+      "src/test/java/org/jsoup/select/SelectorTest.java"
+    ],
+    "build_declarations": [
+      {
+        "file": "pom.xml",
+        "kind": "maven",
+        "properties": {
+          "project.build.sourceEncoding": "UTF-8",
+          "project.basedir": ".",
+          "basedir": "."
+        },
+        "source_version_as_declared": null,
+        "dependencies": [
+          {
+            "groupId": "org.junit.jupiter",
+            "artifactId": "junit-jupiter",
+            "version": "5.9.2",
+            "scope": "test"
+          },
+          {
+            "groupId": "com.google.code.gson",
+            "artifactId": "gson",
+            "version": "2.10.1",
+            "scope": "test"
+          },
+          {
+            "groupId": "org.eclipse.jetty",
+            "artifactId": "jetty-server",
+            "version": "9.4.50.v20221201",
+            "scope": "test"
+          },
+          {
+            "groupId": "org.eclipse.jetty",
+            "artifactId": "jetty-servlet",
+            "version": "9.4.50.v20221201",
+            "scope": "test"
+          },
+          {
+            "groupId": "com.google.code.findbugs",
+            "artifactId": "jsr305",
+            "version": "3.0.2",
+            "scope": "provided"
+          }
+        ],
+        "effective_model": "NOT_EVALUATED"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "kind": "DEPENDENCIES_NOT_RESOLVED",
+      "message": "\u53ea\u4fdd\u5b58\u4f9d\u8d56\u58f0\u660e\uff0c\u672a\u4e0b\u8f7dJAR\u6216\u6c42\u89e3\u8fd0\u884c\u7c7b\u8def\u5f84",
+      "severity": "warning",
+      "file": "pom.xml"
+    },
+    {
+      "kind": "BUILD_PROFILES_NOT_EVALUATED",
+      "message": "\u4fdd\u5b58profile\u58f0\u660e\uff0c\u672a\u6fc0\u6d3b\u6216\u6267\u884c",
+      "severity": "warning",
+      "file": "pom.xml"
+    }
+  ],
+  "origin": "D:\\CodexArtifacts\\four-projects-20261125\\\u6837\u4f8b\u6750\u6599\\01-\u53cc\u8bed\u8bc4\u6d4b\u9879\u76ee\\projects\\01-jsoup\\java",
+  "transformation": "IDENTITY_ONLY"
+}

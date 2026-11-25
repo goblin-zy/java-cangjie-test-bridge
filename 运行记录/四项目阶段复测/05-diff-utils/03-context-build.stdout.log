@@ -1,0 +1,23 @@
+{
+  "status": "INDEX_CREATED",
+  "index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\project_schema.json",
+  "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+  "summary": {
+    "java_files": 29,
+    "types": 34,
+    "members": 200,
+    "references": 976,
+    "resolution_counts": {
+      "resolved_static": 530,
+      "external": 440,
+      "implicit_project_constructor": 6
+    },
+    "test_methods": 18,
+    "selected_test_methods_declared": 5,
+    "internal_nodes": 1073,
+    "recognized_assertions": 39,
+    "assertion_candidates": 0,
+    "compatibility_features": 25
+  },
+  "semantic_problems": 0
+}

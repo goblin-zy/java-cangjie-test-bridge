@@ -1,0 +1,42 @@
+{
+  "status": "PREPARED",
+  "project": "03-jmustache",
+  "selected_methods": [
+    "testSimpleVariable",
+    "testPrimitiveArrayVariable",
+    "testPrimitiveArrayIndexVariable",
+    "testPrimitiveArrayIndexOutOfBoundsVariable",
+    "testOneShotSection",
+    "testListSection"
+  ],
+  "selected_count": 6,
+  "java_returncode": 0,
+  "dependencies": [
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar",
+      "sha256": "004a478c2d40f8f524af27ff579d9459d57beb5c1db8ec1dfb9621cc506f75d3"
+    },
+    {
+      "path": "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\snakeyaml-2.7.jar",
+      "sha256": "2e194eba45a67dee19a4e272f4a04b18de8054e9f598b094382f6dae0b0e4b5e"
+    }
+  ],
+  "context_summary": {
+    "java_files": 16,
+    "types": 141,
+    "members": 635,
+    "references": 2178,
+    "resolution_counts": {
+      "external": 599,
+      "resolved_static": 1548,
+      "implicit_project_constructor": 25,
+      "unresolved": 6
+    },
+    "test_methods": 127,
+    "selected_test_methods_declared": 25,
+    "internal_nodes": 2289,
+    "recognized_assertions": 25,
+    "assertion_candidates": 0,
+    "compatibility_features": 147
+  }
+}

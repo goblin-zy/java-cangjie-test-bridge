@@ -72,7 +72,7 @@ def discover(project, files, explicit):
     project = Path(project).resolve()
     available = set(files)
     roots = {"business": set(), "test": set(), "support": set(), "resource": set()}
-    modules, builds, issues = [], [], []
+    modules, builds, issues, filtered_resources = [], [], [], []
 
     def add_root(role, value, module="", required=False):
         if not value or "${" in value:
@@ -140,9 +140,34 @@ def discover(project, files, explicit):
             for role, expression in [("business", "./build/sourceDirectory"),
                                      ("test", "./build/testSourceDirectory")]:
                 add_root(role, resolve_properties(node.findtext(expression), properties), module)
-            for expression in ["./build/resources/resource/directory", "./build/testResources/testResource/directory"]:
+            for expression in ["./build/resources/resource", "./build/testResources/testResource"]:
                 for element in node.findall(expression):
-                    add_root("resource", resolve_properties(element.text, properties), module)
+                    value = resolve_properties(element.findtext('directory'), properties)
+                    includes = [resolve_properties(x.text, properties) for x in element.findall('./includes/include')]
+                    excludes = [resolve_properties(x.text, properties) for x in element.findall('./excludes/exclude')]
+                    if not includes and not excludes:
+                        add_root('resource', value, module)
+                        continue
+                    # Maven 常把根目录中的许可证复制到 META-INF；不能据此把全部源码当资源。
+                    try:
+                        if not value or '${' in value or any(not x or '${' in x for x in includes + excludes):
+                            raise ValueError('资源目录或筛选条件未确定')
+                        root = safe_path(project, (Path(module) / value).as_posix(), allow_root=True)
+                        target = resolve_properties(element.findtext('targetPath'), properties) or ''
+                        if '${' in target or Path(target).is_absolute() or '..' in Path(target).parts:
+                            raise ValueError('资源目标路径未确定或越界')
+                        selected = []
+                        for candidate in files:
+                            actual = project / candidate
+                            if actual.is_relative_to(root):
+                                relative = actual.relative_to(root).as_posix()
+                                if (not includes or matched(relative, includes)) and not matched(relative, excludes):
+                                    selected.append({'file': candidate, 'classpath_path': (Path(target) / relative).as_posix()})
+                        filtered_resources.extend(selected)
+                        if element.findtext('filtering') == 'true':
+                            issues.append(issue('RESOURCE_FILTERING_NOT_EVALUATED', '保留原字节，未替换资源变量', file=pom))
+                    except ValueError as exc:
+                        issues.append(issue('FILTERED_RESOURCE_NOT_EVALUATED', str(exc), file=pom))
             for element in node.findall("./modules/module"):
                 value = resolve_properties(element.text, properties)
                 try:
@@ -196,11 +221,14 @@ def discover(project, files, explicit):
     if not roots["test"]:
         issues.append(issue("TEST_ROOT_NOT_IDENTIFIED", "请用test_roots或--test-root声明测试来源"))
     return {"roots": {k: sorted(v) for k, v in roots.items()}, "modules": modules,
+            "filtered_resources": filtered_resources,
             "build_declarations": builds}, issues
 
 
 def file_role(relative, layout):
     """资源优先按最长根匹配；显式 '.' 表示整个项目目录。"""
+    if any(entry['file'] == relative for entry in layout.get('filtered_resources', [])):
+        return 'resource'
     matches = [(len(root), role) for role, roots in layout["roots"].items()
                for root in roots if root == "." or relative.startswith(root + "/")]
     if matches:

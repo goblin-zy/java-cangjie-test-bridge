@@ -1,0 +1,4 @@
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\07-levenshtein\java\src\main\java\org\apache\commons\text\translate\EntityArrays.java:79: 错误: 编码 UTF-8 的不可映射字符 (0xC3)
+        initialMap.put("\u00C5", "&Aring;"); // � - uppercase A, ring
+                                                ^
+1 个错误

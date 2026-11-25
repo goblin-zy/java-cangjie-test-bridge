@@ -1,0 +1,25 @@
+{
+  "status": "INDEX_CREATED",
+  "index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-index\\project_schema.json",
+  "index_id": "5903dbd2eb180b1536e8af2a3d59306a4667d98f338a9a02bebe6b0b5e30f6d4",
+  "summary": {
+    "java_files": 201,
+    "types": 280,
+    "members": 3123,
+    "references": 25429,
+    "resolution_counts": {
+      "external": 10614,
+      "resolved_static": 14443,
+      "implicit_project_constructor": 73,
+      "unresolved": 297,
+      "project_declaration_unmapped": 2
+    },
+    "test_methods": 1177,
+    "selected_test_methods_declared": 9,
+    "internal_nodes": 20333,
+    "recognized_assertions": 3031,
+    "assertion_candidates": 48,
+    "compatibility_features": 703
+  },
+  "semantic_problems": 1
+}

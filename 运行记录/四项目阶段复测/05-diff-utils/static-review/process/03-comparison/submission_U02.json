@@ -1,0 +1,64 @@
+{
+  "id": "U02",
+  "packet_hash": "60265740b15eb2e33972726bef40f66d9de93f7cc0a41698f23bc42a9b9f4832",
+  "checks": [
+    {
+      "kind": "source",
+      "topic": "原输入、调用与全部检查",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J017",
+        "J018",
+        "J019",
+        "J020",
+        "J021",
+        "J022",
+        "J023",
+        "J024"
+      ],
+      "cangjie": [
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "reason": "保留ddd/fff/ggg到ggg的输入；五项检查分别对应非空Patch、单个差异、最终类DeleteDelta及位置0的原/新Chunk内容。"
+    },
+    {
+      "kind": "interface",
+      "topic": "本轮目标接口前提",
+      "status": "在所列前提和范围内一致",
+      "java": [
+        "J017",
+        "J018",
+        "J019",
+        "J020",
+        "J021",
+        "J022",
+        "J023",
+        "J024"
+      ],
+      "cangjie": [
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "reason": "基于当前业务快照和明确的适配条件。",
+      "contract_reference": {
+        "quote": "testDiff_Delete：保留ddd/fff/ggg到ggg的输入；五项检查分别对应非空Patch、单个差异、最终类DeleteDelta及位置0的原/新Chunk内容。",
+        "assumption": "只对本轮所选输入及未修改的实际业务成立。"
+      }
+    }
+  ]
+}

@@ -21,6 +21,35 @@ TRANSLATIONS = SRC.parents[2] / '样例材料/静态验证钱包/Translation-all
 
 
 class WalletWorkflowTests(unittest.TestCase):
+    def test_configured_selectors_limit_source_scope(self):
+        native = self.run_dir.parent / 'selector-input'
+        shutil.copytree(TRANSLATIONS / 'output/points-wallet-coverage', native)
+        config = read(native / 'translation_config.json')
+        config['project_root'] = str(TRANSLATIONS / '01-projects/points-wallet')
+        config['execution_classes'] = ['wallet.PointsWalletTest']
+        config['selected_test_methods'] = ['wallet.PointsWalletTest#rejectsOverspending()']
+        save(native / 'translation_config.json', config)
+        aligned = prepare(native, 'whole', self.run_dir.parent / 'limited', None, [])
+        self.assertEqual([u['name'] for u in aligned['units']], ['rejectsOverspending'])
+
+    def test_cangjie_business_materials_exclude_reference_tests(self):
+        native = self.run_dir.parent / 'business-input'
+        shutil.copytree(TRANSLATIONS / 'output/points-wallet-coverage', native)
+        business = (self.run_dir.parent / 'business').resolve()
+        (business / 'test').mkdir(parents=True)
+        (business / 'model.cj').write_text('package wallet\nclass Wallet {}\n', encoding='utf-8')
+        (business / 'hidden_test.cj').write_text('package wallet\n', encoding='utf-8')
+        (business / 'test/reference.cj').write_text('package wallet\n', encoding='utf-8')
+        config = read(native / 'translation_config.json')
+        config['project_root'] = str(TRANSLATIONS / '01-projects/points-wallet')
+        config['side_sources'] = {'cangjie': [str(business)]}
+        save(native / 'translation_config.json', config)
+        aligned = prepare(native, 'whole', self.run_dir.parent / 'side-scope', None, [])
+        materials = aligned['side_inputs']['cangjie']
+        self.assertIn(str(business / 'model.cj'), materials)
+        self.assertNotIn(str(business / 'hidden_test.cj'), materials)
+        self.assertNotIn(str(business / 'test/reference.cj'), materials)
+
     def setUp(self):
         temp = tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)

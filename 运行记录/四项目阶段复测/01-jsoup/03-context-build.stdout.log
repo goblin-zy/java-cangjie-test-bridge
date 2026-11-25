@@ -1,0 +1,25 @@
+{
+  "status": "INDEX_CREATED",
+  "index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\01-jsoup\\context-index\\project_schema.json",
+  "index_id": "79054a97536200f2eb01aa405ccc1e16416143f9511db363466b425481cca890",
+  "summary": {
+    "java_files": 137,
+    "types": 338,
+    "members": 3461,
+    "references": 22568,
+    "resolution_counts": {
+      "resolved_static": 15251,
+      "external": 6768,
+      "implicit_project_constructor": 70,
+      "project_declaration_unmapped": 4,
+      "unresolved": 475
+    },
+    "test_methods": 1067,
+    "selected_test_methods_declared": 84,
+    "internal_nodes": 20126,
+    "recognized_assertions": 3406,
+    "assertion_candidates": 5,
+    "compatibility_features": 449
+  },
+  "semantic_problems": 0
+}

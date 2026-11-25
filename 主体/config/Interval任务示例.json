@@ -99,7 +99,8 @@
       "skeleton_bundle_id": "skeleton_1",
       "output_files": [
         "interval_bridge_test.cj"
-      ]
+      ],
+      "selected_test_methods": []
     }
   ],
   "allowed_target_source_roots": [

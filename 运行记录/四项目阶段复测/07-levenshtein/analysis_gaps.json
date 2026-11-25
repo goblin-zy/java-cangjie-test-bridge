@@ -1,0 +1,7 @@
+[
+  {
+    "method": "testGetLevenshteinDistance_StringString",
+    "direct_recognized_checks": 0,
+    "reason": "AssertJ链式assertThat/isEqualTo未纳入当前断言识别表"
+  }
+]

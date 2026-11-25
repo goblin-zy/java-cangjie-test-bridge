@@ -1,0 +1,307 @@
+[
+  {
+    "label": "02-extract",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "-cp",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\extractor-classes",
+      "JavaTestSkeletonExtractor",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\java\\src\\test\\java\\diffutils\\DiffTest.java",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\java-extraction"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.469
+  },
+  {
+    "label": "03-context-build",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\上下文工具\\context_tool.py",
+      "build",
+      "--project",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\java",
+      "--test-scope",
+      "src/test/java/diffutils/DiffTest.java",
+      "--java-members",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\java-extraction\\members.json",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index",
+      "--java",
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "--javac",
+      "C:/Program Files/Java/jdk-17/bin/javac.exe",
+      "--classpath",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.313
+  },
+  {
+    "label": "04-context-suite",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\上下文工具\\context_tool.py",
+      "suite",
+      "--index",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\project_schema.json",
+      "--target",
+      "diffutils.DiffTest",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-suite"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.609
+  },
+  {
+    "label": "05-java-compile",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/javac.exe",
+      "-J-Dfile.encoding=UTF-8",
+      "@D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\javac.args"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.234
+  },
+  {
+    "label": "06-java-selected-tests",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "-jar",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar",
+      "--class-path",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\java-test-classes",
+      "--disable-ansi-colors",
+      "--details",
+      "summary",
+      "--reports-dir",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\java-results",
+      "--select-method",
+      "diffutils.DiffTest#testDiff_Insert",
+      "--select-method",
+      "diffutils.DiffTest#testDiff_Delete",
+      "--select-method",
+      "diffutils.DiffTest#testDiff_Change"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.578
+  },
+  {
+    "label": "20-cangjie-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\cangjie-build\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\cangjie-build\\test.exe",
+      "--diagnostic-format",
+      "noColor"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.75
+  },
+  {
+    "label": "21-cangjie-tests",
+    "command": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\cangjie-build\\test.exe"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.89
+  },
+  {
+    "label": "10-checker-prepare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_skeleton_check.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\whole_task.json",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\checker-input"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.109
+  },
+  {
+    "label": "11-checker",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\仓颉骨架翻译器\\check_skeleton.py",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\checker-input",
+      "--target-source",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\05-diff-utils\\cangjie\\src",
+      "--report",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\skeleton_check.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.125
+  },
+  {
+    "label": "12-static-prepare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_static_validation.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\whole_task.json",
+      "--translated",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\translation\\translated",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.172
+  },
+  {
+    "label": "13-static-init",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input",
+      "--route",
+      "whole",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review",
+      "--contract",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\target_contract.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.344
+  },
+  {
+    "label": "14-annotate-java",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review",
+      "--side",
+      "java"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.25
+  },
+  {
+    "label": "14-annotate-cangjie",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review",
+      "--side",
+      "cangjie"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.171
+  },
+  {
+    "label": "15-compare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "compare",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.141
+  },
+  {
+    "label": "16-submit-U01",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review\\process\\03-comparison\\submission_U01.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.125
+  },
+  {
+    "label": "16-submit-U02",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review\\process\\03-comparison\\submission_U02.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.141
+  },
+  {
+    "label": "16-submit-U03",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "submit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review\\process\\03-comparison\\submission_U03.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.14
+  },
+  {
+    "label": "17-audit",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "audit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.188
+  },
+  {
+    "label": "18-deliver",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "deliver",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review",
+      "--decision",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review\\process\\04-audit\\class_review.json",
+      "--narrative",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-review\\process\\05-report\\narrative.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.25
+  },
+  {
+    "label": "30-annotated-cangjie-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\cangjie-build\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\cangjie-build\\test.exe",
+      "--diagnostic-format",
+      "noColor"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.656
+  },
+  {
+    "label": "31-annotated-cangjie-tests",
+    "command": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\cangjie-build\\test.exe"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.094
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+    "source_location": {
+      "file": "original/DiffTest.java",
+      "start_offset_utf16": 237,
+      "end_offset_utf16_exclusive": 786,
+      "start_line": 13,
+      "start_column": 5,
+      "end_line": 21,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DiffTest.java",
+      "start_offset_utf16": 237,
+      "end_offset_utf16_exclusive": 347,
+      "start_line": 13,
+      "start_column": 5,
+      "end_line": 15,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "DiffTranslationTest",
+    "target_member": "testDiff_Insert",
+    "target_signature": "func testDiff_Insert(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P1",
+    "adaptation": "保留hhh到hhh/jjj/kkk的输入；五项检查分别对应非空Patch、单个差异、最终类InsertDelta及位置1的原/新Chunk内容。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+    "source_location": {
+      "file": "original/DiffTest.java",
+      "start_offset_utf16": 794,
+      "end_offset_utf16_exclusive": 1343,
+      "start_line": 23,
+      "start_column": 5,
+      "end_line": 31,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DiffTest.java",
+      "start_offset_utf16": 355,
+      "end_offset_utf16_exclusive": 465,
+      "start_line": 17,
+      "start_column": 5,
+      "end_line": 19,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "DiffTranslationTest",
+    "target_member": "testDiff_Delete",
+    "target_signature": "func testDiff_Delete(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P2",
+    "adaptation": "保留ddd/fff/ggg到ggg的输入；五项检查分别对应非空Patch、单个差异、最终类DeleteDelta及位置0的原/新Chunk内容。"
+  },
+  {
+    "source_members_file": "members.json",
+    "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Change()",
+    "source_location": {
+      "file": "original/DiffTest.java",
+      "start_offset_utf16": 1351,
+      "end_offset_utf16_exclusive": 2019,
+      "start_line": 33,
+      "start_column": 5,
+      "end_line": 44,
+      "end_column": 5
+    },
+    "java_skeleton_location": {
+      "file": "skeleton/DiffTest.java",
+      "start_offset_utf16": 473,
+      "end_offset_utf16_exclusive": 583,
+      "start_line": 21,
+      "start_column": 5,
+      "end_line": 23,
+      "end_column": 5
+    },
+    "target_file": "translated_test.cj",
+    "target_class": "DiffTranslationTest",
+    "target_member": "testDiff_Change",
+    "target_signature": "func testDiff_Change(): Unit",
+    "status": "mapped",
+    "fill_slot": "body",
+    "slot_id": "P3",
+    "adaptation": "保留aaa/bbb/ccc到aaa/zzz/ccc的输入；五项检查分别对应非空Patch、单个差异、最终类ChangeDelta及位置1的bbb到zzz的Chunk。"
+  }
+]

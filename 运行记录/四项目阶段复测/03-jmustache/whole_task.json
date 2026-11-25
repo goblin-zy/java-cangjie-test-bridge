@@ -1,0 +1,156 @@
+{
+  "schema_version": "whole-translation-task-0.4",
+  "prompt_version": "第二版",
+  "is_template": false,
+  "task_id": "03-jmustache-paired",
+  "mode": "whole",
+  "path_base": "CONFIG_DIRECTORY",
+  "project_root": "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache\\java",
+  "output_dir": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\translation",
+  "python_executable": "python",
+  "versions": {
+    "java": null,
+    "junit": null,
+    "cangjie": null,
+    "target_test_framework": null
+  },
+  "context": {
+    "input_mode": "PROJECT_SOURCE",
+    "tool_version": "java-test-context-second-edition",
+    "index_schema": "java-test-context-2.1",
+    "tool": null,
+    "index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-index\\project_schema.json",
+    "source_manifest": null,
+    "build_output": null,
+    "source_roots": {
+      "business": null,
+      "test": null,
+      "support": null
+    },
+    "resource_roots": null,
+    "test_scope": [],
+    "exclude": [],
+    "classpath": [],
+    "budgets": {
+      "max_depth": 6,
+      "max_members": 200,
+      "max_chars": 30000
+    },
+    "preferred_view": "compact",
+    "suites": [
+      {
+        "id": "suite_1",
+        "source_type": "com.samskivert.mustache.MustacheTest",
+        "output_dir": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite",
+        "tasks_file": null,
+        "agent_context": null,
+        "full_context": null,
+        "shared_context": null
+      }
+    ],
+    "internal_analysis": {
+      "read_summary_first": true,
+      "query_member_on_demand": true,
+      "preserve_assertion_candidates": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED"
+    },
+    "java_members": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-extraction\\members.json"
+    ]
+  },
+  "java_extractions": [
+    {
+      "id": "source_1",
+      "extraction_root": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-extraction",
+      "members_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-extraction\\members.json",
+      "report_file": null,
+      "source_path_map": {}
+    }
+  ],
+  "skeleton_bundles": [
+    {
+      "id": "skeleton_1",
+      "skeleton_root": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\skeleton",
+      "mapping_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\skeleton\\member_mapping.json",
+      "source_members_base": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-extraction",
+      "target_files_base": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\skeleton",
+      "translation_report": null,
+      "diagnostics": null
+    }
+  ],
+  "rules": {
+    "json": null,
+    "markdown": null
+  },
+  "project_materials": {
+    "json": null,
+    "markdown": null,
+    "scan_index": null,
+    "scan_record": null,
+    "tool_root": null
+  },
+  "targets": [
+    {
+      "source_type": "com.samskivert.mustache.MustacheTest",
+      "source_file": "src/test/java/com/samskivert/mustache/MustacheTest.java",
+      "context_suite_id": "suite_1",
+      "java_extraction_id": "source_1",
+      "skeleton_bundle_id": "skeleton_1",
+      "output_files": [
+        "translated_test.cj"
+      ],
+      "selected_test_methods": [
+        "com.samskivert.mustache.MustacheTest#testSimpleVariable()",
+        "com.samskivert.mustache.MustacheTest#testPrimitiveArrayVariable()",
+        "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexVariable()",
+        "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexOutOfBoundsVariable()",
+        "com.samskivert.mustache.MustacheTest#testOneShotSection()",
+        "com.samskivert.mustache.MustacheTest#testListSection()"
+      ]
+    }
+  ],
+  "allowed_target_source_roots": [
+    "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache\\cangjie\\src"
+  ],
+  "excluded_read_paths": [],
+  "optional_coverage_report": null,
+  "preparation_policy": {
+    "build_missing_context_from_project": true,
+    "export_missing_context_suites": true,
+    "extract_missing_java_facts_with_delivered_tool": true,
+    "generate_new_project_materials": false,
+    "generate_new_cangjie_skeleton": false
+  },
+  "constraints": {
+    "write_new_output_only": true,
+    "allow_necessary_test_helpers_in_output": true,
+    "allow_reference_tests": false,
+    "modify_target_business": false,
+    "collect_coverage": false,
+    "compile_or_run_projects": true,
+    "call_model_api_or_server": false,
+    "rewrite_java_source": false,
+    "generate_executable_test_prefixes": false
+  },
+  "skeleton_structure_check": {
+    "adapter": "../集成适配/prepare_skeleton_check.py",
+    "checker": "../仓颉骨架翻译器/check_skeleton.py",
+    "stage": "BEFORE_WHOLE_FILL",
+    "bundle_id": "skeleton_1",
+    "output_dir": null,
+    "report": null,
+    "native_config_generated_by_adapter": true
+  },
+  "static_validation": {
+    "adapter": "../集成适配/prepare_static_validation.py",
+    "tool": "../静态验证/src/verify_tool.py",
+    "prompt": "../静态验证/src/prompts/验证总控提示词.md",
+    "stage": "AFTER_FINAL_WHOLE_TRANSLATION",
+    "translated_dir": null,
+    "prepared_dir": null,
+    "run_dir": null,
+    "contract": null,
+    "enabled_by_current_task": false
+  }
+}

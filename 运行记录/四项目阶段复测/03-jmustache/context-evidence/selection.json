@@ -1,0 +1,151 @@
+{
+  "kind": "DERIVED_SELECTED_CONTEXT_EVIDENCE_NOT_FULL_SUITE",
+  "source_tasks_sha256": "0ad96a47662a895c4fb8d7d2855f74932143f5cc582b9bf35b11ff1ec5ca8a9b",
+  "index_id": "bef4775aa860061b7a6ef261964d14b1f18bb9e18bcf33c329bab3a5143ddc9b",
+  "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+  "shared": {
+    "file": "shared.json",
+    "sha256": "39c9a4169cab889db18a1e20cf74d16f16dde0e529b04d4384063c9aa6dea293"
+  },
+  "selected_tests": [
+    {
+      "test_key": "d3c8a36cd5bfb5148574744c0b4d5081b4bd1b583f23becac30c83bb7761b1d7",
+      "display_id": "com.samskivert.mustache.SharedTests#testSimpleVariable()",
+      "file": "tests/testSimpleVariable-d3c8a36cd5bf.json",
+      "test_invocations": [
+        {
+          "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testSimpleVariable()",
+          "declaring_class": "com.samskivert.mustache.SharedTests",
+          "execution_class": "com.samskivert.mustache.MustacheTest",
+          "selector": "com.samskivert.mustache.MustacheTest#testSimpleVariable()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "d3c8a36cd5bfb5148574744c0b4d5081b4bd1b583f23becac30c83bb7761b1d7",
+          "execution_type_key": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+          "declaring_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "com.samskivert.mustache.MustacheTest#testSimpleVariable()"
+        }
+      ],
+      "sha256": "f1a2ef97766b8f5644bba832266425b608a5d8dd3cc2235b057e566bdb579fef",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "02cf364c46ed9b90c566c1a13bb3f8af88b37ffd94449ab543199373a3e8dc03",
+      "display_id": "com.samskivert.mustache.SharedTests#testPrimitiveArrayVariable()",
+      "file": "tests/testPrimitiveArrayVariable-02cf364c46ed.json",
+      "test_invocations": [
+        {
+          "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayVariable()",
+          "declaring_class": "com.samskivert.mustache.SharedTests",
+          "execution_class": "com.samskivert.mustache.MustacheTest",
+          "selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayVariable()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "02cf364c46ed9b90c566c1a13bb3f8af88b37ffd94449ab543199373a3e8dc03",
+          "execution_type_key": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+          "declaring_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayVariable()"
+        }
+      ],
+      "sha256": "a4f1f415b22c86c5c312d8dbf3697800f62cb3cbb76e52e02f99ab90aef6a4c5",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+      "display_id": "com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+      "file": "tests/testPrimitiveArrayIndexVariable-7d027933d04f.json",
+      "test_invocations": [
+        {
+          "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexVariable()",
+          "declaring_class": "com.samskivert.mustache.SharedTests",
+          "execution_class": "com.samskivert.mustache.MustacheTest",
+          "selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexVariable()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "7d027933d04f53d57a747f5f6e6f6068b906ec2e09257b8bfd39181095013e06",
+          "execution_type_key": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+          "declaring_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexVariable()"
+        }
+      ],
+      "sha256": "de9f84c56011db222691a2009afe38b90833201ccd01f6bd03b75ce2815f665d",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "94cc4a0251358fb9f963ef9485ba31909b18fb2f3b04dbe6b3c376fa143be2fb",
+      "display_id": "com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexOutOfBoundsVariable()",
+      "file": "tests/testPrimitiveArrayIndexOutOfBoundsVariable-94cc4a025135.json",
+      "test_invocations": [
+        {
+          "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testPrimitiveArrayIndexOutOfBoundsVariable()",
+          "declaring_class": "com.samskivert.mustache.SharedTests",
+          "execution_class": "com.samskivert.mustache.MustacheTest",
+          "selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexOutOfBoundsVariable()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "94cc4a0251358fb9f963ef9485ba31909b18fb2f3b04dbe6b3c376fa143be2fb",
+          "execution_type_key": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+          "declaring_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexOutOfBoundsVariable()"
+        }
+      ],
+      "sha256": "efe6a38627cbbe3221f1fffded6b82840b2f2cceecbb6db62e2b30be7e20c6e2",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "c076f07027c8c157340d45d9da03e5b24f9f03f3a499bcd36897a83981fe322c",
+      "display_id": "com.samskivert.mustache.SharedTests#testOneShotSection()",
+      "file": "tests/testOneShotSection-c076f07027c8.json",
+      "test_invocations": [
+        {
+          "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testOneShotSection()",
+          "declaring_class": "com.samskivert.mustache.SharedTests",
+          "execution_class": "com.samskivert.mustache.MustacheTest",
+          "selector": "com.samskivert.mustache.MustacheTest#testOneShotSection()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "c076f07027c8c157340d45d9da03e5b24f9f03f3a499bcd36897a83981fe322c",
+          "execution_type_key": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+          "declaring_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "com.samskivert.mustache.MustacheTest#testOneShotSection()"
+        }
+      ],
+      "sha256": "8a409c9ced9afccdb927a9c4a80c3a44cb826f6ebb2f2c3f787e2d90fe67a040",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "6cdc26fd66e14cb90fffadd4a250e1a7a3b168cacabe5a892f3c38939ced35b7",
+      "display_id": "com.samskivert.mustache.SharedTests#testListSection()",
+      "file": "tests/testListSection-6cdc26fd66e1.json",
+      "test_invocations": [
+        {
+          "source_member_id": "com/samskivert/mustache/SharedTests.java::com.samskivert.mustache.SharedTests#testListSection()",
+          "declaring_class": "com.samskivert.mustache.SharedTests",
+          "execution_class": "com.samskivert.mustache.MustacheTest",
+          "selector": "com.samskivert.mustache.MustacheTest#testListSection()",
+          "framework": "junit4",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "6cdc26fd66e14cb90fffadd4a250e1a7a3b168cacabe5a892f3c38939ced35b7",
+          "execution_type_key": "991f6d792fe7505fce1bd5159de670e0b2ed0f005f28ccfaaa2906928abaf537",
+          "declaring_type_key": "2227714f529b8c957c4bbe9a1acffc21743fd6154a25ac3d57b0e42920fad20e",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "com.samskivert.mustache.MustacheTest#testListSection()"
+        }
+      ],
+      "sha256": "983be97d083196e3a5796cf2083d439d451474c0077eb7214b70ed1a239f94de",
+      "unresolved": 0,
+      "required_not_included": 0
+    }
+  ],
+  "full_index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-index\\project_schema.json"
+}

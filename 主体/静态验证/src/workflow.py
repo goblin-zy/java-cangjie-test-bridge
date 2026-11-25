@@ -90,7 +90,7 @@ def safe_starts(lines, side):
     literal = ""
     allowed = set()
     for n, line in enumerate(lines, 1):
-        require(not re.search(r'\\u+[0-9a-fA-F]{4}|#["\']|["\']#', line),
+        require(not re.search(r'\\u+[0-9a-fA-F]{4}', line),
                 "包含当前版本不能安全插注释的转义或原始字符串，请缩小文件范围")
         if not block and not literal:
             allowed.add(n)
@@ -118,6 +118,9 @@ def safe_starts(lines, side):
             elif line.startswith("/*", i):
                 block = 1
                 i += 2
+            elif side == 'cangjie' and re.match(r'#+["\']', line[i:]):
+                # 原始字面量只在字符串/注释外识别；普通 "#id" 是合法 CSS 字符串。
+                raise ValueError('包含当前版本不能安全插注释的原始字符串，请缩小文件范围')
             elif line[i] in ('"', "'"):
                 literal = line[i] * 3 if line.startswith(line[i] * 3, i) else line[i]
                 i += len(literal)

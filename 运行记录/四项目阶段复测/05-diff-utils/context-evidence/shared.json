@@ -1,0 +1,159 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+  "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "PARENT_MODEL_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [],
+  "profile": "whole",
+  "scope": "shared",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+  "selected_tests": [],
+  "test_invocations": [],
+  "imports": [
+    {
+      "file": "src/test/java/diffutils/DiffTest.java",
+      "package": "diffutils",
+      "imports": [
+        {
+          "start": 22,
+          "end": 39,
+          "name": "difflib.*",
+          "static": false
+        },
+        {
+          "start": 41,
+          "end": 73,
+          "name": "junit.framework.TestCase",
+          "static": false
+        },
+        {
+          "start": 77,
+          "end": 104,
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "start": 106,
+          "end": 130,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 132,
+          "end": 161,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 163,
+          "end": 185,
+          "name": "java.util.List",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "display_id": "diffutils.DiffTest",
+      "content_kind": "signature",
+      "content": "public class DiffTest extends TestCase {",
+      "content_chars": 40,
+      "source": {
+        "file": "src/test/java/diffutils/DiffTest.java",
+        "sha256": "b2c3237aa7ab840c7fcd4111442c64217064ae28c2622c8f53c503bec53b4ed5",
+        "start_line": 11,
+        "end_line": 11,
+        "start_offset_utf16": 189,
+        "end_offset_utf16_exclusive": 229
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "SELECTED_TEST_TYPE"
+    }
+  ],
+  "dependency_edges": [],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 40,
+    "visited_members": 0
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ]
+}

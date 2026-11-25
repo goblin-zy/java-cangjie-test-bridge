@@ -5,10 +5,21 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from locating import resolve
-from workflow import alignment, folder, put, read, save, sha, stage
+from alignment import declarations
+from workflow import alignment, folder, put, read, save, sha, stage, safe_starts
 
 
 class ResolveTests(unittest.TestCase):
+    def test_css_hash_strings_are_not_cangjie_raw_literals(self):
+        for side in ['java', 'cangjie']:
+            self.assertEqual(safe_starts(['let query = "#foo"\n'], side), {1})
+        with self.assertRaisesRegex(ValueError, '原始字符串'):
+            safe_starts(['let raw = #"text"#\n'], 'cangjie')
+
+    def test_same_line_java_annotation_keeps_declaration_range(self):
+        code = '@org.junit.Test public void check() {\n    assertTrue(true);\n}\n'
+        self.assertEqual(declarations(code, 'check', 'java'), [[1, 3]])
+
     def setUp(self):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)

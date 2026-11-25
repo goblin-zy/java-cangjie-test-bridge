@@ -1,0 +1,2058 @@
+warning: class 'Matcher' is deprecated. APIs in Matcher have been moved to Regex.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:200:47:
+    | 
+200 |         if (syntaxEnum == Syntax.xmlSyntax && Matcher(xmlKeyValid, keyNew).fullMatch().isNone()) { /*cjlint-ignore !G.EXP.03 */
+    |                                               ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:201:36:
+    | 
+201 |             keyNew = xmlKeyReplace.matcher(keyNew).replaceAll("")
+    |                                    ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'Matcher' is deprecated. APIs in Matcher have been moved to Regex.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:202:20:
+    | 
+202 |             match (Matcher(xmlKeyValid, keyNew).fullMatch()) {
+    |                    ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1323:47:
+     | 
+1323 |         var names: Array<String> = classSplit.matcher(className()).split()
+     |                                               ^^^^^^^ deprecated
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:260:24:
+    | 
+260 |         match (pattern.matcher(element.attr(key)).find()) {
+    |                        ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'Matcher' is deprecated. APIs in Matcher have been moved to Regex.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:776:16:
+    | 
+776 |         var m: Matcher = pattern.matcher(element.text())
+    |                ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:776:34:
+    | 
+776 |         var m: Matcher = pattern.matcher(element.text())
+    |                                  ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'Matcher' is deprecated. APIs in Matcher have been moved to Regex.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:799:16:
+    | 
+799 |         var m: Matcher = pattern.matcher(element.ownText())
+    |                ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:799:34:
+    | 
+799 |         var m: Matcher = pattern.matcher(element.ownText())
+    |                                  ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'Matcher' is deprecated. APIs in Matcher have been moved to Regex.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:822:16:
+    | 
+822 |         var m: Matcher = pattern.matcher(element.wholeText())
+    |                ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:822:34:
+    | 
+822 |         var m: Matcher = pattern.matcher(element.wholeText())
+    |                                  ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'Matcher' is deprecated. APIs in Matcher have been moved to Regex.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:845:16:
+    | 
+845 |         var m: Matcher = pattern.matcher(element.wholeOwnText())
+    |                ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\evaluator.cj:845:34:
+    | 
+845 |         var m: Matcher = pattern.matcher(element.wholeOwnText())
+    |                                  ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: constructor 'init' is deprecated. Use member funtion `public Regex(let pattern: String, flags: Array<RegexFlag>)` instead.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:304:33:
+    | 
+304 |     private static let NTH_AB = Regex("(([+]|[-])?(\\d+)?)n(\\s*([+]|[-])?\\s*\\d+)?", RegexOption().ignoreCase())
+    |                                 ^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'RegexOption' is deprecated. Use `public enum RegexFlag` instead.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:304:88:
+    | 
+304 |     private static let NTH_AB = Regex("(([+]|[-])?(\\d+)?)n(\\s*([+]|[-])?\\s*\\d+)?", RegexOption().ignoreCase())
+    |                                                                                        ^^^^^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:310:38:
+    | 
+310 |         let mAB: ?MatchData = NTH_AB.matcher(argS).find()
+    |                                      ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:311:36:
+    | 
+311 |         let mB: ?MatchData = NTH_B.matcher(argS).find()
+    |                                    ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'groupNumber' is deprecated. Use member function `public func groupCount(): Int64` instead.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:318:24:
+    | 
+318 |             (if (group.groupNumber() >= 3) {
+    |                        ^^^^^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:319:41:
+    | 
+319 |                     Int64.parse(REPLACE.matcher(group.matchString(1)).replace(""))
+    |                                         ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'groupNumber' is deprecated. Use member function `public func groupCount(): Int64` instead.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:322:30:
+    | 
+322 |                 }, if (group.groupNumber() >= 4) {
+    |                              ^^^^^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:323:41:
+    | 
+323 |                     Int64.parse(REPLACE.matcher(group.matchString(4)).replace(""))
+    |                                         ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\query_parser.cj:329:37:
+    | 
+329 |             (0, Int64.parse(REPLACE.matcher(group.matchString(0)).replace("")))
+    |                                     ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'ReentrantMutex' is deprecated. Use `public class Mutex` instead.
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:50:29:
+   | 
+50 |     private static let mtx: ReentrantMutex = ReentrantMutex()
+   |                             ^^^^^^^^^^^^^^ deprecated
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: class 'ReentrantMutex' is deprecated. Use `public class Mutex` instead.
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:50:46:
+   | 
+50 |     private static let mtx: ReentrantMutex = ReentrantMutex()
+   |                                              ^^^^^^^^^^^^^^ deprecated
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:184:29:
+    | 
+184 |             if (numberRegex.matcher(char.toString()).find().isNone()) {
+    |                             ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: function 'matcher' is deprecated. `Matcher` has been marked as deprecated.
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:288:38:
+    | 
+288 |         return match (validUriScheme.matcher(relUrl).find()) {
+    |                                      ^^^^^^^ deprecated
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff deprecated`
+
+warning: unused function:'get'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\token_queue.cj:13:9:
+   | 
+13 |           get() {
+   |  _________^
+14 | |             queueStr()
+15 | |         }
+   | |_________^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parse'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\html4cj.cj:19:5:
+   | 
+19 |       public static func parse(html: String, baseUri: String): Document {
+   |  _____^
+20 | |         return Parser.parse(html, baseUri)
+21 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'elements'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\form_element.cj:28:5:
+   | 
+28 |       public func elements(): Elements {
+   |  _____^
+29 | |         return elementArr
+30 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getErrorMessage'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parse_error.cj:30:5:
+   | 
+30 |       public func getErrorMessage(): String {
+   |  _____^
+31 | |         return errorMsg
+32 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parse'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\html4cj.cj:31:5:
+   | 
+31 |       public static func parse(html: String, baseUri: String, parser: Parser): Document {
+   |  _____^
+32 | |         return parser.parseInput(html, baseUri)
+33 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setData'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\comment.cj:32:5:
+   | 
+32 |       public func setData(data: String): Comment {
+   |  _____^
+33 | |         coreValue(data)
+   | | ...
+35 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'newInstance'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parser.cj:36:5:
+   | 
+36 |       public func newInstance(): Parser {
+   |  _____^
+37 | |         return Parser(this)
+38 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getPosition'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parse_error.cj:38:5:
+   | 
+38 |       public func getPosition(): Int64 {
+   |  _____^
+39 | |         return pos
+40 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setWholeData'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\data_node.cj:38:5:
+   | 
+38 |       public func setWholeData(data: String): DataNode {
+   |  _____^
+39 | |         coreValue(data)
+   | | ...
+41 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'start'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\src_range.cj:39:5:
+   | 
+39 |       public func start(): SrcPosition {
+   |  _____^
+40 | |         return startPosition
+41 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getWholeDeclaration'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\xml_declaration.cj:41:5:
+   | 
+41 |       public func getWholeDeclaration(): String {
+   |  _____^
+42 | |         var sb: StringBuilder = StringUtil.borrowBuilder()
+   | | ...
+45 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parse'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\html4cj.cj:42:5:
+   | 
+42 |       public static func parse(html: String, parser: Parser): Document {
+   |  _____^
+43 | |         return parser.parseInput(html, "")
+44 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'get'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attributes.cj:44:9:
+   | 
+44 |           get() {
+   |  _________^
+45 | |             var len: Int64 = 0
+   | | ...
+52 | |         }
+   | |_________^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getCursorPos'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parse_error.cj:46:5:
+   | 
+46 |       public func getCursorPos(): String {
+   |  _____^
+47 | |         return cursorPos
+48 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'end'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\src_range.cj:48:5:
+   | 
+48 |       public func end(): SrcPosition {
+   |  _____^
+49 | |         return endPosition
+50 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'addFirst'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\token_queue.cj:49:5:
+   | 
+49 |       public func addFirst(seq: String): Unit {
+   |  _____^
+50 | |         // not very performant, but an edge case
+   | | ...
+53 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'clone'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:49:5:
+   | 
+49 |       public func clone(): Elements {
+   |  _____^
+50 | |         let clone: Elements = Elements(elementsValue.size)
+   | | ...
+55 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'isTracked'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\src_range.cj:57:5:
+   | 
+57 |       public func isTracked(): Bool {
+   |  _____^
+58 | |         return this != Untracked
+59 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'location'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:57:5:
+   | 
+57 |       public func location(): String {
+   |  _____^
+58 | |         return locationVlaue
+59 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getByName'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\entities.cj:57:5:
+   | 
+57 |       public static func getByName(name: String): String {
+   |  _____^
+58 | |         var val: ?String = multipoints.get(name)
+   | | ...
+67 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'get'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parse_error.cj:61:9:
+   | 
+61 |           get() {
+   |  _________^
+62 | |             arr.size
+63 | |         }
+   | |_________^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseBodyFragment'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\html4cj.cj:63:5:
+   | 
+63 |       public static func parseBodyFragment(bodyHtml: String, baseUri: String): Document {
+   |  _____^
+64 | |         return Parser.parseBodyFragment(bodyHtml, baseUri)
+65 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'name'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document_type.cj:63:5:
+   | 
+63 |       public func name(): String {
+   |  _____^
+64 | |         return attr(NAME)
+65 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'attr'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:64:5:
+   | 
+64 |       public func attr(attributeKey: String): String {
+   |  _____^
+65 | |         for (element in elementsValue) {
+   | | ...
+71 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasChildNodes'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:66:5:
+   | 
+66 |       protected func hasChildNodes(): Bool {
+   |  _____^
+67 | |         return childNodesValue != EmptyNodes
+68 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'documentType'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:66:5:
+   | 
+66 |       public func documentType(): ?DocumentType {
+   |  _____^
+67 | |         for (node in childNodesValue) {
+   | | ...
+75 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'splitText'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\text_node.cj:68:5:
+   | 
+68 |       public func splitText(offset: Int64): TextNode {
+   |  _____^
+69 | |         var textStr: String = coreValue()
+   | | ...
+80 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setTrackErrors'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parser.cj:70:5:
+   | 
+70 |       public func setTrackErrors(maxErrors: Int64): Parser {
+   |  _____^
+71 | |         errors = if (maxErrors > 0) {
+   | | ...
+77 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'publicId'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document_type.cj:72:5:
+   | 
+72 |       public func publicId(): String {
+   |  _____^
+73 | |         return attr(PUBLIC_ID)
+74 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseBodyFragment'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\html4cj.cj:73:5:
+   | 
+73 |       public static func parseBodyFragment(bodyHtml: String): Document {
+   |  _____^
+74 | |         return Parser.parseBodyFragment(bodyHtml, "")
+75 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasAttr'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:79:5:
+   | 
+79 |       public func hasAttr(attributeKey: String): Bool {
+   |  _____^
+80 | |         for (element in elementsValue) {
+   | | ...
+86 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'systemId'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document_type.cj:81:5:
+   | 
+81 |       public func systemId(): String {
+   |  _____^
+82 | |         return attr(SYSTEM_ID)
+83 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'attributesSize'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\node.cj:88:5:
+   | 
+88 |       public func attributesSize(): Int64 {
+   |  _____^
+89 | |         // added so that we can test how many attributes exist without implicitly creating the Attributes object
+   | | ...
+95 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'[]'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parse_error.cj:92:5:
+   | 
+92 |       public operator func [](index: Int64): ParseError {
+   |  _____^
+93 | |         arr[index]
+94 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'eachAttr'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:95:5:
+    | 
+95  |       public func eachAttr(attributeKey: String): ArrayList<String> {
+    |  _____^
+96  | |         var attrs: ArrayList<String> = ArrayList<String>(elementsValue.size)
+    | | ...
+103 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'join'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:100:5:
+    | 
+100 |       public static func join(strings: Array<String>, sep: String): String {
+    |  _____^
+101 | |         return join(strings.iterator(), sep)
+102 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'escape'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\entities.cj:103:5:
+    | 
+103 |       public static func escape(string: String): String {
+    |  _____^
+104 | |         return escape(string, defaultOutput)
+105 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setTrackPosition'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parser.cj:103:5:
+    | 
+103 |       public func setTrackPosition(trackPosition: Bool): Parser {
+    |  _____^
+104 | |         this.trackPosition = trackPosition
+    | | ...
+106 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'isFalse'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\validate.cj:103:5:
+    | 
+103 |       public static func isFalse(valBool: Bool, msg: String): Unit {
+    |  _____^
+104 | |         if (valBool) {
+    | | ...
+107 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'clone'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parse_error.cj:104:5:
+    | 
+104 |       public func clone(): ParseErrorList {
+    |  _____^
+105 | |         return ParseErrorList(this).apply<ParseErrorList> {it => it.arr.add(all: this.arr)}
+106 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setKey'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:104:5:
+    | 
+104 |       public func setKey(key: String): Unit {
+    |  _____^
+105 | |         var keyTrim: String = key.strip()
+    | | ...
+116 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'padding'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:110:5:
+    | 
+110 |       public static func padding(width: Int64): String {
+    |  _____^
+111 | |         return padding(width, 30)
+112 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'attr'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:112:5:
+    | 
+112 |       public func attr(attributeKey: String, attributeValue: String): Elements {
+    |  _____^
+113 | |         for (element in elementsValue) {
+    | | ...
+117 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'noNullElements'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\validate.cj:114:5:
+    | 
+114 |       public static func noNullElements(objects: Array<?Object>): Unit {
+    |  _____^
+115 | |         noNullElements(objects, "Array must not contain any null objects")
+116 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'setValue'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:124:5:
+    | 
+124 |       public func setValue(val: ?String): String {
+    |  _____^
+125 | |         var oldVal: ?String = this.valValue
+    | | ...
+139 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'removeAttr'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:125:5:
+    | 
+125 |       public func removeAttr(attributeKey: String): Elements {
+    |  _____^
+126 | |         for (element in elementsValue) {
+    | | ...
+130 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'forms'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:126:5:
+    | 
+126 |       public func forms(): ArrayList<FormElement> {
+    |  _____^
+127 | |         return select("form").forms()
+128 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'expectForm'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:136:5:
+    | 
+136 |       public func expectForm(cssQuery: String): ?FormElement {
+    |  _____^
+137 | |         var els: Elements = select(cssQuery)
+    | | ...
+146 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'addClass'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:138:5:
+    | 
+138 |       public func addClass(className: String): Elements {
+    |  _____^
+139 | |         for (element in elementsValue) {
+    | | ...
+143 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getData'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attributes.cj:145:5:
+    | 
+145 |       public func getData(key: String): ?String {
+    |  _____^
+146 | |         if (key.isEmpty()) {
+    | | ...
+159 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasDeclaredValue'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:146:5:
+    | 
+146 |       public func hasDeclaredValue(): Bool {
+    |  _____^
+147 | |         return valValue != None
+148 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'pos'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\src_range.cj:146:5:
+    | 
+146 |       public func pos(): Int64 {
+    |  _____^
+147 | |         return posInt
+148 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'removeClass'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:151:5:
+    | 
+151 |       public func removeClass(className: String): Elements {
+    |  _____^
+152 | |         for (element in elementsValue) {
+    | | ...
+156 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'title'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:153:5:
+    | 
+153 |       public func title(): String {
+    |  _____^
+154 | |         // title is a preserve whitespace tag (for document output), but normalised here
+    | | ...
+161 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'lineNumber'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\src_range.cj:155:5:
+    | 
+155 |       public func lineNumber(): Int64 {
+    |  _____^
+156 | |         return lineNumberInt
+157 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'columnNumber'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\src_range.cj:164:5:
+    | 
+164 |       public func columnNumber(): Int64 {
+    |  _____^
+165 | |         return columnNumberInt
+166 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'toggleClass'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:164:5:
+    | 
+164 |       public func toggleClass(className: String): Elements {
+    |  _____^
+165 | |         for (element in elementsValue) {
+    | | ...
+169 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'startsWithNewline'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:164:5:
+    | 
+164 |       public static func startsWithNewline(string: String): Bool {
+    |  _____^
+165 | |         if (string.size == 0) {
+    | | ...
+169 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'title'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:168:5:
+    | 
+168 |       public func title(title: String): Unit {
+    |  _____^
+169 | |         var titleEl: ?Element = head().selectFirst(titleEval)
+    | | ...
+175 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'isTracked'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\src_range.cj:173:5:
+    | 
+173 |       public func isTracked(): Bool {
+    |  _____^
+174 | |         return this != UntrackedPos
+175 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseFragment'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parser.cj:174:5:
+    | 
+174 |       public static func parseFragment(fragmentHtml: String, context: ?Element, baseUri: String, errorList: ParseErrorList): ArrayList<Node> {
+    |  _____^
+175 | |         let treeBuilder: HtmlTreeBuilder = HtmlTreeBuilder()
+    | | ...
+179 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'wtf'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\validate.cj:176:5:
+    | 
+176 |       public static func wtf(msg: String): Unit {
+    |  _____^
+177 | |         throw IllegalStateException(msg)
+178 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasClass'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:177:5:
+    | 
+177 |       public func hasClass(className: String): Bool {
+    |  _____^
+178 | |         for (element in elementsValue) {
+    | | ...
+184 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'createElement'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:183:5:
+    | 
+183 |       public func createElement(tagName: String): Element {
+    |  _____^
+184 | |         return Element(Tag.valueOf(tagName, ParseSettings.preserveCase), this.baseUri())
+185 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'id'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:187:5:
+    | 
+187 |       public func id(id: String): Element {
+    |  _____^
+188 | |         attr("id", id)
+    | | ...
+190 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parseXmlFragment'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parser.cj:188:5:
+    | 
+188 |       public static func parseXmlFragment(fragmentXml: String, baseUri: String): ArrayList<Node> {
+    |  _____^
+189 | |         let treeBuilder: XmlTreeBuilder = XmlTreeBuilder()
+    | | ...
+191 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'val'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:191:5:
+    | 
+191 |       public func val(): String {
+    |  _____^
+192 | |         if (elementsValue.size > 0) {
+    | | ...
+198 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'val'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:206:5:
+    | 
+206 |       public func val(value: String): Elements {
+    |  _____^
+207 | |         for (element in elementsValue) {
+    | | ...
+211 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'attr'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:210:5:
+    | 
+210 |       public func attr(attributeKey: String, attributeValue: Bool): Element {
+    |  _____^
+211 | |         attributes().put(attributeKey, attributeValue)
+    | | ...
+213 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'charset'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:213:5:
+    | 
+213 |       public func charset(charset: String): Unit {
+    |  _____^
+214 | |         updateMetaCharsetElement(true)
+    | | ...
+217 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'text'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:218:5:
+    | 
+218 |       public func text(): String {
+    |  _____^
+219 | |         var sb: StringBuilder = StringUtil.borrowBuilder()
+    | | ...
+227 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'dataset'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:221:5:
+    | 
+221 |       public func dataset(): Iterator<(String, ?String)> {
+    |  _____^
+222 | |         return attributes().dataset()
+223 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'isDataAttribute'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:225:5:
+    | 
+225 |       protected func isDataAttribute(): Bool {
+    |  _____^
+226 | |         return isDataAttribute(key)
+227 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'childNodesCopy'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\node.cj:232:5:
+    | 
+232 |       public func childNodesCopy(): ArrayList<Node> {
+    |  _____^
+233 | |         var nodes: ArrayList<Node> = ensureChildNodes()
+    | | ...
+239 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasText'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:234:5:
+    | 
+234 |       public func hasText(): Bool {
+    |  _____^
+235 | |         for (element in elementsValue) {
+    | | ...
+241 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'shouldCollapseAttribute'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:239:5:
+    | 
+239 |       protected func shouldCollapseAttribute(out: DocumentOutputSettings): Bool {
+    |  _____^
+240 | |         return shouldCollapseAttributeNew(key, valValue, out)
+241 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'xmlParser'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\parser.cj:239:5:
+    | 
+239 |       public static func xmlParser(): Parser {
+    |  _____^
+240 | |         return Parser(XmlTreeBuilder())
+241 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'updateMetaCharsetElement'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:242:5:
+    | 
+242 |       public func updateMetaCharsetElement(): Bool {
+    |  _____^
+243 | |         return updateMetaCharset
+244 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'chompToIgnoreCase'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\token_queue.cj:244:5:
+    | 
+244 |       public func chompToIgnoreCase(seq: String): String {
+    |  _____^
+245 | |         let data: String = consumeToIgnoreCase(seq) // case insensitive scan
+    | | ...
+248 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'eachText'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:248:5:
+    | 
+248 |       public func eachText(): ArrayList<String> {
+    |  _____^
+249 | |         var texts: ArrayList<String> = ArrayList<String>(elementsValue.size)
+    | | ...
+256 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'clone'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attribute.cj:251:5:
+    | 
+251 |       public func clone(): Attribute {
+    |  _____^
+252 | |         return match (this.parent) {
+    | | ...
+256 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'html'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:263:5:
+    | 
+263 |       public func html(): String {
+    |  _____^
+264 | |         var sb: StringBuilder = StringUtil.borrowBuilder()
+    | | ...
+272 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'isAscii'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\string_util.cj:275:5:
+    | 
+275 |       public static func isAscii(stringStr: String): Bool {
+    |  _____^
+276 | |         let string = stringStr.toRuneArray()
+    | | ...
+285 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'tagName'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:306:5:
+    | 
+306 |       public func tagName(tagName: String): Elements {
+    |  _____^
+307 | |         for (element in elementsValue) {
+    | | ...
+311 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'putData'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attributes.cj:311:5:
+    | 
+311 |       public func putData(key: String, value: ?String): ?String {
+    |  _____^
+312 | |         var oldValue: ?String
+    | | ...
+320 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'html'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:319:5:
+    | 
+319 |       public func html(html: String): Elements {
+    |  _____^
+320 | |         for (element in elementsValue) {
+    | | ...
+324 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'dataNodes'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:319:5:
+    | 
+319 |       public func dataNodes(): ArrayList<DataNode> {
+    |  _____^
+320 | |         var dataNodes: ArrayList<DataNode> = ArrayList<DataNode>()
+    | | ...
+328 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'outputSettings'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:332:5:
+    | 
+332 |       public func outputSettings(documentOutputSettings: DocumentOutputSettings): Document {
+    |  _____^
+333 | |         this.documentOutputSettings = documentOutputSettings
+    | | ...
+335 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'prepend'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:332:5:
+    | 
+332 |       public func prepend(html: String): Elements {
+    |  _____^
+333 | |         for (element in elementsValue) {
+    | | ...
+337 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'append'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:345:5:
+    | 
+345 |       public func append(html: String): Elements {
+    |  _____^
+346 | |         for (element in elementsValue) {
+    | | ...
+350 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'select'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:348:5:
+    | 
+348 |       public func select(evaluator: Evaluator): Elements {
+    |  _____^
+349 | |         return Selector.select(evaluator, this)
+350 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'before'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:358:5:
+    | 
+358 |       public func before(html: String): Elements {
+    |  _____^
+359 | |         for (element in elementsValue) {
+    | | ...
+363 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'removeData'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attributes.cj:361:5:
+    | 
+361 |       public func removeData(key: String): Unit {
+    |  _____^
+362 | |         remove(dataKey(key))
+363 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'after'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:371:5:
+    | 
+371 |       public func after(html: String): Elements {
+    |  _____^
+372 | |         for (element in elementsValue) {
+    | | ...
+376 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'consumeWord'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\token_queue.cj:372:5:
+    | 
+372 |       public func consumeWord(): String {
+    |  _____^
+373 | |         let start = pos
+    | | ...
+378 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'wrap'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:387:5:
+    | 
+387 |       public func wrap(html: String): Elements {
+    |  _____^
+388 | |         Validate.notEmpty(html)
+    | | ...
+393 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasDeclaredValueForKey'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attributes.cj:391:5:
+    | 
+391 |       public func hasDeclaredValueForKey(key: String): Bool {
+    |  _____^
+392 | |         var i: Int64 = indexOfKey(key)
+    | | ...
+394 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'check'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:392:5:
+    | 
+392 |       public func check(cssQuery: String): Bool {
+    |  _____^
+393 | |         return check(QueryParser.parse(cssQuery))
+394 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'isFormSubmittable'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\tag.cj:400:5:
+    | 
+400 |       public func isFormSubmittable(): Bool {
+    |  _____^
+401 | |         return formSubmit
+402 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasDeclaredValueForKeyIgnoreCase'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\attributes.cj:402:5:
+    | 
+402 |       public func hasDeclaredValueForKeyIgnoreCase(key: String): Bool {
+    |  _____^
+403 | |         var i: Int64 = indexOfKeyIgnoreCase(key)
+    | | ...
+405 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'unwrap'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:405:5:
+    | 
+405 |       public func unwrap(): Elements {
+    |  _____^
+406 | |         for (element in elementsValue) {
+    | | ...
+410 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'closest'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:413:5:
+    | 
+413 |       public func closest(cssQuery: String): ?Element {
+    |  _____^
+414 | |         return closest(QueryParser.parse(cssQuery))
+415 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'empty'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:420:5:
+    | 
+420 |       public func empty(): Elements {
+    |  _____^
+421 | |         for (element in elementsValue) {
+    | | ...
+425 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'select'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:448:5:
+    | 
+448 |       public func select(query: String): Elements {
+    |  _____^
+449 | |         return Selector.select(query, this.elementsValue)
+450 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'not'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:461:5:
+    | 
+461 |       public func not(query: String): Elements {
+    |  _____^
+462 | |         var out: Elements = Selector.select(query, this.elementsValue)
+    | | ...
+464 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'appendTo'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:468:5:
+    | 
+468 |       public func appendTo(parent: Element): Element {
+    |  _____^
+469 | |         parent.appendChild(this)
+    | | ...
+471 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'eq'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:472:5:
+    | 
+472 |       public func eq(index: Int64): Elements {
+    |  _____^
+473 | |         return if (elementsValue.size > index) {
+    | | ...
+478 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'check'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:486:5:
+    | 
+486 |       public func check(query: String): Bool {
+    |  _____^
+487 | |         var eval: Evaluator = QueryParser.parse(query)
+    | | ...
+494 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'prependChildren'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:490:5:
+    | 
+490 |       public func prependChildren(children: Collection<Node>): Element {
+    |  _____^
+491 | |         insertChildren(0, children)
+    | | ...
+493 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'next'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:501:5:
+    | 
+501 |       public func next(): Elements {
+    |  _____^
+502 | |         return siblings(None, true, false)
+503 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'next'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:511:5:
+    | 
+511 |       public func next(query: String): Elements {
+    |  _____^
+512 | |         return siblings(query, true, false)
+513 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'insertChildren'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:525:5:
+    | 
+525 |       public func insertChildren(index: Int64, children: Array<Node>): Element {
+    |  _____^
+526 | |         var currentSize: Int64 = childNodeSize()
+    | | ...
+537 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'nextAll'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:530:5:
+    | 
+530 |       public func nextAll(query: String): Elements {
+    |  _____^
+531 | |         return siblings(query, true, true)
+532 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'prev'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:539:5:
+    | 
+539 |       public func prev(): Elements {
+    |  _____^
+540 | |         return siblings(None, false, false)
+541 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'prev'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:549:5:
+    | 
+549 |       public func prev(query: String): Elements {
+    |  _____^
+550 | |         return siblings(query, false, false)
+551 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'outline'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:549:5:
+    | 
+549 |       public func outline(outlineMode: Bool): DocumentOutputSettings {
+    |  _____^
+550 | |         outlineValue = outlineMode
+    | | ...
+552 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'prevAll'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:568:5:
+    | 
+568 |       public func prevAll(query: String): Elements {
+    |  _____^
+569 | |         return siblings(query, false, true)
+570 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'indentAmount'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:569:5:
+    | 
+569 |       public func indentAmount(indentAmount: Int64): DocumentOutputSettings {
+    |  _____^
+570 | |         Validate.isTrue(indentAmount >= 0)
+    | | ...
+573 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'appendText'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:569:5:
+    | 
+569 |       public func appendText(text: String): Element {
+    |  _____^
+570 | |         var node: TextNode = TextNode(text)
+    | | ...
+573 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'prependText'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:581:5:
+    | 
+581 |       public func prependText(text: String): Element {
+    |  _____^
+582 | |         var node: TextNode = TextNode(text)
+    | | ...
+585 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'maxPaddingWidth'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\document.cj:590:5:
+    | 
+590 |       public func maxPaddingWidth(maxPaddingWidthValue: Int64): DocumentOutputSettings {
+    |  _____^
+591 | |         Validate.isTrue(maxPaddingWidthValue >= -1)
+    | | ...
+594 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'parents'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:606:5:
+    | 
+606 |       public func parents(): Elements {
+    |  _____^
+607 | |         let combo: ArraySet<Element> = ArraySet<Element>()
+    | | ...
+612 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'last'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:632:5:
+    | 
+632 |       public func last(): ?Element {
+    |  _____^
+633 | |         return if (elementsValue.isEmpty()) {
+    | | ...
+638 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'lastChild'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\node.cj:636:5:
+    | 
+636 |       public func lastChild(): ?Node {
+    |  _____^
+637 | |         let size: Int64 = childNodeSize()
+    | | ...
+643 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'traverse'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:646:5:
+    | 
+646 |       public func traverse(nodeVisitor: NodeVisitor): Elements {
+    |  _____^
+647 | |         NodeTraversor.traverse(nodeVisitor, this)
+    | | ...
+649 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'filter'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:657:5:
+    | 
+657 |       public func filter(nodeFilter: NodeFilter): Elements {
+    |  _____^
+658 | |         NodeTraversor.filter(nodeFilter, this)
+    | | ...
+660 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'comments'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:682:5:
+    | 
+682 |       public func comments(): ArrayList<Comment> {
+    |  _____^
+683 | |         return childNodesOfType<Comment>()
+684 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'textNodes'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:691:5:
+    | 
+691 |       public func textNodes(): ArrayList<TextNode> {
+    |  _____^
+692 | |         return childNodesOfType<TextNode>()
+693 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'dataNodes'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\elements.cj:701:5:
+    | 
+701 |       public func dataNodes(): ArrayList<DataNode> {
+    |  _____^
+702 | |         return childNodesOfType<DataNode>()
+703 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'sourceRange'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\node.cj:708:5:
+    | 
+708 |       public func sourceRange(): SrcRange {
+    |  _____^
+709 | |         return SrcRange.of(this, true)
+710 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'toString'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\character_reader.cj:752:5:
+    | 
+752 |       public func toString(): String {
+    |  _____^
+753 | |         if (bufLength - bufPos < 0) {
+    | | ...
+757 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hasSameValue'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\node.cj:763:5:
+    | 
+763 |       public func hasSameValue(o: ?Object): Bool {
+    |  _____^
+764 | |         match (o) {
+    | | ...
+772 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'nextElementSiblings'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:764:5:
+    | 
+764 |       public func nextElementSiblings(): Elements {
+    |  _____^
+765 | |         return nextElementSiblings(true)
+766 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'previousElementSiblings'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:792:5:
+    | 
+792 |       public func previousElementSiblings(): Elements {
+    |  _____^
+793 | |         return nextElementSiblings(false)
+794 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'firstElementSibling'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:814:5:
+    | 
+814 |       public func firstElementSibling(): Element {
+    |  _____^
+815 | |         if (parent() != None) {
+    | | ...
+826 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'rangeEquals'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\character_reader.cj:819:5:
+    | 
+819 |       public func rangeEquals(start: Int64, count: Int64, cached: String): Bool {
+    |  _____^
+820 | |         return rangeEqualsNew(charBuf, start, count, cached)
+821 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'lastElementSibling'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:845:5:
+    | 
+845 |       public func lastElementSibling(): Element {
+    |  _____^
+846 | |         if (parent() != None) {
+    | | ...
+856 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'firstElementChild'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:873:5:
+    | 
+873 |       public func firstElementChild(): ?Element {
+    |  _____^
+874 | |         var size: Int64 = childNodeSize()
+    | | ...
+887 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'lastElementChild'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:894:5:
+    | 
+894 |       public func lastElementChild(): ?Element {
+    |  _____^
+895 | |         let size: Int64 = childNodeSize()
+    | | ...
+908 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByTag'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:916:5:
+    | 
+916 |       public func getElementsByTag(tagName: String): Elements {
+    |  _____^
+917 | |         Validate.notEmpty(tagName)
+    | | ...
+921 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementById'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:929:5:
+    | 
+929 |       public func getElementById(id: String): ?Element {
+    |  _____^
+930 | |         Validate.notEmpty(id)
+    | | ...
+937 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByClass'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:945:5:
+    | 
+945 |       public func getElementsByClass(className: String): Elements {
+    |  _____^
+946 | |         Validate.notEmpty(className)
+    | | ...
+948 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttribute'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:956:5:
+    | 
+956 |       public func getElementsByAttribute(key: String): Elements {
+    |  _____^
+957 | |         Validate.notEmpty(key)
+    | | ...
+960 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttributeStarting'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:968:5:
+    | 
+968 |       public func getElementsByAttributeStarting(keyPrefix: String): Elements {
+    |  _____^
+969 | |         Validate.notEmpty(keyPrefix)
+    | | ...
+972 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttributeValue'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:981:5:
+    | 
+981 |       public func getElementsByAttributeValue(key: String, value: String): Elements {
+    |  _____^
+982 | |         return Collector.collect(EvaluatorAttributeWithValue(key, value), this)
+983 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttributeValueNot'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:992:5:
+    | 
+992 |       public func getElementsByAttributeValueNot(key: String, value: String): Elements {
+    |  _____^
+993 | |         return Collector.collect(EvaluatorAttributeWithValueNot(key, value), this)
+994 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttributeValueStarting'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1003:5:
+     | 
+1003 |       public func getElementsByAttributeValueStarting(key: String, valuePrefix: String): Elements {
+     |  _____^
+1004 | |         return Collector.collect(EvaluatorAttributeWithValueStarting(key, valuePrefix), this)
+1005 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttributeValueEnding'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1014:5:
+     | 
+1014 |       public func getElementsByAttributeValueEnding(key: String, valueSuffix: String): Elements {
+     |  _____^
+1015 | |         return Collector.collect(EvaluatorAttributeWithValueEnding(key, valueSuffix), this);
+1016 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttributeValueContaining'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1025:5:
+     | 
+1025 |       public func getElementsByAttributeValueContaining(key: String, matchValue: String): Elements {
+     |  _____^
+1026 | |         return Collector.collect(EvaluatorAttributeWithValueContaining(key, matchValue), this)
+1027 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByAttributeValueMatching'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1047:5:
+     | 
+1047 |       public func getElementsByAttributeValueMatching(key: String, regex: String): Elements {
+     |  _____^
+1048 | |         try {
+     | | ...
+1054 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByIndexLessThan'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1062:5:
+     | 
+1062 |       public func getElementsByIndexLessThan(index: Int64): Elements {
+     |  _____^
+1063 | |         return Collector.collect(EvaluatorIndexLessThan(index), this)
+1064 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'toString'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\html_tree_builder.cj:1068:5:
+     | 
+1068 |       public func toString(): String {
+     |  _____^
+1069 | |         return "TreeBuilder{currentToken=${currentToken()}, state=${state()}, currentElement=${currentElement()}}"
+1070 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByIndexGreaterThan'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1072:5:
+     | 
+1072 |       public func getElementsByIndexGreaterThan(index: Int64): Elements {
+     |  _____^
+1073 | |         return Collector.collect(EvaluatorIndexGreaterThan(index), this)
+1074 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsByIndexEquals'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1082:5:
+     | 
+1082 |       public func getElementsByIndexEquals(index: Int64): Elements {
+     |  _____^
+1083 | |         return Collector.collect(EvaluatorIndexEquals(index), this)
+1084 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsContainingText'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1093:5:
+     | 
+1093 |       public func getElementsContainingText(searchText: String): Elements {
+     |  _____^
+1094 | |         return Collector.collect(EvaluatorContainsText(searchText), this)
+1095 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsContainingOwnText'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1104:5:
+     | 
+1104 |       public func getElementsContainingOwnText(searchText: String): Elements {
+     |  _____^
+1105 | |         return Collector.collect(EvaluatorContainsOwnText(searchText), this)
+1106 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsMatchingText'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1124:5:
+     | 
+1124 |       public func getElementsMatchingText(regex: String): Elements {
+     |  _____^
+1125 | |         try {
+     | | ...
+1131 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getElementsMatchingOwnText'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1149:5:
+     | 
+1149 |       public func getElementsMatchingOwnText(regex: String): Elements {
+     |  _____^
+1150 | |         try {
+     | | ...
+1156 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'getAllElements'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1163:5:
+     | 
+1163 |       public func getAllElements(): Elements {
+     |  _____^
+1164 | |         return Collector.collect(EvaluatorAllElements(), this)
+1165 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'endSourceRange'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\01-jsoup\cangjie-build\src\element.cj:1471:5:
+     | 
+1471 |       public func endSourceRange(): SrcRange {
+     |  _____^
+1472 | |         return SrcRange.of(this, false)
+1473 | |     }
+     | |_____^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+186 warnings generated, 186 warnings printed.

@@ -1,0 +1,47 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "testSimpleVariable",
+      "state": "定位受阻",
+      "reason": "跨文件继承测试已计入清单；当前单文件标注不能覆盖基类声明，需拆分或扩展多文件支持；Java 骨架成员声明与成员表位置未能吻合"
+    },
+    {
+      "id": "U02",
+      "name": "testPrimitiveArrayVariable",
+      "state": "定位受阻",
+      "reason": "跨文件继承测试已计入清单；当前单文件标注不能覆盖基类声明，需拆分或扩展多文件支持；Java 骨架成员声明与成员表位置未能吻合"
+    },
+    {
+      "id": "U03",
+      "name": "testPrimitiveArrayIndexVariable",
+      "state": "定位受阻",
+      "reason": "跨文件继承测试已计入清单；当前单文件标注不能覆盖基类声明，需拆分或扩展多文件支持；Java 骨架成员声明与成员表位置未能吻合"
+    },
+    {
+      "id": "U04",
+      "name": "testPrimitiveArrayIndexOutOfBoundsVariable",
+      "state": "定位受阻",
+      "reason": "跨文件继承测试已计入清单；当前单文件标注不能覆盖基类声明，需拆分或扩展多文件支持；Java 骨架成员声明与成员表位置未能吻合"
+    },
+    {
+      "id": "U05",
+      "name": "testOneShotSection",
+      "state": "定位受阻",
+      "reason": "跨文件继承测试已计入清单；当前单文件标注不能覆盖基类声明，需拆分或扩展多文件支持；Java 骨架成员声明与成员表位置未能吻合"
+    },
+    {
+      "id": "U06",
+      "name": "testListSection",
+      "state": "定位受阻",
+      "reason": "跨文件继承测试已计入清单；当前单文件标注不能覆盖基类声明，需拆分或扩展多文件支持；Java 骨架成员声明与成员表位置未能吻合"
+    }
+  ],
+  "selected": 6,
+  "compared": 0,
+  "cross_review": {
+    "action": "复用已有依据",
+    "affected": [],
+    "reason": "逐测试保留原输入及断言，依赖源正文/辅助与业务接口；跨文件定位受阻仍单列。"
+  }
+}

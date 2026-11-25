@@ -1,0 +1,11 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "testGetLevenshteinDistance_StringString",
+      "source_member_id": "LevenshteinDistanceTest.java::org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()"
+    }
+  ],
+  "configuration": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\static-input\\translation_config.json",
+  "members_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\static-input\\02-java-skeleton\\0\\members.json"
+}

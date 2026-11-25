@@ -1,0 +1,844 @@
+{
+  "schema_version": "agent-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+  "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+  "profile": "whole",
+  "purpose": "\u7ffb\u8bd1\u6574\u4e2a\u6d4b\u8bd5\u7c7b\uff1a\u6d4b\u8bd5\u539f\u6587\u3001\u8f85\u52a9\u5b9e\u73b0\u3001\u521d\u59cb\u5316\u548c\u76f8\u5173\u4e1a\u52a1\u63a5\u53e3\u3002",
+  "target_type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+  "selected_tests": [
+    "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+    "f7468fc5b07f1f1d82d9a89cddb9fd449af16c2b9d64ac4e64941994274e03c8",
+    "4b0b6f80b5de56cfd3edb8693495e2e70fb6067e31078cc5e0a9ac91513b1627",
+    "6361fed79f409445010d9b6a2dadf3f214a24ce9fe58a112099b94d40a424621",
+    "fa3cc99a6b65e0d4079fe19f4b1ea613e3f21afb3870c870e2b1e2bd3ddb985a"
+  ],
+  "full_context_file": "initial_context.json",
+  "test_invocations": [
+    {
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+      "declaring_class": "diffutils.DiffTest",
+      "execution_class": "diffutils.DiffTest",
+      "selector": "diffutils.DiffTest#testDiff_Insert()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "diffutils.DiffTest#testDiff_Insert()"
+    },
+    {
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+      "declaring_class": "diffutils.DiffTest",
+      "execution_class": "diffutils.DiffTest",
+      "selector": "diffutils.DiffTest#testDiff_Delete()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "f7468fc5b07f1f1d82d9a89cddb9fd449af16c2b9d64ac4e64941994274e03c8",
+      "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "diffutils.DiffTest#testDiff_Delete()"
+    },
+    {
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Change()",
+      "declaring_class": "diffutils.DiffTest",
+      "execution_class": "diffutils.DiffTest",
+      "selector": "diffutils.DiffTest#testDiff_Change()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "4b0b6f80b5de56cfd3edb8693495e2e70fb6067e31078cc5e0a9ac91513b1627",
+      "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "diffutils.DiffTest#testDiff_Change()"
+    },
+    {
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_EmptyList()",
+      "declaring_class": "diffutils.DiffTest",
+      "execution_class": "diffutils.DiffTest",
+      "selector": "diffutils.DiffTest#testDiff_EmptyList()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "6361fed79f409445010d9b6a2dadf3f214a24ce9fe58a112099b94d40a424621",
+      "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "diffutils.DiffTest#testDiff_EmptyList()"
+    },
+    {
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_EmptyListWithNonEmpty()",
+      "declaring_class": "diffutils.DiffTest",
+      "execution_class": "diffutils.DiffTest",
+      "selector": "diffutils.DiffTest#testDiff_EmptyListWithNonEmpty()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "fa3cc99a6b65e0d4079fe19f4b1ea613e3f21afb3870c870e2b1e2bd3ddb985a",
+      "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "diffutils.DiffTest#testDiff_EmptyListWithNonEmpty()"
+    }
+  ],
+  "files": {
+    "src/test/java/diffutils/DiffTest.java": "b2c3237aa7ab840c7fcd4111442c64217064ae28c2622c8f53c503bec53b4ed5",
+    "src/main/java/difflib/DiffUtils.java": "810115f36d48b2d178fccde8434bd8164f77690ffad1f83efd30b1d019c5410f",
+    "src/main/java/difflib/Patch.java": "3bbe7eaead43a124934bb7fa59c505e2aa6c2b88bc0786540b4f89ba64e60179",
+    "src/main/java/difflib/Delta.java": "c57b0c150782c7fc7e31b68e2f821915657547ae4e30c291df2ba8965234e1ee",
+    "src/main/java/difflib/Chunk.java": "c042907ce257141b43697dd3381f36c05fa86ee572ef009f27937025a1e70779"
+  },
+  "imports": [
+    {
+      "file": "src/test/java/diffutils/DiffTest.java",
+      "package": "diffutils",
+      "imports": [
+        {
+          "name": "difflib.*",
+          "static": false
+        },
+        {
+          "name": "junit.framework.TestCase",
+          "static": false
+        },
+        {
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "name": "java.util.List",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/DiffUtils.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "name": "difflib.myers.Equalizer",
+          "static": false
+        },
+        {
+          "name": "difflib.myers.MyersDiff",
+          "static": false
+        },
+        {
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "name": "java.util.regex.Matcher",
+          "static": false
+        },
+        {
+          "name": "java.util.regex.Pattern",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/Patch.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "name": "java.util.LinkedList",
+          "static": false
+        },
+        {
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "name": "java.util.ListIterator",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/Delta.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "name": "java.util.*",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/Chunk.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "name": "java.util.List",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "display_id": "diffutils.DiffTest",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "full",
+      "content": "public class DiffTest extends TestCase {\r\n\r\n    public void testDiff_Insert() {\r\n        final Patch<String> patch = DiffUtils.diff(Arrays.asList(\"hhh\"), Arrays.asList(\"hhh\", \"jjj\", \"kkk\"));\r\n        assertNotNull(patch);\r\n        assertEquals(1, patch.getDeltas().size());\r\n        final Delta<String> delta = patch.getDeltas().get(0);\r\n        assertEquals(InsertDelta.class, delta.getClass());\r\n        assertEquals(new Chunk<String>(1, Collections.<String> emptyList()), delta.getOriginal());\r\n        assertEquals(new Chunk<String>(1, Arrays.asList(\"jjj\", \"kkk\")), delta.getRevised());\r\n    }\r\n\r\n    public void testDiff_Delete() {\r\n        final Patch<String> patch = DiffUtils.diff(Arrays.asList(\"ddd\", \"fff\", \"ggg\"), Arrays.asList(\"ggg\"));\r\n        assertNotNull(patch);\r\n        assertEquals(1, patch.getDeltas().size());\r\n        final Delta<String> delta = patch.getDeltas().get(0);\r\n        assertEquals(DeleteDelta.class, delta.getClass());\r\n        assertEquals(new Chunk<String>(0, Arrays.asList(\"ddd\", \"fff\")), delta.getOriginal());\r\n        assertEquals(new Chunk<String>(0, Collections.<String> emptyList()), delta.getRevised());\r\n    }\r\n\r\n    public void testDiff_Change() {\r\n        final List<String> changeTest_from = Arrays.asList(\"aaa\", \"bbb\", \"ccc\");\r\n        final List<String> changeTest_to = Arrays.asList(\"aaa\", \"zzz\", \"ccc\");\r\n\r\n        final Patch<String> patch = DiffUtils.diff(changeTest_from, changeTest_to);\r\n        assertNotNull(patch);\r\n        assertEquals(1, patch.getDeltas().size());\r\n        final Delta<String> delta = patch.getDeltas().get(0);\r\n        assertEquals(ChangeDelta.class, delta.getClass());\r\n        assertEquals(new Chunk<String>(1, Arrays.asList(\"bbb\")), delta.getOriginal());\r\n        assertEquals(new Chunk<String>(1, Arrays.asList(\"zzz\")), delta.getRevised());\r\n    }\r\n\r\n    public void testDiff_EmptyList() {\r\n        final Patch<String> patch = DiffUtils.diff(new ArrayList<String>(), new ArrayList<String>());\r\n        assertNotNull(patch);\r\n        assertEquals(0, patch.getDeltas().size());\r\n    }\r\n\r\n    public void testDiff_EmptyListWithNonEmpty() {\r\n        final Patch<String> patch = DiffUtils.diff(new ArrayList<String>(), Arrays.asList(\"aaa\"));\r\n        assertNotNull(patch);\r\n        assertEquals(1, patch.getDeltas().size());\r\n        final Delta<String> delta = patch.getDeltas().get(0);\r\n        assertEquals(InsertDelta.class, delta.getClass());\r\n    }\r\n}",
+      "source": {
+        "file": "src/test/java/diffutils/DiffTest.java",
+        "lines": [
+          11,
+          59
+        ]
+      },
+      "full_evidence_pointer": "/records/0"
+    },
+    {
+      "id": "b0afcd7c089be4f2d76e12f065cfc8ab611710089a71547c2957555e58882f06",
+      "display_id": "difflib.DiffUtils",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public class DiffUtils {",
+      "source": {
+        "file": "src/main/java/difflib/DiffUtils.java",
+        "lines": [
+          34,
+          34
+        ]
+      },
+      "full_evidence_pointer": "/records/6"
+    },
+    {
+      "id": "170e6def99c5e7589980911f25ba41d56b8c162a1d99808a5d1dca73121302c1",
+      "display_id": "difflib.DiffUtils#diff(List<T>,List<T>)",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public static <T> Patch<T> diff(List<T> original, List<T> revised) ",
+      "source": {
+        "file": "src/main/java/difflib/DiffUtils.java",
+        "lines": [
+          50,
+          50
+        ]
+      },
+      "full_evidence_pointer": "/records/7"
+    },
+    {
+      "id": "07800b209477dc5838db310113460ae96cef0687183a87cba748792c3f6c74ed",
+      "display_id": "difflib.Patch",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public class Patch<T> {",
+      "source": {
+        "file": "src/main/java/difflib/Patch.java",
+        "lines": [
+          29,
+          29
+        ]
+      },
+      "full_evidence_pointer": "/records/8"
+    },
+    {
+      "id": "589e88bc57a2bd8ebc37e5b27fb416d763d258e939c519a9bf44875240efdefd",
+      "display_id": "difflib.Patch#getDeltas()",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public List<Delta<T>> getDeltas() ",
+      "source": {
+        "file": "src/main/java/difflib/Patch.java",
+        "lines": [
+          74,
+          74
+        ]
+      },
+      "full_evidence_pointer": "/records/9"
+    },
+    {
+      "id": "ae29b3fa35c9127e3ba8be4a179e312abd7b8698d9889801d693d2bb4c1a21a4",
+      "display_id": "difflib.Delta",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public abstract class Delta<T> {",
+      "source": {
+        "file": "src/main/java/difflib/Delta.java",
+        "lines": [
+          26,
+          26
+        ]
+      },
+      "full_evidence_pointer": "/records/10"
+    },
+    {
+      "id": "987183572643d2225f07d0a6460b31e1e778766431148de4b784f541ef1f17a7",
+      "display_id": "difflib.Delta#getOriginal()",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public Chunk<T> getOriginal() ",
+      "source": {
+        "file": "src/main/java/difflib/Delta.java",
+        "lines": [
+          97,
+          97
+        ]
+      },
+      "full_evidence_pointer": "/records/11"
+    },
+    {
+      "id": "c6a639ce162ded657296beaae1f0927d1d4f2873c14d160132c4e69c08803b7b",
+      "display_id": "difflib.Delta#getRevised()",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public Chunk<T> getRevised() ",
+      "source": {
+        "file": "src/main/java/difflib/Delta.java",
+        "lines": [
+          111,
+          111
+        ]
+      },
+      "full_evidence_pointer": "/records/12"
+    },
+    {
+      "id": "999c0bbe135889f5bf530e26cee87b105c61a509ee6d8f85bb65841e3487c251",
+      "display_id": "difflib.Chunk",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public class Chunk<T> {",
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "lines": [
+          35,
+          35
+        ]
+      },
+      "full_evidence_pointer": "/records/13"
+    },
+    {
+      "id": "a8e9b5da7062108a3d5a384502e0ce20385e26d5ec5b945a295db232cd031edf",
+      "display_id": "difflib.Chunk#<init>(int,List<T>)",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "signature",
+      "content": "public Chunk(int position, List<T> lines) ",
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "lines": [
+          48,
+          48
+        ]
+      },
+      "full_evidence_pointer": "/records/14"
+    },
+    {
+      "id": "09c647f8d07678fcd4858d30f6c01e64249324c027442939500c3e8417d09e9e",
+      "display_id": "difflib.Chunk#field:position",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "full",
+      "content": "private final int position;",
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "lines": [
+          37,
+          37
+        ]
+      },
+      "full_evidence_pointer": "/records/15"
+    },
+    {
+      "id": "6f5328b22d566acb6d3c60bea996ccb7fdb06d5b37496ded0434fa704de47299",
+      "display_id": "difflib.Chunk#field:lines",
+      "status": "CONTENT_INCLUDED",
+      "content_kind": "full",
+      "content": "private List<T> lines;",
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "lines": [
+          38,
+          38
+        ]
+      },
+      "full_evidence_pointer": "/records/16"
+    }
+  ],
+  "covered_by_source": [
+    {
+      "source": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "members": [
+        {
+          "id": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+          "display_id": "diffutils.DiffTest#testDiff_Insert()"
+        },
+        {
+          "id": "f7468fc5b07f1f1d82d9a89cddb9fd449af16c2b9d64ac4e64941994274e03c8",
+          "display_id": "diffutils.DiffTest#testDiff_Delete()"
+        },
+        {
+          "id": "4b0b6f80b5de56cfd3edb8693495e2e70fb6067e31078cc5e0a9ac91513b1627",
+          "display_id": "diffutils.DiffTest#testDiff_Change()"
+        },
+        {
+          "id": "6361fed79f409445010d9b6a2dadf3f214a24ce9fe58a112099b94d40a424621",
+          "display_id": "diffutils.DiffTest#testDiff_EmptyList()"
+        },
+        {
+          "id": "fa3cc99a6b65e0d4079fe19f4b1ea613e3f21afb3870c870e2b1e2bd3ddb985a",
+          "display_id": "diffutils.DiffTest#testDiff_EmptyListWithNonEmpty()"
+        }
+      ]
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [],
+  "resources": [],
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "09c647f8d07678fcd4858d30f6c01e64249324c027442939500c3e8417d09e9e",
+        "display_id": "difflib.Chunk#field:position",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 09c647f8d07678fcd4858d30f6c01e64249324c027442939500c3e8417d09e9e"
+      },
+      {
+        "member_key": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+        "display_id": "diffutils.DiffTest#testDiff_Insert()",
+        "top_level_steps": [
+          {
+            "key": "8b1c6cfdcd6365478fb9c47138ca292c475b665465393b81015bfeb7adc5449a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              14,
+              14
+            ]
+          },
+          {
+            "key": "7b7108727cc2bdffb86575c2be1ef6cae01553d963882a8edcfca2e7127c0b9b",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              15,
+              15
+            ]
+          },
+          {
+            "key": "27df039b70a982a03aaf62b9b9d3beab3cae6b604c4b51602ede92f37e8dc2f0",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              16,
+              16
+            ]
+          },
+          {
+            "key": "c795dbd681a1d4af72a74049bd8969c5dead7c8d852707633a28b043a92cf6c6",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              17,
+              17
+            ]
+          },
+          {
+            "key": "1fdf34f30b864b79b1e965456d4c93b911bda5395b06bc8f53b013334714651e",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              18,
+              18
+            ]
+          },
+          {
+            "key": "1d5df553c97fe8b66436074dc7f12000191e9aadf2af99b33effa1b5db5a410f",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              19,
+              19
+            ]
+          },
+          {
+            "key": "90f113bedb1802c9dea0ec9ba6a164e5978da3bb54d27daf51f33f0f6814f97a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              20,
+              20
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 5,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0"
+      },
+      {
+        "member_key": "4b0b6f80b5de56cfd3edb8693495e2e70fb6067e31078cc5e0a9ac91513b1627",
+        "display_id": "diffutils.DiffTest#testDiff_Change()",
+        "top_level_steps": [
+          {
+            "key": "d59be229aced54aa19ecf2db6941472416b5ea9caec709d051cc491c21c1fec0",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              34,
+              34
+            ]
+          },
+          {
+            "key": "127ea776c75ec4b847edfefbdfe52bf46680eb3f26bfb621fb03b9a182ec0532",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              35,
+              35
+            ]
+          },
+          {
+            "key": "ec14a2db264da67f2a72d1b33db2022720723d1f17eab895ce781ef4ac259d67",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              37,
+              37
+            ]
+          },
+          {
+            "key": "2048fc4a9535bf1914148d1235c54f3357e33eb031580df248d845e1b8da93be",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              38,
+              38
+            ]
+          },
+          {
+            "key": "bc73d1da871811639af9f4d240da8327dc3efb41107af4c07cce0f75876909b5",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              39,
+              39
+            ]
+          },
+          {
+            "key": "5d585ef73224d936ac707297c1fad1f71f877b8c9b7cc8929bd204768093c330",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              40,
+              40
+            ]
+          },
+          {
+            "key": "803921ea2834e088583097ce014ed9520acad7be893bed64033db3c65aabb51d",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              41,
+              41
+            ]
+          },
+          {
+            "key": "5327a7449e53c58d3383c8aee3e601e352a5bfaaadc6e5a235d39727076b6ba3",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              42,
+              42
+            ]
+          },
+          {
+            "key": "fcedbb20ac2340ef650e8916f4f40f90579420113cdc015542300222945ca951",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              43,
+              43
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 5,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 4b0b6f80b5de56cfd3edb8693495e2e70fb6067e31078cc5e0a9ac91513b1627"
+      },
+      {
+        "member_key": "6361fed79f409445010d9b6a2dadf3f214a24ce9fe58a112099b94d40a424621",
+        "display_id": "diffutils.DiffTest#testDiff_EmptyList()",
+        "top_level_steps": [
+          {
+            "key": "bb6a63a7235986b758ac006a580c6723bce617307886647c5089115dd2b59b1a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              47,
+              47
+            ]
+          },
+          {
+            "key": "2a95d081f55292f6037937410bc7dab3d1afa40efc19ba433022fa2fcf97a5ef",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              48,
+              48
+            ]
+          },
+          {
+            "key": "24083c951d3654812370754adb6894e9e9d7dc665f298f436b0b02d2f98b32a5",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              49,
+              49
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 2,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 6361fed79f409445010d9b6a2dadf3f214a24ce9fe58a112099b94d40a424621"
+      },
+      {
+        "member_key": "6f5328b22d566acb6d3c60bea996ccb7fdb06d5b37496ded0434fa704de47299",
+        "display_id": "difflib.Chunk#field:lines",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 6f5328b22d566acb6d3c60bea996ccb7fdb06d5b37496ded0434fa704de47299"
+      },
+      {
+        "member_key": "f7468fc5b07f1f1d82d9a89cddb9fd449af16c2b9d64ac4e64941994274e03c8",
+        "display_id": "diffutils.DiffTest#testDiff_Delete()",
+        "top_level_steps": [
+          {
+            "key": "cfefeb70f31c7f1162d3caf07a23f7edc6557c48f228989ca66bf7ff8d35ab77",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              24,
+              24
+            ]
+          },
+          {
+            "key": "abb58aa749aa8dfa923a913c316b7498d79bde0354f7aed1536832e5f46ba811",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              25,
+              25
+            ]
+          },
+          {
+            "key": "bfb3647ad8390b9804ca8156f2eafed909d0199cbff436d24bc8e58b0e226115",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              26,
+              26
+            ]
+          },
+          {
+            "key": "efc4e2de64969a603b40990cfb2b58e8dcaa75d971ea38aa1b9f67f47adf9a5e",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              27,
+              27
+            ]
+          },
+          {
+            "key": "67f1d6e1ef2f96bf9d2093b054259eeb6186712bce1ce134331a8e3ba066b931",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              28,
+              28
+            ]
+          },
+          {
+            "key": "f7c8964e246afc414c661de5c02eb696906c0ba35c1eac03d042353c564d07d1",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              29,
+              29
+            ]
+          },
+          {
+            "key": "f6e4ea42fed43fb27ba358ddbbb04ef1c6f943dddc127a37fa2e89e42ef34233",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              30,
+              30
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 5,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id f7468fc5b07f1f1d82d9a89cddb9fd449af16c2b9d64ac4e64941994274e03c8"
+      },
+      {
+        "member_key": "fa3cc99a6b65e0d4079fe19f4b1ea613e3f21afb3870c870e2b1e2bd3ddb985a",
+        "display_id": "diffutils.DiffTest#testDiff_EmptyListWithNonEmpty()",
+        "top_level_steps": [
+          {
+            "key": "41588b8ab452d99c2980d32cba3554736168a13ad3912f6715883f366e8c54a7",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              53,
+              53
+            ]
+          },
+          {
+            "key": "c4013fbcb921be87815bc0e2dbb7bc194fad2e24db0aa020f95d0ad8d26eeae1",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              54,
+              54
+            ]
+          },
+          {
+            "key": "93ac3e9243ebe0ee1b01965359df7d34073c173f9e0ee900aaa1a3dc734c9041",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              55,
+              55
+            ]
+          },
+          {
+            "key": "500fb33ec01c9f62000b9d4a7a198ba4c9c1465443bb2f33dac923b36964ae2e",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              56,
+              56
+            ]
+          },
+          {
+            "key": "1ab0c2fcca7f4ce070aff7bd9ea22ddc54e2015f21dd2783c480e695bc065c40",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              57,
+              57
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 3,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id fa3cc99a6b65e0d4079fe19f4b1ea613e3f21afb3870c870e2b1e2bd3ddb985a"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "unresolved_count": 0,
+  "unresolved": [],
+  "boundaries": [],
+  "boundary_counts": {
+    "EXTERNAL_DECLARATION": 49,
+    "BODY_AVAILABLE_ON_DEMAND": 5
+  },
+  "external_interfaces": [
+    "java.lang.Object.getClass()",
+    "java.util.ArrayList.ArrayList()",
+    "java.util.Arrays.asList(T...)",
+    "java.util.Collections.emptyList()",
+    "java.util.List.get(int)",
+    "java.util.List.size()",
+    "junit.framework.TestCase.assertEquals(int, int)",
+    "junit.framework.TestCase.assertEquals(java.lang.Object, java.lang.Object)",
+    "junit.framework.TestCase.assertNotNull(java.lang.Object)"
+  ],
+  "bodies_available_on_demand": [
+    "170e6def99c5e7589980911f25ba41d56b8c162a1d99808a5d1dca73121302c1",
+    "589e88bc57a2bd8ebc37e5b27fb416d763d258e939c519a9bf44875240efdefd",
+    "987183572643d2225f07d0a6460b31e1e778766431148de4b784f541ef1f17a7",
+    "a8e9b5da7062108a3d5a384502e0ce20385e26d5ec5b945a295db232cd031edf",
+    "c6a639ce162ded657296beaae1f0927d1d4f2873c14d160132c4e69c08803b7b"
+  ],
+  "dependency_counts": {
+    "resolved_static": 26,
+    "external": 49
+  },
+  "full_dependency_evidence_pointer": "/dependency_edges",
+  "full_boundary_evidence_pointer": "/boundaries",
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 2788,
+    "visited_members": 12
+  },
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "PARENT_MODEL_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [],
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ],
+  "projection_note": "All included source/resource content, unresolved identities and omissions are retained. Verbose diagnostics, exact spans and graph rows are in full_context_file or local queries.",
+  "full_context_sha256": "e848a4ea32398cfbc228257ecd4118a76a6a872eb92a090b863e5855c5644e4e"
+}

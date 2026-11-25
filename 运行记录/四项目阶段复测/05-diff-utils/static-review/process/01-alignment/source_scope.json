@@ -1,0 +1,21 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "name": "testDiff_Insert",
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()"
+    },
+    {
+      "id": "U02",
+      "name": "testDiff_Delete",
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Delete()"
+    },
+    {
+      "id": "U03",
+      "name": "testDiff_Change",
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Change()"
+    }
+  ],
+  "configuration": "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\translation_config.json",
+  "members_file": "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\static-input\\02-java-skeleton\\0\\members.json"
+}

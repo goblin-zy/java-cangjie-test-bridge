@@ -83,7 +83,7 @@ def build(task_file, translated, output, bundle_id=None):
             if not frozen.is_relative_to(index_path.parent):
                 raise ValueError('冻结源码目录越界')
             for file, facts in schema['files'].items():
-                if facts.get('source_role') in {'business', 'support'}:
+                if facts.get('source_role') in {'business_source', 'support_source'}:
                     actual = (frozen / file).resolve()
                     if not actual.is_relative_to(frozen) or hashlib.sha256(actual.read_bytes()).hexdigest() != facts['source_sha256']:
                         raise ValueError('业务源码位置或摘要不符')

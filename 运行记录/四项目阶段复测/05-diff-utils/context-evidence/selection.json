@@ -1,0 +1,82 @@
+{
+  "kind": "DERIVED_SELECTED_CONTEXT_EVIDENCE_NOT_FULL_SUITE",
+  "source_tasks_sha256": "434b53b28b5913c90b5361525b36d9f56b484dc0b381b5dd6e75d1d2548fd5f4",
+  "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+  "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+  "shared": {
+    "file": "shared.json",
+    "sha256": "668266cda0a630bb84657640831b0e74d759917f91c64b541bf0b79502611580"
+  },
+  "selected_tests": [
+    {
+      "test_key": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "display_id": "diffutils.DiffTest#testDiff_Insert()",
+      "file": "tests/testDiff_Insert-4a81e4d58f82.json",
+      "test_invocations": [
+        {
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+          "declaring_class": "diffutils.DiffTest",
+          "execution_class": "diffutils.DiffTest",
+          "selector": "diffutils.DiffTest#testDiff_Insert()",
+          "framework": "junit3",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+          "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+          "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "diffutils.DiffTest#testDiff_Insert()"
+        }
+      ],
+      "sha256": "27a44b3db95fbcbfc01501e10305b517d7cbf5c0da8e0d357f4be60c56511621",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "f7468fc5b07f1f1d82d9a89cddb9fd449af16c2b9d64ac4e64941994274e03c8",
+      "display_id": "diffutils.DiffTest#testDiff_Delete()",
+      "file": "tests/testDiff_Delete-f7468fc5b07f.json",
+      "test_invocations": [
+        {
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Delete()",
+          "declaring_class": "diffutils.DiffTest",
+          "execution_class": "diffutils.DiffTest",
+          "selector": "diffutils.DiffTest#testDiff_Delete()",
+          "framework": "junit3",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "f7468fc5b07f1f1d82d9a89cddb9fd449af16c2b9d64ac4e64941994274e03c8",
+          "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+          "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "diffutils.DiffTest#testDiff_Delete()"
+        }
+      ],
+      "sha256": "4db83196da09c3ca6b2030282c074e15e57069b175719f22481063d3f7d95136",
+      "unresolved": 0,
+      "required_not_included": 0
+    },
+    {
+      "test_key": "4b0b6f80b5de56cfd3edb8693495e2e70fb6067e31078cc5e0a9ac91513b1627",
+      "display_id": "diffutils.DiffTest#testDiff_Change()",
+      "file": "tests/testDiff_Change-4b0b6f80b5de.json",
+      "test_invocations": [
+        {
+          "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Change()",
+          "declaring_class": "diffutils.DiffTest",
+          "execution_class": "diffutils.DiffTest",
+          "selector": "diffutils.DiffTest#testDiff_Change()",
+          "framework": "junit3",
+          "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+          "source_member_key": "4b0b6f80b5de56cfd3edb8693495e2e70fb6067e31078cc5e0a9ac91513b1627",
+          "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+          "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+          "table": "artifacts/java-members/0-members.json",
+          "context_selector": "diffutils.DiffTest#testDiff_Change()"
+        }
+      ],
+      "sha256": "a37c60924fd39a64b9021df178f086a45e2d78886a6ec775ef557e96479c7c71",
+      "unresolved": 0,
+      "required_not_included": 0
+    }
+  ],
+  "full_index": "D:\\CodexArtifacts\\four-projects-tests-20261125\\05-diff-utils\\context-index\\project_schema.json"
+}

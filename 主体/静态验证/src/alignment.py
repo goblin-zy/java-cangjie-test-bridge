@@ -17,7 +17,8 @@ def declarations(text, name, side):
     tokens = r'//[^\n]*|/\*[\s\S]*?\*/|"""[\s\S]*?"""|"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\''
     clean = re.sub(tokens, lambda m: re.sub(r'[^\n]', ' ', m.group()), text)
     prefix = r'(?:\w+[ \t]+)*func[ \t]+' if side == "cangjie" else r'(?:\w+[ \t]+)+'
-    pattern = r'^[ \t]*' + prefix + re.escape(name) + r'\s*\([^(){};]*\)[^;{}]*\{'
+    annotations = r'(?:@[\w.]+(?:[ \t]*\([^()\n]*\))?[ \t]+)*'
+    pattern = r'^[ \t]*' + annotations + prefix + re.escape(name) + r'\s*\([^(){};]*\)[^;{}]*\{'
     matches = []
     lines = clean.splitlines()
     for match in re.finditer(pattern, clean, re.M):
@@ -67,6 +68,11 @@ def prepare(translation: Path, route: str, run: Path, contract: Path | None,
              (m['id'] in selected_ids if config.get('execution_classes') and 'test_invocations' in inventory else
               (m['role'] == 'test' or m['role'].startswith('test_')) and
               m['source_location']['file'] == info['original_file'])]
+    if config.get('selected_test_methods'):
+        chosen = {i['source_member_id'] for i in inventory.get('test_invocations', [])
+                  if i['selector'] in config['selected_test_methods']}
+        require(chosen, '配置的测试选择器无法对应执行入口')
+        tests = [m for m in tests if m['id'] in chosen]
     for key in selection:
         require(sum(key in (m['id'], m['name']) for m in tests) == 1,
                 f"测试名缺失或不唯一：{key}")
@@ -145,7 +151,9 @@ def prepare(translation: Path, route: str, run: Path, contract: Path | None,
             path = Path(spelling)
             path = path if path.is_absolute() else root / path
             if path.is_dir():
-                sides[side].extend(sorted(path.rglob('*' + suffix)))
+                sides[side].extend(sorted(p for p in path.rglob('*' + suffix)
+                    if side != 'cangjie' or not p.name.endswith('_test.cj') and
+                    not any(part in {'test', 'tests'} for part in p.relative_to(path).parts[:-1])))
             elif path.is_file() and path.suffix == suffix:
                 sides[side].append(path)
     coverage = root / 'java-coverage/java_coverage.json'

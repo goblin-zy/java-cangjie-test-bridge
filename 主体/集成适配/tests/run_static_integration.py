@@ -47,7 +47,7 @@ def annotations(run, side):
     notes = []
     for number, line in enumerate(lines, 1):
         stripped = line.strip()
-        if not stripped or stripped in {'}', '};'} or stripped.startswith('//'):
+        if not stripped or stripped in {'}', '};'} or stripped.startswith(('//', '/*', '*')):
             continue
         containing = next((u for u in aligned['units'] if u[side] and u[side][0] <= number <= u[side][1]), None)
         name = containing['name'] if containing else None
@@ -269,7 +269,11 @@ def main():
     clean = re.sub(r'\x1b\[[0-?]*[ -/]*[@-~]', '', executed)
     (output / 'annotated-cangjie.clean.log').write_text(clean, encoding='utf-8')
     check('标注后的仓颉交付仍九条通过', re.search(r'PASSED:\s*9', clean) is not None and re.search(r'FAILED:\s*0', clean) is not None)
-    save(output / 'summary.json', {'status': 'PASSED', 'context_regressions': 40, 'static_regressions': 14,
+    counts = {}
+    for group, label in [('context', '01-context-regression'), ('static', '02-static-regression')]:
+        text = (output / (label + '.stderr.log')).read_text(encoding='utf-8')
+        counts[group] = int(re.search(r'Ran (\d+) tests', text)[1])
+    save(output / 'summary.json', {'status': 'PASSED', 'context_regressions': counts['context'], 'static_regressions': counts['static'],
         'week12_checks': load(base / 'integration_summary.json')['checks_passed'], 'static_flow_checks': len(checks),
         'source_tests': 9, 'source_assertions': 12, 'compared': report['scope']['compared'],
         'java_tests_passed': 9, 'cangjie_tests_passed': 9, 'annotated_cangjie_tests_passed': 9,

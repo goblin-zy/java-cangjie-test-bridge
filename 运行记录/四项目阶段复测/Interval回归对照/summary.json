@@ -1,0 +1,19 @@
+{
+  "status": "PASSED",
+  "context_regressions": 42,
+  "static_regressions": 18,
+  "week12_checks": 21,
+  "static_flow_checks": 14,
+  "source_tests": 9,
+  "source_assertions": 12,
+  "compared": 9,
+  "java_tests_passed": 9,
+  "cangjie_tests_passed": 9,
+  "annotated_cangjie_tests_passed": 9,
+  "semantic_verdict": "在所列前提和范围内一致",
+  "model_analysis_mode": "CURRENT_AGENT_FIXED_REVIEW",
+  "independent_blind_sessions": "NOT_RUN",
+  "semantic_accuracy_benchmark": "NOT_RUN",
+  "business_modified": false,
+  "model_api_used": false
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "table": "artifacts/java-members/0-members.json",
+    "source_member_id": "LevenshteinDistanceTest.java::org.apache.commons.text.similarity.LevenshteinDistanceTest#testGetLevenshteinDistance_StringString()",
+    "extracted_role": "test",
+    "test_framework": "junit-jupiter",
+    "basis": "HASH_AND_DECLARATION_SPAN",
+    "context_member_key": "420211c294ddbaabf83bc3457659f2aaca1d9a86112a9be055db347d461afe94",
+    "source_file": "src/test/java/org/apache/commons/text/similarity/LevenshteinDistanceTest.java",
+    "source_sha256": "079618b994dae7cca4bea1281868f0811e5eb8515f47c2fb5cb6e3b4c5da2451",
+    "source_location": {
+      "file": "original/LevenshteinDistanceTest.java",
+      "start_offset_utf16": 2369,
+      "end_offset_utf16_exclusive": 3205,
+      "start_line": 61,
+      "start_column": 5,
+      "end_line": 73,
+      "end_column": 5
+    },
+    "source_member_name": "testGetLevenshteinDistance_StringString",
+    "direct_recognized_checks": 0,
+    "execution_class": "org.apache.commons.text.similarity.LevenshteinDistanceTest",
+    "declaring_class": "org.apache.commons.text.similarity.LevenshteinDistanceTest"
+  }
+]

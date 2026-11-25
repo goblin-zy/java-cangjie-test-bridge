@@ -1,0 +1,829 @@
+{
+  "schema_version": "initial-context-1.0",
+  "status": "ASSEMBLED_WITH_LIMITATIONS",
+  "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+  "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+  "input_issues": {
+    "DEPENDENCIES_NOT_RESOLVED": 1,
+    "PARENT_MODEL_NOT_EVALUATED": 1
+  },
+  "semantic_problems": [],
+  "profile": "fragment",
+  "scope": "test",
+  "purpose": "\u7ffb\u8bd1\u6307\u5b9a\u6d4b\u8bd5\u65b9\u6cd5\uff1a\u4fdd\u7559\u6240\u5728\u7c7b\u53ca\u751f\u547d\u5468\u671f\uff0c\u5c55\u5f00\u8be5\u65b9\u6cd5\u7684\u8f85\u52a9\u4f9d\u8d56\u3002",
+  "target_type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+  "selected_tests": [
+    "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0"
+  ],
+  "test_invocations": [
+    {
+      "source_member_id": "DiffTest.java::diffutils.DiffTest#testDiff_Insert()",
+      "declaring_class": "diffutils.DiffTest",
+      "execution_class": "diffutils.DiffTest",
+      "selector": "diffutils.DiffTest#testDiff_Insert()",
+      "framework": "junit3",
+      "basis": "HASH_CHECKED_SOURCE_NOT_RUNTIME_DISCOVERY",
+      "source_member_key": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "execution_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "declaring_type_key": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "table": "artifacts/java-members/0-members.json",
+      "context_selector": "diffutils.DiffTest#testDiff_Insert()"
+    }
+  ],
+  "imports": [
+    {
+      "file": "src/test/java/diffutils/DiffTest.java",
+      "package": "diffutils",
+      "imports": [
+        {
+          "start": 22,
+          "end": 39,
+          "name": "difflib.*",
+          "static": false
+        },
+        {
+          "start": 41,
+          "end": 73,
+          "name": "junit.framework.TestCase",
+          "static": false
+        },
+        {
+          "start": 77,
+          "end": 104,
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "start": 106,
+          "end": 130,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 132,
+          "end": 161,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 163,
+          "end": 185,
+          "name": "java.util.List",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/DiffUtils.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "start": 652,
+          "end": 683,
+          "name": "difflib.myers.Equalizer",
+          "static": false
+        },
+        {
+          "start": 685,
+          "end": 716,
+          "name": "difflib.myers.MyersDiff",
+          "static": false
+        },
+        {
+          "start": 720,
+          "end": 747,
+          "name": "java.util.ArrayList",
+          "static": false
+        },
+        {
+          "start": 749,
+          "end": 771,
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "start": 773,
+          "end": 804,
+          "name": "java.util.regex.Matcher",
+          "static": false
+        },
+        {
+          "start": 806,
+          "end": 837,
+          "name": "java.util.regex.Pattern",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/Patch.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "start": 652,
+          "end": 681,
+          "name": "java.util.Collections",
+          "static": false
+        },
+        {
+          "start": 683,
+          "end": 711,
+          "name": "java.util.LinkedList",
+          "static": false
+        },
+        {
+          "start": 713,
+          "end": 735,
+          "name": "java.util.List",
+          "static": false
+        },
+        {
+          "start": 737,
+          "end": 767,
+          "name": "java.util.ListIterator",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/Delta.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "start": 652,
+          "end": 671,
+          "name": "java.util.*",
+          "static": false
+        }
+      ]
+    },
+    {
+      "file": "src/main/java/difflib/Chunk.java",
+      "package": "difflib",
+      "imports": [
+        {
+          "start": 652,
+          "end": 676,
+          "name": "java.util.Arrays",
+          "static": false
+        },
+        {
+          "start": 678,
+          "end": 700,
+          "name": "java.util.List",
+          "static": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "status": "PROVIDED_BY_SHARED_CONTEXT",
+      "id": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+      "display_id": "diffutils.DiffTest",
+      "content_kind": "signature",
+      "content": null,
+      "content_chars": 40,
+      "source": {
+        "file": "src/test/java/diffutils/DiffTest.java",
+        "sha256": "b2c3237aa7ab840c7fcd4111442c64217064ae28c2622c8f53c503bec53b4ed5",
+        "start_line": 11,
+        "end_line": 11,
+        "start_offset_utf16": 189,
+        "end_offset_utf16_exclusive": 229
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "SELECTED_TEST_TYPE",
+      "shared_record": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "display_id": "diffutils.DiffTest#testDiff_Insert()",
+      "content_kind": "full",
+      "content": "public void testDiff_Insert() {\r\n        final Patch<String> patch = DiffUtils.diff(Arrays.asList(\"hhh\"), Arrays.asList(\"hhh\", \"jjj\", \"kkk\"));\r\n        assertNotNull(patch);\r\n        assertEquals(1, patch.getDeltas().size());\r\n        final Delta<String> delta = patch.getDeltas().get(0);\r\n        assertEquals(InsertDelta.class, delta.getClass());\r\n        assertEquals(new Chunk<String>(1, Collections.<String> emptyList()), delta.getOriginal());\r\n        assertEquals(new Chunk<String>(1, Arrays.asList(\"jjj\", \"kkk\")), delta.getRevised());\r\n    }",
+      "content_chars": 549,
+      "source": {
+        "file": "src/test/java/diffutils/DiffTest.java",
+        "sha256": "b2c3237aa7ab840c7fcd4111442c64217064ae28c2622c8f53c503bec53b4ed5",
+        "start_line": 13,
+        "end_line": 21,
+        "start_offset_utf16": 237,
+        "end_offset_utf16_exclusive": 786
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "SELECTED_TEST"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "b0afcd7c089be4f2d76e12f065cfc8ab611710089a71547c2957555e58882f06",
+      "display_id": "difflib.DiffUtils",
+      "content_kind": "signature",
+      "content": "public class DiffUtils {",
+      "content_chars": 24,
+      "source": {
+        "file": "src/main/java/difflib/DiffUtils.java",
+        "sha256": "810115f36d48b2d178fccde8434bd8164f77690ffad1f83efd30b1d019c5410f",
+        "start_line": 34,
+        "end_line": 34,
+        "start_offset_utf16": 1067,
+        "end_offset_utf16_exclusive": 1091
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "170e6def99c5e7589980911f25ba41d56b8c162a1d99808a5d1dca73121302c1",
+      "display_id": "difflib.DiffUtils#diff(List<T>,List<T>)",
+      "content_kind": "signature",
+      "content": "public static <T> Patch<T> diff(List<T> original, List<T> revised) ",
+      "content_chars": 67,
+      "source": {
+        "file": "src/main/java/difflib/DiffUtils.java",
+        "sha256": "810115f36d48b2d178fccde8434bd8164f77690ffad1f83efd30b1d019c5410f",
+        "start_line": 50,
+        "end_line": 50,
+        "start_offset_utf16": 1654,
+        "end_offset_utf16_exclusive": 1721
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "07800b209477dc5838db310113460ae96cef0687183a87cba748792c3f6c74ed",
+      "display_id": "difflib.Patch",
+      "content_kind": "signature",
+      "content": "public class Patch<T> {",
+      "content_chars": 23,
+      "source": {
+        "file": "src/main/java/difflib/Patch.java",
+        "sha256": "3bbe7eaead43a124934bb7fa59c505e2aa6c2b88bc0786540b4f89ba64e60179",
+        "start_line": 29,
+        "end_line": 29,
+        "start_offset_utf16": 996,
+        "end_offset_utf16_exclusive": 1019
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "589e88bc57a2bd8ebc37e5b27fb416d763d258e939c519a9bf44875240efdefd",
+      "display_id": "difflib.Patch#getDeltas()",
+      "content_kind": "signature",
+      "content": "public List<Delta<T>> getDeltas() ",
+      "content_chars": 34,
+      "source": {
+        "file": "src/main/java/difflib/Patch.java",
+        "sha256": "3bbe7eaead43a124934bb7fa59c505e2aa6c2b88bc0786540b4f89ba64e60179",
+        "start_line": 74,
+        "end_line": 74,
+        "start_offset_utf16": 2402,
+        "end_offset_utf16_exclusive": 2436
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "ae29b3fa35c9127e3ba8be4a179e312abd7b8698d9889801d693d2bb4c1a21a4",
+      "display_id": "difflib.Delta",
+      "content_kind": "signature",
+      "content": "public abstract class Delta<T> {",
+      "content_chars": 32,
+      "source": {
+        "file": "src/main/java/difflib/Delta.java",
+        "sha256": "c57b0c150782c7fc7e31b68e2f821915657547ae4e30c291df2ba8965234e1ee",
+        "start_line": 26,
+        "end_line": 26,
+        "start_offset_utf16": 877,
+        "end_offset_utf16_exclusive": 909
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "987183572643d2225f07d0a6460b31e1e778766431148de4b784f541ef1f17a7",
+      "display_id": "difflib.Delta#getOriginal()",
+      "content_kind": "signature",
+      "content": "public Chunk<T> getOriginal() ",
+      "content_chars": 30,
+      "source": {
+        "file": "src/main/java/difflib/Delta.java",
+        "sha256": "c57b0c150782c7fc7e31b68e2f821915657547ae4e30c291df2ba8965234e1ee",
+        "start_line": 97,
+        "end_line": 97,
+        "start_offset_utf16": 2909,
+        "end_offset_utf16_exclusive": 2939
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "c6a639ce162ded657296beaae1f0927d1d4f2873c14d160132c4e69c08803b7b",
+      "display_id": "difflib.Delta#getRevised()",
+      "content_kind": "signature",
+      "content": "public Chunk<T> getRevised() ",
+      "content_chars": 29,
+      "source": {
+        "file": "src/main/java/difflib/Delta.java",
+        "sha256": "c57b0c150782c7fc7e31b68e2f821915657547ae4e30c291df2ba8965234e1ee",
+        "start_line": 111,
+        "end_line": 111,
+        "start_offset_utf16": 3245,
+        "end_offset_utf16_exclusive": 3274
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "999c0bbe135889f5bf530e26cee87b105c61a509ee6d8f85bb65841e3487c251",
+      "display_id": "difflib.Chunk",
+      "content_kind": "signature",
+      "content": "public class Chunk<T> {",
+      "content_chars": 23,
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "sha256": "c042907ce257141b43697dd3381f36c05fa86ee572ef009f27937025a1e70779",
+        "start_line": 35,
+        "end_line": 35,
+        "start_offset_utf16": 1284,
+        "end_offset_utf16_exclusive": 1307
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "DEPENDENCY_TYPE_HEADER"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "a8e9b5da7062108a3d5a384502e0ce20385e26d5ec5b945a295db232cd031edf",
+      "display_id": "difflib.Chunk#<init>(int,List<T>)",
+      "content_kind": "signature",
+      "content": "public Chunk(int position, List<T> lines) ",
+      "content_chars": 42,
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "sha256": "c042907ce257141b43697dd3381f36c05fa86ee572ef009f27937025a1e70779",
+        "start_line": 48,
+        "end_line": 48,
+        "start_offset_utf16": 1589,
+        "end_offset_utf16_exclusive": 1631
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "RESOLVED_DEPENDENCY"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "09c647f8d07678fcd4858d30f6c01e64249324c027442939500c3e8417d09e9e",
+      "display_id": "difflib.Chunk#field:position",
+      "content_kind": "full",
+      "content": "private final int position;",
+      "content_chars": 27,
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "sha256": "c042907ce257141b43697dd3381f36c05fa86ee572ef009f27937025a1e70779",
+        "start_line": 37,
+        "end_line": 37,
+        "start_offset_utf16": 1315,
+        "end_offset_utf16_exclusive": 1342
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "BUSINESS_INITIALIZATION_EVIDENCE"
+    },
+    {
+      "status": "CONTENT_INCLUDED",
+      "id": "6f5328b22d566acb6d3c60bea996ccb7fdb06d5b37496ded0434fa704de47299",
+      "display_id": "difflib.Chunk#field:lines",
+      "content_kind": "full",
+      "content": "private List<T> lines;",
+      "content_chars": 22,
+      "source": {
+        "file": "src/main/java/difflib/Chunk.java",
+        "sha256": "c042907ce257141b43697dd3381f36c05fa86ee572ef009f27937025a1e70779",
+        "start_line": 38,
+        "end_line": 38,
+        "start_offset_utf16": 1348,
+        "end_offset_utf16_exclusive": 1370
+      },
+      "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+      "snapshot_id": "aff4afccc3ae25898c2430c5f8b22a442fe912eae12b770679065bb3bae5401c",
+      "reason": "BUSINESS_INITIALIZATION_EVIDENCE"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reference": "39e5faa11b24ef2cdab79f34f990f12765cab7162377024822e0cbf485f933f3",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "resolved_static",
+      "targets": [
+        "170e6def99c5e7589980911f25ba41d56b8c162a1d99808a5d1dca73121302c1"
+      ],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "74ee0850e93ea7e398f40ab8e048f7ff65e46f669dd80841c762e1e46e5bf3da",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "39c6d798e0e6c247f42e3473d91ebf3c6268d1f302694d0356d7815d88452b5a",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "fbeffcd51d701f7f24b52fcdce2980f766ed4382315aa703fab1e60b4fe7a96d",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "87a6a11a35ecedf62f1dcd448646cb5b75b55d3a1d2c767fc92dad6bf0b77abe",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "aa2b81d13cd3f65398fcfcc886630917aa0aadaa04bdc3062ffed3d89ba78cb3",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "3cbc6883ab4b54901829d8ea318c7844dc702900a19dd5e4041318d26b0d723f",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "resolved_static",
+      "targets": [
+        "589e88bc57a2bd8ebc37e5b27fb416d763d258e939c519a9bf44875240efdefd"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "7bcfe5da3fc8268f4e8985d9f4925565db0aad983d5126a4cd89192181b097ae",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "a321f89d32605be041997e0ffff2ada870aca835d2429fa59de7daa5f27439ea",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "resolved_static",
+      "targets": [
+        "589e88bc57a2bd8ebc37e5b27fb416d763d258e939c519a9bf44875240efdefd"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "ced8f2cc950236356b34a7a75412e001920a27b4f14ede927ce68716e52aa852",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "a4d8c19d3d8bb439972c4080b1e014549fac0cc814992f8766e3b17cfcf5f828",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "951678bafe6b32706688d007c31662bb7897c1f79f2cb9a3e39f820303c32817",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "8c2067d9aceb3afda77cd36e4d0ac51472e0b1fc07eaeb29b82905504cbdd826",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "7a847a75b17e96c1581f9f97e766245f60c8b968ba3ef1c802be26b6930d4330",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "resolved_static",
+      "targets": [
+        "987183572643d2225f07d0a6460b31e1e778766431148de4b784f541ef1f17a7"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "c8c56e504f51929354b2235c9f6731ffa3301c20551044b80f32d0a3d6001f6e",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "7396a305a30786347d9ce540c59d1b7bcf4ac0465e8a29367a3105ff96f8df75",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "external",
+      "targets": [],
+      "dispatch": "STATIC"
+    },
+    {
+      "reference": "05834c4b15df43860a62577d067b06267e464ade986f34ab36aad29850a56495",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "resolved_static",
+      "targets": [
+        "c6a639ce162ded657296beaae1f0927d1d4f2873c14d160132c4e69c08803b7b"
+      ],
+      "dispatch": "DECLARED_TARGET_ONLY"
+    },
+    {
+      "reference": "0a662025ad3135a0ab1a77eebf3fc023f0c95fabf29773701a0f657f7803c08f",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "resolved_static",
+      "targets": [
+        "a8e9b5da7062108a3d5a384502e0ce20385e26d5ec5b945a295db232cd031edf"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    },
+    {
+      "reference": "e51964cc04214b10255118a7863b089b1bbc7f4957823142a930e4370aa03ef0",
+      "caller": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+      "resolution": "resolved_static",
+      "targets": [
+        "a8e9b5da7062108a3d5a384502e0ce20385e26d5ec5b945a295db232cd031edf"
+      ],
+      "dispatch": "CONSTRUCTOR"
+    }
+  ],
+  "lifecycle": {
+    "class_setup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "setup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "cleanup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ],
+    "class_cleanup": [
+      {
+        "type": "9c7a287401d13eacec0f241ec4cda944dd3bf4e9890e70e7d0eb2117bd311c9d",
+        "members": [],
+        "within_type_order": "NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "initialization": [],
+  "resources": [],
+  "unresolved": [],
+  "boundaries": [
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "74ee0850e93ea7e398f40ab8e048f7ff65e46f669dd80841c762e1e46e5bf3da",
+      "signature": "java.util.Arrays.asList(T...)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "39c6d798e0e6c247f42e3473d91ebf3c6268d1f302694d0356d7815d88452b5a",
+      "signature": "java.util.Arrays.asList(T...)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "fbeffcd51d701f7f24b52fcdce2980f766ed4382315aa703fab1e60b4fe7a96d",
+      "signature": "junit.framework.TestCase.assertNotNull(java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "87a6a11a35ecedf62f1dcd448646cb5b75b55d3a1d2c767fc92dad6bf0b77abe",
+      "signature": "junit.framework.TestCase.assertEquals(int, int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "aa2b81d13cd3f65398fcfcc886630917aa0aadaa04bdc3062ffed3d89ba78cb3",
+      "signature": "java.util.List.size()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "7bcfe5da3fc8268f4e8985d9f4925565db0aad983d5126a4cd89192181b097ae",
+      "signature": "java.util.List.get(int)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "ced8f2cc950236356b34a7a75412e001920a27b4f14ede927ce68716e52aa852",
+      "signature": "junit.framework.TestCase.assertEquals(java.lang.Object, java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "a4d8c19d3d8bb439972c4080b1e014549fac0cc814992f8766e3b17cfcf5f828",
+      "signature": "java.lang.Object.getClass()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "951678bafe6b32706688d007c31662bb7897c1f79f2cb9a3e39f820303c32817",
+      "signature": "junit.framework.TestCase.assertEquals(java.lang.Object, java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "8c2067d9aceb3afda77cd36e4d0ac51472e0b1fc07eaeb29b82905504cbdd826",
+      "signature": "java.util.Collections.emptyList()"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "c8c56e504f51929354b2235c9f6731ffa3301c20551044b80f32d0a3d6001f6e",
+      "signature": "junit.framework.TestCase.assertEquals(java.lang.Object, java.lang.Object)"
+    },
+    {
+      "kind": "EXTERNAL_DECLARATION",
+      "reference": "7396a305a30786347d9ce540c59d1b7bcf4ac0465e8a29367a3105ff96f8df75",
+      "signature": "java.util.Arrays.asList(T...)"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "170e6def99c5e7589980911f25ba41d56b8c162a1d99808a5d1dca73121302c1"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "589e88bc57a2bd8ebc37e5b27fb416d763d258e939c519a9bf44875240efdefd"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "987183572643d2225f07d0a6460b31e1e778766431148de4b784f541ef1f17a7"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "c6a639ce162ded657296beaae1f0927d1d4f2873c14d160132c4e69c08803b7b"
+    },
+    {
+      "kind": "BODY_AVAILABLE_ON_DEMAND",
+      "member": "a8e9b5da7062108a3d5a384502e0ce20385e26d5ec5b945a295db232cd031edf"
+    }
+  ],
+  "required_not_included": [],
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 902,
+    "visited_members": 8
+  },
+  "test_structure": {
+    "schema_version": "member-internal-analysis-1.0",
+    "capabilities": {
+      "statement_structure": true,
+      "assertion_evidence": true,
+      "compatibility_feature_detection": true,
+      "source_transformation": "UNSUPPORTED",
+      "executable_test_prefix_generation": "UNSUPPORTED",
+      "runtime_control_flow": "NOT_ESTABLISHED",
+      "operation_assertion_causality": "NOT_ESTABLISHED"
+    },
+    "members": [
+      {
+        "member_key": "09c647f8d07678fcd4858d30f6c01e64249324c027442939500c3e8417d09e9e",
+        "display_id": "difflib.Chunk#field:position",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 09c647f8d07678fcd4858d30f6c01e64249324c027442939500c3e8417d09e9e"
+      },
+      {
+        "member_key": "4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0",
+        "display_id": "diffutils.DiffTest#testDiff_Insert()",
+        "top_level_steps": [
+          {
+            "key": "8b1c6cfdcd6365478fb9c47138ca292c475b665465393b81015bfeb7adc5449a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              14,
+              14
+            ]
+          },
+          {
+            "key": "7b7108727cc2bdffb86575c2be1ef6cae01553d963882a8edcfca2e7127c0b9b",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              15,
+              15
+            ]
+          },
+          {
+            "key": "27df039b70a982a03aaf62b9b9d3beab3cae6b604c4b51602ede92f37e8dc2f0",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              16,
+              16
+            ]
+          },
+          {
+            "key": "c795dbd681a1d4af72a74049bd8969c5dead7c8d852707633a28b043a92cf6c6",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              17,
+              17
+            ]
+          },
+          {
+            "key": "1fdf34f30b864b79b1e965456d4c93b911bda5395b06bc8f53b013334714651e",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              18,
+              18
+            ]
+          },
+          {
+            "key": "1d5df553c97fe8b66436074dc7f12000191e9aadf2af99b33effa1b5db5a410f",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              19,
+              19
+            ]
+          },
+          {
+            "key": "90f113bedb1802c9dea0ec9ba6a164e5978da3bb54d27daf51f33f0f6814f97a",
+            "ast_kind": "ExpressionStmt",
+            "lines": [
+              20,
+              20
+            ]
+          }
+        ],
+        "remaining_steps": 0,
+        "recognized_checks": 5,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 4a81e4d58f829157d18c75cb16ea3c344d7ce6a6a95939e2ee91519528cfb6b0"
+      },
+      {
+        "member_key": "6f5328b22d566acb6d3c60bea996ccb7fdb06d5b37496ded0434fa704de47299",
+        "display_id": "difflib.Chunk#field:lines",
+        "top_level_steps": [],
+        "remaining_steps": 0,
+        "recognized_checks": 0,
+        "assertion_candidates": 0,
+        "deferred_checks": 0,
+        "details_command": "analyze --id 6f5328b22d566acb6d3c60bea996ccb7fdb06d5b37496ded0434fa704de47299"
+      }
+    ],
+    "ordering": "SOURCE_ORDER_ONLY_NOT_RUNTIME_TRACE",
+    "cross_member_behavior": "FOLLOW_REFERENCES_NOT_INLINE_EXECUTION_TRACE",
+    "details": "Use analyze for checks/guards and references for helper targets; shared records remain in shared_ref."
+  },
+  "artifacts": {},
+  "semantic_completeness": "NOT_ESTABLISHED",
+  "limitations": [
+    "static declared targets, not runtime dispatch",
+    "JUnit roles supported by source imports, not runtime discovery",
+    "missing external JARs remain unresolved",
+    "data providers and extensions require explicit review",
+    "Initialization is source order evidence, not a runtime execution trace.",
+    "Lifecycle ordering assumes ordinary JUnit inheritance; extensions, nested/enclosing instances and providers need review.",
+    "Only resolved call/field edges are expanded; type-use and reflection dependencies may require queries."
+  ],
+  "next_actions": [
+    "read: omitted or business bodies by id",
+    "references/resolve: inspect unresolved references and candidates",
+    "file: inspect annotations, imports or resource/config files",
+    "lookup: inspect supplied artifact items and their statuses",
+    "analyze: inspect source steps/checks/control contexts; features: inspect compatibility review items"
+  ],
+  "shared_ref": {
+    "file": "../shared.json",
+    "sha256": "668266cda0a630bb84657640831b0e74d759917f91c64b541bf0b79502611580",
+    "index_id": "be5883c3efeb772fafe4c62504f43292b5023535100f05de02290363e5d9e8ea",
+    "required": true
+  }
+}

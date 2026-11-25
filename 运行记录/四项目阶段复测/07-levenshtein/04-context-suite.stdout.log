@@ -1,0 +1,23 @@
+{
+  "status": "SUITE_CREATED_WITH_LIMITATIONS",
+  "json": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-suite\\initial_context.json",
+  "markdown": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-suite\\initial_context.md",
+  "agent_json": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-suite\\agent_context.json",
+  "view": "compact",
+  "recommended_input": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-suite\\agent_context.json",
+  "full_json_bytes": 156933,
+  "agent_json_bytes": 45565,
+  "records": 18,
+  "unresolved": 0,
+  "required_not_included": 0,
+  "budget": {
+    "max_depth": 6,
+    "max_members": 200,
+    "max_chars": 30000,
+    "included_chars": 6581,
+    "visited_members": 16
+  },
+  "tests": 9,
+  "tasks": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-suite\\tasks.json",
+  "shared": "D:\\CodexArtifacts\\four-projects-tests-20261125\\07-levenshtein\\context-suite\\shared.json"
+}

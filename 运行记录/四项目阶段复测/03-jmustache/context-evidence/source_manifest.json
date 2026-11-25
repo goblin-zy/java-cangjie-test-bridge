@@ -1,0 +1,288 @@
+{
+  "schema_version": "context-source-2.0",
+  "project_root": "source",
+  "snapshot_id": "762b223d316cba91ce4f598992dc1889358ae737a84710d2a12bede644201ed5",
+  "inventory": [
+    {
+      "file": ".gitignore",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "c9c148679b4ef4972f64363f3310d69aaaa9bc9ad254ef5a8d6a903ca9ac4aaa",
+      "size": 195
+    },
+    {
+      "file": ".gitmodules",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "cdf0842121c3a1edc42a31c9bcb8e5841c9ada4f4cd0245b7439187f72d82b7e",
+      "size": 133
+    },
+    {
+      "file": ".mvn/wrapper/maven-wrapper.jar",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a",
+      "size": 62547
+    },
+    {
+      "file": ".mvn/wrapper/maven-wrapper.properties",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "0aaf2bdb47a46f20b0211ad003a8b321d918ccccdd2f30734b33a2c76d5abc05",
+      "size": 972
+    },
+    {
+      "file": "LICENSE",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "239102722837946c89a166a0f52807062ce7f226f0200db98c824d9e3348632a",
+      "size": 1491
+    },
+    {
+      "file": "README.md",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "310abf71b932eb08d3a3db4dd4656f19a4ccfcac547d2c16653a3df3dce24511",
+      "size": 22247
+    },
+    {
+      "file": "mvnw",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "825cdc62abd459da5efa6eeb0218f329c0adca3f7d4f7560f6ba2b43b9deb928",
+      "size": 10924
+    },
+    {
+      "file": "mvnw.cmd",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "3dc8d558cc15e5051a9ef3778099c6a8bcd83320ba0383ece14811194d08d730",
+      "size": 7061
+    },
+    {
+      "file": "pom.xml",
+      "source_role": "build_config",
+      "parse_input": false,
+      "sha256": "2a61efda2ff59a37aa89ef37223a3374cc3add7754c88c6720ced320efd0fe2d",
+      "size": 7950
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/BasicCollector.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "708fa7b71335f835756c15b7047f8af6ac118ad3402b8f63c0cb248f391d2c62",
+      "size": 8206
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/DefaultCollector.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "43d4c1871467821b0398615166e704b4ef5515f4fa992c0280e12fb88dd80676",
+      "size": 5804
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/Escapers.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "fea6375d93e4cab26e77f0f261d49d83e37cbfa579b00962b42273bd78d6f493",
+      "size": 5170
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/Mustache.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "387439edc469e31a01e6a330ce5dadad3a87dc41d3133f64f56f5c78912588e0",
+      "size": 72072
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/MustacheException.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "fd09726ff925a73e6c455eb4419c4542f25c5f0e083b8ca499811f13bf1d94b4",
+      "size": 1386
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/MustacheParseException.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "3102ff9ae1a654851b24a4cd1edb669660fa3888b5faff92849a3c88fd60f91b",
+      "size": 541
+    },
+    {
+      "file": "src/main/java/com/samskivert/mustache/Template.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "9480d2aae64c467ee67a9f6839ce574ab7ae97927730ef33bdd845b95c6d4e79",
+      "size": 22075
+    },
+    {
+      "file": "src/main/java/module-info.java",
+      "source_role": "business_source",
+      "parse_input": true,
+      "sha256": "14b24f6bfce881667a8ebb90bf2e408406aba3b3395420e436072573c959838a",
+      "size": 103
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/MustacheTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "83d1a3bc604fa59f70208f56b4f67b2b93df57b46a22688a64d9dfe534dedb36",
+      "size": 11298
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/SharedTests.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "8116952f77edbd6bf4b67fb22c3558ae28988b25674ec6c1bd42f1b21df29c79",
+      "size": 39058
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/ThreadSafetyTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "6e822dd9dc3f64440dd7d626cbb8e99dee91a5f32dd45ecbaf8cd6b87187d389",
+      "size": 4652
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/specs/CustomSpecTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "fa5057b2b9992098c1a8b9ae39fd2eb374d60ec143a351a2dff5e16972b3fba7",
+      "size": 654
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/specs/OfficialSpecTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "d1d80423d96b5bc320445367de4453ccde82bb74b64f28ed3f84a2cd939fed42",
+      "size": 764
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/specs/Spec.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "4998eeed526c66015300a579e04c1963a55f9b03a7091e19ac8741c0a4caa856",
+      "size": 2259
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/specs/SpecAwareTemplateLoader.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "cab0bafd51232d420052ef093a99b35a03470257f9c8246c39f3a1d8e9bc7ad5",
+      "size": 823
+    },
+    {
+      "file": "src/test/java/com/samskivert/mustache/specs/SpecTest.java",
+      "source_role": "test_source",
+      "parse_input": true,
+      "sha256": "cdfc80adfdad65a12b1a14d5616338c6579f0cd95c50e107bbd16290769505c3",
+      "size": 4602
+    },
+    {
+      "file": "src/test/resources/custom/specs/partials.yml",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "e9f637736140a02c2e687072fffb0e5e7e865e5fd3a765a1f9dccda03c13a446",
+      "size": 4227
+    },
+    {
+      "file": "src/test/resources/custom/specs/sections.yml",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "e69bf41b4295b06a313831ffa47f760a8ea861d1e0614832628729979f32c29e",
+      "size": 401
+    },
+    {
+      "file": "src/test/resources/custom/specs/~inheritance.yml",
+      "source_role": "resource",
+      "parse_input": false,
+      "sha256": "c41a7d1b2b05904a1b37ecb23574116734dec573a594d0ca19648165e8576992",
+      "size": 402
+    },
+    {
+      "file": "\u4ea4\u4ed8\u8bf4\u660e.md",
+      "source_role": "project_material",
+      "parse_input": false,
+      "sha256": "1f80233e0380198c099f20f19a32be81ca84119c6fdc6e628cc16866125d0c35",
+      "size": 501
+    }
+  ],
+  "scope": {
+    "source_roots": {
+      "business": [
+        "src/main/java"
+      ],
+      "test": [
+        "src/test/java"
+      ],
+      "support": []
+    },
+    "filtered_resources": [],
+    "resource_roots": [
+      "src/test/resources"
+    ],
+    "selected_test_files": [
+      "src/test/java/com/samskivert/mustache/MustacheTest.java"
+    ],
+    "test_scope": [
+      "src/test/java/com/samskivert/mustache/MustacheTest.java"
+    ],
+    "build_declarations": [
+      {
+        "file": "pom.xml",
+        "kind": "maven",
+        "properties": {
+          "source.level": "11",
+          "project.build.sourceEncoding": "UTF-8",
+          "project.build.outputTimestamp": "2023-01-01T00:00:00Z",
+          "project.basedir": ".",
+          "basedir": "."
+        },
+        "source_version_as_declared": null,
+        "dependencies": [
+          {
+            "groupId": "junit",
+            "artifactId": "junit",
+            "version": "4.13.2",
+            "scope": "test"
+          },
+          {
+            "groupId": "org.yaml",
+            "artifactId": "snakeyaml",
+            "version": "2.7",
+            "scope": "test"
+          }
+        ],
+        "effective_model": "NOT_EVALUATED",
+        "parent": {
+          "groupId": "org.sonatype.oss",
+          "artifactId": "oss-parent",
+          "version": "9",
+          "relativePath": null
+        }
+      }
+    ]
+  },
+  "issues": [
+    {
+      "kind": "DEPENDENCIES_NOT_RESOLVED",
+      "message": "\u53ea\u4fdd\u5b58\u4f9d\u8d56\u58f0\u660e\uff0c\u672a\u4e0b\u8f7dJAR\u6216\u6c42\u89e3\u8fd0\u884c\u7c7b\u8def\u5f84",
+      "severity": "warning",
+      "file": "pom.xml"
+    },
+    {
+      "kind": "PARENT_MODEL_NOT_EVALUATED",
+      "message": "\u7236POM\u672a\u4f5c\u4e3a\u6709\u6548\u6a21\u578b\u6c42\u503c",
+      "severity": "warning",
+      "file": "pom.xml"
+    },
+    {
+      "kind": "BUILD_PROFILES_NOT_EVALUATED",
+      "message": "\u4fdd\u5b58profile\u58f0\u660e\uff0c\u672a\u6fc0\u6d3b\u6216\u6267\u884c",
+      "severity": "warning",
+      "file": "pom.xml"
+    }
+  ],
+  "origin": "D:\\CodexArtifacts\\four-projects-20261125\\\u6837\u4f8b\u6750\u6599\\01-\u53cc\u8bed\u8bc4\u6d4b\u9879\u76ee\\projects\\03-jmustache\\java",
+  "transformation": "IDENTITY_ONLY"
+}

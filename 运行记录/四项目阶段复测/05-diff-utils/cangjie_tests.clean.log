@@ -1,0 +1,11 @@
+78
+7878--------------------------------------------------------------------------------------------------
+TP: diffUtils4cj, time elapsed: 621200 ns, RESULT:
+    TCS: DiffTranslationTest, time elapsed: 612700 ns, RESULT:
+    [ PASSED ] CASE: testDiff_Insert (342000 ns)
+    [ PASSED ] CASE: testDiff_Delete (21400 ns)
+    [ PASSED ] CASE: testDiff_Change (14700 ns)
+Summary: TOTAL: 3
+    PASSED: 3, SKIPPED: 0, ERROR: 0
+    FAILED: 0
+--------------------------------------------------------------------------------------------------

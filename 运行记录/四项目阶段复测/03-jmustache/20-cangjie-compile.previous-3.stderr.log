@@ -1,0 +1,349 @@
+warning: unused function:'execute'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:28:5:
+   | 
+28 |       public func execute(out: OutputStream, context: DataModel): Unit {
+   |  _____^
+29 | |         execute(context, out)
+30 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'execute'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:49:5:
+   | 
+49 |       public func execute(
+   |  _____^
+50 | |         context: DataModel, parentContext: DataModel, out: OutputStream) {
+   | | ...
+53 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'toString'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\basic_collector.cj:65:5:
+   | 
+65 |       public func toString(): String {
+   |  _____^
+66 | |         return "MAP_FETCHER"
+67 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'toString'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\basic_collector.cj:87:5:
+   | 
+87 |       public func toString(): String {
+   |  _____^
+88 | |         return "LIST_FETCHER"
+89 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'createFragment'
+  ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:96:5:
+   | 
+96 |       protected func createFragment(
+   |  _____^
+97 | |         segs: Array<Segment>, currentCtx: Context): Fragment {
+   | | ...
+99 | |     }
+   | |_____^ unused function
+   | 
+   # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'toString'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\basic_collector.cj:114:5:
+    | 
+114 |       public func toString(): String {
+    |  _____^
+115 | |         return "ITER_FETCHER"
+116 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'allowsWhitespace'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:302:5:
+    | 
+302 |       protected static func allowsWhitespace(typeRune: Rune): Bool {
+    |  _____^
+303 | |         return ((typeRune == r'=' /* change delimiters */) ||
+    | | ...
+305 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'hashCode'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:402:5:
+    | 
+402 |       public func hashCode(): Int64 {
+    |  _____^
+403 | |         return getDataModelType().hashCode() + name.hashCode()
+404 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'equals'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:406:5:
+    | 
+406 |       public func equals(other: Key): Bool {
+    |  _____^
+407 | |         return getDataModelType()
+    | | ...
+410 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'escapeHTML'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:412:5:
+    | 
+412 |       public func escapeHTML(escapeHTML: Bool): Compiler {
+    |  _____^
+413 | |         if (escapeHTML) {
+    | | ...
+417 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'standardsMode'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:421:5:
+    | 
+421 |       public func standardsMode(_standardsMode: Bool): Compiler {
+    |  _____^
+422 | |         return Compiler(_standardsMode, this._strictSections, this._nullValue,
+    | | ...
+426 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'strictSections'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:431:5:
+    | 
+431 |       public func strictSections(_strictSections: Bool): Compiler {
+    |  _____^
+432 | |         return Compiler(this._standardsMode, _strictSections, this._nullValue,
+    | | ...
+436 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'nullValue'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:457:5:
+    | 
+457 |       public func nullValue(_nullValue: String): Compiler {
+    |  _____^
+458 | |         return Compiler(this._standardsMode, this._strictSections, _nullValue, false,
+    | | ...
+461 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'emptyStringIsFalse'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:464:5:
+    | 
+464 |       public func emptyStringIsFalse(_emptyStringIsFalse: Bool): Compiler {
+    |  _____^
+465 | |         return Compiler(this._standardsMode, this._strictSections, this._nullValue,
+    | | ...
+469 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'zeroIsFalse'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:472:5:
+    | 
+472 |       public func zeroIsFalse(_zeroIsFalse: Bool):  Compiler {
+    |  _____^
+473 | |         return Compiler(this._standardsMode, this._strictSections, this._nullValue,
+    | | ...
+477 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'withFormatter'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:480:5:
+    | 
+480 |       public func withFormatter(_formatter: Formatter): Compiler {
+    |  _____^
+481 | |         return Compiler(this._standardsMode, this._strictSections, this._nullValue,
+    | | ...
+484 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'withLoader'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:494:5:
+    | 
+494 |       public func withLoader(_loader: TemplateLoader): Compiler {
+    |  _____^
+495 | |         return Compiler(this._standardsMode, this._strictSections, this._nullValue,
+    | | ...
+498 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'withCollector'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:501:5:
+    | 
+501 |       public func withCollector(_collector: Collector): Compiler {
+    |  _____^
+502 | |         return Compiler(this._standardsMode, this._strictSections, this._nullValue,
+    | | ...
+505 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'execute'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:506:5:
+    | 
+506 |       public func execute(): String {
+    |  _____^
+507 | |         let byteArrayStream = ByteBuffer()
+    | | ...
+513 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'withDelims'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:510:5:
+    | 
+510 |       public func withDelims(_delims: String): Compiler {
+    |  _____^
+511 | |         return Compiler(this._standardsMode, this._strictSections, this._nullValue,
+    | | ...
+515 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'execute'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:517:5:
+    | 
+517 |       public func execute(context: DataModel): String {
+    |  _____^
+518 | |         let byteArrayStream = ByteBuffer()
+    | | ...
+523 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'decomplie'
+   ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\template.cj:560:5:
+    | 
+560 |       public func decomplie(): String {
+    |  _____^
+561 | |         decomplie(StringBuilder()).toString()
+562 | |     }
+    | |_____^ unused function
+    | 
+    # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+warning: unused function:'ToString'
+    ==> D:\CodexArtifacts\four-projects-tests-20261125\03-jmustache\cangjie-build\src\mustache.cj:1686:5:
+     | 
+1686 |     public func ToString() { "Faux" }
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ unused function
+     | 
+     # note: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+23 warnings generated, 23 warnings printed.
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization5Field7getNameHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache18MapVariableFetcher3getHCN32stdx.serialization.serialization9DataModelERNat6StringEEL_E)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization5Field7getDataHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache18MapVariableFetcher3getHCN32stdx.serialization.serialization9DataModelERNat6StringEEL_E)
+
+ld.lld: error: undefined symbol: _CGP18stdx.encoding.jsoniiHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CGP10cjmustachefiHv)
+
+ld.lld: error: undefined symbol: _CGP32stdx.serialization.serializationiiHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CGP10cjmustachefiHv)
+
+ld.lld: error: undefined symbol: _CGP18stdx.encoding.jsonilHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CGP10cjmustacheflHv)
+
+ld.lld: error: undefined symbol: _CGP32stdx.serialization.serializationilHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CGP10cjmustacheflHv)
+
+ld.lld: error: undefined symbol: _CN18stdx.encoding.jsonXCN32stdx.serialization.serialization9DataModelE6toJsonHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache12NamedSegment8toStringHv)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization15DataModelStruct6<init>Hv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache12NamedSegment9serializeHv)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization5fieldIG_HRNat6StringEG_
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache12NamedSegment9serializeHv)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache12NamedSegment9serializeHv)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization15DataModelStruct3addHCNY_5FieldE
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache12NamedSegment9serializeHv)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache12NamedSegment9serializeHv)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization12DataModelSeq8getItemsHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache14SectionSegment7executeHCNY_8TemplateECNY_7ContextECNah12OutputStreamE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache15InvertedSegment7executeHCNY_8TemplateECNY_7ContextECNah12OutputStreamE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustacheXCN32stdx.serialization.serialization9DataModelE8toStringHv)
+>>> referenced 2 more times
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization13DataModelBool8getValueHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache14SectionSegment7executeHCNY_8TemplateECNY_7ContextECNah12OutputStreamE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache15InvertedSegment7executeHCNY_8TemplateECNY_7ContextECNah12OutputStreamE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustacheXCN32stdx.serialization.serialization9DataModelE8toStringHv)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serializationXCNac9ArrayListIG_E9serializeHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache8Template15getSectionValueHCNY_7ContextERNat6StringEl)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serializationXRNat6StringE9serializeHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache8Compiler8isFalseyHCN32stdx.serialization.serialization9DataModelE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache18MapVariableFetcher3getHCN32stdx.serialization.serialization9DataModelERNat6StringE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache18MapVariableFetcher3getHCN32stdx.serialization.serialization9DataModelERNat6StringE)
+>>> referenced 12 more times
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization14DataModelFloat8getValueHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache8Compiler8isFalseyHCN32stdx.serialization.serialization9DataModelE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustacheXCN32stdx.serialization.serialization9DataModelE8toStringHv)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization12DataModelInt8getValueHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache8Compiler8isFalseyHCN32stdx.serialization.serialization9DataModelE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustacheXCN32stdx.serialization.serialization9DataModelE8toStringHv)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization15DataModelString8getValueHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustacheXCN32stdx.serialization.serialization9DataModelE8toStringHv)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache18isNO_FETCHER_FOUNDHCN32stdx.serialization.serialization9DataModelE)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache8Compiler19isEmptyCharSequenceHCN32stdx.serialization.serialization9DataModelE)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization15DataModelStruct9getFieldsHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache18MapVariableFetcher3getHCN32stdx.serialization.serialization9DataModelERNat6StringE)
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serializationXl9serializeHv
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache23MustacheTranslationTest26testPrimitiveArrayVariableHv)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache23MustacheTranslationTest26testPrimitiveArrayVariableHv)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache23MustacheTranslationTest26testPrimitiveArrayVariableHv)
+>>> referenced 10 more times
+
+ld.lld: error: undefined symbol: _CN32stdx.serialization.serialization12DataModelSeq6<init>HCNac9ArrayListICNY_9DataModelEE
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache23MustacheTranslationTest26testPrimitiveArrayVariableHv)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache23MustacheTranslationTest31testPrimitiveArrayIndexVariableHv)
+>>> referenced by D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o:(_CN10cjmustache23MustacheTranslationTest42testPrimitiveArrayIndexOutOfBoundsVariableHv)
+>>> referenced 1 more times
+
+ld.lld: error: too many errors emitted, stopping now (use /errorlimit:0 to see all errors)
+error: ""E:\\cangjie\\third_party\\llvm\\bin\\ld.lld.exe" "-o" "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe" "--nxcompat" "--dynamicbase" "--high-entropy-va" "-m" "i386pep" "-Bdynamic" "E:\\cangjie\\third_party\\mingw\\lib\\crt2.o" "E:\\cangjie\\third_party\\mingw\\lib\\crtbegin.o" "E:\\cangjie\\third_party\\mingw\\lib\\CRT_glob.o" "-LE:\\cangjie\\third_party\\mingw\\lib\\" "-LE:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx" "-LE:\\cangjie\\lib\\windows_x86_64_cjnative" "-LE:\\cangjie\\runtime\\lib\\windows_x86_64_cjnative" "-L/lib" "-L/x86_64-w64-mingw32/lib" "-LE:\\cangjie\\third_party\\mingw\\lib\\" "E:\\cangjie\\lib\\windows_x86_64_cjnative\\section.o" "E:\\cangjie\\lib\\windows_x86_64_cjnative\\cjstart.o" "D:\\CodexArtifacts\\four-projects-tests-20261125\\cangjie-tmp-DN45VD5M6OHC-a3835950\\cjmustache.o" "--start-group" "-l:libcangjie-std-binary.a" "-l:libcangjie-std-collection.a" "-l:libcangjie-std-collection.concurrent.a" "-l:libcangjie-std-convert.a" "-l:libcangjie-std-core.a" "-l:libcangjie-std-env.a" "-l:libcangjie-std-fs.a" "-l:libcangjie-std-io.a" "-l:libcangjie-std-math.a" "-l:libcangjie-std-net.a" "-l:libcangjie-std-overflow.a" "-l:libcangjie-std-process.a" "-l:libcangjie-std-random.a" "-l:libcangjie-std-regex.a" "-l:libcangjie-std-runtime.a" "-l:libcangjie-std-sort.a" "-l:libcangjie-std-sync.a" "-l:libcangjie-std-time.a" "-l:libcangjie-std-unicode.a" "-l:libcangjie-std-unittest.a" "-l:libcangjie-std-unittest.common.a" "-l:libcangjie-std-unittest.diff.a" "-l:libcangjie-std-unittest.mock.a" "-l:libcangjie-std-unittest.mock.internal.a" "-l:libcangjie-std-unittest.prop_test.a" "-l:libws2_32.a" "--end-group" "-l:libcangjie-runtime.dll" "-lclang_rt-builtins" "-lboundscheck" "-lm" "-lmsvcrt" "-lmingw32" "-lmoldname" "-lmingwex" "-lmingw32" "-lmsvcrt" "-lpthread" "-ladvapi32" "-lshell32" "-luser32" "-lkernel32" "-lmingw32" "-lmoldname" "-lmingwex" "-lmsvcrt" "E:\\cangjie\\third_party\\mingw\\lib\\crtend.o" ": command failed with exit code 1 (use -V to see invocation)

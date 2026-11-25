@@ -1,0 +1,576 @@
+[
+  {
+    "label": "02-extract",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "-cp",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\extractor-classes",
+      "JavaTestSkeletonExtractor",
+      "--input",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache\\java\\src\\test\\java",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-extraction"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.781
+  },
+  {
+    "label": "03-context-build",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\上下文工具\\context_tool.py",
+      "build",
+      "--project",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache\\java",
+      "--test-scope",
+      "src/test/java/com/samskivert/mustache/MustacheTest.java",
+      "--java-members",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-extraction\\members.json",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-index",
+      "--java",
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "--javac",
+      "C:/Program Files/Java/jdk-17/bin/javac.exe",
+      "--classpath",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar",
+      "--classpath",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\snakeyaml-2.7.jar"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 6.453
+  },
+  {
+    "label": "04-context-suite",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\上下文工具\\context_tool.py",
+      "suite",
+      "--index",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-index\\project_schema.json",
+      "--target",
+      "com.samskivert.mustache.MustacheTest",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\context-suite"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 16.016
+  },
+  {
+    "label": "05-java-compile",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/javac.exe",
+      "-J-Dfile.encoding=UTF-8",
+      "@D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\javac.args"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.953
+  },
+  {
+    "label": "06-java-selected-tests",
+    "command": [
+      "C:/Program Files/Java/jdk-17/bin/java.exe",
+      "-jar",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\junit-platform-console-standalone-1.9.2.jar",
+      "--class-path",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-test-classes;D:\\CodexArtifacts\\four-projects-tests-20261125\\dependencies\\snakeyaml-2.7.jar",
+      "--disable-ansi-colors",
+      "--details",
+      "summary",
+      "--reports-dir",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\java-results",
+      "--select-method",
+      "com.samskivert.mustache.MustacheTest#testSimpleVariable",
+      "--select-method",
+      "com.samskivert.mustache.MustacheTest#testPrimitiveArrayVariable",
+      "--select-method",
+      "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexVariable",
+      "--select-method",
+      "com.samskivert.mustache.MustacheTest#testPrimitiveArrayIndexOutOfBoundsVariable",
+      "--select-method",
+      "com.samskivert.mustache.MustacheTest#testOneShotSection",
+      "--select-method",
+      "com.samskivert.mustache.MustacheTest#testListSection"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.734
+  },
+  {
+    "label": "20-cangjie-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe",
+      "--diagnostic-format",
+      "noColor",
+      "--import-path",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+      "-L",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.828
+  },
+  {
+    "label": "10-checker-prepare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_skeleton_check.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\whole_task.json",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\checker-input"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.141
+  },
+  {
+    "label": "11-checker",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\仓颉骨架翻译器\\check_skeleton.py",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\checker-input",
+      "--target-source",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache\\cangjie\\src",
+      "--report",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\skeleton_check.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.219
+  },
+  {
+    "label": "12-static-prepare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_static_validation.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\whole_task.json",
+      "--translated",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\translation\\translated",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.39
+  },
+  {
+    "label": "13-static-init",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input",
+      "--route",
+      "whole",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--contract",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\target_contract.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.454
+  },
+  {
+    "label": "14-annotate-java",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--side",
+      "java"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.203
+  },
+  {
+    "label": "14-annotate-cangjie",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--side",
+      "cangjie"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.156
+  },
+  {
+    "label": "15-compare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "compare",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.219
+  },
+  {
+    "label": "17-audit",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "audit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.172
+  },
+  {
+    "label": "18-deliver",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "deliver",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--decision",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review\\process\\04-audit\\class_review.json",
+      "--narrative",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review\\process\\05-report\\narrative.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.359
+  },
+  {
+    "label": "20-cangjie-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe",
+      "--diagnostic-format",
+      "noColor",
+      "--import-path",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+      "-L",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.797
+  },
+  {
+    "label": "11-checker",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\仓颉骨架翻译器\\check_skeleton.py",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\checker-input",
+      "--target-source",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache\\cangjie\\src",
+      "--report",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\skeleton_check.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.172
+  },
+  {
+    "label": "12-static-prepare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_static_validation.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\whole_task.json",
+      "--translated",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\translation\\translated",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.343
+  },
+  {
+    "label": "13-static-init",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input",
+      "--route",
+      "whole",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--contract",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\target_contract.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.438
+  },
+  {
+    "label": "14-annotate-java",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--side",
+      "java"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.109
+  },
+  {
+    "label": "14-annotate-cangjie",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--side",
+      "cangjie"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.156
+  },
+  {
+    "label": "15-compare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "compare",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.203
+  },
+  {
+    "label": "17-audit",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "audit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.172
+  },
+  {
+    "label": "18-deliver",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "deliver",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--decision",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review\\process\\04-audit\\class_review.json",
+      "--narrative",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review\\process\\05-report\\narrative.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.328
+  },
+  {
+    "label": "20-cangjie-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe",
+      "--diagnostic-format",
+      "noColor",
+      "--import-path",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+      "-L",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 2.14
+  },
+  {
+    "label": "11-checker",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\仓颉骨架翻译器\\check_skeleton.py",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\checker-input",
+      "--target-source",
+      "D:\\CodexArtifacts\\four-projects-20261125\\样例材料\\01-双语评测项目\\projects\\03-jmustache\\cangjie\\src",
+      "--report",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\skeleton_check.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.156
+  },
+  {
+    "label": "12-static-prepare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\集成适配\\prepare_static_validation.py",
+      "--task",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\whole_task.json",
+      "--translated",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\translation\\translated",
+      "--output",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.391
+  },
+  {
+    "label": "13-static-init",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "init",
+      "--translation",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-input",
+      "--route",
+      "whole",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--contract",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\target_contract.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.406
+  },
+  {
+    "label": "14-annotate-java",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--side",
+      "java"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.11
+  },
+  {
+    "label": "14-annotate-cangjie",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "annotate",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--side",
+      "cangjie"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.156
+  },
+  {
+    "label": "15-compare",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "compare",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.203
+  },
+  {
+    "label": "17-audit",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "audit",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.172
+  },
+  {
+    "label": "18-deliver",
+    "command": [
+      "C:\\Users\\jiangyizhou\\AppData\\Local\\Python\\pythoncore-3.12-64\\python.exe",
+      "D:\\CodexArtifacts\\week12-integration-20261125\\repository\\主体\\静态验证\\src\\verify_tool.py",
+      "deliver",
+      "--run",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review",
+      "--decision",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review\\process\\04-audit\\class_review.json",
+      "--narrative",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\static-review\\process\\05-report\\narrative.md"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.313
+  },
+  {
+    "label": "20-cangjie-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe",
+      "--diagnostic-format",
+      "noColor",
+      "--import-path",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+      "-L",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+      "-lstdx.serialization.serialization",
+      "-lstdx.serialization",
+      "-lstdx.encoding.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.219
+  },
+  {
+    "label": "21-cangjie-tests",
+    "command": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.89
+  },
+  {
+    "label": "30-annotated-cangjie-compile",
+    "command": [
+      "E:/cangjie/bin/cjc.exe",
+      "--test",
+      "-p",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\src",
+      "-o",
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe",
+      "--diagnostic-format",
+      "noColor",
+      "--import-path",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+      "-L",
+      "E:\\cangjie_libs\\stdx-1.2.0.1-local-http\\windows_x86_64_cjnative\\dynamic\\stdx",
+      "-lstdx.serialization.serialization",
+      "-lstdx.serialization",
+      "-lstdx.encoding.json"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.157
+  },
+  {
+    "label": "31-annotated-cangjie-tests",
+    "command": [
+      "D:\\CodexArtifacts\\four-projects-tests-20261125\\03-jmustache\\cangjie-build\\test.exe"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.047
+  }
+]

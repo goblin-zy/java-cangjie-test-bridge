@@ -57,6 +57,7 @@ def scan_project(project_root, output, *, business_roots=None, test_roots=None,
         if not selected:
             problems.append(issue("NO_SELECTED_TEST_FILES", "未识别测试文件，请用 --test-root 指定目录"))
         scope = {"source_roots": {k: layout["roots"][k] for k in ("business", "test", "support")},
+                 "filtered_resources": layout.get("filtered_resources", []),
                  "resource_roots": layout["roots"]["resource"], "selected_test_files": selected,
                  "test_scope": list(test_scope), "build_declarations": layout["build_declarations"]}
         snapshot = identity([{k: r[k] for k in ("file", "sha256", "size")} for r in records])

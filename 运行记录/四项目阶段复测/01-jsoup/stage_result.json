@@ -1,0 +1,45 @@
+{
+  "project": "01-jsoup",
+  "selected_methods": 5,
+  "source_assertions": 19,
+  "java": {
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cangjie": {
+    "total": 5,
+    "passed": 5,
+    "skipped": 0,
+    "error": 0,
+    "failed": 0
+  },
+  "skeleton": "passed",
+  "static_compared": 5,
+  "static_blocked": 0,
+  "annotated_tests_passed": 5,
+  "context": {
+    "java_files": 137,
+    "types": 338,
+    "members": 3461,
+    "references": 22568,
+    "resolution_counts": {
+      "resolved_static": 15251,
+      "external": 6768,
+      "implicit_project_constructor": 70,
+      "project_declaration_unmapped": 4,
+      "unresolved": 475
+    },
+    "test_methods": 1067,
+    "selected_test_methods_declared": 84,
+    "internal_nodes": 20126,
+    "recognized_assertions": 3406,
+    "assertion_candidates": 5,
+    "compatibility_features": 449
+  },
+  "context_parse_issues": [],
+  "analysis_gaps": [],
+  "business_unchanged": true,
+  "translation_sha256": "9df31e79a6aefdab7fd931fdc18612fd36407f80166eedd994cf4cb628daaf39"
+}

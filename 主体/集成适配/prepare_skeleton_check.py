@@ -50,6 +50,7 @@ def prepare(task_file, output, bundle_id=None):
         tables, source_files, selectors, evidence = {}, set(), [], []
         selected_files = {t["source_file"] for t in targets}
         selected_types = {t["source_type"].replace("$", ".") for t in targets}
+        requested = {s for t in targets for s in t.get('selected_test_methods', [])}
         for number, extraction in enumerate(extractions):
             root = path(extraction["extraction_root"])
             members_file = path(extraction["members_file"])
@@ -74,6 +75,10 @@ def prepare(task_file, output, bundle_id=None):
                     selectors.append(invocation["selector"])
             evidence.append({"source": str(members_file), "copy": copied.relative_to(output).as_posix(),
                              "sha256": hashlib.sha256(members_file.read_bytes()).hexdigest()})
+        if requested:
+            if not requested <= set(selectors):
+                raise ValueError('选定测试入口不在同版执行清单中: ' + ', '.join(sorted(requested - set(selectors))))
+            selectors = sorted(requested)
         shutil.copytree(skeleton, output / "05-cangjie-skeleton")
         mapping = load(path(bundle["mapping_file"]))
         if not isinstance(mapping, list):

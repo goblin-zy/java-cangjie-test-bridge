@@ -1,0 +1,444 @@
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:6: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Document.java:15: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:18: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:10: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\NonnullByDefault.java:3: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nonnull;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\NonnullByDefault.java:4: 错误: 程序包javax.annotation.meta不存在
+import javax.annotation.meta.TypeQualifierDefault;
+                            ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\NonnullByDefault.java:11: 错误: 找不到符号
+@Nonnull
+ ^
+  符号: 类 Nonnull
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\NonnullByDefault.java:12: 错误: 找不到符号
+@TypeQualifierDefault({ElementType.METHOD, ElementType.PARAMETER, ElementType.FIELD})
+ ^
+  符号: 类 TypeQualifierDefault
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\StringUtil.java:5: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\select\Elements.java:12: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:8: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:9: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\ParseSettings.java:4: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Comment.java:6: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\TreeBuilder.java:10: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\TreeBuilder.java:11: 错误: 程序包javax.annotation不存在
+import javax.annotation.ParametersAreNonnullByDefault;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\CharacterReader.java:6: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\Tokeniser.java:7: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\Token.java:6: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\helper\HttpConnection.java:13: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\helper\DataUtil.java:15: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\helper\DataUtil.java:16: 错误: 程序包javax.annotation不存在
+import javax.annotation.WillClose;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\helper\Validate.java:3: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\helper\W3CDom.java:19: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\FieldsAreNonnullByDefault.java:3: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nonnull;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\FieldsAreNonnullByDefault.java:4: 错误: 程序包javax.annotation.meta不存在
+import javax.annotation.meta.TypeQualifierDefault;
+                            ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\FieldsAreNonnullByDefault.java:11: 错误: 找不到符号
+@Nonnull
+ ^
+  符号: 类 Nonnull
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\FieldsAreNonnullByDefault.java:12: 错误: 找不到符号
+@TypeQualifierDefault(ElementType.FIELD)
+ ^
+  符号: 类 TypeQualifierDefault
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\ReturnsAreNonnullByDefault.java:3: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nonnull;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\ReturnsAreNonnullByDefault.java:4: 错误: 程序包javax.annotation.meta不存在
+import javax.annotation.meta.TypeQualifierDefault;
+                            ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\ReturnsAreNonnullByDefault.java:11: 错误: 找不到符号
+@Nonnull
+ ^
+  符号: 类 Nonnull
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\internal\ReturnsAreNonnullByDefault.java:12: 错误: 找不到符号
+@TypeQualifierDefault(ElementType.METHOD)
+ ^
+  符号: 类 TypeQualifierDefault
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Jsoup.java:11: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Jsoup.java:12: 错误: 程序包javax.annotation不存在
+import javax.annotation.WillClose;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\HtmlTreeBuilder.java:14: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\HtmlTreeBuilder.java:15: 错误: 程序包javax.annotation不存在
+import javax.annotation.ParametersAreNonnullByDefault;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\XmlTreeBuilder.java:14: 错误: 程序包javax.annotation不存在
+import javax.annotation.ParametersAreNonnullByDefault;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\select\Collector.java:6: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\select\CombiningEvaluator.java:6: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\select\Selector.java:6: 错误: 程序包javax.annotation不存在
+import javax.annotation.Nullable;
+                       ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:89: 错误: 找不到符号
+    Connection proxy(@Nullable Proxy proxy);
+                      ^
+  符号:   类 Nullable
+  位置: 接口 Connection
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:243: 错误: 找不到符号
+    @Nullable KeyVal data(String key);
+     ^
+  符号:   类 Nullable
+  位置: 接口 Connection
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:538: 错误: 找不到符号
+        @Nullable Proxy proxy();
+         ^
+  符号:   类 Nullable
+  位置: 接口 Request
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:545: 错误: 找不到符号
+        Request proxy(@Nullable Proxy proxy);
+                       ^
+  符号:   类 Nullable
+  位置: 接口 Request
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:626: 错误: 找不到符号
+        @Nullable SSLSocketFactory sslSocketFactory();
+         ^
+  符号:   类 Nullable
+  位置: 接口 Request
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:658: 错误: 找不到符号
+        Request requestBody(@Nullable String body);
+                             ^
+  符号:   类 Nullable
+  位置: 接口 Request
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:664: 错误: 找不到符号
+        @Nullable String requestBody();
+         ^
+  符号:   类 Nullable
+  位置: 接口 Request
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:715: 错误: 找不到符号
+        @Nullable String charset();
+         ^
+  符号:   类 Nullable
+  位置: 接口 Response
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:728: 错误: 找不到符号
+        @Nullable String contentType();
+         ^
+  符号:   类 Nullable
+  位置: 接口 Response
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:423: 错误: 找不到符号
+        @Nullable String header(String name);
+         ^
+  符号:   类 Nullable
+  位置: 接口 Base<T>
+  其中, T是类型变量:
+    T扩展已在接口 Base中声明的Base<T>
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\Connection.java:498: 错误: 找不到符号
+        @Nullable String cookie(String name);
+         ^
+  符号:   类 Nullable
+  位置: 接口 Base<T>
+  其中, T是类型变量:
+    T扩展已在接口 Base中声明的Base<T>
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Document.java:26: 错误: 找不到符号
+    private @Nullable Connection connection; // the connection this doc was fetched from, if any
+             ^
+  符号:   类 Nullable
+  位置: 类 Document
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Document.java:89: 错误: 找不到符号
+    public @Nullable DocumentType documentType() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Document
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:88: 错误: 找不到符号
+    static String checkNotNull(@Nullable Object val) {
+                                ^
+  符号:   类 Nullable
+  位置: 类 Attributes
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:118: 错误: 找不到符号
+    @Nullable
+     ^
+  符号:   类 Nullable
+  位置: 类 Attributes
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:130: 错误: 找不到符号
+    public Attributes add(String key, @Nullable String value) {
+                                       ^
+  符号:   类 Nullable
+  位置: 类 Attributes
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:135: 错误: 找不到符号
+    private void addObject(String key, @Nullable Object value) {
+                                        ^
+  符号:   类 Nullable
+  位置: 类 Attributes
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:148: 错误: 找不到符号
+    public Attributes put(String key, @Nullable String value) {
+                                       ^
+  符号:   类 Nullable
+  位置: 类 Attributes
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:177: 错误: 找不到符号
+    void putIgnoreCase(String key, @Nullable String value) {
+                                    ^
+  符号:   类 Nullable
+  位置: 类 Attributes
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attributes.java:412: 错误: 找不到符号
+    public boolean equals(@Nullable Object o) {
+                           ^
+  符号:   类 Nullable
+  位置: 类 Attributes
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\ParseSettings.java:76: 错误: 找不到符号
+    @Nullable Attributes normalizeAttributes(@Nullable Attributes attributes) {
+                                              ^
+  符号:   类 Nullable
+  位置: 类 ParseSettings
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\parser\ParseSettings.java:76: 错误: 找不到符号
+    @Nullable Attributes normalizeAttributes(@Nullable Attributes attributes) {
+     ^
+  符号:   类 Nullable
+  位置: 类 ParseSettings
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:27: 错误: 找不到符号
+    @Nullable private String val;
+     ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:28: 错误: 找不到符号
+    @Nullable Attributes parent; // used to update the holding Attributes when the key / value is changed via this interface
+     ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:36: 错误: 找不到符号
+    public Attribute(String key, @Nullable String value) {
+                                  ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:46: 错误: 找不到符号
+    public Attribute(String key, @Nullable String val, @Nullable Attributes parent) {
+                                  ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:46: 错误: 找不到符号
+    public Attribute(String key, @Nullable String val, @Nullable Attributes parent) {
+                                                        ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:102: 错误: 找不到符号
+    public String setValue(@Nullable String val) {
+                            ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:134: 错误: 找不到符号
+    protected static void html(String key, @Nullable String val, Appendable accum, Document.OutputSettings out) throws IOException {
+                                            ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:140: 错误: 找不到符号
+    static void htmlNoValidate(String key, @Nullable String val, Appendable accum, Document.OutputSettings out) throws IOException {
+                                            ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:155: 错误: 找不到符号
+    @Nullable public static String getValidKey(String key, Syntax syntax) {
+     ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:207: 错误: 找不到符号
+    protected static boolean shouldCollapseAttribute(final String key, @Nullable final String val, final Document.OutputSettings out) {
+                                                                        ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Attribute.java:221: 错误: 找不到符号
+    public boolean equals(@Nullable Object o) { // note parent not considered
+                           ^
+  符号:   类 Nullable
+  位置: 类 Attribute
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\select\Elements.java:570: 错误: 找不到符号
+    private Elements siblings(@Nullable String query, boolean next, boolean all) {
+                               ^
+  符号:   类 Nullable
+  位置: 类 Elements
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\select\Elements.java:604: 错误: 找不到符号
+    public @Nullable Element first() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Elements
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\select\Elements.java:612: 错误: 找不到符号
+    public @Nullable Element last() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Elements
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Comment.java:79: 错误: 找不到符号
+    public @Nullable XmlDeclaration asXmlDeclaration() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Comment
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Document.java:451: 错误: 找不到符号
+        @Nullable Entities.CoreCharset coreCharset; // fast encoders for ascii and utf8
+         ^
+  符号:   类 Nullable
+  位置: 类 OutputSettings
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:49: 错误: 找不到符号
+    private @Nullable WeakReference<List<Element>> shadowChildrenRef; // points to child elements shadowed from node children
+             ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:51: 错误: 找不到符号
+    @Nullable Attributes attributes; // field is nullable but all methods for attributes are non-null
+     ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:70: 错误: 找不到符号
+    public Element(Tag tag, @Nullable String baseUri, @Nullable Attributes attributes) {
+                             ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:70: 错误: 找不到符号
+    public Element(Tag tag, @Nullable String baseUri, @Nullable Attributes attributes) {
+                                                       ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:86: 错误: 找不到符号
+    public Element(Tag tag, @Nullable String baseUri) {
+                             ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:262: 错误: 找不到符号
+    @Override @Nullable
+               ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:442: 错误: 找不到符号
+    public @Nullable Element selectFirst(String cssQuery) {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:454: 错误: 找不到符号
+    public @Nullable Element selectFirst(Evaluator evaluator) {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:503: 错误: 找不到符号
+    public @Nullable Element closest(String cssQuery) {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:514: 错误: 找不到符号
+    public @Nullable Element closest(Evaluator evaluator) {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:891: 错误: 找不到符号
+    public @Nullable Element nextElementSibling() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:915: 错误: 找不到符号
+    public @Nullable Element previousElementSibling() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:992: 错误: 找不到符号
+    public @Nullable Element firstElementChild() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:1010: 错误: 找不到符号
+    public @Nullable Element lastElementChild() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:1044: 错误: 找不到符号
+    public @Nullable Element getElementById(String id) {
+            ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:1414: 错误: 找不到符号
+    static boolean preserveWhitespace(@Nullable Node node) {
+                                       ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:1758: 错误: 找不到符号
+    protected Element doClone(@Nullable Node parent) {
+                               ^
+  符号:   类 Nullable
+  位置: 类 Element
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:27: 错误: 找不到符号
+    @Nullable Node parentNode; // Nodes don't always have parents
+     ^
+  符号:   类 Nullable
+  位置: 类 Node
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:285: 错误: 找不到符号
+    public @Nullable Node parent() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Node
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:293: 错误: 找不到符号
+    public @Nullable final Node parentNode() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Node
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:312: 错误: 找不到符号
+    public @Nullable Document ownerDocument() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Node
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:442: 错误: 找不到符号
+    public @Nullable Node unwrap() {
+            ^
+  符号:   类 Nullable
+  位置: 类 Node
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Node.java:683: 警告: [dep-ann] 未使用 @Deprecated 对已过时的项目进行注释
+    public Node forEachNode(org.jsoup.helper.Consumer<? super Node> action) {
+                ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\nodes\Element.java:1817: 警告: [dep-ann] 未使用 @Deprecated 对已过时的项目进行注释
+    public Element forEach(org.jsoup.helper.Consumer<? super Element> action) {
+                   ^
+D:\CodexArtifacts\four-projects-20261125\样例材料\01-双语评测项目\projects\01-jsoup\java\src\main\java\org\jsoup\examples\Wikipedia.java:25: 警告: 最后一个参数使用了不准确的变量类型的 varargs 方法的非 varargs 调用; 
+        System.out.println(String.format(msg, vals));
+                                              ^
+  对于 varargs 调用, 应使用 Object
+  对于非 varargs 调用, 应使用 Object[], 这样也可以抑制此警告
+100 个错误
+3 个警告
+仅显示前 100 个错误（共 199 个）；若要查看更多错误，请使用 -Xmaxerrs

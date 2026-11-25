@@ -181,6 +181,7 @@ public final class SymbolFacts {
                 "ast_kind",node.getClass().getSimpleName(),"node_kind",node instanceof BlockStmt?"block":control?"control":
                 node instanceof Statement?"statement":"container", "start_line",range.begin.line,"end_line",range.end.line,
                 "parent_location",parent==null || parent==member?null:location(parent),
+                "parent_ast_kind",parent==null || parent==member?null:parent.getClass().getSimpleName(),
                 "role_in_parent",parent==member?"MEMBER_BODY":analysisRole(node,parent),
                 "deferred",node instanceof LambdaExpr,"try_with_resources",node instanceof TryStmt t && !t.getResources().isEmpty());
             if(node instanceof IfStmt n)row.put("condition_as_written",n.getCondition().toString());

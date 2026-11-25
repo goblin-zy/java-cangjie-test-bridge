@@ -1,0 +1,43 @@
+{
+  "project": "05-diff-utils",
+  "selected_methods": 3,
+  "source_assertions": 15,
+  "java": {
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cangjie": {
+    "total": 3,
+    "passed": 3,
+    "skipped": 0,
+    "error": 0,
+    "failed": 0
+  },
+  "skeleton": "passed",
+  "static_compared": 3,
+  "static_blocked": 0,
+  "annotated_tests_passed": 3,
+  "context": {
+    "java_files": 29,
+    "types": 34,
+    "members": 200,
+    "references": 976,
+    "resolution_counts": {
+      "resolved_static": 530,
+      "external": 440,
+      "implicit_project_constructor": 6
+    },
+    "test_methods": 18,
+    "selected_test_methods_declared": 5,
+    "internal_nodes": 1073,
+    "recognized_assertions": 39,
+    "assertion_candidates": 0,
+    "compatibility_features": 25
+  },
+  "context_parse_issues": [],
+  "analysis_gaps": [],
+  "business_unchanged": true,
+  "translation_sha256": "ddc975f74d4304076c4aab5a44d1e4e33778412c8ef7919b17bd7253aaaad652"
+}
