@@ -1,0 +1,18 @@
+[
+  {
+    "file": "inputs/0/PointsWalletTest.java",
+    "sha256": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8"
+  },
+  {
+    "file": "inputs/1/PointsWalletTest.java",
+    "sha256": "bfa351cece0f7bb5a3cdb1a2a990a3cbbe6541e5c8e96735edb1df30c156b0ec"
+  },
+  {
+    "file": "inputs/2/java_coverage.json",
+    "sha256": "eda3bd16dc158024326e6c9aa60980bde48534186b0f140d7256bfb32485c001"
+  },
+  {
+    "file": "inputs/3/PointsWallet.java",
+    "sha256": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9"
+  }
+]

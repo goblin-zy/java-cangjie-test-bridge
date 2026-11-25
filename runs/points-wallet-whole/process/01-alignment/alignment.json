@@ -1,0 +1,121 @@
+{
+  "route": "whole",
+  "units": [
+    {
+      "id": "U01",
+      "name": "spendsPointsInOrder",
+      "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#spendsPointsInOrder()",
+      "java": [
+        21,
+        27
+      ],
+      "cangjie": [
+        18,
+        26
+      ],
+      "candidates": [
+        [
+          18,
+          26
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/members.json",
+          "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#spendsPointsInOrder()",
+          "target_file": "wallet/points_wallet_test.cj",
+          "target_member": "spendsPointsInOrder",
+          "target_signature": "    func spendsPointsInOrder(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "T03",
+          "adaptation": "目标业务接口暂定"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    },
+    {
+      "id": "U02",
+      "name": "rejectsOverspending",
+      "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()",
+      "java": [
+        29,
+        33
+      ],
+      "cangjie": [
+        28,
+        34
+      ],
+      "candidates": [
+        [
+          28,
+          34
+        ]
+      ],
+      "mapping": [
+        {
+          "source_members_file": "02-java-skeleton/members.json",
+          "source_member_id": "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()",
+          "target_file": "wallet/points_wallet_test.cj",
+          "target_member": "rejectsOverspending",
+          "target_signature": "    func rejectsOverspending(): Unit",
+          "status": "mapped",
+          "fill_slot": "body",
+          "slot_id": "T04",
+          "adaptation": "目标业务接口暂定"
+        }
+      ],
+      "reason": "Java 成员位置与提取版本一致，已定位唯一目标声明"
+    }
+  ],
+  "files": {
+    "java": "PointsWalletTest.java",
+    "cangjie": "points_wallet_test.cj"
+  },
+  "contract": {
+    "status": "missing"
+  },
+  "versions": {
+    "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java\\wallet\\PointsWalletTest.java": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\06-whole-translation\\test\\wallet\\points_wallet_test.cj": "1ee68dd6c8ead0fe9616dd1aa520943ece705740cf720e736ab5e1e2edf253f9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\original\\PointsWalletTest.java": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\translation_config.json": "5b9f78703bb48bdf60784756985c0d454840215bd60370113437713052313b57",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\members.json": "281b0d3832cc6f9787c5e8e599b76e2512226e8c16ae434fedf7c4de17cdc5f9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\member_mapping.json": "cc0af191f11820fc0277b92f06a269192edd1a388549d174468ee72b5dbb5a72",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\translation_report.json": "b1e1be2c9022363df2b2278055f3afc22837cbe038090bc442dd7591a9757083",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\handoff.md": "32491d36eb843f1db439a36a376b37156eb5f4ef7c4ba6e04015d8a47f34c676",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\03-project-materials\\final\\project_materials.json": "c18de8c97c9b7dae5a095c047caeec08328373005706a6a55644da24c5b4d984",
+    "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Rule mapping\\translation_rules.json": "5fce5a33f882cbf5a7a7d282723c6f296638a664aa5e6bc8b8ccb2833c58e3e9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\04-test-context\\PointsWalletTest\\context_wallet.PointsWalletTest_53e40b49.json": "f8d7ea3a1d494b1640b02e2fd6e92a514e5eccc7fbd90aa6f4a1d5cda342c1dd",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\skeleton\\PointsWalletTest.java": "bfa351cece0f7bb5a3cdb1a2a990a3cbbe6541e5c8e96735edb1df30c156b0ec",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\java-coverage\\java_coverage.json": "eda3bd16dc158024326e6c9aa60980bde48534186b0f140d7256bfb32485c001",
+    "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java\\wallet\\PointsWallet.java": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\wallet\\points_wallet_test.cj": "f98c34fb0c2faa61fde7f412ae1d9c6973c1b4d7ffa650c2dbdb8c8087c20b25"
+  },
+  "materials": [
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\translation_config.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\members.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\member_mapping.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\translation_report.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\handoff.md",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\03-project-materials\\final\\project_materials.json",
+    "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Rule mapping\\translation_rules.json",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\04-test-context\\PointsWalletTest\\context_wallet.PointsWalletTest_53e40b49.json"
+  ],
+  "missing_materials": [],
+  "side_inputs": {
+    "java": [
+      "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\skeleton\\PointsWalletTest.java",
+      "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\java-coverage\\java_coverage.json",
+      "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java\\wallet\\PointsWallet.java"
+    ],
+    "cangjie": [
+      "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\wallet\\points_wallet_test.cj"
+    ]
+  },
+  "extraction_matches": true,
+  "selection": [
+    "PointsWalletTest.java::wallet.PointsWalletTest#spendsPointsInOrder()",
+    "PointsWalletTest.java::wallet.PointsWalletTest#rejectsOverspending()"
+  ]
+}

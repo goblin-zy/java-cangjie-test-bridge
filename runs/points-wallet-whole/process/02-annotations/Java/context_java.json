@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "path": "Translation-all/01-projects/points-wallet/src/test/java/wallet/PointsWalletTest.java",
+      "location": "第 9–34 行",
+      "purpose": "定位测试类、夹具、两个用例、顺序与断言。"
+    },
+    {
+      "path": "Translation-all/01-projects/points-wallet/src/main/java/wallet/PointsWallet.java",
+      "location": "第 4–20 行",
+      "purpose": "核对初始化、成功与超额分支及余额查询的实现语义。"
+    }
+  ],
+  "unknowns": [],
+  "范围说明": "本次静态阅读源码。两个测试均未声明显式清理。"
+}

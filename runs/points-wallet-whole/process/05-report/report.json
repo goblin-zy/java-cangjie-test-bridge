@@ -1,0 +1,605 @@
+{
+  "route": "whole",
+  "files": {
+    "java": "PointsWalletTest.java",
+    "cangjie": "points_wallet_test.cj"
+  },
+  "versions": {
+    "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\test\\java\\wallet\\PointsWalletTest.java": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\06-whole-translation\\test\\wallet\\points_wallet_test.cj": "1ee68dd6c8ead0fe9616dd1aa520943ece705740cf720e736ab5e1e2edf253f9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\original\\PointsWalletTest.java": "9fa15302faf043dc46bf1285e38042d78c70e0c35acf63f7949789c107882ef8",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\translation_config.json": "5b9f78703bb48bdf60784756985c0d454840215bd60370113437713052313b57",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\members.json": "281b0d3832cc6f9787c5e8e599b76e2512226e8c16ae434fedf7c4de17cdc5f9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\member_mapping.json": "cc0af191f11820fc0277b92f06a269192edd1a388549d174468ee72b5dbb5a72",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\translation_report.json": "b1e1be2c9022363df2b2278055f3afc22837cbe038090bc442dd7591a9757083",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\handoff.md": "32491d36eb843f1db439a36a376b37156eb5f4ef7c4ba6e04015d8a47f34c676",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\03-project-materials\\final\\project_materials.json": "c18de8c97c9b7dae5a095c047caeec08328373005706a6a55644da24c5b4d984",
+    "D:\\program_study\\yrys\\Translation-all\\three-material-get\\Rule mapping\\translation_rules.json": "5fce5a33f882cbf5a7a7d282723c6f296638a664aa5e6bc8b8ccb2833c58e3e9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\04-test-context\\PointsWalletTest\\context_wallet.PointsWalletTest_53e40b49.json": "f8d7ea3a1d494b1640b02e2fd6e92a514e5eccc7fbd90aa6f4a1d5cda342c1dd",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\02-java-skeleton\\skeleton\\PointsWalletTest.java": "bfa351cece0f7bb5a3cdb1a2a990a3cbbe6541e5c8e96735edb1df30c156b0ec",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\java-coverage\\java_coverage.json": "eda3bd16dc158024326e6c9aa60980bde48534186b0f140d7256bfb32485c001",
+    "D:\\program_study\\yrys\\Translation-all\\01-projects\\points-wallet\\src\\main\\java\\wallet\\PointsWallet.java": "cea5af9ce6744c17210a72992bd4b0a9857f583c824aee775fe9d124221492e9",
+    "D:\\program_study\\yrys\\Translation-all\\output\\points-wallet-coverage\\05-cangjie-skeleton\\wallet\\points_wallet_test.cj": "f98c34fb0c2faa61fde7f412ae1d9c6973c1b4d7ffa650c2dbdb8c8087c20b25"
+  },
+  "contract": {
+    "status": "missing"
+  },
+  "scope": {
+    "units": [
+      {
+        "id": "U01",
+        "name": "spendsPointsInOrder",
+        "state": "已比较",
+        "status": "信息不足"
+      },
+      {
+        "id": "U02",
+        "name": "rejectsOverspending",
+        "state": "已比较",
+        "status": "信息不足"
+      }
+    ],
+    "selected": 2,
+    "compared": 2,
+    "cross_review": {
+      "action": "复用已有依据",
+      "affected": [],
+      "reason": "逐条核对 J03–J04、C06、C08–C09 与 C15–C16。两条仓颉测试都在第一次取用钱包之前显式调用 setup()，各自得到新建的钱包；逐项记录之间无相互矛盾。共同缺少的目标接口依据已分别计入两个单元。"
+    }
+  },
+  "results": [
+    {
+      "id": "U01",
+      "packet_hash": "6758d9e213647b18e85f357464faff4f28b5dbd87095a6a51b2c9338d40adac9",
+      "checks": [
+        {
+          "topic": "测试入口",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J05"
+          ],
+          "cangjie": [
+            "C02",
+            "C03",
+            "C07"
+          ],
+          "reason": "Java 用 @Test 标记无参方法；仓颉引入测试框架，在 @Test 类内以 @TestCase 标记对应无参方法。依据 translation_rules.json 的 TEST-01 核对声明。"
+        },
+        {
+          "topic": "每例初始化与对象来源",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J01",
+            "J02",
+            "J03",
+            "J04"
+          ],
+          "cangjie": [
+            "C04",
+            "C05",
+            "C06",
+            "C08",
+            "C09"
+          ],
+          "reason": "Java 在 @BeforeEach 中调用 newWallet()，仓颉在这条测试开头显式调用 setup()，用 Some 包装创建结果，随即 getOrThrow() 取得同一钱包。两边构造表达式都传 100；在这条直线路径上，取值前已有显式赋值。两侧都没有显式清理。"
+        },
+        {
+          "topic": "第一次消费",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J06"
+          ],
+          "cangjie": [
+            "C10"
+          ],
+          "reason": "同一实例调用 spend(30)。assertTrue 与 @Assert(true, …) 都要求此次返回值为真。"
+        },
+        {
+          "topic": "第一次余额判定",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J07"
+          ],
+          "cangjie": [
+            "C11"
+          ],
+          "reason": "消费 30 之后调用 balance()，assertEquals 与 @Assert 的期望值都是 70。"
+        },
+        {
+          "topic": "第二次消费",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J08"
+          ],
+          "cangjie": [
+            "C12"
+          ],
+          "reason": "余额检查之后继续对同一实例调用 spend(20)，断言要求本次返回真，中间没有重新初始化。"
+        },
+        {
+          "topic": "第二次余额判定",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J09"
+          ],
+          "cangjie": [
+            "C13"
+          ],
+          "reason": "第二次消费后才调用 balance()，相等断言要求 50。两边均保留了中间余额和最终余额两次检查。"
+        },
+        {
+          "topic": "目标业务接口的含义",
+          "kind": "interface",
+          "status": "信息不足",
+          "java": [
+            "J02",
+            "J06",
+            "J07"
+          ],
+          "cangjie": [
+            "C05",
+            "C10",
+            "C11"
+          ],
+          "reason": "Java 实现将构造入参存为积分；spend 在余额足够时扣减并返回 true，超额时返回 false 且不扣减；balance 返回当前积分。目标测试只显示调用与期望，单位、返回值含义及状态变化仍缺独立依据。",
+          "recheck": "已回到两侧构造、消费和余额表达式，并查阅 PointsWallet.java 与骨架交接 handoff.md。交接把目标业务接口标为暂定，不能据此确认业务语义。"
+        }
+      ],
+      "name": "spendsPointsInOrder",
+      "status": "信息不足"
+    },
+    {
+      "id": "U02",
+      "packet_hash": "4e9510228ccbbb08a203d31151ac38dca3a83ed9d62ef5b57dea9cb39a9b88b4",
+      "checks": [
+        {
+          "topic": "测试入口",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J10"
+          ],
+          "cangjie": [
+            "C02",
+            "C03",
+            "C14"
+          ],
+          "reason": "Java 用 @Test 标记无参方法；仓颉引入测试框架，在 @Test 类内以 @TestCase 标记对应无参方法。依据 translation_rules.json 的 TEST-01 核对声明。"
+        },
+        {
+          "topic": "每例初始化与对象来源",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J01",
+            "J02",
+            "J03",
+            "J04"
+          ],
+          "cangjie": [
+            "C04",
+            "C05",
+            "C06",
+            "C15",
+            "C16"
+          ],
+          "reason": "Java 在 @BeforeEach 中调用 newWallet()，仓颉在这条测试开头显式调用 setup()，用 Some 包装创建结果，随即 getOrThrow() 取得同一钱包。两边构造表达式都传 100；在这条直线路径上，取值前已有显式赋值。两侧都没有显式清理。"
+        },
+        {
+          "topic": "超额消费的返回值",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J11"
+          ],
+          "cangjie": [
+            "C17"
+          ],
+          "reason": "同一调用位置传入 150。assertFalse 与 @Assert(false, …) 都要求本次调用返回 false。"
+        },
+        {
+          "topic": "失败后的余额",
+          "kind": "source",
+          "status": "在所列前提和范围内一致",
+          "java": [
+            "J12"
+          ],
+          "cangjie": [
+            "C18"
+          ],
+          "reason": "在返回值检查之后，对原钱包调用 balance()，相等断言要求 100。漏掉这条断言会放过返回 false 却改变余额的情形。"
+        },
+        {
+          "topic": "目标业务接口的含义",
+          "kind": "interface",
+          "status": "信息不足",
+          "java": [
+            "J02",
+            "J11",
+            "J12"
+          ],
+          "cangjie": [
+            "C05",
+            "C17",
+            "C18"
+          ],
+          "reason": "Java 实现将构造入参存为积分；spend 在余额足够时扣减并返回 true，超额时返回 false 且不扣减；balance 返回当前积分。目标测试只显示调用与期望，单位、返回值含义及状态变化仍缺独立依据。",
+          "recheck": "已回到两侧构造、消费和余额表达式，并查阅 PointsWallet.java 与骨架交接 handoff.md。交接把目标业务接口标为暂定，不能据此确认业务语义。"
+        }
+      ],
+      "name": "rejectsOverspending",
+      "status": "信息不足"
+    }
+  ],
+  "evidence": {
+    "java/J05": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        21,
+        22
+      ],
+      "annotated": [
+        56,
+        57
+      ],
+      "quote": "    @Test\n    void spendsPointsInOrder() {"
+    },
+    "cangjie/C02": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        3,
+        4
+      ],
+      "annotated": [
+        17,
+        18
+      ],
+      "quote": "import std.unittest.*\nimport std.unittest.testmacro.*"
+    },
+    "cangjie/C03": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        6,
+        7
+      ],
+      "annotated": [
+        27,
+        28
+      ],
+      "quote": "@Test\nclass PointsWalletTest {"
+    },
+    "cangjie/C07": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        18,
+        19
+      ],
+      "annotated": [
+        67,
+        68
+      ],
+      "quote": "    @TestCase\n    func spendsPointsInOrder(): Unit {"
+    },
+    "java/J01": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        10,
+        10
+      ],
+      "annotated": [
+        17,
+        17
+      ],
+      "quote": "    private PointsWallet wallet;"
+    },
+    "java/J02": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        12,
+        14
+      ],
+      "annotated": [
+        26,
+        28
+      ],
+      "quote": "    private PointsWallet newWallet() {\n        return new PointsWallet(100);\n    }"
+    },
+    "java/J03": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        16,
+        17
+      ],
+      "annotated": [
+        37,
+        38
+      ],
+      "quote": "    @BeforeEach\n    void setup() {"
+    },
+    "java/J04": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        18,
+        18
+      ],
+      "annotated": [
+        46,
+        46
+      ],
+      "quote": "        wallet = newWallet();"
+    },
+    "cangjie/C04": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        8,
+        8
+      ],
+      "annotated": [
+        36,
+        36
+      ],
+      "quote": "    private var wallet: ?PointsWallet = None"
+    },
+    "cangjie/C05": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        10,
+        12
+      ],
+      "annotated": [
+        45,
+        47
+      ],
+      "quote": "    private func newWallet(): PointsWallet {\n        return PointsWallet(100i32)\n    }"
+    },
+    "cangjie/C06": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        14,
+        16
+      ],
+      "annotated": [
+        56,
+        58
+      ],
+      "quote": "    private func setup(): Unit {\n        wallet = Some(newWallet())\n    }"
+    },
+    "cangjie/C08": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        20,
+        20
+      ],
+      "annotated": [
+        76,
+        76
+      ],
+      "quote": "        setup()"
+    },
+    "cangjie/C09": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        21,
+        21
+      ],
+      "annotated": [
+        84,
+        84
+      ],
+      "quote": "        let active = wallet.getOrThrow()"
+    },
+    "java/J06": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        23,
+        23
+      ],
+      "annotated": [
+        65,
+        65
+      ],
+      "quote": "        assertTrue(wallet.spend(30));"
+    },
+    "cangjie/C10": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        22,
+        22
+      ],
+      "annotated": [
+        92,
+        92
+      ],
+      "quote": "        @Assert(true, active.spend(30i32))"
+    },
+    "java/J07": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        24,
+        24
+      ],
+      "annotated": [
+        73,
+        73
+      ],
+      "quote": "        assertEquals(70, wallet.balance());"
+    },
+    "cangjie/C11": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        23,
+        23
+      ],
+      "annotated": [
+        100,
+        100
+      ],
+      "quote": "        @Assert(70i32, active.balance())"
+    },
+    "java/J08": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        25,
+        25
+      ],
+      "annotated": [
+        81,
+        81
+      ],
+      "quote": "        assertTrue(wallet.spend(20));"
+    },
+    "cangjie/C12": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        24,
+        24
+      ],
+      "annotated": [
+        108,
+        108
+      ],
+      "quote": "        @Assert(true, active.spend(20i32))"
+    },
+    "java/J09": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        26,
+        26
+      ],
+      "annotated": [
+        89,
+        89
+      ],
+      "quote": "        assertEquals(50, wallet.balance());"
+    },
+    "cangjie/C13": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        25,
+        25
+      ],
+      "annotated": [
+        116,
+        116
+      ],
+      "quote": "        @Assert(50i32, active.balance())"
+    },
+    "java/J10": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        29,
+        30
+      ],
+      "annotated": [
+        99,
+        100
+      ],
+      "quote": "    @Test\n    void rejectsOverspending() {"
+    },
+    "cangjie/C14": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        28,
+        29
+      ],
+      "annotated": [
+        126,
+        127
+      ],
+      "quote": "    @TestCase\n    func rejectsOverspending(): Unit {"
+    },
+    "cangjie/C15": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        30,
+        30
+      ],
+      "annotated": [
+        135,
+        135
+      ],
+      "quote": "        setup()"
+    },
+    "cangjie/C16": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        31,
+        31
+      ],
+      "annotated": [
+        143,
+        143
+      ],
+      "quote": "        let active = wallet.getOrThrow()"
+    },
+    "java/J11": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        31,
+        31
+      ],
+      "annotated": [
+        108,
+        108
+      ],
+      "quote": "        assertFalse(wallet.spend(150));"
+    },
+    "cangjie/C17": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        32,
+        32
+      ],
+      "annotated": [
+        151,
+        151
+      ],
+      "quote": "        @Assert(false, active.spend(150i32))"
+    },
+    "java/J12": {
+      "file": "PointsWalletTest.java",
+      "original": [
+        32,
+        32
+      ],
+      "annotated": [
+        116,
+        116
+      ],
+      "quote": "        assertEquals(100, wallet.balance());"
+    },
+    "cangjie/C18": {
+      "file": "points_wallet_test.cj",
+      "original": [
+        33,
+        33
+      ],
+      "annotated": [
+        159,
+        159
+      ],
+      "quote": "        @Assert(100i32, active.balance())"
+    }
+  },
+  "rechecks": [
+    {
+      "id": "U01",
+      "topic": "目标业务接口的含义",
+      "recheck": "已回到两侧构造、消费和余额表达式，并查阅 PointsWallet.java 与骨架交接 handoff.md。交接把目标业务接口标为暂定，不能据此确认业务语义。",
+      "status": "信息不足"
+    },
+    {
+      "id": "U02",
+      "topic": "目标业务接口的含义",
+      "recheck": "已回到两侧构造、消费和余额表达式，并查阅 PointsWallet.java 与骨架交接 handoff.md。交接把目标业务接口标为暂定，不能据此确认业务语义。",
+      "status": "信息不足"
+    }
+  ],
+  "method": "双侧源码静态比较"
+}

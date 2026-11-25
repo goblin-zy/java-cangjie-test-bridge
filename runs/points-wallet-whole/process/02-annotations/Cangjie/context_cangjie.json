@@ -1,0 +1,14 @@
+{
+  "unknowns": [
+    "缺少目标业务实现、接口约定，无法独立核实构造与消费的实际语义。",
+    "仅静态阅读，编译、测试发现及断言实际结果待验证。"
+  ],
+  "清理": "两个测试均无显式清理操作。",
+  "sources": [
+    {
+      "path": "Translation-all/output/points-wallet-coverage/06-whole-translation/test/wallet/points_wallet_test.cj",
+      "位置": "第1–35行",
+      "用途": "识别框架、夹具、两个测试的调用顺序及断言值"
+    }
+  ]
+}

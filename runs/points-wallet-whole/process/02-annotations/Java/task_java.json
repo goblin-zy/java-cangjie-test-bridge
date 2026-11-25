@@ -1,0 +1,21 @@
+{
+  "side": "java",
+  "source": "inputs/0/PointsWalletTest.java",
+  "units": [
+    {
+      "id": "U01",
+      "lines": [
+        21,
+        27
+      ]
+    },
+    {
+      "id": "U02",
+      "lines": [
+        29,
+        33
+      ]
+    }
+  ],
+  "instruction": "仅使用本任务列出的输入材料。按源码顺序提交带原文行号的注释与实际查阅记录。"
+}
