@@ -1,10 +1,10 @@
-# Java与仓颉测试项目
+# 第十二周交付 · Java 到仓颉测试翻译
 
-个人交付按分支保存：
+- [本周进度汇报](<本周进度汇报.md>)概述新增候选项目、八组实跑和工具优化。
+- [测试与优化报告](<测试与优化报告.md>)记录每组的执行数据、未翻译范围和两项修复的验证结果。
+- [Java 骨架提取器](<Java骨架提取器/JavaTestSkeletonExtractor.java>)读取 Java 源码，输出骨架和 `members.json`，使用 JDK 17 编译。
+- [仓颉骨架生成提示词](<仓颉骨架翻译器/骨架翻译提示词.md>)指导模型生成骨架和成员映射。[结构检查器](<仓颉骨架翻译器/check_skeleton.py>)使用 Python 3.10+ 检查声明、包名和待填槽位。
 
-- [蔡俊杰week6：第六周材料](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week6)
-- [蔡俊杰week7：第七周骨架提取与参考测试](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%94%A1%E4%BF%8A%E6%9D%B0week7)
-- [蒋逸舟week7：上下文查找工具、可行性验证方法执行、ReCodeAgent论文阅读](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/%E8%92%8B%E9%80%B8%E8%88%9Fweek7)
-- [hzy-week7：项目约定与公共材料工具](https://github.com/goblin-zy/java-cangjie-test-bridge/tree/hzy-week7)
+## 版本记录
 
-main保留团队导航；个人分支保存源码、使用说明和验证记录。误合入的个人材料已通过后续提交撤下，既有提交历史保留供追溯。
+2026 年 11 月 25 日提交两套优化后的工具源码、八组测试与优化报告及本周进度汇报。
